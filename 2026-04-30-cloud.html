@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-04-30</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 0;">
+        <table width="620" cellpadding="0" cellspacing="0" style="max-width:620px;width:100%;">
+
+          <!-- 邮件头部 -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 32px;border-radius:8px 8px 0 0;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#a0aec0;letter-spacing:1px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报【软件工程 &amp; 云原生】
+              </h1>
+              <p style="margin:8px 0 0 0;font-size:13px;color:#90cdf4;">2026-04-30 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- 正文区域 -->
+          <tr>
+            <td style="background-color:#f7fafc;padding:0 32px 32px 32px;border-radius:0 0 8px 8px;">
+
+              <!-- 渠道 1：Thoughtworks Technology Radar -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-top:28px;padding-bottom:8px;">
+                    <span style="display:inline-block;background-color:#e2e8f0;color:#4a5568;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:3px 10px;border-radius:12px;">
+                      Thoughtworks Technology Radar
+                    </span>
+                    <span style="font-size:11px;color:#718096;margin-left:8px;">2026-04-15 · Vol 34</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      AI 加速软件复杂性，Radar Vol 34 呼吁回归工程基础以应对"认知债务"
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      Thoughtworks 2026 年 4 月发布第 34 期 Technology Radar，核心警示"认知债务"（cognitive debt）危机：AI 辅助开发大量生成代码的同时，正在加剧人类与软件系统之间的理解鸿沟。报告强调应重新重视 zero trust 架构、DORA metrics 和可测试性等经过验证的工程基础实践来管理复杂度。此外，"context engineering"已从 AI 提示词优化技巧演变为现代 AI 系统的核心架构关切——将 context window 作为一个精心设计的信息界面，而非简单的输入框。
+                    </p>
+                    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                       style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:600;">
+                      → 阅读原文
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf"
+                       style="color:#2b6cb0;font-size:13px;text-decoration:none;">
+                      [PDF 全文]
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr><td style="border-top:1px solid #e2e8f0;margin-top:24px;padding-top:0;height:1px;font-size:0;">&nbsp;</td></tr>
+              </table>
+
+              <!-- 渠道 2：SRE Weekly -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-top:24px;padding-bottom:8px;">
+                    <span style="display:inline-block;background-color:#e2e8f0;color:#4a5568;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:3px 10px;border-radius:12px;">
+                      SRE Weekly
+                    </span>
+                    <span style="font-size:11px;color:#718096;margin-left:8px;">2026-04-12 · Issue #512</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      AI SRE 工具的话语陷阱：增强工程师能力 vs. 替代"低价值"人工
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      本期聚焦一项发人深省的市场调研：AI 编码助手被包装为"增强工程师能力的合作伙伴"，而 AI SRE 工具则被定位为"替代低价值重复工作的自动化手段"——这一叙事差异暴露了决策层对 incident response 工作价值的严重低估，同时也意味着 SRE 职业发展面临更大压力。此外本期还警示了"重试放大"（retry amplification）风险：系统各层次的独立重试逻辑在不知情的情况下可能叠加，将一个小故障的请求量放大数倍，这对高可用系统设计者尤其需要重视。
+                    </p>
+                    <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                       style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:600;">
+                      → 阅读原文
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr><td style="border-top:1px solid #e2e8f0;padding-top:0;height:1px;font-size:0;margin-top:24px;">&nbsp;</td></tr>
+              </table>
+
+              <!-- 渠道 3：ByteByteGo -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-top:24px;padding-bottom:8px;">
+                    <span style="display:inline-block;background-color:#e2e8f0;color:#4a5568;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:3px 10px;border-radius:12px;">
+                      ByteByteGo
+                    </span>
+                    <span style="font-size:11px;color:#718096;margin-left:8px;">2026-04-25 · EP212</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      EP212: Data Warehouse vs Data Lake vs Data Mesh — 云原生数据架构选型指南
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      ByteByteGo 最新一期深入对比三种主流数据架构模式：Data Warehouse 以结构化、高度优化的查询性能为核心，适合 BI 报表场景；Data Lake 以原始数据的低成本存储为特点，支持灵活的大数据分析与 ML 训练；Data Mesh 则将数据所有权去中心化，由各业务域团队独立管理自己的"数据产品"，更贴合现代微服务架构思路。对于云原生架构师而言，在多云或混合云环境下合理分层数据架构是系统设计的关键决策之一。
+                    </p>
+                    <a href="https://blog.bytebytego.com/p/ep212-data-warehouse-vs-data-lake"
+                       style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:600;">
+                      → 阅读原文
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr><td style="border-top:1px solid #e2e8f0;padding-top:0;height:1px;font-size:0;margin-top:24px;">&nbsp;</td></tr>
+              </table>
+
+              <!-- 渠道 4：TLDR Tech (DevOps) -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-top:24px;padding-bottom:8px;">
+                    <span style="display:inline-block;background-color:#e2e8f0;color:#4a5568;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:3px 10px;border-radius:12px;">
+                      TLDR Tech · DevOps
+                    </span>
+                    <span style="font-size:11px;color:#718096;margin-left:8px;">2026-04-01</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Kubernetes v1.36 安全加固发布预告 &amp; PagerDuty AI SRE Agent 正式亮相
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      TLDR DevOps 4 月 1 日双线聚焦：Kubernetes v1.36 于 4 月 22 日正式发布，带来重要安全加固——退役存在漏洞的 Ingress NGINX 项目、废弃 externalIPs 字段（CVE-2020-8554），并将 SELinux volume mounting 改进及 ServiceAccount token 外部签名升级为 stable 状态，同时扩展 Dynamic Resource Allocation 以支持 GPU 等可分区硬件。与此同时，PagerDuty 推出 AI SRE Agent，可自动完成 incident triage、生成上下文摘要、推荐或执行修复动作，显著降低告警疲劳并加速故障处置，并支持对历史 incident 进行持续学习以提升系统可靠性。
+                    </p>
+                    <a href="https://tldr.tech/devops/2026-04-01"
+                       style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:600;">
+                      → 阅读原文
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 跳过说明 -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-top:24px;">
+                    <p style="margin:0;font-size:12px;color:#a0aec0;font-style:italic;">
+                      * TechWorld with Nana（YouTube）：过去 7 天内未检索到可验证的新视频发布，已跳过。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- 页脚 -->
+          <tr>
+            <td style="padding:20px 32px;border-top:1px solid #e2e8f0;text-align:center;">
+              <p style="margin:0;font-size:11px;color:#a0aec0;line-height:1.6;">
+                软件技术日报 · 自动生成 by Daily News Bot<br />
+                覆盖渠道：Thoughtworks Radar · SRE Weekly · ByteByteGo · TLDR DevOps
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
