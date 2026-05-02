@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【AI 技术前沿】- 2026-05-02</title>
+</head>
+<body style="background:#ffffff; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; max-width:700px; margin:0 auto; padding:32px 24px; color:#1a1a1a; line-height:1.6;">
+
+  <!-- Header -->
+  <div style="border-bottom:3px solid #1a1a2e; padding-bottom:18px; margin-bottom:32px;">
+    <h1 style="font-size:24px; margin:0 0 6px 0; color:#1a1a2e; font-weight:700; letter-spacing:-0.3px;">软件技术日报【AI 技术前沿】</h1>
+    <p style="margin:0; font-size:13px; color:#777;">2026-05-02 &nbsp;·&nbsp; 精选 8 个渠道最新内容 &nbsp;·&nbsp; 技术术语保留英文原文</p>
+  </div>
+
+  <!-- 1. Anthropic -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">Anthropic Blog</p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">Introducing Claude Opus 4.7</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      Anthropic 于 4 月 16 日发布 <strong>Claude Opus 4.7</strong>，软件工程和复杂长流程编码任务能力显著提升，同时视觉模块增强，支持更高分辨率图像分析。该模型已在所有 Claude 产品、API、Amazon Bedrock、Google Cloud Vertex AI 及 Microsoft Foundry 上线，定价与 Opus 4.6 保持一致（输入 $5/M tokens，输出 $25/M tokens）。值得关注的是，Anthropic 同步推出了 <strong>Managed Agents</strong>——专为长周期 Agent 任务设计的托管服务，提供持久化 session 状态、沙箱工具访问和快速冷启动能力，标志着 Anthropic 向 agentic 基础设施层的深入延伸。
+    </p>
+    <a href="https://www.anthropic.com/news/claude-opus-4-7" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 阅读原文</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #ebebeb; margin:0 0 32px 0;">
+
+  <!-- 2. OpenAI -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">OpenAI Blog</p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">Introducing GPT-5.5</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      OpenAI 于 4 月 23 日发布 <strong>GPT-5.5</strong>，定位为"为真实工作与 Agent 驱动任务打造的新一类智能"，在代码编写与调试、在线研究、数据分析和跨工具协作方面显著优于前代。GPT-5.5 在提升智能水平的同时具备更高的 token 效率，已向 Plus 及以上用户开放，API 端同步可用。4 月 28 日，OpenAI 进一步宣布将模型、Codex 及 Managed Agents 全面接入 AWS 生态；4 月 30 日还公布了面向网络安全领域的 <strong>GPT-5.5-Cyber</strong> 扩展信任访问计划，为安全研究场景提供深度能力支持。
+    </p>
+    <a href="https://openai.com/index/introducing-gpt-5-5/" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 阅读原文</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #ebebeb; margin:0 0 32px 0;">
+
+  <!-- 3. Google DeepMind -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">Google DeepMind Blog</p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">Decoupled DiLoCo：弹性分布式大模型训练新架构</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      Google DeepMind 发布 <strong>Decoupled DiLoCo</strong>，一种支持跨全球数据中心以极低网络带宽进行大规模 LLM 训练的分布式架构，同时具备更强的硬件容错能力。该方法通过解耦各节点的梯度同步频率实现训练效率与通信成本的最优权衡，对于异构算力集群尤为实用。同期，DeepMind 发布了 <strong>Gemini 3 Flash</strong>——融合 Pro 级推理能力与 Flash 级低延迟的高速模型，已向开发者通过 Gemini API 和 AI Studio 开放，旨在覆盖对速度和成本更敏感的应用场景。
+    </p>
+    <a href="https://deepmind.google/blog/decoupled-diloco/" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 阅读原文</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #ebebeb; margin:0 0 32px 0;">
+
+  <!-- 4. Hugging Face -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">Hugging Face Blog</p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">AI and the Future of Cybersecurity: Why Openness Matters</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      Hugging Face 于 4 月 21 日发文探讨 AI 在网络安全领域的未来走向，核心论点是：<strong>AI 模型开发的透明度与开放性本身即是一种安全机制</strong>。文章以 <strong>Mythos</strong>（一款能够快速扫描并修补软件漏洞的前沿 AI 系统）和 <strong>Project Glasswing</strong> 为案例，论证开源 AI 使更广泛的安全研究社区能够快速识别和响应威胁，相较于封闭专有方案具有系统性安全优势，并呼吁 AI 安全领域拥抱开放协作范式。
+    </p>
+    <a href="https://huggingface.co/blog/cybersecurity-openness" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 阅读原文</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #ebebeb; margin:0 0 32px 0;">
+
+  <!-- 5. The Batch -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">The Batch · DeepLearning.AI</p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">Coding Agents 对软件工程的加速：一场不均衡的革命</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      Andrew Ng 在 4 月 24 日的 The Batch 中指出，<strong>Coding Agent</strong> 对不同类型软件任务的加速效果存在显著差异，AI 原生工程团队已以截然不同于传统团队的方式运作。本期深入分析了 AI 加速软件开发的结构性变化，并介绍了新工具 <strong>Context Hub</strong>——专为 coding agents 提供 API 文档上下文，帮助 agent 更精准地调用第三方服务接口，解决 agent 在工程落地中的"信息盲区"问题。
+    </p>
+    <a href="https://www.deeplearning.ai/the-batch/" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 阅读原文</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #ebebeb; margin:0 0 32px 0;">
+
+  <!-- 6. Andrej Karpathy -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">Andrej Karpathy · YouTube &nbsp;<span style="background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:10px; color:#555;">📹 视频</span></p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">From Vibe Coding to Agentic Engineering</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      Andrej Karpathy（Eureka Labs 创始人、OpenAI 联合创始人）在 Sequoia AI Ascent 2026 峰会上宣告：<strong>"Vibe Coding" 时代已结束，Agentic Engineering（Agent 工程化）是当下新范式</strong>。他将软件开发演进描述为 Software 1.0（显式手写代码）→ 2.0（神经网络训练）→ 3.0（Prompt 编程驱动 LLM），并指出 Agent 正作为工程实体系统性地重塑开发工作流。开发者的核心价值将从"写代码"转向"设计 agent 任务边界与审查 agent 输出质量"，这对软件工程师的职业演进具有重要启示。
+    </p>
+    <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 观看视频</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #ebebeb; margin:0 0 32px 0;">
+
+  <!-- 7. AI Explained -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">AI Explained · YouTube &nbsp;<span style="background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:10px; color:#555;">📹 视频</span></p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">Is AI Trending Up or Down in 2026?</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      本视频对 2026 年 AI 发展趋势进行批判性审视：AI 的实际能力是否真的在持续向上突破，还是存在炒作降温？视频结合近期主要模型发布和真实应用反馈，深入分析当前 AI 能力进展与公众期望之间的落差。视频提供了一个冷静、平衡的视角，尤其适合希望校准对 AI 现状与短期预期的技术从业者参考。
+    </p>
+    <a href="https://www.youtube.com/watch?v=BRr3pAPsQAk" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 观看视频</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #ebebeb; margin:0 0 32px 0;">
+
+  <!-- 8. Latent Space -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">Latent Space · 播客 &nbsp;<span style="background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:10px; color:#555;">🎧 播客</span></p>
+    <h2 style="font-size:18px; margin:0 0 10px 0; color:#1a1a2e; font-weight:600;">Shopify's AI Phase Transition: 2026 Usage Explosion</h2>
+    <p style="font-size:14px; line-height:1.75; color:#333; margin:0 0 12px 0;">
+      Latent Space 播客（4 月 22 日）邀请 <strong>Shopify CTO Mikhail Parakhin</strong> 深度披露公司 AI 化进程：Shopify 已实现接近全员 AI 工具覆盖，并构建了三大内部 AI 系统——<strong>Tangle</strong>（可复现 ML 实验框架）、<strong>Tangent</strong>（自动优化引擎）和 <strong>SimGym</strong>（用户行为仿真平台），以及面向低延迟检索的智能 catalog 系统。播客揭示了一个反直觉的洞察：AI 编码的真正瓶颈不在于代码生成，而在于<strong>代码审查、CI/CD 稳定性与部署管控</strong>；并披露了 Shopify 内部使用 Unlimited Opus-4.6 Token Budget 的大胆实验。
+    </p>
+    <a href="https://www.latent.space/p/shopify" style="font-size:13px; color:#0066cc; text-decoration:none; font-weight:500;">→ 收听播客</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="border-top:2px solid #ebebeb; margin-top:8px; padding-top:20px;">
+    <p style="font-size:12px; color:#aaa; margin:0; line-height:1.6;">
+      本日报由 AI Agent 自动整理生成 &nbsp;·&nbsp; 日期：2026-05-02 &nbsp;·&nbsp; 内容仅供参考，技术术语保留英文原文<br>
+      渠道覆盖：Anthropic · OpenAI · Google DeepMind · Hugging Face · The Batch · Andrej Karpathy · AI Explained · Latent Space
+    </p>
+  </div>
+
+</body>
+</html>
