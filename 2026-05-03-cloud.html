@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-03</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:0;">
+        <table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a202c;padding:28px 32px 22px;">
+              <p style="margin:0 0 4px;font-size:11px;color:#a0aec0;letter-spacing:1.5px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报<br><span style="color:#63b3ed;">【软件工程 &amp; 云原生】</span></h1>
+              <p style="margin:8px 0 0;font-size:13px;color:#718096;">2026年05月03日 &nbsp;·&nbsp; Kubernetes / 云原生架构 / SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:20px 32px 8px;">
+              <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">本期精选来自 Thoughtworks Radar、SRE Weekly、ByteByteGo、TechWorld with Nana 及 TLDR DevOps 的最新内容，聚焦 Kubernetes 迁移实战、SRE 工具演进、平台工程趋势与 AI 时代的工程基本功。</p>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 32px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ① Thoughtworks Technology Radar -->
+          <tr>
+            <td style="padding:24px 32px 8px;">
+              <p style="margin:0 0 6px;font-size:10px;font-weight:700;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Thoughtworks Technology Radar</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                AI 加速软件复杂性，Radar Vol.34 呼吁回归工程基本功以应对「认知债务」
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.8;">
+                Thoughtworks 于 2026 年 4 月发布第 34 卷 Technology Radar，核心主题是 AI 辅助开发所引发的「认知债务（Cognitive Debt）」——AI 大量生成代码，正在拉大工程师与系统之间的理解鸿沟。Radar 明确建议团队重拾 Zero Trust Architecture、DORA 指标和可测试性等经典工程实践，而非盲目追逐新技术。此外，本期还提出了「语义漂移（Semantic Diffusion）」风险，并关注 Context Engineering 技术以及如何衡量与 Coding Agent 的协作质量。
+              </p>
+              <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                 style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">
+                阅读原文 →
+              </a>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 32px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ② SRE Weekly -->
+          <tr>
+            <td style="padding:24px 32px 8px;">
+              <p style="margin:0 0 6px;font-size:10px;font-weight:700;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">SRE Weekly — Issue #512</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                AI SRE 工具的营销话术：为何被定位为「替代者」而非「增强者」？
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.8;">
+                Fred Hebert 在本期重点文章中指出，AI 编程助手普遍被定位为「增强工程师能力的伙伴」，而 AI SRE 工具却被定位为「替代 On-Call 工程师的低价值工作」，这一话术差异折射出决策层对 SRE 岗位价值的深层误解。本期还涵盖「微服务架构中 E2E 测试失效的根本原因」——问题不在于工具，而在于架构上的根本性不匹配；以及 LaunchDarkly 调查数据显示：AI 提升了构建和部署速度，但生产可靠性并未随之改善。
+              </p>
+              <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                 style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">
+                阅读原文 →
+              </a>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 32px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ③ ByteByteGo -->
+          <tr>
+            <td style="padding:24px 32px 8px;">
+              <p style="margin:0 0 6px;font-size:10px;font-weight:700;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">ByteByteGo</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                Reddit 如何将 PB 级 Kafka 集群从 EC2 零停机迁移到 Kubernetes
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.8;">
+                Reddit 工程团队完成了公司史上规模最大的基础设施迁移之一：将 500 余个 Broker、超过 1 PB 活跃数据的整个 Apache Kafka 集群从 Amazon EC2 迁移至 Kubernetes，全程零停机，且无需任何客户端应用改动连接方式。ByteByteGo 深度解析了此次迁移的架构设计与关键决策——核心在于将工作拆解为小而可逆的步骤，以「尊重系统约束」为原则渐进推进，为大规模有状态服务 Kubernetes 化提供了极具参考价值的范本。
+              </p>
+              <a href="https://blog.bytebytego.com/p/how-reddit-migrated-petabyte-scale"
+                 style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">
+                阅读原文 →
+              </a>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 32px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ④ TechWorld with Nana -->
+          <tr>
+            <td style="padding:24px 32px 8px;">
+              <p style="margin:0 0 6px;font-size:10px;font-weight:700;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">TechWorld with Nana &nbsp;·&nbsp; 📹 视频</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                📹 Complete DevOps Roadmap 2026 — Master these 4 Levels!
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.8;">
+                Nana Janashia 在 2026 版 DevOps 学习路线视频中，将完整路径拆分为四个递进层级：从 Linux 与网络基础、容器技术（Docker / Kubernetes）、CI/CD 流水线，到云原生架构与 GitOps 实践。视频特别强调，面对 AI 工具的冲击，DevOps 工程师更需要深厚的基础功——理解系统原理比仅会使用自动化工具更为重要。适合 2026 年希望系统构建云原生技能体系的工程师参考。
+              </p>
+              <a href="https://www.youtube.com/@TechWorldwithNana"
+                 style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">
+                前往频道 →
+              </a>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 32px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ⑤ TLDR DevOps -->
+          <tr>
+            <td style="padding:24px 32px 8px;">
+              <p style="margin:0 0 6px;font-size:10px;font-weight:700;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">TLDR DevOps — 2026-04-08</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                实战 Platform Engineering：Giant Swarm 零停机完成数百个 Kubernetes 集群迁移至 Cluster API
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.8;">
+                本期 TLDR DevOps 精选了多条 Kubernetes 重磅动态：Giant Swarm 详细记录了将数百个生产 Kubernetes 集群零停机迁移至 Cluster API 的全过程，为大规模集群管理提供了宝贵参考；Kubernetes v1.36 中，Per-verb per-resource kubelet API 授权正式 GA，有效收紧了长期粒度过粗的安全管控；Datadog 还发布了生产级 Ingress → Kubernetes Gateway API 迁移指南，时机恰逢 Ingress 功能进入维护期，具有极高的实操价值。
+              </p>
+              <a href="https://tldr.tech/devops/2026-04-08"
+                 style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">
+                阅读原文 →
+              </a>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 32px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:20px 32px 32px;">
+              <p style="margin:0;font-size:12px;color:#a0aec0;line-height:1.7;">
+                本日报由 Daily News Bot 自动生成 &nbsp;·&nbsp; 内容来源：Thoughtworks Radar / SRE Weekly / ByteByteGo / TechWorld with Nana / TLDR DevOps<br>
+                技术术语保留英文原文，摘要为中文编写。如有错漏，以原文为准。
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
