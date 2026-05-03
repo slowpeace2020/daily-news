@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-03</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#333333;">
+  <div style="max-width:700px;margin:0 auto;padding:24px 16px;">
+
+    <!-- Header -->
+    <div style="border-bottom:3px solid #1a1a2e;padding-bottom:16px;margin-bottom:28px;">
+      <h1 style="margin:0;font-size:24px;font-weight:700;color:#1a1a2e;">软件技术日报</h1>
+      <p style="margin:6px 0 0;font-size:14px;color:#666666;">后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-05-03</p>
+    </div>
+
+    <!-- Item 1: High Scalability -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">HIGH SCALABILITY</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://highscalability.com/untitled-2/" style="color:#0066cc;text-decoration:none;">Kafka 101: What Is Apache Kafka and How Does It Work?</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        Apache Kafka Committer Stanislav Kozlovski 在 High Scalability 发表深度入门文章，从架构视角系统梳理 Producer、Consumer、Broker、Topic、Partition 等核心概念，并回顾了 Kafka 自 2011 年在 LinkedIn 内部诞生、进而成为最受欢迎的 Apache 开源项目之一的历程。文章重点阐述了 Kafka 在大规模事件流（event streaming）场景下的设计权衡，是系统理解分布式消息系统的优质参考资料。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 2: Martin Fowler Blog -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">MARTIN FOWLER BLOG</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://martinfowler.com/fragments/2026-04-29.html" style="color:#0066cc;text-decoration:none;">Fragments: April 29 — AI Coding in Practice (Chris Parsons Guide Update)</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        Martin Fowler 博客 4 月 29 日更新介绍了 Chris Parsons 最新修订的「用 AI 编程」实践指南，提供了足够具体的操作细节，让读者可直接借鉴复用。相关背景数据印证了这一趋势：Thoughtworks 第 34 期 Technology Radar（4 月 21 日发布）显示，92.6% 的开发者已在日常工作中使用 AI 助手，平均每周节省约 4 小时，专业软件工程师的角色正从「创建导向」向「验证导向」（supervisory engineering work）转变。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 3: Netflix Tech Blog -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">NETFLIX TECH BLOG</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://netflixtechblog.com/stop-answering-the-same-question-twice-interval-aware-caching-for-druid-at-netflix-scale-22fadc9b840e" style="color:#0066cc;text-decoration:none;">Stop Answering the Same Question Twice: Interval-Aware Caching for Druid at Netflix Scale</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        Netflix 在 Apache Druid 前构建了一层「时间区间感知缓存」（Interval-Aware Caching），以应对每秒 1500 万事件入库、超 10 万亿行数据规模下的重复查询压力。系统拦截 Druid Router 的查询请求，解析查询结构后将结果按时间粒度写入 Cassandra 缓存，并利用指数级 TTL 策略确保大多数历史数据区间直接命中缓存。Netflix 表示未来希望将该方案推动成为 Druid 的内置功能，惠及更广泛的开源社区。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 4: Python Weekly -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">PYTHON WEEKLY</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color:#0066cc;text-decoration:none;">Python Weekly Issue 743 (April 30, 2026)</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        本期亮点包括：「Policy Pattern」实践文章，展示如何将臃肿的 if/elif 条件链拆解为可组合的小型规则组件，显著提升代码可扩展性与可测试性；sub-500ms 语音 Agent 从零搭建教程，深入探讨 turn-taking 挑战；以及 Python 标准库 logging、structlog 与 Loguru 的真实 benchmark 对比及 OpenTelemetry 集成方案分析。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 5: Golang Weekly -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">GOLANG WEEKLY</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://golangweekly.com/issues/598" style="color:#0066cc;text-decoration:none;">Golang Weekly Issue 598 (April 24, 2026) — TinyGo 0.41: Go 1.26 支持 + ESP32 无线网络</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        本期重点报道 TinyGo 0.41 正式发布，这是面向嵌入式设备的 Go 编译器的重大里程碑版本。新版本首次引入 Go 1.26 支持，并实现对 ESP32-C3（RISC-V 单核 32-bit）和 ESP32-S3（Xtensa LX7 双核）芯片的无线网络支持，开发者现在可以直接在 ESP32 开发板上运行 Web 服务器或 MQTT 消息客户端——真正实现用同一门语言打通云端服务与嵌入式 IoT 设备的完整开发栈。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 6: Arjan Codes -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">ARJAN CODES &nbsp;📹 视频</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://www.youtube.com/watch?v=5VN-3rIUPZ8" style="color:#0066cc;text-decoration:none;">What Most Python Developers Miss About Generators</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        📹 视频 &nbsp;Arjan Codes 深入讲解 Python Generators（生成器）中被大多数开发者忽视的进阶特性。视频揭示了 Generator 不仅仅是 lazy evaluation 工具，还可作为协程（coroutine）和双向通信通道使用，并展示了在内存敏感的数据 pipeline 场景下如何充分发挥生成器潜力——帮助开发者写出更 Pythonic 且高效的代码。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 7: Fireship -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">FIRESHIP &nbsp;📹 视频</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="color:#0066cc;text-decoration:none;">Claude just got another superpower...</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        📹 视频 &nbsp;Fireship 以标志性的快节奏风格解析 Claude AI 获得的最新能力更新，探讨新特性对开发者工作流的实际影响。延续频道对 AI 编程工具的持续追踪，视频围绕 AI Agent 与开发者工具链深度融合这一趋势展开分析，对关注 AI 辅助后端开发动态的工程师颇具参考价值。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 8: Go Blog -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">THE GO BLOG</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://go.dev/blog/allocation-optimizations" style="color:#0066cc;text-decoration:none;">Allocating on the Stack — Go 1.26 的堆分配优化</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        Go 核心工程师 Keith Randall 撰文详解 Go 1.26 在栈分配（stack allocation）上的系列改进，通过在编译器层面减少不必要的堆分配（heap allocation）来降低 GC 压力、提升运行时性能。文章深入介绍了 escape analysis 的优化方向及相关 benchmark 数据，对于性能敏感的 Go 后端服务开发者而言是不可错过的技术细节。
+      </p>
+    </div>
+    <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+    <!-- Item 9: Brendan Gregg Blog -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 5px;font-size:11px;font-weight:700;text-transform:uppercase;color:#888888;letter-spacing:0.8px;">BRENDAN GREGG BLOG</p>
+      <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.4;color:#1a1a2e;">
+        <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color:#0066cc;text-decoration:none;">Why I Joined OpenAI</a>
+      </h2>
+      <p style="margin:0;font-size:14px;line-height:1.75;color:#444444;">
+        Linux 性能工程领域权威 Brendan Gregg 宣布加入 OpenAI，专注于 AI 数据中心的性能工程工作。他在文中坦言，AI 数据中心的算力成本挑战是驱动他做出这一决定的核心原因——AI 推理的高昂计算开销为性能工程带来了全新的技术命题，而他的初始任务是专注于 ChatGPT 的性能优化工作。
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div style="border-top:2px solid #1a1a2e;margin-top:8px;padding-top:18px;text-align:center;">
+      <p style="margin:0;font-size:12px;color:#999999;">软件技术日报 &nbsp;·&nbsp; 后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-05-03</p>
+      <p style="margin:6px 0 0;font-size:12px;color:#bbbbbb;">本邮件由 AI Agent 自动整理生成，内容仅供参考</p>
+    </div>
+
+  </div>
+</body>
+</html>
