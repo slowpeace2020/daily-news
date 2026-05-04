@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-04</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; color: #333333; max-width: 680px; margin: 0 auto; padding: 24px;">
+
+  <div style="background-color: #1a1a2e; color: #ffffff; padding: 24px 28px; border-radius: 8px; margin-bottom: 28px;">
+    <h1 style="margin: 0 0 6px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.5px;">软件技术日报</h1>
+    <p style="margin: 0; font-size: 14px; color: #a0aec0;">【软件工程 &amp; 云原生】 · 2026-05-04</p>
+  </div>
+
+  <!-- Thoughtworks Technology Radar -->
+  <div style="margin-bottom: 28px;">
+    <div style="display: inline-block; background-color: #ebf4ff; color: #1a56db; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">Thoughtworks Technology Radar</div>
+    <h2 style="margin: 0 0 10px 0; font-size: 17px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #1a56db; text-decoration: none;">AI 加速软件复杂性，Technology Radar Vol.34 呼吁回归工程基础以应对认知债务</a>
+    </h2>
+    <p style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.7; color: #4a5568;">
+      Thoughtworks 于 2026 年 4 月发布第 34 卷 Technology Radar，核心主题是 <strong>Cognitive Debt（认知债务）</strong>——随着 AI 辅助开发生成越来越多的代码，工程师与系统之间的理解鸿沟不断扩大。报告指出，技术行业正从无休止的 AI 实验转向追求可重复性与稳定性，并强调 DORA Metrics、Zero Trust Architecture、可测试性等工程基础的回归。此版本还警告开发者工具市场泛滥（大量单人维护项目）带来的技术评估困难，以及术语语义漂移（Semantic Diffusion）问题。
+    </p>
+    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #1a56db; font-size: 14px; text-decoration: underline;">阅读原文 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;">
+
+  <!-- SRE Weekly -->
+  <div style="margin-bottom: 28px;">
+    <div style="display: inline-block; background-color: #f0fff4; color: #276749; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">SRE Weekly</div>
+    <h2 style="margin: 0 0 10px 0; font-size: 17px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+      <a href="https://sreweekly.com/sre-weekly-issue-512/" style="color: #1a56db; text-decoration: none;">Issue #512：Netflix 容器挂载风暴、Retry 放大陷阱与 AI 在 On-Call 中的真正价值</a>
+    </h2>
+    <p style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.7; color: #4a5568;">
+      本期头条聚焦 Netflix 的容器扩展实践——<strong>Mount Mayhem at Netflix</strong>，揭示运行 100 个容器时需处理超过 20,000 次挂载，以及由此引发的 NUMA（Non-Uniform Memory Access）性能问题，提醒 SRE 工程师需关注整个技术栈的每一层。此外，期刊深入分析了 <strong>Retry Volume Magnification</strong>（重试量放大）问题：多层库在不知情的情况下各自执行重试，叠加后可能引发流量风暴。对于 AI 在 SRE 中的角色，本期观点鲜明：最大价值不是自主修复，而是在 On-Call 时为工程师快速提供故障上下文。
+    </p>
+    <a href="https://sreweekly.com/sre-weekly-issue-512/" style="color: #1a56db; font-size: 14px; text-decoration: underline;">阅读原文 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;">
+
+  <!-- ByteByteGo -->
+  <div style="margin-bottom: 28px;">
+    <div style="display: inline-block; background-color: #fffbeb; color: #92400e; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">ByteByteGo</div>
+    <h2 style="margin: 0 0 10px 0; font-size: 17px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+      <a href="https://blog.bytebytego.com/p/a-beginners-guide-to-kubernetes" style="color: #1a56db; text-decoration: none;">A Beginner's Guide to Kubernetes：将 Kubernetes 理解为一个"承诺体系"</a>
+    </h2>
+    <p style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.7; color: #4a5568;">
+      ByteByteGo 本周发布 Kubernetes 入门指南，以全新视角将 Kubernetes 定义为一个 <strong>System of Promises（承诺体系）</strong>——每个组件负责履行其中一项承诺：Scheduler 保证 Pod 被调度，kubelet 保证容器持续运行，kube-proxy 保证网络流量被正确路由。这种心智模型有助于开发者直觉性地理解各组件的职责边界与故障排查思路。文章还梳理了 Kubernetes 的适用场景与过度设计的边界，是近期最具工程洞见的 Kubernetes 科普内容之一。
+    </p>
+    <a href="https://blog.bytebytego.com/p/a-beginners-guide-to-kubernetes" style="color: #1a56db; font-size: 14px; text-decoration: underline;">阅读原文 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;">
+
+  <!-- TLDR DevOps -->
+  <div style="margin-bottom: 28px;">
+    <div style="display: inline-block; background-color: #faf5ff; color: #6b21a8; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">TLDR Tech / DevOps</div>
+    <h2 style="margin: 0 0 10px 0; font-size: 17px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+      <a href="https://tldr.tech/devops/2026-04-10" style="color: #1a56db; text-decoration: none;">Ingress NGINX 正式停止维护，迁移至 Kubernetes Gateway API 已刻不容缓</a>
+    </h2>
+    <p style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.7; color: #4a5568;">
+      Ingress NGINX 于 2026 年 3 月正式 End-of-Life，CVE-2026-24512 和 CVE-2026-3288 等高危漏洞已无官方修复支持，大量生产集群面临紧迫迁移压力。TLDR DevOps 推荐的迁移指南覆盖控制器选型、Baseline 性能基准记录、新旧 Controller 并行部署策略及 DNS 切换流程，帮助团队安全过渡到 <strong>Kubernetes Gateway API</strong>。SIG Network 同步发布迁移工具 <strong>Ingress2Gateway 1.0</strong>，可自动将现有 Ingress 资源转换为 Gateway API 配置，大幅降低迁移成本。
+    </p>
+    <a href="https://tldr.tech/devops/2026-04-10" style="color: #1a56db; font-size: 14px; text-decoration: underline;">阅读原文 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;">
+
+  <p style="font-size: 12px; color: #a0aec0; text-align: center; margin: 0;">
+    本邮件由 Daily News Bot 自动生成 · 2026-05-04<br>
+    TechWorld with Nana 本周暂无新视频发布，已跳过。
+  </p>
+
+</body>
+</html>
