@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【AI 技术前沿】- 2026-05-04</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#222222;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f6f8;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;max-width:640px;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:36px 40px 28px 40px;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#a0aec0;letter-spacing:2px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0 0 8px 0;font-size:26px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报<br>【AI 技术前沿】</h1>
+              <p style="margin:0;font-size:13px;color:#90cdf4;">2026年05月04日 &nbsp;|&nbsp; 过去 7 天精选</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0;font-size:14px;color:#555555;line-height:1.7;">
+                本期收录来自 Anthropic、OpenAI、Google DeepMind、Hugging Face、DeepLearning.AI、Andrej Karpathy、AI Explained、Latent Space、TWIML 等渠道的最新动态，聚焦大模型进展、AI 工程实践与前沿研究。
+              </p>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 1: Anthropic ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Anthropic Blog</p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                Claude Managed Agents 现已支持跨会话持久记忆（公测）
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                Anthropic 于 4 月 9 日正式发布 Claude Managed Agents，将 Agent 的沙箱、状态管理与编排能力托管于 Anthropic 云端，开发者只需定义工具和约束，无需自建基础设施。4 月 23 日进一步宣布为 Managed Agents 添加跨会话<strong>持久记忆（Persistent Memory）</strong>公测功能，Agent 可在多轮任务间保留上下文学习成果，且开发者对记忆内容拥有完全控制权。Notion、Rakuten、Asana 等头部企业已率先接入，定价为模型用量费用 + $0.08/Agent 运行小时。
+              </p>
+              <a href="https://www.anthropic.com/news" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 阅读原文 (anthropic.com/news)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 2: OpenAI ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">OpenAI Blog</p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                GPT-5.5-Cyber 发布：与 Claude Mythos Preview 网络安全能力旗鼓相当
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                OpenAI 于 4 月 30 日前后发布 <strong>GPT-5.5-Cyber</strong>，专为网络安全防御场景打造。英国 AI 安全研究所（AISI）测试显示，GPT-5.5-Cyber 是继 Anthropic Claude Mythos Preview 之后，第二个能完整解决多阶段企业级攻击仿真任务的模型，两者在网络攻防能力上基本持平。OpenAI 计划将该模型更广泛地开放给政府、关键基础设施运营商及安全厂商，相比 Anthropic 仅向 50 个机构有限授权 Mythos，OpenAI 采取了更开放的分发策略。
+              </p>
+              <a href="https://openai.com/news/" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 阅读原文 (openai.com/news)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 3: Google DeepMind ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Google DeepMind Blog</p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                AI Co-Clinician：DeepMind 探索 AI 辅助医疗新范式
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                Google DeepMind 于 4 月 30 日发布 <strong>AI co-clinician</strong> 研究报告，探索 AI 如何作为"临床协同者"放大医生的专业判断力，而非替代医生决策。该研究着眼于将 AI 整合进诊断、影像分析与治疗方案建议等临床工作流，旨在提升医疗质量并降低误诊风险。DeepMind 同期还公布了 <strong>Gemini Robotics ER 1.6</strong> 升级版（约 2 周前发布），该模型让机器人以前所未有的精度理解和交互周围环境，推动具身智能（Embodied AI）快速演进。
+              </p>
+              <a href="https://deepmind.google/blog/ai-co-clinician/" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 阅读原文 (deepmind.google/blog)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 4: Hugging Face ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Hugging Face Blog</p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                DeepSeek-V4：百万 Token 上下文，真正可用于 Agent 的长文本模型
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                4 月 24 日，Hugging Face 博客深度解析 <strong>DeepSeek-V4</strong> 的两个 MoE（Mixture of Experts）检查点，其最大亮点是 <strong>1M token 上下文窗口</strong>，被认为是目前真正"Agent 可用"的超长上下文方案。文章详细讨论了在如此长的上下文下保持注意力质量的技术挑战，以及 DeepSeek-V4 在代码生成、多文档理解等 Agent 场景中的实测表现，标志着开源长上下文模型进入新阶段。
+              </p>
+              <a href="https://huggingface.co/blog/deepseekv4" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 阅读原文 (huggingface.co/blog/deepseekv4)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 5: The Batch ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">The Batch · DeepLearning.AI</p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                编码 Agent 正在加速分化软件工作：哪些任务先被自动化？
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                DeepLearning.AI 最新一期《The Batch》（4 月 10 日）聚焦 <strong>Coding Agents</strong> 对不同类型软件工作的差异化加速效应——可验证的输出（测试、构建）自动化速度最快，而需要跨团队协调的任务进展较慢。通讯还介绍了新工具 <strong>Context Hub</strong>，为编码 Agent 自动注入所需的 API 文档，大幅减少因 API 知识缺失导致的代码错误。Andrew Ng 在专栏中亦指出：2026 年的 AI 提示方式已与 2022 年 ChatGPT 问世时大相径庭，工程师需持续更新与 AI 协作的心智模型。
+              </p>
+              <a href="https://www.deeplearning.ai/the-batch/" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 阅读原文 (deeplearning.ai/the-batch)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 6: Andrej Karpathy YouTube ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Andrej Karpathy · YouTube &nbsp;<span style="background:#e53e3e;color:#fff;border-radius:4px;padding:1px 6px;font-size:10px;vertical-align:middle;">📹 视频</span></p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                From Vibe Coding to Agentic Engineering — Sequoia AI Ascent 2026（约 4 月 29 日）
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                Karpathy 在 Sequoia AI Ascent 2026 大会上提出了贯穿全场的核心论点：<strong>Vibe Coding 只是提升了开发者的能力下限，而 Agentic Engineering 才是提升上限的关键</strong>。他将软件发展划分为三个阶段——Software 1.0（人类写代码）、2.0（神经网络训练）、3.0（Prompt 驱动、LLM 解释执行），并指出 2025 年 12 月是 Agentic Coding 工具从"有帮助但混乱"到"持续产出高质量代码"的历史性拐点。他强调，<strong>可验证性（Verifiability）</strong>是 AI 自动化速度的决定因素——凡是输出可被自动验证的任务（数学、代码），AI 接管速度最快。
+              </p>
+              <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 观看视频 (youtube.com)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 7: AI Explained YouTube ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">AI Explained · YouTube &nbsp;<span style="background:#e53e3e;color:#fff;border-radius:4px;padding:1px 6px;font-size:10px;vertical-align:middle;">📹 视频</span></p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                Claude Mythos：Anthropic 拒绝公开发布的 AI——及其背后的意义（4 月下旬）
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                AI Explained 频道近期发布多期视频深度解读 <strong>Claude Mythos Preview</strong> 事件：这是 Anthropic 通过红队专属平台 red.anthropic.com 发布的网络安全超级能力模型，能自主发现数千个 zero-day 漏洞，却未对外公开发布，仅授权 50 家机构有限访问。视频分析了 Anthropic 此举背后的安全伦理考量、Mythos 与 GPT-5.5-Cyber 的能力对比（AISI 测试显示两者旗鼓相当），以及高能力网络安全 AI 的全球治理挑战，引发行业对"能力超前于对齐"这一议题的广泛讨论。
+              </p>
+              <a href="https://www.youtube.com/watch?v=19mjFvx1JNQ" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 观看视频 (youtube.com)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 8: Latent Space Podcast ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Latent Space Podcast &nbsp;<span style="background:#805ad5;color:#fff;border-radius:4px;padding:1px 6px;font-size:10px;vertical-align:middle;">🎧 播客</span></p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                Shopify 的 AI 相变：2026 年用量爆炸式增长与无限 Token 预算实践（4 月 22 日）
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                本期 Latent Space 专访 Shopify CTO <strong>Mikhail Parakhin</strong>，首次披露 Shopify 的 AI 采用独家数据：公司已实现近 100% 的工程师 AI 工具采用率，内部构建了 <strong>Tangle</strong>（ML 实验平台）、<strong>Tangent</strong>（自动研究）、<strong>SimGym</strong>（客户行为仿真）等专属系统。Parakhin 分享了 Shopify 如何为 Claude Opus-4.6 设置无限 Token 预算以最大化 Agent 质量，以及在生产环境中大规模运行 Agentic 工作流的工程经验，是目前最真实的企业级 AI 落地案例之一。
+              </p>
+              <a href="https://www.latent.space/p/shopify" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 收听播客 (latent.space/p/shopify)</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e8ecf0;margin:0;"></td></tr>
+
+          <!-- ===== Section 9: TWIML AI Podcast ===== -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">TWIML AI Podcast &nbsp;<span style="background:#805ad5;color:#fff;border-radius:4px;padding:1px 6px;font-size:10px;vertical-align:middle;">🎧 播客</span></p>
+              <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                生产级 Diffusion LLM 的竞速：Mercury 2 与推理速度革命（Ep.764）
+              </h2>
+              <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                TWIML AI Podcast 第 764 期专访斯坦福大学教授、Inception Labs CEO <strong>Stefano Ermon</strong>，深入探讨将扩散模型（Diffusion Models）从图像领域迁移到文本与代码生成的技术路径。Ermon 介绍了商业级 Diffusion LLM <strong>Mercury 2</strong> 的架构创新：通过并行生成多个 token，推理速度比同规模的自回归前沿模型快 <strong>5-10 倍</strong>，为语音交互和快速 Agentic 循环等延迟敏感场景打开了新的可能性，预示着 LLM 架构多元化时代的到来。
+              </p>
+              <a href="https://twimlai.com/podcast/twimlai/race-production-grade-diffusion-llms" style="display:inline-block;font-size:13px;color:#3182ce;text-decoration:none;border-bottom:1px solid #bee3f8;padding-bottom:1px;">→ 收听播客 (twimlai.com)</a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f7fafc;padding:24px 40px;border-top:1px solid #e8ecf0;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#718096;line-height:1.6;">
+                本邮件由 <strong>Daily News Bot</strong> 自动整理生成 · 2026-05-04
+              </p>
+              <p style="margin:0;font-size:11px;color:#a0aec0;">
+                内容来源：Anthropic · OpenAI · Google DeepMind · Hugging Face · DeepLearning.AI · YouTube · Latent Space · TWIML AI Podcast<br>
+                摘要均为中文撰写，技术术语保留英文原文。Yannic Kilcher 和 Two Minute Papers 本期未发现过去 7 天新内容，已跳过。
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
