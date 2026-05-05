@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-05</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a2332;padding:28px 32px;border-radius:8px 8px 0 0;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#8fa8c8;letter-spacing:1px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报【软件工程 &amp; 云原生】
+              </h1>
+              <p style="margin:8px 0 0 0;font-size:14px;color:#a8bfd4;">2026-05-05 &nbsp;|&nbsp; Kubernetes · 云原生 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="background-color:#ffffff;padding:0 32px;border:1px solid #e8edf2;border-top:0;border-radius:0 0 8px 8px;">
+
+              <!-- Item 1: Thoughtworks Technology Radar -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 20px 0;">
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#5a7fa8;text-transform:uppercase;letter-spacing:1px;">
+                      Thoughtworks Technology Radar
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                      Technology Radar Vol.34：AI 加速软件复杂性，呼吁回归工程基础实践以应对认知债务
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.7;color:#444444;">
+                      Thoughtworks 于 2026 年 4 月发布 Technology Radar Vol.34，核心主题是 AI 辅助开发带来的"cognitive debt（认知债务）"问题——AI 生成大量代码的同时，拉大了人类与软件系统之间的认知距离。报告呼吁回归 zero trust 架构、DORA metrics 和 testability 等工程基础实践来管理复杂性。在 Kubernetes 生态方面，报告推荐将 Apache APISIX 用作 Kubernetes gateway，以替代即将退出的 Nginx Ingress Controller，并介绍了 OptScale 作为轻量级 Kubernetes FinOps 分析工具，提供比企业级方案更高的自主控制权。
+                    </p>
+                    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                       style="display:inline-block;font-size:13px;font-weight:600;color:#1a6fc4;text-decoration:none;border-bottom:1px solid #1a6fc4;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8edf2;margin:0;">
+
+              <!-- Item 2: SRE Weekly -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 20px 0;">
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#5a7fa8;text-transform:uppercase;letter-spacing:1px;">
+                      SRE Weekly — Issue #512 &nbsp;·&nbsp; 2026-04-12
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                      AI 编码助手 vs. AI SRE 工具：市场叙事的根本分歧
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.7;color:#444444;">
+                      Fred Hebert 在本期文章中分析了 AI 工具营销方式的深刻差异：AI 编码助手被定位为"增强工程师能力"的协作伙伴，而 AI SRE 工具则被宣传为"替代低价值重复性工作"的方案，揭示了行业对两类岗位价值认知的不同。本期另一亮点是关于微服务架构中端到端测试（end-to-end testing）失效根因的深度分析：问题并非工具不够好，而是微服务架构与运维模式之间存在根本性的结构错配，测试边界模糊导致覆盖难度指数级上升。
+                    </p>
+                    <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                       style="display:inline-block;font-size:13px;font-weight:600;color:#1a6fc4;text-decoration:none;border-bottom:1px solid #1a6fc4;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8edf2;margin:0;">
+
+              <!-- Item 3: ByteByteGo -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 20px 0;">
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#5a7fa8;text-transform:uppercase;letter-spacing:1px;">
+                      ByteByteGo &nbsp;·&nbsp; 2026-04-30
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                      A Beginner's Guide to Kubernetes：将 K8s 理解为一个"承诺系统"
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.7;color:#444444;">
+                      ByteByteGo 最新文章以全新视角解读 Kubernetes——将其类比为一个"system of promises（承诺系统）"，每个组件都是一个在循环中履行特定承诺的小程序，例如 Scheduler 承诺将 Pod 调度到合适节点，kubelet 承诺保持容器按期望状态运行。文章系统梳理了 Control Plane（API Server、etcd、Controller Manager、Scheduler）与 Worker Node（kubelet、kube-proxy、container runtime）的职责分工，以及 Pod、Service、Deployment 等核心对象的工作机制，适合希望构建系统性 K8s 知识框架的工程师阅读。
+                    </p>
+                    <a href="https://blog.bytebytego.com/p/a-beginners-guide-to-kubernetes"
+                       style="display:inline-block;font-size:13px;font-weight:600;color:#1a6fc4;text-decoration:none;border-bottom:1px solid #1a6fc4;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8edf2;margin:0;">
+
+              <!-- Item 4: TechWorld with Nana -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 20px 0;">
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#5a7fa8;text-transform:uppercase;letter-spacing:1px;">
+                      📹 视频 &nbsp;·&nbsp; TechWorld with Nana
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                      DevOps Bootcamp 系列：Command Line Interface (CLI) 入门实战（第 2.5 节）
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.7;color:#444444;">
+                      Nana Janashia 在其 DevOps Bootcamp 系列中更新了 CLI 基础模块，面向 DevOps 工程师从零入门命令行操作——这是掌握 Kubernetes、Docker、CI/CD 等工具的必备前提技能。该系列完整覆盖 DevOps 工程师日常工作所需的核心工具链，包括 Kubernetes、Docker、Terraform、Ansible、Prometheus 监控和 GitOps 实践，是系统化学习云原生 DevOps 技能栈的高质量免费资源。
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=2ePDfWf1b1Q"
+                       style="display:inline-block;font-size:13px;font-weight:600;color:#1a6fc4;text-decoration:none;border-bottom:1px solid #1a6fc4;padding-bottom:1px;">
+                      观看视频 →
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.youtube.com/channel/UCdngmbVKX1Tgre699-XLlUA"
+                       style="display:inline-block;font-size:13px;font-weight:600;color:#1a6fc4;text-decoration:none;border-bottom:1px solid #1a6fc4;padding-bottom:1px;">
+                      频道主页 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8edf2;margin:0;">
+
+              <!-- Item 5: TLDR DevOps -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 20px 0;">
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#5a7fa8;text-transform:uppercase;letter-spacing:1px;">
+                      TLDR DevOps &nbsp;·&nbsp; 2026-04-01
+                    </p>
+                    <h2 style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                      PagerDuty SRE Agent 上线 + Kubernetes v1.36 安全重大变更预告
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.7;color:#444444;">
+                      本期 TLDR DevOps 聚焦两大重磅动态：① PagerDuty 推出 AI 驱动的 SRE Agent，能够自动化故障告警分类（triage）、汇总事件上下文、推荐或执行修复操作，有效降低 on-call 工程师的 alert fatigue，并通过持续分析历史事件提升系统 reliability。② Kubernetes v1.36（预计 2026 年 4 月 22 日发布）将正式退役 Ingress NGINX 项目并废弃 Service spec 中的 externalIPs 字段（CVE-2020-8554），同时将 SELinux volume 挂载改进和 ServiceAccount token 外部签名等特性晋升为 stable，并扩展 Dynamic Resource Allocation 以支持 GPU 等可分区设备。
+                    </p>
+                    <a href="https://tldr.tech/devops/2026-04-01"
+                       style="display:inline-block;font-size:13px;font-weight:600;color:#1a6fc4;text-decoration:none;border-bottom:1px solid #1a6fc4;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Footer -->
+              <hr style="border:none;border-top:1px solid #e8edf2;margin:0;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 0 28px 0;text-align:center;">
+                    <p style="margin:0;font-size:12px;color:#999999;line-height:1.6;">
+                      软件技术日报 &nbsp;·&nbsp; 自动聚合整理 &nbsp;·&nbsp; 仅供参考<br>
+                      生成时间：2026-05-05 &nbsp;|&nbsp; 涵盖渠道：Thoughtworks Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR DevOps
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
