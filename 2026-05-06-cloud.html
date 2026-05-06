@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-06</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#1a1a1a;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a365d 0%,#2b6cb0 100%);padding:32px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#bee3f8;font-weight:600;">DAILY DIGEST</p>
+              <h1 style="margin:0 0 8px 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <h2 style="margin:0 0 16px 0;font-size:16px;font-weight:400;color:#bee3f8;">软件工程 &amp; 云原生专栏</h2>
+              <p style="margin:0;font-size:13px;color:#90cdf4;">📅 2026-05-06 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">本期汇聚来自 Thoughtworks、SRE Weekly、ByteByteGo、TechWorld with Nana 及 TLDR DevOps 的最新动态，聚焦 Kubernetes、云原生架构与 SRE 实践。</p>
+            </td>
+          </tr>
+
+          <!-- ───────────── 1. Thoughtworks ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #2b6cb0;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#2b6cb0;">Thoughtworks Technology Radar</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      AI 加速软件复杂度，Technology Radar Vol.34 呼吁回归工程基本功以对抗"认知债务"
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，核心警示：AI 辅助开发正以前所未有的速度生成代码，但同时在人与软件系统之间制造日益扩大的认知鸿沟，形成所谓的 <strong>cognitive debt（认知债务）</strong>。
+                      在云原生领域，Radar 指出 Kubernetes 已成为绝大多数客户的容器编排默认选择，并重点推荐 <strong>CloudNativePG</strong>（一款管理 Kubernetes 上高可用 PostgreSQL 集群的 Operator）和 <strong>Apache APISIX</strong> 作为替代传统 Nginx Ingress 的云原生网关方案。
+                      此外，Radar 强调技术术语在行业内出现"语义扩散"现象，呼吁工程团队在评估新工具时应格外关注其长期可持续性，而非追逐短暂热点。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                         style="display:inline-block;background-color:#2b6cb0;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:24px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ───────────── 2. SRE Weekly ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #38a169;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#38a169;">SRE Weekly · Issue #512</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      AI 编码助手是"合作者"，AI SRE 工具是"替代者"——这一差异揭示了行业对 Incident Response 的真实定位
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      本期重点文章来自 Fred Hebert 的调研：对比 AI 编码助手与 AI SRE 工具的市场营销话术后发现，前者被定位为"增强工程师能力的伙伴"，而后者则被定位为"替代低价值重复性工作的机器"——这一鲜明反差折射出决策者对 incident response 角色的深层轻视。
+                      此外，本期还探讨了 <strong>retry storm</strong> 问题：当系统各层（库、框架、服务）各自独立进行重试时，往往在不知情的情况下指数级放大了重试流量，SRE 必须对整个调用栈有全局视角。
+                      结语引用的观点同样值得关注：<em>"事故是领导力的时刻——你如何应对，塑造了整个团队对工程文化的认知。"</em>
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                         style="display:inline-block;background-color:#38a169;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:24px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ───────────── 3. ByteByteGo ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #d69e2e;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#b7791f;">ByteByteGo · 2026-05-04</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Connecting LLMs to the Real World：Tool Use、Function Calling 与 MCP 全解析
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      ByteByteGo 最新一期深入讲解 LLM 从孤立文本生成器演变为真正"能干活"的助手的三阶段演进：<strong>Tool Use</strong>（工具调用）→ <strong>Function Calling</strong>（函数调用）→ <strong>Model Context Protocol（MCP）</strong>，每一步都让模型具备更强的外部系统交互能力。
+                      这与云原生场景高度相关：越来越多的团队正将 LLM Agent 部署在 Kubernetes 集群中，通过 MCP 标准化协议与内部 API、数据库及监控系统对接，推动 AI 驱动的自动化运维落地。
+                      文章以直观示意图拆解了各层协议的交互机制，适合希望理解 AI-native 基础设施演进方向的工程师阅读。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://blog.bytebytego.com/p/connecting-llms-to-the-real-world"
+                         style="display:inline-block;background-color:#d69e2e;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:24px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ───────────── 4. TechWorld with Nana ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #805ad5;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#805ad5;">TechWorld with Nana · 📹 视频</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      📹 DevOps Career in 2026：该学 AI 还是深耕 DevOps 基础？（feat. Bret Fisher）
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      Nana Janashia 联合 Docker Captain、DevOps 教育者 Bret Fisher 就"2026 年 DevOps 工程师的职业选择"展开深度对谈：在 AI 工具大量渗透 CI/CD、Kubernetes 运维、基础设施即代码（IaC）等领域的背景下，到底应该押注 AI 技能，还是夯实 Linux、网络、容器编排等基础能力？
+                      两位嘉宾均认为，<strong>理解系统底层原理的工程师才能更好地驾驭 AI 工具</strong>，而非被其取代——基础知识是放大器，而非可被跳过的门槛。
+                      该视频面向有 1-3 年经验的从业者，结合当前就业市场真实反馈，给出了实用的技能规划建议。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.youtube.com/@TechWorldwithNana"
+                         style="display:inline-block;background-color:#805ad5;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        前往频道 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:24px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ───────────── 5. TLDR DevOps ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #e53e3e;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#e53e3e;">TLDR DevOps · 2026-04-08</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Practical Platform Engineering：用 Kyverno + Argo CD 构建 GitOps 驱动的 Kubernetes 策略执行体系
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      本期 TLDR DevOps 的核心实践文章介绍如何将 <strong>Kyverno</strong>（Kubernetes 原生策略引擎）与 <strong>Argo CD</strong>（GitOps 持续交付工具）结合，以 GitOps 方式管理集群策略：baseline 规则与自定义规则混合使用，通过 <em>audit</em> 或 <em>enforce</em> 模式在整个集群生命周期中实现安全合规的资源管理。
+                      同期还报道了 Netflix 为其 <strong>Apache Druid</strong> 构建实验性缓存层的成果：该系统每秒摄入最高 1500 万事件、覆盖超 10 万亿行数据，将查询负载降低 33%、响应时间提升 66%，84% 的 Dashboard 数据直接从缓存命中——是大规模可观测性基础设施的典型工程案例。
+                      此外，<strong>PagerDuty 的 SRE Agent</strong> 与 <strong>Kubernetes v1.36</strong>（含 Ingress-NGINX 正式退役）也在本期获得重点关注。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://tldr.tech/devops/2026-04-08"
+                         style="display:inline-block;background-color:#e53e3e;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:32px 40px 32px 40px;margin-top:8px;">
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 24px 0;" />
+              <p style="margin:0 0 6px 0;font-size:12px;color:#718096;line-height:1.6;">
+                本邮件由 <strong>Daily News Bot</strong> 自动生成 · 每日更新
+              </p>
+              <p style="margin:0;font-size:12px;color:#a0aec0;">
+                渠道来源：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR DevOps
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
