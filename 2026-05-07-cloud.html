@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-07</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#1a1a1a;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a365d 0%,#2b6cb0 100%);padding:32px 40px;">
+              <p style="margin:0 0 4px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#bee3f8;font-weight:600;">DAILY DIGEST</p>
+              <h1 style="margin:0 0 8px 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <h2 style="margin:0 0 16px 0;font-size:16px;font-weight:400;color:#bee3f8;">软件工程 &amp; 云原生专栏</h2>
+              <p style="margin:0;font-size:13px;color:#90cdf4;">📅 2026-05-07 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">本期汇聚来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo 及 TLDR DevOps 的最新动态，聚焦 Kubernetes 平台工程成熟化、SRE 可靠性设计反模式、云原生 AI 工具生态与 K8s 1.36 新特性。TechWorld with Nana 本期暂无 7 日内新内容，已跳过。</p>
+            </td>
+          </tr>
+
+          <!-- ───────────── 1. Thoughtworks ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #2b6cb0;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#2b6cb0;">Thoughtworks Technology Radar · Vol. 34 · 2026-04-15</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      云原生平台工程进入成熟期：CloudNativePG、APISIX 与「保留原则、放弃固化模式」
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      Thoughtworks 2026 年 4 月宏观趋势分析指出，Kubernetes 已成为绝大多数企业客户的容器编排默认选择，云原生平台工程正从"探索期"走向"成熟期"。Radar 将 <strong>CloudNativePG</strong>（Kubernetes 原生 PostgreSQL 高可用 Operator）列入 Trial 级别，推荐工程团队评估将有状态工作负载迁入 K8s 集群；同时推荐 <strong>Apache APISIX</strong> 作为传统 Nginx Ingress 的云原生 API 网关替代方案。
+                      本期的核心观点是"<strong>保留原则、放弃固化模式（Retain Principles, Relinquish Patterns）</strong>"：12-Factor App、微服务分层设计等核心原则依然有效，但在 AI 辅助开发和 Agentic 工作流泛滥的背景下，团队不应机械套用过时的实现模式，需结合当前技术生态灵活演进。
+                      此外，报告强调"<strong>语义扩散（Semantic Diffusion）</strong>"现象正在加剧技术评估难度——行业对 DevOps、Platform Engineering 等术语的滥用使新工具的长期可持续性愈发难以判断。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.thoughtworks.com/insights/blog/technology-strategy/macro-trends-tech-industry-april-2026"
+                         style="display:inline-block;background-color:#2b6cb0;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:24px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ───────────── 2. SRE Weekly ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #38a169;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#38a169;">SRE Weekly · Issue #512</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      隐性重试风暴：当系统各层各自重试，指数级流量放大是如何形成的
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      本期 SRE Weekly 重点讨论了现代分布式系统中"重试层叠（Retry Cascade）"的隐性风险：当业务代码、HTTP 客户端库、框架层、服务网格与负载均衡器各自独立执行重试逻辑，且彼此互不知晓时，一次下游超时可能在调用链中被放大数十倍乃至数百倍，最终演变为全链路过载的 <strong>retry storm（重试风暴）</strong>。
+                      文章建议 SRE 团队建立"<strong>重试预算（Retry Budget）</strong>"机制，在系统设计阶段明确每一层的最大重试次数与退避策略，并将重试总量作为可观测指标纳入 SLO 监控体系，而非事后通过告警被动发现。
+                      此外，本期还引述了 Fred Hebert 的观点：AI 在 SRE 场景中最有价值的角色是快速为值班工程师提供事故上下文（Context），而非替代其做出修复决策——这一边界的划定对于设计 AI-assisted on-call 系统至关重要。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                         style="display:inline-block;background-color:#38a169;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:24px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ───────────── 3. ByteByteGo ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #d69e2e;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#b7791f;">ByteByteGo · 2026</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      2026 年值得关注的顶级 AI GitHub 仓库：云原生 AI 工具生态全景
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      ByteByteGo 梳理了 2026 年 AI 开发生态中涌现的明星 GitHub 仓库，聚焦与云原生基础设施深度集成的工具框架。其中 <strong>OpenClaw</strong> 以短短数日内从 9K 飙升至 60K+ Star 的速度成为现象级项目，目前已突破 210K Star，提供面向 Kubernetes 集群的 AI Agent 运行时管理能力；<strong>Dify</strong> 则以生产就绪的 Agentic Workflow 平台定位获得广泛关注，支持在 K8s 上部署企业级 AI 工作流，兼容 OpenAI、Anthropic 等多家模型提供商。
+                      这一工具生态的快速演进揭示了一个趋势：<strong>Kubernetes 正在成为 AI Agent 的首选运行平台</strong>，工程团队越来越需要具备同时理解容器编排与 AI 工作流设计的复合能力。对于平台工程师而言，如何为这些 AI 工作负载提供合理的资源隔离、调度策略与安全沙箱，是 2026 年最值得深入研究的实践课题之一。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://blog.bytebytego.com/p/top-ai-github-repositories-in-2026"
+                         style="display:inline-block;background-color:#d69e2e;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:24px 40px 0 40px;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;" /></td></tr>
+
+          <!-- ───────────── 4. TLDR DevOps ───────────── -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #e53e3e;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#e53e3e;">TLDR DevOps · 2026-03-23</p>
+                    <h3 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Kubernetes 1.36 发布 + Agents On Kubernetes：K8s 正式成为 AI Agent 的运行底座
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.8;">
+                      本期 TLDR DevOps 报道了 <strong>Kubernetes 1.36</strong> 正式发布的重要里程碑：随着 <strong>Ingress-NGINX 的正式退役</strong>，Kubernetes SIG Network 同步推出了 <strong>Ingress2Gateway 1.0</strong> 迁移工具，支持将超过 30 种常见 Ingress-NGINX 注解自动转换为 Gateway API 配置，大幅降低迁移成本。
+                      同期焦点文章"<strong>Agents On Kubernetes</strong>"深入分析了 K8s 作为 AI Agent 运行平台的架构演进：Kubernetes 正在新增 Agent Sandbox 项目，引入 <em>Sandbox CRD</em> 与 <em>SandboxWarmPool</em> 特性以消除 Agent 的冷启动延迟，专为长运行自治 Agent 设计调度和隔离策略，推动 K8s 从"容器编排平台"向"智能工作负载编排平台"转型。
+                      此外，<strong>Datadog Terraform Provider v4</strong> 在本期同步发布，带来更完善的 IaC 支持，进一步简化基础设施即代码（Infrastructure as Code）在可观测性配置管理上的工作流。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://tldr.tech/devops/2026-03-23"
+                         style="display:inline-block;background-color:#e53e3e;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 18px;border-radius:4px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:32px 40px 32px 40px;margin-top:8px;">
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 24px 0;" />
+              <p style="margin:0 0 6px 0;font-size:12px;color:#718096;line-height:1.6;">
+                本邮件由 <strong>Daily News Bot</strong> 自动生成 · 每日更新
+              </p>
+              <p style="margin:0;font-size:12px;color:#a0aec0;">
+                渠道来源：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TLDR DevOps &nbsp;|&nbsp; TechWorld with Nana 本期无 7 日内新内容
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
