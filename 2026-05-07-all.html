@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报 - 2026-05-07</title>
+</head>
+<body style="margin:0;padding:0;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+<div style="max-width:720px;margin:0 auto;padding:28px 20px;">
+
+  <!-- ===== HEADER ===== -->
+  <div style="border-bottom:3px solid #1a1a2e;padding-bottom:18px;margin-bottom:28px;">
+    <h1 style="margin:0;font-size:24px;font-weight:700;color:#1a1a2e;letter-spacing:-0.5px;">软件技术日报</h1>
+    <p style="margin:8px 0 0;font-size:13px;color:#666666;">2026-05-07 &nbsp;·&nbsp; 精选软件工程、AI 前沿与后端开发最新动态</p>
+  </div>
+
+  <!-- ===== SECTION 1: 软件工程 & 云原生 ===== -->
+  <div style="margin-bottom:36px;">
+    <h2 style="font-size:15px;font-weight:700;color:#ffffff;background:#1a1a2e;padding:9px 16px;margin:0 0 20px;border-radius:5px;letter-spacing:0.5px;">
+      ☁️ 软件工程 &amp; 云原生
+    </h2>
+
+    <!-- Thoughtworks Technology Radar -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Thoughtworks Technology Radar</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color:#0066cc;text-decoration:none;">Technology Radar Vol.34：AI 加速软件复杂性，工程基础成破局关键</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Thoughtworks 第 34 期技术雷达（2026 年 4 月）警示行业正在积累 <strong>cognitive debt（认知债务）</strong>：AI 快速生成大量代码，拉大了人类对系统的理解鸿沟。报告指出，agentic AI 使开发工具门槛大降、市场充斥短命项目，技术术语在尚未稳定时就被滥用（semantic diffusion），评估技术的长期可持续性愈发困难。越是 AI 加速的时代，零信任架构、DORA 指标和可测试性等工程基础反而愈加关键。
+      </p>
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- SRE Weekly -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">SRE Weekly</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://sreweekly.com/sre-weekly-issue-512/" style="color:#0066cc;text-decoration:none;">Issue #512：Netflix 容器挂载瓶颈、自动扩缩容可靠性误区与 AI 在 on-call 中的真实价值</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        本期封面深挖 Netflix "Mount Mayhem" 问题：运行 100 个容器竟需超过 2 万次文件挂载，暴露现代 CPU 上容器 scaling 的底层瓶颈。另有文章指出 autoscaling 本质上是响应式（reactive）而非弹性（resilient）的，真正的弹性需要策略设计、压测与瓶颈意识。Heinrich Hartmann 指出 AI 在 SRE 中最有价值的角色是为 on-call 工程师实时提供上下文、加速根因定位，而非替代人类判断。
+      </p>
+      <a href="https://sreweekly.com/sre-weekly-issue-512/" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- ByteByteGo -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">ByteByteGo &nbsp;·&nbsp; 2026-05-04</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://blog.bytebytego.com/p/connecting-llms-to-the-real-world" style="color:#0066cc;text-decoration:none;">Connecting LLMs to the Real World: Tool Use, Function Calling, and MCP</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        本文系统梳理了 LLM 连接真实世界的三种机制：tool use、function calling 与 MCP（Model Context Protocol）。通过这些机制，LLM 可以自主搜索网页、读取日历、预订服务和发送邮件。文章同时揭示安全风险：2025 年 9 月曾出现一个伪装成官方 MCP 邮件集成的恶意 npm 包，被数百名开发者安装后将发件副本转发至攻击者，供应链安全不容忽视。
+      </p>
+      <a href="https://blog.bytebytego.com/p/connecting-llms-to-the-real-world" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- TLDR Tech -->
+    <div style="margin-bottom:4px;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">TLDR Tech &nbsp;·&nbsp; 2026-05-05</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://tldr.tech/tech/2026-05-05" style="color:#0066cc;text-decoration:none;">日报 2026-05-05：Agentic 系统通用架构模型、Anthropic 与 OpenAI 合组企业 AI 服务公司</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        本期提炼了 agentic 系统的核心架构心智模型：无论底层工具如何变化，架构层次保持一致。AI 版块报道 Anthropic 与黑石、高盛等机构联合组建企业 AI 服务公司，估值 15 亿美元；OpenAI 也有类似动作，目标估值 100 亿美元——标志着 AI 正从产品形态向专业服务形态加速演进，大型机构正成为 AI 落地的主战场。
+      </p>
+      <a href="https://tldr.tech/tech/2026-05-05" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 2: AI 技术前沿 ===== -->
+  <div style="margin-bottom:36px;">
+    <h2 style="font-size:15px;font-weight:700;color:#ffffff;background:#1a3a5c;padding:9px 16px;margin:0 0 20px;border-radius:5px;letter-spacing:0.5px;">
+      🤖 AI 技术前沿
+    </h2>
+
+    <!-- Anthropic Blog -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Anthropic Blog</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.anthropic.com/news/claude-4" style="color:#0066cc;text-decoration:none;">Introducing Claude 4：Claude Opus 4 与 Sonnet 4 发布，年化营收突破 300 亿美元</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Anthropic 正式发布 Claude Opus 4 和 Sonnet 4，其中 Claude Opus 4 定位为全球最强编程模型。与此同时，Anthropic 与亚马逊签署扩展协议，获得最高 5GW 算力用于 Claude 的训练与部署；公司年化营收已突破 300 亿美元（年初约 90 亿美元）。Alignment Science 团队同期发布对齐研究：通过训练 AI 理解 model spec 内容，改善对齐训练的泛化能力。
+      </p>
+      <a href="https://www.anthropic.com/news/claude-4" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- OpenAI Blog -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">OpenAI Blog &nbsp;·&nbsp; 2026-05-05</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://openai.com/news/" style="color:#0066cc;text-decoration:none;">GPT-5.5 Instant 更新 ChatGPT 默认模型：更准确、减少幻觉、个性化控制升级</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        OpenAI 于 5 月 5 日将 ChatGPT 默认模型升级至 GPT-5.5 Instant，提供更智能、更准确的回答，显著减少幻觉输出，并改进个性化控制。同日还发布了 ChatGPT 广告投放新方式，以及低延迟语音 AI 大规模部署的技术解析。4 月下旬另有 OpenAI Codex 与 Managed Agents 登陆 AWS，以及 OpenAI 与微软合作的下一阶段计划公告。
+      </p>
+      <a href="https://openai.com/news/" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Google DeepMind -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Google DeepMind Blog</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/" style="color:#0066cc;text-decoration:none;">Gemma Scope 2 发布：面向全系 Gemma 3 的开放 AI 可解释性工具套件</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Google DeepMind 发布 Gemma Scope 2，覆盖所有 Gemma 3 规格的全面开源可解释性（interpretability）工具集，帮助 AI 安全社区深入理解大型语言模型的复杂行为。与此同时，Gemini Deep Think 已在 IMO 数学奥林匹克题目上达到金牌水准；DeepMind 本月还发布多 token 预测草稿器（multi-token prediction drafters）以提升推理速度，持续优化 Gemini 推理效率。
+      </p>
+      <a href="https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Hugging Face -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Hugging Face Blog</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026" style="color:#0066cc;text-decoration:none;">State of Open Source on Hugging Face: Spring 2026——开源 AI 生态年度盘点</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Hugging Face 发布 2026 年春季开源 AI 生态报告：平台已拥有 1300 万用户、逾 200 万公开模型、50 万公开数据集，一年内接近翻倍。报告指出，用户从被动消费预训练模型转向主动创造衍生物（fine-tuned models、adapters、benchmarks）；顶层 200 个最热门模型（占 0.01%）贡献了 49.6% 的总下载量，呈高度集中态势。韩国、瑞士、英国等正通过国家主权 AI 计划扶持本地开源生态。
+      </p>
+      <a href="https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- The Batch -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">The Batch by DeepLearning.AI &nbsp;·&nbsp; 2026-05-01</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.deeplearning.ai/the-batch/" style="color:#0066cc;text-decoration:none;">周报 2026-05-01：2022 年到 2026 年，与 AI 对话的方式已天壤之别</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Andrew Ng 本期指出：从 ChatGPT 面世到今天，AI prompting 方式已发生根本性转变，coding agent 正在以差异化的速度加速不同类型的软件工作。本期还介绍了两个新工具：Context Hub（为 coding agent 提供 API 文档的专用工具）和 Skill Builder（识别个人 AI 能力盲点并推送定制学习建议），持续夯实 AI 工程实践的基础设施。
+      </p>
+      <a href="https://www.deeplearning.ai/the-batch/" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Andrej Karpathy -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Andrej Karpathy YouTube &nbsp;·&nbsp; 📹 视频 &nbsp;·&nbsp; ~2026-04-30</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="color:#0066cc;text-decoration:none;">📹 Andrej Karpathy: From Vibe Coding to Agentic Engineering（AI Ascent 2026）</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Karpathy 在 AI Ascent 2026 大会与 Sequoia 合伙人 Stephanie Zhan 对话，探讨从"vibe coding"（感觉驱动编码）到 agentic engineering 的演进路径。他认为 2026 年的软件工程师处于角色定义最模糊也最关键的转型期，AI coding agent 已将工程效率推向新量级，但工程师对系统的深度理解依然不可替代，这是人机协作的核心张力。
+      </p>
+      <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="font-size:13px;color:#0066cc;font-weight:500;">观看视频 →</a>
+    </div>
+
+    <!-- Latent Space -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Latent Space 播客 &nbsp;·&nbsp; 🎙 播客</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.latent.space/p/unsupervised-learning-2026" style="color:#0066cc;text-decoration:none;">🎙 AIE Europe Debrief + Agent Labs Thesis：2025 是 coding agent 年，2026 是 agent 破圈年</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Latent Space 与 Unsupervised Learning 联合录制 2026 年特别跨界专辑，复盘 AIE Europe 会议并提出核心论断：2025 年 coding agent 奠定基础，2026 年 agent 正突破代码边界、向更广泛工作场景全面渗透（"coding agents breaking containment"）。两位主持人回顾一年变化，感慨能力探索边界正以超预期速度扩展。
+      </p>
+      <a href="https://www.latent.space/p/unsupervised-learning-2026" style="font-size:13px;color:#0066cc;font-weight:500;">收听播客 →</a>
+    </div>
+
+    <!-- TWIML AI Podcast -->
+    <div style="margin-bottom:4px;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">TWIML AI Podcast &nbsp;·&nbsp; 🎙 播客</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://twimlai.com/podcast/twimlai/" style="color:#0066cc;text-decoration:none;">🎙 Ep.765 How Capital One Delivers Multi-Agent Systems：平台化多智能体系统的生产实践</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        本期专注于 Capital One 如何将多智能体系统推向生产：通过平台化策略将设计与运行时治理分离，在 agent 威胁边界内嵌入策略（policy）、护栏（guardrail）与安全控制。涵盖面向 agent 构建者的开发者体验设计、针对随机性多智能体工作流的可观测性与评估框架，以及模型专业化（fine-tuning、蒸馏）的闭环学习策略。
+      </p>
+      <a href="https://twimlai.com/podcast/twimlai/" style="font-size:13px;color:#0066cc;font-weight:500;">收听播客 →</a>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 3: 后端开发 & Python & Go ===== -->
+  <div style="margin-bottom:36px;">
+    <h2 style="font-size:15px;font-weight:700;color:#ffffff;background:#1a4a2e;padding:9px 16px;margin:0 0 20px;border-radius:5px;letter-spacing:0.5px;">
+      🐍 后端开发 &amp; Python &amp; Go
+    </h2>
+
+    <!-- Martin Fowler -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Martin Fowler Blog &nbsp;·&nbsp; 2026-05-05</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://martinfowler.com/fragments/2026-05-05.html" style="color:#0066cc;text-decoration:none;">Fragments May 5：SPDD（结构化提示驱动开发）火了，Lattice 框架将工程纪律注入 AI 辅助编码</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Rahul Garg 发表系列文章探讨降低 AI 辅助编程摩擦的方法，并开源 Lattice 框架：通过三层可组合 skill（atoms、molecules、refiners）将 Clean Architecture、DDD、设计优先和安全编码等工程规范嵌入 AI 工作流。Fowler 博客上的 SPDD（Structured-Prompt-Driven Development）文章引发大量阅读，团队已新增 Q&amp;A 版块回答数十个读者问题。
+      </p>
+      <a href="https://martinfowler.com/fragments/2026-05-05.html" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Netflix Tech Blog -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Netflix Tech Blog &nbsp;·&nbsp; 2026-05</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#0066cc;text-decoration:none;">State of Routing in Model Serving：Netflix ML 模型服务路由架构演进全解析</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Netflix 技术博客新系列深入解析 ML 模型服务平台的流量路由架构。通过统一的 domain-independent API 抽象层，Netflix 显著提升推荐、商业化等场景的模型迭代速度。文章详解了核心组件 Switchboard（集中式路由服务）在大规模运营中遭遇的挑战，以及由此演化出的 Lightbulb 架构，是了解大规模 ML 平台工程的一手资料。
+      </p>
+      <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Real Python -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Real Python &nbsp;·&nbsp; 2026-05</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://realpython.com/python-news-may-2026/" style="color:#0066cc;text-decoration:none;">Python 新闻 2026-05：新 Python Packaging Council 成立，OpenAI 收购 Astral（uv、Ruff、ty 之父）</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        5 月 Python 社区头条：OpenAI 正式收购 Astral（uv、Ruff、ty 背后团队），引发社区对工具链中立性的广泛讨论。Python 打包委员会（Packaging Council）宣告成立以强化生态治理；FastAPI 底层框架 Starlette 1.0 发布；Google 开放 Gemma 4 权重。PyCon US 2026 将于 5 月 13–19 日在加州长滩举行。
+      </p>
+      <a href="https://realpython.com/python-news-may-2026/" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Python Weekly -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Python Weekly &nbsp;·&nbsp; Issue 743 &nbsp;·&nbsp; 2026-04-30</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color:#0066cc;text-decoration:none;">Issue 743：pip 26.1 支持标准锁文件 pylock.toml，Policy Pattern 替代臃肿 if-elif 链</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        pip 26.1 带来实验性 pylock.toml 标准锁文件支持（读取与安装）、依赖冷却期（dependency cooldowns）功能，修复 2020 解析器多项历史遗留问题，并放弃对 Python 3.9 的支持。本期还深入介绍 Policy Pattern 用于替代大型条件分支，以及基于 Pydantic AI 构建生产级 AI agent 的实战指南（含结构化输出、自定义工具与依赖注入）。
+      </p>
+      <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Golang Weekly -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Golang Weekly &nbsp;·&nbsp; Issue 599 &nbsp;·&nbsp; 2026-05-01</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://golangweekly.com/latest" style="color:#0066cc;text-decoration:none;">Issue 599：TinyGo 0.41 发布，全面支持 Go 1.26 并为 ESP32 引入无线特性</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        本周封面为 TinyGo 0.41：全面支持 Go 1.26 语言特性，并为 ESP32 系列微控制器引入 Wi-Fi/BLE 无线支持，进一步拓展 Go 在嵌入式与 IoT 场景的版图。本期还汇聚了 Go 1.26 新垃圾回收器性能测评、cgo 开销优化实测，以及实验性 simd/archsimd 包的社区探索，适合关注 Go 生态前沿的工程师追踪。
+      </p>
+      <a href="https://golangweekly.com/latest" style="font-size:13px;color:#0066cc;font-weight:500;">阅读原文 →</a>
+    </div>
+
+    <!-- Fireship -->
+    <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #ebebeb;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Fireship YouTube &nbsp;·&nbsp; 📹 视频 &nbsp;·&nbsp; ~2026-04-23</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="color:#0066cc;text-decoration:none;">📹 Claude just got another superpower...——Claude 最新能力速览</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Fireship（Jeff Delaney）以标志性快节奏风格解析 Claude 的最新能力扩展。视频聚焦于 Claude 在代码库级别（而非代码片段级别）的操作能力，指出 Claude Code 已成为专业软件开发者的首选 AI 工具。Jeff 认为 Claude 在编写、记忆和 agentic 任务上优势明显，对日常开发工作流的改变堪称革命性，适合想快速了解 Claude 最新动态的开发者。
+      </p>
+      <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="font-size:13px;color:#0066cc;font-weight:500;">观看视频 →</a>
+    </div>
+
+    <!-- Anthony GG -->
+    <div style="margin-bottom:4px;">
+      <p style="margin:0 0 5px;font-size:11px;color:#999999;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">Anthony GG YouTube &nbsp;·&nbsp; 📹 视频</p>
+      <h3 style="margin:0 0 10px;font-size:15px;font-weight:600;color:#1a1a2e;line-height:1.45;">
+        <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="color:#0066cc;text-decoration:none;">📹 Go (Golang) vs TypeScript Performance Benchmark 2026——后端技术选型参考</a>
+      </h3>
+      <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#333333;">
+        Anthony GG 在 2026 年版基准测试中对 Go 与 TypeScript 进行全面性能对比，覆盖 HTTP 吞吐量、并发处理、内存占用等核心指标。测试揭示两种语言在不同工作负载下的适用边界，为后端工程师在技术选型（尤其是从 Node.js 生态考虑向 Go 迁移的团队）提供量化依据，结合 Go 1.26 新 GC 的加持，Go 性能数据颇具参考价值。
+      </p>
+      <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="font-size:13px;color:#0066cc;font-weight:500;">观看视频 →</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div style="border-top:2px solid #ebebeb;padding-top:18px;text-align:center;">
+    <p style="margin:0;font-size:12px;color:#aaaaaa;">软件技术日报 &nbsp;·&nbsp; 每日自动整理 &nbsp;·&nbsp; 2026-05-07</p>
+    <p style="margin:6px 0 0;font-size:12px;color:#cccccc;">内容摘要由 AI 生成，技术术语保留英文原文 &nbsp;·&nbsp; 发送至 xiangmiaozi@gmail.com</p>
+  </div>
+
+</div>
+</body>
+</html>
