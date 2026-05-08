@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-08</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <table width="680" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 32px;border-radius:8px 8px 0 0;">
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;letter-spacing:0.5px;">
+                软件技术日报
+              </h1>
+              <p style="margin:6px 0 0;font-size:13px;color:#a0aec0;">
+                【软件工程 &amp; 云原生】&nbsp;&nbsp;|&nbsp;&nbsp;2026-05-08
+              </p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="background-color:#f8fafc;padding:0 32px 24px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;">
+
+              <!-- Intro -->
+              <p style="margin:24px 0 16px;font-size:14px;color:#4a5568;line-height:1.7;">
+                今日精选来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo 及 TLDR Tech 的最新内容，聚焦 Kubernetes、云原生架构与 SRE 实践。
+              </p>
+
+              <!-- ===== 1. Thoughtworks Technology Radar ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 24px;background-color:#ffffff;border-radius:8px;border:1px solid #e2e8f0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#718096;text-transform:uppercase;letter-spacing:1px;">
+                      Thoughtworks Technology Radar
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Technology Radar Vol. 34：AI 加速时代，Kueue 进入云原生 Kubernetes 工作负载视野
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.75;">
+                      Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，本期核心主题为 AI 加速软件复杂性所引发的「认知债务（Cognitive Debt）」，并呼吁工程团队回归工程基础实践（如 zero trust 架构、DORA 指标、可测试性）。在云原生方向，Radar 重点关注了两个 Kubernetes 生态工具：<strong>Kueue</strong>（Kubernetes-native 作业队列控制器，支持优先级和资源配额管理）和 <strong>CloudNativePG</strong>（在 Kubernetes 上运行高可用 PostgreSQL 集群的 Operator），两者均反映出平台工程团队在 Kubernetes 上运行有状态与批处理工作负载的成熟需求。Radar 警告：当 AI 生成代码的速度大幅超越人类理解能力时，软件系统与工程师之间的认知鸿沟将持续扩大。
+                    </p>
+                    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                       style="display:inline-block;font-size:13px;color:#2b6cb0;text-decoration:none;border-bottom:1px solid #bee3f8;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:16px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+              </table>
+
+              <!-- ===== 2. SRE Weekly ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 24px;background-color:#ffffff;border-radius:8px;border:1px solid #e2e8f0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#718096;text-transform:uppercase;letter-spacing:1px;">
+                      SRE Weekly
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Issue #512：AI SRE 工具的营销陷阱——是增强工程师，还是替代低价值工作？
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.75;">
+                      本期 SRE Weekly 探讨了 AI 工具在软件工程领域的双重定位矛盾：AI 编程助手被市场包装为「增强工程师能力的协作伙伴」，而 AI SRE 工具则被定位为「自动化替代低价值重复性工作」。Fred Hebert 的分析指出，这一营销分裂折射出业界对 incident response（事故响应）本质的认知偏差——将其视为可被机器替代的"杂务"，而非需要工程判断力的高价值实践。此外本期还收录了一篇关于微服务架构中端对端测试（end-to-end testing）失效根因的深度分析，核心论点为：失败的根因并非工具不足，而是架构与运营之间的根本性失配。
+                    </p>
+                    <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                       style="display:inline-block;font-size:13px;color:#2b6cb0;text-decoration:none;border-bottom:1px solid #bee3f8;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:16px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+              </table>
+
+              <!-- ===== 3. ByteByteGo ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 24px;background-color:#ffffff;border-radius:8px;border:1px solid #e2e8f0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#718096;text-transform:uppercase;letter-spacing:1px;">
+                      ByteByteGo
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Container Design Patterns for Distributed Systems（2026-05-07）
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.75;">
+                      ByteByteGo 最新文章系统梳理了过去十年在分布式系统中沉淀下来的容器设计模式，按协调作用域分为两大类：<strong>单机容器协作模式</strong>（如 Sidecar、Ambassador、Adapter，多个 container 共享同一 Pod/主机资源）与<strong>跨机器容器协调模式</strong>（如 Leader Election、Work Queue、Scatter-Gather，容器跨节点协同完成工作）。文章对云原生架构师极具参考价值，尤其在微服务可观测性增强（Sidecar 注入）和批处理任务调度（Work Queue）两个场景下，提供了清晰的选型依据。
+                    </p>
+                    <a href="https://blog.bytebytego.com/p/container-design-patterns-for-distributed"
+                       style="display:inline-block;font-size:13px;color:#2b6cb0;text-decoration:none;border-bottom:1px solid #bee3f8;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:16px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+              </table>
+
+              <!-- ===== 4. TechWorld with Nana ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 24px;background-color:#fff8f0;border-radius:8px;border:1px solid #fde8c8;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#718096;text-transform:uppercase;letter-spacing:1px;">
+                      TechWorld with Nana &nbsp;📹 视频
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      DevOps Career in 2026: Should You Learn AI or Double Down on DevOps Fundamentals?
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.75;">
+                      📹 视频 · TechWorld with Nana 最新发布的职业规划视频探讨了 2026 年 DevOps 工程师面临的核心抉择：是追随 AI 热潮转型，还是深耕 Kubernetes、CI/CD、可观测性等云原生基础？视频主张 AI 工具是加速器而非替代品，掌握扎实的 DevOps fundamentals（容器化、基础设施即代码、SRE 实践）依然是工程师在 AI 时代保持竞争力的核心资产。对于正在规划职业路径的云原生从业者，本视频提供了务实的建议与学习框架。
+                    </p>
+                    <a href="https://www.youtube.com/c/TechWorldwithNana"
+                       style="display:inline-block;font-size:13px;color:#2b6cb0;text-decoration:none;border-bottom:1px solid #bee3f8;">
+                      前往频道观看 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:16px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+              </table>
+
+              <!-- ===== 5. TLDR Tech ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 24px;background-color:#ffffff;border-radius:8px;border:1px solid #e2e8f0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#718096;text-transform:uppercase;letter-spacing:1px;">
+                      TLDR Tech / TLDR DevOps
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Kubernetes 1.36 发布：Gateway API 接替 Ingress-Nginx，安全与平台能力全面提升
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.75;">
+                      TLDR DevOps 近期重点报道了 Kubernetes 1.36 的发布，新版本在安全性与平台能力上均有显著进展：<strong>Gateway API</strong> 正式取代老旧的 Ingress-Nginx 作为推荐网络入口方案；Linux user namespace 支持进一步增强，为多租户集群提供更强的隔离保障；<strong>WatchCache</strong> 性能优化降低了 API Server 压力；Dynamic Resource Allocation（DRA）增强使 GPU 等加速器资源调度更加灵活；OCI artifact volumes 支持直接将 OCI 制品挂载为卷，为 AI 模型分发场景开辟了新路径。此次发布标志着 Kubernetes 在 AI 工作负载支持和零信任安全方向上加速演进。
+                    </p>
+                    <a href="https://tldr.tech/devops/2026-03-23"
+                       style="display:inline-block;font-size:13px;color:#2b6cb0;text-decoration:none;border-bottom:1px solid #bee3f8;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Footer -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:24px 0 8px;">
+                    <p style="margin:0;font-size:12px;color:#a0aec0;text-align:center;line-height:1.6;">
+                      软件技术日报 · 每日自动整理 · 2026-05-08<br>
+                      内容来源：Thoughtworks Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR Tech
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
