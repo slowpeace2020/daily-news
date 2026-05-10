@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-10</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#222222;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f6f7;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 36px;">
+              <p style="margin:0;font-size:11px;color:#8899bb;letter-spacing:1.5px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:8px 0 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报<br>
+                <span style="font-size:14px;font-weight:400;color:#aabbdd;">【软件工程 &amp; 云原生】</span>
+              </h1>
+              <p style="margin:12px 0 0;font-size:13px;color:#7788aa;">2026-05-10 &nbsp;|&nbsp; Kubernetes · 云原生 · SRE</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:32px 36px 8px;">
+
+              <!-- 1. Thoughtworks Technology Radar -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#888888;">Thoughtworks Technology Radar</p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      AI 加速引发「认知债务」，Vol. 34 呼吁回归工程基本功
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#444444;">
+                      Thoughtworks Technology Radar Vol. 34（2026 年 4 月）提出核心概念——<strong>Cognitive Debt（认知债务）</strong>：AI 持续生成代码导致工程师逐渐失去对系统的深层理解，进而积累难以维护的隐性风险。Radar 建议团队回归 <em>DORA metrics</em>、<em>Zero Trust Architecture</em> 和可测试性等工程基础实践，并强调对 coding agent 必须施加 spec-driven development 与 mutation testing 等约束机制防止失控。对于 Kubernetes 及云原生平台，Radar 认为技术成熟期已至，重心应从工具试验转向架构治理与生命周期管理。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eaeaea;margin:24px 0;">
+
+              <!-- 2. SRE Weekly -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#888888;">SRE Weekly · Issue #512</p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      AI SRE Agent 崛起：合作伙伴还是岗位替代者？
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#444444;">
+                      本期聚焦 AI 在 SRE 领域的定位分歧：coding assistant 被定位为人类「伙伴」，而 AI SRE 工具则被营销为替代低价值重复性工作的「自动化执行者」，两种叙事框架折射出行业对 AI 角色的深层焦虑。此外，本期还深入探讨了微服务架构中端到端测试失效的根本原因，以及如何借助 LLM 应对软件复杂性带来的系统稳健性挑战——这对规模化 Kubernetes 集群的 on-call 运营具有直接参考价值。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eaeaea;margin:24px 0;">
+
+              <!-- 3. ByteByteGo -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#888888;">ByteByteGo · 2026-05-07</p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      分布式系统容器设计模式精解
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#444444;">
+                      ByteByteGo 梳理了过去十年在分布式系统中沉淀下来的容器设计模式，按协调范围分为两类：<strong>单机协作模式</strong>（如 Sidecar、Ambassador、Adapter），描述共享同一主机的容器如何分工配合；<strong>跨机器协调模式</strong>（如 Work Queue、Scatter/Gather、Event-Driven），描述跨节点容器如何协调大规模并行任务。这些模式在 Kubernetes 多容器 Pod 设计、Service Mesh 架构以及云原生可观测性方案中均有直接落地价值。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://blog.bytebytego.com/p/container-design-patterns-for-distributed"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eaeaea;margin:24px 0;">
+
+              <!-- 4. TechWorld with Nana -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#888888;">TechWorld with Nana · 📹 视频</p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      AI 正在重塑 DevOps 职业路径，你需要知道什么？
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#444444;">
+                      CNCF Ambassador Nana Janashia 在本期视频中深度分析了 AI 工具对 DevOps 工程师岗位的实质影响：Platform Engineering、Kubernetes 集群运维、CI/CD pipeline 设计等核心技能仍然不可替代，但 AI 正在快速自动化大量低层次基础设施运维任务。视频建议从业者将 AI 能力叠加在已有的云原生技术栈之上，而不是将其视为独立赛道从零学起——掌握 Kubernetes + AI Observability 的复合能力将成为下一阶段竞争力的关键。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.youtube.com/watch?v=QQ4UyZNXof8"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        观看视频 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eaeaea;margin:24px 0;">
+
+              <!-- 5. TLDR DevOps -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#888888;">TLDR DevOps · 2026-05-06</p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Kubernetes 工作负载安全加固 &amp; AI Observability 专题
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#444444;">
+                      本期 TLDR DevOps 聚焦三大热点：其一，<strong>Securing Kubernetes Workloads</strong>，涵盖 Pod Security Standards 强制执行、Network Policies 精细化配置和 admission controller 实践，为生产集群提供纵深防御；其二，<strong>AI Observability</strong> 工具链演进，帮助平台团队实时监控 AI 推理工作负载的延迟、吞吐与成本，弥合传统 APM 与 AI infra 之间的可观测性盲区；其三，Scaling Voice AI 的基础设施挑战——实时语音推理对低延迟 Kubernetes 调度提出了更高要求。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://tldr.tech/devops/2026-05-06"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 36px 32px;">
+              <hr style="border:none;border-top:1px solid #eaeaea;margin:0 0 20px;">
+              <p style="margin:0;font-size:12px;color:#aaaaaa;line-height:1.6;">
+                本邮件由 Daily News Bot 自动整理生成 · 2026-05-10<br>
+                内容来源：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR DevOps
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
