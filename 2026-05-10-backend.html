@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-10</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#333333;">
+<div style="max-width:680px;margin:0 auto;padding:24px 16px;">
+
+  <!-- Header -->
+  <div style="background-color:#1a1a2e;border-radius:8px;padding:28px 24px;margin-bottom:28px;text-align:center;">
+    <h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:0.5px;">
+      软件技术日报
+    </h1>
+    <p style="margin:8px 0 0;color:#a0a8c0;font-size:14px;">
+      后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-05-10
+    </p>
+  </div>
+
+  <!-- ===== SECTION: 后端开发 & 系统设计 ===== -->
+  <div style="margin-bottom:12px;">
+    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:5px 14px;border-radius:12px;text-transform:uppercase;letter-spacing:0.8px;">
+      后端开发 &amp; 系统设计
+    </span>
+  </div>
+
+  <!-- 1. High Scalability -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">High Scalability</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      Apache Kafka: The Architecture Behind Modern Event Streaming
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      本文由 Apache Kafka Committer Stanislav Kozlovski 撰写，深度解析 Kafka 从 2011 年在 LinkedIn 内部诞生到成为最流行开源事件流平台的演进历程，重点讲解了分区机制、消费者组（Consumer Group）模型以及高吞吐量背后的分布式架构设计原理。文章尤其适合希望在系统设计层面理解 Kafka 核心抽象的后端工程师，是一篇结合历史背景与技术深度的精品文章。
+    </p>
+    <a href="https://highscalability.com/" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <!-- 2. Martin Fowler Blog -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Martin Fowler Blog &nbsp;·&nbsp; May 5, 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      Fragments: Lattice — 面向 AI 辅助编程的可组合工程框架
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Martin Fowler 在 5 月 5 日的 Fragments 中介绍了开源框架 Lattice，它通过三层可组合的「技能」（atoms、molecules、refiners）将 Clean Architecture、DDD 和 Design-First 方法论嵌入 AI 编程助手的工作流，以系统性解决 LLM 生成代码在架构一致性方面的不稳定问题。Martin 还讨论了同事提出的 Structured-Prompt-Driven Development（SPDD）方法——通过结构化提示词驱动开发流程，已在多个团队中引发广泛实践讨论。这期 Fragment 是观察 agentic 编程工程化演进的重要窗口。
+    </p>
+    <a href="https://martinfowler.com/fragments/2026-05-05.html" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <!-- 3. Netflix Tech Blog -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Netflix Tech Blog &nbsp;·&nbsp; May 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      State of Routing in Model Serving
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Netflix 工程团队发布了关于 ML Model Serving 路由架构的系列文章，深入探讨了为推荐系统、个性化商业决策等核心场景提供服务的大规模推理基础设施设计。文章揭示了 Netflix 如何设计请求分发策略、多副本负载均衡及低延迟路由优化，以在数亿用户的超大规模下保持服务稳定性与高吞吐。这是了解生产级 Model Serving 系统工程实践的一手资料，对于构建 AI 推理平台的工程师极具参考价值。
+    </p>
+    <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <!-- 4. Hussein Nasser YouTube -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Hussein Nasser &nbsp;·&nbsp; YouTube 📹 视频</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      📹 Tor's Connection Establishment — The Backend Engineering Show
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Hussein Nasser 在这期 Backend Engineering Show 中深度解析了 Tor 网络的连接建立机制，包括洋葱路由（Onion Routing）协议中 Circuit 的创建与逐跳扩展过程，以及通过多层非对称加密实现匿名通信的底层原理。通过解读 Tor 的实现细节，Hussein 引申讨论了通用后端网络协议设计中安全性与性能之间的工程权衡。这是深入理解网络协议底层实现机制的高质量技术教学内容。
+    </p>
+    <a href="https://www.youtube.com/watch?v=6THVzuUtwJs" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">观看视频 →</a>
+  </div>
+
+  <!-- 5. Brendan Gregg Blog -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:28px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Brendan Gregg Blog &nbsp;·&nbsp; February 7, 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      Why I joined OpenAI
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      系统性能领域的传奇工程师 Brendan Gregg 宣布离开 Intel 并加入 OpenAI，文章中他解释了这一职业选择的深层思考：AI 系统已成为当今计算资源消耗最密集的场景，而他在 Linux 内核性能分析与 eBPF 工具链方面的积累将在 AI 训练与推理基础设施的优化中发挥独特价值。文章也分享了他对 AI 系统性能工程这一新兴方向的前景展望，对关注大规模系统底层优化的工程师极具启发意义。
+    </p>
+    <a href="https://www.brendangregg.com/blog/" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <hr style="border:none;border-top:2px solid #e8eaed;margin:0 0 28px;">
+
+  <!-- ===== SECTION: Python ===== -->
+  <div style="margin-bottom:12px;">
+    <span style="display:inline-block;background-color:#fce8e6;color:#d93025;font-size:11px;font-weight:700;padding:5px 14px;border-radius:12px;text-transform:uppercase;letter-spacing:0.8px;">
+      Python
+    </span>
+  </div>
+
+  <!-- 6. Real Python -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Real Python &nbsp;·&nbsp; May 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      A New Python Packaging Council and Other News for May 2026
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Real Python 发布了 2026 年 5 月的 Python 生态月报：Python 软件基金会（PSF）宣布成立新的 Python Packaging Council，旨在统一长期以来分散的社区包管理标准与工具规范；PEP 803 正在推进 free-threaded（无 GIL）ABI 的稳定化，这将为 Python 并发性能生态的成熟奠定关键基础。此外，PyCon US 2026 将于 5 月 13–19 日在加州长滩（Long Beach）举行，届时将汇聚大量关于 Python 新特性和工程最佳实践的深度演讲。
+    </p>
+    <a href="https://realpython.com/python-news-may-2026/" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <!-- 7. Python Weekly -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Python Weekly &nbsp;·&nbsp; Issue 743, April 30, 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      Python Weekly Issue 743 — 本期亮点：PEP 747、VS Code Python 环境扩展
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      本期 Python Weekly 精选内容包括：VS Code 新 Python Environments 扩展现已支持统一管理 venv、conda、pyenv、Poetry 等多种工具，大幅降低环境切换摩擦；PEP 747 引入 typing.TypeForm，使静态类型检查器能够正确处理接受类型表达式的函数，进一步完善 Python 类型系统。Anthropic 向 Python 软件基金会捐赠 150 万美元、用于在 PyPI 部署自动化恶意软件审查工具的消息也在社区引发广泛关注。
+    </p>
+    <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <!-- 8. Arjan Codes YouTube -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:28px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Arjan Codes &nbsp;·&nbsp; YouTube 📹 视频 &nbsp;·&nbsp; April 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      📹 Python Has Serious Problems, But I Use It Anyway
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Arjan Codes 在这期视频中直面 Python 的核心痛点：GIL 锁限制多核并发、运行时性能瓶颈、动态类型导致的大型项目维护难题，以及包管理生态的长期碎片化问题。他以 20 年以上软件工程经验的视角，分析了为何在明知这些缺陷的前提下，Python 仍是构建生产级系统的优秀选择，并结合真实代码案例提供了应对各类问题的工程最佳实践策略。
+    </p>
+    <a href="https://www.youtube.com/watch?v=KDnP_zbp-9Q" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">观看视频 →</a>
+  </div>
+
+  <hr style="border:none;border-top:2px solid #e8eaed;margin:0 0 28px;">
+
+  <!-- ===== SECTION: Go ===== -->
+  <div style="margin-bottom:12px;">
+    <span style="display:inline-block;background-color:#e6f4ea;color:#188038;font-size:11px;font-weight:700;padding:5px 14px;border-radius:12px;text-transform:uppercase;letter-spacing:0.8px;">
+      Go (Golang)
+    </span>
+  </div>
+
+  <!-- 9. The Go Blog -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">The Go Blog &nbsp;·&nbsp; February 27, 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      Allocating on the Stack
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Go 官方博客发布了关于栈内存分配优化的深度文章，系统讲解了编译器如何通过逃逸分析（escape analysis）判断变量应在堆（heap）还是栈（stack）上分配，以及堆分配对 GC 压力的量化影响。文章总结了 Go 1.24 和 1.25 两个版本中具体落地的堆分配减少优化项，并提供了利用 pprof 和 go build -gcflags 等工具识别并消除不必要内存分配的实用指南。对追求 Go 服务性能极致优化的工程师来说，这是一篇必读的官方参考文章。
+    </p>
+    <a href="https://go.dev/blog/allocation-optimizations" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <!-- 10. Golang Weekly -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:14px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Golang Weekly &nbsp;·&nbsp; Issue 600, May 8, 2026 🔒 安全更新</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      Golang Weekly Issue 600 — Go 1.26.3 &amp; Go 1.25.10 安全补丁发布
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Golang Weekly 第 600 期（5 月 8 日）重点报道了 Go 1.26.3 和 Go 1.25.10 的安全补丁发布，此次更新共修复 11 个安全漏洞，涵盖 module-proxy checksum 校验绕过、net/http 请求处理缺陷以及 html/template 中的潜在注入问题。对所有在生产环境运行 Go 服务的团队而言，此次安全更新需优先跟进。本期还收录了多篇关于 Go 1.26 新特性实践的深度文章及社区工具更新资讯。
+    </p>
+    <a href="https://golangweekly.com/issues/600" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">阅读原文 →</a>
+  </div>
+
+  <!-- 11. Anthony GG YouTube -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:28px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Anthony GG &nbsp;·&nbsp; YouTube 📹 视频</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      📹 Go (Golang) vs TypeScript Performance Benchmark (2026)
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Anthony GG 发布了 2026 版 Go 与 TypeScript 全面性能对比基准测试，覆盖 HTTP 吞吐量、高并发处理、内存占用及冷启动时间等核心指标。结果显示 Go 在 CPU 密集型与高并发场景下具有显著优势，而 TypeScript（Node.js / Bun 运行时）在开发者生产力和前后端统一生态方面更具竞争力。这期视频对于在 Go 和 TypeScript 之间进行后端技术选型的团队具有很强的数据参考价值。
+    </p>
+    <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">观看视频 →</a>
+  </div>
+
+  <hr style="border:none;border-top:2px solid #e8eaed;margin:0 0 28px;">
+
+  <!-- ===== SECTION: 技术资讯 ===== -->
+  <div style="margin-bottom:12px;">
+    <span style="display:inline-block;background-color:#fef7e0;color:#b06000;font-size:11px;font-weight:700;padding:5px 14px;border-radius:12px;text-transform:uppercase;letter-spacing:0.8px;">
+      技术资讯
+    </span>
+  </div>
+
+  <!-- 12. Fireship YouTube -->
+  <div style="border:1px solid #e8eaed;border-radius:8px;padding:20px;margin-bottom:28px;background-color:#fafafa;">
+    <div style="font-size:10px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Fireship &nbsp;·&nbsp; YouTube 📹 视频 &nbsp;·&nbsp; April 8, 2026</div>
+    <h2 style="margin:0 0 10px;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+      📹 Google just casually disrupted the open-source AI narrative…
+    </h2>
+    <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#555555;">
+      Fireship 用标志性的快节奏风格解析了 Google 最新开源 AI 模型的发布：这些模型在多项主流基准测试上直逼甚至超越闭源竞争对手，深刻改变了外界对「开源 AI 与闭源 AI 性能差距」的固有认知。视频探讨了这一变局对 AI 初创公司商业护城河、开发者社区技术栈选择以及整个软件工程实践的深远影响，并演示了在本地快速部署和调用这些新模型的实操步骤。
+    </p>
+    <a href="https://www.youtube.com/watch?v=-01ZCTt-CJw" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:600;">观看视频 →</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:20px 0 8px;border-top:1px solid #e8eaed;">
+    <p style="margin:0;font-size:12px;color:#aaaaaa;">
+      软件技术日报 &nbsp;·&nbsp; 每日精选 &nbsp;·&nbsp; 2026-05-10
+    </p>
+    <p style="margin:8px 0 0;font-size:11px;color:#bbbbbb;line-height:1.8;">
+      内容来源：High Scalability · Martin Fowler · Netflix TechBlog · Real Python · Python Weekly<br>
+      The Go Blog · Golang Weekly · ArjanCodes · Anthony GG · Hussein Nasser · Fireship · Brendan Gregg
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
