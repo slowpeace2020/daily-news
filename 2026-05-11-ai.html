@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【AI 技术前沿】- 2026-05-11</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background-color: #ffffff; color: #333333; max-width: 680px; margin: 0 auto; padding: 20px;">
+
+<!-- Header -->
+<div style="background-color: #1a1a2e; color: #ffffff; padding: 24px 28px; border-radius: 8px 8px 0 0;">
+  <h1 style="margin: 0 0 4px 0; font-size: 22px; font-weight: 700; letter-spacing: 0.5px;">📡 软件技术日报</h1>
+  <h2 style="margin: 0; font-size: 15px; font-weight: 400; color: #a0aec0;">【AI 技术前沿】&nbsp;·&nbsp; 2026-05-11</h2>
+</div>
+
+<!-- Intro Banner -->
+<div style="background-color: #f0f4ff; border-left: 4px solid #3b82f6; padding: 14px 20px; margin: 0 0 28px 0; font-size: 13px; color: #555; line-height: 1.6;">
+  本期收录过去 7 天来自 Anthropic、OpenAI、Google DeepMind、Hugging Face、The Batch、Andrej Karpathy、AI Explained、Latent Space 等渠道的最新动态，重点关注大模型进展、AI 工程实践与前沿研究。
+</div>
+
+<!-- ============================================================ -->
+<!-- 1. Anthropic Blog -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #7b5ea7; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">Anthropic Blog</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    Building a New Enterprise AI Services Company
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    Anthropic 联手私募巨头 Blackstone、Hellman &amp; Friedman 及 Goldman Sachs，共同成立新的企业级 AI 服务公司，专注于帮助大型企业将 Claude 深度集成到核心业务流程中。此举是 Anthropic 在年化收入突破 300 亿美元后的重要商业化跃升，标志着 AI 基础设施从技术产品迈向完整企业解决方案的战略转型。系统集成商（SI）生态将成为 Claude 企业化落地的核心渠道。
+  </p>
+  <a href="https://www.anthropic.com/news/enterprise-ai-services-company" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026-05-04</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- 2. OpenAI Blog -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #10a37f; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">OpenAI Blog</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    GPT-5.5 Instant + Symphony 编排规范 + 新语音 AI 模型 API 三连发
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    OpenAI 本周密集发布：GPT-5.5 Instant（5月5日）主打低延迟、高个性化的对话体验，并同步发布系统卡（System Card）公开安全评估细节；Symphony（5月4日）是用于 AI agent 编排的开源规范，降低多 agent 系统集成门槛；新版语音 AI 模型 API（5月7日）进一步完善多模态能力。三项发布协同构筑 OpenAI 的 agent 平台生态。
+  </p>
+  <a href="https://openai.com/news/" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026-05-04 ~ 05-08</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- 3. Google DeepMind Blog -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #4285f4; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">Google DeepMind Blog</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    AlphaEvolve：Gemini 驱动的编码 Agent 正在重塑科学与工程的边界
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    AlphaEvolve 最新进展：在量子计算领域，其优化方案使 Google Willow 量子处理器上复杂分子模拟的电路错误率降低了 10 倍；在数学领域，与 Terence Tao 合作突破了多个 Erdős 猜想，并刷新了旅行商问题和 Ramsey 数的历史记录。Google 正将 AlphaEvolve 通过 Google Cloud 向企业用户开放，将内部算法搜索工具产品化为商业服务。
+  </p>
+  <a href="https://deepmind.google/blog/alphaevolve-impact/" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026-05-07</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- 4. Hugging Face Blog -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #f5821f; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">Hugging Face Blog</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    Transformers v5：简洁的模型定义，驱动整个 AI 生态
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    Hugging Face 发布 Transformers v5.8.0，三大核心变化：① 全面转向 PyTorch，正式弃用 TensorFlow 和 Flax；② 模块化架构重构，通过统一的 AttentionInterface 支持多种注意力实现并存，降低生态依赖耦合；③ 量化（quantization）成为一等公民，支持 8-bit/4-bit 低精度全流程（训练+推理），同时移除历史遗留的 "Fast/Slow" 分词器划分。
+  </p>
+  <a href="https://huggingface.co/blog/transformers-v5" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026-05-05</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- 5. The Batch -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #e53e3e; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">The Batch · DeepLearning.AI</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    Issue #352：Seedance 强势崛起、NVIDIA AI 辅助芯片设计、机器人持续学习新突破
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    本期重点报道 ByteDance 旗下 Seedance 2.0 视频生成模型——在两个人类偏好盲测排行榜上均位列前两名，生成质量触发 Hollywood 六大制片公司联名要求 ByteDance 停止使用版权素材训练。此外涵盖 NVIDIA 利用 AI 辅助芯片设计的最新进展，以及解决机器人"灾难性遗忘（catastrophic forgetting）"问题的研究突破。
+  </p>
+  <a href="https://www.deeplearning.ai/the-batch/" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026-05-08</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- 6. Andrej Karpathy YouTube -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #c0392b; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">Andrej Karpathy · YouTube &nbsp;📹 视频</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    From Vibe Coding to Agentic Engineering（Sequoia AI Ascent 2026）
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    📹 视频 | Karpathy 在 Sequoia AI Ascent 2026 上宣告 "vibe coding" 时代已过，提出 "agentic engineering" 新范式。关键数据：2025年12月是分水岭，他与 AI 的代码贡献比从 80:20 逆转为 20:80。核心洞察：vibe coding 拉高了所有人的软件开发门槛下限，而 agentic engineering 是在专业工程师手中延伸质量天花板。人类开发者的核心价值转变为：架构判断、agent 监督与安全兜底，而非敲代码本身。
+  </p>
+  <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 观看视频</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026-05-01</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- 7. AI Explained YouTube -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #805ad5; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">AI Explained · YouTube &nbsp;📹 视频</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    AI News: Everyone's Mad At Anthropic Now
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    📹 视频 | AI Explained 以一贯严谨的批判性视角深度分析 Anthropic 近期遭遇的社区批评浪潮，拆解 benchmark 数据与公关口径之间的落差，探讨 Claude 系列模型在能力定位和商业决策上引发争议的深层原因。该频道以独立视角和数据驱动分析著称，有助于在信息噪音中厘清 Anthropic 最新动向的真实含义。
+  </p>
+  <a href="https://www.youtube.com/watch?v=qDI4odijz44" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 观看视频</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026-05-10</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- 8. Latent Space Podcast -->
+<!-- ============================================================ -->
+<div style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0;">
+  <div style="font-size: 11px; font-weight: 700; color: #2d6a4f; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">Latent Space · AI Engineer Podcast &nbsp;🎧 播客</div>
+  <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1a202c; font-weight: 600; line-height: 1.4;">
+    Shopify's AI Phase Transition：2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym
+  </h3>
+  <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.75; color: #4a5568;">
+    🎧 播客 | Shopify CTO Mikhail Parakhin（前微软 Windows/Edge/Bing/广告业务负责人）分享 Shopify 2026 年的 AI 规模化实践：内部 AI 工具使用爆发式增长，给开发者提供无限制的 Opus-4.6 token 预算；CLI 工具优先于传统 IDE 集成；通过内部系统 Tangle（代码依赖图）、Tangent（代码语义搜索）和 SimGym（客户行为模拟）构建完整的研发提效闭环，为外部工程团队提供了宝贵的规模化 AI 落地参考。
+  </p>
+  <a href="https://www.latent.space/p/shopify" style="color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 600;">→ 收听播客</a>
+  <span style="color: #a0aec0; font-size: 12px; margin-left: 14px;">📅 2026年5月初</span>
+</div>
+
+<!-- Footer -->
+<div style="margin-top: 36px; padding: 20px 0 10px 0; border-top: 1px solid #e2e8f0; text-align: center;">
+  <p style="margin: 0 0 6px 0; font-size: 12px; color: #a0aec0;">软件技术日报 · AI 技术前沿 · 自动整理，每日更新</p>
+  <p style="margin: 0; font-size: 11px; color: #c4ccd8;">渠道覆盖：Anthropic · OpenAI · Google DeepMind · Hugging Face · DeepLearning.AI · YouTube · Podcast</p>
+  <p style="margin: 6px 0 0 0; font-size: 11px; color: #c4ccd8;">本期跳过：Yannic Kilcher、Two Minute Papers、Lex Fridman（过去7天无最新 AI 相关内容）、TWIML（最新集为4月）</p>
+</div>
+
+</body>
+</html>
