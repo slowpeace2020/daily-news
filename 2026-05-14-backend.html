@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-14</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a202c;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0f4f8;">
+  <tr>
+    <td align="center" style="padding:32px 16px;">
+
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:660px;background-color:#ffffff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;">
+
+        <!-- ===== HEADER ===== -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);padding:28px 32px;">
+            <p style="margin:0;color:#7ec8e3;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;">Daily Digest</p>
+            <h1 style="margin:8px 0 4px;color:#ffffff;font-size:22px;font-weight:700;line-height:1.3;">软件技术日报</h1>
+            <p style="margin:0;color:#a0aec0;font-size:14px;">【后端开发 &amp; Python &amp; Go】&nbsp;·&nbsp;2026-05-14</p>
+          </td>
+        </tr>
+
+        <!-- ===== BODY ===== -->
+        <tr>
+          <td style="padding:8px 32px 24px;">
+
+            <!-- ── 1. Real Python ── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <span style="display:inline-block;background-color:#ebf8ff;color:#2b6cb0;font-size:11px;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase;">Real Python</span>
+                  <span style="color:#a0aec0;font-size:12px;margin-left:8px;">2026-05-13</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <a href="https://realpython.com/python-news-may-2026/" style="color:#2b6cb0;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">A New Python Packaging Council and Other News for May 2026</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:#4a5568;font-size:14px;line-height:1.7;">
+                  PEP 772 于 4 月 16 日正式被接受，Python 生态治理迎来重大变革：新成立的 <strong>Python Packaging Council</strong> 将拥有与 Steering Council 同级的权限，通过选举产生 5 名成员，统一管理打包标准与工具决策，终结此前 PyPA 长期的协调混乱局面。PEP 803 同步落地，为 free-threaded 构建定义了稳定的 ABI 规范 <code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">abi3t</code>，让扩展模块无需为每个无 GIL Python 版本单独发布 wheel。PyCon US 2026（5 月 13–19 日，长滩）日程同期公布。
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;" />
+
+            <!-- ── 2. Golang Weekly ── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <span style="display:inline-block;background-color:#e6fffa;color:#276749;font-size:11px;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase;">Golang Weekly</span>
+                  <span style="color:#a0aec0;font-size:12px;margin-left:8px;">Issue #600 · 2026-05-08</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <a href="https://golangweekly.com/issues/600" style="color:#2b6cb0;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">Issue #600: 11 Security Fixes Land in Go</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:#4a5568;font-size:14px;line-height:1.7;">
+                  Go 1.26.3 与 Go 1.25.10 于 5 月 7 日同步发布，修复 <strong>11 个安全漏洞</strong>。最严重的是 <strong>module-proxy checksum bypass</strong>：不可信代理可向 <code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">go</code> 命令提供被篡改的模块和工具链，绕过校验和验证机制。受影响标准库包括 <code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">html/template</code>、<code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">net/http</code>、<code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">net/http/httputil</code>、<code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">net/mail</code> 及 <code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">syscall</code>。所有生产环境请立即升级。
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;" />
+
+            <!-- ── 3. Martin Fowler ── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <span style="display:inline-block;background-color:#fff5f5;color:#c53030;font-size:11px;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase;">Martin Fowler Blog</span>
+                  <span style="color:#a0aec0;font-size:12px;margin-left:8px;">2026-05-05</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <a href="https://martinfowler.com/fragments/2026-05-05.html" style="color:#2b6cb0;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">Fragments: Lattice — Reducing Friction in AI-Assisted Programming</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:#4a5568;font-size:14px;line-height:1.7;">
+                  Martin Fowler 推介 Rahul Garg 关于降低 AI 辅助编程摩擦的系列研究，重点介绍其开源框架 <strong>Lattice</strong>。Lattice 将最佳实践系统化为可操作的工作流模式，帮助团队以更结构化的方式与 LLM 协作完成复杂工程任务。相比随意地让 AI 写代码，Lattice 提供了一套可重复的协作范式，代表当前工程界对「如何将 AI 真正融入软件工程实践」的深度探索。
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;" />
+
+            <!-- ── 4. Netflix Tech Blog ── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <span style="display:inline-block;background-color:#fff5f5;color:#9b2335;font-size:11px;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase;">Netflix Tech Blog</span>
+                  <span style="color:#a0aec0;font-size:12px;margin-left:8px;">2026-05-01</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#2b6cb0;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">State of Routing in Model Serving</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:#4a5568;font-size:14px;line-height:1.7;">
+                  Netflix ML 基础设施系列首篇：深度介绍其模型服务平台的流量路由架构。核心组件 <strong>Switchboard</strong> 是集中式路由服务，当前每秒处理 <strong>100 万次推理请求</strong>，支持数百种模型类型和版本。设计亮点是客户端只需提供标准请求上下文，路由层透明完成模型选择与分片调度，实现模型架构与上层服务的完全解耦，使模型迭代无需客户端协调，大幅降低了 ML 平台的工程复杂度。
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;" />
+
+            <!-- ── 5. Python Weekly ── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <span style="display:inline-block;background-color:#ebf8ff;color:#2c5282;font-size:11px;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase;">Python Weekly</span>
+                  <span style="color:#a0aec0;font-size:12px;margin-left:8px;">Issue #743 · 2026-04-30</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color:#2b6cb0;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">Python Weekly Issue #743</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:#4a5568;font-size:14px;line-height:1.7;">
+                  本期头条：<strong>Anthropic 与 Python 软件基金会（PSF）</strong>签订两年合作协议，投入 <strong>150 万美元</strong>支持 Python 核心基础设施建设与 PyPI 安全生态，重点资助开发针对 PyPI 恶意包的自动化审查工具。此外，Visual Studio Code Python 环境扩展正式发布，显著改善本地虚拟环境管理体验，开发者可直接在 IDE 内切换和创建 Python 环境，无需手动管理激活脚本。
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;" />
+
+            <!-- ── 6. High Scalability ── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <span style="display:inline-block;background-color:#fffff0;color:#744210;font-size:11px;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase;">High Scalability</span>
+                  <span style="color:#a0aec0;font-size:12px;margin-left:8px;">2026-04-21</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <a href="https://highscalability.com/untitled-2/" style="color:#2b6cb0;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">Kafka 101 — by Stanislav Kozlovski (Apache Kafka Committer)</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:#4a5568;font-size:14px;line-height:1.7;">
+                  Apache Kafka Committer Stanislav Kozlovski 亲撰的 Kafka 深度入门指南，从分布式流处理架构的设计哲学出发，系统讲解 Partition、Replication、Consumer Group、Log Compaction 等核心机制。文章重点阐释 Kafka 如何通过<strong>顺序写入</strong>与<strong>零拷贝（zero-copy）</strong>实现极高吞吐，并提供生产环境中 partition 数量与 replication factor 的选型建议。是理解 Kafka 内部原理的权威参考。
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;" />
+
+            <!-- ── 7. Arjan Codes YouTube ── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <span style="display:inline-block;background-color:#faf5ff;color:#553c9a;font-size:11px;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase;">Arjan Codes</span>
+                  <span style="display:inline-block;background-color:#fed7d7;color:#c53030;font-size:11px;font-weight:600;padding:2px 6px;border-radius:3px;margin-left:6px;">📹 视频</span>
+                  <span style="color:#a0aec0;font-size:12px;margin-left:8px;">YouTube · 近期</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="color:#2b6cb0;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">Don't Use Boolean Flags in Python, Use Policies Instead</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:#4a5568;font-size:14px;line-height:1.7;">
+                  Arjan 通过具体示例讲解为何 Boolean 参数（如 <code style="background:#edf2f7;padding:1px 5px;border-radius:3px;font-size:12px;font-family:monospace;">use_cache=True</code>）是代码坏味道，并演示如何用<strong>策略模式（Policy Pattern）</strong>彻底消除条件分支。策略对象作为一等公民传入函数，既让 API 意图一目了然，又使行为扩展无需修改原有函数，显著提升代码的可读性与可测试性。这是 Python 工程实践中高频实用的设计技巧。
+                </td>
+              </tr>
+            </table>
+
+            <!-- ===== SKIPPED CHANNELS ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:32px;">
+              <tr>
+                <td style="background-color:#f7fafc;border-radius:8px;padding:14px 16px;">
+                  <p style="margin:0 0 6px;color:#718096;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;">本期跳过渠道（7 天内无新内容）</p>
+                  <p style="margin:0;color:#a0aec0;font-size:12px;line-height:1.8;">
+                    The Go Blog &nbsp;·&nbsp; Anthony GG (YouTube) &nbsp;·&nbsp; Hussein Nasser (YouTube) &nbsp;·&nbsp;
+                    Fireship (YouTube) &nbsp;·&nbsp; Dan Luu Blog &nbsp;·&nbsp; Brendan Gregg Blog &nbsp;·&nbsp; Go by Example
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ===== FOOTER ===== -->
+        <tr>
+          <td style="background-color:#f7fafc;padding:16px 32px;border-top:1px solid #e2e8f0;text-align:center;">
+            <p style="margin:0;color:#a0aec0;font-size:12px;">软件技术日报 &nbsp;·&nbsp; 自动生成 &nbsp;·&nbsp; 2026-05-14</p>
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
