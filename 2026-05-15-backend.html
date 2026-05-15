@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【后端开发 & Python & Go】- 2026-05-15</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#222222;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <!-- 主容器 -->
+        <table width="680" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;">
+
+          <!-- 头部 -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 60%,#0f3460 100%);padding:32px 36px;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#8ab4f8;letter-spacing:2px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:0 0 8px 0;font-size:24px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报
+              </h1>
+              <h2 style="margin:0 0 12px 0;font-size:15px;font-weight:400;color:#a8c7fa;">
+                后端开发 &amp; Python &amp; Go
+              </h2>
+              <p style="margin:0;font-size:13px;color:#6c8ebf;">2026-05-15 &nbsp;|&nbsp; 精选 10 条技术动态</p>
+            </td>
+          </tr>
+
+          <!-- 正文区 -->
+          <tr>
+            <td style="padding:24px 36px 32px;">
+
+              <!-- ===== 1. Martin Fowler Blog ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Martin Fowler Blog</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">2026-05-14</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://martinfowler.com/fragments/2026-05-14.html" style="color:#1a73e8;text-decoration:none;">Fragments: May 14 — Agentic Programming 行业研讨日记</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      Martin Fowler 参加了一场关于 agentic programming 对软件行业影响的整日闭门研讨会。核心观点：大多数所谓的 "agent" 用例本质上仍是可预测的工作流（workflow），将 LLM 作为其中一两个步骤调用即可，并不需要真正的自主性。会议中还分享了一个震撼案例：用 agent 将 GNU Cobol 编译器行为克隆为 Rust 实现，3 天内生成了 7 万行可运行代码。研讨还重点讨论了数据转换场景中 agent 的优势，以及"组合函数"比"让 agent 自行协作"在性能和 token 消耗上更优的工程实践。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 2. Netflix Tech Blog ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#fce8e6;color:#d93025;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Netflix Tech Blog</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">2026-05</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#1a73e8;text-decoration:none;">State of Routing in Model Serving</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      Netflix ML 模型服务平台系列文章首篇，揭秘支撑个性化推荐、商业化等场景的核心基础设施。平台当前承载数百种模型类型与版本，峰值达每秒 100 万次推理请求。文章详细介绍了统一入口 API 抽象设计，以及流量路由中枢 Switchboard 服务，和后续演进出的 Lightbulb 架构——着力解决在极端规模下如何将正确请求路由到正确模型实例、正确集群分片的工程挑战。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 3. Real Python ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#e6f4ea;color:#1e8e3e;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Real Python</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">2026-05-13</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://realpython.com/" style="color:#1a73e8;text-decoration:none;">用 OpenCode + 免费 Gemini API Key 在终端分析与重构 Python 代码</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      Real Python 最新教程介绍了开源 AI 编程助手 OpenCode 的实战用法：通过申请免费的 Gemini API Key，即可在本地终端中让 AI 对 Python 项目进行代码分析与重构，无需订阅付费服务。教程覆盖安装配置、常用命令，以及如何在不离开命令行的情况下获得代码质量建议，是提升 Python 开发效率的实用工具介绍。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 4. Python Weekly ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#e6f4ea;color:#1e8e3e;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Python Weekly</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">2026-05-07</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://www.pythonweekly.com/" style="color:#1a73e8;text-decoration:none;">Python Weekly — 2026-05-07 期（最新一期）</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      由 Rahul Chaudhary 策划的本期 Python Weekly 汇聚了一周内最值得关注的 Python 生态动态，包括精选文章、新发布的库与工具、社区事件等。内容覆盖从 Python 基础技巧到 AI 应用开发的广泛主题，是跟踪 Python 社区最新趋势的高效资讯来源，每周四定时发布。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 5. Golang Weekly ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Golang Weekly</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">2026-05-08</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://golangweekly.com/issues/600" style="color:#1a73e8;text-decoration:none;">Issue #600: 11 security fixes land in Go（里程碑第 600 期）</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      Golang Weekly 第 600 期重点报道 Go 1.26.3 安全补丁版本（2026-05-07 发布），本次更新修复了 go 命令、pack 工具，以及 html/template、net、net/http、net/http/httputil、net/mail 和 syscall 等多个标准库包中共 11 个安全漏洞。所有在生产环境运行 Go 服务的团队应优先升级。本期恰逢 600 期里程碑，同时精选了社区对 Go 未来提案的讨论。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 6. High Scalability ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#fff3e0;color:#e65100;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">High Scalability</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">近期</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://highscalability.com/untitled-2/" style="color:#1a73e8;text-decoration:none;">Kafka 101：分布式流处理平台深度解析</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      High Scalability 刊载了来自 Apache Kafka Committer Stanislav Kozlovski 的深度技术文章，系统梳理 Kafka 从 LinkedIn 内部诞生（2011年）到成为互联网实时数据流领域事实标准的发展历程。文章重点解析 Kafka 战胜传统消息总线的核心原因：生产者与消费者解耦的架构设计，以及 Kafka 的分区、副本、offset 等关键概念的工程实现细节，适合需要在系统设计中引入消息队列的工程师阅读。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 7. Arjan Codes (YouTube) ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#fce8e6;color:#d93025;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Arjan Codes</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">📹 视频 · ~1周前</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=GmlZBdKhl9Y" style="color:#1a73e8;text-decoration:none;">DRY Often Makes Your Code Worse</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      📹 视频 | Arjan Codes 最新视频挑战了"Don't Repeat Yourself（DRY）"原则的盲目应用，通过具体代码示例展示：过度追求 DRY 的重构有时会引入不必要的抽象层，反而降低代码的可读性和可维护性。视频提出应根据场景灵活判断——有时适度的"重复"比引入臃肿抽象更清晰，这对 Python 工程最佳实践有重要参考价值。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 8. Anthony GG (YouTube) ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Anthony GG</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">📹 视频 · 近期</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=CMUfFkvXsmU" style="color:#1a73e8;text-decoration:none;">Is Golang Dying? 2026 Outlook</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      📹 视频 | 拥有 9 年纯 Go 开发经验的 Anthony GG 针对"Go 是否在走下坡路"这一社区热议话题给出了 2026 年的判断：Go 不仅没有衰退，反而正成为云原生、后端开发和分布式系统领域最重要的语言之一。视频结合真实就业市场数据、开源生态活跃度（Go 1.26 等持续迭代）以及 Go 在高性能场景的独特优势，为 Go 开发者的技术路线选择提供了有力参考。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 9. Hussein Nasser (YouTube) ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#fff3e0;color:#e65100;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Hussein Nasser</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">📹 视频 · 近期</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=p6TeRabqJs0" style="color:#1a73e8;text-decoration:none;">Indexing Woes, Secret to Backend Interviews, Math and Software — The Backend Engineering Show</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      📹 视频 | Hussein Nasser 在 Backend Engineering Show 本期节目中深入探讨了数据库索引的工程痛点（Indexing Woes），包括索引选择不当导致的性能陷阱以及实际排查思路。节目同时分享了后端面试的核心秘诀：理解数据结构和算法背后的系统设计意图，比死记硬背更有价值。适合准备后端岗位面试或希望夯实数据库调优基础的开发者。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:20px 0;" />
+
+              <!-- ===== 10. Fireship (YouTube) ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background:#f3e8ff;color:#7b1fa2;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">Fireship</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">📹 视频 · ~3周前</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="color:#1a73e8;text-decoration:none;">Claude just got another superpower...</a>
+                    </p>
+                    <p style="margin:0;font-size:14px;color:#444;line-height:1.7;">
+                      📹 视频 | Fireship 以一贯的快节奏风格介绍了 Anthropic 为 Claude 新增的"Claude Design"能力，评价其为 Anthropic 迄今最具颠覆性的功能之一。视频分析了该特性对 AI 辅助设计与前端开发工作流的影响，以及开发者如何将其集成到现有工具链中，内容对关注 AI 工具演进的后端与全栈工程师有直接参考价值。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 跳过的渠道说明 -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:28px;">
+                <tr>
+                  <td style="background:#f8f9fa;border-radius:6px;padding:14px 18px;">
+                    <p style="margin:0 0 4px 0;font-size:12px;font-weight:600;color:#666;">本期跳过渠道（过去 7 天无新内容）</p>
+                    <p style="margin:0;font-size:12px;color:#888;line-height:1.6;">
+                      The Go Blog（最新：2026-03-24）&nbsp;·&nbsp; Dan Luu（无明确 2026 新文）&nbsp;·&nbsp; Brendan Gregg（最新：2026-02-07）&nbsp;·&nbsp; Go by Example（无近期更新）
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- 底部 -->
+          <tr>
+            <td style="background:#f8f9fa;border-top:1px solid #eeeeee;padding:18px 36px;text-align:center;">
+              <p style="margin:0;font-size:12px;color:#aaaaaa;">
+                软件技术日报 · 由 Daily News Bot 自动整理 · 2026-05-15
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
