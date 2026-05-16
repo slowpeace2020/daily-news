@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【AI 技术前沿】- 2026-05-16</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 0;">
+        <table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:32px 32px 28px;border-radius:8px 8px 0 0;">
+              <p style="margin:0 0 6px;font-size:12px;color:#8888aa;letter-spacing:1px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0 0 8px;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报【AI 技术前沿】</h1>
+              <p style="margin:0;font-size:13px;color:#aaaacc;">2026 年 05 月 16 日 &nbsp;·&nbsp; 涵盖 9 个渠道的最新内容</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="background-color:#f7f7fb;padding:16px 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0;font-size:13px;color:#555566;line-height:1.7;">
+                本期精选来自 Anthropic、OpenAI、Google DeepMind、Hugging Face、The Batch、Andrej Karpathy、Lex Fridman、Latent Space 及 TWIML AI 的过去 7 天最新内容，重点关注大模型进展、AI 工程实践与前沿研究。
+              </p>
+            </td>
+          </tr>
+
+          <!-- ==============================
+               1. Anthropic Blog
+               ============================== -->
+          <tr>
+            <td style="padding:28px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">Anthropic Blog</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                Introducing The Anthropic Institute
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                Anthropic 正式宣布成立 <strong>The Anthropic Institute</strong>，这是一个专注于应对强大 AI 系统所带来的重大挑战的研究机构。该机构将汇聚跨学科研究人员，围绕 AI 安全性、对齐（alignment）与政策影响展开长期研究。此举标志着 Anthropic 在推动 frontier AI 负责任发展方面的战略性投入进一步深化。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://www.anthropic.com/news/the-anthropic-institute" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               2. OpenAI Blog
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">OpenAI Blog</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                Supercomputer Networking to Accelerate Large-Scale AI Training（2026-05-13）
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                OpenAI 详细披露了其超级计算机网络基础设施的工程细节，揭示如何通过高带宽互联网络协调数万块 GPU 以支撑大规模 AI 训练。文章涵盖底层网络拓扑设计、集合通信（collective communication）优化以及延迟与吞吐量的工程权衡，为业界构建 AI 训练集群提供了重要参考。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://openai.com/news/engineering/" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               3. Google DeepMind Blog
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">Google DeepMind Blog</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                AlphaEvolve: Gemini-Powered Coding Agent Scaling Impact Across Fields（2026-05-07）
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                Google DeepMind 的 <strong>AlphaEvolve</strong> 是由 Gemini 2.0 驱动的代码进化 Agent，能够自主设计并优化复杂算法。它已在 Google 内部实现持续节约全球计算资源约 0.7%，并在 FlashAttention kernel 上取得高达 32.5% 的加速；在量子物理领域，与 Terence Tao 等顶级数学家合作，解决了多个 Erdős 悬赏问题。目前该模型已在 Google Cloud 上开放私有预览。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://deepmind.google/blog/alphaevolve-impact/" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               4. Hugging Face Blog
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">Hugging Face Blog</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                Transformers v5: Simple Model Definitions Powering the AI Ecosystem
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                Hugging Face 发布了里程碑式的 <strong>Transformers v5</strong>，距 v4 发布已整整五年。新版本全面转向 PyTorch-First 架构，废弃 TensorFlow/Flax 支持，并将量化（quantization）提升为一等公民；通过模块化重构，推理速度相比 v4 提升 20–30%，支持超过 400 种模型架构，Hub 上兼容的 checkpoint 已突破 75 万个。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://huggingface.co/blog/transformers-v5" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               5. The Batch
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">The Batch · DeepLearning.AI</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                Issue 352: Seedance Makes A Splash, Nvidia's AI-Guided Chip Designs, Helping Robots Not Forget
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                本期重点：ByteDance 的视频生成模型 <strong>Seedance 2.0</strong> 在多个人类偏好评测榜单中名列前茅，但随即因生成好莱坞明星肖像而引发六大制片公司联名投诉；NVIDIA 研究总监 Bill Dally 与 Google 的 Jeff Dean 在台上分享了 AI 如何深度介入 Rubin 芯片的硬件设计流程，加速 Verilog 级别的电路优化。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://www.deeplearning.ai/the-batch/issue-352" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               6. Andrej Karpathy YouTube
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">Andrej Karpathy · YouTube &nbsp;📹 视频</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                From Vibe Coding to Agentic Engineering
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                Karpathy 在本期视频中深入探讨了 AI 辅助编程的演进路径：从依赖"氛围"（vibe）驱动的快速原型开发，到真正意义上的 <strong>Agentic Engineering</strong>——让 AI Agent 自主规划、执行并验证复杂工程任务。他分析了 Code Agent 的能力边界、失败模式以及人机协作的最佳实践，为工程师思考如何在 AI 时代重新定义自身价值提供了清晰框架。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 观看视频</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               7. Lex Fridman Podcast
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">Lex Fridman Podcast &nbsp;🎧 播客</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                #490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                Lex Fridman 与 Allen Institute for AI 的 post-training 负责人 <strong>Nathan Lambert</strong> 及《Build a Large Language Model》作者 <strong>Sebastian Raschka</strong> 联合回顾了 2026 年 AI 发展全貌。三人深入讨论了 scaling laws 的现状与瓶颈、中美 AI 竞争格局、推理模型的崛起、Code Agent 的成熟度评估，以及 AGI 时间线等核心议题。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://lexfridman.com/ai-sota-2026/" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 收听播客</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               8. Latent Space Podcast
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">Latent Space Podcast &nbsp;🎧 播客</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                AIE Europe Debrief + Agent Labs Thesis: Unsupervised Learning × Latent Space Crossover Special (2026)
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                Latent Space 与 Unsupervised Learning 联合出品了 AIE Europe 峰会的深度复盘特辑，重点梳理了 <strong>Agent Labs</strong> 的投资逻辑与技术趋势。节目探讨了 AI Engineer 生态的演变——从工具链到 Agent orchestration 框架——并从欧洲视角分析了 AI 基础设施与应用层的差异化机会。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://www.latent.space/p/unsupervised-learning-2026" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 收听播客</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:0 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:20px 0 0;"></td></tr>
+
+          <!-- ==============================
+               9. TWIML AI Podcast
+               ============================== -->
+          <tr>
+            <td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#7c7c99;letter-spacing:0.8px;text-transform:uppercase;">TWIML AI Podcast &nbsp;🎧 播客</p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                Ep.767 – How to Find the Agent Failures Your Evals Miss（2026-05-07）
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#333344;line-height:1.8;">
+                Distributional 联合创始人 <strong>Scott Clark</strong> 深入剖析了如何在 LLM agent 系统的生产环境中发现隐藏的失败模式。他提出了 LLM 系统可观测性（observability）的 Maslow 层级模型，并以真实案例展示了标准 eval 无法捕获的"懒惰"工具调用幻觉（lazy tool-use hallucination）问题——这对构建可靠 agent 系统的工程师有极高参考价值。
+              </p>
+              <p style="margin:0 0 16px;">
+                <a href="https://twimlai.com/podcast/twimlai/how-find-agent-failures-your-evals-miss" style="color:#2563eb;font-size:13px;text-decoration:none;">→ 收听播客</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f0f0f8;padding:20px 32px;border:1px solid #e8e8f0;border-radius:0 0 8px 8px;margin-top:8px;">
+              <p style="margin:0;font-size:12px;color:#888899;line-height:1.7;">
+                本邮件由 AI Agent 自动整理生成 · 2026-05-16<br>
+                渠道覆盖：Anthropic · OpenAI · Google DeepMind · Hugging Face · The Batch · Andrej Karpathy · Lex Fridman · Latent Space · TWIML AI<br>
+                跳过渠道（过去 7 天无新内容）：Yannic Kilcher · Two Minute Papers · AI Explained
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
