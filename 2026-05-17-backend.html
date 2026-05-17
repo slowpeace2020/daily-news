@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-17</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <table width="660" cellpadding="0" cellspacing="0" border="0" style="max-width:660px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 32px;border-radius:6px 6px 0 0;">
+              <p style="margin:0;font-size:12px;color:#aaaacc;letter-spacing:1px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:8px 0 4px;font-size:22px;color:#ffffff;font-weight:700;">
+                软件技术日报【后端开发 &amp; Python &amp; Go】
+              </h1>
+              <p style="margin:0;font-size:13px;color:#8888bb;">2026-05-17 &nbsp;·&nbsp; 每日精选技术动态</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="background-color:#f7f8fc;padding:16px 32px;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0;font-size:13px;color:#666688;line-height:1.6;">
+                本期精选来自 Martin Fowler Blog、Netflix Tech Blog、Real Python、Python Weekly、Golang Weekly、Arjan Codes、Fireship 等渠道过去 7 天最新内容，聚焦性能优化、新版本特性与工程最佳实践。
+              </p>
+            </td>
+          </tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- 1. Martin Fowler Blog -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:28px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 6px;font-size:11px;color:#888899;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Martin Fowler Blog</p>
+              <h2 style="margin:0 0 10px;font-size:17px;color:#1a1a2e;font-weight:700;line-height:1.4;">
+                <a href="https://martinfowler.com/fragments/2026-05-14.html" style="color:#2563eb;text-decoration:none;">Fragments: May 14, 2026 — Agentic Programming Retreat &amp; AI-Assisted Dev 反思</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#444455;line-height:1.7;">
+                Martin Fowler 参加了一场聚焦 agentic programming 未来的软件开发圈闭门交流会，与会者热议 AI 大规模介入后程序员角色的演变。
+                值得关注的一个案例：某团队用 Rust 对 GNU Cobol 编译器进行了行为级克隆，在 3 天内生成了 7 万行 Rust 代码。
+                Fowler 同时指出，对 AI 建议的「主动 review」本身也是人类保持技能的重要方式——自动接受会让工程师的长期判断力退化。
+              </p>
+              <p style="margin:8px 0 0;font-size:13px;">
+                <a href="https://martinfowler.com/fragments/2026-05-14.html" style="color:#2563eb;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:0;" /></td></tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- 2. Netflix Tech Blog -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:24px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 6px;font-size:11px;color:#888899;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Netflix Tech Blog</p>
+              <h2 style="margin:0 0 10px;font-size:17px;color:#1a1a2e;font-weight:700;line-height:1.4;">
+                <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#2563eb;text-decoration:none;">State of Routing in Model Serving — 每秒百万请求的 ML 推理路由架构</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#444455;line-height:1.7;">
+                Netflix 发布系列文章第一篇，深入介绍支撑个性化推荐、搜索等场景的 ML 模型服务平台。
+                平台当前每秒处理约 100 万次推理请求，核心抽象是将模型封装为完整工作流（含预处理、特征计算、后处理），通过统一 API 入口由集中式路由服务 Switchboard 调度，再演进至低延迟的 Lightbulb 架构以解决大规模运营挑战。
+                文章清晰呈现了从单点路由到分布式架构的演进路径，是系统设计的优质参考。
+              </p>
+              <p style="margin:8px 0 0;font-size:13px;">
+                <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#2563eb;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:0;" /></td></tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- 3. Real Python -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:24px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 6px;font-size:11px;color:#888899;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Real Python</p>
+              <h2 style="margin:0 0 10px;font-size:17px;color:#1a1a2e;font-weight:700;line-height:1.4;">
+                <a href="https://realpython.com/python-news-may-2026/" style="color:#2563eb;text-decoration:none;">A New Python Packaging Council and Other News for May 2026</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#444455;line-height:1.7;">
+                Python 社区重磅消息：PEP 772 获批，正式组建拥有 5 名选举成员的 Python Packaging Council，结束 PyPA 长期松散协调的局面，包管理治理迎来新时代。
+                同期，Python 3.15.0 beta 1 于 5 月 5 日发布进入 feature freeze；Python 3.14.5 将撤回争议较大的增量 GC 改动，回归分代式垃圾回收。
+                另外 PyCon US 2026 于 5 月 13–19 日在加州 Long Beach 举行，多个技术议题值得关注。
+              </p>
+              <p style="margin:8px 0 0;font-size:13px;">
+                <a href="https://realpython.com/python-news-may-2026/" style="color:#2563eb;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:0;" /></td></tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- 4. Python Weekly -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:24px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 6px;font-size:11px;color:#888899;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Python Weekly</p>
+              <h2 style="margin:0 0 10px;font-size:17px;color:#1a1a2e;font-weight:700;line-height:1.4;">
+                <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color:#2563eb;text-decoration:none;">Issue #743 (April 30, 2026) — Python Logging 对比、并发实战与 Pydantic AI Agent</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#444455;line-height:1.7;">
+                本期重点覆盖三大工程话题：一是对标准库 <code style="background:#f0f0f8;padding:1px 4px;border-radius:3px;">logging</code>、<code style="background:#f0f0f8;padding:1px 4px;border-radius:3px;">structlog</code> 与 <code style="background:#f0f0f8;padding:1px 4px;border-radius:3px;">loguru</code> 的基准测试与 OpenTelemetry 集成路径对比；
+                二是 Python 并发全景（multithreading、multiprocessing、GIL-free 模式与同步机制）；
+                三是使用 Pydantic AI 构建生产级 AI Agent，涵盖结构化输出、自定义工具与依赖注入模式。
+              </p>
+              <p style="margin:8px 0 0;font-size:13px;">
+                <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color:#2563eb;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:0;" /></td></tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- 5. Golang Weekly -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:24px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 6px;font-size:11px;color:#888899;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Golang Weekly</p>
+              <h2 style="margin:0 0 10px;font-size:17px;color:#1a1a2e;font-weight:700;line-height:1.4;">
+                <a href="https://golangweekly.com/issues/601" style="color:#2563eb;text-decoration:none;">Issue #601 (May 15, 2026) — Why Cilium Vendors Every Go Module in 2026</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#444455;line-height:1.7;">
+                本期头条聚焦云原生网络项目 Cilium 为何在 2026 年选择将所有 Go 依赖全量 vendor 到仓库：核心原因是对供应链安全、构建可重现性以及 module proxy 可靠性的综合考量，与社区近期 Go 1.26.3/1.25.10 安全补丁修复的 module-proxy checksum bypass 漏洞呼应。
+                上期（#600）则报道了 Go 11 项安全修复，涵盖 <code style="background:#f0f0f8;padding:1px 4px;border-radius:3px;">html/template</code>、<code style="background:#f0f0f8;padding:1px 4px;border-radius:3px;">crypto/tls</code>、<code style="background:#f0f0f8;padding:1px 4px;border-radius:3px;">archive/tar</code> 等核心包，建议及时升级。
+              </p>
+              <p style="margin:8px 0 0;font-size:13px;">
+                <a href="https://golangweekly.com/issues/601" style="color:#2563eb;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:0;" /></td></tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- 6. Arjan Codes (YouTube) -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:24px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 6px;font-size:11px;color:#888899;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Arjan Codes &nbsp;📹 视频</p>
+              <h2 style="margin:0 0 10px;font-size:17px;color:#1a1a2e;font-weight:700;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="color:#2563eb;text-decoration:none;">Don't Use Boolean Flags in Python, Use Policies Instead</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#444455;line-height:1.7;">
+                Arjan 在本视频中提出用「Policy 对象」替代函数中日益膨胀的 boolean 参数：将条件逻辑封装为独立的、可组合的策略类，既消除了复杂的 if-elif 链，也让代码更易扩展与测试。
+                视频结合 Python 实战代码演示 Policy Pattern 的实现，与 Python Weekly #743 中的同名设计理念互为呼应，是工程最佳实践的优质入门素材。
+              </p>
+              <p style="margin:8px 0 0;font-size:13px;">
+                <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="color:#2563eb;">观看视频 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;"><hr style="border:none;border-top:1px solid #e8e8f0;margin:0;" /></td></tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- 7. Fireship (YouTube) -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:24px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0 0 6px;font-size:11px;color:#888899;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Fireship &nbsp;📹 视频</p>
+              <h2 style="margin:0 0 10px;font-size:17px;color:#1a1a2e;font-weight:700;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=gwTQLZSIlsU" style="color:#2563eb;text-decoration:none;">A Single PR Just Hijacked the NPM Registry… — 供应链安全警告</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#444455;line-height:1.7;">
+                Fireship 最新视频（5 月 14 日上线）深度拆解一起通过单次 PR 入侵 NPM registry 的供应链攻击事件，攻击者成功篡改了数百万下载量的开源包。
+                视频分析了攻击向量、npm 信任模型的结构性缺陷，并提醒开发者重新审视 <code style="background:#f0f0f8;padding:1px 4px;border-radius:3px;">npm install</code> 的风险——与 Golang Weekly #601 中 Cilium 全量 vendor 化的安全思路形成有趣对比。
+              </p>
+              <p style="margin:8px 0 0;font-size:13px;">
+                <a href="https://www.youtube.com/watch?v=gwTQLZSIlsU" style="color:#2563eb;">观看视频 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ─────────────────────────────────────────── -->
+          <!-- Skipped channels notice -->
+          <!-- ─────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:24px 32px 0;border-left:1px solid #e8e8f0;border-right:1px solid #e8e8f0;">
+              <p style="margin:0;font-size:12px;color:#999aaa;line-height:1.8;background:#f7f8fc;padding:12px 16px;border-radius:4px;border-left:3px solid #d0d0e8;">
+                <strong style="color:#666677;">已跳过（过去 7 天无新内容）：</strong>
+                High Scalability（最新文章 Apr 21）、The Go Blog（最新文章 Mar 2026）、Anthony GG（未发现 May 2026 新视频）、Hussein Nasser（未发现 May 2026 新视频）、Brendan Gregg Blog（最新文章 Feb 7）、Dan Luu Blog（最新文章 Oct 2024）、Go by Example（静态参考站，无新闻更新）
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:20px 32px;margin-top:24px;border-radius:0 0 6px 6px;">
+              <p style="margin:0;font-size:12px;color:#8888bb;line-height:1.6;">
+                自动聚合 · 2026-05-17 &nbsp;|&nbsp; 涵盖 High Scalability · Martin Fowler · Netflix Tech Blog · Real Python · Python Weekly · Go Blog · Golang Weekly · Arjan Codes · Anthony GG · Hussein Nasser · Fireship · Dan Luu · Brendan Gregg · Go by Example
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
