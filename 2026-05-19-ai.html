@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【AI 技术前沿】- 2026-05-19</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:32px 40px;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#8ab4f8;letter-spacing:2px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0 0 8px 0;font-size:26px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <h2 style="margin:0 0 12px 0;font-size:18px;font-weight:400;color:#8ab4f8;">【AI 技术前沿】</h2>
+              <p style="margin:0;font-size:13px;color:#a0b4c8;">2026 年 05 月 19 日（星期二）&nbsp;|&nbsp;过去 7 天精选内容</p>
+            </td>
+          </tr>
+
+          <!-- Content -->
+          <tr>
+            <td style="padding:32px 40px;">
+
+              <!-- Intro -->
+              <p style="margin:0 0 28px 0;font-size:14px;color:#666666;line-height:1.7;border-left:3px solid #4285f4;padding-left:12px;">
+                本期精选来自 Anthropic、OpenAI、Google DeepMind、Hugging Face、DeepLearning.AI The Batch、Andrej Karpathy、Latent Space 及 TWIML AI Podcast 的最新动态，涵盖大模型新进展、AI 工程实践与前沿研究。
+              </p>
+
+              <!-- ===== 1. Anthropic ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#e8f0fe;color:#1a56e0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">ANTHROPIC BLOG</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">2026-05-14</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Anthropic 与盖茨基金会达成 2 亿美元合作，并推出 Claude Design
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      Anthropic 宣布与比尔及梅琳达·盖茨基金会签署 2 亿美元合作协议，提供资金、Claude 使用积分及技术支持，覆盖全球健康、生命科学、教育与经济流动等领域，为期四年。与此同时，Anthropic Labs 正式推出 <strong>Claude Design</strong>——一款由 Claude Opus 4.7 驱动的 AI 原生设计工具，支持创建原型、幻灯片和一页纸文案，并可读取公司代码库与设计文件自动应用品牌设计系统，消息一出导致 Figma 股价当日下跌 7%。该产品目前向 Pro、Max、Team 和 Enterprise 订阅用户开放研究预览。
+                    </p>
+                    <a href="https://www.anthropic.com/news/gates-foundation-partnership" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文：Gates Foundation Partnership</a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ Claude Design 发布公告</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 24px 0;">
+
+              <!-- ===== 2. OpenAI ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#e8f0fe;color:#1a56e0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">OPENAI BLOG</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">2026-05-05</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      GPT-5.5 Instant 正式发布：幻觉减少 52.5%，成为 ChatGPT 新默认模型
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      OpenAI 发布 <strong>GPT-5.5 Instant</strong> 并将其设为 ChatGPT 全用户默认模型（API 端点为 <code style="background:#f4f4f5;padding:1px 4px;border-radius:3px;font-size:12px;">chat-latest</code>）。与 GPT-5.3 Instant 相比，该模型在高风险场景（医学、法律、金融）中虚假声明减少 52.5%，回复长度缩减约 30%，语气更自然。付费用户的个性化记忆功能同步升级，可从历史对话、文件及连接的 Gmail 中提取上下文，实现更精准的个性化响应。
+                    </p>
+                    <a href="https://openai.com/index/gpt-5-5-instant/" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文：GPT-5.5 Instant</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 24px 0;">
+
+              <!-- ===== 3. Google DeepMind ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#e8f0fe;color:#1a56e0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">GOOGLE DEEPMIND BLOG</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">2026-05-12</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      重塑 AI 交互方式：DeepMind 让鼠标指针拥有上下文感知能力
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      Google DeepMind 研究团队正在开发 AI 增强的鼠标指针，目标是让指针能够理解它所指向的内容及其对用户的意义，实现在用户日常使用的任意工具中进行无缝 AI 交互，而无需切换到专属 AI 界面。这是对"如何将 AI 能力嵌入桌面工作流"的一次根本性探索，旨在消除"将你的世界拖进 AI 工具"的摩擦感，使 AI 真正做到 meet users where they are。
+                    </p>
+                    <a href="https://deepmind.google/blog/ai-pointer/" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文：AI Pointer</a>
+                    &nbsp;&nbsp;
+                    <a href="https://deepmind.google/blog/alphaevolve-impact/" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 延伸阅读：AlphaEvolve 一周年进展</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 24px 0;">
+
+              <!-- ===== 4. Hugging Face ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#e8f0fe;color:#1a56e0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">HUGGING FACE BLOG</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">约 2026-05-14</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      2026 年最佳开源 LLM 全面梳理：编程、本地部署、Agentic AI 一网打尽
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      Hugging Face 博客发布年度开源 LLM 综述，指出 2026 年开源模型已不再是"闭源替代品"——在编程、推理、agentic 工作流、长上下文分析及本地部署等场景中，开放权重模型已可用于严肃的生产环境。文章系统性评测了主流 Apache 2.0 授权模型，覆盖 benchmark 对比、License 条件和实际工程适用性。与此同时，Transformers v5 重大版本正式稳定：专注 PyTorch、日均 pip 安装量超 300 万次，tokenizer 架构全面重构，代码库从 40 个架构扩展至逾 400 个。
+                    </p>
+                    <a href="https://huggingface.co/blog/daya-shankar/open-source-llms" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文：Best Open-Source LLMs 2026</a>
+                    &nbsp;&nbsp;
+                    <a href="https://huggingface.co/blog/transformers-v5" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 延伸阅读：Transformers v5</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 24px 0;">
+
+              <!-- ===== 5. The Batch ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#e8f0fe;color:#1a56e0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">THE BATCH · DEEPLEARNING.AI</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">2026-05-15 · Issue 353</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Issue 353：Meta Agentic 计划受挫、美国评估新一代模型、AI 诊断乳腺 X 光片
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      本期聚焦三大亮点：① Meta 的 Agentic AI 部署计划在中国市场遭遇阻碍；② 美国政府正系统评估多个即将发布的前沿模型；③ AI 在医疗影像领域取得突破，可自主诊断乳腺 X 光片。此外，Andrew Ng 在致辞中围绕 AI coding agents 如何加速不同类型软件工作，以及 AI-native 工程团队与传统团队的根本差异进行深度探讨。
+                    </p>
+                    <a href="https://www.deeplearning.ai/the-batch/issue-353" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文：The Batch Issue 353</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 24px 0;">
+
+              <!-- ===== 6. Andrej Karpathy ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#fce8e8;color:#c0392b;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">📹 视频 · ANDREJ KARPATHY</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">2026 年 5 月初 · Sequoia AI Ascent</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      From Vibe Coding to Agentic Engineering：Software 3.0 时代已到来
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      Karpathy 在 Sequoia AI Ascent 2026 上系统阐释了"Vibe Coding"与"Agentic Engineering"的本质区别：前者是降低编程门槛、让人人都能快速构建原型，后者则是将专业软件工程的质量标准与 AI agent 工作流相结合，工程师仍对安全性和正确性负全责。他提出 <strong>Software 3.0</strong> 的概念——通过 prompt、context、agent、memory 与 tool 来编程，并指出 2025 年 12 月是 agentic coding 工具从"有帮助但混乱"跃升为"稳定可靠"的历史转折点。
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 观看视频：YouTube</a>
+                    &nbsp;&nbsp;
+                    <a href="https://karpathy.bearblog.dev/sequoia-ascent-2026/" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 作者博文摘要</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 24px 0;">
+
+              <!-- ===== 7. Latent Space ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#e8fce8;color:#1e7e34;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">🎧 播客 · LATENT SPACE</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">2026-05-05</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      AI 如何加速量子场论发现：11 分钟完成数天计算的物理学家来了
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      本期对话嘉宾是 Vanderbilt 大学教授、2024 年新视野基础物理突破奖得主 Alex Lupsowska（同时也是 OpenAI Fellow）。他分享了 AI 工具如何改变理论物理研究：一个原本需要数天的 Park-Taylor amplitudes 计算，使用 o3 模型只需 11 分钟；AI 还帮助推导了关于单负 gluon/graviton 振幅的简洁通用公式与证明。这是 AI 工程实践真正渗透到基础科学的鲜活案例。
+                    </p>
+                    <a href="https://www.latent.space/podcast" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 收听播客：Latent Space</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 24px 0;">
+
+              <!-- ===== 8. TWIML AI Podcast ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;">
+                      <span style="display:inline-block;background-color:#e8fce8;color:#1e7e34;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:0.5px;">🎧 播客 · TWIML AI PODCAST</span>
+                      <span style="margin-left:8px;font-size:11px;color:#999999;">2026-05-07 · Episode 767</span>
+                    </p>
+                    <h3 style="margin:6px 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      如何找出 Eval 遗漏的 Agent 故障？生产级 LLM 系统可观测性指南
+                    </h3>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.8;">
+                      本期嘉宾是 Distributional 联合创始人 &amp; CEO Scott Clark，深入探讨如何在生产环境中可靠地运维和持续改进复杂 LLM 系统与 AI agent。核心框架是"可观测性的 Maslow 层次模型"，帮助团队系统性识别传统 eval 框架无法捕获的 agent 失效模式，对构建企业级 AI 应用的工程师极具参考价值。
+                    </p>
+                    <a href="https://twimlai.com/podcast/twimlai/how-find-agent-failures-your-evals-miss" style="color:#1a56e0;font-size:13px;text-decoration:none;font-weight:600;">→ 收听播客：TWIML Episode 767</a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f8f9fa;padding:20px 40px;border-top:1px solid #eef0f3;">
+              <p style="margin:0;font-size:12px;color:#999999;line-height:1.6;">
+                本邮件由 Daily News Bot 自动生成 · 内容来源于各渠道公开发布内容 · 技术术语保留英文原文
+                <br>
+                涵盖渠道：Anthropic · OpenAI · Google DeepMind · Hugging Face · The Batch · Andrej Karpathy · Latent Space · TWIML AI Podcast
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
