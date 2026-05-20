@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-20</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#333333;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center" style="padding:20px 10px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:660px;background:#ffffff;border:1px solid #e8e8e8;border-radius:6px;">
+
+        <!-- Header -->
+        <tr>
+          <td style="padding:32px 32px 20px;border-bottom:3px solid #1a73e8;">
+            <h1 style="margin:0 0 6px;font-size:24px;font-weight:700;color:#1a1a1a;letter-spacing:-0.5px;">软件技术日报</h1>
+            <p style="margin:0;font-size:13px;color:#666666;">【后端开发 &amp; Python &amp; Go】&nbsp;&nbsp;·&nbsp;&nbsp;2026-05-20（过去 7 天精选）</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:8px 32px 0;">
+            <p style="margin:0;font-size:12px;color:#999999;font-style:italic;">
+              本期收录：Martin Fowler · Netflix Tech Blog · Real Python · Python Weekly · Golang Weekly · Fireship · High Scalability
+            </p>
+          </td>
+        </tr>
+
+        <!-- ===== Martin Fowler ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;font-size:10px;font-weight:700;color:#ffffff;background:#1a73e8;padding:3px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.8px;">Martin Fowler Blog</span>
+                  <span style="font-size:11px;color:#999999;margin-left:8px;">2026-05-14</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    Fragments: May 14 — Agentic Programming 时代的软件开发与人类角色
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.8;color:#444444;">
+                    Martin Fowler 出席了由 Mechanical Orchard 主办的 The Orchard Retreat 业界研讨会，与软件从业者共同探讨 agentic programming（智能体编程）兴起背景下，开发行业的未来走向与人类工程师的新角色。会议中一项令人印象深刻的演示是：一个团队仅用 3 天在 Rust 中构建了 70K 行代码的 GNU Cobol 编译器行为克隆。讨论核心聚焦于 AI 辅助开发中 human learning（人类学习）与代码 review（审查）的持续重要性，以及 LLM non-determinism（非确定性）对软件工程标准化带来的深层挑战。
+                  </p>
+                  <a href="https://martinfowler.com/fragments/2026-05-14.html" style="display:inline-block;color:#1a73e8;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #1a73e8;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr><td style="padding:20px 32px 0;"><hr style="border:none;border-top:1px solid #f0f0f0;margin:0;"></td></tr>
+
+        <!-- ===== Netflix Tech Blog ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;font-size:10px;font-weight:700;color:#ffffff;background:#e50914;padding:3px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.8px;">Netflix Tech Blog</span>
+                  <span style="font-size:11px;color:#999999;margin-left:8px;">2026-05-08</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    Scaling LLM Post-Training at Netflix
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.8;color:#444444;">
+                    Netflix 分享了其大规模 LLM post-training（后训练）体系的工程实践，目标是利用大语言模型为用户带来全新的个性化体验，覆盖推荐、搜索与个性化等核心业务场景。文章详细介绍了 Netflix 如何构建高效的 post-training 基础设施，打通数据飞轮、模型迭代与在线服务的端到端流程，并探讨了在生产规模下控制训练成本与质量的核心工程挑战。这一技术积累为 Netflix member experience（用户体验）的持续迭代升级奠定了坚实基础。
+                  </p>
+                  <a href="https://netflixtechblog.com/scaling-llm-post-training-at-netflix-0046f8790194" style="display:inline-block;color:#1a73e8;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #1a73e8;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr><td style="padding:20px 32px 0;"><hr style="border:none;border-top:1px solid #f0f0f0;margin:0;"></td></tr>
+
+        <!-- ===== Real Python ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;font-size:10px;font-weight:700;color:#ffffff;background:#306998;padding:3px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.8px;">Real Python</span>
+                  <span style="font-size:11px;color:#999999;margin-left:8px;">2026-05 月报</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    A New Python Packaging Council and Other Python News for May 2026
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.8;color:#444444;">
+                    Python 生态迎来重大治理里程碑：社区首次选举产生专属的 Python Packaging Council（打包治理委员会），为 PyPI 及整个打包工具链建立起独立的管理机构，结束长期以来打包生态缺乏正式治理的局面。与此同时，Python 3.14 的增量垃圾收集器（incremental garbage collector）因生产环境出现内存溢出问题被核心团队回滚撤销。另一重磅消息是 OpenAI 宣布收购 Astral——即 uv、Ruff 和 ty 背后的公司，引发社区对 Python 工具链未来走向的广泛关注与讨论。
+                  </p>
+                  <a href="https://realpython.com/python-news-may-2026/" style="display:inline-block;color:#1a73e8;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #1a73e8;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr><td style="padding:20px 32px 0;"><hr style="border:none;border-top:1px solid #f0f0f0;margin:0;"></td></tr>
+
+        <!-- ===== Python Weekly ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;font-size:10px;font-weight:700;color:#ffffff;background:#4b8bbe;padding:3px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.8px;">Python Weekly</span>
+                  <span style="font-size:11px;color:#999999;margin-left:8px;">Issue 743 · 2026-04-30</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    Issue 743 — Policy Pattern、Voice Agent 构建与 Streamlit 高级技巧
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.8;color:#444444;">
+                    第 743 期重点介绍使用 Policy Pattern（策略模式）拆解复杂 if/else 条件链的工程实践，帮助开发者写出更具可维护性的业务逻辑代码。本期还探讨了基于 Python 构建 voice agent（语音智能体）的最新方案，以及 Streamlit 组件的高级用法技巧。此外，期刊汇聚了近期 Python 生态主流工具的版本更新动态，是紧跟 Python 技术趋势的开发者的重要参考来源。
+                  </p>
+                  <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="display:inline-block;color:#1a73e8;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #1a73e8;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr><td style="padding:20px 32px 0;"><hr style="border:none;border-top:1px solid #f0f0f0;margin:0;"></td></tr>
+
+        <!-- ===== Golang Weekly ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;font-size:10px;font-weight:700;color:#ffffff;background:#00acd7;padding:3px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.8px;">Golang Weekly</span>
+                  <span style="font-size:11px;color:#999999;margin-left:8px;">Issue #601 · 2026-05-15</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    Issue #601 — Why Cilium vendors every Go module in 2026（供应链安全视角）
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.8;color:#444444;">
+                    本期（2026年5月15日）聚焦 Cilium 将所有 Go 模块依赖进行 vendor（本地化）管理的工程决策：根本原因在于供应链安全——Go module proxy 对模块版本的无限期缓存机制，使得被植入恶意代码的依赖版本即便源仓库已清理，仍可被外部拉取使用（如 boltdb-go/bolt 供应链攻击事件）。此决策引发了 Go 社区对 <code style="font-family:monospace;background:#f5f5f5;padding:1px 4px;border-radius:3px;">go mod vendor</code> 与代理依赖管理最佳实践的深入讨论，值得所有维护 Go 生产服务的团队认真审视。
+                  </p>
+                  <a href="https://golangweekly.com/issues/601" style="display:inline-block;color:#1a73e8;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #1a73e8;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr><td style="padding:20px 32px 0;"><hr style="border:none;border-top:1px solid #f0f0f0;margin:0;"></td></tr>
+
+        <!-- ===== Fireship ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;font-size:10px;font-weight:700;color:#ffffff;background:#ff4500;padding:3px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.8px;">Fireship</span>
+                  <span style="font-size:11px;color:#999999;margin-left:8px;">📹 视频 · ~2026-05-14</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    📹 A single PR just hijacked the NPM registry... — TanStack 供应链攻击事件深度解析
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.8;color:#444444;">
+                    📹 视频 Fireship 深度剖析了近期震惊 JS 社区的 TanStack npm 供应链攻击：攻击者通过提交一个 PR 后立即关闭，利用 GitHub Actions 中 <code style="font-family:monospace;background:#f5f5f5;padding:1px 4px;border-radius:3px;">pull_request_target</code> 触发器的写权限漏洞，在短短 6 分钟内向 npm registry 注入了 42 个包共 84 个恶意版本，波及月下载量超 2 亿的核心包 react-query 与 query-core。此事件再次警示工程团队：GitHub Actions 工作流的权限配置不当是供应链攻击的高危入口，应严格审查 <code style="font-family:monospace;background:#f5f5f5;padding:1px 4px;border-radius:3px;">pull_request_target</code> 的使用场景及对应权限。
+                  </p>
+                  <a href="https://www.youtube.com/watch?v=gwTQLZSIlsU" style="display:inline-block;color:#1a73e8;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #1a73e8;">→ 观看视频</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr><td style="padding:20px 32px 0;"><hr style="border:none;border-top:1px solid #f0f0f0;margin:0;"></td></tr>
+
+        <!-- ===== High Scalability ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;font-size:10px;font-weight:700;color:#ffffff;background:#555555;padding:3px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.8px;">High Scalability</span>
+                  <span style="font-size:11px;color:#999999;margin-left:8px;">2026-04-21</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    Kafka 101 — Apache Kafka 架构原理系统解析
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.8;color:#444444;">
+                    Apache Kafka Committer Stanislav Kozlovski 撰写了这篇系统性的 Kafka 深度解析文章，深入讲解 Kafka 以 commit log（提交日志）为核心的架构设计哲学，涵盖 producer、consumer group、partition、offset 等关键概念及其内在的设计权衡。文章还探讨了 Kafka 在高吞吐量实时数据管道与事件驱动架构（event-driven architecture）中的核心价值，对于需要深入理解 Kafka 内部机制的工程师而言是极具参考价值的系统性学习资料。
+                  </p>
+                  <a href="https://highscalability.com/untitled-2/" style="display:inline-block;color:#1a73e8;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #1a73e8;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ===== Skipped Channels Note ===== -->
+        <tr>
+          <td style="padding:28px 32px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f9f9f9;border-radius:4px;border:1px solid #eeeeee;">
+              <tr>
+                <td style="padding:14px 16px;">
+                  <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">本期跳过的渠道（7 天内无新内容）</p>
+                  <p style="margin:0;font-size:12px;color:#999999;line-height:1.7;">
+                    The Go Blog（最新：2026-03-24）· Arjan Codes（最新：2026-03-20）· Anthony GG（未找到 5 月内容）· Hussein Nasser（最新：2026-04-15）· Dan Luu（2026 年无新文章）· Brendan Gregg（最新：2026-02）· Go by Example（无定期博客更新）
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding:24px 32px 32px;">
+            <p style="margin:0;font-size:11px;color:#bbbbbb;line-height:1.7;border-top:1px solid #f0f0f0;padding-top:16px;">
+              本日报由 AI Agent 自动整理，内容基于各渠道公开发布信息撰写，摘要为中文，技术术语保留英文原文。<br>
+              生成日期：2026-05-20
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
