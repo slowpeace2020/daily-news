@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-21</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 20px; background-color: #ffffff; color: #2c2c2c; line-height: 1.7;">
+
+  <!-- Header -->
+  <div style="border-bottom: 3px solid #0055cc; padding-bottom: 14px; margin-bottom: 20px;">
+    <h1 style="margin: 0 0 6px 0; font-size: 22px; color: #0d1117; letter-spacing: -0.3px;">
+      软件技术日报【后端开发 &amp; Python &amp; Go】
+    </h1>
+    <p style="margin: 0; color: #6b7280; font-size: 13px;">
+      📅 日期：2026-05-21 &nbsp;|&nbsp; 涵盖后端开发、Python、Go 最新技术动态
+    </p>
+  </div>
+
+  <!-- ── 1. Martin Fowler Blog ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #0055cc; background-color: #f0f4ff; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #5a5a8a; text-transform: uppercase;">Martin Fowler Blog</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://martinfowler.com/fragments/2026-05-14.html" style="color: #0055cc; text-decoration: none;">
+        Fragments: May 14 — Agentic Programming 的现实与边界
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Martin Fowler 在最新一期 Fragments 中探讨 agentic programming 的真实边界：他指出大多数所谓"agent"场景本质上只是已知步骤序列的 workflow，无需真正的自主决策，用函数调用即可更高效、更低 token 消耗地完成。他还批评 Skills 文件被过度使用——LLM 对其调用不一致，应尽量用计算逻辑代替。Agents 在数据转换代码编写上表现最佳，而资深工程师则可通过 agentic 结对向初级工程师传递软件设计判断力。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      🗓 2026-05-14 &nbsp;|&nbsp;
+      <a href="https://martinfowler.com/fragments/2026-05-14.html" style="color: #0055cc;">原文链接 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 2. Netflix Tech Blog ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #e50914; background-color: #fff5f5; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #8a1a1a; text-transform: uppercase;">Netflix Tech Blog</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1" style="color: #0055cc; text-decoration: none;">
+        Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Netflix 介绍其构建 Model Lifecycle Graph 的工程实践，将 ML 模型的完整生命周期——训练、评估、部署、监控——可视化为统一图谱，实现机器学习流程的民主化。该系统让非 ML 专家团队也能自主管理和追踪生产环境中的模型状态，大幅降低了运维门槛。这是 Netflix 在推荐、个性化与搜索等核心业务中深度融合 ML 的最新工程成果。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      🗓 2026 年 5 月 &nbsp;|&nbsp;
+      <a href="https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1" style="color: #0055cc;">原文链接 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 3. Real Python ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #3fb950; background-color: #f0fff4; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #1a6b2c; text-transform: uppercase;">Real Python</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://realpython.com/python-news-may-2026/" style="color: #0055cc; text-decoration: none;">
+        A New Python Packaging Council and Other Python News for May 2026
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Real Python 5 月综合资讯：PEP 772 正式通过，Python 生态迎来首个由五位成员组成的 Packaging Council（打包委员会），拥有与 Steering Council 相当的权威，负责统一协调打包工具链的演进方向。同期，Python 3.15.0 beta 1 于 5 月 5 日发布进入特性冻结期；OpenAI 收购 Astral（uv、Ruff、ty 背后的公司）引发社区广泛讨论；PEP 803 稳定了 free-threaded ABI，为无 GIL 并发进一步扫清障碍。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      🗓 2026 年 5 月 &nbsp;|&nbsp;
+      <a href="https://realpython.com/python-news-may-2026/" style="color: #0055cc;">原文链接 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 4. Python Weekly ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #f59e0b; background-color: #fffbf0; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #7a5000; text-transform: uppercase;">Python Weekly</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color: #0055cc; text-decoration: none;">
+        Python Weekly Issue 743 (April 30, 2026) — AI 辅助开发、设计模式与 Voice Agent
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      本期 Python Weekly 重点聚焦 AI 辅助 Python 开发：涵盖 Codex CLI 深度实践、Gemini CLI 与 Claude Code 横向对比，以及四种 AI coding agent workflow 的实战指南。此外还包括 Voice Agent 构建教程、Python 设计模式最佳实践，以及 Python 3.15 JIT 编译器在部分平台上取得 7–8% 性能提升的最新进展，是 AI 时代 Python 开发者的必读周刊。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      🗓 2026-04-30 &nbsp;|&nbsp;
+      <a href="https://www.pythonweekly.com/p/python-weekly-issue-743-april-30-2026" style="color: #0055cc;">原文链接 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 5. The Go Blog ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #00acd7; background-color: #f0faff; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #005f7a; text-transform: uppercase;">The Go Blog</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://go.dev/blog/gofix" style="color: #0055cc; text-decoration: none;">
+        Using go fix to Modernize Go Code — Go 1.26 代码现代化工具详解
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Go 1.26 对 <code style="background:#e8f4f8; padding:1px 4px; border-radius:3px; font-size:12px;">go fix</code> 子命令进行了全新实现，引入 <code style="background:#e8f4f8; padding:1px 4px; border-radius:3px; font-size:12px;">//go:fix inline</code> 注解和源码级内联器，帮助开发者自动将代码升级到新版 API，减少手动迁移负担。该工具可扫描整个代码库，识别并替换已废弃的函数调用模式，是大型项目向 Go 新版本平滑迁移的利器。配合 Go 1.26 同期发布的 Green Tea GC（默认启用）和栈分配优化，进一步提升了 Go 的工程实践水位。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      🗓 2026 年 3 月 &nbsp;|&nbsp;
+      <a href="https://go.dev/blog/gofix" style="color: #0055cc;">原文链接 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 6. Golang Weekly ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #00acd7; background-color: #f0faff; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #005f7a; text-transform: uppercase;">Golang Weekly</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://golangweekly.com/issues/601" style="color: #0055cc; text-decoration: none;">
+        Issue #601: Why Cilium Vendors Every Go Module in 2026
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      本期 Golang Weekly 头条聚焦 Cilium（云原生网络安全项目）为何在 2026 年坚持将所有 Go module 都 vendor 化的深度分析，涉及依赖安全、构建可重现性与供应链攻击防护等关键工程决策。此外本期还包括 Go 安全补丁、最新 Go proposals 动态，以及 Go 生态工具链的最新进展，是 Go 后端与基础设施工程师的必读周刊。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      🗓 2026-05-15 &nbsp;|&nbsp;
+      <a href="https://golangweekly.com/issues/601" style="color: #0055cc;">原文链接 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 7. Arjan Codes (YouTube) ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #9333ea; background-color: #fdf4ff; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #5b1fa8; text-transform: uppercase;">Arjan Codes &nbsp;📹 视频</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://www.youtube.com/watch?v=8Pi6vGRlp1c" style="color: #0055cc; text-decoration: none;">
+        The Right Way to Use AI for Writing Maintainable Code
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Arjan（计算机科学讲师 &amp; 软件设计专家）在本视频中系统讲解如何正确地将 AI 工具融入可维护代码的编写流程，而不是盲目接受 AI 生成的代码。他强调要用 SOLID 原则和设计模式来"审视"AI 输出，通过具体重构案例演示如何让 AI 辅助产出结构清晰、易于维护的 Python 代码。视频特别适合想把 AI coding 工具用得更专业的后端工程师。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      📹 视频 &nbsp;|&nbsp;
+      <a href="https://www.youtube.com/watch?v=8Pi6vGRlp1c" style="color: #0055cc;">观看视频 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 8. Anthony GG (YouTube) ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #9333ea; background-color: #fdf4ff; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #5b1fa8; text-transform: uppercase;">Anthony GG &nbsp;📹 视频</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="color: #0055cc; text-decoration: none;">
+        Go (Golang) vs TypeScript Performance Benchmark (2026)
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Anthony GG 在 2026 年版基准测试视频中对 Go 与 TypeScript（Node.js）在真实后端场景下的性能表现进行了全面横向比较，涵盖 HTTP 吞吐量、内存占用、并发处理能力等关键指标。测试结果直观展示了 Go 在高并发场景下的优势，以及 TypeScript 在开发效率方面的权衡，为技术选型提供了数据参考。视频附有详细的测试代码和环境配置说明，可复现性强。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      📹 视频 &nbsp;|&nbsp;
+      <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="color: #0055cc;">观看视频 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 9. Hussein Nasser (YouTube) ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #9333ea; background-color: #fdf4ff; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #5b1fa8; text-transform: uppercase;">Hussein Nasser — Backend Engineering Show &nbsp;📹 视频</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://www.youtube.com/watch?v=p6TeRabqJs0" style="color: #0055cc; text-decoration: none;">
+        Indexing Woes, Secret to Backend Interviews, Math and Software
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Hussein Nasser 在本期 The Backend Engineering Show 中深入探讨数据库索引的常见陷阱（index bloat、复合索引选择策略），并结合 PostgreSQL 18 的新特性（UUIDv7、composite index skip scan、异步 IO with io_uring）讲解现代数据库工程实践。他还分享了后端工程师面试中鲜少讨论的核心知识点，以及数学思维在系统设计中的作用，内容兼顾深度与实用性。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      📹 视频 &nbsp;|&nbsp;
+      <a href="https://www.youtube.com/watch?v=p6TeRabqJs0" style="color: #0055cc;">观看视频 →</a>
+    </p>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 6px 0 22px 0;">
+
+  <!-- ── 10. Fireship (YouTube) ── -->
+  <div style="margin-bottom: 22px; padding: 16px 18px; border-left: 4px solid #ff6b35; background-color: #fff8f5; border-radius: 0 6px 6px 0;">
+    <p style="margin: 0 0 6px 0; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #8a2a00; text-transform: uppercase;">Fireship &nbsp;📹 视频</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">
+      <a href="https://www.youtube.com/watch?v=gwTQLZSIlsU" style="color: #0055cc; text-decoration: none;">
+        A Single PR Just Hijacked the NPM Registry...
+      </a>
+    </h2>
+    <p style="margin: 0 0 8px 0; font-size: 13.5px; color: #374151;">
+      Fireship 用其标志性的快节奏风格讲解了一起严重的 NPM 供应链攻击事件：攻击者向 TanStack 项目提交并立即关闭一个 PR，利用 GitHub Actions 中 <code style="background:#ffe8e0; padding:1px 4px; border-radius:3px; font-size:12px;">pull_request_target</code> 配置漏洞，在 PR 未被合并的情况下触发了 publish workflow，最终导致 84 个 TanStack NPM 包被注入恶意代码并发布。该事件再次警示开发者重新审视 CI/CD workflow 权限配置，避免在公开仓库中授予过高权限给外部触发器。
+    </p>
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      📹 视频 &nbsp;~&nbsp;2026-05-14 &nbsp;|&nbsp;
+      <a href="https://www.youtube.com/watch?v=gwTQLZSIlsU" style="color: #0055cc;">观看视频 →</a>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top: 30px; padding-top: 16px; border-top: 2px solid #e5e7eb; text-align: center;">
+    <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+      本日报由自动化 Agent 整理生成 &nbsp;|&nbsp; 内容来源于各技术博客与 YouTube 频道公开信息<br>
+      如有错误或建议，欢迎回复本邮件
+    </p>
+  </div>
+
+</body>
+</html>
