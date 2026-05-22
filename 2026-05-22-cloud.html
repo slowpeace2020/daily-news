@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-22</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 0;">
+
+        <!-- 主容器 -->
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+
+          <!-- 标题区 -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 32px;border-radius:8px 8px 0 0;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#8892b0;letter-spacing:1.5px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#e2e8f0;line-height:1.3;">
+                软件技术日报<br>
+                <span style="color:#64ffda;font-size:16px;font-weight:400;">【软件工程 &amp; 云原生】</span>
+              </h1>
+              <p style="margin:10px 0 0 0;font-size:13px;color:#8892b0;">2026-05-22 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- 正文区 -->
+          <tr>
+            <td style="border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;padding:0 32px;">
+
+              <!-- ===== 渠道 1: Thoughtworks Technology Radar ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#8892b0;letter-spacing:1.2px;text-transform:uppercase;">Thoughtworks Technology Radar</p>
+                    <h2 style="margin:0 0 12px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      CloudNativePG 进入 Trial — Kubernetes 上的高可用 PostgreSQL Operator
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      Thoughtworks Technology Radar Vol. 34（2026 年 4 月）将 <strong>CloudNativePG</strong> 列入 <em>Trial</em> 环，这是一款 Kubernetes Operator，通过原生 streaming replication 实现主备切换、自动 failover 及失败副本自动重建，将 PostgreSQL 的高可用管理完全融入 Kubernetes 声明式体系。
+                      同期，<strong>Kueue</strong>（Kubernetes 原生作业队列控制器）也进入 Trial，可为 ML 工作负载（如 Kubeflow）提供细粒度配额和优先级调度。
+                      此外，<strong>Apache APISIX</strong> 作为支持 Kubernetes Gateway API 的云原生网关，被推荐为替代 Nginx Ingress Controller 的强力候选。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://www.thoughtworks.com/radar/platforms/cloudnativepg" style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文：CloudNativePG on Technology Radar</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+
+              <!-- ===== 渠道 2: SRE Weekly ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#8892b0;letter-spacing:1.2px;text-transform:uppercase;">SRE Weekly · Issue #516</p>
+                    <h2 style="margin:0 0 12px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      "我不在乎是不是 AI 写的代码——你仍然对它负责"
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      本期聚焦 AI 生成代码在生产环境中的责任归属：review 了 AI 写的代码不代表你对线上可靠性负责，只有同时 <em>背着 pager</em>、承担 on-call 的工程师才完成了完整的 accountability 闭环。
+                      同期探讨了"表面无责文化"（Superficial Blamelessness）的陷阱——形式上不追责、实质上仍以个人为根因；以及 Safety I vs. Safety II 思维框架对现代 SRE 事故复盘的启示。
+                      还提供了对"AI 实际能为 SRE 团队带来什么帮助"的平衡评估，以健康的乐观与审慎取代营销话术。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-516/" style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文：SRE Weekly Issue #516</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+
+              <!-- ===== 渠道 3: ByteByteGo ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#8892b0;letter-spacing:1.2px;text-transform:uppercase;">ByteByteGo · 2026-05-13</p>
+                    <h2 style="margin:0 0 12px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Databricks 如何实现高性能 Rate Limiting
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      Databricks 通过将 rate limiting 的判断决策从关键路径中剥离，构建了一个横向可扩展的分布式计数器，在客户端发起请求时限流决策已提前完成，显著降低了延迟。
+                      核心权衡在于：放弃严格的瞬时精度，换取更快的 critical path 和更好的水平扩展性——本文通过架构图拆解了这一 accuracy vs. performance 的设计取舍。
+                      对于构建大规模 API Gateway 或平台级流量控制的工程团队，这份 Databricks 实战案例极具参考价值。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://blog.bytebytego.com/p/high-performance-rate-limiting-at" style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文：High Performance Rate Limiting at Databricks</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+
+              <!-- ===== 渠道 4: TechWorld with Nana ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#8892b0;letter-spacing:1.2px;text-transform:uppercase;">TechWorld with Nana · YouTube · 2026-05-14 &nbsp;📹 视频</p>
+                    <h2 style="margin:0 0 12px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      📹 What's Next for DevOps — Nana Janashia 谈 DevOps 的未来走向
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      Nana Janashia（TechWorld with Nana 主理人）在本期采访/播客视频中分享了对 DevOps 行业下一阶段的判断：Platform Engineering 正在成为主流，Kubernetes 依然是容器编排的事实标准，AI 工具将重塑而非取代 DevOps 工程师的角色。
+                      她强调，2026 年工程师最值得深入的方向是 Infrastructure as Code + GitOps + 可观测性（Observability），三者共同构成现代云原生平台的基础能力。
+                      视频同时提供了适合初学者到资深工程师的 DevOps 学习路径建议。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://www.youtube.com/watch?v=phG5AS6EFBQ" style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:500;">→ 观看视频：TechWorld with Nana — What's Next for DevOps</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+
+              <!-- ===== 渠道 5: TLDR Tech ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#8892b0;letter-spacing:1.2px;text-transform:uppercase;">TLDR Tech · 2026-05-21</p>
+                    <h2 style="margin:0 0 12px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      恶意 VS Code 扩展导致 GitHub 内部 3,800 个仓库泄露，Kubernetes 凭证首当其冲
+                    </h2>
+                    <p style="margin:0 0 14px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      威胁组织 TeamPCP 通过篡改安装量逾 220 万次的 <strong>Nx Console VS Code 扩展</strong>，在 12 分钟的窗口期内窃取了开发者工作站上的所有云凭证，目标包括 GitHub tokens、AWS IMDS、HashiCorp Vault、<strong>Kubernetes</strong> kubeconfig 及 SSH 密钥。
+                      GitHub 随即确认约 3,800 个内部私有仓库遭到外泄，并紧急轮换密钥；同一组织还通过投毒 Microsoft 的 <strong>durabletask PyPI 包</strong>植入专针对 Linux 的信息窃取程序，可在 AWS 和 Kubernetes 集群间横向传播。
+                      此事件再次警示：供应链安全（Supply Chain Security）是云原生基础设施的系统性风险，需在 IDE 插件层面建立严格的审计和最小权限原则。
+                    </p>
+                    <p style="margin:0 0 28px 0;">
+                      <a href="https://tldr.tech/tech/2026-05-21" style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文：TLDR Tech 2026-05-21</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 底部分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+
+              <!-- 页脚 -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 0;text-align:center;">
+                    <p style="margin:0;font-size:12px;color:#9ca3af;">
+                      📬 软件技术日报 · 每日自动整理 &nbsp;|&nbsp; 涵盖 Kubernetes · 云原生 · SRE 实践<br>
+                      <span style="font-size:11px;">2026-05-22 生成</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
