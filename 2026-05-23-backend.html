@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-23</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);padding:28px 32px;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#93c5fd;letter-spacing:1.5px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <p style="margin:6px 0 0 0;font-size:14px;color:#bfdbfe;">后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-05-23</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:20px 32px 4px 32px;">
+              <p style="margin:0;font-size:13px;color:#6b7280;line-height:1.6;">
+                精选过去 7 天来自 Martin Fowler Blog、Netflix Tech Blog、Real Python、Python Weekly、The Go Blog、Golang Weekly、Arjan Codes、Fireship 等渠道的最新技术动态，聚焦性能优化、新版本特性、工程最佳实践与系统设计。
+              </p>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === Martin Fowler Blog === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">Martin Fowler Blog</p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://martinfowler.com/articles/structured-prompt-driven/" style="color:#2563eb;text-decoration:none;">Structured-Prompt-Driven Development (SPDD)</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                Thoughtworks 内部 IT 团队提出了一种将 prompt 作为一等交付物的工程方法——SPDD。
+                它使用"REASONS Canvas"结构化框架来组织需求、领域模型、解决方案设计与任务拆解，让 prompt 可版本控制、可复用、可持续改进。
+                开发者需掌握三大核心技能：<strong>alignment（对齐）</strong>、<strong>abstraction-first（抽象优先）</strong> 和 <strong>iterative review（迭代评审）</strong>，使 AI 辅助从个人效率提升为团队级能力。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">发布时间：2026-04-28 &nbsp;|&nbsp; 作者：Wei Zhang</p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === Netflix Tech Blog === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">Netflix Tech Blog</p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://netflixtechblog.com/scaling-camera-file-processing-at-netflix-6dab2b1e80be" style="color:#2563eb;text-decoration:none;">Scaling Camera File Processing at Netflix</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                Netflix 媒体制作套件（Media Production Suite）通过将 FLAPI（摄影机文件处理框架）部署为云端函数，实现了对拍摄素材的按需弹性计算——高峰时自动扩容、空闲时立即释放，显著降低渲染队列管理负担。
+                借助 Docker 镜像，Netflix 得以在全球云端和制作现场复制几乎一致的代码，确保素材质量评估结果在全球各地完全一致。
+                整个系统还与 ASC MHL（Media Hash List）文件校验深度集成，保证从拍摄现场到云端入库的每一帧数据完整无损。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">发布时间：2026-04</p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === Real Python === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">Real Python</p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://realpython.com/python-news-may-2026/" style="color:#2563eb;text-decoration:none;">A New Python Packaging Council and Other News for May 2026</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                PEP 772 正式通过，Python 生态正式成立五人制 <strong>Python Packaging Council</strong>，其权威与 Steering Council 同级，结束了 PyPA 多年来的非正式协调局面，首次选举即将启动。
+                与此同时，Python 3.15.0 beta 1 于 5 月 5 日发布标志着功能冻结；Python 3.14.5 将回滚增量 GC 至分代回收器，若你的 3.14 部署内存占用偏高，这个补丁值得关注。
+                另一重磅消息：OpenAI 收购了 Astral——即 <strong>uv</strong>、<strong>Ruff</strong> 和 <strong>ty</strong> 的母公司，Python 工具链格局再度生变。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">发布时间：2026-05</p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === Python Weekly === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">Python Weekly</p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#2563eb;text-decoration:none;">Python Weekly Issue #746 (May 21, 2026)</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                本期重点推荐 <strong>django-q2</strong>——一个比 Celery 更轻量的 Django 后台任务方案，内置支持异步 worker、定时任务与 Django Admin 管理界面，上手成本极低。
+                另一亮点是 <strong>nb-cli</strong>，一款 Rust 构建的命令行工具，允许开发者和 AI agent 在无需运行 Jupyter Server 的情况下以编程方式读写和执行 notebook，支持 AI 优化的 Markdown 格式，适用于 CI/CD 流水线。
+                此外还有一篇详解如何使用 OpenTelemetry Python SDK 的 <code>LoggingHandler</code> 将现有日志体系无缝接入 OpenTelemetry pipeline 并与 trace 自动关联的实战指南。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">发布时间：2026-05-21 &nbsp;|&nbsp; 策划：Rahul Chaudhary</p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === The Go Blog === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">The Go Blog</p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://go.dev/blog/pkgsite-api" style="color:#2563eb;text-decoration:none;">Introducing the pkg.go.dev API</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                Go 官方正式发布 <strong>pkg.go.dev API</strong>，为开发者提供查询已发布 Go module 元数据的程序化接口，终结了长期依赖网页抓取获取包数据的窘境。
+                API 提供完整的 OpenAPI specification，并附带参考实现 <code>pkgsite-cli</code>，可直接作为构建 IDE 插件、自动化工作流和第三方工具集成的起点。
+                这对 Go 工具链生态是一大利好，未来更多开发者工具将能以稳定、可靠的方式获取 module 版本、依赖关系和文档信息。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">发布时间：2026-05-21 &nbsp;|&nbsp; 作者：Ethan Lee, Hana Kim, Jonathan Amsterdam</p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === Golang Weekly === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">Golang Weekly</p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://golangweekly.com/issues/601" style="color:#2563eb;text-decoration:none;">Issue #601: Why Cilium vendors every Go module (May 15, 2026)</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                本期深入探讨了 <strong>Cilium</strong>（云原生网络安全项目）为何选择将所有 Go module 全部 vendor 而非依赖 Go module proxy 的工程决策，从供应链安全、离线构建可重现性和 CI 稳定性多角度展开分析。
+                此外还涵盖 Go 1.26 发布后的安全补丁跟进、Swiss table map 实现的 benchmark 深度剖析，以及 2026 年主流 Go 日志库横向比较。
+                对于在生产环境中维护大型 Go 项目的团队，vendor 策略的利弊权衡值得重点关注。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">发布时间：2026-05-15</p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === Arjan Codes (YouTube) === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">Arjan Codes &nbsp;<span style="font-size:11px;color:#dc2626;font-weight:500;">📹 视频</span></p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="color:#2563eb;text-decoration:none;">Don't Use Boolean Flags in Python, Use Policies Instead</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                Arjan 在本期视频中剖析了 boolean flag 参数的常见滥用场景——随着业务增长，一个函数往往积累多个 flag，导致复杂条件分支爆炸式增长，代码可读性和可测试性急剧下降。
+                解决方案是引入 <strong>Policy 模式</strong>：将每种行为变体封装为独立的策略类，函数只依赖抽象接口，彻底消除 if-else 嵌套，实现 Open/Closed Principle。
+                视频配有完整重构演示，是深化对 SOLID 原则理解的实用案例，也是 Python 软件设计进阶的推荐内容。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">频道：ArjanCodes &nbsp;|&nbsp; 发布时间：2026-04 末</p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 32px 0 32px;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;"></td></tr>
+
+
+          <!-- === Fireship (YouTube) === -->
+          <tr>
+            <td style="padding:20px 32px 0 32px;">
+              <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:1px;text-transform:uppercase;">Fireship &nbsp;<span style="font-size:11px;color:#dc2626;font-weight:500;">📹 视频</span></p>
+              <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=gwTQLZSIlsU" style="color:#2563eb;text-decoration:none;">A single PR just hijacked the NPM registry...</a>
+              </h2>
+              <p style="margin:0;font-size:14px;color:#374151;line-height:1.7;">
+                一次针对 npm 生态的重大 <strong>供应链攻击（Supply Chain Attack）</strong>：攻击者通过社会工程学和 RAT 恶意软件入侵了 axios 项目核心维护者的开发机，获取 npm 账户凭证后发布了携带 remote access trojan 的恶意版本（1.14.1 和 0.30.4），波及下载量超 5000 万次/周的 100+ 个依赖包。
+                Fireship 以其一贯的快节奏风格梳理了攻击链路，并讲解了如何通过 lock file 固定、package integrity hash 校验和 dependency review 自动化工作流来加固项目安全。
+                此事件再次警示开发者：即使是被广泛信任的成熟包，也需要定期审计依赖完整性。
+              </p>
+              <p style="margin:8px 0 0 0;font-size:12px;color:#9ca3af;">频道：Fireship &nbsp;|&nbsp; 发布时间：2026-05 中旬</p>
+            </td>
+          </tr>
+
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;background-color:#f9fafb;border-top:1px solid #e5e7eb;">
+              <p style="margin:0;font-size:12px;color:#9ca3af;line-height:1.6;">
+                本邮件由每日技术动态 Agent 自动整理生成 &nbsp;·&nbsp; 生成日期：2026-05-23<br>
+                内容来源：martinfowler.com &nbsp;·&nbsp; netflixtechblog.com &nbsp;·&nbsp; realpython.com &nbsp;·&nbsp; pythonweekly.com &nbsp;·&nbsp; go.dev/blog &nbsp;·&nbsp; golangweekly.com &nbsp;·&nbsp; youtube.com/arjancodes &nbsp;·&nbsp; youtube.com/@Fireship
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
