@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-24</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif;color:#1a1a1a;line-height:1.7;">
+
+  <!-- Wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+
+        <!-- Inner card -->
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a365d 0%,#2b5797 100%);padding:32px 36px;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#93c5fd;letter-spacing:2px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0 0 8px 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报<br>
+                <span style="font-size:14px;font-weight:400;color:#bfdbfe;">【软件工程 &amp; 云原生】</span>
+              </h1>
+              <p style="margin:0;font-size:13px;color:#93c5fd;">📅 2026-05-24 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:24px 36px 8px 36px;">
+              <p style="margin:0;font-size:14px;color:#555;background-color:#eff6ff;border-left:4px solid #3b82f6;padding:12px 16px;border-radius:0 4px 4px 0;">
+                今日精选来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo、TechWorld with Nana、TLDR Tech，聚焦 Kubernetes、云原生架构与 SRE 最新实践动态。
+              </p>
+            </td>
+          </tr>
+
+          <!-- Spacer -->
+          <tr><td style="height:16px;"></td></tr>
+
+          <!-- ===== Section 1: Thoughtworks ===== -->
+          <tr>
+            <td style="padding:0 36px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:12px;">
+                    <span style="display:inline-block;background-color:#1e3a5f;color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">Thoughtworks Technology Radar</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">Vol. 34 · April 2026</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a365d;line-height:1.4;">
+                      Karmada 进入 Trial 区：多集群 Kubernetes 编排迎来专属方案，Radar V34 呼吁回归工程基本功
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;">
+                      Thoughtworks 发布 2026 年第一版技术雷达（Vol. 34），核心主题为：AI 加速代码生产正在制造大量"认知债务"（cognitive debt），驱动行业重新重视工程基本功。
+                      本期亮点之一是将 <strong>Karmada</strong>（Kubernetes Armada）列入 Trial 区——这是一款 CNCF 孵化中的跨集群、跨云 Kubernetes 工作负载编排平台，可替代"GitOps 工具 + 自定义脚本"的多集群管理方式，内置高可用、故障转移与流量调度能力。
+                      此外，报告持续推荐 <strong>DORA 指标</strong>与<strong>零信任架构</strong>作为在 AI 时代评估与管理工程质量的基石。
+                    </p>
+                    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                       style="display:inline-block;color:#2563eb;font-size:13px;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      🔗 阅读原文 →
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.thoughtworks.com/radar/platforms/karmada"
+                       style="display:inline-block;color:#2563eb;font-size:13px;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      🔗 Karmada 雷达条目 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:20px 36px;">
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===== Section 2: SRE Weekly ===== -->
+          <tr>
+            <td style="padding:0 36px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:12px;">
+                    <span style="display:inline-block;background-color:#065f46;color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">SRE Weekly</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">Issue #517 · May 17, 2026</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a365d;line-height:1.4;">
+                      自动扩展是被动应急，而非主动弹性 —— AI 生成代码的 On-call 责任链如何不断裂？
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;">
+                      本期聚焦两大核心议题：其一，Autoscaling 的误区——缺乏容量上限（cap）、合理指标与手动覆盖能力的自动扩展，在高负载故障时会<strong>放大</strong>而非缓解问题，真正的弹性需要策略、压测与瓶颈感知三位一体。
+                      其二，AI 生成代码的责任归属——"如果你不是背着 pager 的那个人，AI 代码的问责链就断了（if you're not the one carrying the pager for AI-generated code, the accountability loop falls apart）"，强调团队在引入 AI Coding 工具时必须同步建立 ownership 机制。
+                      此外还涵盖现代 P1 故障跨服务/团队的可见性挑战，以及成本暴涨作为可靠性信号的视角。
+                    </p>
+                    <a href="https://sreweekly.com/sre-weekly-issue-517/"
+                       style="display:inline-block;color:#2563eb;font-size:13px;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      🔗 阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:20px 36px;">
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===== Section 3: ByteByteGo ===== -->
+          <tr>
+            <td style="padding:0 36px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:12px;">
+                    <span style="display:inline-block;background-color:#7c3aed;color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">ByteByteGo</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">blog.bytebytego.com · May 21, 2026</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a365d;line-height:1.4;">
+                      A Guide to Async Patterns in API Design — 从请求-响应的边界出发，构建异步 API 设计体系
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;">
+                      ByteByteGo 最新深度文章系统梳理了 API 设计中的<strong>异步模式</strong>（Async Patterns），从同步 Request-Response 模式的局限性切入，逐一分析轮询（Polling）、Webhook 回调、消息队列解耦、事件流等主流方案的适用场景与权衡取舍。
+                      文章尤其适合微服务架构下服务间通信的设计参考，上周配套发布的《A Guide To Event-Driven Architectural Patterns》进一步补充了事件驱动系统的结构性模式（如 Event Sourcing、CQRS），两篇可结合阅读。
+                      对于云原生应用中的服务解耦与高吞吐场景设计，本文提供了系统性的决策框架。
+                    </p>
+                    <a href="https://blog.bytebytego.com/p/a-guide-to-async-patterns-in-api"
+                       style="display:inline-block;color:#2563eb;font-size:13px;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      🔗 阅读原文 →
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="https://blog.bytebytego.com/p/a-guide-to-event-driven-architectural"
+                       style="display:inline-block;color:#2563eb;font-size:13px;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      🔗 配套：事件驱动架构模式 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:20px 36px;">
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===== Section 4: TechWorld with Nana ===== -->
+          <tr>
+            <td style="padding:0 36px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:12px;">
+                    <span style="display:inline-block;background-color:#b45309;color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">TechWorld with Nana</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">YouTube · May 14, 2026</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a365d;line-height:1.4;">
+                      📹 视频 &nbsp;|&nbsp; 学 DevOps 的人都在犯同样的错误 —— 零经验转型 Cloud DevSecOps 的真实路径
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;">
+                      本期 Nana 分享了嘉宾 Ana Pedra 的真实转型案例：从医疗器械行业高级制造工程师（8 年经验，零 DevOps 背景）成功转型为 Cloud DevSecOps Engineer，在 AWS、Azure、GCP 三大云上部署生产级 Kubernetes 集群，并斩获 <strong>Golden Kubestronaut</strong> 认证。
+                      节目重点揭示了学习 DevOps 最常见的误区——盲目刷课、缺少实战项目、不理解底层原理——以及如何制定系统性的 Kubernetes 学习路径来显著缩短入职时间。
+                      对于正在规划云原生技术栈学习路线的工程师，本期内容提供了可落地的实战参考。
+                    </p>
+                    <a href="https://www.youtube.com/@TechWorldwithNana"
+                       style="display:inline-block;color:#2563eb;font-size:13px;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      📺 前往频道观看 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:20px 36px;">
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===== Section 5: TLDR Tech ===== -->
+          <tr>
+            <td style="padding:0 36px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:12px;">
+                    <span style="display:inline-block;background-color:#be185d;color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">TLDR Tech</span>
+                    <span style="font-size:11px;color:#888;margin-left:8px;">tldr.tech/tech · May 11, 2026</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a365d;line-height:1.4;">
+                      AI 时代的代码维护成本：生产速度越快，技术债爆炸越猛
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;">
+                      TLDR Tech 本期要点之一聚焦 AI 辅助编程对软件工程生命周期的冲击：AI 工具确实显著加快了代码输出速度，但如果团队不主动管理代码质量与架构一致性，<strong>维护成本将呈指数级增长</strong>。
+                      另一要点是 Meta 大规模 AI 内部落地的深度剖析，揭示了在企业级规模推广 AI Coding 工具时遇到的组织协调、代码审查与 on-call 责任分配问题。
+                      这与本期 SRE Weekly 关于 AI 生成代码问责链的讨论形成呼应——速度与可维护性之间的平衡，正成为 2026 年软件工程核心命题。
+                    </p>
+                    <a href="https://tldr.tech/tech/2026-05-11"
+                       style="display:inline-block;color:#2563eb;font-size:13px;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      🔗 阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Spacer before footer -->
+          <tr><td style="height:24px;"></td></tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f9fafb;border-top:1px solid #e5e7eb;padding:20px 36px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="font-size:12px;color:#9ca3af;line-height:1.6;">
+                    <strong style="color:#6b7280;">软件技术日报</strong> &nbsp;·&nbsp; 自动化技术摘要，由 AI Agent 整理<br>
+                    涵盖渠道：Thoughtworks Radar &nbsp;|&nbsp; SRE Weekly &nbsp;|&nbsp; ByteByteGo &nbsp;|&nbsp; TechWorld with Nana &nbsp;|&nbsp; TLDR Tech<br>
+                    <span style="color:#d1d5db;">生成时间：2026-05-24</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End inner card -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
