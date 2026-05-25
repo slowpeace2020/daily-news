@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-25</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:680px;margin:0 auto;padding:24px 16px;">
+    <tr>
+      <td>
+
+        <!-- Header -->
+        <div style="background-color:#1a202c;border-radius:8px;padding:24px;margin-bottom:28px;">
+          <h1 style="margin:0;font-size:22px;color:#ffffff;font-weight:700;letter-spacing:0.5px;">
+            软件技术日报
+          </h1>
+          <p style="margin:6px 0 0;font-size:13px;color:#a0aec0;">
+            【软件工程 &amp; 云原生】&nbsp;·&nbsp;2026-05-25
+          </p>
+        </div>
+
+        <!-- ① Thoughtworks Technology Radar -->
+        <div style="margin-bottom:24px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#718096;letter-spacing:1px;margin-bottom:8px;">
+            Thoughtworks Technology Radar · Vol.34（2026年4月）
+          </div>
+          <h2 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#1a202c;">
+            <a href="https://www.thoughtworks.com/radar/tools/kueue" style="color:#2b6cb0;text-decoration:none;">
+              Kueue：Kubernetes 原生 Job 队列控制器进入 Trial 阶段
+            </a>
+          </h2>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:#4a5568;">
+            Thoughtworks Technology Radar Vol.34 将 <strong>Kueue</strong> 列为 Trial 级工具，该控制器为 Kubernetes 集群提供原生的 Job 排队与多租户资源配额管理能力。随着 AI 训练与批处理任务激增，Kueue 帮助团队在 ML 训练任务、数据管道与在线推理服务之间实现精细化资源调度，避免资源抢占导致服务抖动。同期 Radar 还推荐了 <strong>CloudNativePG</strong>（在 Kubernetes 中高可用托管 PostgreSQL 的 Operator），进一步丰富云原生有状态应用生态。
+          </p>
+          <p style="margin:10px 0 0;font-size:12px;">
+            <a href="https://www.thoughtworks.com/radar/tools/kueue" style="color:#2b6cb0;">Kueue 条目 →</a>
+            &nbsp;&nbsp;
+            <a href="https://www.thoughtworks.com/radar" style="color:#2b6cb0;">完整 Radar →</a>
+          </p>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 24px;">
+
+        <!-- ② SRE Weekly -->
+        <div style="margin-bottom:24px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#718096;letter-spacing:1px;margin-bottom:8px;">
+            SRE Weekly · Issue #517（2026-05-17）
+          </div>
+          <h2 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#1a202c;">
+            <a href="https://sreweekly.com/sre-weekly-issue-517/" style="color:#2b6cb0;text-decoration:none;">
+              Invisible OOMKill：为什么你的 Java Pod 在 Kubernetes 中反复重启
+            </a>
+          </h2>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:#4a5568;">
+            本期精选文章深入分析 Java 应用在 Kubernetes 容器中频繁遭遇 <strong>OOMKill（Exit Code 137）</strong> 的根因：JVM 内存消耗不仅来自 Heap，还包括 Metaspace、JIT CodeCache、Direct Buffer 等 Off-Heap 区域，当合计超过容器 <code style="background:#f7fafc;padding:1px 4px;border-radius:3px;font-size:13px;">memory limit</code> 时内核会直接终止进程。文章提供了通过 <code style="background:#f7fafc;padding:1px 4px;border-radius:3px;font-size:13px;">-XX:MaxRAMPercentage</code>、<code style="background:#f7fafc;padding:1px 4px;border-radius:3px;font-size:13px;">-XX:MaxMetaspaceSize</code> 等参数与 Kubernetes 资源限制协同调优的最佳实践。本期还收录了 Netflix 大规模直播可靠性架构分享与 Post-Mortem 行动项管理方法论。
+          </p>
+          <p style="margin:10px 0 0;font-size:12px;">
+            <a href="https://sreweekly.com/sre-weekly-issue-517/" style="color:#2b6cb0;">原文链接 →</a>
+          </p>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 24px;">
+
+        <!-- ③ ByteByteGo -->
+        <div style="margin-bottom:24px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#718096;letter-spacing:1px;margin-bottom:8px;">
+            ByteByteGo Newsletter（2026-05-22）
+          </div>
+          <h2 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#1a202c;">
+            <a href="https://blog.bytebytego.com/p/a-guide-to-async-patterns-in-api" style="color:#2b6cb0;text-decoration:none;">
+              API 设计中的 8 种异步通信模式全解析
+            </a>
+          </h2>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:#4a5568;">
+            文章系统梳理了突破"单次请求-响应"限制的 8 种 API 异步模式：<strong>Short Polling、Long Polling、Server-Sent Events（SSE）、WebSocket、Webhook、Async API + Status Polling、Message Queue</strong> 以及 <strong>GraphQL Subscriptions</strong>。以"场景驱动选型"为主线，从延迟、双向通信、服务端推送等维度给出对比建议，是微服务和云原生事件驱动架构设计时的实用参考。
+          </p>
+          <p style="margin:10px 0 0;font-size:12px;">
+            <a href="https://blog.bytebytego.com/p/a-guide-to-async-patterns-in-api" style="color:#2b6cb0;">原文链接 →</a>
+          </p>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 24px;">
+
+        <!-- ④ TechWorld with Nana -->
+        <div style="margin-bottom:24px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#718096;letter-spacing:1px;margin-bottom:8px;">
+            TechWorld with Nana · YouTube（2026-05-14）
+          </div>
+          <h2 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#1a202c;">
+            📹 视频 &nbsp;
+            <a href="https://www.youtube.com/@TechWorldwithNana" style="color:#2b6cb0;text-decoration:none;">
+              从制造工程师到 Cloud DevSecOps Engineer：Kubernetes 生产实战经验分享
+            </a>
+          </h2>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:#4a5568;">
+            TechWorld with Nana 最新播客/视频专访了一位成功从传统制造工程师转型为 <strong>Cloud DevSecOps Engineer</strong> 的工程师，她目前在 AWS、Azure 和 GCP 三大云平台上使用 Kubernetes 部署和运维生产系统。视频重点分享了 <strong>Kubernetes Security（RBAC、Pod 安全策略）、Observability（可观测性）和 Policy as Code</strong> 等 DevSecOps 核心实践，对有志于向云原生安全方向发展的工程师具有参考价值。
+          </p>
+          <p style="margin:10px 0 0;font-size:12px;">
+            <a href="https://www.youtube.com/@TechWorldwithNana" style="color:#2b6cb0;">频道主页 →</a>
+          </p>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 24px;">
+
+        <!-- ⑤ TLDR Tech -->
+        <div style="margin-bottom:24px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#718096;letter-spacing:1px;margin-bottom:8px;">
+            TLDR Tech（2026-05-20）
+          </div>
+          <h2 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#1a202c;">
+            <a href="https://tldr.tech/tech/2026-05-20" style="color:#2b6cb0;text-decoration:none;">
+              Google Cloud Next '26：GKE Agent Sandbox 与 Hypercluster 重塑 AI 时代 Kubernetes
+            </a>
+          </h2>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:#4a5568;">
+            TLDR Tech 5月20日报道了 Google Cloud Next '26 上 GKE 的两大突破性新特性：<strong>GKE Agent Sandbox</strong> 基于 gVisor 内核隔离技术，支持每秒创建 300 个独立 sandbox，专为 AI Agent 代码安全执行设计，以开源 Kubernetes SIG Apps 子项目形式发布；<strong>GKE Hypercluster</strong> 实现单一 Kubernetes 兼容控制平面管理跨 256,000 个节点、百万级 AI 芯片（GPU/TPU）的超大规模集群，可横跨多个 GCP Region。这两项能力标志着 Kubernetes 正式成为 AI Infra 时代的核心操作系统。
+          </p>
+          <p style="margin:10px 0 0;font-size:12px;">
+            <a href="https://tldr.tech/tech/2026-05-20" style="color:#2b6cb0;">TLDR 原刊 →</a>
+            &nbsp;&nbsp;
+            <a href="https://www.infoq.com/news/2026/05/gke-agent-sandbox-hypercluster/" style="color:#2b6cb0;">InfoQ 详细报道 →</a>
+            &nbsp;&nbsp;
+            <a href="https://cloud.google.com/blog/products/containers-kubernetes/whats-new-in-gke-at-next26" style="color:#2b6cb0;">Google Cloud 官方博客 →</a>
+          </p>
+        </div>
+
+        <!-- Footer -->
+        <div style="margin-top:32px;padding-top:16px;border-top:2px solid #1a202c;text-align:center;">
+          <p style="margin:0;font-size:12px;color:#a0aec0;">
+            软件技术日报 &nbsp;·&nbsp; 自动生成 &nbsp;·&nbsp; 2026-05-25
+          </p>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
