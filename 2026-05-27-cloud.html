@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-27</title>
+</head>
+<body style="font-family: Arial, 'Helvetica Neue', sans-serif; max-width: 680px; margin: 0 auto; background-color: #ffffff; color: #333333; padding: 24px 20px;">
+
+  <!-- Header -->
+  <div style="border-bottom: 3px solid #0066cc; padding-bottom: 12px; margin-bottom: 24px;">
+    <h1 style="color: #1a1a1a; font-size: 20px; margin: 0 0 4px 0; line-height: 1.4;">
+      软件技术日报【软件工程 &amp; 云原生】
+    </h1>
+    <p style="color: #666666; font-size: 13px; margin: 0;">2026-05-27 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+  </div>
+
+  <!-- 1. Thoughtworks Technology Radar -->
+  <div style="margin-bottom: 24px;">
+    <p style="font-size: 11px; color: #0066cc; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 6px 0;">Thoughtworks Technology Radar</p>
+    <h2 style="color: #1a1a1a; font-size: 16px; margin: 0 0 10px 0; line-height: 1.5;">
+      AI 加速软件复杂性——第 34 期雷达呼吁回归工程基础以应对"认知债务"
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #444444; margin: 0 0 10px 0;">
+      Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，核心主题是 AI 辅助开发带来的「认知债务」（Cognitive Debt）——AI 生成代码的速度持续加快，导致工程师与软件系统之间的理解鸿沟不断扩大。报告指出，zero trust 架构、DORA metrics 以及可测试性等工程基础实践正在因此重新受到重视，以应对复杂性爆炸。此外，开发者工具市场充斥大量由单人维护的短命项目，语义扩散（semantic diffusion）问题日益严峻，令技术评估愈加困难。
+    </p>
+    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #0066cc; font-size: 13px; text-decoration: none;">原文链接 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 20px 0;">
+
+  <!-- 2. SRE Weekly -->
+  <div style="margin-bottom: 24px;">
+    <p style="font-size: 11px; color: #0066cc; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 6px 0;">SRE Weekly</p>
+    <h2 style="color: #1a1a1a; font-size: 16px; margin: 0 0 10px 0; line-height: 1.5;">
+      Issue #517：Netflix 如何构建支撑大规模直播的"人力基础设施"
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #444444; margin: 0 0 10px 0;">
+      SRE Weekly 第 517 期（2026 年 5 月 17 日）重点介绍 Netflix 工程师如何将直播视频交付定义为高可靠性工程挑战，从零搭建一套支撑海量并发的运营层（Operations Layer）。本期另一亮点文章探讨"为什么 post-mortem 行动项总是死掉"，核心建议是明确表达选择与不选择某行动的原因，避免行动项在沉默中消亡。此外还涵盖跨团队事件可见性（incident visibility）工具实践与 Kubernetes Java Pod 管理案例。
+    </p>
+    <a href="https://sreweekly.com/sre-weekly-issue-517/" style="color: #0066cc; font-size: 13px; text-decoration: none;">原文链接 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 20px 0;">
+
+  <!-- 3. ByteByteGo -->
+  <div style="margin-bottom: 24px;">
+    <p style="font-size: 11px; color: #0066cc; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 6px 0;">ByteByteGo</p>
+    <h2 style="color: #1a1a1a; font-size: 16px; margin: 0 0 10px 0; line-height: 1.5;">
+      Reddit 如何零停机将 PB 级 Kafka 从 EC2 迁移至 Kubernetes
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #444444; margin: 0 0 10px 0;">
+      Reddit 工程团队完成了一次极具挑战性的基础设施大迁移：将超过 500 个 Kafka broker、逾 1 PB 实时数据从 Amazon EC2 全部迁移至 Kubernetes，并实现零停机、无需任何客户端改动。关键技术方案包括引入 DNS facade 解决客户端硬编码 broker 地址的问题，以及采用 CNCF 项目 Strimzi 在 Kubernetes 上原生运行 Kafka。本文是大规模有状态服务 Kubernetes 化迁移的优秀实战参考，发布于 2026 年 3 月 17 日。
+    </p>
+    <a href="https://blog.bytebytego.com/p/how-reddit-migrated-petabyte-scale" style="color: #0066cc; font-size: 13px; text-decoration: none;">原文链接 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 20px 0;">
+
+  <!-- 4. TechWorld with Nana -->
+  <div style="margin-bottom: 24px;">
+    <p style="font-size: 11px; color: #0066cc; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 6px 0;">TechWorld with Nana &nbsp;📹 视频</p>
+    <h2 style="color: #1a1a1a; font-size: 16px; margin: 0 0 10px 0; line-height: 1.5;">
+      Complete DevOps Roadmap 2026 — 掌握这 4 个层次！
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #444444; margin: 0 0 10px 0;">
+      Nana Janashia 在 2026 年发布最新 DevOps 学习路线图视频，将技能体系划分为 4 个层次：从 Docker、Kubernetes 等容器化基础，到 CI/CD 流水线与 GitOps 实践，再到 Terraform/Ansible 基础设施即代码（IaC），最终到 Prometheus 监控与云平台运维。视频系统梳理了 2026 年 DevOps 工程师的成长路径，适合希望构建完整 Kubernetes 和云原生技术栈的工程师参考。
+    </p>
+    <a href="https://www.youtube.com/watch?v=1J2YOV6LcwY" style="color: #0066cc; font-size: 13px; text-decoration: none;">视频链接 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 20px 0;">
+
+  <!-- 5. TLDR DevOps -->
+  <div style="margin-bottom: 24px;">
+    <p style="font-size: 11px; color: #0066cc; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 6px 0;">TLDR DevOps</p>
+    <h2 style="color: #1a1a1a; font-size: 16px; margin: 0 0 10px 0; line-height: 1.5;">
+      Kubernetes 1.36 发布 · Agents on Kubernetes · Datadog Terraform Provider v4 上线
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #444444; margin: 0 0 10px 0;">
+      TLDR DevOps（2026 年 3 月 23 日）报道 Kubernetes 1.36 正式发布，带来多项 GA 特性：Pod 资源原地更新（in-place resource updates）、精细化 supplemental group 控制以及 Gateway API 成熟度提升。同期关注 Kubernetes 社区推出全新 Agent Sandbox 项目，专为长期运行的 AI autonomous agent 设计，引入 Sandbox CRD 与 SandboxWarmPool 特性以消除冷启动延迟。此外，Datadog Terraform Provider v4 同步上线，强化了云资源观测与 IaC 集成能力。
+    </p>
+    <a href="https://tldr.tech/devops/2026-03-23" style="color: #0066cc; font-size: 13px; text-decoration: none;">原文链接 →</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 16px; text-align: center;">
+    <p style="font-size: 12px; color: #aaaaaa; margin: 0;">
+      本邮件由 Daily News Bot 自动生成 &nbsp;·&nbsp; 仅供技术参考 &nbsp;·&nbsp; 2026-05-27
+    </p>
+  </div>
+
+</body>
+</html>
