@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【AI 技术前沿】- 2026-05-27</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #ffffff; color: #1a1a1a; max-width: 680px; margin: 0 auto; padding: 24px 20px;">
+
+  <!-- Header -->
+  <div style="border-bottom: 3px solid #111; padding-bottom: 16px; margin-bottom: 8px;">
+    <h1 style="font-size: 24px; font-weight: 700; color: #111; margin: 0 0 6px 0; letter-spacing: -0.3px;">
+      软件技术日报
+    </h1>
+    <div style="font-size: 14px; color: #555; font-weight: 500;">
+      【AI 技术前沿】&nbsp;&nbsp;2026-05-27
+    </div>
+  </div>
+
+  <!-- Intro Banner -->
+  <div style="background: #f7f7f7; border-left: 4px solid #111; border-radius: 0 4px 4px 0; padding: 12px 16px; margin: 20px 0 28px 0; font-size: 13px; color: #444; line-height: 1.6;">
+    本期收录 <strong>7 条</strong>内容，涵盖 AI 辅助安全测试、数学自动推理突破、多智能体科研系统、开源模型生态、智能体计算基础设施等方向，重点关注过去 7 天各机构核心动态。<br>
+    <span style="color: #888;">跳过渠道：Andrej Karpathy YouTube（本周入职 Anthropic 暂停更新）、Yannic Kilcher、Two Minute Papers、Lex Fridman Podcast、TWIML AI Podcast（近期无 7 天内更新）</span>
+  </div>
+
+  <!-- ===== Item 1: Anthropic ===== -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0;">
+    <div style="font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+      Anthropic Blog &nbsp;·&nbsp; 2026-05-22
+    </div>
+    <h2 style="font-size: 17px; font-weight: 700; color: #111; margin: 0 0 10px 0; line-height: 1.4;">
+      Project Glasswing 初步进展：Claude Mythos Preview 发现超 10,000 个关键软件漏洞
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 12px 0;">
+      Anthropic 公布 Project Glasswing 一个月运行成果：基于 <strong>Claude Mythos Preview</strong> 的 AI 辅助安全测试，在广泛部署的软件系统中发现了超过 10,000 个高危或关键级别漏洞。Cloudflare 内部测试发现约 2,000 个漏洞（其中 400 个高危），且误报率低于人工主导测试；Mozilla 在 Firefox 150 的测试中修复 271 个安全问题，成效显著超越此前 Claude Opus 4.6 的表现。Anthropic 宣布将向更多合作伙伴（含美国及盟国政府）开放该计划，并允许成员分享基于 Mythos 工具得出的研究发现。
+    </p>
+    <a href="https://www.anthropic.com/research/glasswing-initial-update" style="display: inline-block; font-size: 13px; color: #1a73e8; text-decoration: none; font-weight: 500;">
+      → 阅读原文 &nbsp;anthropic.com/research/glasswing-initial-update
+    </a>
+  </div>
+
+  <!-- ===== Item 2: OpenAI ===== -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0;">
+    <div style="font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+      OpenAI Blog &nbsp;·&nbsp; 2026-05-22
+    </div>
+    <h2 style="font-size: 17px; font-weight: 700; color: #111; margin: 0 0 10px 0; line-height: 1.4;">
+      OpenAI 模型推翻近 80 年离散几何中心猜想，AI 数学推理迈入新里程碑
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 12px 0;">
+      OpenAI 发布重大研究成果：其内部推理模型推翻了由 Paul Erdős 于二十世纪中叶提出、长达近 80 年的"<strong>单位距离问题（unit distance problem）</strong>"核心猜想——即平面上 n 个点中恰好距离为 1 的点对数量上限的构型假设。模型提供了可带来多项式级别改进的无限族反例，证明已通过外部数学家小组的独立验证。代数数论与离散几何之间的意外联系令数学界感叹"AI 已超越助手角色，正在主动推进未解问题"。
+    </p>
+    <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" style="display: inline-block; font-size: 13px; color: #1a73e8; text-decoration: none; font-weight: 500;">
+      → 阅读原文 &nbsp;openai.com/index/model-disproves-discrete-geometry-conjecture
+    </a>
+  </div>
+
+  <!-- ===== Item 3: DeepMind ===== -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0;">
+    <div style="font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+      Google DeepMind Blog &nbsp;·&nbsp; 2026-05-19
+    </div>
+    <h2 style="font-size: 17px; font-weight: 700; color: #111; margin: 0 0 10px 0; line-height: 1.4;">
+      Co-Scientist：基于 Gemini 的多智能体 AI 科研伙伴正式发表于 Nature
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 12px 0;">
+      Google DeepMind 宣布将 <strong>Co-Scientist</strong> 多智能体 AI 系统的研究成果发表于 <em>Nature</em>。该系统基于 Gemini，编排多个专业 Agent 自主生成科学假设、相互辩论、对照文献排序并持续迭代进化，将从假设生成到实验设计的完整科学方法流程自动化。目前已完成包括 Daiichi Sankyo、Bayer Crop Science 及美国能源部在内的湿实验室验证，正式从早期研究演示升级为科学家可申请访问的工具。
+    </p>
+    <a href="https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/" style="display: inline-block; font-size: 13px; color: #1a73e8; text-decoration: none; font-weight: 500;">
+      → 阅读原文 &nbsp;deepmind.google/blog/co-scientist
+    </a>
+  </div>
+
+  <!-- ===== Item 4: Hugging Face ===== -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0;">
+    <div style="font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+      Hugging Face Blog &nbsp;·&nbsp; 2026-05（近期）
+    </div>
+    <h2 style="font-size: 17px; font-weight: 700; color: #111; margin: 0 0 10px 0; line-height: 1.4;">
+      Transformers v5.8.0 发布：新增 DeepSeek V4、Gemma 4 Assistant、Granite 4.1 Vision 等模型支持
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 12px 0;">
+      Hugging Face 发布 <strong>transformers v5.8.0</strong>，新增对 <strong>DeepSeek V4</strong>、<strong>Gemma 4 Assistant</strong>、Granite Speech Plus、<strong>Granite 4.1 Vision</strong>、EXAONE 4.5、PP-FormulaNet 等前沿模型的原生支持。本次更新还包含 tokenizer 相关修复、移除 Apex 依赖，以及多项性能改进。与此同时，平台为 Leaderboard 新增按模型参数量筛选功能，并以奖牌标记各规模段 Top 3 模型，方便开发者比较不同体量的开源模型能力。
+    </p>
+    <a href="https://huggingface.co/blog" style="display: inline-block; font-size: 13px; color: #1a73e8; text-decoration: none; font-weight: 500;">
+      → 阅读原文 &nbsp;huggingface.co/blog
+    </a>
+  </div>
+
+  <!-- ===== Item 5: The Batch ===== -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0;">
+    <div style="font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+      The Batch by DeepLearning.AI &nbsp;·&nbsp; 2026-05-22
+    </div>
+    <h2 style="font-size: 17px; font-weight: 700; color: #111; margin: 0 0 10px 0; line-height: 1.4;">
+      智能体新竞局：OpenClaw vs Hermes Agent，以及更具互动性的新一代 AI 对话模型
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 12px 0;">
+      本期《The Batch》聚焦开源 Coding Agent 格局演变：<strong>OpenClaw</strong> 在 2026 年初引发现象级关注后，<strong>Hermes Agent</strong> 等竞品相继跟进，推动 AI 辅助软件工程能力快速迭代。此外，文章介绍了 <strong>TML-Interaction-Small</strong>——一种将快速实时交互模型与后台推理模型配对的新架构，同步处理音频、视频和文本流，让 AI 对话体验更加自然流畅。AI 原生软件工程团队与传统团队的运作模式差异也在本期进行了深度讨论。
+    </p>
+    <a href="https://www.deeplearning.ai/the-batch/" style="display: inline-block; font-size: 13px; color: #1a73e8; text-decoration: none; font-weight: 500;">
+      → 阅读原文 &nbsp;deeplearning.ai/the-batch
+    </a>
+  </div>
+
+  <!-- ===== Item 6: AI Explained YouTube ===== -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0;">
+    <div style="font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+      AI Explained（YouTube）&nbsp;·&nbsp; 📹 视频 &nbsp;·&nbsp; ~2026-05-25
+    </div>
+    <h2 style="font-size: 17px; font-weight: 700; color: #111; margin: 0 0 10px 0; line-height: 1.4;">
+      📹 AGI Explained 2026：Agentic 架构解析与最新 AI 动态速览
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 12px 0;">
+      本期约 8 分钟视频将 AGI 定义为"能够推理、学习、使用工具、自适应并跨域工作的广义 AI"，并结合 2026 年最新进展深入解析 <strong>Agentic 架构</strong>（智能体设置）的核心要素。频道主持人（SimpleBench 创始人、LM Council 作者）总结了当前模型能力边界与人机协作的实际落地场景，是了解 AGI 与 Agentic AI 当前状态的高质量入门视频。
+    </p>
+    <a href="https://www.youtube.com/watch?v=cA1gNRbtm7g" style="display: inline-block; font-size: 13px; color: #1a73e8; text-decoration: none; font-weight: 500;">
+      → 观看视频 &nbsp;youtube.com/watch?v=cA1gNRbtm7g
+    </a>
+  </div>
+
+  <!-- ===== Item 7: Latent Space Podcast ===== -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0;">
+    <div style="font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+      Latent Space 播客（The AI Engineer Podcast）&nbsp;·&nbsp; 🎧 播客 &nbsp;·&nbsp; 2026-05-21
+    </div>
+    <h2 style="font-size: 17px; font-weight: 700; color: #111; margin: 0 0 10px 0; line-height: 1.4;">
+      🎧 给智能体一台真正的电脑：Daytona 的 Agent-Native 计算基础设施实践
+    </h2>
+    <p style="font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 12px 0;">
+      本期邀请 <strong>Daytona</strong> CEO Ivan Burazin，讲述该公司如何从人类开发环境全面转型为 <strong>AI 智能体专属沙箱基础设施</strong>，实现单客户每日 850,000 次沙箱运行。关键技术亮点包括：基于裸金属（bare metal）的定制调度器、60ms 启动的极低延迟沙箱、以及 RL/Eval 工作负载占比在数月内从 0% 激增至 50%。对话还深入探讨了为何 Kubernetes 不适合此类负载、CLI 与 MCP 的取舍，以及未来 AI 云架构可能比 AWS 更接近 Stripe 的设计理念。公司目前实现 74% 的月环比增长。
+    </p>
+    <a href="https://www.latent.space/p/daytona" style="display: inline-block; font-size: 13px; color: #1a73e8; text-decoration: none; font-weight: 500;">
+      → 收听播客 &nbsp;latent.space/p/daytona
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top: 32px; padding-top: 16px; border-top: 1px solid #e0e0e0; font-size: 12px; color: #999; line-height: 1.7;">
+    <strong style="color: #555;">软件技术日报 · AI 技术前沿</strong><br>
+    发布日期：2026-05-27 &nbsp;|&nbsp; 内容来源：Anthropic、OpenAI、Google DeepMind、Hugging Face、DeepLearning.AI、YouTube、Latent Space<br>
+    本期跳过渠道：Andrej Karpathy YouTube（本周入职 Anthropic，暂停更新）、Yannic Kilcher YouTube、Two Minute Papers、Lex Fridman Podcast、TWIML AI Podcast
+  </div>
+
+</body>
+</html>
