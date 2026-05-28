@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-28</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a2b4a;border-radius:8px 8px 0 0;padding:28px 32px;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#7fa8d4;letter-spacing:1px;text-transform:uppercase;">Software Engineering &amp; Cloud Native</p>
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报【软件工程 &amp; 云原生】
+              </h1>
+              <p style="margin:8px 0 0 0;font-size:13px;color:#a0bcd8;">2026-05-28 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="background-color:#f7f9fc;padding:0 32px 24px 32px;border-radius:0 0 8px 8px;">
+
+              <!-- ① Thoughtworks Technology Radar -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;">
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#4a6fa5;letter-spacing:1.2px;text-transform:uppercase;">
+                      📡 &nbsp;Thoughtworks Technology Radar
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.4;">
+                      AI 加速软件复杂性，Technology Radar Vol.34 呼吁回归工程基础以应对认知债务
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;line-height:1.7;color:#333333;">
+                      Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，核心警示：AI 辅助编程正在积累"<strong>认知债务（Cognitive Debt）</strong>"——AI 生成的代码量剧增，而工程师对系统的真实理解却在减少。报告强调 <strong>Context Engineering</strong> 已从优化技巧升级为 AI 系统的核心架构关注点，并特别推荐两款云原生工具：<strong>CloudNativePG</strong>（在 Kubernetes 上管理高可用 PostgreSQL 集群的 Operator）和 <strong>Kueue</strong>（Kubernetes 原生任务队列控制器，适用于 AI/ML 工作负载的优先级与资源配额管理）。
+                    </p>
+                    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #93c5fd;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:20px 0;"><hr style="border:none;border-top:1px solid #dde3ed;margin:0;" /></td></tr>
+              </table>
+
+              <!-- ② SRE Weekly -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#4a6fa5;letter-spacing:1.2px;text-transform:uppercase;">
+                      📰 &nbsp;SRE Weekly
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.4;">
+                      Issue #517：Netflix 直播可靠性实践 &amp; Kubernetes Java Pod OOMKill 根因解析
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;line-height:1.7;color:#333333;">
+                      本期亮点收录 Netflix 工程师的长文，披露他们如何将<strong>直播视频交付（Live Video Delivery）</strong>作为极高可靠性要求的系统工程挑战，涵盖 SLO 设计、流量调度与故障隔离策略。另一篇深度文章揭示了 Kubernetes 中 Java Pod 频繁重启的隐形杀手——<strong>OOMKill</strong>：JVM 对容器 cgroup 内存限制感知不足，导致 GC Overhead 触发系统 OOMKiller，文中给出了 <code>-XX:MaxRAMPercentage</code> 等调参建议。本期还引发讨论：AI SRE 被定位为"替代低价值运维工作"，而 AI 编程助手则被定位为"增强工程师"——这一微妙差异反映了决策者对事故响应的认知偏差。
+                    </p>
+                    <a href="https://sreweekly.com/sre-weekly-issue-517/"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #93c5fd;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:20px 0;"><hr style="border:none;border-top:1px solid #dde3ed;margin:0;" /></td></tr>
+              </table>
+
+              <!-- ③ ByteByteGo -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#4a6fa5;letter-spacing:1.2px;text-transform:uppercase;">
+                      📝 &nbsp;ByteByteGo
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.4;">
+                      A Guide To Event-Driven Architectural Patterns
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;line-height:1.7;color:#333333;">
+                      ByteByteGo（2026 年 5 月 14 日）系统梳理了<strong>事件驱动架构（Event-Driven Architecture, EDA）</strong>的六种核心模式：Event Sourcing、CQRS、Saga、Outbox Pattern、Event Streaming 和 Event Notification。文章首先分析同步 REST 调用在大规模微服务中的瓶颈（耦合、可用性级联失败），再逐一解析每种模式解决的具体问题，并配有清晰图解。对于正在进行微服务拆分或 Kubernetes 上服务通信设计的工程团队，这是一篇值得收藏的架构参考。
+                    </p>
+                    <a href="https://blog.bytebytego.com/p/a-guide-to-event-driven-architectural"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #93c5fd;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:20px 0;"><hr style="border:none;border-top:1px solid #dde3ed;margin:0;" /></td></tr>
+              </table>
+
+              <!-- ④ TechWorld with Nana -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#4a6fa5;letter-spacing:1.2px;text-transform:uppercase;">
+                      📹 &nbsp;TechWorld with Nana（YouTube）
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.4;">
+                      📹 视频 | The Ultimate Kubernetes Administrator (CKA) Course — 2026 Edition
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;line-height:1.7;color:#333333;">
+                      TechWorld with Nana（Nana Janashia）近期更新了面向 2026 年的<strong>Kubernetes 管理员认证（CKA）</strong>完整课程内容，覆盖 Kubernetes 集群搭建、RBAC、网络策略（Network Policy）、存储（PV/PVC）、调度（Taints &amp; Tolerations）及故障排查等 CKA 考试核心知识点。视频以结构化课程形式呈现，适合备考工程师和希望系统提升 K8s 运维能力的从业者。频道同步产出 DevSecOps、GitOps 等云原生实践内容。
+                    </p>
+                    <a href="https://www.youtube.com/@TechWorldwithNana"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #93c5fd;">
+                      访问频道 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding:20px 0;"><hr style="border:none;border-top:1px solid #dde3ed;margin:0;" /></td></tr>
+              </table>
+
+              <!-- ⑤ TLDR Tech -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#4a6fa5;letter-spacing:1.2px;text-transform:uppercase;">
+                      ⚡ &nbsp;TLDR Tech
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.4;">
+                      2026-05-18：Amazon's New Playbook · Kubernetes 1.36 发布 · Agents on Kubernetes
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;line-height:1.7;color:#333333;">
+                      TLDR Tech（2026 年 5 月 18 日）报道了亚马逊在 AI 时代的全新云战略调整。同期 TLDR DevOps 近期要点：<strong>Kubernetes 1.36</strong> 正式发布，引入更强的 Linux user namespace 支持、Gateway API 正式取代 Ingress-Nginx、WatchCache 性能提升，以及增强的 Dynamic Resource Allocation；同时，<strong>Agents on Kubernetes</strong> 成为热点——Kubernetes Agent Sandbox 项目专为长期运行的自治 AI Agent 设计，支持持久化身份、隔离环境与快速恢复（SandboxWarmPool 消除冷启动延迟）。
+                    </p>
+                    <a href="https://tldr.tech/tech/2026-05-18"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #93c5fd;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Footer -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;border-top:1px solid #dde3ed;margin-top:24px;">
+                    <p style="margin:0;font-size:12px;color:#888888;line-height:1.6;">
+                      本邮件由每日软件技术动态 Agent 自动整理 · 内容版权归各原始出处所有<br/>
+                      摘要以中文撰写，技术术语保留英文原文 · 2026-05-28
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
