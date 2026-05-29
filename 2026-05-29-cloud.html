@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-29</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#1a1a1a;font-size:15px;line-height:1.7;">
+
+  <div style="max-width:680px;margin:0 auto;padding:32px 24px;">
+
+    <!-- Header -->
+    <div style="border-bottom:3px solid #0a2540;padding-bottom:20px;margin-bottom:28px;">
+      <h1 style="margin:0 0 6px 0;font-size:22px;font-weight:700;color:#0a2540;letter-spacing:0.5px;">
+        软件技术日报
+      </h1>
+      <p style="margin:0;font-size:13px;color:#5f6b7a;letter-spacing:0.3px;">
+        【软件工程 &amp; 云原生】&nbsp;&nbsp;|&nbsp;&nbsp;2026-05-29 &nbsp;&nbsp;|&nbsp;&nbsp;Kubernetes · 云原生架构 · SRE 实践
+      </p>
+    </div>
+
+    <!-- Item 1: Thoughtworks Technology Radar -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#5f6b7a;text-transform:uppercase;letter-spacing:1px;">
+        Thoughtworks Technology Radar
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#0a2540;line-height:1.4;">
+        Technology Radar Vol.34：AI 加速软件复杂性，呼吁回归工程基础原则以对抗认知债务
+      </h2>
+      <p style="margin:0 0 12px 0;color:#333333;font-size:14px;line-height:1.75;">
+        Thoughtworks 第 34 期技术雷达（2026 年 4 月）以 <strong>"认知债务（Cognitive Debt）"</strong> 为核心议题——AI 生成代码量的爆炸式增长正在拉大开发者与系统之间的认知鸿沟，报告警告若不加干预，将带来严重的可维护性危机。报告同时将 <strong>Context Engineering（上下文工程）</strong> 定位为 AI 系统的核心架构设计面，强调需主动设计 AI 的信息环境，而非被动优化 Prompt。此外，报告对 LangGraph 等 Agent 框架进行了审慎评估，指出 Pydantic AI 等基于代码执行的轻量 Agent 架构在许多场景下更具实用性。
+      </p>
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+         style="display:inline-block;color:#1a73e8;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #1a73e8;padding:5px 12px;border-radius:4px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+    <!-- Item 2: SRE Weekly -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#5f6b7a;text-transform:uppercase;letter-spacing:1px;">
+        SRE Weekly · Issue #517 &nbsp;(2026-05-17)
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#0a2540;line-height:1.4;">
+        当没有任何一个团队能看到完整故障全貌——跨团队 Incident 管理与 Netflix 直播运维实践
+      </h2>
+      <p style="margin:0 0 12px 0;color:#333333;font-size:14px;line-height:1.75;">
+        本期 SRE Weekly 聚焦微服务架构下 Incident 管理的核心挑战：随着服务边界不断细化，<strong>没有任何单一团队能看到完整的故障全貌</strong>，如何通过工具与流程快速聚合跨团队信号、定位根因成为 SRE 组织的头等难题。本期精选文章来自 Netflix 工程师 Brett Axler、Casper Choffat 及 Alo Lowry，深入介绍了 Netflix 为大规模实时直播视频交付所构建的 Operations Layer，阐述了如何在峰值并发下保障高可用性与弹性伸缩。此外本期还涵盖 Kubernetes 中 Java OOM 问题的调试与优化实践。
+      </p>
+      <a href="https://sreweekly.com/sre-weekly-issue-517/"
+         style="display:inline-block;color:#1a73e8;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #1a73e8;padding:5px 12px;border-radius:4px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+    <!-- Item 3: ByteByteGo -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#5f6b7a;text-transform:uppercase;letter-spacing:1px;">
+        ByteByteGo &nbsp;(2026-05-25)
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#0a2540;line-height:1.4;">
+        How CockroachDB Built Vector Indexing at Scale：C-SPANN 分布式向量索引架构深度解析
+      </h2>
+      <p style="margin:0 0 12px 0;color:#333333;font-size:14px;line-height:1.75;">
+        ByteByteGo 深度剖析了 CockroachDB 如何自研 <strong>C-SPANN</strong> 架构实现生产级分布式向量索引。其核心设计哲学是将向量索引作为普通表数据存储于分布式 SQL 引擎内部，而非另建独立系统——这使得向量写入具备与普通事务相同的实时一致性，无需批处理同步。架构融合了 Microsoft SPANN 的层次 K-means 树分区结构、Google ScaNN 的量化思想以及 CockroachDB 原生的分布式扩展能力，最终产出一套在百亿向量规模下仍能保持实时可查询性与水平扩展性的方案。
+      </p>
+      <a href="https://blog.bytebytego.com/p/how-cockroachdb-built-vector-indexing"
+         style="display:inline-block;color:#1a73e8;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #1a73e8;padding:5px 12px;border-radius:4px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+    <!-- Item 4: TechWorld with Nana - SKIPPED, replaced with TLDR DevOps -->
+
+    <!-- Item 5: TLDR Tech -->
+    <div style="margin-bottom:28px;">
+      <p style="margin:0 0 6px 0;font-size:11px;font-weight:600;color:#5f6b7a;text-transform:uppercase;letter-spacing:1px;">
+        TLDR Tech &nbsp;(2026-05-20)
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#0a2540;line-height:1.4;">
+        Google I/O 2026：Gemini 3.5 Flash 全面超越前代，AI 行业整合信号显现
+      </h2>
+      <p style="margin:0 0 12px 0;color:#333333;font-size:14px;line-height:1.75;">
+        TLDR Tech 5月20日刊重点报道 Google I/O 2026 核心亮点：<strong>Gemini 3.5 Flash</strong> 在编码、Agent 及多模态 Benchmark 上全面超越 3.1 Pro，并带来覆盖 Google 全线产品的 AI 增强功能。此外，SpaceX 计划提交 IPO 申请并拟收购 AI 编程工具 <strong>Cursor</strong>，显示 AI 基础设施与开发工具市场的整合趋势持续加剧。本期还涉及 Karpathy 加入 Anthropic 的行业动态，AI 人才流向头部基础模型公司的格局更加清晰。
+        <br><small style="color:#888;font-size:12px;">（注：TechWorld with Nana 频道过去 7 天暂无可确认的新发布视频，本期以 TLDR Tech 补位）</small>
+      </p>
+      <a href="https://tldr.tech/tech/2026-05-20"
+         style="display:inline-block;color:#1a73e8;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #1a73e8;padding:5px 12px;border-radius:4px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <hr style="border:none;border-top:2px solid #e8ecf0;margin:32px 0 20px 0;">
+    <div style="text-align:center;font-size:12px;color:#9aa5b1;line-height:1.8;">
+      <p style="margin:0 0 4px 0;">
+        📬 软件技术日报 · 自动整理 &nbsp;|&nbsp; 覆盖：Kubernetes · 云原生架构 · SRE 实践
+      </p>
+      <p style="margin:0;color:#b0b8c1;">
+        发布日期：2026-05-29 &nbsp;|&nbsp; 内容摘要基于公开信息整理，技术术语保留英文原文
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
