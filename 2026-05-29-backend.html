@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-29</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <table width="680" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;border-radius:8px 8px 0 0;padding:32px 36px;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#a0aec0;letter-spacing:2px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:0 0 8px 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报【后端开发 &amp; Python &amp; Go】
+              </h1>
+              <p style="margin:0;font-size:14px;color:#90cdf4;">2026 年 05 月 29 日 &nbsp;|&nbsp; 涵盖后端、Python、Go 精选内容</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;padding:24px 36px;">
+
+              <!-- 1. Netflix Tech Blog -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Netflix Tech Blog</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#2b6cb0;text-decoration:none;">State of Routing in Model Serving</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      Netflix 详细分享了其 ML model serving 基础设施中的路由（routing）架构现状，揭示了如何在 title 推荐、商业化等多个领域为数亿用户提供个性化服务。文章聚焦于 routing 策略的演进：从简单的静态路由到支持流量切分、canary 发布和 A/B 实验的动态路由层，深入探讨了如何在超大规模下保证低延迟与高可用。对构建 ML 服务平台的工程师而言，这是一份难得的实战参考。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 2. Netflix Tech Blog - ML -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Netflix Tech Blog</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1" style="color:#2b6cb0;text-decoration:none;">Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      Netflix 构建了 Metadata Service（MDS），通过创建 Model Lifecycle Graph 将整个 ML 平台中的 models、features、pipelines、experiments、datasets 等实体进行索引和关联。该系统支持实时摄入 ML metadata，并通过 AIP Portal 提供全文搜索与可导航的实体关系图，使任意团队的 ML 从业者都能轻松发现、理解并复用公司内部的 ML 资产。这是 Netflix 在 ML 平台化与民主化方向上的重要实践。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 3. The Go Blog -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">The Go Blog &nbsp;·&nbsp; 2026-05-21</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://go.dev/blog/gofix" style="color:#2b6cb0;text-decoration:none;">Introducing the pkg.go.dev API</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      Go 官方博客宣布为 pkg.go.dev 引入新的程序化 API，开发者可直接通过 API 查询 Go package 和 module 的元数据，包括文档、依赖关系、版本信息等，无需再抓取网页。此举将大大便利工具链集成与自动化分析工作流，对于构建 Go 生态工具（IDE 插件、依赖审计脚本等）的开发者而言意义重大。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://go.dev/blog/" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 4. Golang Weekly -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Golang Weekly &nbsp;·&nbsp; Issue #601 · 2026-05-15</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://golangweekly.com/issues/601" style="color:#2b6cb0;text-decoration:none;">Why Cilium vendors every Go module in 2026</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      本期重点文章解析了 Cilium（基于 eBPF 的 Kubernetes 网络与安全平台）为何在 2026 年仍选择 vendor 全部 Go 依赖：主要原因是增强构建可重现性、规避供应链安全风险，以及在 CI/CD 环境中无需外部网络访问即可完成构建。文章详细对比了 vendor 模式与 module proxy 模式的优劣，对大型 Go 项目的依赖管理策略具有重要参考价值。本期还涵盖 Go 安全补丁、社区提案等内容。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://golangweekly.com/issues/601" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 5. Real Python -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Real Python &nbsp;·&nbsp; 2026-05-27</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://realpython.com/python-news-may-2026/" style="color:#2b6cb0;text-decoration:none;">A New Python Packaging Council and Other News for May 2026</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      本月 Python 生态最大新闻：Python 社区正式成立新的 Python Packaging Council，旨在统一协调 pip、uv、PyPI 等打包工具的标准制定与治理。此外，PyCon US 2026 于 5 月 13–19 日在加州 Long Beach 召开，日程涵盖 tutorial、主会议及 development sprint；Jazzband 项目组织宣布关闭，相关开源项目正在协调移交。文章同时推荐了关于 uv 和 Ruff 的深度教程，帮助开发者跟上现代 Python 工作流的演进。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://realpython.com/python-news-may-2026/" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 6. Python Weekly -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Python Weekly &nbsp;·&nbsp; Issue #746 · 2026-05-21</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#2b6cb0;text-decoration:none;">Python Weekly Issue 746：代码重构、django-q2 与 nb-cli</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      本期精选文章包括：一篇关于 Python 代码重构实践的深度指南，演示如何将臃肿的 class 拆分为职责单一的小型组件；介绍 django-q2——一个轻量级的 Celery 替代方案，适合在 Django 中处理后台任务与异步队列；以及 nb-cli，一个针对 AI 优化、支持 Markdown 格式的 Jupyter notebook 命令行接口工具。整体内容贴近工程实践，适合日常开发参考。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 7. Martin Fowler -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">Martin Fowler Blog &nbsp;·&nbsp; 2026-05-05</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://martinfowler.com/fragments/2026-05-05.html" style="color:#2b6cb0;text-decoration:none;">Fragments: May 5 — AI 时代的"监督式工程工作"</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      Fowler 最新 Fragments 引用了对 158 名职业软件工程师使用 AI 工具的研究，提出了"supervisory engineering work"（监督式工程工作）的概念：随着 AI 接管越来越多的创作任务，工程师的核心工作正从编写代码转向指导 AI、评估输出并纠错。研究还发现 Thoughtworks 第 34 期 Technology Radar 内容以 AI 为主导，反映了行业正在经历的深层转型。这是 Fowler 对 AI 重塑软件工程实践的深度观察。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://martinfowler.com/fragments/2026-05-05.html" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 8. High Scalability -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">High Scalability &nbsp;·&nbsp; 2026-04-21</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://highscalability.com/untitled-2/" style="color:#2b6cb0;text-decoration:none;">Kafka 101 — Apache Kafka Committer 深度解析</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      本文由 Apache Kafka Committer Stanislav Kozlovski 撰写，系统介绍 Apache Kafka 的核心架构与设计理念。文章从 Kafka 2011 年诞生于 LinkedIn 的背景出发，深入讲解 topic、partition、consumer group、offset 等核心概念，以及 Kafka 如何通过顺序写入磁盘和零拷贝（zero-copy）实现极高吞吐量。对于希望系统性补强 Kafka 知识的工程师，这是一篇高质量的权威参考文章。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://highscalability.com/untitled-2/" style="font-size:13px;color:#2b6cb0;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 9. Arjan Codes -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">📹 视频 &nbsp;·&nbsp; Arjan Codes (YouTube) &nbsp;·&nbsp; 2026-04-24</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="color:#2b6cb0;text-decoration:none;">Don't Use Boolean Flags in Python, Use Policies Instead</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      📹 视频 · Arjan 在本视频中批评了 Python 中滥用 boolean flag 参数的反模式——这种做法会导致函数承担多重职责、可读性差且难以扩展。他提出使用 Policy 设计模式替代：将不同行为封装为独立的 policy 类，通过依赖注入传入，从而实现更清晰的关注点分离（separation of concerns）。视频结合 Python dataclass 和 Protocol 展示具体重构步骤，是提升代码设计质量的实用教程。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="font-size:13px;color:#2b6cb0;">观看视频 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 10. Hussein Nasser -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">📹 视频 &nbsp;·&nbsp; Hussein Nasser (YouTube)</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=p6TeRabqJs0" style="color:#2b6cb0;text-decoration:none;">Indexing Woes, Secret to Backend Interviews, Math and Software — The Backend Engineering Show</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      📹 视频 · 本期 Backend Engineering Show 中，Hussein Nasser 围绕数据库 indexing 的常见痛点展开讨论：为什么 index 有时反而会拖慢查询、如何正确使用 composite index 以及 query planner 的工作原理。同时分享了后端面试中鲜少被提及的关键考察点，以及数学基础如何影响工程师解决复杂系统问题的能力。内容深入浅出，兼顾理论与实战。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://www.youtube.com/watch?v=p6TeRabqJs0" style="font-size:13px;color:#2b6cb0;">观看视频 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #edf2f7;margin:4px 0 20px 0;">
+
+              <!-- 11. Fireship -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.5px;text-transform:uppercase;">📹 视频 &nbsp;·&nbsp; Fireship (YouTube) &nbsp;·&nbsp; 2026-04-21</p>
+                    <h2 style="margin:0 0 8px 0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="color:#2b6cb0;text-decoration:none;">Claude just got another superpower...</a>
+                    </h2>
+                    <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.7;">
+                      📹 视频 · Fireship 以其标志性的高节奏风格解读了 Anthropic 为 Claude 推出的最新功能——Claude Design，将其称为"迄今最具颠覆性的特性"。视频简要介绍了该功能如何让 Claude 直接参与 UI/UX 设计流程，并探讨了 AI 辅助设计对前端工程与产品开发工作流的潜在影响。适合快速了解 AI 工具前沿动态。
+                    </p>
+                    <p style="margin:6px 0 0 0;">
+                      <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="font-size:13px;color:#2b6cb0;">观看视频 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Footer -->
+              <hr style="border:none;border-top:2px solid #e2e8f0;margin:8px 0 20px 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-top:4px;">
+                    <p style="margin:0;font-size:12px;color:#a0aec0;line-height:1.6;">
+                      本日报由自动化 agent 整理，内容来源：High Scalability · Martin Fowler · Netflix Tech Blog · Real Python · Python Weekly · The Go Blog · Golang Weekly · Arjan Codes · Hussein Nasser · Fireship<br>
+                      渠道未在过去 7 天内发布新内容（Anthony GG、Dan Luu、Brendan Gregg、Go by Example）已按规则跳过。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
