@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-05-31</title>
+</head>
+<body style="margin:0;padding:0;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1a1a1a;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f0f4f8;">
+  <tr>
+    <td align="center" style="padding:32px 16px;">
+      <table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;">
+
+        <!-- ===== HEADER ===== -->
+        <tr>
+          <td style="background:#1a202c;padding:36px 36px 28px;border-radius:10px 10px 0 0;">
+            <div style="font-size:11px;color:#718096;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">Daily Tech Digest · Backend &amp; Python &amp; Go</div>
+            <h1 style="margin:0 0 6px;font-size:24px;font-weight:700;color:#ffffff;line-height:1.2;">软件技术日报</h1>
+            <div style="font-size:14px;color:#90cdf4;margin-bottom:16px;">后端开发 &amp; Python &amp; Go</div>
+            <div style="display:inline-block;background:#2d3748;border:1px solid #4a5568;padding:5px 14px;border-radius:20px;font-size:13px;color:#e2e8f0;font-weight:500;">2026-05-31</div>
+          </td>
+        </tr>
+
+        <!-- ===== BODY ===== -->
+        <tr>
+          <td style="background:#ffffff;padding:0 36px;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+
+            <!-- ─── 1. Martin Fowler ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:32px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#4299e1;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F4D6; Martin Fowler Blog</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://martinfowler.com/fragments/2026-05-27.html" style="color:#1a202c;text-decoration:none;">Fragments: May 27 — AI 辅助开发中的监督性工程</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    Fowler 最新 Fragments（2026-05-27）探讨了 AI 辅助编程带来的<strong>"决策密度（decision density）"</strong>问题：工程师在每小时内需做出的判断数量大幅增加，高强度模式通常只能维持两三小时。研究者 Annie Vella 将此定名为 <em>supervisory engineering work</em>——引导 AI、评估输出、纠错所需的认知负荷。实践建议：保持 agent 任务粒度小、自动化所有可自动化的验证环节、接受"不必逐行审查代码，只要拥有可靠验证机制"这一新范式。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://martinfowler.com/fragments/2026-05-27.html" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 2. Netflix Tech Blog ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#e53e3e;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F4F9; Netflix Tech Blog</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#1a202c;text-decoration:none;">State of Routing in Model Serving</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    Netflix ML 模型服务系列文章第一篇（May 2026）：平台已支持数百种模型类型与版本，<strong>每秒处理 100 万请求</strong>。文章深入解析核心路由服务 <strong>Switchboard</strong> 的设计——如何在保持客户端服务简洁的同时，将请求精准路由到正确的模型实例和集群分片。重点讨论了领域无关（domain-independent）的 API 抽象层设计，以及大规模运维中遭遇的挑战与权衡取舍。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 3. High Scalability ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#805ad5;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F680; High Scalability</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://highscalability.com/untitled-2/" style="color:#1a202c;text-decoration:none;">Kafka 101 — Apache Kafka 架构深度解析</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    Apache Kafka Committer Stanislav Kozlovski 撰写的深度架构解析。Kafka 自 2011 年由 LinkedIn 开源，已成为实时数据流的 de-facto 标准，历经 24 个主要版本，代码规模年均增长 24%。文章聚焦其为<strong>成本高效的大规模数据存储与高吞吐（多 GB/s 读写）</strong>而优化的核心架构设计，是理解 Kafka 内部原理的绝佳入门材料。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://highscalability.com/untitled-2/" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 4. Real Python ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#38a169;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F40D; Real Python</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://realpython.com/python-news-may-2026/" style="color:#1a202c;text-decoration:none;">A New Python Packaging Council and Other News for May 2026</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    Python 生态重大治理事件：<strong>PEP 772</strong> 获批，正式成立五人选举产生的 <strong>Packaging Council</strong>，权威性比肩 Steering Council，终结多年来打包社区缺乏正式权威的局面。同期，<strong>Python 3.15.0 beta 1</strong> 发布：JIT 编译器在 x86-64 Linux 提速 6-7%，AArch64 macOS 提速 12-13%；3.14 的增量 GC 因生产环境内存失控已回滚，修复将随 3.14.5 发布。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://realpython.com/python-news-may-2026/" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 5. Python Weekly ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#38a169;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F4EC; Python Weekly</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#1a202c;text-decoration:none;">Issue 746（May 21）— Django-q2、OpenTelemetry 日志集成与 LiveView 对比</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    本期精选：<strong>Django-q2</strong> 作为 Celery 的轻量级后台任务替代方案；使用 OpenTelemetry Python SDK 的 <code style="background:#f7fafc;padding:1px 5px;border-radius:3px;font-size:13px;">LoggingHandler</code> 将标准 logging 接入 OpenTelemetry pipeline 实现可观测性统一；以及 Django LiveView 与 Phoenix LiveView 实时 UI 的性能对比，评估两种技术路线的适用场景。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 6. The Go Blog ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#00acd7;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F4D8; The Go Blog</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://go.dev/blog/pkgsite-api" style="color:#1a202c;text-decoration:none;">Introducing the pkg.go.dev API</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    May 21, 2026：<strong>pkg.go.dev</strong> 正式开放编程 API，终结开发者长期依赖网页爬虫获取 Go 模块元数据的困境。新 API 提供参考客户端 <code style="background:#f7fafc;padding:1px 5px;border-radius:3px;font-size:13px;">pkgsite-cli</code> 和 OpenAPI spec，核心设计原则为 <em>"precision over convenience"</em>——要求明确指定模块路径而非依赖模糊匹配。官方承诺持续维护向后兼容性，对 IDE 工具链和自动化工作流开发者意义重大。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://go.dev/blog/pkgsite-api" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 7. Golang Weekly ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#00acd7;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F4F0; Golang Weekly</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://golangweekly.com/issues/602" style="color:#1a202c;text-decoration:none;">Issue #602（May 22）— pkg.go.dev 官方 API 上线 &amp; Google I/O 2026 Go 专场</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    本期头条聚焦 <strong>pkg.go.dev 官方 API 正式发布</strong>；同收录 Google I/O 2026 的 <em>"What's New in Go"</em> 演讲——两位 Go 团队成员 15 分钟概述语言现状；另有 Cilium 在 2026 年仍坚持 vendor 全部 Go 模块的深度分析，以及 Go fuzzing 工具链相较于 Rust/C++ 生态的补全改进。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://golangweekly.com/issues/602" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 8. Arjan Codes ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#d69e2e;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F3A5; Arjan Codes · YouTube 视频</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="color:#1a202c;text-decoration:none;">Your API Can't Handle Real-World Integrations</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    📹 视频：探讨为何"干净的 API 设计"在真实多方集成场景中往往遭遇失败——错误处理不充分、版本协商缺失、状态一致性保障不足等问题在集成测试时才逐一暴露。Arjan 基于 20+ 年软件工程经验，给出设计能够经受真实业务集成压力的 API 的实践建议，属于 <em>"Build software that lasts"</em> 系列内容。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 观看视频</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr style="border:none;border-top:1px solid #edf2f7;margin:28px 0 0;">
+
+            <!-- ─── 9. Fireship ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <div style="font-size:10px;font-weight:700;color:#d69e2e;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">&#x1F3A5; Fireship · YouTube 视频</div>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a202c;line-height:1.45;">
+                    <a href="https://www.youtube.com/watch?v=9OQ5vaYbGV0" style="color:#1a202c;text-decoration:none;">Google's AI endgame is here… everything you missed at I/O 2026</a>
+                  </h2>
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    📹 视频（约 1 周前发布）：Fireship 极速风格回顾 <strong>Google I/O 2026</strong> 全部重磅发布——Gemini 全面嵌入各产品线的 <em>agent-first</em> 战略，Google Search 从关键词检索向 AI 生成式体验的根本性转变，以及对软件开发工具链和 SaaS 商业模式的深远冲击。对理解当前 AI 行业走向有极高参考价值。
+                  </p>
+                  <p style="margin:12px 0 0;">
+                    <a href="https://www.youtube.com/watch?v=9OQ5vaYbGV0" style="color:#3182ce;font-size:13px;font-weight:500;text-decoration:none;">→ 观看视频</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- bottom padding -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="height:36px;"></td></tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ===== SKIPPED CHANNELS NOTE ===== -->
+        <tr>
+          <td style="background:#f7fafc;padding:16px 36px;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;border-top:1px solid #edf2f7;">
+            <p style="margin:0;font-size:12px;color:#a0aec0;line-height:1.6;">
+              <strong style="color:#718096;">本期跳过渠道</strong>（过去 7 天无新发布）：Anthony GG、Hussein Nasser、Dan Luu Blog、Brendan Gregg Blog、Go by Example
+            </p>
+          </td>
+        </tr>
+
+        <!-- ===== FOOTER ===== -->
+        <tr>
+          <td style="background:#1a202c;padding:22px 36px;border-radius:0 0 10px 10px;">
+            <p style="margin:0;font-size:12px;color:#718096;line-height:1.7;">
+              自动生成 · Daily News Bot · 2026-05-31<br>
+              渠道：High Scalability &middot; Martin Fowler &middot; Netflix TechBlog &middot; Real Python &middot; Python Weekly &middot; The Go Blog &middot; Golang Weekly &middot; Arjan Codes &middot; Fireship
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
