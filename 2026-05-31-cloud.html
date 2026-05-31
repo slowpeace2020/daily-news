@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-05-31</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#222222;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;border-radius:8px 8px 0 0;padding:28px 32px;">
+              <p style="margin:0;font-size:12px;color:#8ab4f8;letter-spacing:1.5px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:8px 0 4px;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报【软件工程 &amp; 云原生】
+              </h1>
+              <p style="margin:0;font-size:14px;color:#a0aec0;">2026-05-31 &nbsp;·&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="background-color:#f9fafb;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;padding:0 32px;">
+
+              <!-- Intro -->
+              <p style="margin:24px 0 8px;font-size:14px;color:#4a5568;">
+                精选本周软件工程与云原生领域重要动态，涵盖 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo、TechWorld with Nana 及 TLDR Tech 五大渠道。
+              </p>
+
+              <!-- ==================== Section 1 ==================== -->
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;" />
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <span style="display:inline-block;background-color:#ebf4ff;color:#2b6cb0;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">
+                      Thoughtworks Technology Radar
+                    </span>
+                    <h2 style="margin:12px 0 8px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Vol.34：AI 加速软件复杂度，重归工程基本功对抗「认知债务」
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.7;">
+                      Thoughtworks 2026 年 4 月发布第 34 期 Technology Radar，核心主题是「Cognitive Debt（认知债务）」——随着 AI 生成代码量激增，人类工程师与软件系统之间的认知鸿沟正在扩大。本期强调，正是 AI 的高速编码能力，反而让 Zero Trust Architecture、DORA Metrics、可测试性等经典工程纪律变得比以往更为关键。报告同时警告，开发者工具市场因准入门槛降低而涌入大量单人维护的短命项目，行业正面临「语义扩散（Semantic Diffusion）」困境，新兴概念尚未稳定即被大量滥用。
+                    </p>
+                    <p style="margin:0 0 16px;">
+                      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        &#8594; 阅读原文
+                      </a>
+                      &nbsp;&nbsp;
+                      <a href="https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        &#8594; 下载 PDF
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ==================== Section 2 ==================== -->
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;" />
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <span style="display:inline-block;background-color:#f0fff4;color:#276749;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">
+                      SRE Weekly · Issue #517
+                    </span>
+                    <h2 style="margin:12px 0 8px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      跨团队 P1 故障可见性、Post-Mortem 行动项治理与 Kubernetes OOMKill 排查
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.7;">
+                      本期 SRE Weekly（#517）重点关注分布式团队在 P1 事故中的跨服务可见性难题——当故障横跨多个服务、团队与基础设施层时，统一的事后可观测性平台变得至关重要。此外，作者就 Post-Incident Action Items 提出务实建议：必须明确说明「选择做」或「选择不做」，避免含糊行动项沦为技术债；Netflix 则分享了其大规模直播视频交付的运维基础设施设计。Kubernetes 方向，本期收录了 Java Pod 因 OOMKill 频繁重启的排查案例，涉及 JVM 堆外内存计算与 container memory limit 配置优化实践。
+                    </p>
+                    <p style="margin:0 0 16px;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-517/"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        &#8594; 阅读原文
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ==================== Section 3 ==================== -->
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;" />
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <span style="display:inline-block;background-color:#fff5f5;color:#9b2335;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">
+                      ByteByteGo
+                    </span>
+                    <h2 style="margin:12px 0 8px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Must-Know Failure Modes in Distributed Systems（分布式系统必知故障模式）
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.7;">
+                      ByteByteGo 本周发布分布式系统故障模式深度解析，系统梳理了硬件故障、错误处理缺陷（研究表明大多数灾难性故障源于对非致命错误的错误处理）、单点故障（SPOF）等核心失效类型，并给出每类故障的标准应对策略。文章特别指出：2014 年针对五大主流分布式数据存储的研究发现，绝大多数灾难性故障可通过简单测试在开发阶段提前发现，说明 Chaos Engineering 和可测试性设计的重要性。对于云原生架构师和 SRE 而言，这是一篇覆盖面广、实践价值高的参考指南。
+                    </p>
+                    <p style="margin:0 0 16px;">
+                      <a href="https://blog.bytebytego.com/p/must-know-failure-modes-in-distributed"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        &#8594; 阅读原文
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ==================== Section 4 ==================== -->
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;" />
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <span style="display:inline-block;background-color:#faf5ff;color:#6b21a8;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">
+                      TechWorld with Nana &nbsp;📹 视频
+                    </span>
+                    <h2 style="margin:12px 0 8px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      📹 IT Career Paths 2026：DevOps、Kubernetes 与云工程师完整路线图
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.7;">
+                      Nana Janashia（Docker Captain、AWS Container Hero）在本期视频中系统梳理了 2026 年 12 条 IT 职业路径，重点介绍了 DevOps 工程师、Kubernetes 管理员（CKA）与云原生架构师三条方向的技能栈与学习路径。视频结合当前 AI 驱动的自动化趋势，指出即便 AI Coding 工具普及，对 Kubernetes、CI/CD Pipeline 和 Infrastructure as Code 的深度理解依然是区分高级工程师的核心竞争力，并给出从零开始系统学习 DevOps 的推荐顺序。
+                    </p>
+                    <p style="margin:0 0 4px;font-size:12px;color:#718096;">
+                      ⚠️ 注：本视频为频道最新 2026 年指南内容，具体发布日期请以 YouTube 频道页面为准。
+                    </p>
+                    <p style="margin:0 0 16px;">
+                      <a href="https://www.youtube.com/watch?v=kMhf4C5-TIE"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        &#8594; 观看视频
+                      </a>
+                      &nbsp;&nbsp;
+                      <a href="https://www.youtube.com/@TechWorldwithNana"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        &#8594; 频道主页
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ==================== Section 5 ==================== -->
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;" />
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <span style="display:inline-block;background-color:#fffbeb;color:#92400e;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">
+                      TLDR Tech · 2026-05-25
+                    </span>
+                    <h2 style="margin:12px 0 8px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                      Auth for Agents：AI Agent 身份认证基础设施正在成型
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;color:#4a5568;line-height:1.7;">
+                      本期 TLDR Tech（5 月 25 日）重点介绍了面向 AI Agents 的认证授权基础设施（Auth for Agents）——Clerk 等工具已开始通过 <code style="background:#f1f5f9;padding:1px 5px;border-radius:3px;font-size:13px;">clerk init</code>、<code style="background:#f1f5f9;padding:1px 5px;border-radius:3px;font-size:13px;">clerk config</code> 等 CLI 命令为 Agentic 系统提供无需 Dashboard 的 auth scaffolding 能力。Gartner 预测，到 2026 年底将有 40% 的企业应用内嵌任务型 AI Agent，而目前仅 14.4% 的组织在 Agent 上线时完成了完整的安全审批，云原生安全体系正面临新一轮重构压力。对于平台工程团队，这意味着需要为 Agent 身份定义明确的授权边界、认证机制与运行时监控策略。
+                    </p>
+                    <p style="margin:0 0 16px;">
+                      <a href="https://tldr.tech/tech/2026-05-25"
+                         style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                        &#8594; 阅读原文
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;" />
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#1a1a2e;border-radius:0 0 8px 8px;padding:20px 32px;text-align:center;">
+              <p style="margin:0;font-size:12px;color:#718096;">
+                软件技术日报 &nbsp;·&nbsp; 自动整理 by Daily News Bot &nbsp;·&nbsp; 2026-05-31
+              </p>
+              <p style="margin:6px 0 0;font-size:11px;color:#4a5568;">
+                涵盖渠道：Thoughtworks Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR Tech
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
