@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-06-01</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;">
+    <tr>
+      <td align="center" style="padding:20px 0;">
+        <table width="680" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:32px 40px;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#8888aa;letter-spacing:1px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <p style="margin:6px 0 0 0;font-size:14px;color:#aaaacc;">后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-06-01</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0;font-size:13px;color:#888888;">本期整理来自 8 个技术渠道的最新内容，涵盖 Go 生态、Python 治理、Netflix ML 基础设施、API 设计与 Google I/O 2026 速览。</p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 1: Martin Fowler ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">Martin Fowler Blog &nbsp;·&nbsp; 2026-05-27</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://martinfowler.com/fragments/2026-05-27.html" style="color:#0057b8;text-decoration:none;">Fragments: May 27 — 重构遗留代码库与 LLM 辅助编程实践</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                Martin Fowler 分享了 Ian Johnson 对一个真实 Laravel + React 遗留代码库进行重构的系列文章，追踪了约 3 个月、258 次提交将零测试覆盖的遗留单体应用演进为具备自动化质量门禁应用的完整过程，包括 React SPA 迁移和 AI agent 辅助生产代码交付。Fowler 同时回顾了与 Kent Beck 在 GOTO 大会上关于 LLM-augmented programming 的对话，指出 AI 辅助编程的诸多实践与三十年前倡导的软件工程原则一脉相承。这期 Fragments 对于想在真实项目中引入 AI 辅助开发的团队具有较强参考价值。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://martinfowler.com/fragments/2026-05-27.html" style="font-size:12px;color:#0057b8;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 2: Netflix Tech Blog ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">Netflix Tech Blog &nbsp;·&nbsp; 2026-05-04</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1" style="color:#0057b8;text-decoration:none;">Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                Netflix 介绍了 Model Lifecycle Graph（模型生命周期图谱）的设计与实现，该系统追踪模型从训练、评估到线上部署的完整依赖关系，使非 ML 专家也能参与模型治理与审计。平台目前支持数百种模型类型，峰值每秒处理百万级推理请求，Graph 的引入极大降低了模型上线的认知成本。这是 Netflix 在大规模 ML 基础设施民主化方面的重要工程实践，体现了"可观测性优先"的 MLOps 设计理念。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1" style="font-size:12px;color:#0057b8;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 3: Real Python ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">Real Python &nbsp;·&nbsp; 2026-05</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://realpython.com/python-news-may-2026/" style="color:#0057b8;text-decoration:none;">A New Python Packaging Council and Other News for May 2026</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                PEP 772 于 4 月 16 日正式通过，为 Python 生态建立了专属的 Python Packaging Council（打包委员会），拥有与 Steering Council 同等级别的约束性决策权，负责裁决 pip、uv、Ruff 等工具的标准与规范。PEP 803 同步稳定了 free-threaded ABI，为 Python 3.13+ 的无 GIL 模式奠定基础。PyCon US 2026 于 5 月 13–19 日在加州长滩举行，Anthropic 与 PSF 的 150 万美元两年合作伙伴关系持续推进 Python 核心基础设施建设。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://realpython.com/python-news-may-2026/" style="font-size:12px;color:#0057b8;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 4: Python Weekly ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">Python Weekly &nbsp;·&nbsp; Issue 746 · 2026-05-21</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#0057b8;text-decoration:none;">Issue 746 — 类职责重构、django-q2 后台任务与 OpenTelemetry 日志集成</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                本期精选三篇实用技术文章：一是通过重构过度膨胀的 Python 类、将验证/数据处理/模型训练等职责分离为独立组件，配套提供判断逻辑归属的决策框架；二是介绍 django-q2（Celery 的轻量级替代品）处理 Django 异步任务的实践；三是借助 OpenTelemetry Python SDK 的 LoggingHandler 将标准 logging 输出与 trace 上下文自动关联，无需修改现有日志代码即可实现分布式链路追踪。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="font-size:12px;color:#0057b8;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 5: The Go Blog ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">The Go Blog &nbsp;·&nbsp; 2026-05-21</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://go.dev/blog/pkgsite-api" style="color:#0057b8;text-decoration:none;">Introducing the pkg.go.dev API</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                Go 官方正式发布 pkg.go.dev 的编程接口，彻底解决了开发者长期以来只能通过爬虫获取 Go 模块元数据的问题。新 API 提供完整的 OpenAPI 规范，可查询模块版本、文档、依赖关系等结构化数据，并随包附带参考客户端实现 pkgsite-cli。对于构建 Go 工具链集成、IDE 插件或内部包管理系统的开发者而言，这是 Go 生态工具互操作性的重要里程碑。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://go.dev/blog/pkgsite-api" style="font-size:12px;color:#0057b8;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 6: Golang Weekly ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">Golang Weekly &nbsp;·&nbsp; Issue 602 · 最新一期</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://golangweekly.com/issues/602" style="color:#0057b8;text-decoration:none;">Issue #602: pkg.go.dev gets an official API — 及 Cilium 为何坚持 vendor 所有 Go 模块</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                最新一期 Go Weekly 聚焦两大话题：一是 pkg.go.dev 官方 API 的发布（详见上条 Go Blog）；二是深度分析 Cilium（知名 eBPF 网络项目）在 2026 年仍坚持对所有 Go 依赖进行 vendor 本地化的原因，揭示大型 Go 基础设施项目在构建可重现性、供应链安全与依赖升级效率之间的工程权衡。对于管理复杂 Go 模块依赖关系的团队有较强参考价值。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://golangweekly.com/issues/602" style="font-size:12px;color:#0057b8;">→ 阅读原文</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 7: Arjan Codes ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">Arjan Codes &nbsp;·&nbsp; 📹 视频 · 2026-05</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="color:#0057b8;text-decoration:none;">📹 Your API Can't Handle Real-World Integrations</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                Arjan 通过实际案例揭示了为何看似整洁的 API 在面对真实业务集成时往往力不从心——随着集成数量增加，隐藏的状态假设、版本耦合与错误处理缺失逐渐暴露。视频重点讲解如何通过合理的抽象层、契约优先设计（contract-first design）和容错机制使 API 具备真正的集成弹性，对构建对外服务接口的后端开发者有实用指导价值。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="font-size:12px;color:#0057b8;">→ 观看视频</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== Item 8: Fireship ===== -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#888888;letter-spacing:1px;text-transform:uppercase;">Fireship &nbsp;·&nbsp; 📹 视频 · ~2026-05-26</p>
+              <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=9OQ5vaYbGV0" style="color:#0057b8;text-decoration:none;">📹 Google's AI endgame is here… everything you missed at I/O 2026</a>
+              </h2>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#444444;">
+                Fireship 以标志性的高密度节奏梳理了 Google I/O 2026 的全部重大发布：Gemini 以 agent-first 策略全面嵌入 Google 产品生态，推出的新开发者工具和 AI API 将深刻影响后端服务的构建方式。视频尤其关注 AI 基础设施层的变化，包括对 Vertex AI、Agent Builder 和新 API 能力的总结，是快速了解 Google 2026 技术方向的高效入口。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://www.youtube.com/watch?v=9OQ5vaYbGV0" style="font-size:12px;color:#0057b8;">→ 观看视频</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Skipped channels note -->
+          <tr>
+            <td style="padding:20px 40px 0 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 16px 0;">
+              <p style="margin:0;font-size:12px;color:#aaaaaa;line-height:1.6;">
+                <strong style="color:#999999;">本期跳过渠道（7 天内无新内容）：</strong>High Scalability · Anthony GG · Hussein Nasser · Dan Luu · Brendan Gregg · Go by Example
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 40px 32px 40px;">
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 20px 0;">
+              <p style="margin:0;font-size:12px;color:#aaaaaa;text-align:center;line-height:1.6;">
+                由 Daily News Bot 自动整理 &nbsp;·&nbsp; 2026-06-01<br>
+                内容来源于各技术博客和 YouTube 频道的公开信息
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
