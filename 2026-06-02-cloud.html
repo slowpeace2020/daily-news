@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-02</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background-color: #ffffff; color: #333333; margin: 0; padding: 0;">
+    <div style="max-width: 680px; margin: 0 auto; padding: 24px 16px;">
+
+        <!-- Header -->
+        <div style="background-color: #1a1a2e; padding: 28px 24px; border-radius: 8px; margin-bottom: 24px;">
+            <h1 style="color: #ffffff; margin: 0 0 8px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.5px;">
+                软件技术日报【软件工程 &amp; 云原生】
+            </h1>
+            <p style="color: #a0aec0; margin: 0; font-size: 14px;">2026 年 06 月 02 日 · 精选 5 条</p>
+        </div>
+
+        <!-- Item 1: Thoughtworks Technology Radar -->
+        <div style="padding: 20px 0; border-bottom: 1px solid #e2e8f0;">
+            <div style="display: inline-block; background-color: #ebf4ff; color: #2b6cb0; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; margin-bottom: 10px;">
+                Thoughtworks Technology Radar
+            </div>
+            <h2 style="color: #1a202c; font-size: 17px; font-weight: 700; margin: 0 0 10px 0; line-height: 1.5;">
+                Vol 34：AI 加速开发的代价——警惕「Cognitive Debt」，回归工程基础
+            </h2>
+            <p style="color: #4a5568; font-size: 14px; line-height: 1.7; margin: 0 0 12px 0;">
+                Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，核心警示是 AI 辅助开发所带来的「Cognitive Debt」——AI 快速生成的代码正在拉大人类与软件系统之间的认知鸿沟，系统复杂度持续累积。报告呼吁工程师重新重视 Zero Trust 架构、DORA 指标和可测试性等工程基础实践，从无休止的实验模式转向可重复性与稳定性。同时指出，开发者工具门槛降低导致大量单人维护的短命项目涌现，技术评估难度显著上升。
+            </p>
+            <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+               style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">
+                → 查看完整 Radar 报告
+            </a>
+        </div>
+
+        <!-- Item 2: SRE Weekly -->
+        <div style="padding: 20px 0; border-bottom: 1px solid #e2e8f0;">
+            <div style="display: inline-block; background-color: #fff5f5; color: #c53030; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; margin-bottom: 10px;">
+                SRE Weekly
+            </div>
+            <h2 style="color: #1a202c; font-size: 17px; font-weight: 700; margin: 0 0 10px 0; line-height: 1.5;">
+                Issue #511：AWS us-east-1 长达 28 小时大规模故障深度剖析
+            </h2>
+            <p style="color: #4a5568; font-size: 14px; line-height: 1.7; margin: 0 0 12px 0;">
+                本期 SRE Weekly 重点聚焦 2026 年 5 月 AWS us-east-1 区域发生的长达 28 小时的大规模故障，深入分析其根本原因——一个潜伏已久的 race condition，以及本应提升可靠性的基础设施特性反而加剧了事故。内容还涵盖 Cloudflare 故障复盘、AI SRE 采用的风险与成本数据，以及「AI 写的代码，你来负责」的代码所有权反思，对生产环境高可用设计有重要启示。
+            </p>
+            <a href="https://sreweekly.com/sre-weekly-issue-511/"
+               style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">
+                → 阅读 SRE Weekly #511
+            </a>
+        </div>
+
+        <!-- Item 3: ByteByteGo -->
+        <div style="padding: 20px 0; border-bottom: 1px solid #e2e8f0;">
+            <div style="display: inline-block; background-color: #f0fff4; color: #276749; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; margin-bottom: 10px;">
+                ByteByteGo
+            </div>
+            <h2 style="color: #1a202c; font-size: 17px; font-weight: 700; margin: 0 0 10px 0; line-height: 1.5;">
+                Reddit 如何将 PB 级 Kafka 集群从 EC2 零停机迁移到 Kubernetes
+            </h2>
+            <p style="color: #4a5568; font-size: 14px; line-height: 1.7; margin: 0 0 12px 0;">
+                ByteByteGo 详解了 Reddit 工程团队完成的一次极具挑战性的基础设施迁移——将超过 500 个 Apache Kafka broker、逾 1 PB 的实时数据从 Amazon EC2 完整迁移至 Kubernetes，并实现全程零停机。文章系统介绍了迁移策略、Kubernetes 在有状态工作负载（Stateful Workloads）中的实践，以及 Reddit 生产规模下的运维经验，对有状态服务 K8s 化具有重要参考价值。
+            </p>
+            <a href="https://blog.bytebytego.com/p/how-reddit-migrated-petabyte-scale"
+               style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">
+                → 阅读完整文章
+            </a>
+        </div>
+
+        <!-- Item 4: TechWorld with Nana -->
+        <div style="padding: 20px 0; border-bottom: 1px solid #e2e8f0;">
+            <div style="display: inline-block; background-color: #faf5ff; color: #6b46c1; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; margin-bottom: 10px;">
+                TechWorld with Nana · 📹 视频
+            </div>
+            <h2 style="color: #1a202c; font-size: 17px; font-weight: 700; margin: 0 0 10px 0; line-height: 1.5;">
+                📹 DevOps 学习路上的常见误区：如何正确掌握云原生技术栈
+            </h2>
+            <p style="color: #4a5568; font-size: 14px; line-height: 1.7; margin: 0 0 12px 0;">
+                Nana Janashia 在 2026 年 5 月最新视频中梳理了工程师在学习 DevOps 与 Kubernetes 时最常犯的错误，包括跳过基础直接上手复杂工具、忽视 YAML 底层原理等问题。视频提供了系统化的云原生学习路径建议，帮助工程师在 Docker、Kubernetes、CI/CD 和 Infrastructure as Code 等领域建立扎实的知识体系，频道已帮助数百万工程师提升 DevOps 能力。
+            </p>
+            <a href="https://www.youtube.com/@TechWorldwithNana"
+               style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">
+                → 前往频道查看最新视频
+            </a>
+        </div>
+
+        <!-- Item 5: TLDR DevOps -->
+        <div style="padding: 20px 0; border-bottom: 1px solid #e2e8f0;">
+            <div style="display: inline-block; background-color: #fffaf0; color: #c05621; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; margin-bottom: 10px;">
+                TLDR DevOps
+            </div>
+            <h2 style="color: #1a202c; font-size: 17px; font-weight: 700; margin: 0 0 10px 0; line-height: 1.5;">
+                Kubernetes 1.36：Ingress2Gateway 1.0 正式发布 + AI Agent Sandbox 登场
+            </h2>
+            <p style="color: #4a5568; font-size: 14px; line-height: 1.7; margin: 0 0 12px 0;">
+                TLDR DevOps 报道 Kubernetes 1.36 重要更新：SIG Network 推出 Ingress2Gateway 1.0 迁移工具，将 Ingress 资源一键转换为 Gateway API 配置，支持 30+ 种 Ingress-NGINX 注解（紧赶 Ingress-NGINX 退休前的迁移窗口）。同期，Agent Sandbox 项目亮相，专为在 Kubernetes 上运行长时间自主 AI Agent 设计，支持持久身份（persistent identity）、隔离环境和 SandboxWarmPool 快速恢复，大幅消除冷启动延迟。
+            </p>
+            <a href="https://tldr.tech/devops/2026-03-23"
+               style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">
+                → 阅读 TLDR DevOps (2026-03-23)
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div style="margin-top: 28px; padding-top: 20px; text-align: center;">
+            <p style="color: #a0aec0; font-size: 12px; margin: 0; line-height: 1.8;">
+                由 Daily News Bot 自动整理 · 2026-06-02<br>
+                内容来源：Thoughtworks · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR Tech
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
