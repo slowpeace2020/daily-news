@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-06-03</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#333333;">
+<table width="100%" cellpadding="0" cellspacing="0" style="max-width:680px;margin:0 auto;">
+  <tr>
+    <td style="padding:32px 24px 24px;">
+
+      <!-- Header -->
+      <div style="border-bottom:3px solid #1a1a2e;padding-bottom:16px;margin-bottom:28px;">
+        <h1 style="margin:0;font-size:24px;font-weight:700;color:#1a1a2e;letter-spacing:-0.5px;">软件技术日报</h1>
+        <p style="margin:6px 0 0;font-size:13px;color:#777777;">后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 2026-06-03</p>
+      </div>
+
+      <!-- 1. Martin Fowler Blog -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Martin Fowler Blog &nbsp;·&nbsp; 2026-06-02</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">Fragments: June 2 — AI 时代的技术债与安全挑战</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Martin Fowler 最新 Fragments 探讨 AI 能力增长对软件工程的多层面冲击：安全漏洞修复数量从 2025 年每月 17–31 个骤增至 2026 年 4 月的 <strong>423 个</strong>，增幅触目惊心。文章指出技术债（cruft）在 LLM 时代影响更为深远——低质量代码会直接污染 AI 使用的上下文，降低代码生成效果。此外强调 AI agent 系统设计的核心原则：<em>人类注意力是唯一无法克隆的串行资源</em>，优秀的系统设计应围绕此核心精心构建。
+        </p>
+        <a href="https://martinfowler.com/fragments/2026-06-02.html" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 2. Golang Weekly -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Golang Weekly &nbsp;·&nbsp; 2026-05-29 &nbsp;·&nbsp; Issue #603</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">Generic methods are a-go for Go 1.27</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Go 社区迎来里程碑：<strong>泛型方法（generic methods）</strong>正式获批将在 Go 1.27 中落地，补全了 Go 泛型体系的最后一块重要拼图。Golang Weekly 本期重点报道这一提案通过的背景与社区影响，同时收录了使用 Claude AI 辅助 Go 性能分析的实践案例，以及 pkg.go.dev 官方 API 发布的深度跟进。
+        </p>
+        <a href="https://golangweekly.com/issues/603" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 3. Netflix Tech Blog -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Netflix Tech Blog &nbsp;·&nbsp; 2026-05</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">State of Routing in Model Serving — 百万 RPS 的 ML 路由架构</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Netflix ML 服务系列首篇：每秒处理 <strong>100 万请求</strong>的推理服务如何做路由？文章梳理了从集中式路由服务 <em>Switchboard</em> 到新架构 <em>Lightbulb</em> 的演进历程，核心挑战是在为客户服务和模型研究者提供简洁接口的同时，精准将流量路由到正确的模型实例和集群分片。模型被封装为包含预处理、后处理、特征计算与可选 ML 训练组件的标准格式，适配多种上下文。
+        </p>
+        <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 4. Real Python -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Real Python &nbsp;·&nbsp; 2026-05</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">Python News May 2026 — Packaging Council 成立 &amp; Python 3.15 Beta 发布</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Python 生态双重重磅：PEP 772 获批后，<strong>Python Packaging Council</strong> 正式成立（五席选举制，权威等同 Steering Council），终结 PyPA 多年来松散协调的局面。同期 Python 3.15.0 beta 1 发布，JIT 优化在 x86-64 Linux 带来 <strong>6–7% 性能提升</strong>、AArch64 macOS 高达 <strong>12–13%</strong>。此外，OpenAI 收购 <em>Astral</em>（uv、Ruff、ty 工具链开发商）引发社区对工具链独立性的广泛讨论。
+        </p>
+        <a href="https://realpython.com/python-news-may-2026/" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 5. The Go Blog -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">The Go Blog &nbsp;·&nbsp; 2026-05-21</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">Introducing the pkg.go.dev API — Go 模块元数据官方程序化接口</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Go 官方正式推出 <strong>pkg.go.dev API</strong>，开发者可直接程序化查询已发布 Go 模块的元数据，彻底告别脆弱的网页爬虫方式。API 提供完整 OpenAPI 规范，并附参考客户端 <em>pkgsite-cli</em>，设计原则为"精确优于便捷"——模块路径须明确指定。对构建 Go 工具链生态（依赖分析、安全扫描、文档生成工具）的开发者而言，这是重要的基础设施升级。
+        </p>
+        <a href="https://go.dev/blog/pkgsite-api" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 6. Python Weekly -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Python Weekly &nbsp;·&nbsp; 2026-05-21 &nbsp;·&nbsp; Issue 746</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">重构、任务队列与 OpenTelemetry 集成实践</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Python Weekly 第 746 期聚焦工程实践：系统化代码重构方法论、文件系统监控工具选型对比、使用 <em>django-q2</em> 处理 Django 后台任务队列，以及 <em>OpenTelemetry</em> 与 Python 日志的深度集成方案。还涵盖面向 RAG 应用的向量搜索引擎上手教程与 Python 无人机编程专题，覆盖从基础设施到 AI 应用层的完整工程栈。
+        </p>
+        <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 7. Arjan Codes -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Arjan Codes &nbsp;·&nbsp; 📹 视频 &nbsp;·&nbsp; 2026-05-01</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">Your API Can't Handle Real-World Integrations</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Arjan 深度剖析一个工程普遍痛点：精心设计的"干净 API"在真实集成场景中为何频频失效。视频探讨 API 在面对各类客户端差异、网络不稳定、并发边界情况时暴露的设计盲区，并提供可落地的改进模式。对于负责对外接口设计或承担内部服务集成工作的工程师具有较高实践参考价值。
+        </p>
+        <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">观看视频 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 8. Fireship -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Fireship &nbsp;·&nbsp; 📹 视频 &nbsp;·&nbsp; 2026-05-26</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">Google's AI endgame is here — Google I/O 2026 完整回顾</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          Fireship 出品的 Google I/O 2026 高密度速览：Google 宣布 Gemini 全面进入 <strong>"agentic era"（代理时代）</strong>，发布 Gemini Omni 多模态旗舰模型、新一代 TPU 芯片与 Antigravity 框架。以 Fireship 标志性节奏梳理开发者最需关注的技术亮点，是快速掌握 Google 2026 AI 技术路线图的首选参考资料。
+        </p>
+        <a href="https://www.youtube.com/watch?v=9OQ5vaYbGV0" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">观看视频 →</a>
+      </div>
+      <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 28px;">
+
+      <!-- 9. Brendan Gregg -->
+      <div style="margin-bottom:28px;">
+        <p style="margin:0 0 5px;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Brendan Gregg Blog &nbsp;·&nbsp; 2026-02-07</p>
+        <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a2e;line-height:1.45;">Why I Joined OpenAI — 性能工程的下一个主战场</h2>
+        <p style="margin:0 0 10px;font-size:14px;line-height:1.75;color:#444444;">
+          性能工程领域权威 Brendan Gregg（前 Netflix 首席性能工程师）宣布加入 OpenAI，专注 ChatGPT 数据中心性能优化。他指出 AI 数据中心日益膨胀的能耗是性能工程历史上前所未见的挑战——优化不仅关乎成本节约，更关乎环保责任。Gregg 认为传统性能工程方法可能已力不从心，正在探索能更快速发现大规模优化机会的新工程方法论。
+        </p>
+        <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color:#0066cc;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+      </div>
+
+      <!-- Footer -->
+      <div style="border-top:2px solid #1a1a2e;padding-top:18px;margin-top:8px;">
+        <p style="margin:0;font-size:11px;color:#aaaaaa;text-align:center;line-height:1.8;">
+          软件技术日报 · 后端开发 &amp; Python &amp; Go · 2026-06-03<br>
+          渠道覆盖：Martin Fowler · Netflix TechBlog · Real Python · The Go Blog · Golang Weekly · Python Weekly · Arjan Codes · Fireship · Brendan Gregg<br>
+          <span style="color:#cccccc;">High Scalability / Anthony GG / Hussein Nasser / Dan Luu / Go by Example 本期未发现近期新内容，已跳过</span>
+        </p>
+      </div>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
