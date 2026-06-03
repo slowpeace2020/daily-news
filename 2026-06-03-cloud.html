@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-03</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#222222;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;margin:0 auto;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 32px 24px 32px;border-radius:8px 8px 0 0;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#8892b0;letter-spacing:1px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#e6f1ff;line-height:1.3;">
+                软件技术日报<br/>
+                <span style="color:#64ffda;">【软件工程 &amp; 云原生】</span>
+              </h1>
+              <p style="margin:10px 0 0 0;font-size:13px;color:#8892b0;">2026-06-03 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:0 32px;background-color:#ffffff;">
+
+              <!-- Intro -->
+              <p style="margin:24px 0 0 0;font-size:14px;color:#555555;line-height:1.6;">
+                本期整理来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo 及 TLDR Tech 的最新内容，聚焦 Kubernetes、云原生架构与 SRE 实践。
+              </p>
+
+              <!-- Divider -->
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:24px 0;" />
+
+              <!-- Item 1: Thoughtworks -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#0070f3;text-transform:uppercase;letter-spacing:1px;">
+                      📡 Thoughtworks Technology Radar
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Vol 34：Kueue 入选 Trial 象限，Kubernetes Job 调度迎来原生排队方案
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+                      Thoughtworks Technology Radar Vol 34（2026 年 4 月）将 <strong>Kueue</strong> 列入 Trial 象限。Kueue 是 Kubernetes 原生的 Job 排队控制器，专为 ML 工作负载的配额管理、优先级调度与高效资源消耗而设计，与 Kubeflow 等工具协同效果尤佳。同期，<strong>CloudNativePG</strong>（PostgreSQL Kubernetes Operator）亦入选 Trial 象限——通过将整个 PostgreSQL 集群视为单一声明式资源，大幅降低了在 Kubernetes 上运行高可用数据库的复杂度。此外，Radar 还指出 Apache APISIX 作为云原生网关，正在成为替代传统 Nginx Ingress Controller 的有力选项。
+                    </p>
+                    <p style="margin:0 0 0 0;">
+                      <a href="https://www.thoughtworks.com/radar" style="color:#0070f3;text-decoration:none;font-size:13px;font-weight:600;">→ 查看 Technology Radar Vol 34</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:24px 0;" />
+
+              <!-- Item 2: SRE Weekly -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#0070f3;text-transform:uppercase;letter-spacing:1px;">
+                      🔔 SRE Weekly &nbsp;·&nbsp; Issue #517
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      "No single team sees the full incident anymore" — 现代 Incident 的碎片化困境
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+                      SRE Weekly #517（2026-05-17）以"没有任何单一团队能看到完整故障全貌"为核心命题，指出当今 P1 故障往往横跨多个微服务、团队与基础设施边界，传统基于独立 Dashboard 的应对方式已无法满足需求。期刊同期收录了 Netflix 直播视频基础设施的运营实践，以及在 Kubernetes 环境中排查 Java <strong>OOMKill</strong> 问题的深度技术文章，兼顾 SRE 方法论与 K8s 一线运维经验。
+                    </p>
+                    <p style="margin:0 0 0 0;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-517/" style="color:#0070f3;text-decoration:none;font-size:13px;font-weight:600;">→ 阅读 SRE Weekly #517</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:24px 0;" />
+
+              <!-- Item 3: ByteByteGo -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#0070f3;text-transform:uppercase;letter-spacing:1px;">
+                      📝 ByteByteGo &nbsp;·&nbsp; 2026-05-28
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Must-Know Failure Modes in Distributed Systems
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+                      ByteByteGo 最新文章系统梳理了分布式系统中最关键的故障模式，涵盖网络分区（Network Partition）、节点崩溃（Node Crash）、时钟漂移（Clock Skew）、级联失效（Cascading Failure）等高频场景，并为每种故障配套介绍了工程界的标准应对方案（熔断、重试退避、幂等设计等）。对于构建高可用云原生架构或进行系统设计复盘的工程师，本文提供了密度极高的核心知识索引。
+                    </p>
+                    <p style="margin:0 0 0 0;">
+                      <a href="https://blog.bytebytego.com/p/must-know-failure-modes-in-distributed" style="color:#0070f3;text-decoration:none;font-size:13px;font-weight:600;">→ 阅读原文</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:24px 0;" />
+
+              <!-- Item 4: TLDR Tech -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#0070f3;text-transform:uppercase;letter-spacing:1px;">
+                      ⚡ TLDR DevOps &nbsp;·&nbsp; 2026-05-22
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Secure AI、Agentic DevOps 与 Policy For Agents — AI 时代 DevOps 的新议题
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+                      TLDR DevOps 近期专刊聚焦 AI 与 DevOps 的深度融合：传统软件工程实践在 Agentic System 下面临根本性挑战，需要为长期运行的自治 Agent 重新设计运维策略（Policy For Agents）。同期内容包括在 Kubernetes 上运行 AI Agent Sandbox 的架构方案，以及如何在 CI/CD 流水线中嵌入 AI 安全检测（Secure AI）——这些趋势正在重塑平台工程团队的工作边界。
+                    </p>
+                    <p style="margin:0 0 0 0;">
+                      <a href="https://tldr.tech/devops" style="color:#0070f3;text-decoration:none;font-size:13px;font-weight:600;">→ 访问 TLDR DevOps</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Skipped note -->
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:24px 0;" />
+              <p style="margin:0 0 24px 0;font-size:12px;color:#999999;font-style:italic;">
+                ℹ️ TechWorld with Nana：本周期内未检索到过去 7 天新上传视频，已跳过。
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f5f5f5;padding:20px 32px;border-radius:0 0 8px 8px;border-top:1px solid #e8e8e8;">
+              <p style="margin:0;font-size:12px;color:#888888;line-height:1.6;">
+                本邮件由 Daily News Bot 自动生成 · 聚焦 Kubernetes · 云原生架构 · SRE 实践<br/>
+                生成时间：2026-06-03
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
