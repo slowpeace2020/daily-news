@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报 - 2026-06-05</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: #ffffff; color: #1a1a2e; margin: 0; padding: 0; line-height: 1.6;">
+
+<div style="max-width: 700px; margin: 0 auto; padding: 20px;">
+
+  <!-- ===== HEADER ===== -->
+  <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 36px 28px; border-radius: 12px; margin-bottom: 28px; text-align: center;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 4px; opacity: 0.65; margin-bottom: 10px;">Daily Tech Digest</div>
+    <h1 style="margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -0.5px;">软件技术日报</h1>
+    <div style="margin-top: 14px; font-size: 15px; opacity: 0.80;">2026-06-05 &nbsp;·&nbsp; 精选技术动态 &nbsp;·&nbsp; 三大板块 &nbsp;·&nbsp; 22 条内容</div>
+  </div>
+
+  <!-- ===== TOC ===== -->
+  <div style="background: #f0f4f8; border-left: 4px solid #0f3460; padding: 14px 20px; border-radius: 0 8px 8px 0; margin-bottom: 32px; font-size: 13px;">
+    <strong style="display: block; margin-bottom: 8px; color: #1a1a2e; font-size: 14px;">本期目录</strong>
+    <a href="#section1" style="color: #0f3460; text-decoration: none; font-weight: 600;">☁️ 软件工程 &amp; 云原生</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#section2" style="color: #7b2d8b; text-decoration: none; font-weight: 600;">🤖 AI 技术前沿</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#section3" style="color: #1a6b3c; text-decoration: none; font-weight: 600;">⚙️ 后端开发 &amp; Python &amp; Go</a>
+  </div>
+
+  <!-- ================================================== -->
+  <!--  SECTION 1: Software Engineering & Cloud Native    -->
+  <!-- ================================================== -->
+  <div id="section1">
+    <div style="background: #0f3460; color: white; padding: 13px 22px; border-radius: 8px 8px 0 0; font-size: 17px; font-weight: 700;">
+      ☁️ 软件工程 &amp; 云原生
+    </div>
+
+    <!-- Thoughtworks Technology Radar -->
+    <div style="border: 1px solid #dde3ec; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #dce8f5; color: #0f3460; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Thoughtworks Technology Radar</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">Vol. 34 &middot; 2026-04-15</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">AI加速软件复杂度，Technology Radar V34 呼吁回归工程基础以应对"认知债务"</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Technology Radar 第34期重点警告：AI生成代码正加速积累"Cognitive Debt（认知债务）"，人类开发者与软件系统之间的理解鸿沟持续扩大，工具泛滥与术语混乱使技术评估愈发困难。报告建议重新重视 Zero Trust Architecture、DORA metrics 和可测试性等基础工程实践。Context Engineering 已从优化技巧升级为现代 AI 系统的核心架构关注点，将 context window 作为可设计的界面（design surface）是新的工程共识。</p>
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #dde3ec; border-right: 1px solid #dde3ec; height: 1px; background: #f7f9fc;"></div>
+
+    <!-- SRE Weekly -->
+    <div style="border: 1px solid #dde3ec; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #dce8f5; color: #0f3460; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">SRE Weekly</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">Issue #516 &middot; 2026-05-10</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">AWS us-east-1 长达28小时大规模故障：深度复盘与基础设施韧性启示</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">SRE Weekly 第516期聚焦 2026 年 5 月发生的 AWS us-east-1 史诗级故障，持续28小时，影响范围广泛；深度解析了故障根因、级联失效链路以及对基础设施韧性设计的深远启示。本期还涵盖 incident.io 提出的4步降噪框架（Alert 去重 + 服务归属修复）、"表面性无责文化"（Superficial Blamelessness）的反模式识别，以及 AI 在 SRE 团队2026年实际落地的现状展望。</p>
+      <a href="https://sreweekly.com/sre-weekly-issue-516/" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #dde3ec; border-right: 1px solid #dde3ec; height: 1px; background: #f7f9fc;"></div>
+
+    <!-- ByteByteGo -->
+    <div style="border: 1px solid #dde3ec; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #dce8f5; color: #0f3460; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">ByteByteGo</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-06-05 ✨ 今日更新</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">The Path of a Request: A Tour of Modern Web Architecture</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">ByteByteGo 最新文章系统梳理了一次 HTTP 请求从客户端到服务端的完整路径，涵盖 DNS 解析、CDN 分发、负载均衡（L4/L7）、反向代理（Nginx/Envoy）、应用服务器直至数据库的全链路现代 Web 架构。配有清晰架构图，对理解分层系统设计、中间件协作机制和性能瓶颈定位极具参考价值，是系统设计面试与日常架构决策的优质参考资料。</p>
+      <a href="https://blog.bytebytego.com/p/the-path-of-a-request-a-tour-of-modern" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #dde3ec; border-right: 1px solid #dde3ec; height: 1px; background: #f7f9fc;"></div>
+
+    <!-- TLDR Tech -->
+    <div style="border: 1px solid #dde3ec; border-top: none; padding: 22px; background: #fff; border-radius: 0 0 8px 8px;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #dce8f5; color: #0f3460; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">TLDR Tech</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-05-25</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">OpenRouter 完成 $1.13亿 B 轮融资，估值 $13亿；SpaceX 与 Anthropic 签 $12.5亿/月算力协议</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">TLDR Tech 近期报道 AI 网关公司 OpenRouter 完成 CapitalG 领投的 $1.13亿 B 轮融资，估值达 $13亿；该平台支持超 400 个 AI 模型访问，每月处理高达 100 万亿 tokens。更引人关注的是：SpaceX 已与 Anthropic 签订每月 $12.5亿 的算力合作协议（至 2029 年 5 月），AI 基础设施层的资本投入已超历史任何阶段，算力军备竞赛仍在加速。</p>
+      <a href="https://tldr.tech/tech/2026-05-25" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+  </div><!-- /section1 -->
+
+  <!-- ================================================== -->
+  <!--  SECTION 2: AI Technology Frontier                 -->
+  <!-- ================================================== -->
+  <div id="section2" style="margin-top: 32px;">
+    <div style="background: #7b2d8b; color: white; padding: 13px 22px; border-radius: 8px 8px 0 0; font-size: 17px; font-weight: 700;">
+      🤖 AI 技术前沿
+    </div>
+
+    <!-- Anthropic Blog -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Anthropic Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-06-01 ~ 06-03</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Anthropic 保密提交 IPO S-1；Project Glasswing 扩展至 150 家机构，累计发现逾万个高危漏洞</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Anthropic 于 6 月 1 日向 SEC 保密提交 S-1 草案，正式启动 IPO 进程。同期，Project Glasswing 安全合作计划扩展至约 150 家新机构，合作伙伴借助 Claude Mythos Preview 已累计发现超 10,000 个高危或严重安全漏洞，涉及政府、开源软件及网络安全行业。此外，Anthropic 于 6 月 2 日发布了追踪一年 AI 赋能网络攻击的基准研究，是 AI 安全领域难得的规模化实证数据。</p>
+      <a href="https://www.anthropic.com/news/expanding-project-glasswing" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- OpenAI Blog -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">OpenAI Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-06-04</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">GPT-Rosalind 发布：OpenAI 专为生命科学研究打造的垂直领域新模型</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">OpenAI 于 6 月 4 日正式发布 GPT-Rosalind，具备增强的生物推理能力、药物化学专业知识、基因组学分析和实验工作流规划能力，专为推进生命科学研究而设计，是垂直领域大模型的重要里程碑。同周，OpenAI 完成 Codex 多角色适配更新，并宣布 GPT-4.5 将于 6 月 27 日从 ChatGPT 下线，建议用户迁移至更新模型；前沿模型及 Codex 已正式登陆 AWS。</p>
+      <a href="https://openai.com/news/" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- Google DeepMind -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Google DeepMind Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-06-03</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Gemma 3n 正式发布：强大、高效的移动端优先开源 AI 模型与开发者指南</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Google DeepMind 于 6 月 3 日发布 Gemma 3n 开源模型，专为移动端和边缘设备优化，实现在设备端高效运行 AI 推理，无需依赖云端服务。官方同步发布完整开发者指南，涵盖 API 使用、Fine-tuning 和部署最佳实践。Gemma 3n 为隐私敏感场景、低延迟应用和离线 AI 工作流提供了高性价比的技术选项，是边缘 AI 部署领域的重要进展。</p>
+      <a href="https://deepmind.google/blog/introducing-gemma-3n-the-developer-guide/" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- Hugging Face -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Hugging Face Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-06-02</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Holo3.1：快速本地运行的 Computer Use Agent，企业自动化工作流新选择</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Hcompany 在 Hugging Face 发布 Holo3.1，目前最先进的 Computer Use 模型之一，支持浏览器自动化、商业软件操控及桌面应用等多种企业工作流，已被开发者和企业大规模部署。该模型支持完全本地化运行，在保护数据隐私的同时提供高效的 GUI 自动化能力，为在企业私有环境中落地 AI Agent 的团队提供了新的可行路径。</p>
+      <a href="https://huggingface.co/blog/Hcompany/holo31" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- The Batch -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">The Batch · DeepLearning.AI</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">Issue #351</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">GPT-5.5 表现优异但幻觉依然存在；Kimi K2.6 在 Code Arena 排行榜领跑开源 LLM</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">The Batch 最新期聚焦代码生成模型竞争格局：Kimi K2.6 在 Code Arena WebDev 排行榜 67 个模型中排名第六，位居开源模型榜首；GPT-5.5 整体能力卓越但幻觉问题仍值得关注。Andrew Ng 推出新课程"AI Prompting for Everyone"，教授 Deep Research 模式、多模态上下文构建等 AI 高阶技巧，反映 Prompting 工程在 2026 年已发生根本性演变，不再是简单的对话技巧。</p>
+      <a href="https://charonhub.deeplearning.ai/issue-351/" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- Andrej Karpathy -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Andrej Karpathy · YouTube</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">📹 视频 &middot; 2026-04-29</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">📹 From Vibe Coding to Agentic Engineering — AI Ascent 2026 主题演讲</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Andrej Karpathy（现已加入 Anthropic）在 AI Ascent 2026 峰会上探讨 AI 辅助编程的范式演变：从随性的"Vibe Coding"迈向结构化的 Agentic Engineering。他重新定义了 AI 时代软件工程师的核心职责——从编写代码转型为设计 Agent 工作流、审查 AI 输出、构建可验证的系统。这场演讲对工程师理解职业转型方向和 Agent 系统工程化管理具有重要参考价值。</p>
+      <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 观看视频</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- Two Minute Papers -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Two Minute Papers · YouTube</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">📹 视频 &middot; 2026-06-04</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">📹 Solved: The Bug That Haunted AI Video For Years — 困扰 AI 视频生成多年的顽固 Bug 被攻克</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Two Minute Papers 最新视频解读一项重大 AI 视频生成研究突破：长期困扰 AI 视频生成系统的核心 Bug（涉及时序一致性与物理真实感）被最新研究攻克，为逼真视频合成带来质的飞跃。Károly Zsolnai-Fehér 一贯以简洁生动的方式将复杂 AI 研究论文转化为易懂的视频解说，频道昨日更新，是追踪 AI 研究前沿的必关注频道。</p>
+      <a href="https://www.youtube.com/watch?v=yzajLZXh9JU" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 观看视频</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- AI Explained -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">AI Explained · YouTube</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">📹 视频 &middot; ~2026-05-22</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">📹 AI Has Changed Completely: Here's What Matters in 2026</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">AI Explained 频道最新分析视频，系统梳理 2026 年 AI 格局的根本性变化：模型能力边界大幅扩展、Agent 应用从实验走向大规模落地、推理能力（Reasoning）成为模型差异化核心。视频重点分析"2026 年真正重要的是什么"，帮助工程师和产品团队聚焦实际影响工作的 AI 发展趋势，过滤炒作噪音，是高信噪比的行业分析内容。</p>
+      <a href="https://www.youtube.com/watch?v=I62CvEwVS58" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 观看视频</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- Lex Fridman -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Lex Fridman Podcast</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">🎙 播客 &middot; Ep. #490</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">🎙 State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Lex Fridman 推出 2026 年 AI 现状专题播客，全面梳理大语言模型进展、AI 编程工具工业化、Scaling Laws 的边界与突破、中国 AI 发展格局、Agent 系统成熟度、GPU 算力竞争以及 AGI 时间线预测。涵盖行业全局视野，适合深度了解 AI 技术与地缘政治交汇处的读者；是高信息密度的长播客，建议按话题分段收听。</p>
+      <a href="https://lexfridman.com/ai-sota-2026/" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 收听播客</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- Latent Space -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Latent Space Podcast</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">🎙 播客 &middot; 2026-05-28</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">🎙 Background Agent Systems, Cognition &amp; OpenInspect — 与 Walden Yan 深度对话</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Latent Space 最新一期与 Walden Yan 深度探讨 Background Agent 系统的架构设计：如何构建持续运行的 AI Agent、Memory 管理策略、Testing 体系搭建与 Multi-agent 协调机制。对 AI 工程师理解生产级 Agent 系统的设计取舍极具价值；OpenInspect 工具的介绍也为 Agent 调试与可观测性（Observability）提供了新思路，值得关注 Agent 工程化的从业者收听。</p>
+      <a href="https://www.latent.space/podcast" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 收听播客</a>
+    </div>
+
+    <div style="border-left: 1px solid #e8ddf0; border-right: 1px solid #e8ddf0; height: 1px; background: #faf6fc;"></div>
+
+    <!-- TWIML -->
+    <div style="border: 1px solid #e8ddf0; border-top: none; padding: 22px; background: #fff; border-radius: 0 0 8px 8px;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #f0e6f7; color: #7b2d8b; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">TWIML AI Podcast</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">🎙 播客 &middot; Ep. #767</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">🎙 How to Find the Agent Failures Your Evals Miss — 突破 Agent 评估盲区</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">TWIML AI Podcast 第767期深入探讨 Agent 系统评估（Evals）的盲区：为何标准评估框架会遗漏关键的 Agent 失败模式，以及如何设计更全面的评估体系提前暴露生产环境问题。随着 AI Agent 系统大规模落地，Evals 设计已成为 AI 工程的核心技能；前几期还涵盖 AI 推理系统工程（Ep.766）和 Capital One 多 Agent 系统落地实践（Ep.765），系列内容完整性强。</p>
+      <a href="https://twimlai.com/podcast/twimlai" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 收听播客</a>
+    </div>
+  </div><!-- /section2 -->
+
+  <!-- ================================================== -->
+  <!--  SECTION 3: Backend, Python & Go                   -->
+  <!-- ================================================== -->
+  <div id="section3" style="margin-top: 32px;">
+    <div style="background: #1a6b3c; color: white; padding: 13px 22px; border-radius: 8px 8px 0 0; font-size: 17px; font-weight: 700;">
+      ⚙️ 后端开发 &amp; Python &amp; Go
+    </div>
+
+    <!-- Martin Fowler -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Martin Fowler Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-05-27</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Kent Beck × Martin Fowler：LLM 辅助编程的真实体验与工程反思</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Martin Fowler 记录了在 GOTO 哥本哈根大会与 Kent Beck 的深度对谈，两位软件工程泰斗分享各自使用 LLM 辅助编程的真实体验：哪些场景真正提效、哪些场景 LLM 仍力不从心，以及 AI 对软件设计原则的冲击与挑战。此前，博客还介绍了 Rahul Garg 基于"降低 AI 辅助编程摩擦"理念开发的开源框架，是工程实践视角的优质内容。</p>
+      <a href="https://martinfowler.com/" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- Netflix Tech Blog -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Netflix Tech Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-03-06</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Scaling Global Storytelling: Netflix 现代化本地化分析体系的架构演进</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Netflix 技术博客分享了如何将服务全球数十个语言市场的本地化质量分析系统（字幕、配音、翻译）升级为现代化数据平台。文章详述了从传统批处理到实时流式分析的架构迁移路径，以及如何用数据驱动本地化质量的持续提升。对构建跨语言内容平台、多地区数据流水线的工程团队具有重要的架构参考价值。</p>
+      <a href="https://netflixtechblog.com/scaling-global-storytelling-modernizing-localization-analytics-at-netflix-816f47290641" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- Real Python -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Real Python</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-06-01 ~ 06-03</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Real Python 本周新发：中级工具链与 Python 标准库工程实战系列</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Real Python 本周连续发布多篇中级 Python 教程，侧重"工具链深度使用"与标准库工程实践，覆盖 stdlib 模块的高阶用法和中级开发技术栈。内容面向有一定基础的 Python 开发者，是夯实工程技能、提升代码质量和开发效率的优质学习资源；同月早些时候还发布了 Python 获得 frozendict 内置类型的新闻解读。</p>
+      <a href="https://realpython.com/" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 浏览教程</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- Python Weekly -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Python Weekly</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">Issue #746 &middot; 2026-05-21</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Python Weekly Issue #746：Python 生态最新精选动态</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Python Weekly 第746期汇集了 Python 社区本周精选内容，包括最新开源项目、工程实践技巧、版本发布和社区活动动态。Python Weekly 是追踪 Python 生态系统发展的权威免费周刊，覆盖 Web 开发、数据科学、AI/ML 工具等多个细分方向，是 Python 开发者每周了解社区动向的高效信息源。</p>
+      <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- The Go Blog -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">The Go Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-05-21</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Using go fix to Modernize Go Code — Go 1.26 新工具链的自动化代码现代化实战</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Go 官方博客发布"Using go fix to modernize Go code"，介绍 Go 1.26 中完全重写的 <code style="background: #f0f4f8; padding: 1px 5px; border-radius: 3px; font-size: 13px;">go fix</code> 命令：基于 Go analysis 框架，内置数十个"Modernizers"，可自动检测并安全修复废弃函数调用、迁移到新 API。结合同期发布的 <code style="background: #f0f4f8; padding: 1px 5px; border-radius: 3px; font-size: 13px;">pkg.go.dev</code> 程序化 API，Go 工具链的工程化与自动化能力再上台阶，大型 Go 代码库的迁移成本大幅降低。</p>
+      <a href="https://go.dev/blog/gofix" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- Golang Weekly -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Golang Weekly</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">Issue #603 &middot; 2026-05-29</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Golang Weekly #603：Generic Methods 正式纳入 Go 1.27 路线图</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Golang Weekly 第603期头条：Go 核心团队正式确认 Generic Methods（泛型方法）将进入 Go 1.27，这是 Go 泛型系统的重要补全——允许在方法上定义类型参数，解决当前泛型实现的核心限制之一，将显著提升复杂数据结构和接口设计的表达力。本期还汇集了 go fix 实战、二进制体积优化技巧、三个新 Go proposals 等精选内容，是 Go 开发者本周必读。</p>
+      <a href="https://golangweekly.com/latest" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- Arjan Codes -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Arjan Codes · YouTube</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">📹 视频</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">📹 Avoid Messy Code: Design Patterns for AI Agents in Python</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">ArjanCodes 发布 AI Agent 代码设计模式专题，系统介绍如何用经典设计模式（Strategy、Observer、Chain of Responsibility 等）组织 Python AI Agent 代码，避免随 Agent 系统规模扩大而出现的"意面代码"问题。对于正在构建生产级 AI Agent 应用的 Python 开发者，本视频提供了可直接落地的工程架构参考，是软件设计原则与 AI 工程实践结合的优质内容。</p>
+      <a href="https://www.youtube.com/watch?v=8_liatgLkLc" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 观看视频</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- Fireship -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Fireship · YouTube</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">📹 视频 &middot; 2026</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">📹 The Unhinged World of Tech in 2026... — 高密度吐槽 2026 年科技行业</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Fireship 以标志性的高密度幽默风格，在10分钟内快速梳理 2026 年科技行业的"荒诞现实"：AI 替代初级开发者、JavaScript 框架持续爆炸式增长、云账单继续失控、Vibe Coding 成为主流……视频覆盖开发者最关心的技术趋势与行业动向，是追踪科技前沿的高效"解压"内容，在信息爆炸时代保持行业感知的好方式。</p>
+      <a href="https://www.youtube.com/watch?v=EKOU3JWDNLI" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 观看视频</a>
+    </div>
+
+    <div style="border-left: 1px solid #d4eadb; border-right: 1px solid #d4eadb; height: 1px; background: #f4faf6;"></div>
+
+    <!-- Brendan Gregg -->
+    <div style="border: 1px solid #d4eadb; border-top: none; padding: 22px; background: #fff; border-radius: 0 0 8px 8px;">
+      <div style="margin-bottom: 10px;">
+        <span style="background: #e4f5e9; color: #1a6b3c; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Brendan Gregg Blog</span>
+        <span style="color: #aaa; font-size: 12px; margin-left: 10px;">2026-02-07</span>
+      </div>
+      <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #0d1b2a; line-height: 1.4;">Why I Joined OpenAI — 系统性能工程大师转战 AI 基础设施优化</h3>
+      <p style="margin: 0 0 13px 0; color: #4a5568; font-size: 14px; line-height: 1.75;">Linux 性能分析与 eBPF 领域权威 Brendan Gregg 宣布加入 OpenAI，专注 ChatGPT 性能优化。他指出：AI 数据中心飞速增长的成本是对性能工程的终极呼唤——不仅关乎降本增效，更是对地球环境的工程责任。作为 Flame Graph 发明者，Gregg 将把系统性能工程的严谨方法论带入 AI 基础设施领域，其后续技术分享对性能工程师和 AI 基础设施团队极具参考价值。</p>
+      <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+    </div>
+  </div><!-- /section3 -->
+
+  <!-- ===== FOOTER ===== -->
+  <div style="margin-top: 40px; padding: 24px 28px; background: #f0f4f8; border-radius: 10px; text-align: center;">
+    <div style="font-size: 14px; font-weight: 700; color: #2d3748; margin-bottom: 6px;">软件技术日报 · 每日精选</div>
+    <div style="font-size: 12px; color: #718096; line-height: 1.8;">
+      本期收录渠道 22 个 &nbsp;·&nbsp; 日期：2026-06-05 &nbsp;·&nbsp; 自动整理<br>
+      摘要均以中文撰写，技术术语保留英文原文<br>
+      <span style="color: #a0aec0;">已跳过渠道（7天内无新内容）：High Scalability · TechWorld with Nana · Yannic Kilcher · Anthony GG · Hussein Nasser · Dan Luu · Go by Example</span>
+    </div>
+  </div>
+
+</div><!-- /wrapper -->
+</body>
+</html>
