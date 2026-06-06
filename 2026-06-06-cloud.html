@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-06</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #333333;">
+  <div style="max-width: 680px; margin: 0 auto; padding: 24px 20px;">
+
+    <!-- Header -->
+    <div style="background-color: #1a1a2e; padding: 24px 28px; border-radius: 8px; margin-bottom: 32px;">
+      <h1 style="margin: 0; font-size: 22px; color: #ffffff; font-weight: 700; letter-spacing: 0.5px;">软件技术日报</h1>
+      <p style="margin: 8px 0 0; font-size: 14px; color: #a0aec0;">【软件工程 &amp; 云原生】&nbsp;·&nbsp; 2026-06-06</p>
+    </div>
+
+    <!-- ① Thoughtworks Technology Radar -->
+    <div style="margin-bottom: 32px;">
+      <p style="margin: 0 0 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #718096;">Thoughtworks Technology Radar</p>
+      <h2 style="margin: 0 0 12px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.5;">
+        AI 加速软件复杂性，Technology Radar 呼吁回归工程基本功以对抗认知债务
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+        Thoughtworks 最新发布的 Technology Radar Volume 34（2026年4月）将"认知债务（Cognitive Debt）"列为核心主题——随着 AI 生成代码量激增，工程师理解与掌控软件系统的能力正在被侵蚀。报告指出 <strong>Context Engineering</strong>（上下文工程）已从提示优化技巧演变为现代 AI 系统的架构级关切，需将 context window 视为可设计的界面表面。此外，DORA 指标新增第五个维度：<strong>返工率（Rework Rate）</strong>，专门用于衡量 AI 辅助开发中的代码质量问题。
+      </p>
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+         style="display: inline-block; color: #2563eb; font-size: 13px; text-decoration: none; border-bottom: 1px solid #bfdbfe; padding-bottom: 2px; font-weight: 500;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 0 0 32px;">
+
+    <!-- ② SRE Weekly -->
+    <div style="margin-bottom: 32px;">
+      <p style="margin: 0 0 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #718096;">SRE Weekly</p>
+      <h2 style="margin: 0 0 12px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.5;">
+        Issue #512：AI 编码助手 vs AI SRE 工具——谁在挤压 SRE 的价值空间？
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+        本期聚焦 AI 工具在 SRE 领域的定位分化：AI 编码助手被定位为"增强工程师能力的伙伴"，而 AI SRE 工具则被定位为"自动化低价值工作的替代者"，折射出决策层对事故响应（Incident Response）工作价值的认知偏差。刊物还探讨了提升系统健壮性（Robustness）往往需要增加系统复杂性的悖论，以及随着 LLM 服务规模化，传统的 <strong>availability</strong> 与 <strong>latency</strong> 指标已不足以全面衡量可靠性这一新挑战。
+      </p>
+      <a href="https://sreweekly.com/sre-weekly-issue-512/"
+         style="display: inline-block; color: #2563eb; font-size: 13px; text-decoration: none; border-bottom: 1px solid #bfdbfe; padding-bottom: 2px; font-weight: 500;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 0 0 32px;">
+
+    <!-- ③ ByteByteGo -->
+    <div style="margin-bottom: 32px;">
+      <p style="margin: 0 0 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #718096;">ByteByteGo</p>
+      <h2 style="margin: 0 0 12px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.5;">
+        一个请求的旅程：现代 Web 架构全景解析
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+        ByteByteGo 最新文章（2026年6月4日）以"逐跳追踪"方式，完整呈现一个 Web 请求从客户端发出到服务端响应的全路径，涵盖 DNS 解析、CDN 加速、负载均衡（Load Balancer）、API Gateway 到微服务调用链等云原生基础设施的关键环节。文章配合精炼图解，是理解现代分布式系统架构与备考系统设计面试（System Design Interview）的优质材料。
+      </p>
+      <a href="https://blog.bytebytego.com/p/the-path-of-a-request-a-tour-of-modern"
+         style="display: inline-block; color: #2563eb; font-size: 13px; text-decoration: none; border-bottom: 1px solid #bfdbfe; padding-bottom: 2px; font-weight: 500;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 0 0 32px;">
+
+    <!-- ④ TLDR DevOps -->
+    <div style="margin-bottom: 32px;">
+      <p style="margin: 0 0 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #718096;">TLDR DevOps</p>
+      <h2 style="margin: 0 0 12px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.5;">
+        2026-05-27：Dropbox Nova 平台、GitHub Enterprise 迁移与 Terraform AgentCore 亮相
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+        本期 TLDR DevOps 聚焦三大热点：Dropbox 推出 <strong>Nova</strong> 云平台，专为 AI Coding Agent 工作流设计，支持并行会话与完全隔离的执行环境；从 Azure DevOps 平滑迁移至 <strong>GitHub Enterprise</strong> 的实战策略与避坑经验；以及 <strong>Terraform AgentCore</strong> 新特性发布，将 Infrastructure as Code 与 Agentic AI 能力深度融合，推动基础设施自动化进入新阶段。
+      </p>
+      <a href="https://tldr.tech/devops/2026-05-27"
+         style="display: inline-block; color: #2563eb; font-size: 13px; text-decoration: none; border-bottom: 1px solid #bfdbfe; padding-bottom: 2px; font-weight: 500;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div style="margin-top: 36px; padding: 18px 20px; background-color: #f7fafc; border-radius: 6px; border-top: 3px solid #1a1a2e;">
+      <p style="margin: 0; font-size: 12px; color: #718096; text-align: center;">
+        由 Daily News Bot 自动生成 &nbsp;·&nbsp; 2026-06-06
+      </p>
+      <p style="margin: 6px 0 0; font-size: 11px; color: #a0aec0; text-align: center;">
+        TechWorld with Nana：本周期内未检索到新发布视频，已跳过。
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
