@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 & Python & Go】- 2026-06-07</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a365d 0%,#2a4a7f 100%);padding:32px 40px;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#90cdf4;letter-spacing:1.5px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <p style="margin:6px 0 0 0;font-size:14px;color:#bee3f8;">后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-06-07</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0;font-size:13px;color:#718096;line-height:1.6;">
+                精选来自 High Scalability、Martin Fowler、Netflix Tech Blog、Real Python、Python Weekly、The Go Blog、Golang Weekly、Arjan Codes、Anthony GG、Brendan Gregg 等渠道的最新内容，聚焦性能优化、版本特性、工程实践与系统设计。
+              </p>
+            </td>
+          </tr>
+
+          <!-- Section Divider Helper -->
+          <!-- ===== SECTION 1: Martin Fowler ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Martin Fowler Blog</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://martinfowler.com/fragments/2026-06-02.html" style="color:#2b6cb0;text-decoration:none;">Fragments: June 2 — AI 工作流、生产力度量与幻觉问题</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Fowler 在最新一期 Fragments（2026-06-02）中探讨了三个议题：其一，现有生产力 metrics 普遍存在缺陷，且目前没有公认的替代方案；其二，历史上的自动化浪潮（如会计领域从手工到云端的演变）并未消灭职业，而是推动职业进化；其三，Ernst &amp; Young Canada 一份网络安全报告被发现超过一半引用为 AI 幻觉生成，引发对 AI 内容可信度的警示。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    此外 Fowler 强调，在设计 AI Agent 工作流时，<strong>人类的注意力才是真正的不可并行稀缺资源</strong>，盲目 spawn 多个 agent 并不能解决根本问题，需要从架构层面管理注意力分配。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-06-02 &nbsp;|&nbsp;
+                    <a href="https://martinfowler.com/fragments/2026-06-02.html" style="color:#3182ce;text-decoration:none;">阅读原文 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 2: Netflix Tech Blog ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Netflix Tech Blog</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#2b6cb0;text-decoration:none;">State of Routing in Model Serving — Netflix ML 推理路由架构揭秘</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Netflix ML 模型服务平台系列文章第一篇，介绍其核心挑战：如何在 <strong>百万级 QPS</strong> 下将流量路由到正确的模型实例、正确的集群分片，同时为客户端服务和研究人员保持简洁的抽象接口。平台目前服务数百种模型类型与版本，覆盖推荐、个性化、支付等业务域。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    文章介绍了 Netflix 自研的 <strong>Switchboard</strong>——一个集中式路由服务，通过统一的 domain-independent API 抽象屏蔽底层复杂性，大幅加速了新 ML 体验的迭代速度，并分享了在规模化运营中遇到的挑战与经验。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-05-02 &nbsp;|&nbsp;
+                    <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#3182ce;text-decoration:none;">阅读原文 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 3: Netflix Tech Blog #2 ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:1px dashed #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Netflix Tech Blog — 工程实践</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a" style="color:#2b6cb0;text-decoration:none;">Scaling ArchUnit with Nebula ArchRules — 跨万级仓库共享架构规则</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Netflix 采用 polyrepo 策略管理数万个 Java 仓库，原生 ArchUnit 仅支持单仓库内的架构规则校验。为此 Netflix 开源了 <strong>Nebula ArchRules</strong> Gradle 插件，允许团队将架构规则封装为可复用库，并在任意数量的仓库中一键应用，既支持 OSS 规则库也支持私有内部库。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    插件分为两部分：ArchRules Library Plugin（用于定义规则并实现 ArchRulesService 接口）与 ArchRules Runner Plugin（用于在目标仓库执行规则）。未来计划整合自动修复（auto-remediation）能力，进一步降低架构债务治理成本。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-05-08 &nbsp;|&nbsp;
+                    <a href="https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a" style="color:#3182ce;text-decoration:none;">阅读原文 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 4: Real Python ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Real Python</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://realpython.com/courses/structuring-your-python-script/" style="color:#2b6cb0;text-decoration:none;">Structuring Your Python Script — 工程化脚本结构最佳实践</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Real Python 最新视频课程（2026-06-02），聚焦如何将一个随意编写的 Python 脚本重构为工程化结构：规范 <code style="background:#edf2f7;padding:1px 4px;border-radius:3px;">import</code> 组织方式、提取常量、明确入口点（entry point），让代码更具可维护性与可测试性。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    课程强调 <strong><code style="background:#edf2f7;padding:1px 4px;border-radius:3px;">if __name__ == "__main__"</code> 守卫的正确用法</strong>，以及模块顶层副作用的危害。适合有一定基础但还未系统学习项目组织的 Python 开发者。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-06-02 &nbsp;|&nbsp;
+                    <a href="https://realpython.com/courses/structuring-your-python-script/" style="color:#3182ce;text-decoration:none;">查看课程 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 5: Python Weekly ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Python Weekly</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#2b6cb0;text-decoration:none;">Issue #746 — Python Packaging Council 首届选举 &amp; 生态动态</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Python Weekly 第 746 期（2026-05-21）重点报道：<strong>Python Packaging Council 在 PEP 772 获批后正式启动首届选举</strong>，这是 Python 打包生态首次拥有独立的民选治理机构，负责统筹 pip、setuptools、PyPI 等工具的方向决策，结束了 PEP 609 以来治理权力模糊的局面。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Council 采用交错两年任期制（2席+3席轮替），强调共识优先而非投票表决，与 Python Steering Council 的运作模式一脉相承。此外本期还涵盖 PEP 803（free-threaded ABI 稳定化）、Astral 公司股权变更等生态热点。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-05-21 &nbsp;|&nbsp;
+                    <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#3182ce;text-decoration:none;">阅读简报 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 6: The Go Blog ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">The Go Blog</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://go.dev/blog/pkgsite-api" style="color:#2b6cb0;text-decoration:none;">Introducing the pkg.go.dev API — Go 模块元数据官方 API 正式发布</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Go 官方博客（2026-05-21）宣布 <strong>pkg.go.dev 官方 API 正式上线</strong>，提供对 Go 模块元数据的程序化访问，涵盖包搜索、符号查询、版本列表、依赖关系与漏洞信息。此前开发者只能依赖脆弱的 web scraping 方案，现在获得了稳定的 GET-only REST 接口。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    API 设计遵循"<strong>精确优于便利</strong>"原则，要求模块路径无歧义指定；随 API 一并发布的还有参考客户端 <code style="background:#edf2f7;padding:1px 4px;border-radius:3px;">pkgsite-cli</code>，可直接用于 CI 流水线、IDE 插件及 AI 工具链。Go 团队承诺长期向后兼容。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-05-21 &nbsp;|&nbsp;
+                    <a href="https://go.dev/blog/pkgsite-api" style="color:#3182ce;text-decoration:none;">阅读原文 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 7: Golang Weekly ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Golang Weekly</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://golangweekly.com/issues/604" style="color:#2b6cb0;text-decoration:none;">Issue #604: Go Experiments, Explained — Go 实验性特性机制深度解析</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Golang Weekly 第 604 期聚焦 Go 的 <strong>实验性特性（experimental features）发布机制</strong>：Go 团队如何在不破坏稳定性承诺的前提下向用户开放新功能试用，以及实验特性从提案到 General Availability 的完整毕业流程。Alex Edwards 的配套文章对此机制做了详细说明。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    本期还涵盖了 Go 1.27 中 <strong>Generic Methods 正式获批</strong>（Issue #603 预告），以及 pkg.go.dev 官方 API 落地（Issue #602）等上下游动态，是近期 Go 生态最值得关注的进展汇总。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-06（最新期） &nbsp;|&nbsp;
+                    <a href="https://golangweekly.com/issues/604" style="color:#3182ce;text-decoration:none;">阅读简报 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 8: Arjan Codes ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Arjan Codes &nbsp;📹 视频</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://www.youtube.com/watch?v=U4sPMwAiXco" style="color:#2b6cb0;text-decoration:none;">Why "Clean Code" Often Creates Worse Designs — Clean Code 的反模式陷阱</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    📹 视频 &nbsp;Arjan Codes 2026 年最受关注的视频之一，作者通过真实 Python 代码示例，剖析了盲目遵循 Clean Code 原则（如"函数只做一件事"、过度提取小函数）如何在实践中导致<strong>过度碎片化、难以追踪的设计</strong>。他区分了"局部整洁"与"系统级清晰"的不同优先级。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    核心观点：好的设计不是规则的堆砌，而是在可读性、内聚性与变更成本之间做出有意识的权衡。视频适合对 SOLID 原则有一定了解、希望进一步提升设计判断力的 Python 开发者。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-03-27 &nbsp;|&nbsp;
+                    <a href="https://www.youtube.com/watch?v=U4sPMwAiXco" style="color:#3182ce;text-decoration:none;">观看视频 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 9: Anthony GG ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Anthony GG &nbsp;📹 视频</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="color:#2b6cb0;text-decoration:none;">Go (Golang) vs TypeScript Performance Benchmark (2026) — 真实性能对比</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    📹 视频 &nbsp;Anthony GG 以 2026 年最新 runtime 版本对 <strong>Go 与 TypeScript（Node.js/Bun）</strong> 进行系统性 benchmark：涵盖 CPU 密集型计算、并发 HTTP 处理、内存分配等多个维度。结果显示 Go 在并发吞吐和内存效率方面仍具显著优势，而 TypeScript 在热点启动场景下有所改善。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    视频同时讨论了 benchmark 方法论的局限性，提醒开发者避免以单一微基准（microbenchmark）作为技术选型的唯一依据，应结合团队熟悉度、生态成熟度与实际业务负载综合评估。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026（近期） &nbsp;|&nbsp;
+                    <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="color:#3182ce;text-decoration:none;">观看视频 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== SECTION 10: Brendan Gregg ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:20px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#718096;letter-spacing:1.2px;text-transform:uppercase;">Brendan Gregg Blog</p>
+                  <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color:#2b6cb0;text-decoration:none;">Why I joined OpenAI — 性能工程面临史上最大规模挑战</a>
+                  </h2>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Linux 性能调优领域权威 Brendan Gregg 于 2026 年 2 月宣布加入 OpenAI，聚焦 <strong>ChatGPT 推理性能优化</strong>。文章揭示了动机：AI 数据中心的电力与硬件成本正在以前所未有的速度增长，每一点 throughput 提升都意味着数亿美元的节省——这是他职业生涯中遇到的规模最大的性能工程课题。
+                  </p>
+                  <p style="margin:0 0 8px 0;font-size:13px;color:#4a5568;line-height:1.7;">
+                    Gregg 的首个项目是跨多个组织的性能优化协同策略（multi-org strategy），将 eBPF、flame graph 等底层工具链应用于 GPU cluster 与大规模推理栈，对后端性能工程师而言极具参考价值。
+                  </p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;">📅 2026-02-07 &nbsp;|&nbsp;
+                    <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color:#3182ce;text-decoration:none;">阅读原文 →</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- ===== Skipped Channels Note ===== -->
+          <tr><td style="padding:24px 40px 0 40px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="border-top:2px solid #e2e8f0;padding-top:16px;background-color:#f7fafc;border-radius:6px;padding:16px 20px;margin-top:16px;">
+                  <p style="margin:0 0 6px 0;font-size:12px;font-weight:600;color:#718096;">⏭ 本期跳过的渠道</p>
+                  <p style="margin:0;font-size:12px;color:#a0aec0;line-height:1.7;">
+                    以下渠道在搜索窗口内未找到近期新内容，本期跳过：
+                    <strong>High Scalability</strong>（近期无新文章）、
+                    <strong>Hussein Nasser</strong>（无近期技术视频索引）、
+                    <strong>Fireship</strong>（最新视频为 4 月，主题偏向 AI 新闻而非后端技术）、
+                    <strong>Dan Luu</strong>（2024 年后无新文章索引）、
+                    <strong>Go by Example</strong>（静态参考手册，无 newsletter 内容）。
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td></tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:32px 40px 40px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-top:1px solid #e2e8f0;padding-top:20px;text-align:center;">
+                    <p style="margin:0 0 4px 0;font-size:12px;color:#a0aec0;">软件技术日报 · 每日自动整理</p>
+                    <p style="margin:0;font-size:11px;color:#cbd5e0;">生成时间：2026-06-07 &nbsp;·&nbsp; 摘要由 AI 辅助撰写，技术术语保留英文原文</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
