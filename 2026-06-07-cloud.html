@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-07</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a2e;">
+
+  <!-- Header -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="background-color:#0f3460;padding:28px 32px;">
+        <h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:0.5px;">
+          软件技术日报
+        </h1>
+        <p style="margin:6px 0 0;color:#a8c0e8;font-size:13px;">
+          【软件工程 &amp; 云原生】&nbsp;&bull;&nbsp;2026-06-07
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Body -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding:0 32px 32px;">
+
+        <!-- Intro -->
+        <p style="margin:24px 0 8px;font-size:14px;color:#555;line-height:1.7;">
+          今日精选来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo、TechWorld with Nana、TLDR Tech 的最新动态，聚焦 Kubernetes、云原生架构与 SRE 实践。
+        </p>
+
+        <!-- ===== 1. Thoughtworks ===== -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+          <tr>
+            <td style="border-left:4px solid #e94560;padding-left:14px;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#e94560;">
+                Thoughtworks Technology Radar
+              </p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#0f3460;line-height:1.4;">
+                Volume 34：AI 加速软件复杂性，Radar 呼吁回归工程基础以应对认知债务
+              </h2>
+              <p style="margin:0 0 10px;font-size:14px;color:#333;line-height:1.75;">
+                Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，核心主题是"认知债务（Cognitive Debt）"——随着 AI 辅助编码大幅加快代码生成速度，人类与软件系统之间的理解鸿沟也在持续扩大。Radar 特别强调
+                <strong>Context Engineering</strong> 已从优化技巧演变为 AI 系统的核心架构关切，将上下文窗口视为设计表面。报告同时呼吁团队在 AI 代理工作流中集成确定性质量门禁（Deterministic Quality Gates），包括编译器、linter、类型检查器和测试套件，以恢复对代码质量的掌控。
+              </p>
+              <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                 style="color:#1565c0;font-size:13px;text-decoration:none;border-bottom:1px solid #b3d1f5;">
+                阅读原文 &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Divider -->
+        <hr style="margin:28px 0;border:none;border-top:1px solid #e8eaf0;" />
+
+        <!-- ===== 2. SRE Weekly ===== -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="border-left:4px solid #16213e;padding-left:14px;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#16213e;">
+                SRE Weekly
+              </p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#0f3460;line-height:1.4;">
+                Issue #512：AI SRE 工具的定位陷阱与事故响应的领导力本质
+              </h2>
+              <p style="margin:0 0 10px;font-size:14px;color:#333;line-height:1.75;">
+                本期聚焦 AI 工具在 SRE 领域中截然不同的市场定位：AI 编码助手被定位为"增强工程师能力的合作伙伴"，而 AI SRE 工具则被定位为"替代低价值的重复性工作"，折射出决策者将事故响应视为可自动化的繁杂工作的潜在偏见。文章也深入探讨了事故响应作为领导力关键时刻的重要性，强调 CTO 和技术负责人在事故中的应对方式决定了团队文化。此外，本期还警示了系统各层自行实现重试逻辑导致请求量指数级放大的"重试风暴"问题。
+              </p>
+              <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                 style="color:#1565c0;font-size:13px;text-decoration:none;border-bottom:1px solid #b3d1f5;">
+                阅读原文 &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Divider -->
+        <hr style="margin:28px 0;border:none;border-top:1px solid #e8eaf0;" />
+
+        <!-- ===== 3. ByteByteGo ===== -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="border-left:4px solid #0077b6;padding-left:14px;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#0077b6;">
+                ByteByteGo
+              </p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#0f3460;line-height:1.4;">
+                A Beginner's Guide to Kubernetes：用"承诺系统"重新理解 K8s 架构
+              </h2>
+              <p style="margin:0 0 10px;font-size:14px;color:#333;line-height:1.75;">
+                ByteByteGo 于 2026 年 4 月 30 日发布了这篇深度解析文章，将 Kubernetes 描述为一套"承诺系统（System of Promises）"——每个组件（Scheduler、Controller Manager、kubelet 等）都是一个守承诺的小程序，整体协作实现声明式容器编排。文章通过直观的类比拆解了控制平面与工作节点的职责划分，帮助读者构建对 Kubernetes 架构的系统性认知，是入门到中级工程师的高质量参考资料。
+              </p>
+              <a href="https://blog.bytebytego.com/p/a-beginners-guide-to-kubernetes"
+                 style="color:#1565c0;font-size:13px;text-decoration:none;border-bottom:1px solid #b3d1f5;">
+                阅读原文 &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Divider -->
+        <hr style="margin:28px 0;border:none;border-top:1px solid #e8eaf0;" />
+
+        <!-- ===== 4. TechWorld with Nana ===== -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="border-left:4px solid #e85d04;padding-left:14px;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#e85d04;">
+                TechWorld with Nana &nbsp;📹 视频
+              </p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#0f3460;line-height:1.4;">
+                DevOps Full Course 2026 — Beginner to Advanced（完整实战课程）
+              </h2>
+              <p style="margin:0 0 10px;font-size:14px;color:#333;line-height:1.75;">
+                Nana Janashia（Docker Captain、AWS Container Hero）于 2026 年 4 月发布了覆盖从零基础到高级的完整 DevOps 课程视频，涵盖 Linux 基础、Git、Docker 容器化、Kubernetes 编排（含 EKS）、CI/CD 流水线（GitHub Actions、Jenkins）、Terraform Infrastructure as Code 等核心工具链，结合多个真实项目进行实战演练。这是目前 YouTube 上最受推荐的 2026 年 DevOps 入门系统性课程之一。
+              </p>
+              <a href="https://www.youtube.com/@TechWorldwithNana"
+                 style="color:#1565c0;font-size:13px;text-decoration:none;border-bottom:1px solid #b3d1f5;">
+                访问频道 &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Divider -->
+        <hr style="margin:28px 0;border:none;border-top:1px solid #e8eaf0;" />
+
+        <!-- ===== 5. TLDR Tech ===== -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="border-left:4px solid #2d6a4f;padding-left:14px;">
+              <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#2d6a4f;">
+                TLDR Tech · DevOps
+              </p>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#0f3460;line-height:1.4;">
+                Dropbox Nova：专为 AI 编码代理设计的内部云平台（2026-05-27）
+              </h2>
+              <p style="margin:0 0 10px;font-size:14px;color:#333;line-height:1.75;">
+                Dropbox 发布内部云平台 <strong>Nova</strong>，专为跨工程工作流的 AI 代理编码场景设计：支持并行运行多个编码会话、将代理运行于固定提交版本的隔离沙箱环境，并使用 Bazel 驱动的构建与测试命令对变更进行自动化验证。同期 TLDR DevOps 还报道了 <strong>Terraform AgentCore</strong> 的发布以及从 Azure DevOps 向 GitHub Enterprise 迁移的最佳实践，指出延迟迁移将造成因 Copilot Agents 和自主工作流缺失而持续扩大的生产效率差距。
+              </p>
+              <a href="https://tldr.tech/devops/2026-05-27"
+                 style="color:#1565c0;font-size:13px;text-decoration:none;border-bottom:1px solid #b3d1f5;">
+                阅读原文 &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="background-color:#f4f6fb;padding:18px 32px;border-top:1px solid #dde2ee;">
+        <p style="margin:0;font-size:12px;color:#888;line-height:1.6;">
+          本日报由 Claude Code Agent 自动整理，内容来源：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR Tech<br/>
+          生成时间：2026-06-07
+        </p>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
