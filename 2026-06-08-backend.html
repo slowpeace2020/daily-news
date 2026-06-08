@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 & Python & Go】- 2026-06-08</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#222222;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+          <!-- 邮件头部 -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:32px 36px;">
+              <p style="margin:0;font-size:12px;color:#8888aa;letter-spacing:1px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:8px 0 0 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报
+              </h1>
+              <p style="margin:6px 0 0 0;font-size:14px;color:#aaaacc;">
+                后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-06-08（周一）
+              </p>
+            </td>
+          </tr>
+
+          <!-- 导言 -->
+          <tr>
+            <td style="padding:24px 36px 8px 36px;">
+              <p style="margin:0;font-size:14px;color:#555555;line-height:1.7;">
+                本期精选来自 Martin Fowler Blog、Netflix Tech Blog、The Go Blog、Golang Weekly、Real Python、Python Weekly、Arjan Codes、Fireship、Brendan Gregg Blog 等渠道的最新技术内容，聚焦性能优化、工程实践、语言新特性与系统设计。
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== 分类：后端 & 系统设计 ===== -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <h2 style="margin:0;font-size:13px;font-weight:700;color:#ffffff;background-color:#16213e;padding:8px 14px;border-radius:4px;letter-spacing:0.5px;">
+                🖥 后端 &amp; 系统设计
+              </h2>
+            </td>
+          </tr>
+
+          <!-- 1. Martin Fowler -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Martin Fowler Blog &nbsp;·&nbsp; 2026-06-02</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://martinfowler.com/fragments/2026-06-02.html" style="color:#1a56db;text-decoration:none;">Fragments: June 2 — Generative Debt 与 LLM 加速技术债</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                Fowler 在本期 Fragments 中引入两个新概念："Cognitive debt"（团队使用已不理解的抽象时累积的认知债务）和 "Generative debt"（代码库中的混乱概念被 LLM 学习并持续复制，从而指数级放大 technical debt）。LLM 在代码生成时会将已有的烂代码视为"范例"和"规范"来模仿，而非将其识别为债务，这使得低质量代码库的问题在 AI 辅助开发时代变得更加严峻。文章还提到 Ernst &amp; Young 的一份网络安全报告中超过一半的引用被证实是 LLM 幻觉，引发对 AI 生成内容可信度的深思。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://martinfowler.com/fragments/2026-06-02.html" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 36px 0 36px;"><hr style="border:none;border-top:1px solid #eeeeee;margin:0;"></td></tr>
+
+          <!-- 2. Netflix Tech Blog -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Netflix Tech Blog &nbsp;·&nbsp; 2026-05</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="color:#1a56db;text-decoration:none;">State of Routing in Model Serving</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                Netflix 的 ML Model Serving 平台目前每秒处理 100 万次推理请求，服务数百种模型，覆盖个性化推荐、商业决策等多个业务域。本文是系列文章首篇，深度解析 Netflix 如何通过 domain-independent API 抽象层将各业务微服务与底层推理引擎解耦，并分享了他们从中心化路由服务（Switchboard 架构）演化至 Lightbulb 架构的过程，以及在规模扩张中遭遇的运营挑战与解决方案，对构建高吞吐 ML 推理系统有重要参考价值。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 36px 0 36px;"><hr style="border:none;border-top:1px solid #eeeeee;margin:0;"></td></tr>
+
+          <!-- 3. Brendan Gregg -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Brendan Gregg Blog &nbsp;·&nbsp; 2026-02-07</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color:#1a56db;text-decoration:none;">Why I Joined OpenAI — AI 数据中心性能工程的新挑战</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                系统性能工程界的传奇人物 Brendan Gregg（eBPF、Flame Graph 发明者）宣布加入 OpenAI，专注于 ChatGPT 的性能优化。他指出 AI 数据中心的成本正以前所未有的速度增长，"这是历史上对性能工程最强烈的呼唤"，传统性能工程方法可能已不足够，需要寻找全新的工程方法来发现更大规模的优化机会。他预计将继续使用 eBPF、Ftrace、PMC 等工具，并探索适用于 GPU 和大规模 AI 推理场景的新型 profiling 技术。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 36px 0 36px;"><hr style="border:none;border-top:1px solid #eeeeee;margin:0;"></td></tr>
+
+          <!-- 4. High Scalability -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">High Scalability &nbsp;·&nbsp; 2026-03-16</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://highscalability.com/brief-history-of-scaling-uber/" style="color:#1a56db;text-decoration:none;">Brief History of Scaling Uber</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                Uber Eats 高级工程总监 Josh Clemm 回顾了 Uber 从单体架构到微服务、再到如今支撑全球数亿用户的演进历程。文章剖析了 Uber 各阶段面临的核心扩展性瓶颈：早期数据库分片、服务拆分时的数据一致性、全球多区域 active-active 架构等难题，以及他们的解决方案与工程权衡，是研究大规模系统设计演化的经典案例。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://highscalability.com/brief-history-of-scaling-uber/" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 36px 0 36px;"><hr style="border:none;border-top:1px solid #eeeeee;margin:0;"></td></tr>
+
+          <!-- 5. Fireship -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Fireship (YouTube) &nbsp;·&nbsp; 2026-04-21 &nbsp;📹 视频</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="color:#1a56db;text-decoration:none;">📹 Claude just got another superpower...</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                Fireship 以其标志性的高密度风格，解读 Anthropic Claude 最新能力更新对开发者工作流的影响，涵盖 agentic 编码、工具调用（tool use）增强以及与 IDE 深度集成等新特性。视频深入探讨这些能力将如何重塑 backend 工程师的日常开发范式，以及 AI 辅助编程从"自动补全"走向"自主执行"的演进方向，干货密集，适合快速了解行业前沿动态。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://www.youtube.com/watch?v=jeA-KBv0b68" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">观看视频 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== 分类：Python ===== -->
+          <tr>
+            <td style="padding:28px 36px 0 36px;">
+              <h2 style="margin:0;font-size:13px;font-weight:700;color:#ffffff;background-color:#0f3460;padding:8px 14px;border-radius:4px;letter-spacing:0.5px;">
+                🐍 Python
+              </h2>
+            </td>
+          </tr>
+
+          <!-- 6. Real Python -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Real Python &nbsp;·&nbsp; 2026-05</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://realpython.com/python-news-may-2026/" style="color:#1a56db;text-decoration:none;">A New Python Packaging Council and Other News for May 2026</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                Python 生态的重要治理里程碑：PEP 772 获批，Python Packaging Council（打包委员会）正式成立，该委员会拥有五名民选委员，权威等同于 Python Steering Council，结束了 PyPA 多年非正式协调的历史。同期，Python 3.15.0 beta 1 于 5 月 5 日发布，标志着功能冻结；PEP 803 稳定了 free-threaded ABI，为无 GIL Python 奠定基础；PyCon US 2026 于长滩举行（5 月 13–19 日）。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://realpython.com/python-news-may-2026/" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 36px 0 36px;"><hr style="border:none;border-top:1px solid #eeeeee;margin:0;"></td></tr>
+
+          <!-- 7. Python Weekly -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Python Weekly &nbsp;·&nbsp; Issue 746 (2026-05-21)</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="color:#1a56db;text-decoration:none;">Python Weekly Issue 746 — AI Agents、异步任务与 Jupyter 工具链</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                本期精选内容涵盖：用 Python 构建多 subagent 协作的合同审查 agentic 系统（含 memory 管理与 audit trail 设计）；django-q2 作为 Celery 的轻量级替代方案处理 Django 后台任务；以及 nb-cli，一个用 Rust 构建的 CLI 工具，允许开发者和 AI agent 以编程方式读写和执行 Jupyter notebook，大幅改善 notebook 在 CI/CD 流水线中的可操作性。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 36px 0 36px;"><hr style="border:none;border-top:1px solid #eeeeee;margin:0;"></td></tr>
+
+          <!-- 8. Arjan Codes -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Arjan Codes (YouTube) &nbsp;·&nbsp; 2026-04-24 &nbsp;📹 视频</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="color:#1a56db;text-decoration:none;">📹 Don't Use Boolean Flags in Python, Use Policies Instead</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                Arjan 深入剖析 Python 代码中滥用 boolean flag 参数导致的可读性与可维护性问题，提出以 Policy 设计模式替代的实践方案：将行为变体封装为独立 Policy 对象，通过依赖注入传入，彻底消除 if/else 分支蔓延。视频提供完整的重构案例，展示如何从"函数内部条件判断"演进为"可组合的策略对象"，是提升 Python 代码设计质量的实用技巧。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">观看视频 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- ===== 分类：Go / Golang ===== -->
+          <tr>
+            <td style="padding:28px 36px 0 36px;">
+              <h2 style="margin:0;font-size:13px;font-weight:700;color:#ffffff;background-color:#00add8;padding:8px 14px;border-radius:4px;letter-spacing:0.5px;">
+                🐹 Go / Golang
+              </h2>
+            </td>
+          </tr>
+
+          <!-- 9. The Go Blog -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">The Go Blog &nbsp;·&nbsp; 2026-05-21</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://go.dev/blog/pkgsite-api" style="color:#1a56db;text-decoration:none;">Introducing the pkg.go.dev API</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                Go 官方正式推出 pkg.go.dev 的 programmatic API，允许开发者通过标准接口查询已发布 Go module 的元数据，告别此前依赖 web scraping 的脆弱方案。API 提供完整的 OpenAPI 规范，配套参考客户端 pkgsite-cli 方便上手。这对构建 IDE 插件、自动化依赖分析工具、内部包管理系统的开发者来说是重要基础设施升级，也标志着 Go 生态工具链的标准化程度进一步提升。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://go.dev/blog/pkgsite-api" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr><td style="padding:16px 36px 0 36px;"><hr style="border:none;border-top:1px solid #eeeeee;margin:0;"></td></tr>
+
+          <!-- 10. Golang Weekly -->
+          <tr>
+            <td style="padding:20px 36px 0 36px;">
+              <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">Golang Weekly &nbsp;·&nbsp; Issue #604 (2026-06-05)</p>
+              <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                <a href="https://golangweekly.com/issues/604" style="color:#1a56db;text-decoration:none;">Issue #604: Go Experiments, Explained — 如何在正式发布前试用新特性</a>
+              </h3>
+              <p style="margin:0;font-size:14px;color:#444444;line-height:1.7;">
+                本期 Golang Weekly 聚焦 Go 的 experiment 机制，详解 Go 团队如何通过 GOEXPERIMENT 环境变量和构建标签让开发者提前试用尚未 GA 的语言特性，以及这些 experiment 如何逐步毕业（graduate）为正式特性的完整流程。本期还涵盖上期热点的后续：Go 1.27 泛型方法（generic methods）的具体实现进展，以及 pkg.go.dev 官方 API 的社区反响。对想紧跟 Go 语言演进的开发者而言，了解 experiment 机制是参与 Go 提案与反馈的第一步。
+              </p>
+              <p style="margin:10px 0 0 0;">
+                <a href="https://golangweekly.com/issues/604" style="display:inline-block;font-size:12px;color:#1a56db;text-decoration:none;border:1px solid #1a56db;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- 页脚 -->
+          <tr>
+            <td style="padding:32px 36px;background-color:#f9f9f9;border-top:1px solid #eeeeee;margin-top:16px;">
+              <p style="margin:0;font-size:12px;color:#999999;line-height:1.6;">
+                本邮件由 Daily News Bot 自动生成 &nbsp;·&nbsp; 内容来源于公开技术博客与 YouTube 频道<br>
+                跳过渠道（过去 7 天无新内容）：Dan Luu Blog、Go by Example、Anthony GG、Hussein Nasser<br>
+                生成时间：2026-06-08
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
