@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-10</title>
+</head>
+<body style="margin:0;padding:0;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:#0f172a;padding:32px 36px;border-radius:8px 8px 0 0;">
+              <p style="margin:0 0 4px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;">Daily Digest</p>
+              <h1 style="margin:0 0 6px 0;font-size:22px;font-weight:700;color:#f8fafc;line-height:1.3;">
+                软件技术日报<br/>
+                <span style="font-size:15px;font-weight:400;color:#cbd5e1;">软件工程 &amp; 云原生</span>
+              </h1>
+              <p style="margin:0;font-size:13px;color:#64748b;">2026-06-10 &nbsp;|&nbsp; Thoughtworks · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR Tech</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="background:#f8fafc;padding:0 36px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;">
+
+              <!-- ── 1. Thoughtworks ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:28px 0 0 0;">
+                    <p style="margin:0 0 8px 0;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#64748b;">
+                      Thoughtworks Technology Radar
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#0f172a;line-height:1.5;">
+                      AI 加速软件复杂性，Technology Radar Vol.34 呼吁回归工程基础以应对「Cognitive Debt」
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#475569;line-height:1.8;">
+                      Thoughtworks 于 2026 年 4 月发布第 34 期技术雷达，核心主题聚焦于 AI 生成代码所带来的「认知债务」——即人与软件系统之间理解鸿沟的持续扩大。报告指出，AI 辅助开发正迫使工程师重新审视可靠性、可观测性等基础工程实践，而非盲目追逐新工具。此外，AI 工具在 2026 年初已从众多问题之一演变为最关键的可靠性挑战，同时技术评估难度也因工具爆炸式增长而显著上升。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                         style="display:inline-block;font-size:13px;font-weight:600;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                        阅读原文 →
+                      </a>
+                      &nbsp;&nbsp;
+                      <a href="https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf"
+                         style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                        下载 PDF
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 4px 0;" />
+
+              <!-- ── 2. SRE Weekly ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:24px 0 0 0;">
+                    <p style="margin:0 0 8px 0;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#64748b;">
+                      SRE Weekly · Issue #517
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#0f172a;line-height:1.5;">
+                      The Invisible OOMKill：为什么你的 Java Pod 在 Kubernetes 中不断重启？
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#475569;line-height:1.8;">
+                      本期重点文章深入剖析 Kubernetes 中 Java Pod 神秘重启的根本原因——OOMKill（内存溢出强制终止），揭示了 JVM 堆外内存使用与容器 <code style="background:#e2e8f0;padding:1px 4px;border-radius:3px;font-size:12px;">memory limit</code> 之间的隐藏冲突。此外，本期还探讨了 AI 工具在降低代码编写成本的同时，将使生产环境成为验证软件正确性的主要场所这一趋势，以及关于"英雄主义"在 Incident Response 中究竟是反模式还是值得培养的能力的争论。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-517/"
+                         style="display:inline-block;font-size:13px;font-weight:600;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                        阅读本期 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 4px 0;" />
+
+              <!-- ── 3. ByteByteGo ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:24px 0 0 0;">
+                    <p style="margin:0 0 8px 0;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#64748b;">
+                      ByteByteGo · Apr 30, 2026
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#0f172a;line-height:1.5;">
+                      A Beginner's Guide to Kubernetes — 用「承诺系统」重新理解 K8s 架构
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#475569;line-height:1.8;">
+                      ByteByteGo 以「承诺系统（System of Promises）」的视角重新诠释 Kubernetes 架构：每个组件都是一个小程序，负责兑现其对整个集群的承诺。文章通过直观图解和类比，系统梳理了 Pod、Deployment、Service、Controller 等核心概念的运作机制与相互关系，同时说明 Kubernetes 何时适用、何时应避免引入，为读者提供了务实的决策框架。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://blog.bytebytego.com/p/a-beginners-guide-to-kubernetes"
+                         style="display:inline-block;font-size:13px;font-weight:600;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 4px 0;" />
+
+              <!-- ── 4. TechWorld with Nana ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:24px 0 0 0;">
+                    <p style="margin:0 0 8px 0;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#64748b;">
+                      📹 视频 &nbsp;·&nbsp; TechWorld with Nana · Feb 2026
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#0f172a;line-height:1.5;">
+                      Why DevOps Demand Is Exploding — 解析推动需求激增的 5 大关键因素
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#475569;line-height:1.8;">
+                      Nana 在本视频中分析了推动 DevOps 工程师需求激增的五大关键因素，涵盖云原生采用加速、Platform Engineering 兴起、AI 与自动化工具整合、企业数字化转型提速以及 Kubernetes 运维复杂度上升。视频对正在或考虑转型 DevOps / Cloud Native 方向的工程师提供了市场洞察与职业路径参考，结合当前 AI Agent 大量涌入 DevOps 工具链的背景，分析尤为及时。
+                    </p>
+                    <p style="margin:0 0 20px 0;">
+                      <a href="https://www.youtube.com/watch?v=MFjDt6ONWzk"
+                         style="display:inline-block;font-size:13px;font-weight:600;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                        观看视频 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 4px 0;" />
+
+              <!-- ── 5. TLDR Tech ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:24px 0 0 0;">
+                    <p style="margin:0 0 8px 0;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#64748b;">
+                      TLDR DevOps · May 27, 2026
+                    </p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#0f172a;line-height:1.5;">
+                      Terraform AgentCore 实战：用基础设施即代码编排 AWS Bedrock Agent Runtime
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#475569;line-height:1.8;">
+                      本期 TLDR DevOps 重点介绍了 Amazon Bedrock AgentCore 与 Terraform 的集成实践，展示如何通过单一依赖图编排多个 Agent Runtime、Gateway、IAM 角色及内存策略，真正实现 AI 基础设施的 IaC 管理。此外还分析了从 Azure DevOps 迁移到 GitHub Enterprise 的时机风险：延迟迁移会因 Copilot Agents 的持续演进造成不断扩大的生产力差距，同时给出了混合策略与分阶段迁移的缓解建议。
+                    </p>
+                    <p style="margin:0 0 28px 0;">
+                      <a href="https://tldr.tech/devops/2026-05-27"
+                         style="display:inline-block;font-size:13px;font-weight:600;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                        阅读本期 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:20px 0 8px 0;text-align:center;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;">
+                本邮件由 Daily News Bot 自动生成 &nbsp;·&nbsp; 2026-06-10<br/>
+                内容来源：Thoughtworks Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR Tech
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
