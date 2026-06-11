@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-11</title>
+</head>
+<body style="margin:0;padding:0;background:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;font-size:15px;line-height:1.75;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:660px;">
+
+          <!-- ===== Header ===== -->
+          <tr>
+            <td style="padding-bottom:20px;border-bottom:3px solid #1a202c;">
+              <h1 style="margin:0;font-size:24px;color:#1a202c;font-weight:800;letter-spacing:-0.5px;">软件技术日报</h1>
+              <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">【软件工程 &amp; 云原生】&nbsp;&nbsp;|&nbsp;&nbsp;2026-06-11</p>
+            </td>
+          </tr>
+
+          <!-- ===== 1. Thoughtworks Technology Radar ===== -->
+          <tr>
+            <td style="padding:28px 0 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#9ca3af;">Thoughtworks Technology Radar</p>
+              <h2 style="margin:0 0 12px;font-size:18px;color:#1a202c;font-weight:700;line-height:1.4;">
+                Technology Radar Vol. 34：AI 正在重塑技术评估的方式
+              </h2>
+              <p style="margin:0 0 14px;color:#4b5563;">
+                Thoughtworks 2026 年上半年技术雷达（Vol. 34）发布，核心主题是 AI 对技术判断力的全面冲击。随着新术语涌现速度超过实践积累，语义漂移（semantic diffusion）令 Adopt / Trial / Assess / Hold 四象限的判断愈发困难。雷达指出，<strong>Context Engineering</strong>（上下文工程）已从提示词技巧演变为 AI 系统的基础架构关切，需将 context window 作为核心设计界面来处理，与 prompt engineering 有本质区别。与此同时，曾备受追捧的 <strong>LangGraph</strong> 被移出 Adopt 象限——其图形化架构在构建 Agentic 系统时并非总是最优选择，Pydantic AI 等框架正在崛起作为替代。
+              </p>
+              <a href="https://www.thoughtworks.com/radar" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #bfdbfe;border-radius:4px;padding:5px 12px;">→ 查看完整 Radar</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:24px 0;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;" /></td></tr>
+
+          <!-- ===== 2. SRE Weekly ===== -->
+          <tr>
+            <td style="padding-top:0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#9ca3af;">SRE Weekly</p>
+              <h2 style="margin:0 0 12px;font-size:18px;color:#1a202c;font-weight:700;line-height:1.4;">
+                SRE Weekly Issue #517：可靠性指标失真、AWS 28 小时宕机与英雄文化再思考
+              </h2>
+              <p style="margin:0 0 14px;color:#4b5563;">
+                本期深入探讨 AI 时代下 SRE 实践的转型挑战。文章 "Why Reliability Metrics Age Faster Than the Systems They Measure" 尖锐地问道：仪表盘长期绿色，究竟是系统真的健康，还是度量指标早已失真？同期复盘了 2026 年 5 月持续 28 小时的 AWS us-east-1 大规模中断事件，深入剖析故障根因及对基础设施架构设计的警示。此外，随着 AI 工具大幅降低代码编写与重写成本，有观点认为<strong>生产环境正在成为验证软件正确性的主要场所</strong>，这对传统 SRE 稳定性保障体系提出了新要求。
+              </p>
+              <a href="https://sreweekly.com/sre-weekly-issue-517/" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #bfdbfe;border-radius:4px;padding:5px 12px;">→ 阅读原文</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:24px 0;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;" /></td></tr>
+
+          <!-- ===== 3. ByteByteGo ===== -->
+          <tr>
+            <td style="padding-top:0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#9ca3af;">ByteByteGo</p>
+              <h2 style="margin:0 0 12px;font-size:18px;color:#1a202c;font-weight:700;line-height:1.4;">
+                Reddit 如何将 PB 级 Kafka 从 EC2 零停机迁移至 Kubernetes
+              </h2>
+              <p style="margin:0 0 14px;color:#4b5563;">
+                ByteByteGo 深度解析 Reddit 工程团队完成的一次史诗级基础设施迁移：将超过 <strong>500 个 Kafka broker、逾 1 PB 的生产数据</strong>从 Amazon EC2 迁移至 Kubernetes，全程零停机，且无需客户端应用修改任何连接配置。迁移前，Reddit 依赖 Terraform + Puppet + 自定义脚本管理 Kafka 集群，随规模扩大运维效率低下、变更风险高企。新方案以 Kubernetes 为底座，引入 <strong>Strimzi Operator</strong> 实现声明式 Kafka 管理，是大型互联网公司云原生化改造的教科书级案例。
+              </p>
+              <a href="https://blog.bytebytego.com/p/how-reddit-migrated-petabyte-scale" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #bfdbfe;border-radius:4px;padding:5px 12px;">→ 阅读原文</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:24px 0;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;" /></td></tr>
+
+          <!-- ===== 4. TechWorld with Nana ===== -->
+          <tr>
+            <td style="padding-top:0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#9ca3af;">TechWorld with Nana &nbsp;📹 视频</p>
+              <h2 style="margin:0 0 12px;font-size:18px;color:#1a202c;font-weight:700;line-height:1.4;">
+                📹 视频：Kubernetes Administrator 完整课程（免费下载）
+              </h2>
+              <p style="margin:0 0 14px;color:#4b5563;">
+                TechWorld with Nana（140 万订阅）近期发布了完整版 <strong>Kubernetes Administrator 课程</strong>（免费下载），系统覆盖从集群架构、节点管理、网络策略到存储与安全的全链路知识体系，适合备考 CKA（Certified Kubernetes Administrator）认证的工程师。该频道以每两周更新一期的节奏持续输出 DevOps &amp; 云原生实战内容，是 Kubernetes 入门与进阶的优质学习资源。
+              </p>
+              <a href="https://www.youtube.com/watch?v=eYPUUkFZ2hw" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #bfdbfe;border-radius:4px;padding:5px 12px;">→ 观看视频</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:24px 0;"><hr style="border:none;border-top:1px solid #e5e7eb;margin:0;" /></td></tr>
+
+          <!-- ===== 5. TLDR DevOps ===== -->
+          <tr>
+            <td style="padding-top:0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#9ca3af;">TLDR DevOps</p>
+              <h2 style="margin:0 0 12px;font-size:18px;color:#1a202c;font-weight:700;line-height:1.4;">
+                2026-05-27：Dropbox Nova、GitHub Enterprise 迁移与 Terraform AgentCore
+              </h2>
+              <p style="margin:0 0 14px;color:#4b5563;">
+                本期 TLDR DevOps 聚焦三大热点：① <strong>Dropbox Nova</strong>——延迟从 Azure DevOps 迁移至 GitHub Enterprise 的代价正在指数级放大，随着 Copilot Agent 与自主工作流的普及，拖延迁移意味着持续扩大的生产力差距；② 针对 GitHub CI/CD 环境的威胁建模，涵盖未授权访问、恶意流水线代码执行与数据泄露等风险的系统性防御方案；③ AWS Bedrock <strong>AgentCore + Terraform</strong> 集成实践，展示如何用 IaC 统一编排多 Agent Runtime、IAM、内存及策略执行，为 AI Agent 基础设施带来可审计性与可重复性。
+              </p>
+              <a href="https://tldr.tech/devops/2026-05-27" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #bfdbfe;border-radius:4px;padding:5px 12px;">→ 阅读原文</a>
+            </td>
+          </tr>
+
+          <!-- ===== Footer ===== -->
+          <tr>
+            <td style="padding:36px 0 0;">
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0 0 20px;" />
+              <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center;line-height:1.8;">
+                软件技术日报 · 自动生成 · 2026-06-11<br>
+                覆盖渠道：Thoughtworks Radar &nbsp;·&nbsp; SRE Weekly &nbsp;·&nbsp; ByteByteGo &nbsp;·&nbsp; TechWorld with Nana &nbsp;·&nbsp; TLDR DevOps
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
