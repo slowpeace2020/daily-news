@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-06-11</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1a1a1a;">
+  <div style="max-width:680px;margin:0 auto;padding:32px 24px;">
+
+    <!-- Header -->
+    <div style="border-bottom:3px solid #1a73e8;padding-bottom:20px;margin-bottom:32px;">
+      <h1 style="margin:0 0 6px 0;font-size:22px;font-weight:700;color:#1a1a1a;letter-spacing:-0.3px;">
+        软件技术日报
+      </h1>
+      <div style="font-size:14px;color:#555;font-weight:500;">
+        后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-06-11（周四）
+      </div>
+    </div>
+
+    <!-- 说明 -->
+    <p style="margin:0 0 28px 0;font-size:13px;color:#888;line-height:1.6;">
+      今日共收录 <strong>9</strong> 条精选内容，涵盖系统设计、Python 新版本、Go 泛型方法、API 工程实践等主题。
+      High Scalability、Brendan Gregg、Hussein Nasser、Dan Luu、Go by Example 过去 7 天无新内容，已跳过。
+    </p>
+
+    <!-- ── 1. Martin Fowler ── -->
+    <div style="border-left:4px solid #1a73e8;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Martin Fowler Blog
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Fragments: June 2, 2026 — AI Agent 设计原则与生产力度量反思
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Fowler 最新 Fragments 聚焦三个主题：（1）现有软件生产力指标普遍存在缺陷，测量"省了多少时间"而非"交付了多少价值"；
+        （2）Benedict Evans 以会计行业自动化为例指出，历史上的自动化浪潮从未消灭整个职业，只是重塑了工作内容；
+        （3）AI Agent 工程实践中，不应部署超出人类可审查能力的 Agent 数量，背景任务与需人工决策的复杂任务应严格分离。
+      </p>
+      <a href="https://martinfowler.com/fragments/2026-06-02.html" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 阅读原文
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 2. Netflix Tech Blog ── -->
+    <div style="border-left:4px solid #e50914;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Netflix Tech Blog
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Netflix 开源其 Unified Data Architecture（UDA），基于 W3C 标准（RDF 用于概念图建模，SHACL 用于验证），
+        实现领域模型"定义一次，多处复用"——同一个"电影"或"演员"概念，可自动转译为 GraphQL、Avro、Iceberg、Java 等不同 Schema，
+        消除跨系统的重复建模问题（即"Spider-Man 问题"）。内部工具 Sphere 基于该知识图谱，可通过自然语言概念自动生成 SQL 查询，无需手动 JOIN。
+      </p>
+      <a href="https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 阅读原文（2026-06-03）
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 3. Real Python ── -->
+    <div style="border-left:4px solid #306998;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Real Python
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Python 3.15 Hits Feature Freeze — June 2026 News
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Python 3.15.0b1 于 5 月 7 日发布，正式进入 Feature Freeze 阶段。
+        锁定的核心特性包括：显式懒加载 import（PEP 810，加速启动）、内建 <code style="background:#f5f5f5;padding:1px 4px;border-radius:3px;font-size:13px;">frozendict</code>（PEP 814，不可变映射）、
+        <code style="background:#f5f5f5;padding:1px 4px;border-radius:3px;font-size:13px;">sentinel</code> 内建类型（PEP 661）、自由线程构建的稳定 ABI（PEP 803），
+        以及 JIT 编译器在 x86-64 Linux 上 8–9% 的几何均值性能提升。3.15 正式版预计 2026 年 10 月发布。
+      </p>
+      <a href="https://realpython.com/python-news-june-2026/" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 阅读原文
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 4. Python Weekly ── -->
+    <div style="border-left:4px solid #306998;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Python Weekly
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Issue June 4, 2026 — Agent Hooks 作为 AI 行为确定性控制层
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        本期重点关注 Agent Hooks 这一新兴模式：通过在 AI Agent 执行流程中注入可编程钩子（hooks），
+        工程师可对 Agent 行为施加确定性约束，避免"幻觉"决策造成不可逆操作。
+        此外收录了 PyCon US 2026（长滩，5 月 13–19 日）的精彩演讲摘要，以及 Jazzband 组织宣布逐步退场的社区新闻。
+      </p>
+      <a href="https://www.pythonweekly.com/" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 访问 Python Weekly
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 5. The Go Blog ── -->
+    <div style="border-left:4px solid #00add8;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        The Go Blog
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Introducing the pkg.go.dev API（2026-05-21）
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Go 官方为 pkg.go.dev 推出了全新的编程式 API，开发者现在可直接通过 HTTP 接口检索 Go 包和 Module 的元数据，
+        无需再手动爬取网页或依赖非官方接口。该 API 支持查询包文档、版本历史、依赖图谱等信息，
+        可方便地集成到 CI/CD 流水线、IDE 插件或内部工具链中，为 Go 生态工具建设提供标准化数据来源。
+      </p>
+      <a href="https://go.dev/blog/pkg-go-dev-api" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 阅读原文
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 6. Golang Weekly ── -->
+    <div style="border-left:4px solid #00add8;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Golang Weekly
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Issue #603: Generic Methods Are a Go for Go 1.27（2026-05-29）
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Go 1.27 将以 <code style="background:#f5f5f5;padding:1px 4px;border-radius:3px;font-size:13px;">GOEXPERIMENT</code> 形式引入 Generic Methods——
+        方法声明现在可以拥有自己的类型参数，而不仅限于在类型级别定义泛型。
+        这填补了 Go 泛型体系中最重要的空白之一：可以在特定数据类型的命名空间内定义泛型函数，
+        而无需将其提升为包级函数。同期还有 GoReleaser 2.16、chi 5.3、wazero 1.12 等工具链更新。
+      </p>
+      <a href="https://golangweekly.com/issues/603" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 阅读原文
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 7. Arjan Codes ── -->
+    <div style="border-left:4px solid #ff6b35;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Arjan Codes · YouTube 📹 视频
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Your API Can't Handle Real-World Integrations（2026-05-01）
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Arjan 深入探讨 API 设计在真实集成场景中的常见失败模式：缺乏版本策略导致客户端破坏性变更、
+        错误码不一致造成上游解析困难、未考虑幂等性引发重试风暴等。
+        视频以 Python 实战演示如何在 API 层面系统性地应对这些问题，适合所有需要设计对外接口的后端工程师。
+      </p>
+      <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 观看视频
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 8. Anthony GG ── -->
+    <div style="border-left:4px solid #ff6b35;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Anthony GG · YouTube 📹 视频
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Go (Golang) vs TypeScript Performance Benchmark (2026)
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Anthony 在 2026 年对 Go 和 TypeScript（Node.js 运行时）进行了系统性性能基准测试，
+        涵盖 HTTP 吞吐量、内存占用、并发处理能力等维度。测试结果显示 Go 在高并发场景下仍保持明显优势，
+        而 TypeScript 在开发效率和生态丰富度方面的吸引力持续增强。视频同时讨论了何时应该选择 Go、何时 TypeScript 更合适。
+      </p>
+      <a href="https://www.youtube.com/watch?v=3-XHVFVX1io" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 观看视频
+      </a>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e8e8;margin:0 0 28px 0;">
+
+    <!-- ── 9. Fireship ── -->
+    <div style="border-left:4px solid #ff6b35;padding-left:16px;margin-bottom:28px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">
+        Fireship · YouTube 📹 视频
+      </div>
+      <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        Google Just Casually Disrupted the Open-Source AI Narrative…（2026-04-08）
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;color:#333;line-height:1.7;">
+        Fireship 以其一贯的快节奏风格解读 Google 近期在开源 AI 领域的一系列动作：
+        开放关键模型权重、与 HuggingFace 深度合作、以及在 Gemini 基础上构建开放生态的战略意图。
+        视频分析了这对 OpenAI 闭源路线的竞争压力，以及对后端工程师选型 AI 基础设施的实际影响。
+      </p>
+      <a href="https://www.youtube.com/watch?v=-01ZCTt-CJw" style="font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">
+        → 观看视频
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div style="border-top:1px solid #e8e8e8;padding-top:20px;margin-top:8px;">
+      <p style="margin:0;font-size:12px;color:#aaa;line-height:1.6;">
+        本邮件由 Daily News Bot 自动整理生成 · 2026-06-11<br>
+        内容来源：High Scalability · martinfowler.com · Netflix Tech Blog · Real Python · Python Weekly ·
+        The Go Blog · Golang Weekly · Arjan Codes · Anthony GG · Fireship<br>
+        如有渠道推荐或内容反馈，请回复本邮件。
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
