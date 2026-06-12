@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 & Python & Go】- 2026-06-12</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f6f8;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="680" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;border-radius:8px 8px 0 0;padding:28px 36px;">
+              <p style="margin:0;font-size:12px;color:#8899bb;letter-spacing:1px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:8px 0 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报【后端开发 &amp; Python &amp; Go】
+              </h1>
+              <p style="margin:10px 0 0;font-size:14px;color:#aabbd0;">2026 年 6 月 12 日 &nbsp;·&nbsp; 精选 11 条技术动态</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:28px 36px;">
+
+              <!-- ===== High Scalability ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">HIGH SCALABILITY</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-03-16</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://highscalability.com/brief-history-of-scaling-uber/" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Brief History of Scaling Uber</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Uber 工程高级总监 Josh Clemm 复盘了从 2008 年巴黎街头一个打不到车的夜晚到今天覆盖全球 70 个国家、10,500 座城市的完整扩展史。文章详述了从最初的 LAMP 单体因并发问题（双重派车）被迫转向微服务，到引入 Ringpop gossip 协议实现地理分片、Cadence 工作流框架处理复杂状态，以及 Presto + Pinot 支撑分析查询的完整技术演进路径。对研究大规模系统架构演进的工程师极具参考价值。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://highscalability.com/brief-history-of-scaling-uber/" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Martin Fowler ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">MARTIN FOWLER BLOG</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-06-02</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://martinfowler.com/fragments/2026-06-02.html" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Fragments: June 2 — AI 时代的技术债与安全漏洞激增</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Fowler 在最新 Fragments 中指出，2025 年全年平均每月仅修复 17–31 个安全漏洞，而 2026 年 4 月单月已高达 423 个，折射出 LLM 生成代码快速扩张带来的安全隐患。他还讨论了 AI 生成代码作为后续模型训练上下文所引发的技术债复利效应，以及 GPTZero 披露的 Ernst &amp; Young Canada 网络威胁报告中逾半数引用为幻觉这一典型案例。提醒工程团队在拥抱 AI 辅助开发的同时需加强代码审查与安全审计。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://martinfowler.com/fragments/2026-06-02.html" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Netflix Tech Blog ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">NETFLIX TECH BLOG</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-05-08</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Scaling ArchUnit with Nebula ArchRules</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Netflix 拥有数以万计的 Java 微服务仓库，仅靠单仓库的 ArchUnit 架构测试工具无法满足规模化治理需求。他们通过 Nebula ArchRules Gradle 插件，将可复用的架构规则打包为 OSS 或私有库并跨仓库统一应用，从而快速识别技术债集中区域。文章还提及未来计划整合 OpenRewrite 做确定性自动修复，以及探索 LLM 进行非确定性修复，是大型工程组织推行架构一致性治理的重要参考。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Real Python ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">REAL PYTHON</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-06 初</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://realpython.com/python-news-june-2026/" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Python 3.15 Hits Feature Freeze — June 2026 News</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Python 3.15 于 5 月 7 日正式进入 Feature Freeze，锁定功能清单包括：PEP 810 显式惰性导入（加速启动）、PEP 814 内置 frozendict（不可变映射）、PEP 661 sentinel 内置值、自由线程构建的稳定 ABI（PEP 803）、基于采样的新性能分析器（PEP 799），以及 JIT 编译器在 x86-64 Linux 上实测提升 8–9%。正式版计划 2026 年 10 月 1 日发布，当前 beta 1 已可供测试。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://realpython.com/python-news-june-2026/" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Python Weekly ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">PYTHON WEEKLY</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">Issue 746 · 2026-05-21</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Python Weekly Issue 746 — Python 生态本周精选</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      本期 Python Weekly 涵盖 Python 生态最新动态，包括 Python 3.15 beta 1 发布、PyCon US 2026（5 月 13–19 日，加州 Long Beach）精彩回顾，以及 EuroPython 2026（7 月 13–19 日，克拉科夫）正在招募志愿者的消息。此外收录了多篇关于异步编程最佳实践、类型系统新用法和 AI 工具链集成的精选文章，适合关注 Python 社区动态的开发者快速浏览。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://www.pythonweekly.com/p/python-weekly-issue-746-may-21-2026" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== The Go Blog ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">THE GO BLOG</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-02-10</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://go.dev/blog/go1.26" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Go 1.26 正式发布 — Green Tea GC 默认启用</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Go 1.26 带来多项重要改进：语言层面，内置 <code style="background:#f5f5f5;padding:1px 4px;border-radius:3px;">new</code> 函数现支持表达式指定初始值，泛型类型支持在自身类型参数列表中自引用；性能层面，实验性 Green Tea 垃圾收集器正式默认启用，cgo 调用基础开销降低约 30%，编译器可在更多场景将 slice 后备存储分配到栈上。工具链方面，<code style="background:#f5f5f5;padding:1px 4px;border-radius:3px;">go fix</code> 命令基于 analysis framework 完全重写并内置数十个"现代化" fix 规则。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://go.dev/blog/go1.26" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Golang Weekly ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">GOLANG WEEKLY</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">Issue 603 · 2026-05-29</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://golangweekly.com/issues/603" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Generic Methods Are a-Go for Go 1.27</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Go 1.27 将以 <code style="background:#f5f5f5;padding:1px 4px;border-radius:3px;">GOEXPERIMENT</code> 形式落地泛型方法（generic methods）——方法声明可拥有自己的类型参数，填补了 Go 泛型体系长期以来最显著的空缺。此前只能在包级函数上声明额外类型参数，今后可将泛型逻辑直接定义在特定类型的命名空间内。本期还收录了 Cilium 团队在 2026 年仍选择 vendor 所有 Go 模块的深度分析，以及 pkg.go.dev 官方 API 正式开放的相关资讯。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://golangweekly.com/issues/603" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Arjan Codes ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#fce8e6;color:#c5221f;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">📹 ARJAN CODES</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-05-01 · 视频</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Your API Can't Handle Real-World Integrations</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Arjan 剖析了一个在教科书中表现完美、但在真实集成场景中频繁崩溃的 API 设计困境——网络超时、幂等性缺失、回调竞态与版本漂移等问题在单测中完全隐形。视频通过具体 Python 代码示例，演示如何在 API 层引入重试策略、幂等键、graceful degradation 和契约测试，使接口具备生产级健壮性。适合正在设计或维护对外服务接口的后端工程师。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="font-size:13px;color:#1a73e8;text-decoration:none;">观看视频 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Fireship ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#fce8e6;color:#c5221f;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">📹 FIRESHIP</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-01-14 · 视频</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://www.youtube.com/watch?v=EKOU3JWDNLI" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">The Unhinged World of Tech in 2026...</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Fireship 年度科技趋势大盘点，以一贯的高密度幽默风格梳理了 2026 年开发者需要关注的 10 大方向：开发者就业市场变化、AI 泡沫动态、机器人技术突破、可穿戴 AI、AR/VR、芯片主导权争夺、核电与数据中心、量子计算、数字威权主义，以及 JavaScript 生态走向。视频时长 9 分钟，信息密度极高，是快速同步技术格局认知的优质内容。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://www.youtube.com/watch?v=EKOU3JWDNLI" style="font-size:13px;color:#1a73e8;text-decoration:none;">观看视频 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Brendan Gregg ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">BRENDAN GREGG BLOG</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-02-07</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">Why I Joined OpenAI</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Linux 性能工程领域权威 Brendan Gregg 宣布加入 OpenAI，主攻 ChatGPT 性能优化。他在文中将 AI 数据中心的惊人能耗成本定位为"为地球省钱"的性能工程使命，并分享了理发师 Mia 频繁使用 ChatGPT 这一日常细节让他意识到 AI 已成为普通人的必需品。对于关注系统性能、eBPF/BPF 及 AI 基础设施的工程师而言，这篇文章兼具技术洞察与行业信号价值。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:24px;">
+                    <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="font-size:13px;color:#1a73e8;text-decoration:none;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px;">
+
+              <!-- ===== Hussein Nasser ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <span style="display:inline-block;background-color:#fce8e6;color:#c5221f;font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">📹 HUSSEIN NASSER</span>
+                    <span style="font-size:11px;color:#999;margin-left:10px;">2026-01-11 · 视频</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:6px;">
+                    <a href="https://www.youtube.com/watch?v=1nUnRgawAC8" style="font-size:16px;font-weight:700;color:#1a1a2e;text-decoration:none;">The Core of Backend System Design</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;">
+                      Hussein Nasser 系统梳理了后端系统设计的核心脉络：从网络协议（TCP/UDP、HTTP/1.1 vs HTTP/2 vs HTTP/3）、代理与负载均衡、数据库选型与分片策略，到消息队列与异步通信模式。视频以"为什么需要这样设计"为出发点逐层展开，而非仅罗列技术栈，特别适合正在构建服务端基础知识体系或准备系统设计面试的工程师。
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:0;">
+                    <a href="https://www.youtube.com/watch?v=1nUnRgawAC8" style="font-size:13px;color:#1a73e8;text-decoration:none;">观看视频 →</a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f8f9fa;border-radius:0 0 8px 8px;padding:20px 36px;border-top:1px solid #eeeeee;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0;font-size:12px;color:#999999;line-height:1.6;">
+                      📌 <strong>跳过的渠道：</strong>Dan Luu（2026 年暂无新文章）· Go by Example（静态参考站，无时效内容）· Anthony GG（暂无近期新视频）
+                    </p>
+                    <p style="margin:8px 0 0;font-size:11px;color:#bbbbbb;">
+                      由 Daily News Bot 自动生成 · 2026-06-12 · 内容仅供参考
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
