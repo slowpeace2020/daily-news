@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-12</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8;padding:32px 0;">
+    <tr>
+      <td align="center">
+        <table width="640" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 36px;">
+              <p style="margin:0;font-size:12px;color:#8892b0;letter-spacing:1px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:6px 0 0;font-size:22px;font-weight:700;color:#e2e8f0;line-height:1.3;">
+                软件技术日报【软件工程 &amp; 云原生】
+              </h1>
+              <p style="margin:8px 0 0;font-size:14px;color:#64748b;">2026 年 06 月 12 日</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:28px 36px;">
+
+              <!-- ── 1. Thoughtworks Technology Radar ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#6366f1;letter-spacing:0.8px;text-transform:uppercase;">
+                      Thoughtworks Technology Radar
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                         style="color:#2563eb;text-decoration:none;">
+                        AI 认知债务与工程基础回归 — Technology Radar Vol.34（April 2026）
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#475569;">
+                      Thoughtworks 最新一期雷达（Vol.34）指出，AI 正在加速软件复杂性增长，提倡回归工程基础以应对"认知债务（cognitive debt）"。
+                      在云原生领域，<strong>Kueue</strong> 作为新条目亮相——这是一个 Kubernetes 原生的 Job 队列控制器，通过配额管理、任务优先级与拓扑感知调度来优化 ML 工作负载的资源利用，与 cluster-autoscaler 和 kube-scheduler 协同运作而非替代。
+                      此外，<strong>Apache APISIX</strong> 因支持 Kubernetes Gateway API 被推荐为传统 Nginx Ingress Controller 的替代方案。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                         style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:underline;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;">
+                <tr><td style="border-top:1px solid #e2e8f0;"></td></tr>
+              </table>
+
+              <!-- ── 2. SRE Weekly ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#6366f1;letter-spacing:0.8px;text-transform:uppercase;">
+                      SRE Weekly
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-516/"
+                         style="color:#2563eb;text-decoration:none;">
+                        Issue #516 — 当可观测性系统本身成为故障点
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#475569;">
+                      本期核心话题：当你的 observability 堆栈依赖于同一批正在故障的系统时，dashboard 变暗、alert 停止触发，本该指引恢复的工具反而成为故障的一部分——这是 SRE 实践中常被忽视的高危场景。
+                      此外收录了对 DORA 指标失真的深度剖析：AI 正在使 DORA 数据更难解读，因为它度量的是流经管道的工作量，而非可解释性。
+                      Netflix live 视频交付的可靠性实践也在本期亮相，展示了其在高并发场景下应对故障的工程设计。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://sreweekly.com/sre-weekly-issue-516/"
+                         style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:underline;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;">
+                <tr><td style="border-top:1px solid #e2e8f0;"></td></tr>
+              </table>
+
+              <!-- ── 3. ByteByteGo ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#6366f1;letter-spacing:0.8px;text-transform:uppercase;">
+                      ByteByteGo
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from"
+                         style="color:#2563eb;text-decoration:none;">
+                        Must-Know Deployment Strategies: From Big-Bang to Progressive Delivery
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#475569;">
+                      ByteByteGo 系统梳理了当今生产环境中的主流部署策略：从风险最高的 Big-Bang 全量发布，到 Blue-Green 双环境切换、Canary 灰度发布、Feature Flag，直至渐进式交付（Progressive Delivery）。
+                      文章逐一分析每种策略的工作原理、成本与适用场景，是在 Kubernetes 上规划发布流程、降低变更风险的实用参考。
+                      特别指出自动化测试与快速反馈循环是所有高级策略的共同基础。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from"
+                         style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:underline;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;">
+                <tr><td style="border-top:1px solid #e2e8f0;"></td></tr>
+              </table>
+
+              <!-- ── 4. TechWorld with Nana ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#6366f1;letter-spacing:0.8px;text-transform:uppercase;">
+                      TechWorld with Nana &nbsp;📹 视频
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=MyEtxIWS-GQ"
+                         style="color:#2563eb;text-decoration:none;">
+                        📹 Kubernetes Has Just Changed FOREVER (what you must know)
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#475569;">
+                      Nana 在这期视频中深度解析 2026 年 Kubernetes 的重大演进：新的 <strong>Gateway API</strong> 正式接替 Ingress 成为标准网络接口，AI 工作负载催生了 <strong>Agent Sandbox</strong> 机制用于隔离长期运行的自治任务，平台工程（Platform Engineering）的兴起让 Kubernetes 成为企业内部开发者平台的底座。
+                      视频适合希望快速掌握 Kubernetes 最新趋势和未来方向的工程师与架构师。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.youtube.com/watch?v=MyEtxIWS-GQ"
+                         style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:underline;">
+                        观看视频 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;">
+                <tr><td style="border-top:1px solid #e2e8f0;"></td></tr>
+              </table>
+
+              <!-- ── 5. TLDR Tech ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#6366f1;letter-spacing:0.8px;text-transform:uppercase;">
+                      TLDR Tech / DevOps
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      <a href="https://tldr.tech/devops/2026-05-27"
+                         style="color:#2563eb;text-decoration:none;">
+                        Dropbox Nova：在隔离容器环境中大规模运行 AI Coding Agent
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#475569;">
+                      TLDR DevOps 报道了 Dropbox 推出的内部云平台 <strong>Nova</strong>，专为在工程工作流中大规模运行 Coding Agent 而设计。
+                      Nova 允许工程师并行发起多个 AI 编程会话，每个 Agent 运行在独立的隔离容器环境中，兼顾了效率与安全性，是 AI Agent 与 DevOps 基础设施深度融合的典型实践。
+                      同期还报道了从 Azure DevOps 向 GitHub Enterprise 迁移的复利生产力优势，以及 <strong>Terraform AgentCore</strong> 在基础设施自动化领域的新进展。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://tldr.tech/devops/2026-05-27"
+                         style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:underline;">
+                        阅读原文 →
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f8fafc;border-top:1px solid #e2e8f0;padding:20px 36px;">
+              <p style="margin:0;font-size:12px;color:#94a3b8;text-align:center;">
+                软件技术日报 · 由 Daily News Bot 自动整理 · 2026-06-12
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
