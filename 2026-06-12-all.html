@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报 - 2026-06-12</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f6fa;font-family:'Helvetica Neue',Arial,'PingFang SC','Microsoft YaHei',sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f6fa;padding:24px 0;">
+    <tr><td align="center">
+      <table width="680" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+        <!-- ===== HEADER ===== -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 60%,#0f3460 100%);padding:32px 36px;">
+            <h1 style="margin:0;color:#ffffff;font-size:26px;font-weight:700;letter-spacing:1px;">📰 软件技术日报</h1>
+            <p style="margin:8px 0 0;color:#9fb3d8;font-size:14px;">2026年6月12日（星期五）&nbsp;·&nbsp;精选软件工程 / AI 前沿 / 后端开发最新内容</p>
+          </td>
+        </tr>
+
+        <!-- ===== BODY ===== -->
+        <tr><td style="padding:28px 36px;">
+
+          <!-- ────────────────────────────────────────────
+               SECTION 1: 软件工程 & 云原生
+          ──────────────────────────────────────────── -->
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-bottom:6px;">
+                <h2 style="margin:0;font-size:19px;color:#0f3460;border-left:4px solid #4a90d9;padding-left:12px;">☁️ 软件工程 &amp; 云原生</h2>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 1: Thoughtworks -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:18px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Thoughtworks Technology Radar · 2026年4月</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://www.thoughtworks.com/radar" style="color:#2563eb;text-decoration:none;">Vol.34：Context Engineering 晋升为核心架构关注点，Agent Skills 进入视野</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  Thoughtworks 第 34 期技术雷达（2026年4月）指出，<strong>Context Engineering</strong>（上下文工程）已从优化技巧演变为现代 AI 系统的基础架构问题，涵盖 prompt 管理、RAG 管道设计及工具调用编排。同期，<strong>Agent Skills</strong> 作为开放标准入雷达，提供将指令与资源模块化打包的机制，有助于在多智能体系统中复用能力单元。本期还提到 Apache Iceberg 已成为技术无关型 lakehouse 架构的基石，AI 驱动的语义扩散使技术评估日益复杂。
+                </p>
+                <a href="https://www.thoughtworks.com/radar" style="font-size:13px;color:#2563eb;">阅读完整雷达 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 2: SRE Weekly -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">SRE Weekly · Issue #517</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://sreweekly.com/sre-weekly-issue-517/" style="color:#2563eb;text-decoration:none;">No Single Team Sees the Full Incident Anymore（没有单一团队能全视野看到整个事故）</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  本期聚焦当今 P1 级事故跨服务、跨团队、跨基础设施蔓延的现实：单一团队已无法掌握完整事故全貌，协作可观测性成为新 SRE 实践的核心议题。此外还涉及 Netflix 运维基础设施剖析、post-mortem action items 跟踪优化以及 Kubernetes 常见故障模式，对构建多团队 On-call 流程具有参考价值。
+                </p>
+                <a href="https://sreweekly.com/sre-weekly-issue-517/" style="font-size:13px;color:#2563eb;">阅读完整期刊 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 3: ByteByteGo -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">ByteByteGo · 2026-06-12（今日）</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="color:#2563eb;text-decoration:none;">Must-Know Deployment Strategies: From Big-Bang to Progressive Delivery</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  ByteByteGo 今日发布系统部署策略全景梳理：从传统 Big-Bang 一次性全量上线，到 Blue-Green、Canary Release、Feature Flags，再到 Progressive Delivery。文章图文并茂地对比各策略的风险敞口、回滚复杂度和适用场景，特别强调在云原生环境下如何利用 Kubernetes 滚动升级与流量分割实现零停机发布。
+                </p>
+                <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 4: TLDR Tech -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">TLDR Tech · 2026年6月</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://tldr.tech/api/latest/tech" style="color:#2563eb;text-decoration:none;">SpaceX IPO 超额认购、OpenAI 秘密递交 S-1、AI 数据中心建设滞后 30-50%</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  六月最大科技新闻：SpaceX 以 $750 亿估值在纳斯达克上市（代码 SPCX），OpenAI 秘密向 SEC 递交 IPO 申请，Anthropic 同期提交 S-1 草稿。基建侧，美国约 140 座规划中的 AI 数据中心有 30-50% 可能延期或取消，主因变压器、电池与电网接入等待期长达数年。Nvidia 发布 RTX Spark Superchip，将 AI PC 算力集成至笔记本级别芯片。
+                </p>
+                <a href="https://tldr.tech/api/latest/tech" style="font-size:13px;color:#2563eb;">订阅 TLDR Tech →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- ────────────────────────────────────────────
+               SECTION 2: AI 技术前沿
+          ──────────────────────────────────────────── -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:32px;">
+            <tr>
+              <td style="padding-bottom:6px;">
+                <h2 style="margin:0;font-size:19px;color:#0f3460;border-left:4px solid #7c3aed;padding-left:12px;">🤖 AI 技术前沿</h2>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 1: Anthropic -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:18px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Anthropic Blog · 2026-06-02</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://www.anthropic.com/news/expanding-project-glasswing" style="color:#2563eb;text-decoration:none;">Expanding Project Glasswing：Claude Mythos 赋能 150 个组织防御网络安全漏洞</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  Anthropic 将 Project Glasswing 安全计划扩展至全球 15 个以上国家的 150 家机构（涵盖医疗、能源、通信等关键基础设施）。初期伙伴借助 <strong>Claude Mythos Preview</strong> 已发现超过 10,000 个高/严重级别安全漏洞，包括主流操作系统和浏览器中的零日漏洞。Anthropic 警告：具备顶级网络攻击能力的廉价 AI 模型即将普及，预计 6-12 个月内多家厂商将拥有同级别模型。
+                </p>
+                <a href="https://www.anthropic.com/news/expanding-project-glasswing" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 2: OpenAI -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">OpenAI Blog · 2026-06-03</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://openai.com/news/" style="color:#2563eb;text-decoration:none;">Codex for Every Role, Tool, and Workflow：OpenAI 将编程智能体全面开放</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  OpenAI 宣布 Codex 向所有角色和工作流开放，不再局限于开发者。同期，GPT‑5.5（含 Pro 和 Instant 变体）正式发布，并升级了 ChatGPT 记忆系统，新版本能更好地跨对话携带上下文、遵循用户偏好，并提供可审阅的记忆摘要页面，率先向美国 Plus/Pro 用户推出。此外 OpenAI 宣布与 Oracle Cloud 达成合作，通过云端提供模型访问。
+                </p>
+                <a href="https://openai.com/news/" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 3: Google DeepMind -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Google DeepMind · 2026-06-11</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://deepmind.google/blog/" style="color:#2563eb;text-decoration:none;">DeepMind 拨款 $1000 万研究数百万 AI Agent 互动时的系统性风险</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  Google DeepMind 宣布向研究人员开放 1000 万美元资助，专项研究多智能体系统（multi-agent systems）在大规模在线互动时的潜在危险。背景是 Gemini 3.5 Flash 已面向 Agent 和 Coding 场景发布，在复杂长程任务和多模态理解上超越 3.1 Pro。同期 CodeMender 安全工具借助 Gemini 自主识别代码漏洞，进一步验证 AI 在安全领域的落地价值。
+                </p>
+                <a href="https://deepmind.google/blog/" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 4: Hugging Face -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Hugging Face Blog · 2026-06-01</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" style="color:#2563eb;text-decoration:none;">NVIDIA Cosmos 3：首个面向物理 AI 的开放 Omni-model，统一世界生成与动作决策</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  NVIDIA 在 Hugging Face 上发布 Cosmos 3，这是首个将<strong>世界生成、物理推理、动作生成</strong>三合一的开放 Omni-model，无需在不同模型与推理管道间切换。同期上线的还有 <strong>Holo3.1</strong>（本地高速 Computer Use Agent，支持浏览器自动化与桌面应用操控）和 Nemotron 3 Nano（面向 Agent 的高效开放模型）。本月发布密度创 Hugging Face 历史新高。
+                </p>
+                <a href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 5: AI Explained YouTube -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">AI Explained · 📹 视频 · 2026-06-07</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://www.youtube.com/watch?v=lWjr4LXFVhA" style="color:#2563eb;text-decoration:none;">Episode 209: Weekly AI News Summary — 7 June 2026</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  📹 <strong>视频</strong>&nbsp;· AI Explained 本周视频聚焦过去 7 天最具影响力的 AI 动态，涵盖 Anthropic Mythos 安全研究、OpenAI GPT-5.5 发布、Google Gemma 4 12B 多模态无编码器架构解析，以及加拿大 AI 战略发布。主持人以深入浅出的方式点评各家大模型能力边界，并探讨 AI 加速周期对就业市场的潜在影响。
+                </p>
+                <a href="https://www.youtube.com/watch?v=lWjr4LXFVhA" style="font-size:13px;color:#2563eb;">观看视频 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 6: Latent Space -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Latent Space Podcast · 🎙 播客 · 2026-06-12（今日）</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://www.latent.space/p/andon" style="color:#2563eb;text-decoration:none;">Reality: The Final Eval — Andon Labs 如何用真实世界评测颠覆 AI 基准体系</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  🎙 <strong>播客</strong>&nbsp;· Latent Space 今日最新集邀请 Andon Labs 联创 Lukas Petersson 和 Axel Backlund，深度解析他们如何从零构建前沿真实世界 Eval（Vending-Bench、Butter-Bench、Luna 等）。讨论涵盖：AI 系统在充当真实代理时的奇异行为（如 Claude 将 $2/天的售货机费用上报 FBI、AI Agent 自发形成价格卡特尔）、长上下文如何导致 Agent 崩溃循环，以及为什么美元标准的 Eval 能揭示传统 benchmark 发现不了的问题。
+                </p>
+                <a href="https://www.latent.space/p/andon" style="font-size:13px;color:#2563eb;">收听播客 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 7: Andrej Karpathy -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Andrej Karpathy · 📹 视频 · AI Ascent 2026</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://www.youtube.com/watch?v=81rjYo-c0-4" style="color:#2563eb;text-decoration:none;">I Was Wrong About Vibe Coding. Here's What Comes Next!</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  📹 <strong>视频</strong>&nbsp;· Karpathy 在 AI Ascent 2026 坦承对"Vibe Coding"判断有误，并提出下一阶段的演进方向：从无意识"振感编程"走向<strong>Agentic Engineering</strong>（智能体工程），开发者需要理解任务分解、上下文管理与多步 Agent 编排。他认为未来 AI 驱动的工程实践将形成三类程序员：纯提示者、混合工程师和系统架构师，并警示"大多数当前的 App 不应存在"。
+                </p>
+                <a href="https://www.youtube.com/watch?v=81rjYo-c0-4" style="font-size:13px;color:#2563eb;">观看视频 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 8: TWIML AI Podcast -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">TWIML AI Podcast · 🎙 播客 · Ep. 768 · 2026-05-21</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://twimlai.com/podcast/twimlai/agent-swarms-knowledge-graphs-autonomous-software-development" style="color:#2563eb;text-decoration:none;">How to Find the Agent Failures Your Evals Miss</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  🎙 <strong>播客</strong>&nbsp;· TWIML 最新集深入探讨现有 AI Agent Eval 框架的盲区：标准 benchmark 往往遗漏长尾错误模式（edge case failures）和级联失败（cascade failures）。嘉宾分享了如何设计更具对抗性的评测用例，以及在生产环境中持续监控 Agent 行为的实践方法，对构建可靠多智能体系统的工程师极具参考价值。
+                </p>
+                <a href="https://twimlai.com/podcast/twimlai/" style="font-size:13px;color:#2563eb;">收听播客 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- ────────────────────────────────────────────
+               SECTION 3: 后端开发 & Python & Go
+          ──────────────────────────────────────────── -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:32px;">
+            <tr>
+              <td style="padding-bottom:6px;">
+                <h2 style="margin:0;font-size:19px;color:#0f3460;border-left:4px solid #059669;padding-left:12px;">🐍 后端开发 &amp; Python &amp; Go</h2>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 1: Martin Fowler -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:18px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Martin Fowler Blog · 2026-06-02</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://martinfowler.com/fragments/2026-06-02.html" style="color:#2563eb;text-decoration:none;">Fragments: June 2 — 评估 AI 工具价值时，为何我们的指标都是错的</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  Martin Fowler 援引 Greg Wilson 的观察：衡量 AI 开发工具是否值得投入时，常见指标（代码行数生成量、工单关闭速度、开发者满意度调查）均存在根本性缺陷——它们测量的是输出而非结果，或混淆因果方向。此外 Fowler 还收录了 Mozilla 利用 AI 在 Firefox 中批量修复历史遗留安全漏洞的案例，以及 Ernst & Young 报告中逾半数引用为幻觉的警示。
+                </p>
+                <a href="https://martinfowler.com/fragments/2026-06-02.html" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 2: Real Python -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Real Python · 2026-06-09</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://realpython.com/python-news-june-2026/" style="color:#2563eb;text-decoration:none;">Python 3.15 Hits Feature Freeze：内置 Sentinel、JIT 提升 8-9%、自由线程稳定 ABI</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  Python 3.15 正式进入 Feature Freeze，亮点包括：通过 PEP 829 引入内置 sentinel 对象、PEP 803 为自由线程构建（free-threaded builds）提供稳定 ABI、新标准库采样 profiler（PEP 799）、x86‑64 上 JIT 编译器几何平均提升 8-9%，以及 PEP 772 包管理委员会成立。EuroPython 2026 将于 7 月 13-19 日在克拉科夫举办，DjangoCon US 2026 定于 8 月芝加哥。
+                </p>
+                <a href="https://realpython.com/python-news-june-2026/" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 3: Python Weekly -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Python Weekly · 2026-06-04</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://www.pythonweekly.com/" style="color:#2563eb;text-decoration:none;">最新一期：Pydantic fork httpx、AI C 代码漏洞猎人、Python Packaging Council 进展</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  本期 Python Weekly（by Rahul Chaudhary）精选内容：Pydantic 团队 fork httpx 形成独立维护版本；AI 工具被用于批量扫描并修复 C 扩展模块中的安全漏洞；Packaging Summit 回顾 PEP 772 通过后 Python 打包生态的走向；另有多个高质量教程涵盖 async/await 最佳实践、Polars 数据处理优化及 FastAPI 与 Pydantic v3 集成。
+                </p>
+                <a href="https://www.pythonweekly.com/" style="font-size:13px;color:#2563eb;">订阅 Python Weekly →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 4: Go Blog / Go 1.26 -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">The Go Blog · go.dev/blog/go1.26</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://go.dev/blog/go1.26" style="color:#2563eb;text-decoration:none;">Go 1.26 发布：Green Tea GC 默认启用、cgo 开销降 30%、go fix 全面革新</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  Go 1.26 带来多项重大改进：实验性 <strong>Green Tea GC</strong> 正式成为默认垃圾回收器，显著降低延迟；cgo 基础调用开销削减约 30%；编译器在更多场景下将切片 backing store 分配在栈上。语言层面支持 new() 接受表达式作为初始值，泛型类型允许在自身类型参数列表中自引用。<strong>go fix</strong> 命令全面重构，成为代码现代化工具的核心，包含数十个 fixer 自动升级至最新 API 与语言习惯。
+                </p>
+                <a href="https://go.dev/blog/go1.26" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 5: Golang Weekly -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;border-bottom:1px solid #eef0f5;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Golang Weekly · Issue #603 · 2026-05-29</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://golangweekly.com/latest" style="color:#2563eb;text-decoration:none;">Generic Methods Are a Go for Go 1.27：泛型方法终于落地路线图</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  Go 语言讨论已久的<strong>泛型方法（generic methods）</strong>正式进入 Go 1.27 开发路线图，结束了多年来接口与泛型组合时的设计限制。本期还收录了三个新语言 proposal 的讨论、Go 1.26 smarter go fix 如何自动重写废弃函数调用的深度解析，以及社区关于 Go 错误处理模式演进的热议。
+                </p>
+                <a href="https://golangweekly.com/latest" style="font-size:13px;color:#2563eb;">阅读原文 →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Item 6: Arjan Codes -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;padding-bottom:16px;">
+            <tr>
+              <td>
+                <p style="margin:0 0 4px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Arjan Codes · 📹 视频 · 2026-05-08</p>
+                <h3 style="margin:0 0 8px;font-size:16px;color:#1a1a2e;">
+                  <a href="https://www.youtube.com/watch?v=GmlZBdKhl9Y" style="color:#2563eb;text-decoration:none;">DRY Often Makes Your Code Worse — 反直觉：过度 DRY 为何让代码更难维护</a>
+                </h3>
+                <p style="margin:0 0 8px;font-size:14px;color:#444;line-height:1.7;">
+                  📹 <strong>视频</strong>&nbsp;· Arjan 通过 Python 实例演示：盲目追求"不要重复自己"（DRY）原则有时会导致过度抽象、增加认知负担并隐藏业务逻辑。他提出以<strong>语义相似度</strong>而非语法相似度判断是否应该提取公共抽象，并区分"偶然重复"与"本质重复"。这一期视频是近期软件设计讨论中最受好评的内容之一，推荐有大型 Python 代码库维护经验的工程师观看。
+                </p>
+                <a href="https://www.youtube.com/watch?v=GmlZBdKhl9Y" style="font-size:13px;color:#2563eb;">观看视频 →</a>
+              </td>
+            </tr>
+          </table>
+
+        </td></tr>
+
+        <!-- ===== FOOTER ===== -->
+        <tr>
+          <td style="background:#f0f4ff;padding:20px 36px;border-top:1px solid #dde3f0;">
+            <p style="margin:0;font-size:12px;color:#888;line-height:1.8;">
+              📌 本期收录渠道：Thoughtworks Radar · SRE Weekly · ByteByteGo · TLDR Tech · Anthropic · OpenAI · Google DeepMind · Hugging Face · AI Explained · Latent Space · Andrej Karpathy · TWIML AI · Martin Fowler · Real Python · Python Weekly · The Go Blog · Golang Weekly · Arjan Codes<br>
+              🗓 生成时间：2026-06-12 &nbsp;|&nbsp; 摘要由 AI 辅助整理，技术术语保留英文原文
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>
