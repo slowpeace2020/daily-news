@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-13</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #333333; line-height: 1.6;">
+
+  <div style="max-width: 680px; margin: 0 auto; padding: 24px 16px;">
+
+    <!-- Header -->
+    <div style="background-color: #1a1a2e; padding: 28px 32px; border-radius: 8px 8px 0 0;">
+      <h1 style="margin: 0 0 8px 0; font-size: 22px; color: #ffffff; font-weight: 600; letter-spacing: -0.3px;">
+        软件技术日报
+      </h1>
+      <p style="margin: 0; font-size: 14px; color: #a0aec0;">
+        【软件工程 &amp; 云原生】&nbsp;&nbsp;2026-06-13（周六）
+      </p>
+    </div>
+
+    <!-- Intro bar -->
+    <div style="background-color: #f0f7ff; border-left: 4px solid #3b82f6; padding: 12px 16px; margin: 0 0 28px 0;">
+      <p style="margin: 0; font-size: 13px; color: #4a5568;">
+        本期精选来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo、TLDR DevOps，重点关注 Kubernetes、云原生架构与 SRE 实践。TechWorld with Nana 本周暂无新视频，已跳过。
+      </p>
+    </div>
+
+    <!-- ── Article 1: Thoughtworks ── -->
+    <div style="margin-bottom: 32px; padding-bottom: 32px; border-bottom: 2px solid #e2e8f0;">
+      <span style="display: inline-block; background-color: #3b82f6; color: #ffffff; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px;">
+        Thoughtworks Technology Radar
+      </span>
+      <h2 style="margin: 0 0 10px 0; font-size: 18px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+        AI 加速软件复杂度，Technology Radar Vol.34 呼吁回归工程基础以应对认知债务
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; color: #4a5568; line-height: 1.75;">
+        Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，核心警示：AI 大量生成代码正在制造
+        "<strong>认知债务（Cognitive Debt）</strong>"——人类与软件系统之间的理解鸿沟持续扩大，团队对自己维护的代码日益陌生。
+        Radar 本期重新将 <strong>DORA 指标</strong>置于首位，倡导以可重复性与稳定性代替无尽实验；云原生方向重点推介三项技术：
+        <strong>Kueue</strong>（Kubernetes 原生任务排队控制器，管理 AI/ML 批处理优先级与资源配额）、
+        <strong>CloudNativePG</strong>（在 Kubernetes 上托管高可用 PostgreSQL 的 Operator）和
+        <strong>Apache APISIX</strong>（高性能云原生 API Gateway，可替代老旧 Nginx Ingress Controller）。
+      </p>
+      <a href="https://www.thoughtworks.com/insights/blog/technology-strategy/macro-trends-tech-industry-april-2026"
+         style="color: #2563eb; font-size: 13px; text-decoration: none; font-weight: 600;">
+        → 阅读原文：Macro Trends in the Tech Industry | April 2026
+      </a>
+    </div>
+
+    <!-- ── Article 2: SRE Weekly ── -->
+    <div style="margin-bottom: 32px; padding-bottom: 32px; border-bottom: 2px solid #e2e8f0;">
+      <span style="display: inline-block; background-color: #10b981; color: #ffffff; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px;">
+        SRE Weekly
+      </span>
+      <h2 style="margin: 0 0 10px 0; font-size: 18px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+        Issue #512：28 小时 AWS us-east-1 大规模故障深度复盘与基础设施设计反思
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; color: #4a5568; line-height: 1.75;">
+        本期 SRE Weekly 重磅聚焦 2026 年 5 月发生的 AWS <strong>us-east-1</strong> 长达 28 小时中断事件，深入剖析根因、受影响服务范围以及该事故对基础设施设计策略的启示。
+        文章同时探讨了"<strong>暗黑可观测性</strong>"问题：当监控系统本身与故障基础设施共命运时，Dashboard 熄灭、告警静默，SRE 团队该如何应对？
+        期刊还再次验证了"<strong>Lorin 定律</strong>"——专为提升可靠性而设计的基础设施特性，往往会在意外事故中反成肇因，引发深层次可靠性思考。
+      </p>
+      <a href="https://sreweekly.com/sre-weekly-issue-512/"
+         style="color: #2563eb; font-size: 13px; text-decoration: none; font-weight: 600;">
+        → 阅读原文：SRE Weekly Issue #512
+      </a>
+    </div>
+
+    <!-- ── Article 3: ByteByteGo ── -->
+    <div style="margin-bottom: 32px; padding-bottom: 32px; border-bottom: 2px solid #e2e8f0;">
+      <span style="display: inline-block; background-color: #f59e0b; color: #ffffff; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px;">
+        ByteByteGo
+      </span>
+      <h2 style="margin: 0 0 10px 0; font-size: 18px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+        必须了解的部署策略：从 Big-Bang 到渐进式交付（Progressive Delivery）
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; color: #4a5568; line-height: 1.75;">
+        ByteByteGo 于 2026 年 6 月 11 日发布系统性梳理文章，对比生产环境中主流部署策略的原理与代价：
+        <strong>Big-Bang</strong> 部署最简单但有停机风险；<strong>Rolling Deployment</strong> 逐步替换实例；
+        <strong>Blue-Green</strong> 以双环境并行保障零停机切换；<strong>Canary</strong> 向少量用户灰度验证新版本。
+        文章还深入介绍了 <strong>Feature Flags</strong>、Staged Rollout 等渐进式交付实践，
+        强调自动化测试与关键业务指标监控是现代云原生 CI/CD 发布流程不可缺失的安全网。
+      </p>
+      <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from"
+         style="color: #2563eb; font-size: 13px; text-decoration: none; font-weight: 600;">
+        → 阅读原文：Must-Know Deployment Strategies: From Big-Bang to Progressive Delivery
+      </a>
+    </div>
+
+    <!-- ── Article 4: TLDR DevOps ── -->
+    <div style="margin-bottom: 32px; padding-bottom: 16px;">
+      <span style="display: inline-block; background-color: #8b5cf6; color: #ffffff; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px;">
+        TLDR DevOps
+      </span>
+      <h2 style="margin: 0 0 10px 0; font-size: 18px; font-weight: 700; color: #1a202c; line-height: 1.4;">
+        Dropbox Nova 平台、GitHub Enterprise 迁移 &amp; Terraform AgentCore 正式亮相（2026-05-27）
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; color: #4a5568; line-height: 1.75;">
+        TLDR DevOps 近期三大动态：其一，Dropbox 发布 <strong>Nova</strong>——专为长时运行 AI Coding Agent 设计的云平台，
+        解决 Agent 对持久身份、隔离环境与快速挂起/恢复能力的需求；
+        其二，GitHub 推出 <strong>GitHub Enterprise</strong> 分阶段发布与 npm 安装时权限控制，加强供应链安全；
+        其三，<strong>Terraform AgentCore</strong> 正式亮相，将 AI Agent 能力与基础设施即代码（IaC）工作流深度融合，
+        标志 Platform Engineering 迈入 AI 自动化驱动的新阶段。
+      </p>
+      <a href="https://tldr.tech/devops/2026-05-27"
+         style="color: #2563eb; font-size: 13px; text-decoration: none; font-weight: 600;">
+        → 阅读原文：TLDR DevOps 2026-05-27
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-top: 8px; text-align: center;">
+      <p style="margin: 0; font-size: 12px; color: #94a3b8; line-height: 1.8;">
+        软件技术日报 · 自动整理 · 2026-06-13<br>
+        涵盖渠道：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TLDR DevOps<br>
+        <span style="color: #cbd5e0;">TechWorld with Nana 本周暂无新视频发布，已跳过</span>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
