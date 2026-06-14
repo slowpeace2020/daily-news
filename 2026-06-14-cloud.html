@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-14</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-serif;color:#1a1a1a;">
+<div style="max-width:680px;margin:0 auto;padding:32px 20px;">
+
+  <!-- Header -->
+  <div style="border-bottom:3px solid #1a1a1a;padding-bottom:18px;margin-bottom:28px;">
+    <h1 style="margin:0;font-size:22px;font-weight:700;color:#1a1a1a;letter-spacing:-0.5px;">
+      软件技术日报
+    </h1>
+    <p style="margin:5px 0 0;font-size:14px;color:#555555;">
+      【软件工程 &amp; 云原生】&nbsp;&nbsp;2026-06-14
+    </p>
+  </div>
+
+  <!-- Entry 1: Thoughtworks Technology Radar -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 5px;font-size:11px;font-weight:600;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">
+      Thoughtworks Technology Radar &mdash; Vol. 34 &bull; 2026-04-15
+    </p>
+    <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+      AI 加速软件复杂度，Technology Radar 呼吁回归工程基础以应对 Cognitive Debt
+    </h2>
+    <p style="margin:0 0 12px;font-size:14px;line-height:1.75;color:#333333;">
+      Thoughtworks 于 2026 年 4 月发布第 34 卷 Technology Radar，核心主题是 AI 辅助开发正在积累大量
+      "Cognitive Debt（认知债务）"——AI 生成代码量激增，而开发者对系统的深层理解同步衰减，人与软件之间的鸿沟日益扩大。
+      报告警告"语义扩散"（semantic diffusion）现象：AI 相关术语泛滥导致技术共识模糊、厂商宣传失真。
+      针对 AI Agent 部署场景，Radar 明确强调须将身份安全（identity-based security）与最小权限原则（least-privilege access）
+      视为工程基础；Mutation testing 与 Fuzz testing 等传统手段也因 AI 降低入门门槛而重获重视，
+      整体基调是：AI 时代更需回归可重复性与稳定性的工程根基。
+    </p>
+    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+       style="font-size:13px;color:#0066cc;text-decoration:none;border-bottom:1px solid #0066cc;">
+      → 阅读原文
+    </a>
+  </div>
+
+  <hr style="border:none;border-top:1px solid #e8e8e8;margin:28px 0;">
+
+  <!-- Entry 2: SRE Weekly -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 5px;font-size:11px;font-weight:600;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">
+      SRE Weekly &mdash; Issue #516 &bull; June 2026
+    </p>
+    <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+      AI in SRE: What's Actually Coming in 2026
+    </h2>
+    <p style="margin:0 0 12px;font-size:14px;line-height:1.75;color:#333333;">
+      本期头条理性分析 AI-powered operations 的真实落地场景，在对 2026 年保持乐观的同时，
+      明确提示盲目激进采用的风险与局限。Datadog 工程师带来的案例颇具实用价值：
+      通过识别并修正低效 index 扫描路径，将查询延迟压缩超过 99%，验证了"命中索引"不等于"用好索引"这一关键认知。
+      incident.io 提出 4 步告警迁移框架，将 on-call 工具替换转化为系统性工程：削减告警噪音、明确服务所有权、
+      完善 on-call 运营体系。另有一篇文章点出"表面 Blameless 文化"的陷阱——成功规避了个人惩罚，
+      但 post-incident 流程仍停留在个体归因而非系统性思维层面。
+    </p>
+    <a href="https://sreweekly.com/sre-weekly-issue-516/"
+       style="font-size:13px;color:#0066cc;text-decoration:none;border-bottom:1px solid #0066cc;">
+      → 阅读原文
+    </a>
+  </div>
+
+  <hr style="border:none;border-top:1px solid #e8e8e8;margin:28px 0;">
+
+  <!-- Entry 3: ByteByteGo -->
+  <div style="margin-bottom:32px;">
+    <p style="margin:0 0 5px;font-size:11px;font-weight:600;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">
+      ByteByteGo &mdash; EP218 &bull; June 2026
+    </p>
+    <h2 style="margin:0 0 10px;font-size:17px;font-weight:600;color:#1a1a1a;line-height:1.4;">
+      EP218: The Typical AI Agent Stack, Explained
+    </h2>
+    <p style="margin:0 0 12px;font-size:14px;line-height:1.75;color:#333333;">
+      ByteByteGo 最新一期系统拆解了典型 AI Agent 技术栈的分层架构，涵盖 agentic loop（代理循环）、
+      context engineering（上下文工程）与 memory layers（记忆层）等核心模块，
+      帮助工程师建立对现代 Agent 系统的整体认知框架。文章重点讲解 Agent 如何通过工具调用与反馈循环实现自我纠错，
+      并探讨基于 Git worktree 的并行开发模式与多 sub-agent 协同策略。
+      对于关注 AI 基础设施与云原生平台融合的技术团队，本篇是理解 Agent 系统设计权衡的必读参考。
+    </p>
+    <a href="https://blog.bytebytego.com/p/ep218-the-typical-ai-agent-stack"
+       style="font-size:13px;color:#0066cc;text-decoration:none;border-bottom:1px solid #0066cc;">
+      → 阅读原文
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div style="border-top:1px solid #e8e8e8;padding-top:16px;margin-top:4px;">
+    <p style="margin:0;font-size:12px;color:#aaaaaa;line-height:1.7;">
+      本期涵盖渠道：Thoughtworks Technology Radar &middot; SRE Weekly &middot; ByteByteGo<br>
+      未找到 7 天内新内容，已跳过：TechWorld with Nana &middot; TLDR Tech<br>
+      由 Daily News Bot 自动生成 &middot; 2026-06-14
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
