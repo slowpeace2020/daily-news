@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-06-15</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;padding:24px 0;">
+    <tr>
+      <td align="center">
+        <table width="660" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:32px 36px;">
+              <p style="margin:0;font-size:12px;color:#8a8aaa;letter-spacing:1px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:8px 0 4px;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <p style="margin:0;font-size:14px;color:#a0a0c0;">后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-06-15</p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:24px 36px 8px;">
+              <p style="margin:0;font-size:14px;color:#555;line-height:1.7;">本期收录 7 条精选内容，涵盖 AI 效率度量、Python 3.15 新特性、Netflix LLM 大规模训练、Go 泛型方法最新进展等热点话题。</p>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #ebebeb;margin:0;"></td></tr>
+
+          <!-- ───────── 1. Martin Fowler ───────── -->
+          <tr>
+            <td style="padding:24px 36px 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:0.8px;text-transform:uppercase;">Martin Fowler Blog</p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                Fragments (June 2): AI 效率度量的困境
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.75;">
+                Martin Fowler 引用 Greg Wilson 的观察，指出业界普遍使用有缺陷的指标来评估 AI 工具的投资回报——统计 AI 生成的代码行数、关闭的 tickets，或直接询问开发者"是否感觉更高效"，这些方法都存在根本性缺陷。Fowler 坦言，由于软件生产力本就难以量化，在缺乏可靠度量标准的当下，"弱证据"在决策中仍具有一定参考价值。这篇短文引发了对 AI ROI 度量方法论的深层思考，值得每位工程经理关注。
+              </p>
+              <a href="https://martinfowler.com/fragments/2026-06-02.html" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">阅读原文 →</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 36px 0;"><hr style="border:none;border-top:1px solid #ebebeb;margin:0;"></td></tr>
+
+          <!-- ───────── 2. Real Python ───────── -->
+          <tr>
+            <td style="padding:24px 36px 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:0.8px;text-transform:uppercase;">Real Python</p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                Python 3.15 功能冻结 &amp; 六月新闻速递
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.75;">
+                Python 3.15 已从 alpha 进入 beta 阶段，标志着功能集正式冻结。核心新特性包括：<strong>PEP 810</strong> 引入显式懒加载导入（explicit lazy imports），可显著加速大型应用启动；<strong>PEP 814</strong> 新增内置 <code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">frozendict</code> 类型，提供原生不可变映射支持。此外，Real Python 平台升级了学习路径系统，超过 20 条学习路径（含 Machine Learning、Data Science 等）现已配备综合复习测验。
+              </p>
+              <a href="https://realpython.com/python-news-june-2026/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">阅读原文 →</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 36px 0;"><hr style="border:none;border-top:1px solid #ebebeb;margin:0;"></td></tr>
+
+          <!-- ───────── 3. Netflix Tech Blog ───────── -->
+          <tr>
+            <td style="padding:24px 36px 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:0.8px;text-transform:uppercase;">Netflix Tech Blog</p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                Scaling LLM Post-Training at Netflix
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.75;">
+                Netflix 工程团队深入分享了大规模 LLM post-training（后训练）的工程实践。为使通用基础模型更好地理解 Netflix 内容目录和用户交互历史的细微差异，团队将 post-training 定位为一个与建模同等重要的工程挑战。文章涵盖分布式训练基础设施的规模化设计、数据管道优化以及如何在效率与效果之间取得平衡，为推荐、个性化和搜索场景的 LLM 适配提供了宝贵参考。
+              </p>
+              <a href="https://netflixtechblog.com/scaling-llm-post-training-at-netflix-0046f8790194" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">阅读原文 →</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 36px 0;"><hr style="border:none;border-top:1px solid #ebebeb;margin:0;"></td></tr>
+
+          <!-- ───────── 4. Go Blog ───────── -->
+          <tr>
+            <td style="padding:24px 36px 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:0.8px;text-transform:uppercase;">The Go Blog</p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                Introducing the pkg.go.dev API
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.75;">
+                Go 官方博客宣布推出 <code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">pkg.go.dev</code> 的程序化 API，开发者现在可以通过代码直接获取任意 Go 包和模块的元数据（文档、版本信息、依赖关系等），无需手动抓取页面。此 API 为构建 Go 生态系统工具链、IDE 插件和依赖分析工具提供了稳定的官方数据源，是继 Go 1.26 发布后 Go 工具生态的又一重要里程碑。
+              </p>
+              <a href="https://go.dev/blog/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">阅读原文 →</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 36px 0;"><hr style="border:none;border-top:1px solid #ebebeb;margin:0;"></td></tr>
+
+          <!-- ───────── 5. Golang Weekly ───────── -->
+          <tr>
+            <td style="padding:24px 36px 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:0.8px;text-transform:uppercase;">Golang Weekly · Issue #603</p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                Generic Methods Are a-Go for Go 1.27
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.75;">
+                Golang Weekly 第 603 期（5 月 29 日）头条是 Go 社区的重大突破：泛型方法（generic methods for concrete types）提案 #77273 已被正式接受，预计将在 <strong>Go 1.27</strong> 中落地。这意味着开发者可以在具体类型的方法上定义类型参数，将大幅提升 Go 泛型编程的表达能力，解决当前泛型实现中难以优雅处理集合操作和转换的痛点。本期还包含 <code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">pkg.go.dev</code> API 发布的相关报道。
+              </p>
+              <a href="https://golangweekly.com/issues" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">查看往期存档 →</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 36px 0;"><hr style="border:none;border-top:1px solid #ebebeb;margin:0;"></td></tr>
+
+          <!-- ───────── 6. Arjan Codes ───────── -->
+          <tr>
+            <td style="padding:24px 36px 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:0.8px;text-transform:uppercase;">📹 视频 · Arjan Codes (YouTube)</p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                Don't Use Boolean Flags in Python, Use Policies Instead
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.75;">
+                Arjan Codes 最新视频深入剖析了 Python 中的经典设计反模式——布尔标志参数（Boolean Flag Parameters）。将 <code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">bool</code> 作为方法参数往往导致条件分支膨胀、接口含义模糊，违反单一职责原则。视频通过实战案例展示如何引入策略模式（Policy Pattern）加以重构，使代码更易扩展、更具表达性，尤其适合正在提升 Python 架构设计能力的中高级开发者。
+              </p>
+              <a href="https://www.youtube.com/watch?v=wYeDGkdMi3g" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">📹 观看视频 →</a>
+            </td>
+          </tr>
+
+          <tr><td style="padding:20px 36px 0;"><hr style="border:none;border-top:1px solid #ebebeb;margin:0;"></td></tr>
+
+          <!-- ───────── 7. Brendan Gregg ───────── -->
+          <tr>
+            <td style="padding:24px 36px 0;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b7280;letter-spacing:0.8px;text-transform:uppercase;">Brendan Gregg Blog</p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                Why I Joined OpenAI
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.75;">
+                eBPF、火焰图（Flame Graphs）和 Linux 性能工具领域的标志性人物 Brendan Gregg 宣布加入 OpenAI。他在博客中分享了这一职业转型的思考：在 AI 系统对底层计算资源需求急剧增长的背景下，大规模系统性能优化比以往任何时候都更加关键。Gregg 认为，将深厚的系统可观测性（observability）与 AI 基础设施工程相结合，是其职业生涯进化的自然方向。
+              </p>
+              <a href="https://www.brendangregg.com/blog/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">阅读原文 →</a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:32px 36px;background-color:#f9fafb;border-top:1px solid #ebebeb;margin-top:24px;">
+              <p style="margin:0 0 6px;font-size:13px;color:#6b7280;">
+                <strong style="color:#374151;">已跳过渠道</strong>（过去 7 天内未检索到新内容）：High Scalability、Python Weekly、Anthony GG、Hussein Nasser、Fireship、Dan Luu、Go by Example
+              </p>
+              <p style="margin:8px 0 0;font-size:12px;color:#9ca3af;">
+                本邮件由 Daily News Bot 自动生成 · 2026-06-15 &nbsp;·&nbsp;
+                <a href="https://github.com/slowpeace2020/daily-news" style="color:#9ca3af;text-decoration:none;">GitHub 存档</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
