@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-16</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #333333;">
+
+  <div style="max-width: 680px; margin: 0 auto; padding: 32px 24px;">
+
+    <!-- Header -->
+    <div style="border-bottom: 3px solid #1a1a2e; padding-bottom: 20px; margin-bottom: 32px;">
+      <h1 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.5px;">
+        软件技术日报
+      </h1>
+      <p style="margin: 0; font-size: 14px; color: #666666; font-weight: 500;">
+        【软件工程 &amp; 云原生】&nbsp;&nbsp;|&nbsp;&nbsp;2026-06-16
+      </p>
+    </div>
+
+    <!-- Item 1: Thoughtworks Technology Radar -->
+    <div style="margin-bottom: 32px;">
+      <div style="display: inline-block; background-color: #e8f0fe; color: #1558d6; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 10px; letter-spacing: 0.5px; text-transform: uppercase;">
+        Thoughtworks Technology Radar
+      </div>
+      <h2 style="margin: 0 0 12px 0; font-size: 17px; font-weight: 700; color: #1a1a2e; line-height: 1.4;">
+        Kagent：将 AI Agent 引入 Kubernetes 运维的开源框架
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; line-height: 1.7; color: #444444;">
+        Thoughtworks Technology Radar Vol. 34（2026年4月）特别推荐 <strong>Kagent</strong>，这是一个在 Kubernetes 集群中运行 AI Agent 的开源框架，通过 Model Context Protocol（MCP）集成让 LLM 驱动的 Agent 能够执行诊断故障、修复配置等运维任务，代表了"AgentOps"理念在云原生领域的落地实践。本期 Radar 的核心主题为"<strong>用工程基本功对抗 AI 加速带来的认知债务（Cognitive Debt）</strong>"，呼吁在快速采用 AI 工具的同时保持扎实的工程实践。Kagent 目前仍是 CNCF Sandbox 项目，在生产环境中赋予 LLM 对 Kubernetes 集群的操控权需严格评估安全边界与最小权限原则。
+      </p>
+      <a href="https://www.thoughtworks.com/radar/languages-and-frameworks/kagent" style="display: inline-block; color: #1558d6; font-size: 13px; font-weight: 500; text-decoration: none; border-bottom: 1px solid #1558d6; padding-bottom: 1px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eeeeee; margin: 0 0 32px 0;" />
+
+    <!-- Item 2: SRE Weekly -->
+    <div style="margin-bottom: 32px;">
+      <div style="display: inline-block; background-color: #fce8e6; color: #c5221f; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 10px; letter-spacing: 0.5px; text-transform: uppercase;">
+        SRE Weekly
+      </div>
+      <h2 style="margin: 0 0 12px 0; font-size: 17px; font-weight: 700; color: #1a1a2e; line-height: 1.4;">
+        Issue #512：AI 编码助手 vs AI SRE 工具——市场定位差异折射角色认知
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; line-height: 1.7; color: #444444;">
+        SRE Weekly #512 引用 Fred Hebert 的分析，指出市场上 AI 编码助手被定位为"<strong>增强工程师能力的合作伙伴</strong>"，而 AI SRE 工具则被定位为"<strong>替代低价值重复性工作的自动化手段</strong>"，这一鲜明对比揭示了决策者将 Incident Response 视为可被自动化淘汰的低价值工作的潜在心态。本期还强调 Incident 处理是重要的<strong>领导力展示时刻</strong>，并警示系统深层中不可见的重试逻辑（如库内部自动 retry）如何意外放大请求量级、引发级联故障，对 SRE 实践者构建可观测、可控系统有重要启示。
+      </p>
+      <a href="https://sreweekly.com/sre-weekly-issue-512/" style="display: inline-block; color: #1558d6; font-size: 13px; font-weight: 500; text-decoration: none; border-bottom: 1px solid #1558d6; padding-bottom: 1px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eeeeee; margin: 0 0 32px 0;" />
+
+    <!-- Item 3: ByteByteGo -->
+    <div style="margin-bottom: 32px;">
+      <div style="display: inline-block; background-color: #e6f4ea; color: #137333; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 10px; letter-spacing: 0.5px; text-transform: uppercase;">
+        ByteByteGo
+      </div>
+      <h2 style="margin: 0 0 12px 0; font-size: 17px; font-weight: 700; color: #1a1a2e; line-height: 1.4;">
+        Must-Know Deployment Strategies：从 Big-Bang 到 Progressive Delivery 全解析
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; line-height: 1.7; color: #444444;">
+        ByteByteGo 最新文章（2026-06-11）全面梳理了现代生产系统中的核心部署策略：<strong>Big Bang</strong>（一次性全量替换，需停机）、<strong>Rolling Deployment</strong>（分批渐进替换）、<strong>Blue-Green Deployment</strong>（双环境热切换，支持即时回滚）和 <strong>Canary Deployment</strong>（小比例先行验证），以及以 Feature Flag、A/B Testing 和 Ring Deployment 为核心的 <strong>Progressive Delivery</strong> 体系。文章特别指出这些策略在实践中往往组合使用——如在 Rolling 基础上叠加 Canary 发布，或将 Blue-Green 与 Feature Flag 结合——选择策略需综合评估业务的容错能力与发布风险。
+      </p>
+      <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="display: inline-block; color: #1558d6; font-size: 13px; font-weight: 500; text-decoration: none; border-bottom: 1px solid #1558d6; padding-bottom: 1px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eeeeee; margin: 0 0 32px 0;" />
+
+    <!-- Item 4: TLDR Tech -->
+    <div style="margin-bottom: 32px;">
+      <div style="display: inline-block; background-color: #fff3e0; color: #e65100; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 10px; letter-spacing: 0.5px; text-transform: uppercase;">
+        TLDR Tech
+      </div>
+      <h2 style="margin: 0 0 12px 0; font-size: 17px; font-weight: 700; color: #1a1a2e; line-height: 1.4;">
+        Loop Engineering：构建系统替代人类担任 AI Agent 指令者的新工程范式
+      </h2>
+      <p style="margin: 0 0 14px 0; font-size: 14px; line-height: 1.7; color: #444444;">
+        TLDR Tech 2026年6月9日刊介绍了"<strong>Loop Engineering</strong>"这一新兴工程模式——工程师不再直接向 AI Agent 发送提示词（Prompt），而是构建一套系统自动承担这一角色：用户定义目标，系统循环驱动 Agent 持续迭代直到完成任务。这一模式标志着 AI 辅助开发从单次交互式工具向<strong>自主递归系统</strong>的演进，对云原生应用的 CI/CD 流水线、运维自动化（GitOps、AIOps）和 DevOps 工作流的设计范式有深远影响，同时也对构建 Agent 系统的可控性（Guardrails）和可观测性（Observability）提出了更高要求。
+      </p>
+      <a href="https://tldr.tech/tech/2026-06-09" style="display: inline-block; color: #1558d6; font-size: 13px; font-weight: 500; text-decoration: none; border-bottom: 1px solid #1558d6; padding-bottom: 1px;">
+        阅读原文 →
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div style="border-top: 1px solid #eeeeee; padding-top: 20px; margin-top: 8px;">
+      <p style="margin: 0; font-size: 12px; color: #999999; line-height: 1.6;">
+        本日报由自动化 Agent 整理生成，内容来源于各渠道公开发布的最新文章。<br>
+        本期涵盖渠道：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TLDR Tech<br>
+        TechWorld with Nana 频道本期未找到过去 7 天内的最新视频，已跳过。
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
