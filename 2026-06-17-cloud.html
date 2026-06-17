@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-17</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #333333;">
+  <div style="max-width: 680px; margin: 0 auto; padding: 32px 24px;">
+
+    <!-- Header -->
+    <div style="border-bottom: 3px solid #1a1a2e; padding-bottom: 20px; margin-bottom: 32px;">
+      <h1 style="margin: 0; font-size: 22px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.5px;">
+        软件技术日报
+      </h1>
+      <p style="margin: 6px 0 0; font-size: 14px; color: #666666;">
+        【软件工程 &amp; 云原生】&nbsp;·&nbsp;2026-06-17
+      </p>
+    </div>
+
+    <!-- Source 1: Thoughtworks Technology Radar -->
+    <div style="margin-bottom: 32px;">
+      <span style="display: inline-block; background-color: #e8f4f8; color: #0077b6; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px; margin-bottom: 12px;">Thoughtworks Technology Radar</span>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.4;">
+        Technology Radar Vol. 34：AI 加速软件复杂性，呼吁回归工程基础应对认知债务
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.75; color: #444444;">
+        Thoughtworks 2026 年 4 月发布第 34 期 Technology Radar，核心警示「认知债务（Cognitive Debt）」：AI 生成代码的速度远超人类理解能力，持续拉大开发者与系统之间的认知鸿沟。Radar 强烈建议回归 DORA 指标、零信任架构（Zero Trust）和可测试性等工程基本功以应对此风险。在云原生方向，报告将 CloudNativePG（Kubernetes 原生 PostgreSQL Operator）列入 Trial 环，并推荐以 Apache APISIX 替代老旧的 Nginx Ingress Controller，作为更现代的 Kubernetes Gateway API 实现。
+      </p>
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #0077b6; text-decoration: none; font-size: 13px; font-weight: 500;">→ 阅读原文</a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 0 0 32px;" />
+
+    <!-- Source 2: SRE Weekly -->
+    <div style="margin-bottom: 32px;">
+      <span style="display: inline-block; background-color: #fff3e0; color: #e65100; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px; margin-bottom: 12px;">SRE Weekly</span>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.4;">
+        Issue #512：AWS us-east-1 长达 28 小时宕机深度复盘 &amp; AI SRE 采用风险评估
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.75; color: #444444;">
+        本期重点复盘 2026 年 5 月 AWS us-east-1 大规模宕机事故（历时 28 小时），深度解析根本原因，尤其关注"用于提高可靠性的系统本身反而触发了故障"这一 Lorin 法则经典场景。Newsletter 同期收录了 AI SRE 落地的理性评估文章，附有真实故障数据与成本分析，帮助团队权衡 AI SRE 的投入产出比。此外，还探讨了当 Observability 技术栈依赖与宕机服务相同的基础设施时，如何在监控盲区中维持有效的 Incident Response。
+      </p>
+      <a href="https://sreweekly.com/sre-weekly-issue-512/" style="color: #0077b6; text-decoration: none; font-size: 13px; font-weight: 500;">→ 阅读原文</a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 0 0 32px;" />
+
+    <!-- Source 3: ByteByteGo -->
+    <div style="margin-bottom: 32px;">
+      <span style="display: inline-block; background-color: #f3e5f5; color: #7b1fa2; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px; margin-bottom: 12px;">ByteByteGo</span>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.4;">
+        必知部署策略全解析：从 Big-Bang 到 Progressive Delivery
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.75; color: #444444;">
+        ByteByteGo 近期文章系统梳理了生产环境中的主流部署策略，覆盖大爆炸式（Big-Bang）一次性发布、蓝绿部署（Blue-Green Deployment）、金丝雀发布（Canary Release）、滚动更新（Rolling Update）直至渐进式交付（Progressive Delivery）。文章对每种策略的工作原理、适用成本与风险进行了清晰横向对比，尤其适合在 Kubernetes 环境中做发布策略选型的平台工程（Platform Engineering）团队。核心结论：没有放之四海皆准的"最佳策略"，只有最匹配当前业务风险承受能力的选择。
+      </p>
+      <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="color: #0077b6; text-decoration: none; font-size: 13px; font-weight: 500;">→ 阅读原文</a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 0 0 32px;" />
+
+    <!-- Source 4: TLDR Tech / TLDR DevOps -->
+    <div style="margin-bottom: 32px;">
+      <span style="display: inline-block; background-color: #e8f5e9; color: #2e7d32; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px; margin-bottom: 12px;">TLDR Tech · DevOps</span>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 600; color: #1a1a2e; line-height: 1.4;">
+        Dropbox Nova：在 Kubernetes 隔离环境中大规模运行 AI 编码 Agent
+      </h2>
+      <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.75; color: #444444;">
+        TLDR DevOps（2026-05-27）报道了 Dropbox 内部平台 Nova——一个专为 AI 编码 Agent 设计的云端执行基础设施。Nova 允许工程师并行运行多个 coding session，每个 Agent 在独立隔离的 Kubernetes 环境中执行，显著提升了大规模 AI 辅助开发的安全隔离性与可扩展性。这一实践标志着 Kubernetes 正从单纯的应用编排平台，演进为 Agentic AI 工作负载的核心执行基座。同期还涵盖 Terraform AgentCore 进展与 GitHub Enterprise 大规模迁移案例。
+      </p>
+      <a href="https://tldr.tech/devops/2026-05-27" style="color: #0077b6; text-decoration: none; font-size: 13px; font-weight: 500;">→ 阅读原文</a>
+    </div>
+
+    <!-- Footer -->
+    <hr style="border: none; border-top: 2px solid #e8e8e8; margin: 0 0 24px;" />
+    <div style="text-align: center; font-size: 12px; color: #999999; line-height: 1.8;">
+      <p style="margin: 0;">本期内容由 AI Agent 自动整理 · 2026-06-17</p>
+      <p style="margin: 4px 0 0;">涵盖来源：Thoughtworks Radar &nbsp;·&nbsp; SRE Weekly &nbsp;·&nbsp; ByteByteGo &nbsp;·&nbsp; TLDR DevOps</p>
+      <p style="margin: 4px 0 0; color: #bbbbbb;">TechWorld with Nana 本期暂无最新内容，已跳过</p>
+    </div>
+
+  </div>
+</body>
+</html>
