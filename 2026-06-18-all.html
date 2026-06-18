@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报 - 2026-06-18</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; color: #333333;">
+  <div style="max-width: 680px; margin: 0 auto; padding: 24px;">
+
+    <!-- Header -->
+    <div style="border-bottom: 3px solid #1a1a2e; padding-bottom: 16px; margin-bottom: 24px;">
+      <h1 style="margin: 0; font-size: 26px; color: #1a1a2e; font-weight: 700;">软件技术日报</h1>
+      <p style="margin: 6px 0 0 0; color: #666666; font-size: 14px;">2026 年 06 月 18 日 &nbsp;·&nbsp; 精选技术动态 &nbsp;·&nbsp; AI Agent 自动整理</p>
+    </div>
+
+    <!-- ===== SECTION 1: 软件工程 & 云原生 ===== -->
+    <div style="margin-bottom: 32px;">
+      <h2 style="margin: 0 0 16px 0; font-size: 17px; color: #ffffff; background-color: #2c3e50; padding: 10px 14px; border-radius: 4px; letter-spacing: 0.5px;">☁️ 软件工程 &amp; 云原生</h2>
+
+      <!-- Thoughtworks Technology Radar -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Thoughtworks Technology Radar</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">AI 加速软件复杂性，Radar Vol.34 呼吁回归工程基础以应对「认知债务」</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Thoughtworks 第 34 卷 Technology Radar（April 2026）指出：AI 辅助开发虽带来效率提升，却同步积累大量难以管理的"cognitive debt"——人与软件系统之间的理解鸿沟正在快速扩大。与以往卷不同，本期从无限实验转向追求可重复性与稳定性，并警告低门槛工具泛滥导致语义扩散、项目可持续性难以评估。建议工程师回归基础：可测试性、架构清晰度和长期可维护性。</p>
+        <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- SRE Weekly -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">SRE Weekly</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Issue #517：分布式系统 P1 事故治理 + 28 小时 AWS us-east-1 大规模宕机复盘</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">本期重点讨论现代分布式架构中重大事故的治理困境：P1 事故已横跨多个服务、团队与基础设施层，没有单一团队能掌握全貌。深度分析 2026 年 5 月长达 28 小时的 AWS us-east-1 大规模宕机事件，探讨其根因与基础设施设计启示。此外还覆盖 Kubernetes 中 Java Pod OOMKill 不可见问题，以及 post-mortem 行动项为何持续死亡的根本原因。</p>
+        <a href="https://sreweekly.com/sre-weekly-issue-517/" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- ByteByteGo -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">ByteByteGo</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Must-Know Deployment Strategies: From Big-Bang to Progressive Delivery</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">全面梳理生产环境主流部署策略：从高风险的 Big-Bang 部署，到 Rolling Update、Blue-Green、Canary，再到渐进式交付（Progressive Delivery）。文章深入对比各策略的工作原理、成本与适用场景，帮助工程团队根据业务风险容忍度做出合理决策。对于采用 Kubernetes 和 GitOps 工作流的团队尤具参考价值。</p>
+        <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- TLDR Tech -->
+      <div style="padding: 14px 0;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">TLDR Tech</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">06-16 日报：Anthropic 新模型超级能力、Agentic 代码审查、Chrome 移除 Manifest V2</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">6 月 16 日头条涵盖：Anthropic 凭借 safety-first 理念构建差异化竞争优势；Chrome 将在版本 151 中彻底移除 Manifest V2 扩展支持，众多广告屏蔽插件受影响；UC Davis 脑机接口成功帮助 ALS 患者通过神经信号控制光标并转化为文字。Agentic code review 工具正在改变传统 PR 审查流程，值得工程团队关注。</p>
+        <a href="https://tldr.tech/tech/2026-06-16" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 2: AI 技术前沿 ===== -->
+    <div style="margin-bottom: 32px;">
+      <h2 style="margin: 0 0 16px 0; font-size: 17px; color: #ffffff; background-color: #6c3483; padding: 10px 14px; border-radius: 4px; letter-spacing: 0.5px;">🤖 AI 技术前沿</h2>
+
+      <!-- Anthropic -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Anthropic Blog</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Claude Fable 5 &amp; Mythos 5 正式发布：Mythos 级超越 Opus 成为最强能力层</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Anthropic 推出 Claude Fable 5 和 Claude Mythos 5，其中 Mythos 级在模型家族中位于 Opus 之上，代表当前最高能力层。Claude Mythos Preview 已于 4 月通过 Project Glasswing 向约 150 家合作机构开放，现全面发布。与此同时，Anthropic 秘密提交 S-1 招股说明书草案，正式启动 IPO 进程，标志着其商业化进入新阶段。</p>
+        <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- OpenAI -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">OpenAI Blog</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">推出 OpenAI Partner Network，GPT-5.5 全面接替 GPT-5.2 系列；Realtime API 大幅降价</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">6 月 16 日，OpenAI 宣布建立 Partner Network 合作伙伴生态体系。GPT-5.2（含 Instant、Thinking、Pro 三款变体）已于 6 月 12 日下线，现有对话自动迁移至对应 GPT-5.5 系列。Realtime API 新增五种语音风格，并通过 prompt caching 大幅降低缓存文本和音频输入成本，为实时语音 AI 应用降低了工程门槛。</p>
+        <a href="https://openai.com/news/" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Google DeepMind -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Google DeepMind Blog</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">发布 Gemini 3 Flash：前沿智能 + 极速推理，成本仅为旗舰版本的一小部分</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">6 月 17 日，Google DeepMind 正式发布 Gemini 3 Flash，将前沿模型能力与面向速度优化的推理架构相结合，以极低成本提供旗舰级智能表现。该模型面向高吞吐、低延迟场景（实时应用、大规模 API 调用），对开源本地部署的传统路线形成强力冲击。DeepMind 同期公布了 Gemini 在塞拉利昂数学教育 RCT 研究的积极结果。</p>
+        <a href="https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Hugging Face -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Hugging Face Blog</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">2026 春季开源 AI 生态报告：Physical AI 与 Computer Use Agent 成新增长极</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Hugging Face 发布 Spring 2026 开源生态状态报告（6 月 12 日）。亮点包括：NVIDIA Cosmos 3（首个融合世界生成、物理推理与动作生成的 Physical AI omni-model）和 Holo3.1（支持本地运行的 Computer Use Agent）引领新赛道。huggingface_hub v1.0 同步发布，平台五年积累迎来基础设施里程碑。</p>
+        <a href="https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- The Batch -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">The Batch · DeepLearning.AI</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">AI Forward Deployed Engineer 崛起，Coding Agent 正深度重塑软件开发分工</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Andrew Ng 聚焦新型角色"AI Forward Deployed Engineer（FDE）"——嵌入客户组织、专门构建和调优 agentic 工作流的工程师。文章深入探讨 coding agent 如何以不同速度加速各类软件工作，以及 2022 至 2026 年间 prompting AI 方式的深刻演变。语音 UI 爆炸式普及、政府监管试图限制开源，均在本期有深度分析。</p>
+        <a href="https://www.deeplearning.ai/the-batch/" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Andrej Karpathy -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Andrej Karpathy &nbsp;📹 视频</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Skill Issue：Code Agent、AutoResearch 与 AI 自我改进的「Loopy Era」</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Karpathy 提出核心观点：随着 AI agent 能力提升，生产力瓶颈已从模型能力转移到人类驾驭 agent 的技能——"一切都是 skill issue"。他分享了 AutoResearch 项目：多 AI agent 协同两天内运行 700 个实验，自主发现 20 项训练优化，体现了 AI 自我改进循环的潜力。Karpathy 同期正式加入 Anthropic，结束在 OpenAI 时代的"vibe coding"探索。</p>
+        <a href="https://www.youtube.com/watch?v=kwSVtQ7dziU" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 观看视频</a>
+      </div>
+
+      <!-- Latent Space -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Latent Space &nbsp;🎙 播客</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Satya Nadella × No Priors × Latent Space：Microsoft AI 生态战略与「hill-climbing machine」</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">微软 CEO Satya Nadella 在 Microsoft Build 2026 主题演讲后，首次登上 Latent Space 与 swyx、Sarah Guo、Elad Gil 深度对话。Nadella 阐述微软正从聚焦单一模型转向构建"前沿生态系统（frontier ecosystem）"，重点推进长期运行的 autopilot（如 Scout），目标是让每个企业都拥有自己专属的 AI "hill-climbing machine"。</p>
+        <a href="https://www.latent.space/p/satya-2026" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 收听播客</a>
+      </div>
+
+      <!-- TWIML AI Podcast -->
+      <div style="padding: 14px 0;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">TWIML AI Podcast &nbsp;🎙 播客</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Ep.769：RAG 已死？税法 AI 的工程实践揭示 Retrieval 为何依然不可替代</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">当 context window 扩展至百万 token，RAG 是否已无必要？Sphere 工程负责人 Alex Bowcut 以税法 AI 系统 TRAM 为例说明：在高精度高风险场景中，RAG 依然不可或缺。对话深入 semantic chunking、dense vs. sparse retrieval、专家反馈循环与 RL 结合等核心技术，以及构建可信法律法规 AI 系统所面临的特殊挑战。</p>
+        <a href="https://twimlai.com/go/769" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 收听播客</a>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 3: 后端开发 & Python & Go ===== -->
+    <div style="margin-bottom: 32px;">
+      <h2 style="margin: 0 0 16px 0; font-size: 17px; color: #ffffff; background-color: #1a6b3c; padding: 10px 14px; border-radius: 4px; letter-spacing: 0.5px;">🐍 后端开发 &amp; Python &amp; Go</h2>
+
+      <!-- Martin Fowler -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Martin Fowler Blog</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Fragments 06/16：LLM 让编程重回乐趣，DDD 在 AI 时代或将更加重要</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Fowler 分享 DDD Europe 大会见闻：Eric Evans 在开场演讲中探讨了对 LLM 的亲身实验。Fowler 本人认为 LLM 让编程比以往更有乐趣——消除繁琐工作、加速反馈循环、重新激活长期搁置项目。他同时强调，Domain-Driven Design 在 LLM 时代不会过时，反而可能因需要清晰领域模型来指导 AI 代码生成而变得更加关键。</p>
+        <a href="https://martinfowler.com/fragments/2026-06-16.html" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Netflix Tech Blog -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Netflix Tech Blog</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Data as a Product：Netflix 如何用产品思维重塑数据工程文化</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Netflix 工程博客分享将"产品思维"引入数据平台建设的实践经验：像管理用户产品一样管理内部数据集，包括数据质量 SLA 制定、数据目录可发现性设计，以及跨团队数据所有权治理框架。该理念与 Data Mesh 架构高度呼应，对规模化数据工程团队具有重要参考意义。</p>
+        <a href="https://netflixtechblog.medium.com/data-as-a-product-applying-a-product-mindset-to-data-at-netflix-4a4d1287a31d" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Real Python -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Real Python</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Python 3.15 进入 Beta 特性冻结，新特性一览 | 2026 年 6 月 Python 动态</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">CPython 3.15 正式从 alpha 进入 beta 阶段，特性集合已锁定。Real Python 月报梳理了核心动态：3.15 新增特性摘要、标准库变更，以及社区近期工具和框架重要更新。对于跟踪 Python 语言演进的开发者，本月报是高效了解版本动态的必读资源。</p>
+        <a href="https://realpython.com/python-news-june-2026/" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Python Weekly -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Python Weekly</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">最新一期（2026 年 6 月 11 日）：Python 社区精选新闻、工具库与工程实践</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Python Weekly 持续手工精选社区最优质内容，涵盖最新包发布、工具库推荐、工程最佳实践与社区活动。本期聚焦 Python 在 AI/ML 工程中的应用实践，以及异步编程、类型系统（type hints）、性能优化等核心话题的最新进展，是 Python 开发者每周必读。</p>
+        <a href="https://www.pythonweekly.com/" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- The Go Blog -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">The Go Blog</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Introducing the pkg.go.dev API：以编程方式获取 Go 包和模块元数据</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Go 官方博客宣布 pkg.go.dev 推出程序化 API，允许开发者通过 HTTP 接口直接获取包的元数据、文档和模块信息，无需爬取网页。该 API 为工具链集成、依赖分析、IDE 插件等场景提供了稳定数据来源，是 Go 生态基础设施的重要补充，将进一步降低工具开发门槛。</p>
+        <a href="https://go.dev/blog/" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Golang Weekly -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Golang Weekly</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Issue #603：Generic Methods 正式纳入 Go 1.27，填补泛型体系最后一块拼图</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Go 泛型史上期待已久的特性终于确认落地：Go 1.27 将以 GOEXPERIMENT 形式支持 generic methods，允许方法声明独立的类型参数，填补了 Go 泛型体系最后一个主要缺口。开发者可在特定类型命名空间内定义泛型函数，减少包级别泛型工具函数泛滥的问题，是 Go 语言设计的重要里程碑。</p>
+        <a href="https://golangweekly.com/issues/603" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 查看原文</a>
+      </div>
+
+      <!-- Arjan Codes -->
+      <div style="padding: 14px 0; border-bottom: 1px solid #eeeeee;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Arjan Codes &nbsp;📹 视频</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">UV Just Got A Serious Upgrade：Python 最快包管理器迎来重大版本更新</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Arjan 深度解析 uv 包管理器最新重大升级。uv 是 Rust 编写的 Python 包管理与项目管理工具，以极速安装著称，正逐步成为 pip + venv + poetry 的一站式替代方案。本次更新带来若干新特性，视频通过实际演示展示新功能对工程师日常工作流（虚拟环境管理、依赖锁定、脚本运行）的改进。</p>
+        <a href="https://www.youtube.com/watch?v=CJJzrtHeLGI" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 观看视频</a>
+      </div>
+
+      <!-- Fireship -->
+      <div style="padding: 14px 0;">
+        <div style="font-size: 11px; color: #888888; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">Fireship &nbsp;📹 视频</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #1a1a2e; font-weight: 600;">Google 悄然颠覆开源 AI 叙事…… Gemini 3 Flash 的冲击波</h3>
+        <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.7; color: #444444;">Fireship 以标志性快节奏风格解读 Google Gemini 3 Flash 发布对开源 AI 生态的深远影响：一个低成本前沿模型意味着开发者不再必须本地部署开源模型来满足性能需求，开源 vs. 闭源的传统论争被彻底重新定义。视频同步梳理了近期科技圈其他重大动态，风格犀利幽默，适合快速获取全局视角。</p>
+        <a href="https://www.youtube.com/watch?v=-01ZCTt-CJw" style="color: #0066cc; font-size: 13px; text-decoration: none; font-weight: 500;">→ 观看视频</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="border-top: 1px solid #dddddd; padding-top: 16px; margin-top: 8px; text-align: center;">
+      <p style="margin: 0; font-size: 12px; color: #aaaaaa;">软件技术日报 &nbsp;·&nbsp; 2026-06-18 &nbsp;·&nbsp; 由 AI Agent 自动整理，仅供参考</p>
+    </div>
+
+  </div>
+</body>
+</html>
