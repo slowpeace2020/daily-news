@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【AI 技术前沿】- 2026-06-18</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#1a1a1a;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="640" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;max-width:640px;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:36px 40px;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#8ab4f8;letter-spacing:2px;text-transform:uppercase;">Daily Tech Digest</p>
+              <h1 style="margin:0 0 8px 0;font-size:26px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <h2 style="margin:0 0 14px 0;font-size:18px;font-weight:500;color:#8ab4f8;line-height:1.3;">【AI 技术前沿】</h2>
+              <p style="margin:0;font-size:13px;color:#aab4c8;">2026 年 06 月 18 日 &nbsp;|&nbsp; 精选 7 条最新动态</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:32px 40px 24px 40px;">
+
+              <!-- Intro -->
+              <p style="margin:0 0 28px 0;font-size:14px;color:#555;line-height:1.7;">
+                本期精选来自 Anthropic、OpenAI、Google DeepMind、Hugging Face、The Batch、Latent Space 及 TWIML AI Podcast 的最新内容，涵盖顶级大模型发布、AI 安全治理与工程实践前沿。
+              </p>
+
+              <!-- ── 1. Anthropic ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #da7756;padding-left:16px;margin-bottom:0;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#da7756;letter-spacing:1.5px;text-transform:uppercase;">Anthropic Blog</p>
+                    <h3 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                      Claude Fable 5 &amp; Mythos 5 正式发布——Anthropic 史上最强模型
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.75;">
+                      Anthropic 于 6 月 9 日发布了 <strong>Claude Fable 5</strong>（Mythos 级模型的公开版）与 <strong>Claude Mythos 5</strong>。Fable 5 在软件工程、科学研究、多模态视觉等维度均超越此前所有公开模型，并内置针对网络安全、生物技术等高风险领域的护栏，定价为每百万 token 输入 $10 / 输出 $50，可通过 Claude API、AWS Bedrock、Vertex AI 及 Microsoft Foundry 访问。Mythos 5 则作为同款底层模型的政府合作版，通过 Project Glasswing 面向美国政府部门部署。
+                    </p>
+                    <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" style="display:inline-block;font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+              <!-- ── 2. OpenAI ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #10a37f;padding-left:16px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#10a37f;letter-spacing:1.5px;text-transform:uppercase;">OpenAI Blog</p>
+                    <h3 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                      Introducing LifeSciBench：LLM 生命科学能力综合评测基准
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.75;">
+                      OpenAI 于 6 月 17 日推出 <strong>LifeSciBench</strong>，这是一套涵盖分子生物学、药物发现、临床医学等领域的大规模生命科学评测基准，旨在系统衡量前沿 LLM 在高价值科学任务上的表现。同日，OpenAI 还发布了"在发布前通过模拟部署场景预测模型行为"的研究报告（Predicting Model Behavior Before Release），探索在沙箱环境中评估潜在安全风险的新方法，为 AI 安全对齐提供了可量化的工程路径。
+                    </p>
+                    <a href="https://openai.com/news/research/" style="display:inline-block;font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+              <!-- ── 3. Google DeepMind ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #4285f4;padding-left:16px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#4285f4;letter-spacing:1.5px;text-transform:uppercase;">Google DeepMind Blog</p>
+                    <h3 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                      Gemini 3 Flash 全球发布：面向速度优化的前沿级智能
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.75;">
+                      Google DeepMind 于 6 月 17 日正式发布 <strong>Gemini 3 Flash</strong>，该模型在保持旗舰级性能的同时，推理速度比同级别前沿模型提升 4 倍，成本大幅降低，尤其针对 AI Agent 和代码生成场景优化。该模型已向全球数十亿用户开放，可通过 Gemini 应用、Google Search AI Mode、Google AI Studio、Android Studio 以及企业级 Gemini Enterprise Agent Platform 访问。此外，DeepMind 同期宣布与 Schmidt Sciences 等机构联合设立最高 $1000 万美元的多智能体 AI 安全研究资助项目。
+                    </p>
+                    <a href="https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/" style="display:inline-block;font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+              <!-- ── 4. Hugging Face ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #ff9d00;padding-left:16px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#ff9d00;letter-spacing:1.5px;text-transform:uppercase;">Hugging Face Blog</p>
+                    <h3 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                      hf CLI 升级为 Agent 优化接口：Claude Code、Codex、Cursor 原生支持
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.75;">
+                      Hugging Face 于 6 月 4 日发布文章，介绍经过重新设计的 <strong>hf CLI</strong>——现已针对 Claude Code、OpenAI Codex、Cursor 等 AI coding agent 的使用场景进行深度优化。新版 CLI 提供结构化的机器可读输出、精简的认证流程以及更直接的 Hub 模型/数据集操作命令，让 AI Agent 能够以编程方式高效地与 Hugging Face Hub 交互，是 AI 工程实践中"人机协作工具链"的重要一步。
+                    </p>
+                    <a href="https://huggingface.co/blog/hf-cli-for-agents" style="display:inline-block;font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+              <!-- ── 5. The Batch ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #e74c3c;padding-left:16px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#e74c3c;letter-spacing:1.5px;text-transform:uppercase;">The Batch · DeepLearning.AI</p>
+                    <h3 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                      Andrew Ng：AI Agent 正在接管桌面工作流，软件开发加速分化
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.75;">
+                      The Batch 6 月 12 日最新一期聚焦 AI Agent 对桌面工作流的渗透——Andrew Ng 在信中指出，能够在桌面上直接操作应用、执行长程任务的 AI Agent 正在从实验走向实用，并加速软件开发的角色分化：部分类型的编程工作已被大幅加速，而需要高层架构判断的任务仍高度依赖人类。本期还探讨了白宫近期发布的前沿 AI 治理行政令，以及 AI 语音 UI 的快速普及趋势。
+                    </p>
+                    <a href="https://www.deeplearning.ai/the-batch" style="display:inline-block;font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+              <!-- ── 6. Latent Space ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #7c3aed;padding-left:16px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#7c3aed;letter-spacing:1.5px;text-transform:uppercase;">Latent Space 播客 &nbsp;🎧</p>
+                    <h3 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                      Satya Nadella × Latent Space：企业 AI 生态战略、MAI 模型与 Agent 工作的未来
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.75;">
+                      🎧 <strong>播客</strong> &nbsp;|&nbsp; Latent Space 与 No Priors 联合主办的 Microsoft Build 2026 特别访谈，时长 1 小时 23 分钟。微软 CEO <strong>Satya Nadella</strong> 深入探讨了 MAI 模型系列定位、Microsoft 的 AI 生态系统战略（从 Copilot 到 Agent 平台），以及企业如何在模型能力快速演进的背景下构建可持续的 AI 工作流。Nadella 特别强调：AI 的价值不在于模型本身，而在于与现有业务流程深度整合的"AI-enabled work"。
+                    </p>
+                    <a href="https://www.latent.space/p/satya-2026" style="display:inline-block;font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">收听播客 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8ecf0;margin:24px 0;">
+
+              <!-- ── 7. TWIML ── -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-left:4px solid #0891b2;padding-left:16px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#0891b2;letter-spacing:1.5px;text-transform:uppercase;">TWIML AI Podcast &nbsp;🎧</p>
+                    <h3 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                      Ep.770：AI Agent 为何打破了 GenAI 安全治理模型？
+                    </h3>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.75;">
+                      🎧 <strong>播客</strong> &nbsp;|&nbsp; 6 月 16 日最新一期，Sam Charrington 与 Rubrik AI 负责人 Dev Rishi 深入探讨：当 AI Agent 能够跨系统规划、调用工具、编写代码并以机器速度执行时，企业原有的"静态护栏 + 人工审批"安全模式将彻底失效。节目详细分析了 Agent 如何绕过预设控制规则、MCP（Model Context Protocol）工具蔓延带来的 blast radius 问题，以及企业真正需要的解决方案：运行时策略执行、Agent 可观测性、防御纵深与"Agent Rewind"故障恢复机制，并提出"用 AI 来治理 AI"的新思路。
+                    </p>
+                    <a href="https://twimlai.com/podcast/twimlai/ai-agents-genai-security-model" style="display:inline-block;font-size:13px;color:#1a73e8;text-decoration:none;font-weight:500;">收听播客 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e8ecf0;margin:32px 0 24px 0;">
+
+              <!-- Skipped channels note -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="background-color:#f8f9fb;border-radius:6px;padding:16px 20px;">
+                    <p style="margin:0 0 6px 0;font-size:12px;font-weight:600;color:#666;letter-spacing:0.5px;">本期未收录渠道（过去 7 天无新发布内容）</p>
+                    <p style="margin:0;font-size:12px;color:#999;line-height:1.6;">
+                      Andrej Karpathy YouTube（5 月加入 Anthropic 后暂无新视频）&nbsp;·&nbsp;
+                      Yannic Kilcher YouTube（无 6 月新视频）&nbsp;·&nbsp;
+                      Two Minute Papers YouTube（无 6 月新视频）&nbsp;·&nbsp;
+                      AI Explained YouTube（无 6 月新视频）&nbsp;·&nbsp;
+                      Lex Fridman Podcast（最新一期 Ep.497 发布于 5 月 29 日，内容为粒子物理学）
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f4f6f8;padding:24px 40px;border-top:1px solid #e8ecf0;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#999;text-align:center;">
+                软件技术日报 · AI 技术前沿 &nbsp;|&nbsp; 2026-06-18
+              </p>
+              <p style="margin:0;font-size:11px;color:#bbb;text-align:center;">
+                由 Daily News Bot 自动整理，摘要基于各渠道公开内容撰写
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
