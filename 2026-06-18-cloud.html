@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-18</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#222222;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <!-- 邮件主体容器 -->
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;max-width:100%;">
+
+          <!-- 头部 -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1a2e4a 0%,#2563eb 100%);padding:32px 36px;">
+              <p style="margin:0;font-size:12px;color:#93c5fd;letter-spacing:2px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:8px 0 4px;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+              <h2 style="margin:0 0 12px;font-size:15px;font-weight:400;color:#bfdbfe;">【软件工程 &amp; 云原生】</h2>
+              <p style="margin:0;font-size:13px;color:#93c5fd;">2026-06-18 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+            </td>
+          </tr>
+
+          <!-- 内容区域 -->
+          <tr>
+            <td style="padding:0 36px 32px;">
+
+              <!-- 简介 -->
+              <p style="margin:24px 0 20px;font-size:13px;color:#64748b;line-height:1.8;border-left:3px solid #2563eb;padding-left:12px;">
+                本期精选来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo、TLDR Tech 四个渠道的最新技术动态，聚焦 Kubernetes、云原生架构与 SRE 实践。
+              </p>
+
+              <!-- ===== 渠道 1：Thoughtworks Technology Radar ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
+                <tr>
+                  <td style="padding:20px 0 0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#2563eb;text-transform:uppercase;letter-spacing:1.5px;">📡 Thoughtworks Technology Radar</p>
+                    <h3 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2e4a;line-height:1.4;">
+                      Karmada：跨多个 Kubernetes 集群的统一编排平台进入推荐阶段
+                      <span style="font-size:11px;font-weight:400;color:#64748b;margin-left:6px;">Vol. 34 · April 2026</span>
+                    </h3>
+                    <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.8;">
+                      Thoughtworks 在 Technology Radar Vol. 34（2026 年 4 月）中将 <strong>Karmada</strong>（"Kubernetes Armada"）列为值得尝试的平台工具。Karmada 是一个跨多个 Kubernetes 集群、云端与数据中心编排工作负载的平台，完全基于 Kubernetes 原生 API，现有云原生应用无需改造即可接入。它提供高级调度能力，支持多云管理、高可用、故障恢复与流量调度，作为 CNCF 项目具备较强社区动力。相比于现有的 GitOps 工具（如 Flux/ArgoCD）加自定义脚本的方案，Karmada 提供了更专一的多集群解决方案，但需注意网络、跨集群状态与存储管理目前不在其范围内，功能成熟度也有待评估。
+                    </p>
+                    <a href="https://www.thoughtworks.com/radar/platforms/karmada"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;" />
+
+              <!-- ===== 渠道 2：SRE Weekly ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
+                <tr>
+                  <td style="padding:4px 0 0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#2563eb;text-transform:uppercase;letter-spacing:1.5px;">📰 SRE Weekly</p>
+                    <h3 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2e4a;line-height:1.4;">
+                      AI 提升了交付速度，但没有改善生产可靠性——SRE Weekly #512
+                    </h3>
+                    <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.8;">
+                      本期 SRE Weekly #512 聚焦 AI 工具对 SRE 实践的实际影响。LaunchDarkly 的调研数据显示：AI 编码助手显著提升了构建与部署速度，但生产环境的可靠性并未随之改善，暗示开发速度与系统稳定性之间存在新的张力。期刊还引用 Fred Hebert 的分析，指出 AI 编码助手被定位为"增强工程师能力的伙伴"，而 AI SRE 工具则被宣传为"替代低价值工作的手段"——这种营销话语的差异折射出行业对 AI 替代人力边界的不同预设。此外，本期还探讨了为什么微服务架构下端到端测试会系统性失效，根源不在工具，而在架构与运营的根本性错配。
+                    </p>
+                    <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;" />
+
+              <!-- ===== 渠道 3：ByteByteGo ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
+                <tr>
+                  <td style="padding:4px 0 0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#2563eb;text-transform:uppercase;letter-spacing:1.5px;">📊 ByteByteGo</p>
+                    <h3 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2e4a;line-height:1.4;">
+                      EP217：Latency vs Throughput vs Bandwidth——三者的本质区别与实践影响
+                      <span style="font-size:11px;font-weight:400;color:#64748b;margin-left:6px;">Jun 6, 2026</span>
+                    </h3>
+                    <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.8;">
+                      ByteByteGo 最新一期系统设计文章清晰拆解了三个常被混淆的性能指标：<strong>Latency（延迟）</strong>是单个数据包从发送方到接收方所需的时间；<strong>Throughput（吞吐量）</strong>是单位时间内实际成功传输的数据量；<strong>Bandwidth（带宽）</strong>则是链路的最大理论容量上限。文章用"高速公路"类比形象说明：带宽是车道宽度，吞吐量是实际车流量，延迟是从 A 点到 B 点的行驶时间。三者相互独立但又相互影响——网络拥塞、丢包和协议开销会压低吞吐量，使其始终低于带宽；低延迟也并不等于高吞吐量。理解这三者对于 SRE 做性能瓶颈定位至关重要。
+                    </p>
+                    <a href="https://blog.bytebytego.com/p/ep217-latency-vs-throughput-vs-bandwidth"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;" />
+
+              <!-- ===== 渠道 4：TLDR Tech ===== -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
+                <tr>
+                  <td style="padding:4px 0 0;">
+                    <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#2563eb;text-transform:uppercase;letter-spacing:1.5px;">⚡ TLDR Tech</p>
+                    <h3 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2e4a;line-height:1.4;">
+                      Agentic Code Review：AI 正在重新定义代码审查的核心技能
+                      <span style="font-size:11px;font-weight:400;color:#64748b;margin-left:6px;">Jun 16, 2026</span>
+                    </h3>
+                    <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.8;">
+                      TLDR Tech 6 月 16 日期报道了 Agentic Code Review 的新趋势。对 33,707 个 Agent 生成 PR 的研究发现，AI 擅长处理小型、边界清晰的改动（约 28% 几乎立即被合并），但面对主观性反馈时往往放弃迭代。研究者提出"断路器（circuit breaker）"方案：在人工介入前，通过文件类型、Patch 大小等廉价信号预测高维护成本的 PR，从而在早期分流，避免工程师在 Agent 会抛弃的大型改动上投入大量精力。这意味着 Code Review 的核心能力已从"检查眼前的逻辑"转变为"重建没有被写下来的意图"——后者更难，也更慢。
+                    </p>
+                    <a href="https://tldr.tech/tech/2026-06-16"
+                       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">
+                      阅读原文 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 分割线 -->
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;" />
+
+              <!-- 跳过说明 -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="background-color:#f8fafc;border-radius:6px;padding:14px 16px;">
+                    <p style="margin:0;font-size:12px;color:#94a3b8;line-height:1.6;">
+                      <strong style="color:#64748b;">ℹ️ 本期跳过渠道：</strong>TechWorld with Nana（过去 7 天内未检索到新上传视频，频道每月发布一次，请直接访问
+                      <a href="https://www.youtube.com/@TechWorldwithNana/videos" style="color:#2563eb;text-decoration:none;">频道页面</a>
+                      查看最新内容）。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- 底部 -->
+          <tr>
+            <td style="background-color:#f8fafc;border-top:1px solid #e5e7eb;padding:20px 36px;text-align:center;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;line-height:1.6;">
+                由 Daily News Bot 自动整理 · 2026-06-18<br/>
+                内容来源：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TLDR Tech<br/>
+                技术术语保留英文原文，摘要内容仅供参考，请以原文为准。
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /邮件主体容器 -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
