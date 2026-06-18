@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-06-18</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #ffffff; margin: 0; padding: 0; color: #333333;">
+  <div style="max-width: 680px; margin: 0 auto; padding: 24px 16px;">
+
+    <!-- Header -->
+    <div style="background-color: #1a1a2e; padding: 28px 32px; border-radius: 8px; margin-bottom: 28px;">
+      <h1 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 0.5px;">软件技术日报</h1>
+      <p style="color: #93c5fd; margin: 8px 0 0; font-size: 14px; font-weight: 500;">【后端开发 &amp; Python &amp; Go】&nbsp;&nbsp;·&nbsp;&nbsp;2026-06-18</p>
+    </div>
+
+    <!-- ── 1. Martin Fowler Blog ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        Martin Fowler Blog &nbsp;·&nbsp; 2026-06-16
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://martinfowler.com/articles/reliable-llm-bayer.html" style="color: #2563eb; text-decoration: none;">Building Reliable Agentic AI Systems</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        本文深入探讨如何在生产环境中构建可靠的 Agentic AI 系统，重点分析多步 tool-call 链路中的可信度保障机制。以 PRINCE 系统为例，展示了在每次 tool 调用前必须对上一步输出进行分析再决定下一步动作的关键设计模式。文章为需要将 LLM Agent 落地到复杂业务场景的工程团队提供了实用的架构指导。
+      </p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 4px 0 20px;">
+
+    <!-- ── 2. Golang Weekly ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        Golang Weekly &nbsp;·&nbsp; Issue #605 &nbsp;·&nbsp; 2026-06-12
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://golangweekly.com/issues/605" style="color: #2563eb; text-decoration: none;">Go Security Issues Worth Auditing For</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        本期聚焦 Go 项目中值得重点审查的安全漏洞类型，包含具体代码场景与修复建议，对维护生产级 Go 服务的团队极具参考价值。上期（#604）介绍了 Go experimental 特性机制——通过 GOEXPERIMENT 标志在正式发布前试用新功能（如 generic methods），并说明了实验特性晋升为 GA 的完整流程。两期内容结合阅读，可全面了解 Go 生态的安全现状与演进节奏。
+      </p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 4px 0 20px;">
+
+    <!-- ── 3. Real Python ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        Real Python &nbsp;·&nbsp; 2026-06-08
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://realpython.com/python-news-june-2026/" style="color: #2563eb; text-decoration: none;">Python 3.15 Hits Feature Freeze — June 2026 News</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        Python 3.15 随 beta 1 发布正式进入 feature freeze，锁定核心新特性：PEP 810（显式懒加载导入，加快启动速度）、PEP 814（内置 <code style="background:#f3f4f6;padding:1px 4px;border-radius:3px;font-size:13px;">frozendict</code> 不可变映射类型）、PEP 803（free-threaded 稳定 ABI）、PEP 799（标准库采样 profiler）。JIT 编译器在 x86-64 Linux 上几何平均性能提升 8–9%；PEP 831（默认启用 frame pointers）也已达到 Final 状态，提升 <code style="background:#f3f4f6;padding:1px 4px;border-radius:3px;font-size:13px;">perf</code> 等可观测工具的调用栈准确性。
+      </p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 4px 0 20px;">
+
+    <!-- ── 4. The Go Blog ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        The Go Blog &nbsp;·&nbsp; 2026-05-21
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://go.dev/blog/pkgsite-api" style="color: #2563eb; text-decoration: none;">Introducing the pkg.go.dev API</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        Go 团队正式推出 pkg.go.dev 官方 API，提供对已发布 Go 模块元数据的程序化查询能力，主要端点托管于 <code style="background:#f3f4f6;padding:1px 4px;border-radius:3px;font-size:13px;">/v1beta</code> 路径，支持按 package/module 路径查询信息及版本列表。此前开发者只能依赖脆弱的网页抓取手段，新 API 将大幅改善 IDE 插件、自动化工具链的开发体验。团队在收集社区反馈后将迁移至正式 v1 版本。
+      </p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 4px 0 20px;">
+
+    <!-- ── 5. Netflix Tech Blog ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        Netflix Tech Blog &nbsp;·&nbsp; 2026-05-08
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a" style="color: #2563eb; text-decoration: none;">Scaling ArchUnit with Nebula ArchRules</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        Netflix 在 polyrepo 策略下维护着数万个 Java 仓库，本文介绍如何通过自研的 Nebula ArchRules Gradle 插件，在规模化场景下统一推广 ArchUnit 架构测试规则。该方案实现了跨仓库架构约束的自动化验证，有效降低了大型组织推行代码规范的成本和一致性维护难度，对管理大量微服务仓库的工程团队极具借鉴意义。
+      </p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 4px 0 20px;">
+
+    <!-- ── 6. High Scalability ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        High Scalability &nbsp;·&nbsp; 2026
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://highscalability.com/brief-history-of-scaling-uber/" style="color: #2563eb; text-decoration: none;">Brief History of Scaling Uber</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        系统梳理 Uber 从 2009 年 LAMP 架构起步到大规模微服务体系的完整演进历程。最初以 Node.js 处理实时调度、Python 处理业务逻辑的双服务架构为基础，随并发量激增逐步引入 Apache Thrift（RPC）、M3（可观测性）、Jaeger（分布式追踪）等内部基础设施。文章是一篇从实战视角解读大规模系统架构演进的经典案例。
+      </p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 4px 0 20px;">
+
+    <!-- ── 7. Arjan Codes (YouTube) ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        📹 视频 &nbsp;·&nbsp; Arjan Codes &nbsp;·&nbsp; 2026-05-08
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://www.youtube.com/watch?v=GmlZBdKhl9Y" style="color: #2563eb; text-decoration: none;">DRY Often Makes Your Code Worse</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        Arjan 在本期视频中反思被过度滥用的 DRY（Don't Repeat Yourself）原则。他指出，盲目消除重复往往导致不必要的过度抽象，使代码更难理解和维护——"三处相似代码"有时远比一个过早抽象层更清晰。视频通过具体 Python 代码示例演示了何时应接受适度重复、何时才真正需要抽象，是对工程最佳实践的深度审视。
+      </p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 4px 0 20px;">
+
+    <!-- ── 8. Brendan Gregg ── -->
+    <div style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px 24px; background-color: #fafafa;">
+      <div style="font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+        Brendan Gregg Blog &nbsp;·&nbsp; 2026-02-07
+      </div>
+      <h2 style="margin: 0 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; color: #111827;">
+        <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color: #2563eb; text-decoration: none;">Why I Joined OpenAI</a>
+      </h2>
+      <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #374151;">
+        性能工程领域权威人物 Brendan Gregg 宣布加入 OpenAI，负责 ChatGPT 性能工程工作，初期项目聚焦于跨组织的多 org 性能优化与成本降低策略。Gregg 在 eBPF、perf、火焰图（Flame Graphs）等性能诊断工具领域有深厚积累，其加入有望为 OpenAI 大规模 AI 推理基础设施带来系统性的性能改进。
+      </p>
+    </div>
+
+    <!-- Skipped channels note -->
+    <div style="margin-bottom: 24px; padding: 16px 20px; background-color: #f8fafc; border-left: 4px solid #94a3b8; border-radius: 4px;">
+      <p style="margin: 0; font-size: 12px; color: #64748b; line-height: 1.7;">
+        <strong>本期跳过渠道（7日内无新发布内容）：</strong>Python Weekly（最新 Issue #746，2026-05-21）、Anthony GG、Hussein Nasser、Fireship、Dan Luu、Go by Example。
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; padding: 20px 0; color: #9ca3af; font-size: 12px; border-top: 1px solid #e5e7eb;">
+      <p style="margin: 0;">软件技术日报 &nbsp;·&nbsp; 自动生成于 2026-06-18</p>
+      <p style="margin: 6px 0 0;">内容来源于各渠道公开发布，摘要由 AI 整理，技术术语保留英文原文。</p>
+    </div>
+
+  </div>
+</body>
+</html>
