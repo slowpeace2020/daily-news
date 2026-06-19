@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-19</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#222222;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:680px;margin:0 auto;padding:24px 16px;">
+    <tr>
+      <td>
+
+        <!-- Header -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding-bottom:24px;border-bottom:2px solid #1a1a2e;">
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#1a1a2e;letter-spacing:-0.3px;">
+                软件技术日报
+              </h1>
+              <p style="margin:4px 0 0;font-size:14px;color:#666666;">
+                【软件工程 &amp; 云原生】&nbsp;|&nbsp;2026-06-19
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Item 1: Thoughtworks Technology Radar -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:28px 0 22px;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">
+                Thoughtworks Technology Radar
+              </p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                AI 加速软件复杂性，Tech Radar Vol.34 呼吁回归工程基础以抵御「认知债务」
+              </h2>
+              <p style="margin:0 0 14px;font-size:14px;color:#444444;line-height:1.75;">
+                Thoughtworks 最新 Technology Radar Vol.34（2026年4月）将本期核心主题定为"认知债务"（cognitive debt）——AI 辅助开发正大量生成代码，持续拉大人类与软件系统之间的理解鸿沟。本期 Radar 标志着行业从无止境的实验转向对可重复性与稳定性的追求，强调重拾 zero trust 架构、DORA metrics 和可测试性等工程基础实践。Radar 同时警告，开发者工具市场已被大量单人维护的短命项目充斥，术语在语义尚未稳定前即被广泛传播，给长期技术选型带来显著挑战。
+              </p>
+              <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+                 style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                → 阅读原文
+              </a>
+            </td>
+          </tr>
+          <tr><td style="border-top:1px solid #e8e8e8;"></td></tr>
+        </table>
+
+        <!-- Item 2: SRE Weekly -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:28px 0 22px;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">
+                SRE Weekly
+              </p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                Issue #512：AI SRE 工具的角色定位之辩——增强工程师 vs. 替代常规工作？
+              </h2>
+              <p style="margin:0 0 14px;font-size:14px;color:#444444;line-height:1.75;">
+                Issue #512 引用 Fred Hebert 的分析，揭示 AI coding assistant（如 GitHub Copilot）被市场定位为"增强伙伴"，而 AI SRE 工具则被定位为"替代低价值工作"——这一分裂折射出决策者对 incident response 本质的深层认知偏差，将运维工作视为可自动化的"苦力"。本期还探讨了 incidents 作为领导力时刻的重要意义，以及系统各层在彼此不知情的情况下各自执行 retry 重试如何叠加放大故障影响，成为大规模事故的隐患。
+              </p>
+              <a href="https://sreweekly.com/sre-weekly-issue-512/"
+                 style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                → 阅读原文
+              </a>
+            </td>
+          </tr>
+          <tr><td style="border-top:1px solid #e8e8e8;"></td></tr>
+        </table>
+
+        <!-- Item 3: ByteByteGo -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:28px 0 22px;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">
+                ByteByteGo
+              </p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                OpenAI 如何构建其 Data Agent 系统架构
+              </h2>
+              <p style="margin:0 0 14px;font-size:14px;color:#444444;line-height:1.75;">
+                ByteByteGo 深度拆解了 OpenAI Data Agent 的构建方式，揭示其如何将 AI agent 与数据基础设施深度融合以支撑大规模智能数据处理。文章从系统设计视角分析了 agent 的工具调用链（tool calling chain）、上下文管理策略以及与后端 API 的集成模式，为工程师理解现代 AI agent 架构提供了清晰的参考框架，尤其对正在设计 agentic 数据平台的团队具有重要参考价值。
+              </p>
+              <a href="https://blog.bytebytego.com/p/how-openai-built-its-data-agent"
+                 style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                → 阅读原文
+              </a>
+            </td>
+          </tr>
+          <tr><td style="border-top:1px solid #e8e8e8;"></td></tr>
+        </table>
+
+        <!-- Item 4: TLDR DevOps -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:28px 0 22px;">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#888888;text-transform:uppercase;letter-spacing:0.8px;">
+                TLDR DevOps
+              </p>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                Dropbox Nova 发布、GitHub Enterprise 迁移实践与 Terraform AgentCore 新特性
+              </h2>
+              <p style="margin:0 0 14px;font-size:14px;color:#444444;line-height:1.75;">
+                TLDR DevOps 最新一期（2026年5月27日）聚焦三大动态：Dropbox 推出内部平台 Nova 以大幅提升工程效率；GitHub Enterprise 大规模迁移实战经验分享，涵盖分支策略与团队协作流程调整；以及 Terraform AgentCore 新功能解析——支持 AI Agent 在 Terraform 工作流中自动化 provision 基础设施，标志着 Infrastructure as Code 向 Agentic DevOps 演进的重要里程碑。
+              </p>
+              <a href="https://tldr.tech/devops/2026-05-27"
+                 style="color:#2563eb;font-size:13px;text-decoration:none;font-weight:600;">
+                → 阅读原文
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Footer -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding-top:24px;border-top:2px solid #1a1a2e;">
+              <p style="margin:0;font-size:12px;color:#999999;line-height:1.8;">
+                本邮件由每日技术动态 Agent 自动生成 &nbsp;|&nbsp; 生成日期：2026-06-19<br>
+                渠道覆盖：Thoughtworks Technology Radar · SRE Weekly · ByteByteGo · TLDR DevOps<br>
+                <em>TechWorld with Nana：本期未检测到 7 天内新发布视频，已跳过。</em>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
