@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【AI 技术前沿】- 2026-06-21</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#1a1a1a;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:20px 0;">
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 32px;border-radius:8px 8px 0 0;">
+              <p style="margin:0 0 4px 0;font-size:12px;color:#8899bb;text-transform:uppercase;letter-spacing:1px;">Software Daily Digest</p>
+              <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报【AI 技术前沿】</h1>
+              <p style="margin:8px 0 0 0;font-size:13px;color:#99aabf;">2026 年 6 月 21 日 &nbsp;·&nbsp; 过去 7 天精选</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="background-color:#f9f9fb;padding:0 32px 32px 32px;border-radius:0 0 8px 8px;border:1px solid #e8e8ee;border-top:none;">
+
+              <!-- Intro -->
+              <p style="margin:24px 0 8px 0;font-size:13px;color:#555;line-height:1.6;">
+                本期汇总了 Anthropic、OpenAI、Google DeepMind、Hugging Face、The Batch 及 TWIML AI Podcast 过去 7 天的重点内容，涵盖新模型发布、安全研究、工程实践与行业动态。
+              </p>
+
+              <!-- ====== 1. Anthropic ====== -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;">Anthropic Blog</p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                      Claude Fable 5 与 Claude Mythos 5 正式发布
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      Anthropic 于 6 月 9 日推出 Claude Fable 5 与 Claude Mythos 5，这是迄今最强大的可公开访问 Claude 模型。Fable 5 在 SWE-Bench Pro 上得分达 80.3%，远超同期竞争模型（GPT-5.5 为 58.6%，Gemini 3.1 Pro 为 54.2%），在软件工程、科学研究与视觉任务上均刷新基准。Mythos 5 则面向网络防御者和关键基础设施提供商，通过 Project Glasswing 部署，移除了部分安全限制。
+                      值得关注的是，6 月 12 日美国政府发布指令要求暂停对 Fable 5 和 Mythos 5 的部分访问权限，引发 AI 治理层面的广泛讨论。
+                    </p>
+                    <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">阅读原文 →</a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.anthropic.com/news/fable-mythos-access" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">美国政府指令声明 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ====== 2. OpenAI ====== -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;">OpenAI Blog</p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                      部署模拟（Deployment Simulation）：在发布前预测模型行为
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      OpenAI 于 6 月 16 日发布新型安全评估方法「Deployment Simulation」，通过将历史真实用户对话注入候选新模型来模拟真实上线场景，从而在发布前识别潜在风险行为。该方法将模型对"自己正在被测试"的识别率从 99.72% 大幅降至 5.12%，有效规避了测试环境下的行为失真。在分析约 130 万条 GPT-5 系列对话后，该方法预测误差中位数约为 1.5 倍，为部署决策提供了有力的定量参考。
+                    </p>
+                    <a href="https://openai.com/index/deployment-simulation/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ====== 3. Google DeepMind ====== -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;">Google DeepMind Blog</p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                      AI 控制路线图：以纵深防御应对未完全对齐的 AI 智能体
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      Google DeepMind 于 6 月 18 日发布博文，介绍「AI Control Roadmap」——一套在 Google 内部部署高级 AI 智能体的系统级安全框架。该框架采用纵深防御（defense-in-depth）策略，在对齐不完美的情况下依然提供安全保障，包括访问控制、行为监控与阻断机制，防范假想中的智能体执行模型窃取、内部恶意部署或工作破坏等行为。这是继多智能体安全研究基金（1000 万美元）之后，DeepMind 在 AI 安全领域的又一重要公开表态。
+                    </p>
+                    <a href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ====== 4. Hugging Face ====== -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;">Hugging Face Blog</p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                      超越 LoRA：能击败最流行微调技术的方法存在吗？
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      Hugging Face 于 6 月 18 日发布深度技术文章，系统评测多种参数高效微调（PEFT）方法对 LoRA 的挑战——包括 DoRA、LoftQ、VeRA 等变体。文章从训练效率、内存占用、下游任务表现等多维度进行横向对比，探讨何时应考虑替代 LoRA。这对于需要在资源受限环境下对大模型进行领域微调的工程师具有重要参考价值。
+                    </p>
+                    <a href="https://huggingface.co/blog/peft-beyond-lora" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ====== 5. The Batch ====== -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;">The Batch · DeepLearning.AI</p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                      美国政府与 Anthropic 先后收紧前沿模型访问——Andrew Ng 周报解读
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      The Batch 6 月 19 日一期聚焦近两周内美国政府与 Anthropic 双双收紧前沿 AI 模型访问权限的重大政策动向。文章指出：白宫拒绝了 Anthropic 限制 Claude 用于军事监控和自主武器的请求，并向更多组织扩展 Mythos 预览的计划也遭到反对。这标志着政府对 AI 能力的管控触角已深入到技术公司自身的产品决策层。
+                    </p>
+                    <a href="https://www.deeplearning.ai/the-batch" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">阅读原文 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ====== 6. TWIML AI Podcast ====== -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;">TWIML AI Podcast &nbsp;🎧 播客</p>
+                    <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#111827;line-height:1.4;">
+                      Ep. 770 — 为什么 AI 智能体会打破 GenAI 安全模型
+                    </h2>
+                    <p style="margin:0 0 12px 0;font-size:14px;color:#374151;line-height:1.7;">
+                      本期（6 月 16 日）由 Sam Charrington 与 Rubrik AI 总经理 Dev Rishi 对谈：当 AI 智能体从"回答问题"升级为"跨系统执行动作"时，企业过去依赖静态护栏加人工审批的安全模式将全面失效。节目深入探讨了 Agentic AI 时代下企业安全模型需要如何重构——包括动态权限管理、意图识别与实时审计——对正在落地 AI Agent 的工程团队具有直接参考意义。
+                    </p>
+                    <a href="https://twimlai.com/podcast/twimlai/why-ai-agents-break-genai-security-model" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">收听播客 →</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Skipped channels note -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <p style="margin:0;font-size:12px;color:#9ca3af;line-height:1.7;">
+                <strong style="color:#6b7280;">本期跳过渠道说明：</strong>
+                Andrej Karpathy（5 月加入 Anthropic 后暂无新 YouTube 发布）、
+                Yannic Kilcher、Two Minute Papers、AI Explained（过去 7 天内未发现新视频）、
+                Lex Fridman Podcast（最新一期为 5 月 29 日 Ep. 497）、
+                Latent Space（最新一期为 6 月 3 日，略超 7 天窗口）。
+              </p>
+
+              <!-- Footer -->
+              <hr style="border:none;border-top:1px solid #dde0e8;margin:24px 0;" />
+              <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center;line-height:1.6;">
+                软件技术日报 · AI 技术前沿专刊<br />
+                生成日期：2026-06-21 &nbsp;|&nbsp; 内容来源于公开博客、YouTube 及播客
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
