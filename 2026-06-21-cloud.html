@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 & 云原生】- 2026-06-21</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:660px;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:26px 32px;border-radius:8px 8px 0 0;">
+              <h1 style="margin:0;color:#ffffff;font-size:19px;font-weight:700;letter-spacing:0.4px;line-height:1.3;">
+                软件技术日报【软件工程 &amp; 云原生】
+              </h1>
+              <p style="margin:8px 0 0;color:#94a3b8;font-size:13px;">2026-06-21 &nbsp;·&nbsp; 精选 4 条技术动态</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;padding:28px 32px;background-color:#ffffff;">
+
+              <!-- ── 1. Thoughtworks Technology Radar ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 5px;font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:1px;">
+                      Thoughtworks Technology Radar
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      Technology Radar Vol. 34 — Context Engineering 与 Kubernetes 云原生新趋势（2026 年 4 月）
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;line-height:1.75;color:#475569;">
+                      Thoughtworks 发布第 34 卷 Technology Radar，将 <strong>Context Engineering</strong> 列为 AI 系统的核心架构关注点，主张把 context window 视为可设计的表面而非附属物。云原生方面，<strong>CloudNativePG</strong>（PostgreSQL 的 Kubernetes Operator）进入推荐列表，通过声明式资源管理大幅简化在 K8s 上运行高可用 PostgreSQL 集群的复杂度。此外，<strong>Apache APISIX</strong> 因支持 Kubernetes Gateway API 而被列为替换传统 Nginx Ingress Controller 的有力候选方案。
+                    </p>
+                    <a href="https://www.thoughtworks.com/radar" style="color:#2563eb;font-size:13px;font-weight:600;text-decoration:none;">
+                      → 查看完整 Radar
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;">
+
+              <!-- ── 2. SRE Weekly ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 5px;font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:1px;">
+                      SRE Weekly
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      AWS us-east-1 长达 28 小时的故障复盘：Multi-AZ 绝非可选项
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;line-height:1.75;color:#475569;">
+                      2026 年 5 月 7 日，AWS us-east-1（use1-az4 可用区）因数据中心散热系统故障导致服务器过热宕机，引发长达 <strong>28 小时</strong>的大规模中断，超过 150 个云服务受到影响，是近年来持续时间最长的单 AZ 故障之一。SRE Weekly 深度复盘此次事故，指出许多团队即使在"云端架构"上线后，实际仍存在单点故障——若应用无法在一个 AZ 失效时自动切换，<strong>Multi-AZ 部署形同虚设</strong>。事故再次提醒工程师：可用性设计必须在基础架构层面真正落地，而非停留在架构图上。
+                    </p>
+                    <a href="https://sreweekly.com/" style="color:#2563eb;font-size:13px;font-weight:600;text-decoration:none;">
+                      → 阅读 SRE Weekly
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;">
+
+              <!-- ── 3. ByteByteGo ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 5px;font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:1px;">
+                      ByteByteGo
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      Must-Know Deployment Strategies: From Big-Bang to Progressive Delivery
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;line-height:1.75;color:#475569;">
+                      ByteByteGo 系统梳理了从 <strong>Big-Bang 部署</strong>到 <strong>Progressive Delivery</strong>（渐进式交付）的主流发布策略，涵盖 Rolling Update、Blue-Green、Canary、Feature Flag 等，逐一分析各策略的工作原理、成本与适用场景。文章强调，渐进式交付已成为大规模生产部署的新标准——通过将多种策略编排为自动化的晋级流水线，可在有效控制风险的前提下持续交付。对于在 <strong>Kubernetes</strong> 上落地 CD 流程的团队，这篇文章提供了清晰的决策框架与对比参考。
+                    </p>
+                    <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="color:#2563eb;font-size:13px;font-weight:600;text-decoration:none;">
+                      → 阅读原文
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;">
+
+              <!-- ── 4. TLDR Tech ── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 5px;font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:1px;">
+                      TLDR Tech &nbsp;·&nbsp; 2026-06-16
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;">
+                      Agentic Code Review 时代来临：AI 让写代码变容易，让审查代码变更难
+                    </h2>
+                    <p style="margin:0 0 12px;font-size:14px;line-height:1.75;color:#475569;">
+                      TLDR Tech（2026-06-16）聚焦 <strong>Agentic Code Review</strong> 议题：Coding Agent 能力正在快速提升，大量代码由 AI 生成，但"理解代码"的认知成本并没有随之降低，反而使 Code Review 成为当前软件工程中<strong>杠杆率最高的技能</strong>。文章指出工程团队需要重新思考 Review 流程——不仅审查 AI 生成代码的正确性，更要判断是否应该信任 AI 的决策逻辑。这一趋势对采用 CI/CD 自动化的云原生团队尤为重要，需在流水线中引入更系统化的 AI 输出验证机制。
+                    </p>
+                    <a href="https://tldr.tech/tech/2026-06-16" style="color:#2563eb;font-size:13px;font-weight:600;text-decoration:none;">
+                      → 阅读完整期刊
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Footer -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:28px;">
+                <tr>
+                  <td style="padding-top:18px;border-top:1px solid #e2e8f0;text-align:center;">
+                    <p style="margin:0;font-size:12px;color:#94a3b8;line-height:1.6;">
+                      📬 由自动化 Agent 整理 · 内容来源于公开渠道 · 仅供技术参考<br>
+                      TechWorld with Nana 本周无新发布，已跳过
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
