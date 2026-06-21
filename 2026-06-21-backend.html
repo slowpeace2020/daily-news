@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-06-21</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; max-width: 680px; margin: 0 auto; background: #ffffff; color: #1a1a1a; padding: 20px;">
+
+  <div style="background: #1a1a2e; color: #ffffff; padding: 24px; border-radius: 8px; margin-bottom: 28px;">
+    <h1 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.3px;">软件技术日报</h1>
+    <p style="margin: 8px 0 0; color: #a0aec0; font-size: 14px;">后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 2026-06-21</p>
+  </div>
+
+  <!-- High Scalability -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">High Scalability</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">Kafka 101 — Apache Kafka 深度解析（by Stanislav Kozlovski）</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      这篇由 Apache Kafka Committer Stanislav Kozlovski 撰写的深度文章，从架构角度全面解析了 Kafka 的设计理念与最新进展。重点介绍了 <strong>Tiered Storage</strong> 新特性：将历史数据卸载至 Amazon S3 等远端对象存储，本地磁盘仅保留热数据，大幅降低存储成本。结合 2026 年 diskless Kafka 与 Apache Iceberg 整合趋势，该架构为统一低成本流式存储奠定新基础。
+    </p>
+    <a href="https://highscalability.com/untitled-2/" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">阅读原文 →</a>
+  </div>
+
+  <!-- Martin Fowler Blog -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Martin Fowler Blog</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">Fragments: June 16 — LLM 辅助编程出现真正拐点</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      Fowler 在最新 Fragment 中观察到，2026 年 4 月出现了 LLM 辅助编程的关键<strong>拐点</strong>：前沿 AI 实验室和大型企业的营收影响已开始实质显现。文章强调，AI 会放大团队现有的工程实践——意味着工程纪律的重要性不降反升，敷衍了事的团队在 AI 加持下只会更快"搬砖"，而非提升质量。此外文章还引用 Mike Masnick 对互联网去中心化失败的分析，探讨技术平台的历史惯性。
+    </p>
+    <a href="https://martinfowler.com/fragments/2026-06-16.html" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">阅读原文 →</a>
+  </div>
+
+  <!-- Netflix Tech Blog -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Netflix Tech Blog</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">Scaling ArchUnit with Nebula ArchRules</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      Netflix 采用 polyrepo 策略管理<strong>数万个 Java 代码仓库</strong>，如何在如此大规模下统一执行架构规范成为核心挑战。本文介绍了 <strong>Nebula ArchRules</strong> 方案：在 ArchUnit 测试框架之上构建共享规则库，将架构约束以代码形式（Architecture as Code）跨团队复用。这一实践确保了 Netflix 庞大微服务体系中的一致性，同时大幅降低了各团队独立维护架构测试的成本。
+    </p>
+    <a href="https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">阅读原文 →</a>
+  </div>
+
+  <!-- Real Python -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Real Python</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">Python 3.15 Hits Feature Freeze — 核心特性全面锁定</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      Python 3.15.0b1 发布标志着 Feature Freeze 正式到来，以下重磅特性已锁定：<strong>PEP 810</strong> 显式懒加载 import（提升启动速度）、<strong>PEP 814</strong> 内置 <code style="background:#f7fafc; padding:1px 4px; border-radius:3px; font-size:13px;">frozendict</code> 不可变字典、JIT 编译器在 x86-64 Linux 上<strong>性能提升 8–9%</strong>。PEP 831（Frame Pointers Everywhere）落地后，perf 等性能分析工具将生成更准确的调用栈，是性能工程师的重大利好。
+    </p>
+    <a href="https://realpython.com/python-news-june-2026/" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">阅读原文 →</a>
+  </div>
+
+  <!-- Python Weekly -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Python Weekly</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">最新一期（2026年6月）— AI Agent 评估、OpenTelemetry 日志对接</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      本期 Python Weekly 由 Rahul Chaudhary 策划，重点内容包括：<strong>AI Agent 评估最佳实践</strong>与常见模式（如何在生产环境中系统性地衡量 Agent 质量）；使用 OpenTelemetry Python SDK 的 <code style="background:#f7fafc; padding:1px 4px; border-radius:3px; font-size:13px;">LoggingHandler</code> 将 Python 标准日志对接可观测性流水线；以及 <strong>nb-cli</strong>（Rust 编写的 Jupyter Notebook 命令行工具）的介绍。
+    </p>
+    <a href="https://www.pythonweekly.com/" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">访问 Python Weekly →</a>
+  </div>
+
+  <!-- The Go Blog -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">The Go Blog</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">Introducing the pkg.go.dev API — Go 模块元数据官方 API 发布</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      Go 官方正式推出 <strong>pkg.go.dev API</strong>，支持直接查询已发布 Go 模块的元数据，终结了开发者长期依赖网页爬虫的尴尬局面。该 API 承诺维护向后兼容性，同时提供 OpenAPI 规范和参考客户端实现 <code style="background:#f7fafc; padding:1px 4px; border-radius:3px; font-size:13px;">pkgsite-cli</code>，方便 IDE 插件、CI 工具和自动化脚本快速集成，是 Go 生态基础设施的重要完善。
+    </p>
+    <a href="https://go.dev/blog/pkgsite-api" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">阅读原文 →</a>
+  </div>
+
+  <!-- Golang Weekly -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Golang Weekly</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">Issue #606: Go 1.27 Release Candidate 1 — Generic Methods 正式落地</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      Go 1.27 RC1 发布，本次最重磅特性是 <strong>Generic Methods（泛型方法）</strong>的落地：开发者终于可以在类型命名空间下定义带有独立类型参数的方法，弥补了 Go 泛型体系长期以来的最大短板。Generic Methods 以 <code style="background:#f7fafc; padding:1px 4px; border-radius:3px; font-size:13px;">GOEXPERIMENT</code> 标志启用，计划在 Go 1.27 正式版（预计 2026 年 8 月）稳定发布。
+    </p>
+    <a href="https://golangweekly.com/issues/606" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">阅读原文 →</a>
+  </div>
+
+  <!-- Arjan Codes -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Arjan Codes &nbsp;|&nbsp; 📹 视频</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">Your API Can't Handle Real-World Integrations</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      Arjan 在这期视频中深入探讨了 API 设计在真实集成场景下的常见陷阱：理论上优雅的接口往往在多方集成和边缘用例堆积后不堪重负。视频从工程最佳实践出发，涵盖<strong>版本兼容策略、错误处理约定和契约测试</strong>等方面的实用建议，适合负责对外 API 设计与维护的后端工程师观看。
+    </p>
+    <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">📹 观看视频 →</a>
+  </div>
+
+  <!-- Hussein Nasser -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Hussein Nasser &nbsp;|&nbsp; 📹 视频</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">The Core of Backend System Design</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      Hussein Nasser 在这期 The Backend Engineering Show 中系统梳理了后端系统设计的核心方法论，覆盖<strong>通信协议选型、服务间协调模式以及数据流设计</strong>等关键主题。视频从第一性原理出发，帮助工程师建立扎实的系统设计知识框架，是 Hussein 课程体系（后端通信与协议）的优秀导论内容。
+    </p>
+    <a href="https://www.youtube.com/watch?v=1nUnRgawAC8" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">📹 观看视频 →</a>
+  </div>
+
+  <!-- Fireship -->
+  <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e2e8f0;">
+    <div style="font-size: 11px; color: #718096; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; font-weight: 600;">Fireship &nbsp;|&nbsp; 📹 视频</div>
+    <h2 style="margin: 0 0 10px; font-size: 16px; font-weight: 600; color: #1a1a1a; line-height: 1.4;">The most trusted code on Earth is being rewritten in Rust</h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.7; color: #4a5568;">
+      地球上被信任最多的代码——<strong>SQLite</strong>——正在被 Rust 重写。本视频介绍了 <strong>Turso</strong> 项目：从零用 Rust 重新实现的 SQLite 兼容数据库，保留原版 API 兼容性的同时引入了 SQLite 不具备的新特性。这一进展展示了 Rust 在系统级底层基础设施重写方面日益成熟的工程实力，发布于本周（2026-06-19）。
+    </p>
+    <a href="https://www.youtube.com/watch?v=Sntj4HmuykI" style="color: #3182ce; font-size: 13px; text-decoration: none; font-weight: 500;">📹 观看视频 →</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 12px; color: #a0aec0; line-height: 1.6;">
+    <p style="margin: 0;">软件技术日报 &nbsp;·&nbsp; 后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-06-21</p>
+    <p style="margin: 6px 0 0;">内容来源于各技术博客及 YouTube 频道，摘要由 AI 整理，技术术语保留英文原文，仅供参考。</p>
+  </div>
+
+</body>
+</html>
