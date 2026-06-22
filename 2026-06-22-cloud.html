@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-06-22</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:680px;margin:0 auto;background-color:#ffffff;">
+
+    <!-- Header -->
+    <tr>
+      <td style="background-color:#1a2b4a;padding:24px 32px;">
+        <h1 style="margin:0;font-size:20px;color:#ffffff;font-weight:600;line-height:1.4;">
+          软件技术日报【软件工程 &amp; 云原生】
+        </h1>
+        <p style="margin:6px 0 0;font-size:13px;color:#8aadcf;">2026年06月22日 · 精选 4 条技术动态</p>
+      </td>
+    </tr>
+
+    <!-- Body -->
+    <tr>
+      <td style="padding:24px 32px;">
+
+        <!-- Item 1: Thoughtworks Technology Radar -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding-bottom:8px;">
+              <span style="display:inline-block;background-color:#e8f0fe;color:#1a2b4a;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">THOUGHTWORKS TECHNOLOGY RADAR</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.5;">
+                AI 加剧软件复杂性，Technology Radar Vol.34 呼吁回归工程基本功以应对"认知债务"
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#444444;">
+                Thoughtworks 于 2026 年 4 月发布第 34 卷 Technology Radar，核心主题是 AI 辅助编程正在快速积累"cognitive debt（认知债务）"——AI 生成的代码量远超开发者对系统的理解速度，导致人与软件之间的认知鸿沟持续扩大。报告建议团队强制落实 zero trust 架构、严格的可测试性要求和 DORA 指标，以管控 AI coding agent 带来的工程风险。在云原生领域，<strong>CloudNativePG</strong>（Kubernetes Operator，用于管理高可用 PostgreSQL 集群）进入 Adopt 象限，<strong>ClickStack</strong>（基于 ClickHouse 的 OpenTelemetry 兼容统一可观测性平台）作为新兴工具值得关注。
+              </p>
+              <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+            </td>
+          </tr>
+        </table>
+
+        <hr style="margin:24px 0;border:none;border-top:1px solid #e8eaed;">
+
+        <!-- Item 2: SRE Weekly -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding-bottom:8px;">
+              <span style="display:inline-block;background-color:#e6f4ea;color:#1e6b30;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">SRE WEEKLY</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.5;">
+                Issue #517：没有任何单一团队能掌握整个故障的全貌
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#444444;">
+                本期重点探讨现代分布式系统中的 incident response 挑战：今天的 P1 故障已跨越多个服务、团队和基础设施层，没有哪个团队能拥有事故的完整视图，协同响应正成为 SRE 的核心难题。此外本期还涵盖 post-mortem 行动项为何难以落地的分析、Netflix 大规模直播（Live）系统运维经验，以及对 2026 年 5 月 AWS us-east-1 长达 28 小时宕机事件的深度复盘——该事件对分布式基础设施设计思路带来了重要启示。
+              </p>
+              <a href="https://sreweekly.com/sre-weekly-issue-517/" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+            </td>
+          </tr>
+        </table>
+
+        <hr style="margin:24px 0;border:none;border-top:1px solid #e8eaed;">
+
+        <!-- Item 3: ByteByteGo -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding-bottom:8px;">
+              <span style="display:inline-block;background-color:#fff3e0;color:#b45309;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">BYTEBYTEGO</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.5;">
+                必知的部署策略：从 Big-Bang 到 Progressive Delivery
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#444444;">
+                本文系统梳理了当前生产环境中主流的五种部署策略：Big-bang（全量替换，停机风险高）、Rolling update（滚动更新，适合 Kubernetes 默认场景）、Blue-green（双环境切流，回滚简单但成本高）、Canary（金丝雀，按比例灰度，适合高风险变更）以及 Progressive Delivery（渐进式交付，结合特性开关精细化控制）。每种策略均配有适用场景、成本权衡和回滚机制的对比，是云原生环境下制定发布决策的实用参考手册。
+              </p>
+              <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+            </td>
+          </tr>
+        </table>
+
+        <hr style="margin:24px 0;border:none;border-top:1px solid #e8eaed;">
+
+        <!-- Item 4: TLDR Tech -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding-bottom:8px;">
+              <span style="display:inline-block;background-color:#fce4ec;color:#880e2e;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">TLDR TECH</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 style="margin:0 0 10px;font-size:16px;font-weight:700;color:#1a2b4a;line-height:1.5;">
+                Agentic Code Review 实验数据揭示：AI 辅助编程的质量与效率两面性
+              </h2>
+              <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#444444;">
+                TLDR Tech（2026-06-16）聚焦 agentic code review 的最新研究：Faros AI 对 22,000 名开发者的研究显示，引入 AI 辅助后代码流失率（code churn）上升 861%，每位开发者缺陷率从 9% 骤升至 54%，代码 review 时长增加 441%。但与此同时，agentic review 工具表现亮眼——Anthropic 内部部署后，获得实质性 review 的 PR 比例从 16% 提升至 54%；CodeRabbit 在 benchmark 中精准率约 49%，Greptile 报告缺陷捕获率达 82%。这组数据揭示出 AI 编程时代的核心矛盾：原始产出大幅提升，但交付价值和代码质量需要更严格的 agentic review 机制来保障。
+              </p>
+              <a href="https://tldr.tech/tech/2026-06-16" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+      <td style="background-color:#f8f9fa;padding:16px 32px;border-top:1px solid #e8eaed;">
+        <p style="margin:0;font-size:12px;color:#888888;line-height:1.6;">
+          本邮件由 Daily News Bot 自动整理，每日发送。内容摘要基于公开信息，技术术语保留英文原文。<br>
+          TechWorld with Nana 本期因无法确认 7 天内新内容，已跳过。
+        </p>
+      </td>
+    </tr>
+
+  </table>
+</body>
+</html>
