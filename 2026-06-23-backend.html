@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-06-23</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a2e;">
+  <div style="max-width:680px;margin:0 auto;padding:24px 16px;">
+
+    <!-- Header -->
+    <div style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);border-radius:12px;padding:32px 28px;margin-bottom:28px;">
+      <h1 style="margin:0 0 8px 0;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:0.5px;">
+        软件技术日报
+      </h1>
+      <p style="margin:0;font-size:14px;color:#a8b2d8;letter-spacing:0.3px;">
+        【后端开发 &amp; Python &amp; Go】&nbsp;&nbsp;·&nbsp;&nbsp;2026-06-23
+      </p>
+      <p style="margin:12px 0 0 0;font-size:13px;color:#7986a8;line-height:1.6;">
+        精选 Martin Fowler · Netflix Tech Blog · Real Python · Python Weekly · The Go Blog · Golang Weekly · Arjan Codes · Hussein Nasser
+      </p>
+    </div>
+
+    <!-- ===== 1. Martin Fowler Blog ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#e8f0fe;color:#1a73e8;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">Martin Fowler Blog</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">2026-06-16</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        Fragments: June 16 — AI 辅助开发的商业拐点已到来
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        Fowler 在最新 Fragments 中指出，2026 年 4 月似乎是 AI 编程工具走向商业可持续的拐点，头部 AI 实验室的收入结构开始呈现健康态势。他观察到，主动拥抱 AI 辅助开发的团队正在展现出切实的效能提升，而选择观望的团队则面临潜在的生存压力。Fowler 强调：真正稀缺的资源是人类注意力——这是无法被克隆或并行化的串行资源，围绕它设计 AI agent 协作系统才是关键工程挑战。
+      </p>
+      <a href="https://martinfowler.com/fragments/2026-06-16.html" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+    </div>
+
+    <!-- ===== 2. Netflix Tech Blog ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#fce8e6;color:#d93025;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">Netflix Tech Blog</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">2026-06 · 最新</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        How Netflix Simplified Batch Compute with Kueue
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        Netflix 将云原生批量任务队列系统 <strong>Kueue</strong> 集成到其容器平台 Titus，彻底替代了内部自研的 CMB（Compute Managed Batch）系统。Kueue 提供开箱即用的多租户配额管理、抢占调度（preemption）、全量或全无调度（all-or-nothing）以及拓扑感知调度等特性，这些都是 Netflix 此前需要在 CMB 中手动实现的。整个迁移过程对业务方完全透明，用户零改动，容器启动速率与最大吞吐量均无回退——这是一次将自研复杂度向云原生生态迁移的工程典范。
+      </p>
+      <a href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+    </div>
+
+    <!-- ===== 3. Real Python ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#e6f4ea;color:#1e7e34;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">Real Python</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">2026-06 · 最新</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        Python 3.15 Hits Feature Freeze and Other News for June 2026
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        Python 3.15 正式进入 Feature Freeze，Beta 2 已发布，Release Candidate 阶段将于 8 月 4 日开放，正式版预计秋季推出。本月最值得关注的是 <strong>PEP 831（Frame Pointers Everywhere）</strong>获批 Final 状态，CPython 将默认开启 frame pointer 编译，使性能分析器（profiler）和可观测性工具能够生成准确的调用栈——这对生产环境性能排查意义重大。此外 PEP 808（在动态元数据中包含静态值）也已获批，弥补了 pyproject.toml 在配置灵活性上的短板。
+      </p>
+      <a href="https://realpython.com/python-news-june-2026/" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+    </div>
+
+    <!-- ===== 4. Python Weekly ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#fff3e0;color:#e65100;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">Python Weekly</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">2026-06-11 · Issue 748</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        Python Weekly Issue 748 — Python 生态最新动态汇总
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        本期 Python Weekly 重点聚焦 Python 3.15 进入 Feature Freeze 前后的生态变化，涵盖 PSF（Python Software Foundation）战略规划更新与社区捐助进展。值得关注的背景：Anthropic 已与 PSF 达成为期两年、总额 150 万美元的合作协议，资金将用于强化 CPython 核心基础设施与 PyPI 安全审查机制。本期还精选了多个实战教程、开源工具和来自社区的高质量技术文章。
+      </p>
+      <a href="https://www.pythonweekly.com/" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 订阅 / 查看最新期</a>
+    </div>
+
+    <!-- ===== 5. The Go Blog ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#e3f2fd;color:#1565c0;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">The Go Blog</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">2026-06 · 最新</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        Go 1.27 Release Candidate 1 发布 — Generic Methods 正式落地
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        Go 团队发布了 Go 1.27 的第一个 Release Candidate，邀请开发者在生产负载和单元测试中进行实测并反馈。Go 1.27 最重磅的特性是 <strong>Generic Methods（泛型方法）</strong>的正式支持：开发者现在可以在特定类型的命名空间内定义泛型函数，不再需要将其提升为包级别的泛型函数，大幅改善了泛型代码的组织方式。正式版预计 2026 年 8 月发布，可通过官方下载页或 <code style="background:#f1f3f4;padding:1px 5px;border-radius:3px;font-size:13px;">go install</code> 命令体验。
+      </p>
+      <a href="https://go.dev/blog/" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+    </div>
+
+    <!-- ===== 6. Golang Weekly ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#e8f5e9;color:#2e7d32;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">Golang Weekly</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">Issue #606 · 2026-06</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        Issue #606: Go 1.27 Release Candidate 1 — Generic Methods 使用指南与 Go Experiments 解析
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        本期 Golang Weekly 以 Go 1.27 RC1 发布为核心，深入介绍了 Generic Methods 特性的实际使用场景及其对代码架构设计的影响。本期还收录了一篇关于 <strong>为什么 Cilium 在 2026 年仍然 vendor 所有 Go 模块</strong>的深度分析——核心原因是安全性与构建可重现性（reproducibility）的强制保障。此外，Go Experiments API 的工作机制专题解读也值得 Go 核心开发者关注。
+      </p>
+      <a href="https://golangweekly.com/issues/606" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 阅读原文</a>
+    </div>
+
+    <!-- ===== 7. Arjan Codes ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#fce4ec;color:#c2185b;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">Arjan Codes</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">📹 视频 · 2026-05-01</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        📹 Your API Can't Handle Real-World Integrations
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        Arjan 在这期视频中深入剖析了理想化 API 设计在真实集成场景下为何频频失效。视频从工程实践出发，分析了错误处理不完善、版本演化策略缺失、boundary 设计不清晰等常见陷阱，并提供了可直接落地的解决方案。对于需要对接第三方服务或设计对外 API 的后端工程师来说，这期内容提供了大量实战价值。
+      </p>
+      <a href="https://www.youtube.com/watch?v=rZpwFN_n2-g" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 观看视频</a>
+    </div>
+
+    <!-- ===== 8. Hussein Nasser ===== -->
+    <div style="padding:20px 0;border-bottom:1px solid #e8edf5;">
+      <div style="display:flex;align-items:center;margin-bottom:10px;">
+        <span style="background:#ede7f6;color:#6a1b9a;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">Hussein Nasser</span>
+        <span style="margin-left:10px;color:#9aa5b1;font-size:12px;">📹 视频 · 2026-06-09</span>
+      </div>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:600;color:#1a1a2e;line-height:1.4;">
+        📹 Backend Engineering Show — PostgreSQL 吞吐量在 Linux 7.0 内核上骤降 50% 的根因分析
+      </h2>
+      <p style="margin:0 0 12px 0;font-size:14px;color:#4a5568;line-height:1.7;">
+        Hussein 在本期 Backend Engineering Show 中详细复盘了一位 AWS 工程师发现的严重性能回归：在 Linux 7.0 内核上，PostgreSQL 的吞吐量下降了 50%。根因分析指向 Linux 7.0 引发的大量 TLB（Translation Lookaside Buffer）未命中和 page fault，而 PostgreSQL 基于多进程（process-based）而非多线程的架构设计显著放大了这一问题。这是一个将内核级别内存管理变更、数据库架构设计与性能调优结合在一起的极佳案例学习。
+      </p>
+      <a href="https://www.youtube.com/channel/UC_ML5xP23TOWKUcc-oAE_Eg" style="color:#1a73e8;font-size:13px;font-weight:500;text-decoration:none;">→ 观看视频</a>
+    </div>
+
+    <!-- Footer -->
+    <div style="margin-top:28px;padding:20px 0;text-align:center;color:#9aa5b1;font-size:12px;line-height:1.8;border-top:1px solid #e8edf5;">
+      <p style="margin:0 0 4px 0;">软件技术日报 · 后端开发 &amp; Python &amp; Go · 每日精选</p>
+      <p style="margin:0;">生成时间：2026-06-23 &nbsp;|&nbsp; 覆盖渠道：8 个 &nbsp;|&nbsp; 跳过渠道（无近期更新）：High Scalability · Dan Luu · Brendan Gregg · Go by Example · Anthony GG · Fireship</p>
+    </div>
+
+  </div>
+</body>
+</html>
