@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【AI 技术前沿】- 2026-07-08</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;">
+  <tr>
+    <td align="center" style="padding:24px 16px;">
+      <table width="640" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:32px 36px;">
+            <p style="margin:0 0 6px 0;font-size:12px;color:#a0aec0;letter-spacing:1.5px;text-transform:uppercase;">Daily Tech Digest</p>
+            <h1 style="margin:0;font-size:24px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报<br><span style="color:#63b3ed;">【AI 技术前沿】</span></h1>
+            <p style="margin:10px 0 0 0;font-size:14px;color:#a0aec0;">2026年7月8日 · 覆盖 11 个渠道</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:28px 36px 36px;">
+
+            <!-- Intro -->
+            <p style="margin:0 0 28px 0;font-size:14px;color:#4a5568;line-height:1.7;border-left:3px solid #63b3ed;padding-left:14px;">
+              本期精选过去 7 天 AI 领域最新动态，涵盖 Anthropic、OpenAI、Google DeepMind、Hugging Face 等主要渠道。Claude Fable 5 解禁回归、GPT-5.6 系列亮相、Gemini Deep Think 攻克科研难题……前沿进展密集落地。
+            </p>
+
+            <!-- ===== 1. Anthropic ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#e8f4fd;color:#2b6cb0;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">Anthropic Blog</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://www.anthropic.com/news/redeploying-fable-5" style="color:#1a1a1a;text-decoration:none;">Claude Fable 5 全球重新上线，新增网络安全分类器</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    继美国出口管制限制解除后，Anthropic 于 7 月 1 日正式重新向全球用户开放 Claude Fable 5，这是史上首个因监管指令被强制下线后又恢复上线的前沿大模型。Anthropic 为此专门训练并部署了新的网络安全安全分类器，可在 99% 以上的情况下拦截此前触发封禁的越狱攻击手法。与此同时，Claude Sonnet 5 于 6 月 30 日正式发布，入门价为每百万输入 token $2，被定位为"最强 Agentic Sonnet"，在规划、工具调用与多步骤自主任务中大幅超越前代。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://www.anthropic.com/news/redeploying-fable-5" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                  &nbsp;&nbsp;
+                  <a href="https://www.anthropic.com/news/claude-sonnet-5" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">Claude Sonnet 5 公告 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 2. OpenAI ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#e8f4fd;color:#2b6cb0;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">OpenAI Blog</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://openai.com/index/previewing-gpt-5-6-sol/" style="color:#1a1a1a;text-decoration:none;">GPT-5.6 三模型家族亮相：Sol / Terra / Luna 分工登场</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    OpenAI 于 6 月 26 日预览了 GPT-5.6 系列，推出三款各有侧重的模型：旗舰版 Sol、均衡版 Terra 与轻量版 Luna。GPT-5.6 Sol 在 Terminal-Bench 2.1 命令行工作流基准测试中刷新 SOTA，并被定位为 OpenAI 迄今最强的网络安全模型，尤其擅长长链路漏洞研究与利用任务。目前仅向约 20 家经政府审批的企业开放受限预览，预计 7 月底前向公众开放；Sol 还将于 7 月登陆 Cerebras，实现每秒高达 750 tokens 的超高速推理。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://openai.com/index/previewing-gpt-5-6-sol/" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 3. Google DeepMind ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#e8f4fd;color:#2b6cb0;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">Google DeepMind Blog</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" style="color:#1a1a1a;text-decoration:none;">Gemini Deep Think 协助科学家攻克 18 项长期研究难题</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    Google DeepMind 公布了 Gemini Deep Think 在科学研究方向的最新进展：与各领域专家合作，模型帮助解决了横跨算法、机器学习、组合优化、信息论和经济学的 18 项长期悬而未决的研究瓶颈。与此同时，DeepMind 宣布与美国能源部合作，向旗下 17 所国家实验室开放面向科学的前沿 AI 加速访问项目，核心工具为多智能体虚拟科研协作系统 "AI co-scientist"，基于 Gemini 构建，可帮助科学家高效整合海量文献并加速发现过程。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 4. Hugging Face ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#e8f4fd;color:#2b6cb0;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">Hugging Face Blog</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://huggingface.co/blog/lerobot-release-v060" style="color:#1a1a1a;text-decoration:none;">LeRobot v0.6.0：机器人学会"先想象后行动"</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    7 月 7 日，Hugging Face 发布了机器人学习框架 LeRobot v0.6.0，核心亮点是引入"在行动前先想象未来"的策略机制（world model-guided policy），让机器人在执行前生成预期场景，再基于此决策。新版本还集成了用于评估策略性能的 Reward Model、简化现实部署的 CLI 工具以及多个仿真 benchmark。这是 Embodied AI 从纯粹的模仿学习迈向主动预测与规划的重要一步，与当前 LLM Agent 领域的"先推理后行动"思潮相互呼应。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://huggingface.co/blog/lerobot-release-v060" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 5. The Batch ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#e8f4fd;color:#2b6cb0;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">The Batch · DeepLearning.AI</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://www.deeplearning.ai/the-batch" style="color:#1a1a1a;text-decoration:none;">Andrew Ng：AI 辅助编程正在强化迭代式软件开发范式</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    7 月 3 日，The Batch 最新一期从噪音与信号的视角切入，指出 AI 世界正变得"极度嘈杂"——社交媒体、传统媒体与营销内容混杂，令从业者难以分辨价值。Andrew Ng 在本期信中强调，AI 辅助 Agentic 编程正在强化软件开发的迭代循环，并提出"loop engineering"将成为下一个关键工程范式：开发者与 AI 的协作从单次生成演变为持续反馈-优化的闭环。本期还回顾了近期监管动态，包括美国政府与 Anthropic 先后限制 Fable 5 访问权限，展现出前沿 AI 控制权之争正在白热化。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://www.deeplearning.ai/the-batch" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">阅读原文 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 6. Andrej Karpathy YouTube ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#fff0f0;color:#c53030;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">📹 视频 · Andrej Karpathy</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://www.youtube.com/watch?v=3eRwONE_8-g" style="color:#1a1a1a;text-decoration:none;">Vibe Coding 已死——Karpathy 给 AI 开发定下新规则</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    Andrej Karpathy（"Vibe Coding"概念发明者，现任职 Anthropic）在最新视频中宣告这一范式的终结，转而倡导"Agentic Engineering"：开发者不再直接写代码，而是扮演"指挥官"角色——制定目标、拆解任务、监督 AI Agent 自主完成编写、测试、调试和部署的全流程。他在 Sequoia AI Ascent 2026 上指出，Vibe Coding 只是"提高了下限"，而 Agentic Engineering 才能"抬高上限"，是真正面向 Software 3.0 时代的工程范式转变。对于每位关注 AI 编程趋势的工程师，这段视频值得重点关注。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://www.youtube.com/watch?v=3eRwONE_8-g" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">观看视频 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 7. Two Minute Papers ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#fff0f0;color:#c53030;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">📹 视频 · Two Minute Papers</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://www.youtube.com/watch?v=J0D7qV3nl7w" style="color:#1a1a1a;text-decoration:none;">DeepSeek 又出大招！DSpark 让 LLM 推理提速最高 85%</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    DeepSeek 于 6 月 27 日开源了 DSpark——一套专为 DeepSeek-V4-Flash 和 V4-Pro 设计的 Speculative Decoding 推理栈。Two Minute Papers 解读指出，DSpark 采用"初级起草 + 高级审稿"的双层 Semi-Autoregressive 架构，配合 Markov 式校正与置信度验证，在编程和数学任务上实现 57%~85% 的速度提升，且模型质量不损耗。这不是一个新模型，而是推理层的服务升级，为使用现有 DeepSeek 模型的企业带来了巨大的延迟与成本优化空间。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://www.youtube.com/watch?v=J0D7qV3nl7w" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">观看视频 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 8. AI Explained ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#fff0f0;color:#c53030;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">📹 视频 · AI Explained</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://www.youtube.com/watch?v=nmLIing5Xlc" style="color:#1a1a1a;text-decoration:none;">Claude Fable 5 vs GPT-5.6：发布稿背后隐藏了什么？</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    AI Explained 频道在最新视频中对 Claude Fable 5 与 GPT-5.6 Sol 进行了深度对比，剥去官方发布稿的营销包装，聚焦实际能力差异：Fable 5 在长链路 Agentic 工程基准（如 Terminal-Bench）和安全性方面领先，而 GPT-5.6 Sol 目前因受出口管制限制仅供约 20 家机构使用，真实能力尚难全面验证。视频还分析了两家公司在 Sonnet 5 vs Terra/Luna 中端模型策略上的异同，指出 AI 竞争正从单纯拼参数转向"对谁开放、如何授权"的政策博弈。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://www.youtube.com/watch?v=nmLIing5Xlc" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">观看视频 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 9. Lex Fridman Podcast ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#f0fff4;color:#276749;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">🎧 播客 · Lex Fridman Podcast</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://www.youtube.com/watch?v=EV7WhVT270Q" style="color:#1a1a1a;text-decoration:none;">#490 · 2026 AI 现状：LLM、编程、Scaling Laws、中国、Agent、AGI</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    Lex Fridman 邀请机器学习研究员 Nathan Lambert 与 Sebastian Raschka 共同盘点 2026 年 AI 全景，话题涵盖 LLM 训练前沿、Scaling Laws 的最新争论、Robotics 进展、AGI 时间线预测，以及中美在 AI 领域的竞争格局。两位嘉宾从从业者视角分析了 AI 原生软件工程团队与传统团队的运作差异，并探讨了 OpenClaw（最快增长的开源 Agent 框架）等新工具带来的范式转变。这是 2026 年迄今最全面的 AI 行业现状盘点之一。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://www.youtube.com/watch?v=EV7WhVT270Q" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">收听播客 →</a>
+                  &nbsp;&nbsp;
+                  <a href="https://open.spotify.com/episode/4UBPQG2Z7s70DpRVD5kMbC" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">Spotify →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 10. Latent Space ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#f0fff4;color:#276749;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">🎧 播客 · Latent Space</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://www.latent.space/p/the-coolest-diffusion-research-isnt" style="color:#1a1a1a;text-decoration:none;">最酷的 Diffusion 研究不在 LLM 领域——Genesis Molecular AI 谈药物发现</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    7 月 1 日，Latent Space 播客邀请 Genesis Molecular AI 联合创始人 Evan Feinberg 与 CTO Sergey Edunov（前 Meta Llama 负责人）探讨 Diffusion Model 在药物发现领域的前沿应用。核心亮点是他们的 PEARL 模型（Place Every Atom at the Right Location），可精确预测蛋白质-小分子结合结构，精度首次达到药物化学家可信赖的水平；内部 Agentic 系统 SAPPHIRE 则像化学家一样迭代——分析姿态、形成假说、检索文献、生成候选分子。Edunov 认为，Diffusion 领域最具创新性的研究正在 3D 结构预测方向发生，而非 LLM。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <a href="https://www.latent.space/p/the-coolest-diffusion-research-isnt" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">收听播客 →</a>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e8ecf0;margin:0 0 24px 0;">
+
+            <!-- ===== 11. TWIML ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#f0fff4;color:#276749;font-size:11px;font-weight:600;letter-spacing:0.8px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">🎧 播客 · TWIML AI Podcast</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:6px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+                    <a href="https://twimlai.com/podcast/twimlai/agent-swarms-knowledge-graphs-autonomous-software-development" style="color:#1a1a1a;text-decoration:none;">#770 · AI Agent 为何打破了 GenAI 安全模型？</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:16px;">
+                  <p style="margin:0;font-size:14px;color:#4a5568;line-height:1.8;">
+                    TWIML 主持人 Sam Charrington 与 Rubrik AI 总经理 Dev Rishi 探讨了 AI Agent 超越"问答"模式、开始跨工具和业务流程自主行动后带来的全新安全挑战。核心论点：工具访问权限扩大了 Agent 的"爆炸半径"（blast radius），Agent 可能以意想不到的方式绕过访问控制，而当 Agent 大规模运行时，传统的"人在回路"审查机制可能沦为"安全剧场"。这一期对正在构建或评估企业级 Agentic 系统的工程师和架构师极具参考价值。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:0;">
+                  <a href="https://twimlai.com/podcast/twimlai/agent-swarms-knowledge-graphs-autonomous-software-development" style="color:#2b6cb0;font-size:13px;text-decoration:none;font-weight:500;">收听播客 →</a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#f7fafc;padding:20px 36px;border-top:1px solid #e8ecf0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                  <p style="margin:0;font-size:12px;color:#718096;line-height:1.6;">
+                    <strong style="color:#4a5568;">渠道说明：</strong>Yannic Kilcher 本期无 7 天内新内容，已跳过。<br>
+                    本日报由 AI 自动整理，摘要基于公开发布内容撰写，技术术语保留英文原文。<br>
+                    生成日期：2026-07-08 · 下次更新：2026-07-09
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
