@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 & Python & Go】- 2026-07-09</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+    .header {
+      border-bottom: 3px solid #1a1a2e;
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 22px;
+      color: #1a1a2e;
+      margin: 0 0 6px 0;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .header p {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+    }
+    .section {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .section:last-of-type {
+      border-bottom: none;
+    }
+    .source-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #2c5364;
+      padding: 2px 8px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .source-label.youtube {
+      background-color: #c0392b;
+    }
+    .article-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 10px 0;
+      line-height: 1.4;
+    }
+    .article-date {
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    .article-summary {
+      font-size: 14px;
+      color: #333;
+      margin: 0 0 12px 0;
+    }
+    .article-link {
+      display: inline-block;
+      font-size: 13px;
+      color: #1a6fc4;
+      text-decoration: none;
+      border-bottom: 1px solid #c3daf5;
+      padding-bottom: 1px;
+    }
+    .article-link:hover {
+      color: #0e4f8f;
+    }
+    .video-badge {
+      display: inline-block;
+      font-size: 12px;
+      margin-right: 6px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e8e8e8;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      color: #888;
+      background-color: #f5f5f5;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <h1>软件技术日报【后端开发 & Python & Go】</h1>
+      <p>2026-07-09 &nbsp;·&nbsp; 每日精选技术资讯，涵盖后端工程、Python、Go 语言</p>
+    </div>
+
+    <!-- Martin Fowler -->
+    <div class="section">
+      <span class="source-label">Martin Fowler Blog</span>
+      <h2 class="article-title">Fragments: July 6 — AI Token 成本暴增与 Agentic 开发全面落地</h2>
+      <p class="article-date">📅 2026-07-06</p>
+      <p class="article-summary">
+        Martin Fowler 在最新 Fragments 中记录了 Thoughtworks 举办的第二届"软件开发未来闭门研讨会（Future of Software Development Retreat）"的观察：
+        与会工程师均已将 agentic 编程落地生产，而非仅在 PPT 中展示。另一个值得关注的数据点是，某公司 AI token 账单从 2025 年 8 月的 500 万美元飙升至 2026 年 5 月的 1500 万美元，预计全年超 1.2 亿美元——大量消耗来自员工用 AI 做 PDF 转 PPT 等非核心工程任务。
+        "Harness engineering" 已成为会议高频词，说明构建 AI 工作流框架本身正成为工程师的核心职责。
+      </p>
+      <a class="article-link" href="https://martinfowler.com/fragments/2026-07-06.html" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Netflix Tech Blog -->
+    <div class="section">
+      <span class="source-label">Netflix Tech Blog</span>
+      <h2 class="article-title">How Netflix Simplified Batch Compute with Kueue</h2>
+      <p class="article-date">📅 2026-06（近期）</p>
+      <p class="article-summary">
+        Netflix 将其自研批处理调度系统 Compute Managed Batch（CMB）迁移至 Kubernetes 原生的开源任务队列 Kueue，整个生产迁移仅用了 4 周。
+        Kueue 带来了 CMB 缺失的能力：抢占式调度（preemption）、All-or-Nothing 调度和拓扑感知调度（topology-aware scheduling），现已管理 Netflix 线上数百万批处理任务。
+        该文对希望减少平台自研负担、拥抱 Kubernetes 生态的团队有较高参考价值。
+      </p>
+      <a class="article-link" href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Real Python -->
+    <div class="section">
+      <span class="source-label">Real Python</span>
+      <h2 class="article-title">Python's JIT Faces Some Challenges and Other News for July 2026</h2>
+      <p class="article-date">📅 2026-07-08</p>
+      <p class="article-summary">
+        Python Steering Council 对 JIT 编译器发出警告，要求其在 Python 3.15 发布前达到预期性能目标，否则面临被移除的风险——这是本月最引人关注的政策动向。
+        此外，EuroPython 2026 将于 7 月 13–19 日在波兰克拉科夫举行；Real Python 同期推出 Codex CLI 实战直播课（7 月 11–12 日），聚焦 agentic 编程工作流。
+        Python 3.15 已有两个 beta 版本发布，稳步推进中。
+      </p>
+      <a class="article-link" href="https://realpython.com/python-news-july-2026/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Python Weekly -->
+    <div class="section">
+      <span class="source-label">Python Weekly</span>
+      <h2 class="article-title">Python Weekly Issue #751 — Python 安全漏洞披露 & 基金会董事会选举</h2>
+      <p class="article-date">📅 2026-06-25</p>
+      <p class="article-summary">
+        本期周刊披露了 python.org 发行管理 API 中的一个认证绕过漏洞（authentication bypass），攻击者理论上可篡改下载元数据，该问题已修复。
+        同时，Python 软件基金会（PSF）公布 2026 年董事会选举时间线，4 个席位开放竞选，投票期定于 9 月 1–15 日。
+        每期 Python Weekly 手工精选技术文章、新版本发布与社区动态，是 Python 开发者保持信息同步的高效渠道。
+      </p>
+      <a class="article-link" href="https://www.pythonweekly.com/p/python-weekly-issue-751-june-25-2026" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- The Go Blog -->
+    <div class="section">
+      <span class="source-label">The Go Blog</span>
+      <h2 class="article-title">Go 1.27 RC2 发布 — Generic Methods 正式支持</h2>
+      <p class="article-date">📅 2026-07-07</p>
+      <p class="article-summary">
+        Go 1.27 Release Candidate 2 于 7 月 7 日发布，最大亮点是正式支持泛型方法（generic methods）：方法声明中可声明自己的类型参数，四年来困扰社区的
+        <code>func (s *Set[E]) Map[F comparable](f func(E) F)</code> 写法终于合法。
+        此版本还引入了 <code>json/v2</code>、结构体字面量支持任意合法字段选择器、以及编译工具链对响应文件（Response File）的支持。
+        正式版预计 2026 年 8 月发布，可通过 go.dev 下载 RC 版本试用。
+      </p>
+      <a class="article-link" href="https://go.dev/doc/go1.27" target="_blank">查看 Release Notes →</a>
+    </div>
+
+    <!-- Golang Weekly -->
+    <div class="section">
+      <span class="source-label">Golang Weekly</span>
+      <h2 class="article-title">Issue #608: Gin — 12 年、88K Stars、零破坏性 API 变更</h2>
+      <p class="article-date">📅 2026-07-03</p>
+      <p class="article-summary">
+        本期 Go Weekly 头条聚焦 Gin 框架 12 周年：作为 Go 生态最受欢迎的 HTTP Web 框架，Gin 在 12 年间保持了零破坏性 API 变更的记录，体现了其对稳定性的极度重视。
+        本期还收录了 Go 1.27 RC2 发布的相关报道、<code>go fix</code> 新增库级迁移能力，以及六种 Go 缓存设计的横向对比分析。
+        是本周 Go 生态动态的最佳速览。
+      </p>
+      <a class="article-link" href="https://golangweekly.com/issues/608" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Arjan Codes -->
+    <div class="section">
+      <span class="source-label youtube">Arjan Codes</span>
+      <h2 class="article-title"><span class="video-badge">📹 视频</span>Nested Loops Aren't the Problem. This Is.</h2>
+      <p class="article-date">📅 2026 年 6 月（约 1 个月前）</p>
+      <p class="article-summary">
+        ArjanCodes 在本视频中挑战了"嵌套循环是性能问题根源"的常见误解：真正的问题不在于循环层数，而在于数据结构选择和算法设计的根本性错误。
+        视频以 Python 为示例语言，演示了如何通过正确的数据结构（如集合、字典）和算法思维消除不必要的嵌套，而非仅仅"展平"代码结构。
+        适合希望提升 Python 工程质量和算法直觉的开发者观看。
+      </p>
+      <a class="article-link" href="https://www.youtube.com/watch?v=095HrcWwHLI" target="_blank">观看视频 →</a>
+    </div>
+
+    <!-- Hussein Nasser -->
+    <div class="section">
+      <span class="source-label youtube">Hussein Nasser</span>
+      <h2 class="article-title">新书《Root Cause》：二十年 Backend 工程 Bug 实录（有声书版上线）</h2>
+      <p class="article-date">📅 2026-06-12（有声书），2026-04-14（纸质版）</p>
+      <p class="article-summary">
+        Hussein Nasser 出版新书《Root Cause: Stories and Lessons from Two Decades of Backend Engineering Bugs》，全书围绕数十个真实线上故障案例，逐一还原从"用户症状"到"根因定位"的完整排查过程，覆盖数据库、网络、代理、缓存等后端核心领域。
+        6 月 12 日有声书版本上线，由作者本人朗读，时长 7 小时 4 分钟。
+        适合后端工程师提升系统调试能力和故障排查思维。
+      </p>
+      <a class="article-link" href="https://hnasr.substack.com/p/my-new-book-root-cause-stories-and" target="_blank">了解更多 →</a>
+      &nbsp;
+      <a class="article-link" href="https://www.amazon.com/Root-Cause-Stories-Lessons-Engineering/dp/B0GWDFBZ5N" target="_blank">Amazon 购买 →</a>
+    </div>
+
+    <!-- Fireship -->
+    <div class="section">
+      <span class="source-label youtube">Fireship</span>
+      <h2 class="article-title"><span class="video-badge">📹 视频</span>One man just liberated Fable... and now it's illegal</h2>
+      <p class="article-date">📅 2026 年 6 月下旬（约 2–3 周前）</p>
+      <p class="article-summary">
+        Fireship（Jeff Delaney）在本视频中报道了 Anthropic 新模型 Claude Fable 发布后的戏剧性事件：一名开发者在发布仅 3 天后成功越狱（jailbreak）Fable，随即引发美国政府介入并宣布相关行为违法。
+        视频以标志性的"Code Report"风格快速梳理事件经过，并探讨 Fable 被称为"Mythos 级别"模型所带来的安全争议。
+        是了解 AI 模型安全与监管动态的极佳速览。
+      </p>
+      <a class="article-link" href="https://www.youtube.com/watch?v=ey_GaPdC9zk" target="_blank">观看视频 →</a>
+    </div>
+
+    <!-- Dan Luu -->
+    <div class="section">
+      <span class="source-label">Dan Luu Blog</span>
+      <h2 class="article-title">Agentic Test Processes, LLM Benchmarks, and Other Notes on Agentic Coding from Galapagos Island</h2>
+      <p class="article-date">📅 2026 年 6 月</p>
+      <p class="article-summary">
+        Dan Luu 在这篇深度长文中分享了他使用 LLM 进行 agentic 编程的实际体验：让 LLM 自动生成 fuzzer 通常能在几分钟内发现真实 bug，但 LLM 生成的 fuzzer 覆盖率出奇地差，会漏掉很多人工随手能写到的基础路径。
+        他还指出一个现象：那些声称"LLM 在测试上表现极佳"的人，往往之前几乎不写测试——所谓的提升是相对于极低基准线的。
+        文章包含大量基准测试数据和真实工程观察，是目前对 agentic coding 能力最诚实的评估之一。
+      </p>
+      <a class="article-link" href="https://danluu.com/ai-coding/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Brendan Gregg -->
+    <div class="section">
+      <span class="source-label">Brendan Gregg Blog</span>
+      <h2 class="article-title">Why I Joined OpenAI — 专注 AI 数据中心性能工程</h2>
+      <p class="article-date">📅 2026-02-07</p>
+      <p class="article-summary">
+        性能工程领域标志性人物 Brendan Gregg 宣布加入 OpenAI，专注于 AI 数据中心成本与性能优化，初期重点是 ChatGPT 推理性能。
+        他在文中指出，传统性能工程方法论对 AI 基础设施可能已不够用，需要探索全新的优化手段以实现数量级级别的效率提升。
+        对关注 AI 推理基础设施、系统性能调优和 eBPF/可观测性方向的工程师，Gregg 的动向值得持续关注。
+      </p>
+      <a class="article-link" href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" target="_blank">阅读原文 →</a>
+    </div>
+
+    <div class="footer">
+      <p>本日报由自动化 Agent 生成 &nbsp;·&nbsp; 内容来源均已标注原文链接 &nbsp;·&nbsp; 2026-07-09</p>
+      <p>涵盖渠道：Martin Fowler · Netflix TechBlog · Real Python · Python Weekly · The Go Blog · Golang Weekly · Arjan Codes · Hussein Nasser · Fireship · Dan Luu · Brendan Gregg</p>
+    </div>
+
+  </div>
+</body>
+</html>
