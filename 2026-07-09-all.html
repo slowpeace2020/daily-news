@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报 - 2026-07-09</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#1a1a1a;font-size:15px;line-height:1.6;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f5;padding:20px 0;">
+  <tr>
+    <td align="center">
+      <table width="680" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background:#1a202c;padding:28px 36px;">
+            <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:0.5px;">📰 软件技术日报</h1>
+            <p style="margin:6px 0 0;font-size:13px;color:#a0aec0;">2026年07月09日 · 精选软件工程 / AI / 后端开发前沿动态</p>
+          </td>
+        </tr>
+
+        <!-- ===== SECTION 1: 软件工程 & 云原生 ===== -->
+        <tr>
+          <td style="padding:28px 36px 0;">
+            <h2 style="margin:0 0 4px;font-size:16px;font-weight:700;color:#2d3748;text-transform:uppercase;letter-spacing:1px;border-left:4px solid #4299e1;padding-left:12px;">☁️ 软件工程 &amp; 云原生</h2>
+          </td>
+        </tr>
+
+        <!-- Thoughtworks -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Thoughtworks Technology Radar</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color:#2b6cb0;text-decoration:none;">Volume 34：AI 加速软件复杂度，呼吁回归工程基础以应对"认知债务"</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，重点警告 AI 生成代码正在引发大量"认知债务"（cognitive debt）—— 人类与软件系统之间的理解鸿沟持续扩大。本期将 Context Engineering（上下文工程）列为核心架构关注点，认为其已从提示优化技巧升级为 AI 系统的信息环境设计方法论。此外，MITRE ATLAS 被引入作为 AI/ML 系统的安全威胁知识库，与 ATT&amp;CK 框架形成互补。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- SRE Weekly -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">SRE Weekly · Issue #524 · 2026-07-05</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://sreweekly.com/sre-weekly-issue-524/" style="color:#2b6cb0;text-decoration:none;">Kubernetes 反馈控制机制深度解析 + AI 生产力陷阱</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">本期亮点文章：PlanetScale 的 Fatih Arslan 详解 Kubernetes 背后的反馈循环机制，深入区分 edge-triggered 与 level-triggered 控制系统的本质差异。另一篇"Jet Engine on a Tractor"指出 AI 加速被人类因素（sociotechnical weak link）所制约，速度越快越容易暴露团队协作的瓶颈。此外，Brent Chapman 探讨 incident response 中自责文化对学习的阻碍，Marc Brooker 分析用户感知 MTTR 与平均停机时长之间的权重差异。</p>
+            <p style="margin:8px 0 0;"><a href="https://sreweekly.com/sre-weekly-issue-524/" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- ByteByteGo -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">ByteByteGo · 2026-07-01</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://blog.bytebytego.com/p/how-openai-delivers-low-latency-voice" style="color:#2b6cb0;text-decoration:none;">OpenAI 如何为 9 亿用户提供低延迟语音 AI 服务</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">ByteByteGo 深度拆解 OpenAI 支撑 9 亿用户语音 AI 的基础设施架构，涵盖实时语音流处理、模型推理延迟优化、全球多区域部署策略等核心工程实践。文章系统梳理了语音 AI 系统在延迟、吞吐量与可靠性之间的设计权衡，是理解大规模 AI 系统架构的优质参考资料。</p>
+            <p style="margin:8px 0 0;"><a href="https://blog.bytebytego.com/p/how-openai-delivers-low-latency-voice" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- TLDR Tech -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">TLDR Tech · 2026-07-08</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://tldr.tech/tech/2026-07-08" style="color:#2b6cb0;text-decoration:none;">AI Agent 需要专为其读写与协调模式设计的记忆系统</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">本期 TLDR Tech 日报聚焦 AI agent 架构挑战，核心观点：agent 需要的记忆系统与传统数据库截然不同，必须专门针对 agent 的"读-写-协调"模式设计，支持上下文持久化、多 agent 状态共享以及跨任务的记忆检索。本期另收录 TLDR AI（7月7日）关于腾讯 Hy3（2950亿参数 MoE 模型）和 PyTorch Monarch（弹性分布式训练）的报道。</p>
+            <p style="margin:8px 0 0;"><a href="https://tldr.tech/tech/2026-07-08" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+
+        <!-- ===== SECTION 2: AI 技术前沿 ===== -->
+        <tr>
+          <td style="padding:32px 36px 0;">
+            <h2 style="margin:0 0 4px;font-size:16px;font-weight:700;color:#2d3748;text-transform:uppercase;letter-spacing:1px;border-left:4px solid #9f7aea;padding-left:12px;">🤖 AI 技术前沿</h2>
+          </td>
+        </tr>
+
+        <!-- Anthropic -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Anthropic Blog · 2026-07-01 / 07-06</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.anthropic.com/news/redeploying-fable-5" style="color:#2b6cb0;text-decoration:none;">Claude Fable 5 全球恢复上线 + 阿尔伯塔省政府用 Claude 扫描 4.66 亿行代码</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">经过 18 天的出口管制暂停，Claude Fable 5 于 7 月 1 日正式恢复全球访问，同步上线 Claude.ai、Claude Code 和 Claude Cowork 平台。7 月 6 日，Anthropic 披露阿尔伯塔省政府使用 Claude Code（Opus + Sonnet 模型）在 20 小时内扫描 4.66 亿行代码，完成安全漏洞识别与修复——这是大规模政府级 AI 安全应用的标志性案例。此外，Anthropic 联合 Amazon、Microsoft、Google 等提出行业级 jailbreak 严重性评分框架（Project Glasswing）。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.anthropic.com/news/redeploying-fable-5" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- OpenAI -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">OpenAI Blog · 2026-07-08</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://openai.com/index/previewing-gpt-5-6-sol/" style="color:#2b6cb0;text-decoration:none;">GPT-5.6 Sol 正式发布：在 Cerebras 上实现每秒 750 tokens 的前沿推理速度</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">OpenAI 于 7 月 8 日正式发布 GPT-5.6 系列三款模型：Sol（旗舰）、Terra（中端）、Luna（快速低成本），结束了长达数周的政府审查管控期。其中 GPT-5.6 Sol 与 Cerebras 合作，实现前所未有的 750 tokens/秒推理速度，专为追求极致响应速度的企业场景设计，初期面向精选客户开放。Workspace Agent 同步切换为基于 token 的计费模式。</p>
+            <p style="margin:8px 0 0;"><a href="https://openai.com/index/previewing-gpt-5-6-sol/" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Google DeepMind -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Google DeepMind Blog · 2026-07</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/" style="color:#2b6cb0;text-decoration:none;">Gemini 3 Flash 正式发布：以速度为核心的前沿智能模型</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Google DeepMind 发布 Gemini 3 Flash，定位为高速、低成本的前沿模型，在延迟与性能之间实现新的平衡点。该模型针对实时交互场景优化，全球可用，继续延续 Gemini 系列"快速版"路线。与此同时，DeepMind 还发布了 Gemma Scope 2，用于帮助 AI 安全社区深入理解复杂语言模型的内部行为，进一步推动可解释 AI 研究。</p>
+            <p style="margin:8px 0 0;"><a href="https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Hugging Face -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Hugging Face Blog · 2026-07-07 / 07-08</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://huggingface.co/blog/lerobot-release-v060" style="color:#2b6cb0;text-decoration:none;">LeRobot v0.6.0 发布：机器人先"想象"再行动 + vLLM Transformers 原生后端提速</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">LeRobot v0.6.0 引入了"先想象后行动"的 policy 框架——机器人在执行动作前先预演未来状态，并集成奖励模型和部署 CLI，大幅闭合了机器人学习的训练-评估-部署循环。另一篇重要更新（7月8日）宣布 Transformers 的 vLLM 原生后端已实现与定制 vLLM 实现相当甚至更快的推理速度，对主流 LLM 架构生产部署影响显著。</p>
+            <p style="margin:8px 0 0;"><a href="https://huggingface.co/blog/lerobot-release-v060" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- The Batch -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">The Batch · DeepLearning.AI · 2026-07-08</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.deeplearning.ai/the-batch/gpt-5-6-lands-in-limbo" style="color:#2b6cb0;text-decoration:none;">GPT-5.6 三模型终结管控期正式发布 + 美国政府开始介入顶级 AI 模型发布流程</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">The Batch 重点报道 GPT-5.6（Sol/Terra/Luna）经历政府审批后于 7 月 8 日正式公开，发布期间仅约 20 家政府批准机构可访问，创下 AI 模型监管新先例。文章同时指出，Microsoft 已开始将 Excel 和 Outlook 中的 OpenAI / Anthropic 模型替换为内部自研 MAI 模型，以降低对第三方 AI 的依赖成本。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.deeplearning.ai/the-batch/gpt-5-6-lands-in-limbo" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Andrej Karpathy YouTube -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Andrej Karpathy · YouTube · 📹 视频 · ~2026-07-02</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.youtube.com/watch?v=eMVaGOsfYs8" style="color:#2b6cb0;text-decoration:none;">📹 视频：Karpathy 揭示其最新 AI 工作流 —— 从 Vibe Coding 到 Agentic Engineering</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Karpathy（已于 5 月加入 Anthropic 专注 pre-training）在本视频中分享其使用 AI 辅助开发的第三阶段工作流演进，核心转变在于从"氛围驱动编码"（vibe coding）升级为系统性的 agentic engineering 实践。视频重点探讨如何将 LLM agent 深度整合进开发工作流，以及从个人开发者视角如何理解未来软件工程的三种角色分化。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.youtube.com/watch?v=eMVaGOsfYs8" style="color:#2b6cb0;font-size:13px;">→ 观看视频</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- AI Explained -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">AI Explained · YouTube · 📹 视频 · 2026-07-05</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.youtube.com/watch?v=EcyAY5-Np6A" style="color:#2b6cb0;text-decoration:none;">📹 视频：Episode 213 —— 2026 年第 27 周 AI 大事记</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">AI Explained 频道每周一期的 AI 新闻总结，本期（7月5日）聚焦 Fable 5 回归、GPT-5.6 政府审批期间的行业动态，以及 AI 快速迭代对企业技术选型的影响。频道以深度解读前沿 AI 能力为核心，尤其擅长揭示模型在复杂推理任务上的真实短板与进展，是追踪大模型竞争态势的重要视角。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.youtube.com/watch?v=EcyAY5-Np6A" style="color:#2b6cb0;font-size:13px;">→ 观看视频</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Lex Fridman -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Lex Fridman Podcast · 🎙 播客 · Episode #490</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.youtube.com/watch?v=EV7WhVT270Q" style="color:#2b6cb0;text-decoration:none;">🎙 播客：2026 年 AI 全景报告 —— LLM、编程、Scaling Laws、中国、Agent、GPU 与 AGI</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Lex Fridman Podcast 第 490 集以宏观视角全面回顾 2026 年 AI 发展现状，涵盖 LLM scaling laws 的最新争议、AI coding agent 在工业界的落地现状、中美 AI 竞赛格局演变，以及 GPU 算力瓶颈与 AGI 时间线的多方观点碰撞。本集是理解当前 AI 行业全局态势的优质长播客，适合深度思考。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.youtube.com/watch?v=EV7WhVT270Q" style="color:#2b6cb0;font-size:13px;">→ 收听播客</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Latent Space -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Latent Space · AI Engineer Podcast · 🎙 播客 · ~2026-07-01</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.latent.space/podcast" style="color:#2b6cb0;text-decoration:none;">🎙 播客：Episode 212 —— AI 工程师生态最前线</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Latent Space 作为 AI 工程师必听播客，本期（约 71 分钟）延续其对 foundation model 实战应用的深度探讨，涵盖代码生成、多模态 agent、LLM 评测与部署工程实践。节目聚焦 AI 工程师视角，而非研究员视角，是跟踪业界 AI 工程落地趋势的核心资源。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.latent.space/podcast" style="color:#2b6cb0;font-size:13px;">→ 收听播客</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- TWIML -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">TWIML AI Podcast · 🎙 播客 · Episode #770</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://twimlai.com/podcast/twimlai/ai-trends-2026-openclaw-agents-reasoning-llms" style="color:#2b6cb0;text-decoration:none;">🎙 播客：AI Agent 为何颠覆了 GenAI 安全模型？</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">TWIML 第 770 集深入探讨 AI agent 与传统 GenAI 安全模型之间的根本冲突：当 agent 能够自主调用工具、访问外部系统并执行多步任务时，原有的输入/输出过滤机制已不足以防范新型攻击面（如 prompt injection 攻击链）。本期内容对构建生产级 AI agent 系统的安全工程师和架构师有重要参考价值。</p>
+            <p style="margin:8px 0 0;"><a href="https://twimlai.com/podcast/twimlai" style="color:#2b6cb0;font-size:13px;">→ 收听播客</a></p>
+          </td>
+        </tr>
+
+        <!-- ===== SECTION 3: 后端开发 & Python & Go ===== -->
+        <tr>
+          <td style="padding:32px 36px 0;">
+            <h2 style="margin:0 0 4px;font-size:16px;font-weight:700;color:#2d3748;text-transform:uppercase;letter-spacing:1px;border-left:4px solid #48bb78;padding-left:12px;">🐍 后端开发 &amp; Python &amp; Go</h2>
+          </td>
+        </tr>
+
+        <!-- Martin Fowler -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Martin Fowler Blog · 2026-07-07 / 07-08</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html" style="color:#2b6cb0;text-decoration:none;">本地 LLM 用于编码是否可行？实测对比与影响因素分析</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Birgitta Böckeler 在 Martin Fowler 博客发表两篇连载：第一篇梳理影响本地 LLM 编码可行性的关键因素（硬件要求、模型大小、任务类型匹配度），第二篇通过实测对比在标准任务上运行多个本地模型的效果，并挑选最优模型进行日常使用验证。对关注数据隐私、离线开发场景的工程师具有直接参考价值。</p>
+            <p style="margin:8px 0 0;"><a href="https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Netflix Tech Blog -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Netflix Tech Blog · 2026-07</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://netflixtechblog.com/scaling-llm-post-training-at-netflix-0046f8790194" style="color:#2b6cb0;text-decoration:none;">Netflix 如何扩展 LLM Post-Training 基础设施</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Netflix Tech Blog 分享其 LLM 后训练（post-training）规模化实践，涵盖 RLHF、DPO 等对齐训练阶段的工程挑战：如何在有限算力预算下高效调度多个并发训练任务、管理不规则数据流、保障训练稳定性。文章同时介绍了 GenPage 项目——用自回归方式实时生成个性化首页，在 A/B 测试中显著提升用户参与度且降低了端到端服务延迟 20%。</p>
+            <p style="margin:8px 0 0;"><a href="https://netflixtechblog.com/scaling-llm-post-training-at-netflix-0046f8790194" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Real Python -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Real Python · 2026-07</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://realpython.com/python-news-july-2026/" style="color:#2b6cb0;text-decoration:none;">Python 3.15 JIT 编译器面临挑战 + 2026 年 7 月 Python 社区动态</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Real Python 7 月月度新闻汇总：Python 3.15 处于 Beta 密集发布阶段（Beta 3 已于 6 月 23 日落地，Beta 4 预计 7 月 18 日，RC 阶段 8 月开启），核心关注 JIT 编译器在特定场景下的性能与兼容性挑战。社区动态方面，Real Python 与 Codex CLI 联合推出 Agentic Coding 实训课程（7月11-12日，Zoom 形式）。</p>
+            <p style="margin:8px 0 0;"><a href="https://realpython.com/python-news-july-2026/" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- The Go Blog / Golang Weekly -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">The Go Blog / Golang Weekly #606 · 2026-07</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://golangweekly.com/issues/606" style="color:#2b6cb0;text-decoration:none;">Go 1.27 Release Candidate 1 发布：Generic Methods 正式落地</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Go 1.27 RC1 已发布（正式版预计 2026 年 8 月），核心亮点是支持 generic methods —— 允许在特定数据类型的命名空间内添加泛型函数，是 Go 泛型系统的重要补完。此外本版本还放宽了 struct literal 字段选择器规则，并为编译、链接、asm 等工具链添加了 Response File（@file）解析支持。Golang Weekly #606 对此次 RC 做了全面解读。</p>
+            <p style="margin:8px 0 0;"><a href="https://golangweekly.com/issues/606" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Arjan Codes -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Arjan Codes · YouTube · 📹 视频</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.youtube.com/watch?v=g7EGMWvJ1fI" style="color:#2b6cb0;text-decoration:none;">📹 视频：告别冗长 if-elif 链 —— 一个设计模式彻底解决此类问题</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Arjan Codes 的最新视频聚焦 Python 代码设计实践：长 if-elif 链是代码可维护性的常见痛点，本视频演示如何通过一种设计模式（命令/策略模式变体）彻底替代它，让条件分支逻辑更易扩展、测试和阅读。Arjan 风格以理论结合实战著称，适合想提升 Python 设计能力的中高级开发者。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.youtube.com/watch?v=g7EGMWvJ1fI" style="color:#2b6cb0;font-size:13px;">→ 观看视频</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Fireship -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Fireship · YouTube · 📹 视频 · 2026-07</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://www.youtube.com/watch?v=EKOU3JWDNLI" style="color:#2b6cb0;text-decoration:none;">📹 视频：2026 年科技世界有多疯狂…</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Fireship 以其标志性的高密度快节奏风格盘点 2026 年上半年科技圈的重大事件：AI 模型战争白热化、SQLite 被 Turso（Rust 重写版）取代、Midjourney 进军医疗影像设备，以及开源 AI 格局的戏剧性演变。本视频是了解行业宏观动态的极佳 10 分钟入门，既有深度又有娱乐性。</p>
+            <p style="margin:8px 0 0;"><a href="https://www.youtube.com/watch?v=EKOU3JWDNLI" style="color:#2b6cb0;font-size:13px;">→ 观看视频</a></p>
+          </td>
+        </tr>
+        <tr><td style="padding:16px 36px 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr>
+
+        <!-- Dan Luu -->
+        <tr>
+          <td style="padding:16px 36px 0;">
+            <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Dan Luu Blog · 2026-06（近期更新）</p>
+            <h3 style="margin:0 0 8px;font-size:15px;font-weight:600;color:#1a202c;">
+              <a href="https://danluu.com/ai-coding/" style="color:#2b6cb0;text-decoration:none;">Agentic 测试流程、LLM Benchmark 与从加拉帕戈斯岛的 Agentic 编程笔记</a>
+            </h3>
+            <p style="margin:0;color:#4a5568;font-size:14px;">Dan Luu 记录了在加拉帕戈斯岛远程工作期间利用 LLM 进行 fuzzing 和随机化测试的实测经验：引导 LLM 自动生成 fuzzer，在数分钟内发现真实 bug，并分析了当前 agentic 编码工具的实际能力边界与 benchmark 的局限性。文章风格一如既往地直接犀利，是评估 AI coding agent 实战价值的重要一手材料。</p>
+            <p style="margin:8px 0 0;"><a href="https://danluu.com/ai-coding/" style="color:#2b6cb0;font-size:13px;">→ 阅读原文</a></p>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding:32px 36px 24px;border-top:2px solid #e2e8f0;margin-top:24px;">
+            <p style="margin:0;font-size:12px;color:#a0aec0;text-align:center;">
+              软件技术日报 · 自动生成于 2026-07-09 · 涵盖软件工程、AI 前沿、后端开发三大板块<br>
+              如需取消订阅或反馈内容质量，请回复此邮件
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
