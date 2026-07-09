@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-09</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+    .header {
+      border-bottom: 3px solid #0f172a;
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 6px 0;
+      letter-spacing: -0.3px;
+    }
+    .header .subtitle {
+      font-size: 13px;
+      color: #64748b;
+      margin: 0;
+    }
+    .item {
+      margin-bottom: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .source-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #0f172a;
+      padding: 3px 8px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    .item h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 10px 0;
+      line-height: 1.4;
+    }
+    .item p {
+      font-size: 14px;
+      color: #374151;
+      margin: 0 0 12px 0;
+    }
+    .item a {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid #bfdbfe;
+      padding-bottom: 1px;
+    }
+    .item a:hover {
+      color: #1d4ed8;
+      border-bottom-color: #1d4ed8;
+    }
+    .tag-video {
+      font-size: 12px;
+      color: #7c3aed;
+      background-color: #ede9fe;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 12px;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <h1>软件技术日报【软件工程 &amp; 云原生】</h1>
+      <p class="subtitle">2026-07-09 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+    </div>
+
+    <!-- 1. Thoughtworks Technology Radar -->
+    <div class="item">
+      <span class="source-badge">Thoughtworks Technology Radar</span>
+      <h2>AI 加速软件复杂性，Thoughtworks 技术雷达呼吁回归工程基础以应对认知债务</h2>
+      <p>
+        Thoughtworks 于 2026 年 4 月发布第 34 期技术雷达（Volume 34），核心议题聚焦于 AI 时代积累的"认知债务（Cognitive Debt）"——AI 工具持续生成大量代码，导致人类对系统的理解深度不断降低，形成隐性风险。报告指出技术术语的"语义扩散（Semantic Diffusion）"现象使技术选型愈发困难，建议团队在快速采用新工具时保持批判性思维。作为应对策略，雷达强烈推荐零信任架构（Zero Trust Architecture）、DORA 指标和可测试性原则等经典工程基础，以帮助团队在 AI 加速的环境中维持对系统的掌控力。
+      </p>
+      <a href="https://www.thoughtworks.com/en-us/radar" target="_blank">阅读完整技术雷达 →</a>
+    </div>
+
+    <!-- 2. SRE Weekly -->
+    <div class="item">
+      <span class="source-badge">SRE Weekly</span>
+      <h2>Issue #509：AI SRE 的 Observability 技术栈对比 &amp; AWS us-east-1 故障深度复盘</h2>
+      <p>
+        本期 SRE Weekly 重点推荐两篇值得深读的文章。其一：通过让 AWS DevOps Agent 在真实 OpenTelemetry 数据集上对比测试 Bronto、Grafana Loki 和 Elasticsearch 三款 observability 工具，Bronto 以 9.4/10 的综合评分夺冠，且是唯一未出现"静默失败（Silent Failures）"的工具，为团队选型提供了数据参考。其二：对 2026 年 5 月长达 28 小时的 AWS us-east-1 区域性故障进行深度复盘，分析根本原因及其对多活架构（Active-Active）与灾难恢复策略的启示，是每个依赖云基础设施团队的必读材料。
+      </p>
+      <a href="https://sreweekly.com/sre-weekly-issue-509/" target="_blank">阅读 Issue #509 →</a>
+    </div>
+
+    <!-- 3. ByteByteGo -->
+    <div class="item">
+      <span class="source-badge">ByteByteGo</span>
+      <h2>多区域架构：全球化扩张而不破产</h2>
+      <p>
+        ByteByteGo 本周最新文章将多区域（Multi-Region）架构视为一种渐进式演进路径，而非非此即彼的单一决策。文章梳理了从"单区域 + 跨区域备份"到"主备切换（Active-Passive）"再到"全球多活（Active-Active）"的完整升级路线，每一步都明确了延迟降低、可用性提升或数据主权合规等具体收益，同时坦诚地量化了成本与数据一致性方面的权衡。对于正在规划国际化部署或评估灾难恢复（DR）策略的工程师来说，这篇文章提供了一个清晰、务实的决策框架。
+      </p>
+      <a href="https://blog.bytebytego.com/p/multi-region-architecture-going-global" target="_blank">阅读完整文章 →</a>
+    </div>
+
+    <!-- 4. TechWorld with Nana -->
+    <div class="item">
+      <span class="source-badge">TechWorld with Nana</span>
+      <h2>Kubernetes Best Practices and How to Apply Them <span class="tag-video">📹 视频</span></h2>
+      <p>
+        TechWorld with Nana 频道（140 万+ 订阅者）发布了 Kubernetes 生产环境最佳实践视频，深入讲解如何在真实集群场景中应用资源限制（Resource Limits &amp; Requests）、健康检查（Liveness / Readiness Probes）、命名空间隔离及 RBAC 安全加固等核心配置。视频通过具体示例演示了常见配置错误及修复方式，适合已有 K8s 基础、希望向生产级运维迈进的工程师。该频道持续输出高质量 DevOps 与云原生教育内容，是深入学习 Kubernetes 运维的重要免费资源。
+      </p>
+      <a href="https://www.youtube.com/watch?v=ZI5kNrtLbvI" target="_blank">观看视频 →</a>
+    </div>
+
+    <!-- 5. TLDR DevOps -->
+    <div class="item">
+      <span class="source-badge">TLDR DevOps</span>
+      <h2>Datadog MCP Server &amp; AWS DevOps Agent 正式 GA，Jaeger v2.18.0 引入 ClickHouse 存储后端</h2>
+      <p>
+        TLDR DevOps（2026-06-26 期）报道了两项重量级工具 GA 发布：Datadog MCP Server 支持通过自然语言与监控系统交互，将 AI 代理能力接入 Observability 工作流；AWS DevOps Agent 则实现了自主故障调查与自动化解决（Autonomous Incident Resolution），标志着 AIOps 从概念走向生产落地提速。此外，Jaeger v2.18.0 将 ClickHouse 作为新增的分布式追踪存储后端，相比传统 Elasticsearch/Cassandra 方案在大规模 trace 数据写入与查询性价比上具备显著优势，值得正在优化 observability 成本的团队评估。
+      </p>
+      <a href="https://tldr.tech/devops/2026-06-26" target="_blank">阅读完整期刊 →</a>
+    </div>
+
+    <div class="footer">
+      由 Daily News Bot 自动整理 &nbsp;·&nbsp; 2026-07-09 &nbsp;·&nbsp; 内容来源于各渠道公开信息，仅供参考
+    </div>
+
+  </div>
+</body>
+</html>
