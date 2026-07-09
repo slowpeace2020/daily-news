@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【AI 技术前沿】- 2026-07-09</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;">
+  <tr>
+    <td align="center" style="padding:24px 12px;">
+      <table width="680" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);max-width:100%;">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color:#1a1a2e;padding:32px 40px;">
+            <div style="font-size:13px;color:#a0a0c0;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Daily Digest</div>
+            <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报 · AI 技术前沿</h1>
+            <div style="margin-top:10px;font-size:14px;color:#8080a0;">2026年7月9日 &nbsp;|&nbsp; 8 条精选内容</div>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:32px 40px;">
+
+            <!-- Intro note -->
+            <p style="margin:0 0 28px;font-size:14px;color:#555;line-height:1.6;">
+              今日精选来自 Anthropic、OpenAI、Google DeepMind、Hugging Face、The Batch、Andrej Karpathy、AI Explained 及 Latent Space，覆盖大模型新品、语音交互升级、机器人学习框架与分子 AI 前沿。
+            </p>
+
+            <!-- ===== 1. Anthropic ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#e8f0fe;color:#1a56db;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">ANTHROPIC BLOG</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.anthropic.com/news/claude-sonnet-5" style="color:#1a1a2e;text-decoration:none;">Introducing Claude Sonnet 5</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Anthropic 于 6 月 30 日正式推出 Claude Sonnet 5，定位为"最具 agentic 能力"的 Sonnet 模型，在规划、工具调用（浏览器/终端）和多步骤任务执行方面大幅提升，性能接近旗舰 Opus 系列。该模型已成为免费版和 Pro 版的默认模型，并在 Claude Code 和 API 平台上开放。
+                  定价方面，推出期至 2026 年 8 月 31 日享受折扣价：输入 $2/百万 token、输出 $10/百万 token；此后涨至 $3/$15。
+                </p>
+                <a href="https://www.anthropic.com/news/claude-sonnet-5" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 2. OpenAI ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#e6f9f0;color:#0d7a4e;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">OPENAI BLOG</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://openai.com/index/introducing-gpt-live/" style="color:#1a1a2e;text-decoration:none;">Introducing GPT-Live</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  OpenAI 于 7 月 8 日正式发布 GPT-Live，这是一套基于全双工（full-duplex）架构的语音系统，可同时收听和说话，取代原有的 Advanced Voice Mode。GPT-Live 能在对话中自然插入"嗯""好的"等回应，并将搜索、推理等复杂任务无缝代理给后端最新模型。
+                  GPT-Live-1 成为付费用户（Go/Plus/Pro）的默认语音模型，GPT-Live-1 mini 服务免费用户，并内置了针对高风险场景的实时安全引导机制。
+                </p>
+                <a href="https://openai.com/index/introducing-gpt-live/" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 3. Google DeepMind ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#fff3e0;color:#b45309;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">GOOGLE DEEPMIND BLOG</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/" style="color:#1a1a2e;text-decoration:none;">Introducing Gemini 3 Flash: Frontier Intelligence Built for Speed</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Google DeepMind 于 7 月 1 日发布 Gemini 3 Flash，主打极快推理速度与极低成本，同时保持前沿模型级别的能力。该模型已在 Gemini API、Gemini App、AI Mode in Search 及企业平台全面开放，适合高吞吐量的生产场景。
+                  与此同期，Google 还推进了 Gemini 3.5 Flash 的计算机使用（computer use）能力，使智能体可跨平台操作桌面与浏览器，进一步扩展 agentic 应用边界。
+                </p>
+                <a href="https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 4. Hugging Face ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#fdf2f8;color:#9d174d;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">HUGGING FACE BLOG</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://huggingface.co/blog/lerobot-release-v060" style="color:#1a1a2e;text-decoration:none;">LeRobot v0.6.0: Imagine, Evaluate, Improve</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Hugging Face 于 7 月 7 日发布 LeRobot v0.6.0，这是迄今最大规模的机器人学习框架更新。新版本围绕"想象—评估—改进"三大主题，引入世界模型策略（world model policies）如 VLA-JEPA，让机器人在执行动作前先预测未来帧；同时新增统一 reward model API、六个仿真 benchmark、FSDP 分布式训练支持，以及通过 HF Jobs 一键启动云端训练（从 T4 到 8×H200）。
+                  这一更新大幅降低了机器人策略开发的工程门槛，提升了从仿真到部署的可复现性。
+                </p>
+                <a href="https://huggingface.co/blog/lerobot-release-v060" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 5. The Batch ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#eff6ff;color:#1d4ed8;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">THE BATCH · DEEPLEARNING.AI</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.deeplearning.ai/the-batch" style="color:#1a1a2e;text-decoration:none;">The Batch：编程范式巨变、语音 AI 崛起与前沿模型访问管控</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  本期 The Batch（Andrew Ng 主编）聚焦三大议题：一、当前 AI 提示方式与 2022 年 ChatGPT 发布时相比已发生根本性改变，编码 agent 正在将不同类型的软件工作以差异化的速度推进自动化；二、语音 AI 快速演进但公众仍低估其渗透程度，语音 UI 将成为新的交互标配；三、美国政府与 Anthropic 近期分别采取了限制前沿模型（frontier models）他人访问权限的重大行动，揭示了 AI 治理的新走向。
+                </p>
+                <a href="https://www.deeplearning.ai/the-batch" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 6. Andrej Karpathy ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#f0fdf4;color:#166534;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">ANDREJ KARPATHY &nbsp;📹 视频</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="color:#1a1a2e;text-decoration:none;">From Vibe Coding to Agentic Engineering（Sequoia AI Ascent 2026）</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Karpathy 在 Sequoia AI Ascent 2026 与 Stephanie Zhan 的炉边对话中系统阐述了软件开发的三次演化：Software 1.0（人工代码）→ 2.0（神经网络/数据驱动）→ 3.0（prompt、context、agent、工具与验证的组合）。他特别区分了"vibe coding"（让非技术人员也能快速构建应用，提高下限）与"agentic engineering"（在 agent 辅助下保持专业质量，提高上限），并表示自己作为程序员从未像现在这样感到"落后"——因为工具演进的速度已超出个人适应能力。
+                  Karpathy 已在其博客 karpathy.bearblog.dev 发布本次演讲的 AI 生成摘要和清洁版本文字稿。
+                </p>
+                <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 观看视频</a>
+                &nbsp;&nbsp;
+                <a href="https://karpathy.bearblog.dev/sequoia-ascent-2026/" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读博客摘要</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 7. AI Explained ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#fef3c7;color:#92400e;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">AI EXPLAINED &nbsp;📹 视频</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.youtube.com/watch?v=FFz3iOBVldY" style="color:#1a1a2e;text-decoration:none;">Exciting AI Updates Weekly — July 3, 2026</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  本期 AI Explained 每周 AI 动态汇总（7 月 3 日），系统梳理了过去一周内 GPT、Claude、Gemini 等主流模型的最新进展与行业动向，包括模型能力提升、agent 工具新特性、以及各大实验室在安全与治理方面的行动。该频道以深度分析和批判性视角著称，适合快速掌握 AI 领域每周核心动态。
+                </p>
+                <a href="https://www.youtube.com/watch?v=FFz3iOBVldY" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 观看视频</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 8. Latent Space ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#f5f3ff;color:#5b21b6;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">LATENT SPACE &nbsp;🎧 播客</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.latent.space/p/the-coolest-diffusion-research-isnt" style="color:#1a1a2e;text-decoration:none;">The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Latent Space 7 月 1 日最新一期邀请了 Genesis Molecular AI 的 Evan Feinberg（前 Meta Llama 负责人）和 Sergey Edunov，探讨扩散模型（diffusion models）在药物发现领域的突破性应用。讨论涵盖：为何从大语言模型头部职位转向分子 AI、PEARL 模型在零样本蛋白质结合（zero-shot OpenBind）任务中的胜出、以及协同折叠（co-folding）精度一旦跨越阈值将解锁的全新可能性。
+                  本集揭示了 AI 前沿研究的一个重要趋势：最令人兴奋的扩散模型研究，正在发生在 LLM 之外的科学领域。
+                </p>
+                <a href="https://www.latent.space/p/the-coolest-diffusion-research-isnt" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 收听播客</a>
+              </td></tr>
+            </table>
+
+            <!-- Skipped channels note -->
+            <div style="margin-top:32px;padding:16px 20px;background-color:#f9f9f9;border-radius:6px;border-left:3px solid #ddd;">
+              <p style="margin:0;font-size:12px;color:#888;line-height:1.6;">
+                <strong style="color:#666;">本期跳过渠道：</strong>Yannic Kilcher、Two Minute Papers（过去 7 天无新上传内容）；Lex Fridman Podcast（最近一期为 5 月）；TWIML AI Podcast（最近一期为 6 月 16 日）。
+              </p>
+            </div>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#f8f8fb;padding:20px 40px;border-top:1px solid #eee;">
+            <p style="margin:0;font-size:12px;color:#999;text-align:center;line-height:1.6;">
+              软件技术日报 · AI 技术前沿 &nbsp;|&nbsp; 自动化生成于 2026-07-09<br>
+              内容来源：Anthropic · OpenAI · Google DeepMind · Hugging Face · DeepLearning.AI · YouTube · Latent Space
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
