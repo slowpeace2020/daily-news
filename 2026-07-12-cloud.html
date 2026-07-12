@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-12</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 22px;
+      color: #111111;
+      border-bottom: 2px solid #0055cc;
+      padding-bottom: 10px;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      color: #555555;
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+    .entry {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .entry:last-child {
+      border-bottom: none;
+    }
+    .source-tag {
+      display: inline-block;
+      background-color: #0055cc;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .entry-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #111111;
+      margin: 6px 0 10px 0;
+    }
+    .entry-title a {
+      color: #0055cc;
+      text-decoration: none;
+    }
+    .entry-title a:hover {
+      text-decoration: underline;
+    }
+    .summary {
+      color: #333333;
+      margin: 0 0 10px 0;
+    }
+    .read-more {
+      font-size: 13px;
+    }
+    .read-more a {
+      color: #0055cc;
+      text-decoration: none;
+    }
+    .read-more a:hover {
+      text-decoration: underline;
+    }
+    .badge-video {
+      display: inline-block;
+      background-color: #cc2200;
+      color: #ffffff;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .footer {
+      margin-top: 36px;
+      font-size: 12px;
+      color: #888888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>软件技术日报【软件工程 &amp; 云原生】</h1>
+<p class="subtitle">2026-07-12 &nbsp;·&nbsp; 涵盖：Kubernetes · 云原生架构 · SRE 实践</p>
+
+<!-- 1. Thoughtworks -->
+<div class="entry">
+  <span class="source-tag">Thoughtworks Technology Radar</span>
+  <div class="entry-title">
+    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" target="_blank">
+      Technology Radar Vol.34：AI 加速软件复杂度，呼吁回归工程基本功以应对认知债务
+    </a>
+  </div>
+  <p class="summary">
+    Thoughtworks 于 2026 年 4 月发布第 34 卷 Technology Radar，核心主题是「Cognitive Debt（认知债务）」——AI 生成大量代码正在拉大人与软件系统之间的理解鸿沟，进而带来不可预见的风险。Radar 建议团队重拾零信任架构（Zero Trust Architecture）、DORA 指标和可测试性等工程基本功来管理复杂度。在 Kubernetes 生态方面，本期重点推荐 Apache APISIX 作为 Kubernetes Gateway API 的候选方案，可替代老旧的 Nginx Ingress Controller，兼顾更好的可观测性与更低的运维成本。
+  </p>
+  <div class="read-more">
+    原文链接：<a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" target="_blank">thoughtworks.com/radar</a>
+    &nbsp;|&nbsp;
+    <a href="https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf" target="_blank">下载完整 PDF</a>
+  </div>
+</div>
+
+<!-- 2. SRE Weekly -->
+<div class="entry">
+  <span class="source-tag">SRE Weekly</span>
+  <div class="entry-title">
+    <a href="https://sreweekly.com/sre-weekly-issue-516/" target="_blank">
+      Issue #516：AI 在 SRE 中的真实价值，以及告警只是事故处理的 10%
+    </a>
+  </div>
+  <p class="summary">
+    本期精选 Datadog 工程师 Nenad Noveljic 和 Bowen Chen 合著的《AI in SRE: What's Actually Coming in 2026》，深度分析 AI 在生产运维中能切实解决哪些问题，以及「AI-powered operations」的合理预期边界。此外，incident.io 提出的 4 步框架指出：告警（paging）只占事故响应工作流的 10%，另外 90% 的重心在于降低告警噪音、明确服务所有权（service ownership）和建立健康的 on-call 机制。对于希望衡量 AI 工具引入效果的 SRE 团队，本期内容提供了务实的落地参考。
+  </p>
+  <div class="read-more">
+    原文链接：<a href="https://sreweekly.com/sre-weekly-issue-516/" target="_blank">sreweekly.com/sre-weekly-issue-516</a>
+  </div>
+</div>
+
+<!-- 3. ByteByteGo -->
+<div class="entry">
+  <span class="source-tag">ByteByteGo</span>
+  <div class="entry-title">
+    <a href="https://blog.bytebytego.com/p/kubernetes-when-and-how-to-apply" target="_blank">
+      Kubernetes: When and How to Apply It — 何时以及如何引入 Kubernetes
+    </a>
+  </div>
+  <p class="summary">
+    ByteByteGo 在近期发布了一篇实战向文章，系统梳理了在哪种规模和场景下引入 Kubernetes 才真正合理，避免「为了用而用」的过度工程化。文章以决策树的形式帮助工程师判断：单体服务、微服务初期与大规模分布式系统对 Kubernetes 的真实需求差异。同时结合 OpenAI 等头部案例，说明如何将 Kubernetes 与 Kafka 联动构建高可用 AI 推理平台，为希望评估容器编排投入产出比的团队提供参考依据。
+  </p>
+  <div class="read-more">
+    原文链接：<a href="https://blog.bytebytego.com/p/kubernetes-when-and-how-to-apply" target="_blank">blog.bytebytego.com</a>
+  </div>
+</div>
+
+<!-- 4. TechWorld with Nana -->
+<div class="entry">
+  <span class="source-tag">TechWorld with Nana</span>
+  <div class="entry-title">
+    <a href="https://www.youtube.com/watch?v=dDlsQQXOELI" target="_blank">
+      DevSecOps Roadmap 2026: Skills &amp; Tools to Get Hired
+    </a>
+    <span class="badge-video">📹 视频</span>
+  </div>
+  <p class="summary">
+    Nana Janashia 于近期（约 3 周前）上线了 DevSecOps Master Class 系列第一集，面向 2026 年市场需求梳理完整的 DevSecOps 技能树与工具链。视频涵盖从容器安全（Container Security）、Kubernetes RBAC 与 Pod Security Admission，到 CI/CD 流水线中的 SAST/DAST 扫描、Supply Chain 安全，以及 IaC 扫描工具（如 Checkov、Trivy）等核心知识点。本集是该系列的入门纲领，适合希望从 DevOps 转型 DevSecOps 或需要梳理 2026 年云原生安全知识体系的工程师观看。
+  </p>
+  <div class="read-more">
+    视频链接：<a href="https://www.youtube.com/watch?v=dDlsQQXOELI" target="_blank">youtube.com/watch?v=dDlsQQXOELI</a>
+  </div>
+</div>
+
+<!-- 5. TLDR Tech -->
+<div class="entry">
+  <span class="source-tag">TLDR Tech · DevOps</span>
+  <div class="entry-title">
+    <a href="https://tldr.tech/devops/2026-07-03" target="_blank">
+      2026-07-03 期：Boundary 1.0 正式 GA、ContextForge MCP 联邦代理，以及 kpt GitOps 配置管理
+    </a>
+  </div>
+  <p class="summary">
+    本期 TLDR DevOps（7 月 3 日）汇聚三条高质量动态：① <strong>Boundary 1.0</strong> 达到生产就绪状态，提供 Kubernetes Helm Chart 部署方式，统一管理 Windows 主机、AI Agent 和非人类身份（nonhuman identities）的访问控制；② <strong>ContextForge</strong> 是一个开源 MCP 服务注册与代理层，支持多集群 Kubernetes 联邦、集中式鉴权、OpenTelemetry 可观测性和 Redis 缓存，适合需要统一治理 AI 工具调用链的平台团队；③ CNCF Sandbox 项目 <strong>kpt</strong> 以「配置即数据」理念为 GitOps 提供 WYSIWYG 工作流，manifest 在部署前可审计、可组合，有效避免模板化 pipeline 的可读性问题。
+  </p>
+  <div class="read-more">
+    原文链接：<a href="https://tldr.tech/devops/2026-07-03" target="_blank">tldr.tech/devops/2026-07-03</a>
+  </div>
+</div>
+
+<div class="footer">
+  软件技术日报 · 自动生成 · 2026-07-12<br/>
+  渠道：Thoughtworks Radar · SRE Weekly · ByteByteGo · TechWorld with Nana · TLDR Tech
+</div>
+
+</body>
+</html>
