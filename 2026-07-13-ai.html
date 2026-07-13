@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【AI 技术前沿】- 2026-07-13</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;">
+  <tr>
+    <td align="center" style="padding:24px 12px;">
+      <table width="680" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);max-width:100%;">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color:#1a1a2e;padding:32px 40px;">
+            <div style="font-size:13px;color:#a0a0c0;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Daily Digest</div>
+            <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报 · AI 技术前沿</h1>
+            <div style="margin-top:10px;font-size:14px;color:#8080a0;">2026年7月13日 &nbsp;|&nbsp; 6 条精选内容</div>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:32px 40px;">
+
+            <!-- Intro note -->
+            <p style="margin:0 0 28px;font-size:14px;color:#555;line-height:1.6;">
+              今日精选来自 Anthropic、OpenAI、Hugging Face、The Batch、Latent Space 及 TWIML AI Podcast，覆盖 Claude 内部推理机制新发现、GPT-5.6 模型家族全面上线、GPU Kernel 标准化、AI 治理新格局，以及 Agent 基础设施与嗅觉 AI 前沿探索。
+            </p>
+
+            <!-- ===== 1. Anthropic ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#e8f0fe;color:#1a56db;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">ANTHROPIC BLOG · 2026-07-06</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.anthropic.com/news" style="color:#1a1a2e;text-decoration:none;">Anthropic 发现 Claude 内部"J-Space"思维空间，揭示大模型前语言推理机制</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Anthropic 研究团队在 Claude 内部发现了一个名为"J-Space"的微型工作空间——Claude 在生成语言输出之前，会在此空间中保持并操纵思想，其运作方式与人类有意识访问思维的过程颇为相似。这一发现对 AI 可解释性（Interpretability）和安全对齐研究具有重要意义，表明大型语言模型已发展出某种前语言（pre-linguistic）的内部推理机制。同期，Anthropic 还将 Claude Cowork 扩展至 Web 端与移动端，支持跨设备同步会话与文件，远程 Session 在设备关闭时仍可持续运行，首批向 Max 用户开放。
+                </p>
+                <a href="https://www.anthropic.com/news" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 查看 Anthropic 新闻室</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 2. OpenAI ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#e6f9f0;color:#0d7a4e;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">OPENAI BLOG · 2026-07-09</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://openai.com/index/previewing-gpt-5-6-sol/" style="color:#1a1a2e;text-decoration:none;">OpenAI 正式发布 GPT-5.6 模型家族：Sol、Terra、Luna 三档面向公众全面开放</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  7 月 9 日，OpenAI 向公众正式开放 GPT-5.6 模型家族，分为三个档位：旗舰版 Sol（$5/$30 per M tokens）、中端 Terra（$2.50/$15）与入门版 Luna（$1/$6）。Sol 被定位为 OpenAI 迄今最强的网络安全模型，在 AI 编程任务中相比前代模型 token 效率提升 54%，支持威胁建模（threat modeling）、代码审查、漏洞修补与 Blue Teaming 等防御性安全活动。该模型家族原定 6 月发布，因美国政府出口管制暂停，管制于 6 月 30 日解除后正式上线，同期还推出了 ChatGPT Work 企业协作工具。
+                </p>
+                <a href="https://openai.com/index/previewing-gpt-5-6-sol/" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 3. Hugging Face ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#fdf2f8;color:#9d174d;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">HUGGING FACE BLOG · 2026-07-06</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://huggingface.co/blog/revamped-kernels" style="color:#1a1a2e;text-decoration:none;">🤗 Kernels 重大更新：为自定义 GPU Kernel 建立统一打包与分发标准</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Hugging Face 发布 Kernels 重大版本更新，专注解决自定义 GPU Kernel（如 Flash Attention、Triton 算子、CUDA 扩展）的打包、版本管理与跨环境分发难题。新版本引入标准化的 Kernel 接口规范，使研究者和工程师可以像发布 Python 包一样发布高性能算子，大幅降低将实验性 Kernel 引入生产环境的工程摩擦，同时提升了不同硬件平台间的可复用性。该更新对于构建高效 LLM 推理系统和自定义训练优化的 AI 工程团队尤为实用。
+                </p>
+                <a href="https://huggingface.co/blog/revamped-kernels" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 4. The Batch ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#eff6ff;color:#1d4ed8;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">THE BATCH · DEEPLEARNING.AI</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.deeplearning.ai/the-batch" style="color:#1a1a2e;text-decoration:none;">AI 治理新变局：前沿模型访问管控升级与 AI Forward Deployed Engineer 职业崛起</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  本期 The Batch（Andrew Ng 主编）聚焦两大议题：其一，美国政府与 Anthropic 相继采取重大行动限制前沿 AI 模型（frontier models）的对外访问权限，AI 治理从政策讨论走向实际执法，揭示头部机构对前沿 AI 能力的掌控力正在快速强化；其二，"AI Forward Deployed Engineer（FDE）"成为硅谷最热门新兴职位——这类工程师深度嵌入客户企业，专职构建和调优适配特定业务场景的 Agentic Workflow，Agentic Loop 正全面取代传统 Prompt Engineering 成为 AI 应用新范式。
+                </p>
+                <a href="https://www.deeplearning.ai/the-batch" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 5. Latent Space ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#f5f3ff;color:#5b21b6;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">LATENT SPACE &nbsp;🎧 播客 · 2026-07-08</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.latent.space/p/modal2026" style="color:#1a1a2e;text-decoration:none;">AI Infrastructure 必须为 Agent Experience 进化——Modal CTO Akshat Bubna 深度拆解</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  Modal CTO Akshat Bubna 在本期 Latent Space 播客（完成 $3.55 亿 C 轮融资后首次深度访谈）中系统阐释：为何传统云基础设施（以 Kubernetes 为代表）从未为 AI Agent 的突发、高算力、多 Sandbox 场景而设计；Modal 如何从开发者体验（Developer Experience）转向 Agent Experience，面向生产级 Agent 引入硬性安全边界（Hard Guardrails）；以及 RL Rollout 可能需要同时运行 10 万个 Sandbox 的技术原因，GPU Snapshotting、Speculative Decoding、RDMA 等基础设施创新如何系统性应对这些挑战。
+                </p>
+                <a href="https://www.latent.space/p/modal2026" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 收听播客</a>
+              </td></tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+
+            <!-- ===== 6. TWIML AI Podcast ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="padding-bottom:8px;">
+                <span style="display:inline-block;background-color:#fef3c7;color:#92400e;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">TWIML AI PODCAST &nbsp;🎧 播客 · Ep.771 · 2026-07-08</span>
+              </td></tr>
+              <tr><td>
+                <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://twimlai.com/podcast/twimlai" style="color:#1a1a2e;text-decoration:none;">How AI Learns to Smell——嗅觉 AI（Olfactory Intelligence）前沿：从分子结构到感知邻域</a>
+                </h2>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.7;">
+                  第 771 集邀请 Osmo 创始人兼 CEO Alex Wiltschko，深入探讨如何赋予计算机"嗅觉"。节目涵盖嗅觉科学基础（人鼻内数百种 Olfactory Receptor 如何感知气味）、如何利用 Graph Neural Network 和高维 Embedding Space 将分子结构映射到感知邻域（perceptual neighborhoods），以及 Osmo 从零构建全球最大嗅觉专有数据集的工程历程。嗅觉 AI 的潜在应用已远超香水行业，覆盖疾病早期检测、情绪感知乃至消费电子设备，代表了多模态感知 AI 扩展的重要前沿方向。
+                </p>
+                <a href="https://twimlai.com/podcast/twimlai" style="font-size:13px;color:#1a56db;text-decoration:none;">→ 收听播客</a>
+              </td></tr>
+            </table>
+
+            <!-- Skipped channels note -->
+            <div style="margin-top:32px;padding:16px 20px;background-color:#f9f9f9;border-radius:6px;border-left:3px solid #ddd;">
+              <p style="margin:0;font-size:12px;color:#888;line-height:1.6;">
+                <strong style="color:#666;">本期跳过渠道：</strong>Google DeepMind Blog（最近一篇发布于 6 月 18 日，超出 7 天窗口）；Andrej Karpathy YouTube（最近上传确认为 5 月）；Yannic Kilcher YouTube（过去 7 天无新内容）；Two Minute Papers（未能确认 7 日内具体新视频）；AI Explained YouTube（未能确认 7 日内新视频）；Lex Fridman Podcast（最近确认期为 3 月 #494）。
+              </p>
+            </div>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#f8f8fb;padding:20px 40px;border-top:1px solid #eee;">
+            <p style="margin:0;font-size:12px;color:#999;text-align:center;line-height:1.6;">
+              软件技术日报 · AI 技术前沿 &nbsp;|&nbsp; 自动化生成于 2026-07-13<br>
+              内容来源：Anthropic · OpenAI · Hugging Face · DeepLearning.AI · Latent Space · TWIML AI Podcast
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
