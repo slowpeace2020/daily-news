@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-13</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#222222;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+    <tr>
+      <td align="center" style="padding:24px 16px 0;">
+
+        <!-- Header -->
+        <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+          <tr>
+            <td style="background-color:#1a1a2e;border-radius:8px 8px 0 0;padding:28px 32px;">
+              <p style="margin:0;font-size:12px;color:#8899aa;letter-spacing:0.5px;text-transform:uppercase;">Daily Digest</p>
+              <h1 style="margin:8px 0 4px;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+                软件技术日报【后端开发 &amp; Python &amp; Go】
+              </h1>
+              <p style="margin:0;font-size:14px;color:#aabbcc;">2026 年 7 月 13 日 &nbsp;|&nbsp; 本期精选 7 条内容</p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="border:1px solid #e4e8ed;border-top:none;border-radius:0 0 8px 8px;padding:8px 32px 24px;">
+
+              <!-- Intro note -->
+              <p style="margin:20px 0 4px;font-size:13px;color:#667788;line-height:1.6;">
+                以下内容来自过去 7 天内各主要技术渠道的最新发布，重点关注性能优化、新版本特性与工程最佳实践。
+              </p>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- 1. Martin Fowler Blog -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:20px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#0057a8;text-transform:uppercase;letter-spacing:0.6px;">
+                      Martin Fowler Blog
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      <a href="https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html"
+                         style="color:#1a1a2e;text-decoration:none;">
+                        Experiences with local models for coding
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;color:#444444;line-height:1.7;">
+                      Birgitta Böckeler（ThoughtWorks）记录了她在本地开发机（M3 Max 48GB RAM 和 M5 Pro 64GB RAM）上运行小型语言模型进行 agentic coding 的实际体验——这是她「探索生成式 AI」系列的第二篇备忘录。
+                      文章涵盖了她给模型布置的具体任务、执行过程中发生的事情，以及最终结论。
+                      核心观点是：本地模型作为 agentic coding 辅助工具的可行性高度依赖硬件规格、模型选型与 harness 配置，需要工程师持续干预和纠正。
+                    </p>
+                    <p style="margin:0;font-size:13px;color:#555555;">
+                      📅 2026-07-08 &nbsp;|&nbsp;
+                      <a href="https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html"
+                         style="color:#0057a8;text-decoration:none;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- 2. Netflix Tech Blog -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:20px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#0057a8;text-transform:uppercase;letter-spacing:0.6px;">
+                      Netflix Tech Blog
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      <a href="https://netflixtechblog.com/genpage-towards-end-to-end-generative-homepage-construction-at-netflix-77146fba8a08"
+                         style="color:#1a1a2e;text-decoration:none;">
+                        GenPage: Towards End-to-End Generative Homepage Construction at Netflix
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;color:#444444;line-height:1.7;">
+                      Netflix 提出 GenPage 方案：将用户上下文表示为 tokenized prompt，通过单个 Transformer 自回归地实时生成整个首页，将传统多阶段推荐系统（检索 → 排序 → 混排）压缩为一个可端到端优化的模型。
+                      在线 A/B 实验对比成熟生产系统，在核心用户参与度指标上取得显著提升，同时将端到端 serving latency 降低了 20%。
+                      这是将生成式 AI 应用于大规模个性化推荐的重要工程探索，将推荐系统范式从传统的多模块解耦转向端到端生成。
+                    </p>
+                    <p style="margin:0;font-size:13px;color:#555555;">
+                      📅 2026 年 7 月（近期发布）&nbsp;|&nbsp;
+                      <a href="https://netflixtechblog.com/genpage-towards-end-to-end-generative-homepage-construction-at-netflix-77146fba8a08"
+                         style="color:#0057a8;text-decoration:none;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- 3. Real Python -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:20px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#0057a8;text-transform:uppercase;letter-spacing:0.6px;">
+                      Real Python
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      <a href="https://realpython.com/python-news-july-2026/"
+                         style="color:#1a1a2e;text-decoration:none;">
+                        Python's JIT Faces Some Challenges and Other News for July 2026
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;color:#444444;line-height:1.7;">
+                      Python Steering Council 向 CPython 实验性 JIT compiler（自 Python 3.13 引入）发出最后通牒：必须在 6 个月内提交符合规范的标准化 PEP，否则将从 main branch 移除，理由是正式流程此前未被遵守。
+                      与此同时，Python 3.14.6 和 3.13.14 也发布了常规 bug fix 版本，Python 3.15 进入 Beta 测试阶段，预计秋季发布。
+                      这一事件反映出 Python 核心社区在引入重大功能时对规范流程的坚守，JIT 的未来走向值得持续关注。
+                    </p>
+                    <p style="margin:0;font-size:13px;color:#555555;">
+                      📅 2026-07 &nbsp;|&nbsp;
+                      <a href="https://realpython.com/python-news-july-2026/"
+                         style="color:#0057a8;text-decoration:none;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- 4. The Go Blog -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:20px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#0057a8;text-transform:uppercase;letter-spacing:0.6px;">
+                      The Go Blog
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      <a href="https://go.dev/gopls/release/v0.23.0"
+                         style="color:#1a1a2e;text-decoration:none;">
+                        Gopls v0.23.0 发布（July 2026）
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;color:#444444;line-height:1.7;">
+                      Go 官方语言服务器 gopls 发布 v0.23.0：针对 Go 1.27 新增了 embedded struct 字段在 struct literal 中的自动补全与 inlay hint 支持；内置 imports 引擎成为唯一选项（移除了 <code style="background:#f0f2f5;padding:2px 4px;border-radius:3px;font-size:13px;">importsSource</code> 配置项）；静态分析工具升级到 staticcheck v0.8.0-rc1，新增 <code style="background:#f0f2f5;padding:2px 4px;border-radius:3px;font-size:13px;">sqlrowserr</code> 分析器（检测循环中未调用 <code style="background:#f0f2f5;padding:2px 4px;border-radius:3px;font-size:13px;">sql.Rows.Err()</code> 的错误）。
+                      此外移除了已废弃的 <code style="background:#f0f2f5;padding:2px 4px;border-radius:3px;font-size:13px;">gopls fix</code>、<code style="background:#f0f2f5;padding:2px 4px;border-radius:3px;font-size:13px;">gopls inspect</code>、<code style="background:#f0f2f5;padding:2px 4px;border-radius:3px;font-size:13px;">gopls bug</code> 子命令，持续精简 CLI 接口。
+                    </p>
+                    <p style="margin:0;font-size:13px;color:#555555;">
+                      📅 2026-07 &nbsp;|&nbsp;
+                      <a href="https://go.dev/gopls/release/v0.23.0"
+                         style="color:#0057a8;text-decoration:none;">查看发布说明 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- 5. Golang Weekly -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:20px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#0057a8;text-transform:uppercase;letter-spacing:0.6px;">
+                      Golang Weekly
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      <a href="https://golangweekly.com/issues/609"
+                         style="color:#1a1a2e;text-decoration:none;">
+                        Issue #609: How Go makes TypeScript's compiler 10x faster
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;color:#444444;line-height:1.7;">
+                      本期头条聚焦 TypeScript 7.0——微软将 TypeScript 编译器用 Go 重写，实现了 8-12 倍的构建速度提升（VS Code 全量构建时间从 77 秒压缩至 7 秒）。
+                      性能提升来自两个方面：一半来自 native 代码执行（规避了 Node.js 的 V8 JIT 开销和启动损耗），另一半来自 Go goroutines 的天然并发能力——多个 type-checker goroutines 可共享同一内存空间的 symbol table，无需序列化。
+                      这是 Go 在大型工程工具领域影响力扩大的最新例证，也是对「Go 适合构建工具链」这一工程共识的有力验证。
+                    </p>
+                    <p style="margin:0;font-size:13px;color:#555555;">
+                      📅 2026-07（最新一期）&nbsp;|&nbsp;
+                      <a href="https://golangweekly.com/issues/609"
+                         style="color:#0057a8;text-decoration:none;">阅读本期 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- 6. ArjanCodes YouTube -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:20px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#0057a8;text-transform:uppercase;letter-spacing:0.6px;">
+                      Arjan Codes &nbsp;<span style="color:#cc0000;font-weight:700;">📹 视频</span>
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      <a href="https://www.youtube.com/watch?v=xns3InDkAiA"
+                         style="color:#1a1a2e;text-decoration:none;">
+                        Design Patterns Don't Automatically Make Code Better
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;color:#444444;line-height:1.7;">
+                      Arjan Codes 通过本视频探讨了一个常见误区：设计模式本身并不等同于更好的代码质量，过早或不恰当地引入设计模式反而会增加不必要的复杂性。
+                      视频着重强调何时应用设计模式（以及何时不应用），并提供具体代码示例说明「模式滥用」的典型问题。
+                      对于正在学习或已经使用设计模式的开发者，这是一次关于「权衡复杂性与灵活性」的务实反思。
+                    </p>
+                    <p style="margin:0;font-size:13px;color:#555555;">
+                      📅 2026 年 6 月底（近期发布）&nbsp;|&nbsp;
+                      <a href="https://www.youtube.com/watch?v=xns3InDkAiA"
+                         style="color:#0057a8;text-decoration:none;">观看视频 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- 7. Dan Luu Blog -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:20px 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;color:#0057a8;text-transform:uppercase;letter-spacing:0.6px;">
+                      Dan Luu Blog
+                    </p>
+                    <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      <a href="https://danluu.com/ai-coding/"
+                         style="color:#1a1a2e;text-decoration:none;">
+                        Agentic test processes, LLM benchmarks, and other notes on agentic coding from Galapagos Island
+                      </a>
+                    </h2>
+                    <p style="margin:0 0 10px;font-size:14px;color:#444444;line-height:1.7;">
+                      Dan Luu 在加拉帕戈斯群岛远程工作期间，深度实验了「指导 LLM 进行 agentic testing（包括 fuzzing 和随机测试）」的实践效果——结论是几分钟内便可发现真实且严重的 bug。
+                      然而他也发现一个关键观察：那些平时几乎不做测试的开发者往往对 LLM 测试能力评价更高，暗示部分「LLM 测试很厉害」的感知，可能只是从「零测试」到「有测试」的基线提升，而非 LLM 本身的绝对能力。
+                      文章还附有对主流 LLM benchmark 方法论的批判性分析，是一篇接地气且有价值的工程反思长文。
+                    </p>
+                    <p style="margin:0;font-size:13px;color:#555555;">
+                      📅 2026-07-03 &nbsp;|&nbsp;
+                      <a href="https://danluu.com/ai-coding/"
+                         style="color:#0057a8;text-decoration:none;">阅读原文 →</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ───────────────────────────────────────── -->
+              <!-- Footer -->
+              <!-- ───────────────────────────────────────── -->
+              <hr style="border:none;border-top:1px solid #e4e8ed;margin:24px 0 16px;" />
+              <p style="margin:0;font-size:12px;color:#889aa8;line-height:1.6;text-align:center;">
+                本日报由自动化 Agent 整理生成 &nbsp;·&nbsp; 2026-07-13<br/>
+                内容来源：martinfowler.com · netflixtechblog.com · realpython.com · go.dev · golangweekly.com · youtube.com/@ArjanCodes · danluu.com
+              </p>
+
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
