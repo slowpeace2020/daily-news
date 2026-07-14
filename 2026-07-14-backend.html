@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-14</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Arial,'PingFang SC','Microsoft YaHei',sans-serif;color:#333333;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+<tr>
+<td align="center" style="padding:20px 10px;">
+
+  <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">
+
+    <!-- Header -->
+    <tr>
+      <td style="background-color:#1a2332;padding:28px 32px;border-radius:6px 6px 0 0;">
+        <p style="margin:0 0 6px 0;font-size:12px;color:#8aabcc;letter-spacing:1px;text-transform:uppercase;">Daily Tech Digest</p>
+        <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+        <h2 style="margin:6px 0 0 0;font-size:15px;font-weight:400;color:#a8c4e0;">后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 2026-07-14</h2>
+      </td>
+    </tr>
+
+    <!-- Intro -->
+    <tr>
+      <td style="background-color:#f7f9fc;padding:14px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">
+          本期精选来自 <strong>7</strong> 个渠道的最新内容，涵盖 Go、Python、系统设计与工程实践。
+        </p>
+      </td>
+    </tr>
+
+    <!-- Divider after intro -->
+    <tr>
+      <td style="padding:0 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <hr style="border:none;border-top:1px solid #e4e8ed;margin:0;">
+      </td>
+    </tr>
+
+    <!-- ===== Item 1: Martin Fowler ===== -->
+    <tr>
+      <td style="padding:24px 32px 20px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0 0 6px 0;">
+          <span style="display:inline-block;background-color:#e8f0fe;color:#1a5ccc;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;">MARTIN FOWLER BLOG</span>
+          <span style="margin-left:8px;font-size:11px;color:#999;">2026-07-13</span>
+        </p>
+        <h3 style="margin:8px 0 10px 0;font-size:16px;font-weight:600;color:#1a2332;line-height:1.4;">
+          Fragments: July 13 — Context Engineering with Local LLMs
+        </h3>
+        <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.7;">
+          Birgitta Böckeler 发表了关于 <strong>context engineering</strong> 的最新研究，以 Claude Code 为例深入分析 <code style="background:#f0f0f0;padding:1px 4px;border-radius:3px;font-size:13px;">CLAUDE.md</code> 等上下文配置文件如何显著影响 LLM coding 工具的实际效果。随着 token 成本持续攀升，本地部署 open-weight 模型的吸引力日益增强；她与 Sebastian Raschka 均发现 <strong>Qwen 3.6</strong> 是当前 local agentic programming 的最佳性价比选择。
+        </p>
+        <a href="https://martinfowler.com/fragments/2026-07-13.html"
+           style="display:inline-block;color:#1a5ccc;font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid #a8c4e0;">
+          阅读原文 →
+        </a>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;"><hr style="border:none;border-top:1px solid #e4e8ed;margin:0;"></td></tr>
+
+    <!-- ===== Item 2: Netflix Tech Blog ===== -->
+    <tr>
+      <td style="padding:24px 32px 20px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0 0 6px 0;">
+          <span style="display:inline-block;background-color:#fce8e8;color:#cc1a1a;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;">NETFLIX TECH BLOG</span>
+          <span style="margin-left:8px;font-size:11px;color:#999;">2026-06-22</span>
+        </p>
+        <h3 style="margin:8px 0 10px 0;font-size:16px;font-weight:600;color:#1a2332;line-height:1.4;">
+          How Netflix Simplified Batch Compute with Kueue
+        </h3>
+        <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.7;">
+          Netflix 完成了大规模 batch 计算平台的现代化改造：将数百万 batch jobs 从 2018 年自研的 <strong>Compute Managed Batch (CMB)</strong> 系统迁移至云原生作业排队系统 <strong>Kueue</strong>，整个生产迁移历时仅 4 周且用户零感知。相比 YuniKorn 和 Volcano，Kueue 最大的优势在于不替换 <code style="background:#f0f0f0;padding:1px 4px;border-radius:3px;font-size:13px;">kube-scheduler</code>，可与 Netflix 现有 Kubernetes 基础设施无缝集成，实现了真正的 Kubernetes-native 批处理运维。
+        </p>
+        <a href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c"
+           style="display:inline-block;color:#1a5ccc;font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid #a8c4e0;">
+          阅读原文 →
+        </a>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;"><hr style="border:none;border-top:1px solid #e4e8ed;margin:0;"></td></tr>
+
+    <!-- ===== Item 3: Real Python ===== -->
+    <tr>
+      <td style="padding:24px 32px 20px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0 0 6px 0;">
+          <span style="display:inline-block;background-color:#e8f5e9;color:#2e7d32;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;">REAL PYTHON</span>
+          <span style="margin-left:8px;font-size:11px;color:#999;">2026-07</span>
+        </p>
+        <h3 style="margin:8px 0 10px 0;font-size:16px;font-weight:600;color:#1a2332;line-height:1.4;">
+          Python's JIT Faces Some Challenges and Other News for July 2026
+        </h3>
+        <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.7;">
+          Python Steering Council 向 <strong>JIT compiler</strong> 项目发出警告：若社区无法在约 6 个月内通过 standards-track PEP 正式批准该项目，新的 JIT 功能将停止合并进主分支。与此同时，<strong>Python 3.15</strong> 已进入 feature freeze 阶段并发布第二个 beta 版本；EuroPython 2026 大会将于 7 月中旬在波兰克拉科夫（Kraków）举行。
+        </p>
+        <a href="https://realpython.com/python-news-july-2026/"
+           style="display:inline-block;color:#1a5ccc;font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid #a8c4e0;">
+          阅读原文 →
+        </a>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;"><hr style="border:none;border-top:1px solid #e4e8ed;margin:0;"></td></tr>
+
+    <!-- ===== Item 4: Python Weekly ===== -->
+    <tr>
+      <td style="padding:24px 32px 20px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0 0 6px 0;">
+          <span style="display:inline-block;background-color:#fff8e1;color:#b8860b;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;">PYTHON WEEKLY</span>
+          <span style="margin-left:8px;font-size:11px;color:#999;">2026-07-09</span>
+        </p>
+        <h3 style="margin:8px 0 10px 0;font-size:16px;font-weight:600;color:#1a2332;line-height:1.4;">
+          Python Weekly — 2026 年 7 月 9 日期
+        </h3>
+        <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.7;">
+          由 Rahul Chaudhary 策划的 Python Weekly 最新一期于 7 月 9 日发布，手工精选本周最值得关注的 Python 文章、教程、开源项目与工具。本期内容覆盖 web 开发、数据科学、AI/ML 应用等主流方向，是 Python 开发者快速掌握生态动态的高效渠道，每周三固定发布。
+        </p>
+        <a href="https://www.pythonweekly.com/"
+           style="display:inline-block;color:#1a5ccc;font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid #a8c4e0;">
+          访问 Python Weekly →
+        </a>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;"><hr style="border:none;border-top:1px solid #e4e8ed;margin:0;"></td></tr>
+
+    <!-- ===== Item 5: Golang Weekly ===== -->
+    <tr>
+      <td style="padding:24px 32px 20px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0 0 6px 0;">
+          <span style="display:inline-block;background-color:#e0f7fa;color:#00695c;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;">GOLANG WEEKLY</span>
+          <span style="margin-left:8px;font-size:11px;color:#999;">Issue #609 · 2026-07</span>
+        </p>
+        <h3 style="margin:8px 0 10px 0;font-size:16px;font-weight:600;color:#1a2332;line-height:1.4;">
+          Issue #609: How Go Makes TypeScript's Compiler 10x Faster
+        </h3>
+        <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.7;">
+          <strong>TypeScript 7.0</strong> 于 7 月 9 日正式发布，这是首个采用 Go 重写编译器的稳定版本，实现了约 <strong>10.8x 构建加速</strong>、30x 类型检查速度提升和 2.9x 内存使用减少。Microsoft 选择 Go 的原因在于其与原始 TypeScript 代码结构高度相似（几乎可逐行移植），且 goroutines 天然支持跨 CPU 核心并行类型检查。本期还报道了 Go 1.26.5 和 1.25.12 的安全更新发布。
+        </p>
+        <a href="https://golangweekly.com/issues/609"
+           style="display:inline-block;color:#1a5ccc;font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid #a8c4e0;">
+          阅读本期 →
+        </a>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;"><hr style="border:none;border-top:1px solid #e4e8ed;margin:0;"></td></tr>
+
+    <!-- ===== Item 6: Arjan Codes YouTube ===== -->
+    <tr>
+      <td style="padding:24px 32px 20px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0 0 6px 0;">
+          <span style="display:inline-block;background-color:#f3e5f5;color:#6a1b9a;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;">ARJAN CODES · YOUTUBE</span>
+          <span style="margin-left:8px;font-size:11px;color:#999;">📹 视频 · 2026-06</span>
+        </p>
+        <h3 style="margin:8px 0 10px 0;font-size:16px;font-weight:600;color:#1a2332;line-height:1.4;">
+          You Don't Need That Design Pattern
+        </h3>
+        <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.7;">
+          Arjan 在本视频中直击开发者过度依赖设计模式的常见误区，通过真实 Python 代码案例演示了哪些场景下引入 Factory、Strategy 等 design patterns 反而增加了不必要的复杂性。视频倡导 <strong>YAGNI</strong>（You Aren't Gonna Need It）原则，主张用更扁平、更 Pythonic 的代码替代不必要的抽象层，适合希望提升代码简洁度的中高级 Python 开发者。
+        </p>
+        <a href="https://www.youtube.com/@ArjanCodes/videos"
+           style="display:inline-block;color:#1a5ccc;font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid #a8c4e0;">
+          前往频道观看 →
+        </a>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;"><hr style="border:none;border-top:1px solid #e4e8ed;margin:0;"></td></tr>
+
+    <!-- ===== Item 7: Dan Luu Blog ===== -->
+    <tr>
+      <td style="padding:24px 32px 20px 32px;border-left:1px solid #e4e8ed;border-right:1px solid #e4e8ed;">
+        <p style="margin:0 0 6px 0;">
+          <span style="display:inline-block;background-color:#fbe9e7;color:#bf360c;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;">DAN LUU BLOG</span>
+          <span style="margin-left:8px;font-size:11px;color:#999;">2026-07-03</span>
+        </p>
+        <h3 style="margin:8px 0 10px 0;font-size:16px;font-weight:600;color:#1a2332;line-height:1.4;">
+          Agentic Test Processes, LLM Benchmarks, and Other Notes on Agentic Coding from Galapagos Island
+        </h3>
+        <p style="margin:0 0 12px 0;font-size:14px;color:#444;line-height:1.7;">
+          Dan Luu 在加拉帕戈斯岛期间深入测评了当前主流 agentic coding 工具，重点分析了 LLM 在 fuzzing、随机测试等 <strong>agentic test processes</strong> 中的实际表现与 benchmark 数据。文章通过第一手实验数据揭示了各 LLM 在 agentic 场景下的真实能力差距，并对 AI 辅助测试流程的工程化落地提出了深入思考，是难得的去除营销噪音的客观测评。
+        </p>
+        <a href="https://danluu.com/ai-coding/"
+           style="display:inline-block;color:#1a5ccc;font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid #a8c4e0;">
+          阅读原文 →
+        </a>
+      </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+      <td style="background-color:#f7f9fc;padding:20px 32px;border:1px solid #e4e8ed;border-top:none;border-radius:0 0 6px 6px;">
+        <p style="margin:0 0 6px 0;font-size:12px;color:#888;line-height:1.6;">
+          ⏭ 下期跟踪渠道：High Scalability · The Go Blog · Anthony GG · Hussein Nasser · Fireship · Brendan Gregg
+        </p>
+        <p style="margin:0;font-size:11px;color:#bbb;">
+          本日报由自动化 agent 生成 · 内容来源于各渠道公开发布 · 摘要为 AI 辅助中文整理
+        </p>
+      </td>
+    </tr>
+
+  </table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
