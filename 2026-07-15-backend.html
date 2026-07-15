@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 & Python & Go】- 2026-07-15</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;padding:20px 0;">
+<tr><td align="center">
+<table width="680" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+  <!-- Header -->
+  <tr>
+    <td style="background:linear-gradient(135deg,#1a237e 0%,#1565c0 100%);padding:32px 36px;">
+      <p style="margin:0 0 6px 0;color:#90caf9;font-size:12px;letter-spacing:2px;text-transform:uppercase;">Daily Tech Digest</p>
+      <h1 style="margin:0 0 8px 0;color:#ffffff;font-size:22px;font-weight:700;line-height:1.3;">软件技术日报</h1>
+      <h2 style="margin:0 0 12px 0;color:#bbdefb;font-size:15px;font-weight:400;">后端开发 &amp; Python &amp; Go</h2>
+      <p style="margin:0;color:#90caf9;font-size:13px;">2026年07月15日 · 自动整理，精选 9 条技术动态</p>
+    </td>
+  </tr>
+
+  <!-- Body -->
+  <tr>
+    <td style="padding:28px 36px;">
+
+      <!-- Section 1: Martin Fowler Blog -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#e3f2fd;color:#1565c0;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">MARTIN FOWLER BLOG</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://martinfowler.com/fragments/2026-07-13.html"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              Fragments: July 13 — Harness Engineering 的最新思考
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            Martin Fowler 记录了 Thoughtworks 软件开发未来研讨会（第二届）的讨论要点，核心议题是 "Harness Engineering"（AI 编码代理的配套框架工程）。文章指出，对 AI Harness 的 context 做精细管理至关重要：尽管 context window 随模型升级持续扩大，但模型对上下文的有效注意力仍有限，需要主动引导。良好的 Harness 设计可以显著减少 token 消耗，并使较弱的模型（包括本地部署的开源权重模型）同样高效运行。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-07-13</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:0;">
+            <a href="https://martinfowler.com/fragments/2026-07-13.html"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 2: Netflix Tech Blog -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#fce4ec;color:#c62828;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">NETFLIX TECH BLOG</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              How Netflix Simplified Batch Compute with Kueue
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            Netflix 将自研批处理调度平台（CMB）中的排队与调度逻辑迁移到 Kueue（Kubernetes 原生批处理队列系统），充分利用其内置的抢占（preemption）、全有或全无调度（all-or-nothing scheduling）以及拓扑感知调度（topology-aware scheduling）能力。迁移过程对终端用户完全透明，零停机、无回归，生产迁移仅耗时 4 周。目前 Kueue 已在 Netflix 生产环境中管理数百万个批处理工作负载。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-06-22</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 3: Real Python -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#e8f5e9;color:#2e7d32;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">REAL PYTHON</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://realpython.com/python-news-june-2026/"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              Python 3.15 Hits Feature Freeze — June 2026 News
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            Python 3.15 正式进入 Feature Freeze，核心新特性已锁定：显式 lazy imports（PEP 810，加速模块启动）、内置 frozendict（PEP 814，不可变映射类型）、内置 sentinel（PEP 661），以及 JIT 编译器在 x86-64 Linux 上约 8–9% 的几何均值性能提升。CPython 现在默认编译开启 frame pointers（PEP 831），让 perf 等性能分析工具能够生成精准的调用栈，适合生产环境的低开销性能剖析（PEP 799 新增 sampling profiler）。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-06 · Python 3.15 Beta</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://realpython.com/python-news-june-2026/"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 4: Python Weekly -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#fff3e0;color:#e65100;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">PYTHON WEEKLY</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://www.pythonweekly.com/p/python-weekly-issue-751-june-25-2026"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              Issue #751 — Python 3.15 Beta 3、Polars 1.42 及最新维护版本
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            本期 Python Weekly 重点关注 Python 3.15 Beta 3 发布、高性能数据框架 Polars 1.42 新版本，以及 Python 3.14.6 等多个维护版本的同步发布。此外收录了社区关于 Jazzband（Python 开源协作维护组织）年底关停计划的讨论，以及用 AI 辅助 Python 编程（含 Codex CLI 深度评测）等热门话题。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-06-25</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.pythonweekly.com/p/python-weekly-issue-751-june-25-2026"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 阅读本期</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 5: The Go Blog -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#e0f7fa;color:#00695c;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">THE GO BLOG</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://go.dev/blog/pkgsite-api"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              Introducing the pkg.go.dev API
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            Go 团队正式发布 pkg.go.dev 的官方 API，支持开发者以编程方式查询 Go 包和模块的元数据，包括文档、版本历史、依赖关系等信息。该 API 面向工具链开发者、CI/CD 流水线及依赖分析场景，为构建 Go 生态工具提供标准化数据入口，填补了此前只能通过网页爬取信息的空白。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-05-21</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://go.dev/blog/pkgsite-api"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 6: Golang Weekly -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#e0f7fa;color:#00695c;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">GOLANG WEEKLY</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://golangweekly.com/issues/609"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              Issue #609 — How Go makes TypeScript's compiler 10x faster
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            最新一期（#609）聚焦 TypeScript 编译器用 Go 重写后实现 10 倍性能提升背后的技术原理，引发社区对 Go 在系统工具链领域适用性的广泛讨论。本期同时涵盖：Go 1.27 RC 2 发布动态、语言服务器 gopls 0.23.0 更新，以及 Gin 框架 12 年来 API 零破坏性变更的工程实践分析。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-07 · 最新一期</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://golangweekly.com/issues/609"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 阅读本期</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 7: Arjan Codes YouTube -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#f3e5f5;color:#6a1b9a;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">ARJAN CODES · YOUTUBE</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://www.youtube.com/watch?v=0sbLM_rBgww"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              📹 AI Writes Code Faster Than You. Now What?
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            Arjan Codes 最新视频务实讨论 AI 代码生成工具已能比人类更快写出代码的现实，以及这对软件工程师意味着什么。视频不鼓吹 AI 替代开发者，而是聚焦于如何在 AI 辅助工作流中保持软件设计质量和工程思维，适合关注 Python 工程最佳实践的开发者观看。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-07 · 视频</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.youtube.com/watch?v=0sbLM_rBgww"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 观看视频</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 8: Fireship YouTube -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#fff8e1;color:#f57f17;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">FIRESHIP · YOUTUBE</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://www.youtube.com/watch?v=Sntj4HmuykI"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              📹 The most trusted code on Earth is being rewritten in Rust
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            Fireship 介绍了 SQLite（全球部署最广的数据库引擎）的 Rust 重写版本 Turso，探讨其在内存安全和性能方面的潜力及新增特性。视频约 5 分钟，以 Fireship 标志性的高密度快节奏风格呈现，同时带出 Rust 在系统软件重写浪潮中的宏观趋势。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-06-19 · 视频</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.youtube.com/watch?v=Sntj4HmuykI"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 观看视频</a>
+          </td>
+        </tr>
+      </table>
+
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:22px 0;">
+
+      <!-- Section 9: Dan Luu Blog -->
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding-bottom:6px;">
+            <span style="display:inline-block;background-color:#e8eaf6;color:#283593;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;">DAN LUU BLOG</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:8px;">
+            <a href="https://danluu.com/ai-coding/"
+               style="color:#1a237e;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;">
+              Agentic test processes, LLM benchmarks, and other notes on agentic coding from Galapagos Island
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#555555;font-size:14px;line-height:1.7;padding-bottom:6px;">
+            Dan Luu 在加拉帕戈斯群岛的驻留期间对 LLM agentic coding 进行了深度实测。他发现将 LLM 引导做 fuzzing / 随机测试，能在数分钟内找到真实且往往很严重的 bug。文章揭示了一个矛盾现象：LLM 极大降低了达到特定代码质量门槛的难度，然而软件整体质量却仿佛不升反降——并附有 WebAssembly 算法性能优化的交互式 benchmark 实验数据。
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:4px;">
+            <span style="color:#888;font-size:12px;">📅 2026-06 · 深度长文</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://danluu.com/ai-coding/"
+               style="color:#1565c0;font-size:13px;text-decoration:none;">→ 阅读原文</a>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Skipped channels note -->
+      <hr style="border:none;border-top:1px solid #e8e8e8;margin:28px 0 16px 0;">
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="background-color:#fafafa;border-left:3px solid #ccc;padding:12px 16px;border-radius:0 4px 4px 0;">
+            <p style="margin:0 0 4px 0;color:#888;font-size:12px;font-weight:600;">跳过的渠道（近期无新内容）</p>
+            <p style="margin:0;color:#aaa;font-size:12px;">High Scalability · Anthony GG · Hussein Nasser · Brendan Gregg · Go by Example</p>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr>
+    <td style="background-color:#f8f9fa;padding:18px 36px;border-top:1px solid #e8e8e8;">
+      <p style="margin:0;color:#aaaaaa;font-size:12px;text-align:center;">
+        由 AI Agent 自动整理 · 2026-07-15 · 内容仅供参考，请以原文链接为准
+      </p>
+    </td>
+  </tr>
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>
