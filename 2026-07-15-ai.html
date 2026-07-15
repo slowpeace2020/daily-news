@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【AI 技术前沿】- 2026-07-15</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:Arial,Helvetica,sans-serif;color:#333333;">
+<div style="max-width:700px;margin:0 auto;padding:24px 16px;">
+
+  <!-- Header -->
+  <div style="background-color:#1a1a2e;padding:24px 28px;border-radius:8px;margin-bottom:28px;">
+    <h1 style="color:#ffffff;margin:0 0 6px 0;font-size:22px;font-weight:700;letter-spacing:0.5px;">软件技术日报【AI 技术前沿】</h1>
+    <p style="color:#9999cc;margin:0;font-size:13px;">2026年7月15日 &nbsp;|&nbsp; 整理来自全球顶级 AI 渠道的最新动态（过去 7 天）</p>
+  </div>
+
+  <!-- 目录 -->
+  <div style="background-color:#f8f8fb;border-left:4px solid #2563eb;padding:14px 18px;margin-bottom:28px;border-radius:0 6px 6px 0;">
+    <p style="margin:0 0 6px 0;font-size:13px;font-weight:700;color:#1a1a2e;">本期渠道</p>
+    <p style="margin:0;font-size:13px;color:#555555;line-height:1.8;">
+      Anthropic Blog &nbsp;·&nbsp; OpenAI Blog &nbsp;·&nbsp; Google DeepMind Blog &nbsp;·&nbsp; Hugging Face Blog &nbsp;·&nbsp;
+      The Batch (DeepLearning.AI) &nbsp;·&nbsp; AI Explained (YouTube) &nbsp;·&nbsp; Latent Space 播客 &nbsp;·&nbsp; TWIML AI 播客
+    </p>
+  </div>
+
+  <!-- ─── 1. Anthropic ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">Anthropic Blog &nbsp;·&nbsp; 2026-07-14</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">Introducing Claude for Teachers</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      Anthropic 正式推出 <strong>Claude for Teachers</strong>，向美国已认证的 K-12 教师免费开放 Claude 高级功能（有效期一年）。工具内置教学技能库，包括课程规划、学习差异化辅助，并接入 <strong>Learning Commons</strong> 数据库，实现与全美 50 个州课程标准的精准对齐，同时整合 OpenSciEd、Illustrative Mathematics 等主流开源教材。学生数据受 FERPA 合规的 K-12 数据处理协议保护，且不用于模型训练。这是 Anthropic 进军 K-12 教育场景的重要战略落子。
+    </p>
+    <a href="https://www.anthropic.com/news/claude-for-teachers" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">📄 阅读原文 →</a>
+  </div>
+
+  <!-- ─── 2. OpenAI ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">OpenAI Blog &nbsp;·&nbsp; 2026-07-09</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">GPT-5.6 正式发布：三档模型家族 + ChatGPT Work Agent</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      OpenAI 于 7 月 9 日正式向公众开放 <strong>GPT-5.6</strong>，分为 Luna、Terra、Sol 三档。旗舰版 Sol 在 Artificial Analysis Coding Agent Index 上得分 80，比 Anthropic Fable 5 高出约 2.8 分，且仅用不到一半的 output token、约三分之一的成本。同步发布的 <strong>ChatGPT Work</strong> 是企业级自主 Agent，可执行完整工作流（而非仅回答问题），并已于 7 月 14 日成为微软 365 Copilot 的默认模型。API 层面新增 Programmatic Tool Calling、持久化 Reasoning、Multi-agent 协调（beta）等能力。
+    </p>
+    <a href="https://openai.com/index/previewing-gpt-5-6-sol/" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">📄 阅读原文 →</a>
+  </div>
+
+  <!-- ─── 3. Google DeepMind ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">Google DeepMind Blog &nbsp;·&nbsp; 2026-07</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">Gemini 3 Deep Think 升级 + Gemini 3.5 Pro 架构重建公告</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      Google DeepMind 发布 <strong>Gemini 3 Deep Think</strong> 重大升级，专为数学推理和科学发现场景设计，现已面向 Google AI Ultra 订阅者及 Gemini API 精选研究者开放。与此同时，DeepMind 宣布 <strong>Gemini 3.5 Pro</strong> 将延至 7 月 17 日发布，延期原因是对整体架构进行了完整重建：升级后将支持 <strong>200 万 token 超长上下文</strong>、嵌入式 Deep Think 推理层以及自主 Workflow 执行能力，是一次里程碑式的代际跃迁。
+    </p>
+    <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">📄 阅读原文 →</a>
+  </div>
+
+  <!-- ─── 4. Hugging Face ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">Hugging Face Blog &nbsp;·&nbsp; 2026-07-07</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">LeRobot v0.6.0：Imagine, Evaluate, Improve</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      Hugging Face 发布 <strong>LeRobot v0.6.0</strong>，将机器人学习框架推向"完整评估-修正-训练闭环"。新版引入 World Model 策略（VLA-JEPA、FastWAM、LingBot-VA），可在行动前预测未来状态；统一 Reward Model API；新增 <code>lerobot-eval</code> 下的 6 项仿真 Benchmark；训练端支持 FSDP（全分片数据并行）；通过 HF Jobs 可一键扩展至云端 GPU（T4 到 8x H200）。视频数据加载速度约提升 2 倍，并提供基于 VLM 的自动语言标注管线，让机器人数据集构建更为规范化、可复现。
+    </p>
+    <a href="https://huggingface.co/blog/lerobot-release-v060" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">📄 阅读原文 →</a>
+  </div>
+
+  <!-- ─── 5. The Batch ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">The Batch — DeepLearning.AI &nbsp;·&nbsp; 2026-07-10</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">Agentic Coding Loop 正在重塑软件工程</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      最新一期 The Batch 聚焦 <strong>Agentic Coding Loop</strong>（自主编码循环）如何加速各类软件开发工作，深入探讨"AI 原生工程团队"的崛起——从传统"人写代码、AI 辅助"逐步转向"Agent 主导、人类审阅"的新范式。Andrew Ng 在 Letter 中同时指出，当前 AI 圈信息噪声极大，呼吁从业者回归有实质价值的工程实践，聚焦具体场景下 Agentic 工具链的落地效果而非单纯追逐炒点。
+    </p>
+    <a href="https://www.deeplearning.ai/the-batch/" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">📄 阅读原文 →</a>
+  </div>
+
+  <!-- ─── 6. AI Explained YouTube ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">AI Explained — YouTube &nbsp;·&nbsp; 2026-07-12</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">📹 视频：AI Business Brief — July 12, 2026</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      AI Explained 频道 7 月 12 日更新 <strong>AI Business Brief</strong>，系统梳理了本周最重要的 AI 商业动态：涵盖 GPT-5.6 发布后各大企业的实际部署情况、ChatGPT Work 对企业工作流的冲击，以及 Claude for Teachers 背后 Anthropic 与 OpenAI 争夺教育市场的战略博弈。该频道以批判性 Benchmark 分析著称，帮助观众区分真实能力进步与营销炒作，是跟踪 AI 前沿的高信噪比渠道。
+    </p>
+    <a href="https://www.youtube.com/watch?v=ZUYRV3iyOv0" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">📹 观看视频 →</a>
+  </div>
+
+  <!-- ─── 7. Latent Space ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">Latent Space 播客 &nbsp;·&nbsp; 2026-07-08</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">🎧 播客：Why AI Infrastructure Must Evolve for Agent Experience</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      Latent Space 邀请 <strong>Modal CTO Akshat Bubna</strong> 深入探讨 AI 基础设施如何为 Agent 工作负载而进化。随着 Agent 不再只处理单次推理请求，而需长时运行、访问外部工具、跨任务协作，传统 Serverless GPU 调度方式已成瓶颈。两年前 Modal 专注于无服务器 GPU，今天则将产品重心转向 <strong>Agent Cloud</strong>——这期播客是理解 AI 基础设施下一代演进方向的必听内容，对构建 Agent 平台的工程师尤具参考价值。
+    </p>
+    <a href="https://www.latent.space/p/modal2026" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">🎧 收听播客 →</a>
+  </div>
+
+  <!-- ─── 8. TWIML ─── -->
+  <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+    <p style="margin:0 0 6px 0;font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">TWIML AI Podcast — Ep.771 &nbsp;·&nbsp; 2026-07-08</p>
+    <h2 style="margin:0 0 10px 0;font-size:17px;color:#1a1a2e;font-weight:700;">🎧 播客：How AI Learns to Smell</h2>
+    <p style="margin:0 0 12px 0;line-height:1.7;font-size:14px;color:#444444;">
+      TWIML Ep.771 邀请 Osmo 创始人兼 CEO <strong>Alex Wiltschko</strong>，探讨"AI 如何学习嗅觉"这一前沿研究方向。人类鼻子有约 400 种嗅觉受体，气味感知本质是高维、多模态的非线性映射。Alex 团队通过 <strong>图神经网络（Graph Neural Networks）</strong> 和先进的 Embedding Space 建模分子结构与气味之间的关系，正在构建业界首个系统化的"嗅觉 AI"，为香水调配、食品科技、医疗早期诊断（如通过呼气检测疾病）等领域打开全新可能。
+    </p>
+    <a href="https://twimlai.com/podcast/twimlai/how-ai-learns-to-smell" style="display:inline-block;color:#2563eb;text-decoration:none;font-size:13px;font-weight:600;">🎧 收听播客 →</a>
+  </div>
+
+  <!-- 跳过说明 -->
+  <div style="background-color:#fffbeb;border:1px solid #fcd34d;padding:12px 16px;border-radius:6px;margin-bottom:24px;">
+    <p style="margin:0;font-size:12px;color:#92400e;line-height:1.6;">
+      <strong>本期跳过渠道（7 天内无新内容或未能确认）：</strong>
+      Andrej Karpathy YouTube（5 月加入 Anthropic 后 YouTube 更新减少）、Yannic Kilcher YouTube、Two Minute Papers YouTube、Lex Fridman Podcast（最新 AI 相关集数在窗口期外）
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top:20px;padding-top:16px;border-top:2px solid #e8e8e8;text-align:center;">
+    <p style="color:#bbbbbb;font-size:12px;margin:0 0 4px 0;">本日报由 AI Agent 自动整理生成</p>
+    <p style="color:#bbbbbb;font-size:12px;margin:0;">2026-07-15 &nbsp;|&nbsp; 下期见</p>
+  </div>
+
+</div>
+</body>
+</html>
