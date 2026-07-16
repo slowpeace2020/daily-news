@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-16</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; max-width: 680px; margin: 0 auto; padding: 24px 20px; background-color: #ffffff; color: #1a1a1a;">
+
+  <!-- Header -->
+  <div style="border-bottom: 3px solid #2563EB; padding-bottom: 16px; margin-bottom: 28px;">
+    <h1 style="font-size: 20px; font-weight: 700; color: #111827; margin: 0 0 4px 0;">
+      软件技术日报 &middot; 软件工程 &amp; 云原生
+    </h1>
+    <p style="font-size: 13px; color: #6b7280; margin: 0;">2026-07-16 &nbsp;|&nbsp; 自动聚合 · 中文摘要</p>
+  </div>
+
+  <!-- Item 1: SRE Weekly -->
+  <div style="margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid #e5e7eb;">
+    <div style="display: inline-block; font-size: 11px; font-weight: 700; color: #ffffff; background-color: #2563EB; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px;">SRE Weekly</div>
+    <h2 style="font-size: 17px; font-weight: 600; color: #111827; margin: 0 0 12px 0; line-height: 1.45;">
+      Issue #524：LLM 赋能 SRE——从事故单次代码生成到形式化验证
+    </h2>
+    <p style="font-size: 14px; line-height: 1.75; color: #374151; margin: 0 0 10px 0;">
+      最新一期 SRE Weekly 深入探讨 LLM 在 SRE 工作流中的两大新兴实践：其一，在生产事故期间即时生成一次性诊断脚本（single-use incident code），大幅降低工程师的认知负担；其二，将长期曲高和寡的形式化验证（formal verification）技术重新引入 SRE 视野——LLM 可辅助编写数学证明，使这一高门槛工具变得触手可及。
+    </p>
+    <p style="font-size: 14px; line-height: 1.75; color: #374151; margin: 0 0 14px 0;">
+      文章同时提示一个重要边界：事故复盘（incident review）是社会技术过程，若交由 LLM 代写复盘报告，团队将失去共同反思、建立共同理解的核心价值。
+    </p>
+    <a href="https://sreweekly.com/sre-weekly-issue-524/" style="font-size: 13px; color: #2563EB; text-decoration: none; font-weight: 500;">阅读原文 &rarr;</a>
+  </div>
+
+  <!-- Item 2: ByteByteGo -->
+  <div style="margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid #e5e7eb;">
+    <div style="display: inline-block; font-size: 11px; font-weight: 700; color: #ffffff; background-color: #7c3aed; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px;">ByteByteGo</div>
+    <h2 style="font-size: 17px; font-weight: 600; color: #111827; margin: 0 0 12px 0; line-height: 1.45;">
+      微软如何在企业级生产环境大规模部署 AI Agent
+    </h2>
+    <p style="font-size: 14px; line-height: 1.75; color: #374151; margin: 0 0 10px 0;">
+      ByteByteGo 专访微软 Core AI 产品副总裁 Marco Casalaina，深入解析微软将 AI Agent 推向企业生产规模的工程实践。核心洞察：<strong>模型本身极少是生产故障的根因</strong>，真正出问题的是围绕模型构建的整套机制——数据检索质量、工具调用稳定性、真实用户行为处理，以及随外部世界变化发生的质量漂移（quality drift）监控。
+    </p>
+    <p style="font-size: 14px; line-height: 1.75; color: #374151; margin: 0 0 14px 0;">
+      2026 年 AI 应用形态已从问答系统迁移至真正替用户完成工作的 Agent（自动预订会议、发送邮件、提交工单），语音作为前端接口的使用量呈爆发式增长——这对 SRE 和平台团队在可靠性保障上提出了全新挑战。
+    </p>
+    <a href="https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at" style="font-size: 13px; color: #2563EB; text-decoration: none; font-weight: 500;">阅读原文 &rarr;</a>
+  </div>
+
+  <!-- Item 3: TLDR DevOps -->
+  <div style="margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid #e5e7eb;">
+    <div style="display: inline-block; font-size: 11px; font-weight: 700; color: #ffffff; background-color: #059669; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px;">TLDR DevOps &nbsp;·&nbsp; 2026-07-10</div>
+    <h2 style="font-size: 17px; font-weight: 600; color: #111827; margin: 0 0 12px 0; line-height: 1.45;">
+      Kubernetes 生态本周三大重磅：etcd v3.7、Calico v3.32、Cloudflare Meerkat
+    </h2>
+    <p style="font-size: 14px; line-height: 1.75; color: #374151; margin: 0 0 10px 0;">
+      <strong>etcd v3.7.0</strong>（7月8日正式发布）引入期待已久的 <code style="background:#f3f4f6; padding:1px 5px; border-radius:3px; font-size:13px;">RangeStream</code> RPC，支持将大结果集以流式分块方式传输，大幅降低 Kubernetes control plane 内存占用和延迟；同时完全移除遗留的 v2store，架构清洁度全面提升。Kubernetes v1.37 将通过 feature gate 开放此能力。
+    </p>
+    <p style="font-size: 14px; line-height: 1.75; color: #374151; margin: 0 0 10px 0;">
+      <strong>Calico v3.32.0</strong> 实现 Kubernetes 集群中虚拟机跨节点热迁移（live migration）时保持 IP 地址与身份不变，彻底解决 VM 迁移期间的网络中断痛点。<strong>Cloudflare Meerkat</strong> 则以实验性形式开源：采用 QuePaxa 算法取代 Raft，所有副本可同时写入、无需单一 Leader 及超时机制，针对 Cloudflare 自身在 Raft 方案上遭遇的可用性瓶颈量身打造，为全球 330+ 数据中心提供强一致性保证。
+    </p>
+    <a href="https://tldr.tech/devops/2026-07-10" style="font-size: 13px; color: #2563EB; text-decoration: none; font-weight: 500;">阅读原文 &rarr;</a>
+  </div>
+
+  <!-- Skipped channels notice -->
+  <div style="margin-bottom: 24px; padding: 14px 16px; background-color: #f9fafb; border-radius: 6px; border-left: 3px solid #d1d5db;">
+    <p style="font-size: 13px; color: #6b7280; margin: 0; line-height: 1.6;">
+      <strong>本期跳过渠道：</strong><br>
+      &bull; <strong>Thoughtworks Technology Radar</strong> — 最新 Vol.34 发布于 2026 年 4 月，近 7 天无新内容<br>
+      &bull; <strong>TechWorld with Nana</strong> — 未检测到近 7 天新视频发布
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top: 32px; padding-top: 16px; border-top: 1px solid #e5e7eb; text-align: center;">
+    <p style="font-size: 12px; color: #9ca3af; margin: 0;">
+      软件技术日报 &middot; 自动生成 &middot; 2026-07-16
+    </p>
+  </div>
+
+</body>
+</html>
