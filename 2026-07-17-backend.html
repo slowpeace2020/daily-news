@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 & Python & Go】- 2026-07-17</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td align="center" style="padding:20px 10px;">
+      <table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color:#1a2332;padding:28px 32px;border-radius:8px 8px 0 0;">
+            <p style="margin:0 0 6px 0;font-size:12px;color:#8ca0b8;letter-spacing:1px;text-transform:uppercase;">Daily Tech Digest</p>
+            <h1 style="margin:0 0 8px 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">
+              软件技术日报<br>
+              <span style="color:#4da6ff;">后端开发 &amp; Python &amp; Go</span>
+            </h1>
+            <p style="margin:0;font-size:13px;color:#8ca0b8;">2026-07-17 &nbsp;|&nbsp; 本期收录 9 条精选内容</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="background-color:#ffffff;padding:0 32px 24px 32px;border:1px solid #e8ecf0;border-top:none;border-radius:0 0 8px 8px;">
+
+            <!-- Intro -->
+            <p style="margin:24px 0 0 0;font-size:13px;color:#555;line-height:1.7;">
+              涵盖：Martin Fowler · Netflix Tech Blog · Real Python · Python Weekly · The Go Blog · Golang Weekly · Arjan Codes · Fireship · Dan Luu Blog
+            </p>
+
+            <!-- ===== 1. Martin Fowler ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:2px solid #4da6ff;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#4da6ff;letter-spacing:1px;text-transform:uppercase;">Martin Fowler Blog</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://martinfowler.com/fragments/2026-07-13.html" style="color:#1a2332;text-decoration:none;">Fragments: July 13 — Thoughtworks 未来软件开发研讨会笔记</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  Martin Fowler 发布了来自 Thoughtworks "未来软件开发研讨会"的最新笔记，聚焦 AI 时代的 <strong>Harness Engineering</strong>（工具链工程化），核心挑战在于 context 管理：尽管 context window 越来越大，模型仍需精准聚焦相关信息。
+                  研讨会还讨论了 AI 对开发者教育的冲击——Josh Comeau 透露其在线课程销量已跌至三分之一，既因工作不确定性，也因 AI 正在取代个性化辅导。
+                  此外，参与者认为跨平台 UI 框架的未来堪忧：coding agent 已能针对不同平台高效生成原生代码，最小公分母式的跨平台方案正面临挑战。
+                </p>
+                <a href="https://martinfowler.com/fragments/2026-07-13.html" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 2. Netflix Tech Blog ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#e50914;letter-spacing:1px;text-transform:uppercase;">Netflix Tech Blog</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c" style="color:#1a2332;text-decoration:none;">How Netflix Simplified Batch Compute with Kueue</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  Netflix 工程团队介绍了如何将 Kubernetes 生态中的 <strong>Kueue</strong> 集成到其容器平台 <strong>Titus</strong>，以简化大规模批处理计算的调度与资源管理。
+                  通过引入 Kueue 的队列优先级机制，Netflix 显著提升了批处理作业的资源利用率，并降低了自研调度系统的维护复杂度。
+                  这篇文章对需要在 Kubernetes 上管理大规模 AI/ML 训练任务的团队极具参考价值。
+                </p>
+                <a href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 3. Real Python ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#306998;letter-spacing:1px;text-transform:uppercase;">Real Python</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://realpython.com/python-news-july-2026/" style="color:#1a2332;text-decoration:none;">Python's JIT Faces Some Challenges — July 2026 Python News</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  Python Steering Council 为 JIT 编译器设定了六个月的"死线"：若无正式的 standards-track PEP 落地，JIT 将从 CPython main 分支中移除。
+                  核心问题在于 JIT 最初通过纯描述性的 <strong>PEP 744</strong> 合并入主线，未经正式审批，且遗留了与 free-threading、profiler、debugger 兼容性的未决问题。
+                  好消息是：四周后 <strong>PEP 836（"JIT Go Brrr"）</strong>已提交，承诺在 Python 3.16 中实现相对标准解释器 20% 的性能提升并保证工具链完全兼容。
+                </p>
+                <a href="https://realpython.com/python-news-july-2026/" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 4. Python Weekly ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#306998;letter-spacing:1px;text-transform:uppercase;">Python Weekly</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://www.pythonweekly.com/archive/" style="color:#1a2332;text-decoration:none;">Python Weekly — July 9, 2026 期</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  本期 Python Weekly（由 Rahul Chaudhary 主编）精选了本周 Python 生态的热点资讯、教程与开源项目。
+                  本期内容涵盖 Python 3.14/3.15 最新 beta 发布动态、EuroPython 2026（克拉科夫，7 月中旬）大会报道，以及 AI 辅助编程工具在 Python 社区的最新进展。
+                  Python Weekly 是 Python 开发者保持技术视野的免费订阅首选，每周四发布。
+                </p>
+                <a href="https://www.pythonweekly.com/archive/" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">查看归档 →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 5. The Go Blog ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#00acd7;letter-spacing:1px;text-transform:uppercase;">The Go Blog</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://go.dev/blog/gofix" style="color:#1a2332;text-decoration:none;">Using go fix to Modernize Go Code</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  Go 1.26 对 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">go fix</code> 命令进行了彻底重写，基于 Go 静态分析框架引入了数十个"modernizer"，可自动将旧写法升级为更现代的 API（例如将 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">append([]string{}, s...)</code> 替换为 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">slices.Clone(s)</code>）。
+                  更值得关注的是"自助式"升级范式：库的维护者可以随包发布自己的 analyzer 并附带 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">//go:fix inline</code> 指令，让 API 废弃迁移变为一条命令可执行的机械化操作。
+                  官方建议每次升级 Go 工具链版本时从干净的 git 状态执行 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">go fix ./...</code>，以保持代码库的持续现代化。
+                </p>
+                <a href="https://go.dev/blog/gofix" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 6. Golang Weekly / GoDaily ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#00acd7;letter-spacing:1px;text-transform:uppercase;">Golang Weekly · GoDaily #49 (2026-07-16)</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://godaily.dev/" style="color:#1a2332;text-decoration:none;">Fyne v2.8 发布 &amp; sync/atomic 新增 Max/Min 操作符</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  <strong>Fyne v2.8</strong> 正式发布，来自 39 位贡献者的千余次提交带来了新的图形 API、UI 组件和性能优化，进一步巩固了其作为 Go 跨平台 GUI 工具包的地位。
+                  与此同时，Go 标准库 <strong>sync/atomic</strong> 即将新增 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">Max</code> 和 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">Min</code> 原子操作函数，该提案的起源来自 runtime 内存清扫器（sweeper）代码中的一处 TODO 注释——是一个经典的"从生产需求到语言特性"的演进案例。
+                  本期 GoDaily 还收录了在 1/8 核心 VPS 上运行 Go 服务以及 <code style="background:#f4f4f4;padding:1px 5px;border-radius:3px;font-size:13px;">GOARM64=v9.6</code> 提案等话题，值得关注低资源 Go 部署场景的工程师阅读。
+                </p>
+                <a href="https://godaily.dev/" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">访问 GoDaily →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 7. Arjan Codes ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#ff6b35;letter-spacing:1px;text-transform:uppercase;">📹 视频 · Arjan Codes (YouTube)</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://www.youtube.com/watch?v=0sbLM_rBgww" style="color:#1a2332;text-decoration:none;">AI Writes Code Faster Than You. Now What?</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  Arjan 在这期视频中探讨了一个许多开发者正在面对的现实问题：当 AI 能以超越人类的速度生成代码时，软件工程师的核心价值究竟在哪里？
+                  他认为，AI 擅长生成代码但不擅长做出正确的工程决策，因此 <strong>系统设计能力、架构判断力和代码审查能力</strong>将变得更加关键。
+                  视频结合 Python 实例，演示了如何利用 AI 加速编码的同时保持对代码质量和可维护性的把控，对希望适应 AI 辅助开发范式的工程师很有参考价值。
+                </p>
+                <a href="https://www.youtube.com/watch?v=0sbLM_rBgww" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">观看视频 →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 8. Fireship ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#ff6b35;letter-spacing:1px;text-transform:uppercase;">📹 视频 · Fireship (YouTube)</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://www.youtube.com/watch?v=Sntj4HmuykI" style="color:#1a2332;text-decoration:none;">The Most Trusted Code on Earth Is Being Rewritten in Rust</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  地球上最受信赖的数据库 <strong>SQLite</strong> 正在用 Rust 重写——这个项目名为 <strong>Turso</strong>，已实际落地并带来了原版 SQLite 所没有的新特性。
+                  Fireship 以一贯的快节奏风格介绍了 Turso 的核心改进：内存安全保障、更好的并发支持以及对现代存储硬件的适配，进一步验证了 Rust 在系统软件领域对 C 语言的替代趋势。
+                  视频还横向对比了近年来多个知名 C/C++ 项目迁移至 Rust 的案例，对关注系统编程语言演进的开发者有很好的参考意义。
+                </p>
+                <a href="https://www.youtube.com/watch?v=Sntj4HmuykI" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">观看视频 →</a>
+              </td></tr>
+            </table>
+
+            <!-- ===== 9. Dan Luu ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:18px;">
+                <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#555;letter-spacing:1px;text-transform:uppercase;">Dan Luu Blog</p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a2332;line-height:1.4;">
+                  <a href="https://danluu.com/ai-coding/" style="color:#1a2332;text-decoration:none;">Agentic Test Processes, LLM Benchmarks, and Notes on Agentic Coding</a>
+                </h2>
+                <p style="margin:0 0 12px 0;font-size:14px;color:#333;line-height:1.8;">
+                  Dan Luu 在加拉帕戈斯岛（Galapagos Island）工作期间深入记录了 agentic coding 的实践观察：LLM 在为编译器编写测试时表现糟糕，原因在于缺乏"如果这样做会怎样"的对抗性思维和边界情况枚举能力。
+                  他发现将 <strong>fuzzing</strong> 引入 agentic 测试流程效果显著——一位持怀疑态度的测试者在被引导使用 fuzzing 后立即发现了真实 bug；多个采用类似流程的团队均迅速在自己的代码库中发现了问题。
+                  文章还对主流 LLM benchmark 的局限性进行了深入批判，指出现有评测体系无法有效衡量 agentic 场景下的真实工程能力，对评估 AI 编程工具的工程团队具有重要参考价值。
+                </p>
+                <a href="https://danluu.com/ai-coding/" style="display:inline-block;font-size:12px;color:#4da6ff;text-decoration:none;border:1px solid #4da6ff;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+              </td></tr>
+            </table>
+
+            <!-- Skipped channels note -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <tr><td style="border-top:1px solid #e8ecf0;padding-top:16px;">
+                <p style="margin:0;font-size:12px;color:#999;line-height:1.7;">
+                  <strong style="color:#bbb;">本期未收录：</strong>
+                  High Scalability（近期无新文章）· Brendan Gregg Blog（最新文章为 2026-02）· Anthony GG（最新 Go 相关视频为 2026-05）· Hussein Nasser（近期无可确认的 7 日内新内容）· Go by Example（静态教程站点，无新增内容）
+                </p>
+              </td></tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding:16px 32px;text-align:center;">
+            <p style="margin:0;font-size:11px;color:#aaa;">
+              自动生成 · 2026-07-17 &nbsp;|&nbsp; 软件技术日报 · 后端开发 &amp; Python &amp; Go
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
