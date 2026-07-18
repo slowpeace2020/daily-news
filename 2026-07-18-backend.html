@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-18</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1a1a1a;font-size:15px;line-height:1.6;">
+
+<div style="max-width:680px;margin:0 auto;padding:24px 24px;">
+
+  <!-- Header -->
+  <div style="border-bottom:3px solid #1a1a2e;padding-bottom:16px;margin-bottom:28px;">
+    <h1 style="margin:0 0 6px 0;font-size:24px;font-weight:700;color:#1a1a2e;">软件技术日报</h1>
+    <p style="margin:0;font-size:13px;color:#666666;letter-spacing:0.3px;">后端开发 &amp; Python &amp; Go &nbsp;｜&nbsp; 2026-07-18</p>
+  </div>
+
+  <!-- Item 1: Martin Fowler - The Archaeologist's Copilot -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Martin Fowler Blog &nbsp;·&nbsp; 2026-07-16</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">The Archaeologist's Copilot</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      作者 Nik Malykhin 将遗留系统现代化比作"考古"而非"旅游"——接手了一个 Gradle 构建已损坏数年的 Java 遗留项目，根本原因是 Gradle 8 和现代 JDK 对模块封装的严格执行打破了原有的 Ant/Eclipse 2008 编译方式。文章详细记录了借助 Gemini 和 GitHub Copilot 进行诊断与修复的全过程，重点探讨 AI 助手在"为何失败"的根因分析模式下与单纯执行代码相比的实际效果差异。这是一篇难得的棕地（brownfield）项目 AI 辅助工程实践案例。
+    </p>
+    <a href="https://martinfowler.com/articles/archaeologist-copilot.html" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+  </div>
+
+  <!-- Item 2: Martin Fowler - DSLs Enable Reliable Use of LLMs -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Martin Fowler Blog &nbsp;·&nbsp; 2026-07-14</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">DSLs Enable Reliable Use of LLMs</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      作者 Unmesh Joshi 提出：Domain-Specific Language（DSL）可作为约束框架，引导 LLM 生成更可靠的代码。文章以 Tickloom（用于建模分布式系统行为的 DSL）为具体案例，实验表明在 prompt 中提供少量 DSL 示例后，LLM 输出的代码准确性相比开放式自然语言 prompt 大幅提升，有效缩减了"幻觉"空间。对于希望在工程实践中稳定落地 LLM 代码生成的团队具有直接参考价值。
+    </p>
+    <a href="https://martinfowler.com/articles/llm-and-dsls.html" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+  </div>
+
+  <!-- Item 3: Golang Weekly #609 -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Golang Weekly &nbsp;·&nbsp; Issue #609</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">How Go Makes TypeScript's Compiler 10x Faster</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      本期头条聚焦 TypeScript 7.0：Microsoft 将 TypeScript 编译器使用 Go 重写后，构建速度提升 8–12 倍。深入分析了 Go 的并发模型（goroutine + channel）和工具链特性如何使这一性能飞跃成为可能。本期还涵盖 Go 1.27 RC2 安全更新、gopls 0.23.0 发布（完整支持 Go 1.27 RC 语言特性）等。这是近期 Go 生态系统影响力最广的工程事件。
+    </p>
+    <a href="https://golangweekly.com/issues/609" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">阅读本期 →</a>
+  </div>
+
+  <!-- Item 4: Real Python - Python JIT news -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Real Python &nbsp;·&nbsp; 2026-07-06</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">Python's JIT Faces Some Challenges and Other News for July 2026</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      Python Steering Council 向实验性 JIT 编译器项目发出六个月最后期限：须提交正式 PEP 标准草案，否则将从 CPython 主线移除（该 JIT 自 Python 3.13 起默认关闭随包附带）。本期还报道了 Python 3.14.6 / 3.13.14 常规 bug-fix 版本发布、Python 3.15 第二个 beta 版本上线，以及新成立的 Python Packaging Council 相关进展，是了解 Python 生态近况的必读简报。
+    </p>
+    <a href="https://realpython.com/python-news-july-2026/" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+  </div>
+
+  <!-- Item 5: Netflix Tech Blog - GenPage -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Netflix Tech Blog &nbsp;·&nbsp; 2026-06-29</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">GenPage: Towards End-to-End Generative Homepage Construction at Netflix</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      Netflix 介绍了 GenPage 系统：以生成式方式逐行构建首页内容，每一行的生成以上方已放置内容为上下文条件，取代了原有的静态"槽位填充"逻辑。这种动态、上下文感知的布局系统旨在提升页面内容连贯性和用户参与度，是推荐系统与页面排版深度融合的工程实践，对大规模个性化首页系统设计有重要参考价值。
+    </p>
+    <a href="https://netflixtechblog.com/genpage-towards-end-to-end-generative-homepage-construction-at-netflix-77146fba8a08" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+  </div>
+
+  <!-- Item 6: Fireship - SQLite rewritten in Rust -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Fireship &nbsp;·&nbsp; 📹 视频</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">📹 The Most Trusted Code on Earth Is Being Rewritten in Rust</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      Fireship 最新视频聚焦 Turso 项目——一个以 Rust 重写的 SQLite drop-in 替代品，在完全兼容原有 API 的同时引入了 SQLite 原版不具备的新特性。视频以 Fireship 一贯简洁幽默的风格解析了为何全球"最受信任的代码"需要被重写，以及 Rust 在内存安全性与性能上的优势如何推动这一选择。
+    </p>
+    <a href="https://www.youtube.com/watch?v=Sntj4HmuykI" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">观看视频 →</a>
+  </div>
+
+  <!-- Item 7: Dan Luu - Agentic coding -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Dan Luu Blog &nbsp;·&nbsp; 2026-07-03</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">Agentic Test Processes, LLM Benchmarks, and Notes on Agentic Coding</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      Dan Luu 的长篇实地报告记录了 Agentic coding 的亲身实践观察：指导 LLM 生成 fuzzer 工具可在数分钟内发现严重 bug，但 LLM 生成的 fuzzer 代码覆盖率出人意料地低——连人工随手编写的 fuzzer 都能覆盖的基本路径也会遗漏。文章同时深入分析了当前 LLM benchmark 的局限性，以及 benchmark 表现与真实 Agentic 任务完成率之间的显著差距，是对 AI 辅助工程能力边界的清醒审视。
+    </p>
+    <a href="https://danluu.com/ai-coding/" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+  </div>
+
+  <!-- Item 8: Anthony GG - What's new in Go -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Anthony GG &nbsp;·&nbsp; 📹 视频 &nbsp;·&nbsp; 2026-05-22</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">📹 What's New in Go (1.25 &amp; 1.26)</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      Anthony GG 梳理了 Go 1.25 和 Go 1.26 的主要新特性，涵盖语言层面的改进、标准库更新以及工具链变化。结合当前 Go 1.27 RC2 已发布的背景，这个视频是快速了解 Go 近两个版本演进方向的高效入门资料，对于跟踪 Go 版本升级路径的后端工程师有较高参考价值。
+    </p>
+    <a href="https://www.youtube.com/watch?v=l4lneZYtjQg" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">观看视频 →</a>
+  </div>
+
+  <!-- Item 9: Brendan Gregg - Why I joined OpenAI -->
+  <div style="margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #ebebeb;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#888888;margin-bottom:7px;">Brendan Gregg Blog &nbsp;·&nbsp; 2026-02-07</div>
+    <h2 style="margin:0 0 10px 0;font-size:18px;font-weight:600;color:#1a1a2e;line-height:1.4;">Why I Joined OpenAI</h2>
+    <p style="margin:0 0 12px 0;color:#333333;line-height:1.7;">
+      性能工程领域知名专家 Brendan Gregg 解释了离开 Intel 加入 OpenAI 的原因：他将 AI inference 的庞大且快速增长的计算开销定义为"历史上对性能工程最紧迫的一次呼唤"——不仅是成本问题，更是环境问题。他在 OpenAI 的工作聚焦于 ChatGPT 性能优化，致力于开发新方法以超越传统性能工程的速度发现更大的优化空间。对关注 AI 基础设施性能工程方向的读者极具启发。
+    </p>
+    <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html" style="color:#0066cc;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="padding-top:20px;font-size:12px;color:#aaaaaa;line-height:1.6;">
+    <p style="margin:0 0 4px 0;">本日报由自动化 Agent 整理生成 &nbsp;｜&nbsp; 2026-07-18</p>
+    <p style="margin:0;">渠道：Martin Fowler Blog · Golang Weekly · Real Python · Netflix Tech Blog · Fireship · Dan Luu · Anthony GG · Brendan Gregg</p>
+    <p style="margin:4px 0 0 0;">已跳过（过去7天无新内容）：High Scalability · The Go Blog · Python Weekly · Arjan Codes · Hussein Nasser · Go by Example</p>
+  </div>
+
+</div>
+
+</body>
+</html>
