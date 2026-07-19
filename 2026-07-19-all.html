@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报 - 2026-07-19</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+    .header {
+      background-color: #1a1a2e;
+      color: #ffffff;
+      padding: 28px 24px;
+      border-radius: 8px;
+      margin-bottom: 28px;
+    }
+    .header h1 {
+      margin: 0 0 6px 0;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .header p {
+      margin: 0;
+      font-size: 13px;
+      color: #a0aec0;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a2e;
+      background-color: #eef2ff;
+      padding: 10px 14px;
+      border-left: 4px solid #4f46e5;
+      border-radius: 4px;
+      margin: 32px 0 16px 0;
+      letter-spacing: 0.3px;
+    }
+    .item {
+      padding: 16px 0;
+      border-bottom: 1px solid #e8ecf0;
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+    .item-source {
+      font-size: 11px;
+      font-weight: 700;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 5px;
+    }
+    .item-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 7px;
+      line-height: 1.45;
+    }
+    .item-summary {
+      font-size: 13.5px;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+    .item-link a {
+      font-size: 12.5px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .item-link a:hover {
+      text-decoration: underline;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      background-color: #f3f4f6;
+      color: #4b5563;
+      padding: 1px 7px;
+      border-radius: 10px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid #e8ecf0;
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>软件技术日报</h1>
+    <p>2026年07月19日 &nbsp;·&nbsp; 涵盖软件工程、AI前沿、后端开发三大板块</p>
+  </div>
+
+  <!-- ======== SECTION 1 ======== -->
+  <div class="section-title">📡 软件工程 &amp; 云原生</div>
+
+  <!-- Thoughtworks -->
+  <div class="item">
+    <div class="item-source">Thoughtworks Technology Radar</div>
+    <div class="item-title">Volume 34：AI 加速软件复杂性，Radar 呼吁回归工程基础以应对认知债务</div>
+    <div class="item-summary">
+      Thoughtworks Technology Radar 第34卷（2026年4月）聚焦 AI 辅助开发带来的"认知债务"问题——AI 生成大量代码使人与系统之间的距离日益扩大。报告指出行业正从无休止的实验转向追求可重复性与稳定性，并强调零信任架构、DORA 指标、可测试性等成熟实践重新受到重视。市场上工具泛滥与语义扩散使得评估技术长期可持续性愈发困难。
+    </div>
+    <div class="item-link"><a href="https://www.thoughtworks.com/radar" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- SRE Weekly -->
+  <div class="item">
+    <div class="item-source">SRE Weekly · Issue #524 &nbsp;|&nbsp; 2026-07-05</div>
+    <div class="item-title">Airbnb 如何构建 Kubernetes Sidecar 实现动态配置的大规模可靠交付</div>
+    <div class="item-summary">
+      SRE Weekly 第524期重点介绍 Airbnb 打造的 Kubernetes sidecar 组件，以高可靠方式在大规模集群上动态推送配置，解决了 Kubernetes 环境下配置一致性与可观测性的核心痛点。本期还涵盖 firmware 问题导致四小时重启的案例分析，以及 PostgreSQL 集群高可用故障转移架构重设计实践。
+    </div>
+    <div class="item-link"><a href="https://sreweekly.com/sre-weekly-issue-524/" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- ByteByteGo -->
+  <div class="item">
+    <div class="item-source">ByteByteGo · EP219</div>
+    <div class="item-title">2026年值得了解的12款开源大语言模型</div>
+    <div class="item-summary">
+      ByteByteGo 梳理了2026年各具特色的12款开放权重大模型：Meta Llama 4 Scout（首个原生多模态开放权重模型）、DeepSeek V4（MIT许可、原生百万 token 上下文的 MoE 模型）、阿里 Qwen3（支持思考/非思考双模式，Apache 2.0）、Google Gemma 4（语言覆盖最广）、微软 Phi 4（高质量合成数据训练的紧凑模型）和 Mistral Small 3.1（适配消费级笔记本的视觉语言模型）等。
+    </div>
+    <div class="item-link"><a href="https://blog.bytebytego.com/p/ep219-12-open-source-llms" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- TLDR Tech -->
+  <div class="item">
+    <div class="item-source">TLDR Tech · AI Edition &nbsp;|&nbsp; 2026-07-07</div>
+    <div class="item-title">腾讯发布 295B 参数 MoE 模型 Hy3，消费级机器人价格跌破千元美元</div>
+    <div class="item-summary">
+      TLDR AI 7月7日期头条聚焦腾讯发布的 Hy3 模型：2950亿参数混合专家架构，性能超越同等规模模型，可媲美参数量多2-5倍的旗舰开源模型。xAI 正式更名为 SpaceXAI。科技版还报道了人形机器人价格大幅下探——Nori Robotics 双臂机器人售价不足1400美元，BracketBot 轮式机械臂售价低于3000美元，消费级机器人时代加速到来。
+    </div>
+    <div class="item-link"><a href="https://tldr.tech/ai/2026-07-07" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- ======== SECTION 2 ======== -->
+  <div class="section-title">🤖 AI 技术前沿</div>
+
+  <!-- Anthropic -->
+  <div class="item">
+    <div class="item-source">Anthropic Blog &nbsp;|&nbsp; 2026-07-08</div>
+    <div class="item-title">AI 模型中双重用途知识"关闭开关"研究发布；Fable 5 全球解除出口限制</div>
+    <div class="item-summary">
+      Anthropic 发布研究成果，展示如何在语言模型中隔离"双重用途知识"（dual-use knowledge）——一种可在模型内被动态开启或关闭的机制，为 AI 安全对齐提供新思路。同期还公布了 Fable 5 的网络安全防护措施与越狱框架详情，包括检测和拦截危险使用场景的安全分类器。Fable 5 自7月1日起已面向全球用户全面开放。
+    </div>
+    <div class="item-link"><a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- OpenAI -->
+  <div class="item">
+    <div class="item-source">OpenAI Blog &nbsp;|&nbsp; 2026-07-09</div>
+    <div class="item-title">预览 GPT-5.6 Sol：随野心扩展的下一代前沿智能模型</div>
+    <div class="item-summary">
+      OpenAI 于7月9日发布 GPT-5.6 Sol 预览，定位为"能随你雄心壮志而扩展的前沿智能"，并同日发布系统卡。该模型于7月14日已成为 Microsoft 365 Copilot 的首选模型。7月16日，OpenAI 还公布了 GPT-Red 项目——探索模型自我改进的鲁棒性机制，推动 LLM 在对抗场景下的安全提升。
+    </div>
+    <div class="item-link"><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- Google DeepMind -->
+  <div class="item">
+    <div class="item-source">Google DeepMind Blog &nbsp;|&nbsp; 2026-07</div>
+    <div class="item-title">Gemini Deep Think：加速数学与科学发现的新里程碑</div>
+    <div class="item-summary">
+      Google DeepMind 发布 Gemini Deep Think，专为大幅提升数学推理与科学发现能力而设计，标志着 AI 在科学研究领域的应用进入新阶段。同期，DeepMind 与 Isomorphic Labs 联合发布生物弹性（bioresilience）方法（7月16日），致力于防止恶意行为者滥用 AI 生物模型，协助政府和科研机构构建更强韧的生物安全防御体系。
+    </div>
+    <div class="item-link"><a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- Hugging Face -->
+  <div class="item">
+    <div class="item-source">Hugging Face Blog &nbsp;|&nbsp; 2026-07-15</div>
+    <div class="item-title">Inkling：首个约1T参数、1M上下文、原生多模态的开放权重大模型</div>
+    <div class="item-summary">
+      Thinking Machines 发布的 Inkling 正式上线 Hugging Face：约1万亿参数，原生支持图像、音频、文本多模态输入，上下文窗口达100万 token，在45万亿 token 数据上训练完成，是当前参数量与上下文规模俱全的最大开放模型。此外，Hugging Face 7月16日披露了一起由自主 AI Agent 系统全程主导的生产基础设施入侵事件，最终也借助 AI 技术完成检测与取证。
+    </div>
+    <div class="item-link"><a href="https://huggingface.co/blog/thinkingmachines-inkling" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- The Batch -->
+  <div class="item">
+    <div class="item-source">The Batch · DeepLearning.AI &nbsp;|&nbsp; 2026-07-17</div>
+    <div class="item-title">AI 编程自动化正将开发者推向高层架构决策与产品需求把控</div>
+    <div class="item-summary">
+      The Batch 最新一期（7月17日）指出，随着 AI 越来越多地接管编码工作，开发者得以将精力投入传统上只有高级工程师才能主导的领域：技术架构选型与产品需求评审。上一期（7月10日）深入探讨了 Agentic 编程循环的核心思想——让 Agent 持续工作直至满足产品规格要求。Andrew Ng 同期发文呼吁从业者抵制 AI 营销噪音，专注真正有价值的技术进展。
+    </div>
+    <div class="item-link"><a href="https://www.deeplearning.ai/the-batch" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- Andrej Karpathy -->
+  <div class="item">
+    <div class="item-source">Andrej Karpathy · YouTube &nbsp;|&nbsp; <span class="badge">📹 视频</span></div>
+    <div class="item-title">2026年程序员的三种类型 / 从 Vibe Coding 到 Agentic Engineering</div>
+    <div class="item-summary">
+      Karpathy 近期发布短片，将2026年的程序员划分为三类，深刻揭示 AI 辅助编程时代的职业分层与技能演变。其长视频《从 Vibe Coding 到 Agentic Engineering》（与 Stephanie Zhan 对谈）进一步探讨了 AI 编程从"氛围驱动"向真正 Agent 工程演进的趋势，以及工程师在这一范式转变中的角色重构，被认为是理解当前 AI 开发模式转变的必看内容。
+    </div>
+    <div class="item-link"><a href="https://www.youtube.com/@AndrejKarpathy/videos" target="_blank">→ 查看频道</a></div>
+  </div>
+
+  <!-- AI Explained -->
+  <div class="item">
+    <div class="item-source">AI Explained · YouTube &nbsp;|&nbsp; 2026-07-14 &nbsp;|&nbsp; <span class="badge">📹 视频</span></div>
+    <div class="item-title">AI Top 5 — 14 July 2026：当天最重磅的5条AI新闻精讲</div>
+    <div class="item-summary">
+      AI Explained 7月14日视频梳理了当天最重要的5条 AI 新闻，涵盖 OpenAI GPT-Live 和 GPT-5.6 模型家族发布的最新进展，以及 AI 模型在各垂直领域的突破。该频道以清晰易懂的方式解析 AI 前沿动态，以每日/每周更新的节奏配合深度分析，是快速追踪 AI 进展的高效资源。
+    </div>
+    <div class="item-link"><a href="https://www.youtube.com/watch?v=7Si2malPI88" target="_blank">→ 观看视频</a></div>
+  </div>
+
+  <!-- Latent Space -->
+  <div class="item">
+    <div class="item-source">Latent Space Podcast &nbsp;|&nbsp; 2026-07-16 &nbsp;|&nbsp; <span class="badge">🎙 播客</span></div>
+    <div class="item-title">定义 AIE World's Fair 2026 的5大趋势：AI 工程进入"围绕 Agent 构建"新阶段</div>
+    <div class="item-summary">
+      Latent Space 7月16日发布 AIE World's Fair 2026 总结，指出 AI 工程已正式进入新阶段——从"用 AI 构建系统"演进为"围绕 AI Agent 构建系统"。文章梳理了大会中涌现的五大主要趋势，展示 AI 工程师社区在工具链、基础设施与实践范式上的最新演进，是了解 AI 工程行业方向感的重要参考。
+    </div>
+    <div class="item-link"><a href="https://www.latent.space/p/unsupervised-learning-2026" target="_blank">→ 收听/阅读</a></div>
+  </div>
+
+  <!-- TWIML AI Podcast -->
+  <div class="item">
+    <div class="item-source">TWIML AI Podcast · Episode 771 &nbsp;|&nbsp; <span class="badge">🎙 播客</span></div>
+    <div class="item-title">AI 如何学会嗅觉：图神经网络赋能嗅觉智能，应用于疾病检测与情绪感知</div>
+    <div class="item-summary">
+      TWIML AI Podcast 第771期探讨 Osmo 公司如何利用图神经网络（GNN）和高级嵌入空间捕捉气味的多维分子结构，从零构建业界最大的专有嗅觉数据集，训练可预测气味的 AI 模型。该技术已拓展至疾病早期检测和情绪感知等应用场景，展示了深度学习在非视觉、非语言感知模态上的巨大潜力。
+    </div>
+    <div class="item-link"><a href="https://twimlai.com/podcast/twimlai/" target="_blank">→ 收听播客</a></div>
+  </div>
+
+  <!-- ======== SECTION 3 ======== -->
+  <div class="section-title">🐍 后端开发 &amp; Python &amp; Go</div>
+
+  <!-- Martin Fowler -->
+  <div class="item">
+    <div class="item-source">Martin Fowler Blog &nbsp;|&nbsp; 2026-07-16</div>
+    <div class="item-title">The Archaeologist's Copilot：AI 辅助考古式遗留代码理解与现代化</div>
+    <div class="item-summary">
+      Martin Fowler 博客7月16日发表《The Archaeologist's Copilot》，探讨了一个极具挑战性的场景：让 Java 1.5 的遗留代码库在现代硬件上运行，并借助 AI Copilot 完成"考古式"的代码理解与渐进式现代化改造。文章体现了 AI 辅助遗留系统改造的新实践形态，以及当 AI 成为"软件考古学家助手"时的工程权衡与实操经验。
+    </div>
+    <div class="item-link"><a href="https://martinfowler.com/articles/archaeologist-copilot.html" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- Real Python -->
+  <div class="item">
+    <div class="item-source">Real Python &nbsp;|&nbsp; 2026-07 新闻月报</div>
+    <div class="item-title">Python JIT 编译器迎来六个月存亡考验；Python 3.15 进入 Feature Freeze</div>
+    <div class="item-summary">
+      Real Python 7月新闻月报最重磅消息：CPython Steering Council 为 JIT 编译器设定六个月期限，要求其证明在更多平台和场景下的价值，否则或被移除。目前 JIT 在 3.15 beta 中展示了 x86-64 Linux 约8-9%的几何平均提速，但多平台稳定性仍存疑。同期还涉及 Python 3.15 Feature Freeze、PSF 财务状况以及 EuroPython 2026 动态。
+    </div>
+    <div class="item-link"><a href="https://realpython.com/python-news-july-2026/" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- Golang Weekly -->
+  <div class="item">
+    <div class="item-source">Golang Weekly · Issue #610 &nbsp;|&nbsp; 2026-07</div>
+    <div class="item-title">Go 编译时 OpenTelemetry 自动插桩；GoLand 2026.2 发布</div>
+    <div class="item-summary">
+      Golang Weekly 第610期重点介绍 Go 语言编译时 OpenTelemetry 自动插桩方案，开发者无需手动修改代码即可实现全链路追踪，大幅降低可观测性接入成本。本期还涵盖 GoLand 2026.2 IDE 版本发布、Go 中 string(int) 语言特性详解，以及使用 Go 创作生成艺术等内容。上一期（#609）则聚焦 Go 如何让 TypeScript 编译器性能提升10倍的技术细节。
+    </div>
+    <div class="item-link"><a href="https://golangweekly.com/issues/610" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- Fireship -->
+  <div class="item">
+    <div class="item-source">Fireship · YouTube &nbsp;|&nbsp; 2026-07 &nbsp;|&nbsp; <span class="badge">📹 视频</span></div>
+    <div class="item-title">地球上最受信赖的代码正在被用 Rust 重写</div>
+    <div class="item-summary">
+      Fireship 发布视频《The most trusted code on Earth is being rewritten in Rust》，探讨核心系统基础设施向 Rust 迁移的趋势——从操作系统内核到嵌入式固件，Rust 的内存安全特性正成为底层系统编程的新标准。该频道同期还发布了 GPT-5.6 Sol 解读视频，以及 Google 打破开源 AI 固有叙事的深度分析。
+    </div>
+    <div class="item-link"><a href="https://www.youtube.com/watch?v=Sntj4HmuykI" target="_blank">→ 观看视频</a></div>
+  </div>
+
+  <!-- Dan Luu -->
+  <div class="item">
+    <div class="item-source">Dan Luu Blog &nbsp;|&nbsp; 2026 近期</div>
+    <div class="item-title">Agentic 测试流程、LLM 基准测试与 Agentic 编程实录</div>
+    <div class="item-summary">
+      Dan Luu 发表深度实践笔记，探讨 LLM 驱动的模糊测试（fuzzing）与随机测试如何在极短时间内发现真实漏洞——不仅在自身代码中，甚至在 HTML 规范、主流浏览器和知名开源项目等上游依赖中也发现了严重 bug。文章同时深入剖析了当前 LLM 基准测试的局限性，以及 Agentic 编程范式对软件工程工作流与质量保证体系的深远影响。
+    </div>
+    <div class="item-link"><a href="https://danluu.com/ai-coding/" target="_blank">→ 查看原文</a></div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    本日报由自动化 Agent 整理生成 · 2026-07-19 · 内容摘要仅供参考，请以原文为准
+  </div>
+
+</div>
+</body>
+</html>
