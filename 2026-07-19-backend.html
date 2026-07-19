@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-19</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333333;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+  <tr>
+    <td align="center" style="padding:20px 10px;">
+      <table width="680" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color:#1a1a2e;border-radius:6px 6px 0 0;padding:28px 36px;">
+            <p style="margin:0 0 4px 0;font-size:12px;color:#8888aa;letter-spacing:1px;text-transform:uppercase;">Daily Digest</p>
+            <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+            <p style="margin:6px 0 0 0;font-size:14px;color:#aaaacc;">后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 2026-07-19</p>
+          </td>
+        </tr>
+
+        <!-- Intro -->
+        <tr>
+          <td style="padding:24px 36px 8px 36px;">
+            <p style="margin:0;font-size:14px;color:#666666;line-height:1.6;">本期精选过去 7 天来自各大技术博客与 YouTube 频道的最新内容，涵盖性能优化、工程最佳实践、语言新特性与系统设计。</p>
+          </td>
+        </tr>
+
+        <!-- ===== 1. Martin Fowler Blog ===== -->
+        <tr><td style="padding:20px 36px 0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">Martin Fowler Blog</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              Harness Engineering：当 AI 编码代理成为标配
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              Martin Fowler 于 7 月 13 日分享了 Thoughtworks 软件开发未来峰会的笔记。文章指出 <strong>Harness Engineering</strong>（为 AI 代理搭建约束框架）已成为工程界热门话题——仅半年前几乎无人知晓，此次峰会却专门开设了讨论专场。核心议题集中在 <strong>context management</strong>（如何引导模型关注正确信息）以及 <strong>sensor side</strong>（如何通过更强类型语言、property-based testing、形式化方法来提升 AI 代码的可验证性）。自托管开源权重模型也因 token 成本上涨而愈发受关注。
+            </p>
+            <a href="https://martinfowler.com/fragments/2026-07-13.html" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">阅读原文 →</a>
+          </td>
+        </tr>
+
+        <!-- ===== 2. Real Python ===== -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">Real Python</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              CPython JIT 面临六个月存亡期 &amp; Python 7 月动态
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              Python 指导委员会（Steering Council）在 6 月冻结了所有新 JIT 开发，并发出最后通牒：六个月内必须提交通过审查的 standards-track PEP，否则从 CPython main 分支移除 JIT 代码。仅四周后，开发者提交了 <strong>PEP 836 "JIT Go Brrr"</strong>，承诺在 Python 3.16 中将标准解释器性能提升 20% 并保持 profiler/debugger 完全兼容。与此同时，Python 3.15 已进入 beta 4，EuroPython 2026 于克拉科夫举行，PSF 正式公布 2026 理事会选举时间表。
+            </p>
+            <a href="https://realpython.com/python-news-july-2026/" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">阅读原文 →</a>
+          </td>
+        </tr>
+
+        <!-- ===== 3. Golang Weekly ===== -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">Golang Weekly — Issue #610（2026-07-17）</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              Go 编译期 OpenTelemetry 自动插桩正式发布 v1
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              本期头条是 <strong>OpenTelemetry Go Compile-Time Instrumentation v1</strong> 正式发布——无需修改任何业务代码，在编译阶段自动注入 tracing/metrics/logs 埋点，由 Alibaba、Datadog、Quesma 联合贡献。本期还涵盖：GoLand 2026.2 发布（新增 AI 辅助重构功能）、Go 核心团队确认保留 <code>string(int)</code> 语义、以及用 Go 生成生成式艺术的实战教程。Go 1.27 Release Candidate 1 已在路上（下期头条预告）。
+            </p>
+            <a href="https://golangweekly.com/issues/610" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">阅读原文 →</a>
+          </td>
+        </tr>
+
+        <!-- ===== 4. Netflix Tech Blog ===== -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">Netflix Tech Blog</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              Netflix 用 Kueue 重构 Batch Compute 调度系统
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              Netflix 将自研的 <strong>Compute Managed Batch（CMB）</strong> 调度逻辑完全替换为云原生开源项目 <strong>Kueue</strong>，历时 4 周完成生产环境迁移，期间用户零感知。Kueue 原生支持 preemption（抢占式调度）、all-or-nothing 调度、topology-aware scheduling 等 CMB 一直想实现却未落地的特性。文章详细阐述了迁移动机、架构拆解策略与数百万级批处理作业的切换路径，是 Kubernetes 生态批计算架构升级的优质参考案例。
+            </p>
+            <a href="https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">阅读原文 →</a>
+          </td>
+        </tr>
+
+        <!-- ===== 5. Dan Luu Blog ===== -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">Dan Luu Blog（2026-07-03）</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              Agentic 测试流程、LLM 基准测试，以及 AI 编码的实地笔记
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              Dan Luu 在加拉帕戈斯群岛进行实地测试，使用 GPT-5.5 xhigh 对 agentic coding 进行基准评测，任务涵盖 WebAssembly 代码优化和棋盘游戏 AI 实现。文章指出：让 LLM 生成 fuzzer 可在数分钟内暴露真实且严重的 bug，但当前模型仍难以系统性地"思考"输入变异策略。尽管 GPT-5.5 在部分基准上超越 Claude Opus，Anthropic 的业务增速仍领先 OpenAI——作者所在团队日常开发依然以 Claude 为主。这篇文章对选型决策很有参考价值。
+            </p>
+            <a href="https://danluu.com/ai-coding/" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">阅读原文 →</a>
+          </td>
+        </tr>
+
+        <!-- ===== 6. Arjan Codes YouTube ===== -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">Arjan Codes — YouTube &nbsp;📹 视频</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              AI Writes Code Faster Than You. Now What?
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              Arjan 在这期视频中直面一个让很多开发者焦虑的问题：当 AI 写代码的速度已经超过人类，软件工程师的价值究竟在哪里？他的观点是：速度本身从来不是工程师的核心竞争力——对系统的深层理解、架构决策能力、以及维护可读可演化代码的判断力，才是 AI 目前无法取代的。视频还分享了他在实际项目中整合 AI 辅助编码后调整工作流的具体经验，适合希望理性看待 AI 工具的工程师观看。
+            </p>
+            <a href="https://www.youtube.com/watch?v=0sbLM_rBgww" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">观看视频 →</a>
+          </td>
+        </tr>
+
+        <!-- ===== 7. Fireship YouTube ===== -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">Fireship — YouTube &nbsp;📹 视频</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              The most trusted code on Earth is being rewritten in Rust
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              Fireship 一贯的高密度风格，这期聚焦于全球最底层、最关键的系统代码正在被 <strong>Rust</strong> 重写这一趋势——从 Linux 内核驱动、TLS 库到航天关键系统。视频梳理了 Rust 在内存安全方面相对 C/C++ 的核心优势，以及各大科技公司（含 Google、Microsoft、AWS）推动 Rust 落地的最新进展，并以 Fireship 标志性的快节奏剪辑阐述为什么这不只是一场语言时髦风，而是工程安全的系统性转变。
+            </p>
+            <a href="https://www.youtube.com/watch?v=Sntj4HmuykI" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">观看视频 →</a>
+          </td>
+        </tr>
+
+        <!-- ===== 8. The Go Blog ===== -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;color:#888888;text-transform:uppercase;letter-spacing:1px;">The Go Blog（2026-02-10 发布，本期补录）</p>
+            <h2 style="margin:0 0 10px 0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+              Go 1.26 正式发布
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;color:#444444;line-height:1.7;">
+              Go 1.26 于今年 2 月正式发布，带来多项语言与工具链改进，包括对 <strong>generic methods</strong> 铺垫性支持（完整支持将在 1.27 落地）、<code>go fix</code> 工具增强（可自动现代化旧代码风格）、以及 source-level inliner（<code>//go:fix inline</code> 指令）用于精准控制函数内联。Go 官方博客过去 7 天无新文章发布，<strong>Go 1.27 RC1</strong> 预计近期到来，届时将正式引入 generic methods，值得持续关注。
+            </p>
+            <a href="https://go.dev/blog/go1.26" style="display:inline-block;font-size:13px;color:#0066cc;text-decoration:none;border:1px solid #0066cc;padding:5px 14px;border-radius:3px;">阅读原文 →</a>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr><td style="padding:0 36px;"><hr style="border:none;border-top:1px solid #e8e8e8;margin:0;"></td></tr>
+        <tr>
+          <td style="padding:20px 36px 28px 36px;">
+            <p style="margin:0;font-size:12px;color:#aaaaaa;line-height:1.6;">
+              本日报由自动化 agent 生成 · 内容来源于各渠道公开发布 · 2026-07-19<br>
+              <strong>跳过渠道说明：</strong>High Scalability、Python Weekly、Anthony GG、Hussein Nasser、Brendan Gregg、Go by Example 过去 7 天无新发布内容，已略去。
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
