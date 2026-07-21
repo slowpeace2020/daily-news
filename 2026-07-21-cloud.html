@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-21</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; background-color: #ffffff; color: #333333; max-width: 680px; margin: 0 auto; padding: 24px;">
+
+  <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 28px 32px; border-radius: 8px; margin-bottom: 28px;">
+    <h1 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 0.5px;">软件技术日报</h1>
+    <p style="color: #a0b4c8; margin: 8px 0 0; font-size: 13px;">【软件工程 &amp; 云原生】&nbsp;&middot;&nbsp;2026-07-21</p>
+  </div>
+
+  <!-- 1. Thoughtworks Technology Radar -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 2px solid #e8ecf0;">
+    <div style="font-size: 11px; font-weight: 700; color: #6366f1; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px; display: flex; align-items: center;">
+      &#9670;&nbsp; Thoughtworks Technology Radar
+    </div>
+    <h2 style="margin: 0 0 12px; font-size: 16px; color: #1a202c; line-height: 1.5;">
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #2563eb; text-decoration: none;">AI 加速软件复杂度，Technology Radar Vol.34 呼吁回归工程基础以应对「认知债务」</a>
+    </h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+      Thoughtworks 于 2026 年 4 月发布第 34 版 Technology Radar，指出 AI 辅助开发在提升生产力的同时，正在积累大量 "cognitive debt"（认知债务）——人类与系统之间的理解鸿沟持续扩大，developer tool 市场也因开发门槛骤降而充斥大量难以维护的短命项目。Radar 呼吁工程师回归工程基础，从无休止的实验转向追求可重复性与系统可维护性。在云原生领域，Kubernetes 已成为容器编排的行业默认标准；CloudNativePG（Kubernetes 原生 PostgreSQL 管理 Operator）与 groundcover（基于 eBPF 的零插桩可观测性平台）被列为值得关注的新兴技术。
+    </p>
+    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600;">阅读原文 &rarr;</a>
+  </div>
+
+  <!-- 2. SRE Weekly -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 2px solid #e8ecf0;">
+    <div style="font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+      &#9670;&nbsp; SRE Weekly
+    </div>
+    <h2 style="margin: 0 0 12px; font-size: 16px; color: #1a202c; line-height: 1.5;">
+      <a href="https://sreweekly.com/sre-weekly-issue-509/" style="color: #2563eb; text-decoration: none;">SRE Weekly #509：别让 LLM 写 Postmortem——Reliability Debt 与来自航空业的可靠性启示</a>
+    </h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+      本期 SRE Weekly 重点讨论三个核心议题：其一，LLM 不应代劳 incident review，因为复盘本质上是需要团队深度参与的社会技术过程（socio-technical process），AI 代写将使团队失去宝贵的学习与共识机会；其二，引入 "reliability debt"（可靠性债务）概念，类比技术债务量化系统可靠性层面的历史欠账。此外，通过对比两起真实商业航空事故中机组的应对决策，为 SRE 提炼了突发场景下的实战经验；并深入分析 AI 生成代码更易产生的 bug 类型及其在生产环境中的影响。
+    </p>
+    <a href="https://sreweekly.com/sre-weekly-issue-509/" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600;">阅读原文 &rarr;</a>
+  </div>
+
+  <!-- 3. ByteByteGo -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 2px solid #e8ecf0;">
+    <div style="font-size: 11px; font-weight: 700; color: #d97706; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+      &#9670;&nbsp; ByteByteGo
+    </div>
+    <h2 style="margin: 0 0 12px; font-size: 16px; color: #1a202c; line-height: 1.5;">
+      <a href="https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at" style="color: #2563eb; text-decoration: none;">How Microsoft Ships AI Agents at Enterprise Scale — 微软企业级 AI Agent 基础设施全解析</a>
+    </h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+      ByteByteGo 深度解析微软如何在企业规模落地 AI agents，涵盖 platform governance（平台治理）、automated pipelines（自动化流水线）以及确保 AI 生成的 infrastructure 代码安全进入生产环境的完整机制。文章基于《2026 年基础设施自动化报告》（406 名基础设施与平台工程负责人参与调研），揭示走在前沿的团队如何利用 AI 重塑 infrastructure-as-code 工作流，深刻影响整个云运维体系的演进方式。
+    </p>
+    <a href="https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600;">阅读原文 &rarr;</a>
+  </div>
+
+  <!-- 4. TechWorld with Nana -->
+  <div style="margin-bottom: 28px; padding-bottom: 28px; border-bottom: 2px solid #e8ecf0;">
+    <div style="font-size: 11px; font-weight: 700; color: #dc2626; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+      &#9670;&nbsp; TechWorld with Nana &nbsp;&#128249; 视频
+    </div>
+    <h2 style="margin: 0 0 12px; font-size: 16px; color: #1a202c; line-height: 1.5;">
+      <a href="https://www.youtube.com/@TechWorldwithNana" style="color: #2563eb; text-decoration: none;">&#128249; 视频｜DevOps Career in the Age of AI: Is DevOps Still Relevant?（KubeAuto Day @ KubeCon EU 2026）</a>
+    </h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+      TechWorld with Nana 创始人 Nana Janashia 在与 KubeCon + CloudNativeCon Europe 2026 共同举办的 KubeAuto Day Amsterdam 上发表演讲，主题聚焦「AI 时代的 DevOps 职业发展：DevOps 是否仍然重要？」。演讲探讨 AI 对 DevOps 需求的深远影响、Platform Engineering 崛起背景下工程师的角色转变，以及从零基础到职场就绪（6-9 个月）所需的技能路线图。&#128249; 视频摘要基于频道公开信息及演讲描述撰写。
+    </p>
+    <a href="https://www.youtube.com/@TechWorldwithNana" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600;">访问频道 &rarr;</a>
+  </div>
+
+  <!-- 5. TLDR Tech -->
+  <div style="margin-bottom: 28px; padding-bottom: 20px;">
+    <div style="font-size: 11px; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px;">
+      &#9670;&nbsp; TLDR Tech · DevOps
+    </div>
+    <h2 style="margin: 0 0 12px; font-size: 16px; color: #1a202c; line-height: 1.5;">
+      <a href="https://tldr.tech/devops/2026-07-10" style="color: #2563eb; text-decoration: none;">TLDR DevOps 2026-07-10：Cloudflare 以内容新鲜度信号重塑 AI 搜索效率</a>
+    </h2>
+    <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.8; color: #4a5568;">
+      本期 TLDR DevOps 重点报道 Cloudflare 发布的 AI 搜索优化方案，通过引入内容新鲜度（content freshness）信号显著提升 AI 搜索的准确性与时效性，对依赖向量检索（RAG）的云原生应用具有重要参考价值。此外本期还涵盖基础设施工具链最新动态，持续关注开发者效率与云平台演进。TLDR DevOps 每周一三五出刊，订阅读者逾 34 万。
+    </p>
+    <a href="https://tldr.tech/devops/2026-07-10" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600;">阅读原文 &rarr;</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top: 32px; padding-top: 20px; border-top: 2px solid #e8ecf0; font-size: 12px; color: #9ca3af; text-align: center; line-height: 1.8;">
+    <p style="margin: 0;">软件技术日报 &middot; 自动生成 &middot; 2026-07-21</p>
+    <p style="margin: 4px 0 0;">内容来源于公开技术渠道，仅供参考学习使用。</p>
+  </div>
+
+</body>
+</html>
