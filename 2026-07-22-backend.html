@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-22</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;padding:20px 0;">
+  <tr>
+    <td align="center">
+      <table width="680" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:32px 40px;">
+            <p style="margin:0 0 6px 0;color:#a0c4ff;font-size:13px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;">Daily Tech Digest</p>
+            <h1 style="margin:0 0 8px 0;color:#ffffff;font-size:22px;font-weight:700;line-height:1.3;">软件技术日报</h1>
+            <p style="margin:0;color:#e0e0e0;font-size:14px;">后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 2026-07-22</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:32px 40px;">
+
+            <!-- 说明 -->
+            <p style="margin:0 0 28px 0;color:#666666;font-size:13px;line-height:1.6;border-left:3px solid #0f3460;padding-left:12px;">
+              以下内容精选自过去 7 天各技术博客与 YouTube 频道，聚焦性能优化、新版本特性、工程最佳实践与系统设计。
+            </p>
+
+            <!-- ====== 1. Martin Fowler Blog ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#1a1a2e;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">Martin Fowler Blog</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://martinfowler.com/fragments/2026-07-21.html" style="color:#0f3460;text-decoration:none;">Fragments: July 21 — Future of Software Development Retreat 总结</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  Thoughtworks 发布了第二届"软件开发未来"闭门研讨会完整报告，提出五大核心发现：<strong>代码生成已不再是瓶颈，验证（verification）才是</strong>；"Harness Engineering"正成为独立工程学科；企业正面临严峻的学徒危机；高管与工程师之间的期望差距是比技术限制更大的风险；遗留系统现代化是最清晰、最可防御的近期价值方向。报告还指出 DSL（领域特定语言）对 LLM 驱动开发极为有效，可实现 token 效率提升、安全边界硬化，并将高层意图翻译为确定性代码。
+                </p>
+                <a href="https://martinfowler.com/fragments/2026-07-21.html" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 2. Netflix Tech Blog ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#e50914;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">Netflix Tech Blog</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="color:#0f3460;text-decoration:none;">In-House LLM Serving at Netflix</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  Netflix 披露了其自建 LLM 推理服务的完整技术栈：前端为统一的 JVM 服务系统，处理路由、A/B 测试、候选生成、特征提取、推理与后处理全流程；后端的 Model Scoring Service（MSS）通过统一接口支持 XGBoost、TensorFlow、PyTorch 和 LLM，底层由 <strong>NVIDIA Triton Inference Server</strong> 管理 GPU 调度与批处理，之上还有 Java 控制平面负责部署、版本管理与多区域滚动更新。文章重点剖析了引擎选型、模型打包、API 设计与部署策略等关键决策的权衡过程。
+                </p>
+                <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 3. Real Python ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#306998;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">Real Python</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://realpython.com/python-news-july-2026/" style="color:#0f3460;text-decoration:none;">Python's JIT Faces Some Challenges and Other News for July 2026</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  Python Steering Council 向 CPython <strong>JIT 编译器下达六个月期限</strong>，要求其证明自身的性能价值。自 Python 3.13 以实验性功能引入的 JIT 在 3.15 中已实现 x86-64 Linux 平台 8-9% 的几何平均速度提升，但仍需接受更广泛的评估。整个社区正在讨论：在自由线程（free threading）与 JIT 双路并进的背景下，Python 的性能演进路线将走向何方——这个问题的答案将在 2026 年下半年揭晓。
+                </p>
+                <a href="https://realpython.com/python-news-july-2026/" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 4. Python Weekly ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#ffd43b;color:#1a1a2e;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">Python Weekly</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.pythonweekly.com/" style="color:#0f3460;text-decoration:none;">Python Weekly — July 16, 2026 Issue</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  本期（7 月 16 日）Python Weekly 重点关注 <strong>pip 26.1</strong> 的新特性，包括依赖项冷却期（dependency cooldowns）和实验性锁文件（lockfile）支持；同时介绍了 Python 3.14.2 自由线程实验构建的性能特征，以及使用 NumPy 作为实时音频合成引擎的实战案例。此外还收录了使用 <strong>Pydantic AI</strong> 构建生产级 AI Agent 的教程，内容涵盖工具调用、依赖注入与可观察性接入。
+                </p>
+                <a href="https://www.pythonweekly.com/" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 访问 Python Weekly</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 5. The Go Blog ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#00acd7;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">The Go Blog</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://go.dev/blog/pkgsite-api" style="color:#0f3460;text-decoration:none;">Introducing the pkg.go.dev API</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  Go 官方团队（Ethan Lee、Hana Kim、Jonathan Amsterdam）正式发布 <strong>pkg.go.dev 的程序化 API</strong>，允许开发者通过稳定接口获取包和模块数据，彻底告别依赖网页爬虫的脆弱方案。该 API 采用无状态、仅 GET 架构，主要端点托管于 /v1beta 路径，遵循"精确优于便利"设计原则，要求明确指定模块路径，从而支持 IDE 插件、工具链和自动化工作流的稳定集成，并承诺向后兼容。
+                </p>
+                <a href="https://go.dev/blog/pkgsite-api" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 6. Golang Weekly ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#00acd7;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">Golang Weekly</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://golangweekly.com/issues/609" style="color:#0f3460;text-decoration:none;">Issue #609: How Go Makes TypeScript's Compiler 10x Faster</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  本期（最新一期）Golang Weekly 聚焦于 Go 语言助力 <strong>TypeScript 编译器实现 10 倍性能提升</strong>的完整故事——Microsoft TypeScript 团队将编译器移植至 Go，以获得更好的并行性与内存效率。本期还收录了 Gin 框架 12 年历史及其 API 兼容性承诺，以及六种 Go 缓存设计方案的深度对比分析，帮助开发者根据工作负载特征选择最合适的缓存策略。
+                </p>
+                <a href="https://golangweekly.com/issues/609" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 阅读本期</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 7. Arjan Codes (YouTube) ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#ff0000;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">📹 视频 · Arjan Codes</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.youtube.com/watch?v=xns3InDkAiA" style="color:#0f3460;text-decoration:none;">You Don't Need That Design Pattern</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  📹 视频 &nbsp;Arjan Codes 近期视频探讨了一个被普遍忽视的问题：<strong>何时不应该使用设计模式</strong>。视频分析了开发者盲目套用 Decorator、Strategy 等经典模式的常见误区，演示如何用更简洁的 Python 代码达到同等可维护性，强调代码清晰度优先于架构复杂性——过度工程化本身就是一种技术债。
+                </p>
+                <a href="https://www.youtube.com/watch?v=xns3InDkAiA" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 观看视频</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 8. Fireship (YouTube) ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#ff0000;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">📹 视频 · Fireship</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://www.youtube.com/watch?v=Sntj4HmuykI" style="color:#0f3460;text-decoration:none;">The Most Trusted Code on Earth Is Being Rewritten in Rust</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  📹 视频 &nbsp;Fireship 发布了关于 <strong>SQLite 被 Rust 重写</strong>的快讯深度解读。SQLite 是地球上部署最广泛的代码库，其 Rust 重写版本被称为 <strong>Turso</strong>，不仅完整复刻了原有功能，还引入了 SQLite 中找不到的新特性。这次重写标志着 Rust 在系统软件领域对 C 语言的又一次重要突破，也引发了关于数据库基础设施语言迁移的广泛讨论。
+                </p>
+                <a href="https://www.youtube.com/watch?v=Sntj4HmuykI" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 观看视频</a>
+              </td></tr>
+            </table>
+
+            <!-- ====== 9. Dan Luu Blog ====== -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+              <tr><td style="padding-bottom:16px;border-bottom:1px solid #e8e8e8;">
+                <p style="margin:0 0 8px 0;">
+                  <span style="display:inline-block;background-color:#333333;color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">Dan Luu Blog</span>
+                </p>
+                <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                  <a href="https://danluu.com/ai-coding/" style="color:#0f3460;text-decoration:none;">Agentic Test Processes, LLM Benchmarks, and Other Notes on Agentic Coding from Galapagos Island</a>
+                </h2>
+                <p style="margin:0 0 10px 0;color:#444444;font-size:14px;line-height:1.7;">
+                  Dan Luu 深入研究了 LLM 辅助编码与测试，发现将 LLM 定向执行<strong>模糊测试（fuzzing）可在几分钟内发现真实且严重的 bug</strong>，但 LLM 生成的 fuzzer 覆盖率出人意料地差，会遗漏人类随手编写的 fuzzer 能覆盖的基础场景。文章还探讨了一个值得警惕的现象：LLM 在测试领域具有极高的杠杆效应，但软件质量反而似乎比以往更低——即便达到质量基线已经变得更容易，开发者似乎更倾向于跳过这个步骤。
+                </p>
+                <a href="https://danluu.com/ai-coding/" style="color:#0f3460;font-size:13px;text-decoration:underline;">→ 阅读原文</a>
+              </td></tr>
+            </table>
+
+            <!-- 跳过渠道说明 -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+              <tr><td style="padding:12px 16px;background-color:#f9f9f9;border-radius:6px;border:1px solid #e8e8e8;">
+                <p style="margin:0;color:#999999;font-size:12px;line-height:1.6;">
+                  <strong>本期跳过渠道</strong>（过去 7 天无新内容可检索）：High Scalability · Anthony GG · Hussein Nasser · Brendan Gregg · Go by Example
+                </p>
+              </td></tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#1a1a2e;padding:20px 40px;text-align:center;">
+            <p style="margin:0;color:#888888;font-size:12px;line-height:1.6;">
+              软件技术日报 · 自动生成于 2026-07-22 · 聚焦后端开发 &amp; Python &amp; Go
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
