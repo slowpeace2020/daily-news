@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-23</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f7fa;">
+  <tr>
+    <td align="center" style="padding:24px 16px;">
+      <table width="660" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.08);overflow:hidden;">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color:#1e293b;padding:28px 36px;">
+            <p style="margin:0;font-size:12px;color:#94a3b8;letter-spacing:1px;text-transform:uppercase;">Daily Digest</p>
+            <h1 style="margin:6px 0 0;font-size:22px;font-weight:700;color:#f8fafc;line-height:1.3;">
+              软件技术日报<br>
+              <span style="font-size:16px;font-weight:400;color:#93c5fd;">后端开发 &amp; Python &amp; Go</span>
+            </h1>
+            <p style="margin:10px 0 0;font-size:13px;color:#64748b;">2026年7月23日 &nbsp;·&nbsp; 精选本周技术动态</p>
+          </td>
+        </tr>
+
+        <!-- Content -->
+        <tr>
+          <td style="padding:0 36px;">
+
+            <!-- 1. Martin Fowler Blog -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 0;">
+                  <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.8px;text-transform:uppercase;">Martin Fowler Blog</p>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                    <a href="https://martinfowler.com/fragments/2026-07-21.html" style="color:#1e293b;text-decoration:none;">Fragments: July 21 — 软件开发未来研讨会五大核心发现</a>
+                  </h2>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#374151;">
+                    Martin Fowler 总结了 Thoughtworks 第二次"软件开发未来"（Future of Software Development）研讨会的五项核心洞察：① 代码生成已不再是瓶颈，<strong>验证</strong>才是；② <em>Harness Engineering</em>（测试/提示链工程）正在成为独立工程学科；③ AI 加速开发造成了 <strong>学徒危机</strong>，初级工程师缺乏成长机会；④ 高管与一线工程师之间的预期落差是比技术本身更危险的风险；⑤ 遗留系统现代化是近期最清晰的 AI 落地价值点。
+                  </p>
+                  <a href="https://martinfowler.com/fragments/2026-07-21.html" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+                  <p style="margin:4px 0 0;font-size:12px;color:#94a3b8;">2026-07-21</p>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;">
+
+            <!-- 2. Netflix Tech Blog -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:24px 0 0;">
+                  <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.8px;text-transform:uppercase;">Netflix Tech Blog</p>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                    <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="color:#1e293b;text-decoration:none;">In-House LLM Serving at Netflix — 自建 LLM 推理基础设施全解</a>
+                  </h2>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#374151;">
+                    Netflix AI Platform 团队详述了其自建 LLM 推理栈的完整架构决策：引擎选型、模型打包、API 设计、部署策略，以及输出约束的执行机制。Netflix 最初基于 <strong>TensorRT-LLM</strong> 构建，经过重新基准测试后切换为 <strong>vLLM</strong> 作为主推方案——原因是开源引擎已缩小与专有栈的性能差距，而工作负载也趋于多元：embedding 生成、prefill-only 推理、自回归解码和带约束逻辑的自定义模型并存。与大多数外包 LLM API 的组织不同，Netflix 选择全栈自运营，将推理纳入现有生产环境而非独立 ML silo。
+                  </p>
+                  <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+                  <p style="margin:4px 0 0;font-size:12px;color:#94a3b8;">2026-07-18</p>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;">
+
+            <!-- 3. Real Python -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:24px 0 0;">
+                  <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.8px;text-transform:uppercase;">Real Python</p>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                    <a href="https://realpython.com/python-news-july-2026/" style="color:#1e293b;text-decoration:none;">Python's JIT Faces Some Challenges — JIT 编译器面临关键抉择</a>
+                  </h2>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#374151;">
+                    CPython 的实验性 JIT 编译器自 Python 3.13 进入 main 分支以来首次面临存亡考验：Steering Council 于 6 月宣布，JIT 必须在 <strong>六个月内完成正式 PEP 流程</strong>，否则将从主分支移除。此外，Python 3.15 新增了两个 beta 版本；Python 3.14.6 和 3.13.14 完成例行 bug 修复发布；Django 和 Starlette 均发布了安全补丁；科学计算生态的多个包也同步更新。
+                  </p>
+                  <a href="https://realpython.com/python-news-july-2026/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+                  <p style="margin:4px 0 0;font-size:12px;color:#94a3b8;">2026-07 · Real Python 月度新闻</p>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;">
+
+            <!-- 4. Golang Weekly -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:24px 0 0;">
+                  <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.8px;text-transform:uppercase;">Golang Weekly（golangweekly.com）</p>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                    <a href="https://golangweekly.com/issues/610" style="color:#1e293b;text-decoration:none;">Issue #610：Compile-time OpenTelemetry instrumentation for Go 正式发布 v1</a>
+                  </h2>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#374151;">
+                    本期 Go Weekly 焦点：<strong>OpenTelemetry Go Compile-Time Instrumentation</strong> 宣布 v1 正式版发布，无需修改业务代码即可在编译期自动注入 OTel tracing/metrics，极大降低可观测性接入成本。此外，本期还涵盖 <strong>GoLand 2026.2</strong> 发布、<code>string(int)</code> 转换将保留在语言中的提案讨论，以及使用 Go 创作生成艺术的实践案例。同期 Issue #609 报道了 Microsoft 用 Go 重写 TypeScript 编译器后实现 <strong>10x 类型检查加速</strong>，兼容性已达 99.6%。
+                  </p>
+                  <a href="https://golangweekly.com/issues/610" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读 Issue #610 →</a>
+                  &nbsp;&nbsp;
+                  <a href="https://golangweekly.com/issues/609" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读 Issue #609 →</a>
+                  <p style="margin:4px 0 0;font-size:12px;color:#94a3b8;">2026-07 · 最新两期</p>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0 0;">
+
+            <!-- 5. Dan Luu Blog -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:24px 0 0;">
+                  <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.8px;text-transform:uppercase;">Dan Luu Blog（danluu.com）</p>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1e293b;line-height:1.4;">
+                    <a href="https://danluu.com/ai-coding/" style="color:#1e293b;text-decoration:none;">Agentic test processes, LLM benchmarks, and other notes on agentic coding — 从加拉帕戈斯的 AI 编码实录</a>
+                  </h2>
+                  <p style="margin:0 0 12px;font-size:14px;line-height:1.7;color:#374151;">
+                    Dan Luu 分享了对 LLM agentic coding 的第一手观察：重点讨论 <strong>agentic 测试流程</strong> 与传统测试方式的差异，以及当前 <strong>benchmark 指标的局限性</strong>——高 benchmark 得分并不等价于实际工程表现。截至 2026 年中，用 LLM 做 fuzzing/随机测试的体感与其他测试方式趋于相似，但在复杂约束场景下差距仍然显著。文章还涉及对多款主流 coding agent 的评测比较与方法论反思。
+                  </p>
+                  <a href="https://danluu.com/ai-coding/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+                  <p style="margin:4px 0 0;font-size:12px;color:#94a3b8;">2026-07-03</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Skipped notice -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 0 20px;">
+                  <div style="background-color:#f8fafc;border-radius:6px;padding:14px 18px;border-left:3px solid #cbd5e1;">
+                    <p style="margin:0;font-size:12px;color:#64748b;line-height:1.6;">
+                      <strong style="color:#475569;">本期跳过：</strong>
+                      High Scalability、The Go Blog、Python Weekly、Arjan Codes、Anthony GG、Hussein Nasser、Fireship、Brendan Gregg、Go by Example
+                      — 上述渠道过去 7 天内未检测到新发布内容，已按规则跳过。
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#f8fafc;border-top:1px solid #e2e8f0;padding:20px 36px;">
+            <p style="margin:0;font-size:12px;color:#94a3b8;text-align:center;">
+              软件技术日报 · 自动聚合 · 2026-07-23<br>
+              内容来源：各渠道官方博客与 YouTube 频道 · 摘要由 AI 辅助整理，仅供参考
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
