@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-24</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#222222;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+  <tr>
+    <td align="center" style="padding:24px 16px;">
+      <table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background-color:#ffffff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color:#1a202c;border-radius:8px 8px 0 0;padding:28px 32px;">
+            <p style="margin:0;font-size:12px;color:#a0aec0;letter-spacing:1px;text-transform:uppercase;">软件技术日报</p>
+            <h1 style="margin:6px 0 0;font-size:22px;color:#ffffff;font-weight:700;line-height:1.3;">软件工程 &amp; 云原生</h1>
+            <p style="margin:8px 0 0;font-size:13px;color:#718096;">2026年07月24日 &nbsp;·&nbsp; 精选5大渠道，聚焦 Kubernetes / 云原生 / SRE</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:0 32px 32px;">
+
+            <!-- ===== 1. Thoughtworks Technology Radar ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-top:28px;padding-bottom:4px;">
+                  <span style="display:inline-block;font-size:11px;font-weight:700;color:#ffffff;background-color:#4a5568;border-radius:4px;padding:2px 8px;letter-spacing:0.5px;text-transform:uppercase;">Thoughtworks Technology Radar</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color:#2b6cb0;text-decoration:none;">As AI Accelerates Software Complexity, Technology Radar Vol. 34 Urges a Return to Engineering Fundamentals to Combat Cognitive Debt</a>
+                  </h2>
+                  <p style="margin:10px 0 0;font-size:14px;line-height:1.7;color:#444444;">
+                    Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，将本期核心主题聚焦于「认知债务（Cognitive Debt）」——AI 自动生成大量代码，导致工程师难以跟上并真正理解系统。Radar 强调，行业正从无休止的 AI 实验转向对<strong>可重复性与稳定性</strong>的渴望，呼吁团队重拾基础工程能力（测试、架构、可观测性）以应对 AI 工具带来的复杂度爆炸。这一洞察对云原生团队尤为重要：自动化工具链不能替代对 Kubernetes 集群、服务网格和分布式系统核心原理的深刻理解。
+                  </p>
+                  <p style="margin:12px 0 0;font-size:13px;">
+                    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color:#2b6cb0;text-decoration:none;">→ 查看完整报告</a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf" style="color:#2b6cb0;text-decoration:none;">→ 下载 PDF</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Divider -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:20px 0 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr></table>
+
+            <!-- ===== 2. SRE Weekly ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-top:24px;padding-bottom:4px;">
+                  <span style="display:inline-block;font-size:11px;font-weight:700;color:#ffffff;background-color:#276749;border-radius:4px;padding:2px 8px;letter-spacing:0.5px;text-transform:uppercase;">SRE Weekly</span>
+                  <span style="margin-left:8px;font-size:12px;color:#718096;">Issue #524 &nbsp;·&nbsp; 2026-07-19</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://sreweekly.com/sre-weekly-issue-524/" style="color:#2b6cb0;text-decoration:none;">The Incident Metrics Mirage：为什么你的 MTTR 在撒谎</a>
+                  </h2>
+                  <p style="margin:10px 0 0;font-size:14px;line-height:1.7;color:#444444;">
+                    本期头条文章「The Incident Metrics Mirage」由 Brent Chapman 撰写，借助 Monte Carlo 模拟揭示了 MTTR（平均故障恢复时间）的统计陷阱：事故时长呈幂律分布，平均值严重失真，甚至在响应能力真正改善时也无法检测到变化。文章还收录了「Could vs. Should: The First Year Managing an SRE Team」，探讨 SRE Leader 在 AI 时代如何平衡 on-call 压力与团队可持续性；以及 Rootly 对「小 PR 规则」的反思——LLM 生成代码让 PR 颗粒度讨论更加复杂。
+                  </p>
+                  <p style="margin:12px 0 0;font-size:13px;">
+                    <a href="https://sreweekly.com/sre-weekly-issue-524/" style="color:#2b6cb0;text-decoration:none;">→ 阅读本期 SRE Weekly</a>
+                    &nbsp;&nbsp;
+                    <a href="https://greatcircle.com/blog/2026/05/26/incident-metrics-mirage/" style="color:#2b6cb0;text-decoration:none;">→ 原文：The Incident Metrics Mirage</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Divider -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:20px 0 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr></table>
+
+            <!-- ===== 3. ByteByteGo ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-top:24px;padding-bottom:4px;">
+                  <span style="display:inline-block;font-size:11px;font-weight:700;color:#ffffff;background-color:#744210;border-radius:4px;padding:2px 8px;letter-spacing:0.5px;text-transform:uppercase;">ByteByteGo</span>
+                  <span style="margin-left:8px;font-size:12px;color:#718096;">2026-07-22</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://blog.bytebytego.com/p/best-practices-for-building-ai-agents" style="color:#2b6cb0;text-decoration:none;">Best Practices for Building AI Agents That Work in Production</a>
+                  </h2>
+                  <p style="margin:10px 0 0;font-size:14px;line-height:1.7;color:#444444;">
+                    Alex Xu 团队梳理了 Twelve-Factor Agents 原则的最新演进，将生产级 AI Agent 设计实践浓缩为四大核心领域：<strong>Context 控制</strong>（精确管理每次 LLM 调用的输入信息）、<strong>Control Flow 确定性</strong>（将循环与停止条件写入普通代码而非依赖模型自决）、<strong>State 管理</strong>（让内存驻留在软件中，保持模型无状态）。文章援引 Anthropic、Cognition、Intercom 等公司的实战经验，指出演示效果好的 Agent 与能承载真实生产流量的系统之间存在巨大鸿沟，真正的可靠性来自严格的工程纪律而非模型能力本身。
+                  </p>
+                  <p style="margin:12px 0 0;font-size:13px;">
+                    <a href="https://blog.bytebytego.com/p/best-practices-for-building-ai-agents" style="color:#2b6cb0;text-decoration:none;">→ 阅读原文</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Divider -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:20px 0 0;"><hr style="border:none;border-top:1px solid #e2e8f0;margin:0;"></td></tr></table>
+
+            <!-- ===== 4. TLDR Tech ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-top:24px;padding-bottom:4px;">
+                  <span style="display:inline-block;font-size:11px;font-weight:700;color:#ffffff;background-color:#553c9a;border-radius:4px;padding:2px 8px;letter-spacing:0.5px;text-transform:uppercase;">TLDR Tech</span>
+                  <span style="margin-left:8px;font-size:12px;color:#718096;">2026-07-24</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a202c;line-height:1.4;">
+                    <a href="https://tldr.tech/tech/2026-07-24" style="color:#2b6cb0;text-decoration:none;">今日 TLDR Tech 要闻：AI 记忆增强留存率 &amp; ChatGPT Health 全面开放</a>
+                  </h2>
+                  <p style="margin:10px 0 0;font-size:14px;line-height:1.7;color:#444444;">
+                    今日 TLDR Tech 头条聚焦两则重磅消息：其一，AI 产品正通过<strong>跨 Session 记忆相关用户上下文</strong>显著提升留存率，彻底改变以往每次会话从零开始的体验；其二，<strong>ChatGPT Health</strong> 向美国 18 岁以上用户全面开放，支持接入健康 App 数据并整合医院系统的电子病历，标志着 LLM 进入医疗垂直场景的重要里程碑。对于平台工程与 SRE 团队而言，AI 记忆能力的持久化设计也带来新的存储与隐私挑战值得关注。
+                  </p>
+                  <p style="margin:12px 0 0;font-size:13px;">
+                    <a href="https://tldr.tech/tech/2026-07-24" style="color:#2b6cb0;text-decoration:none;">→ 查看完整 TLDR Tech 日报</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Note: TechWorld with Nana skipped -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-top:24px;">
+                  <p style="margin:0;font-size:12px;color:#a0aec0;font-style:italic;">※ TechWorld with Nana（YouTube）本周未发现可确认的新视频，已跳过。</p>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#f7fafc;border-top:1px solid #e2e8f0;border-radius:0 0 8px 8px;padding:16px 32px;">
+            <p style="margin:0;font-size:12px;color:#a0aec0;line-height:1.6;">
+              本邮件由自动化 Agent 每日整理生成 · 渠道：Thoughtworks Radar · SRE Weekly · ByteByteGo · TLDR Tech<br>
+              内容仅供参考，技术术语保留英文原文。
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
