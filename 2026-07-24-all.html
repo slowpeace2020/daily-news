@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报 - 2026-07-24</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a2e;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  .header {
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 6px 0;
+  }
+  .header p {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #1e3a5f;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+  }
+  .item {
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .item:last-child {
+    border-bottom: none;
+  }
+  .item-source {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+  .item-summary {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 10px;
+  }
+  .item-link {
+    display: inline-block;
+    font-size: 13px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .item-link:hover {
+    text-decoration: underline;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .badge-video {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  .badge-podcast {
+    background-color: #ede9fe;
+    color: #5b21b6;
+  }
+  .date-tag {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-left: 8px;
+  }
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 12px;
+    color: #9ca3af;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>📰 软件技术日报</h1>
+    <p>2026 年 07 月 24 日 &nbsp;|&nbsp; 精选软件工程、AI 前沿与后端技术动态</p>
+  </div>
+
+  <!-- ===================== 软件工程 & 云原生 ===================== -->
+  <div class="section">
+    <div class="section-title">⚙️ 软件工程 &amp; 云原生</div>
+
+    <!-- Thoughtworks Technology Radar -->
+    <div class="item">
+      <div class="item-source">Thoughtworks Technology Radar</div>
+      <div class="item-title">
+        Technology Radar Vol. 34：AI 加速软件复杂性，呼吁回归工程基础实践
+        <span class="date-tag">2026-04</span>
+      </div>
+      <div class="item-summary">
+        Thoughtworks 发布第 34 期技术雷达，核心主题是"认知债务（Cognitive Debt）"——AI 辅助开发带来了大量新工具和新实践，却同时让工程师认知负担剧增。报告强调回归工程基础，将 DORA Metrics 重新列入关注清单，并指出 2026 年早期可靠性（Reliability）已从众多问题之一上升为最关键议题。命令行工具的回归也印证了业界对稳定性与熟悉基础设施的渴求。
+      </div>
+      <a class="item-link" href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- SRE Weekly -->
+    <div class="item">
+      <div class="item-source">SRE Weekly</div>
+      <div class="item-title">
+        Issue #524：AI 的生产力陷阱与系统可靠性的再思考
+        <span class="date-tag">2026-07-05</span>
+      </div>
+      <div class="item-summary">
+        本期 SRE Weekly 聚焦 AI 在运维领域的双面性：一方面 AI Agent 正在介入 Incident Response 流程，另一方面文章深入剖析了 AI 带来的"生产力陷阱"——表面上加速了开发，实则引入更多系统不确定性。同期收录了关于"认知多样性与系统复杂性"的深度讨论，以及在事故归因中如何避免 Blame Culture 的实战经验分享。
+      </div>
+      <a class="item-link" href="https://sreweekly.com/sre-weekly-issue-524/" target="_blank">阅读原文 →</a>
+    </div>
+
+  </div>
+
+  <!-- ===================== AI 技术前沿 ===================== -->
+  <div class="section">
+    <div class="section-title">🤖 AI 技术前沿</div>
+
+    <!-- Anthropic -->
+    <div class="item">
+      <div class="item-source">Anthropic Blog</div>
+      <div class="item-title">
+        AMD 拟向 Anthropic 投资高达 50 亿美元，并深化 AI 芯片部署合作
+        <span class="date-tag">2026-07-20</span>
+      </div>
+      <div class="item-summary">
+        AMD 宣布计划向 Anthropic 投资最高 50 亿美元，并将在 Anthropic 的基础设施中大规模部署 AMD GPU，以支撑 Claude 模型的训练与推理。与此同时，Anthropic 于本周发布了 Economic Index 最新研究议程，探讨 AI 对劳动市场的实际影响，并持续接受 AI for Science 稀有病研究资助申请，体现其安全与社会责任并重的战略导向。
+      </div>
+      <a class="item-link" href="https://www.anthropic.com/news" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- OpenAI -->
+    <div class="item">
+      <div class="item-source">OpenAI Blog</div>
+      <div class="item-title">
+        GPT-5.6 发布，ChatGPT Work 登场——面向非技术用户的 AI 生产力工具
+        <span class="date-tag">2026-07-09</span>
+      </div>
+      <div class="item-summary">
+        OpenAI 在 7 月 9 日同步发布 GPT-5.6 模型与 ChatGPT Work 产品。GPT-5.6 定位为"前沿级智能，随雄心而扩展"，提供付费与免费两个档位。ChatGPT Work 将 ChatGPT 与 Codex 融合，允许非技术用户通过自然语言构建文档、电子表格、演示和 Web 应用，并可接入企业批准的应用与文件，实现跨 macOS、Windows 和 Web 端的工作对话云同步。
+      </div>
+      <a class="item-link" href="https://openai.com/news/product-releases/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Google DeepMind -->
+    <div class="item">
+      <div class="item-source">Google DeepMind Blog</div>
+      <div class="item-title">
+        DeepMind CEO 提议建立国际 AI 模型审查机构，并发布生物韧性研究框架
+        <span class="date-tag">2026-07-16</span>
+      </div>
+      <div class="item-summary">
+        Google DeepMind CEO Demis Hassabis 提出建立一个国际独立监管机构，在前沿 AI 模型发布前进行严格评测与审查，此提案已获 OpenAI Sam Altman 和 Elon Musk 等人公开支持。同期，DeepMind 与 Isomorphic Labs 联合发布生物韧性（Bioresilience）研究框架，旨在防止恶意行为者滥用 AI 生物工具，并赋能政府与科学家应对生物威胁。
+      </div>
+      <a class="item-link" href="https://deepmind.google/blog/our-approach-to-bioresilience/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Hugging Face -->
+    <div class="item">
+      <div class="item-source">Hugging Face Blog</div>
+      <div class="item-title">
+        NVIDIA × Hugging Face：将 Isaac GR00T 1.7 引入 LeRobot，打通开源机器人端到端流水线
+        <span class="date-tag">2026-07-06</span>
+      </div>
+      <div class="item-summary">
+        NVIDIA 与 Hugging Face 宣布将 NVIDIA Isaac GR00T 1.7（面向人形机器人的视觉-语言-动作 VLA 模型）和 Isaac Teleop 遥操作框架集成至开源机器人库 LeRobot，未来还将接入 NVIDIA Cosmos 3 物理 AI 世界模型。此次合作将 NVIDIA 的 300 万机器人开发者与 Hugging Face 的 1600 万 AI 构建者连接起来，建立从数据采集、模型训练、性能评估到部署的标准化开源工作流。
+      </div>
+      <a class="item-link" href="https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Latent Space -->
+    <div class="item">
+      <div class="item-source">Latent Space 播客 <span class="badge badge-podcast">🎙 播客</span></div>
+      <div class="item-title">
+        Causal Models Need Causal Data — Xaira 的 X-Cell 模型与 AI 药物发现
+        <span class="date-tag">2026-07-21</span>
+      </div>
+      <div class="item-summary">
+        本期 Latent Space 邀请 Xaira Therapeutics 的 Bo Wang（Chief Discovery Officer）与 Ci Chu（Chief AI Scientist）深度探讨因果模型在新药发现中的应用。嘉宾指出，现有 AI 药物发现模型普遍依赖相关性数据而非因果数据，而 X-Cell 模型尝试通过结构化的因果推理框架来预测分子干预效果，有望突破传统 QSAR 方法的局限。
+      </div>
+      <a class="item-link" href="https://www.latent.space/podcast" target="_blank">收听播客 →</a>
+    </div>
+
+    <!-- TWIML AI Podcast -->
+    <div class="item">
+      <div class="item-source">TWIML AI Podcast <span class="badge badge-podcast">🎙 播客</span></div>
+      <div class="item-title">
+        #771 How AI Learns to Smell — 用 AI 赋予计算机嗅觉
+        <span class="date-tag">2026-07-08</span>
+      </div>
+      <div class="item-summary">
+        Osmo 创始人兼 CEO Alex Wiltschko 登上 TWIML 播客，分享如何构建"嗅觉智能（Olfactory Intelligence）"——将气味量化为 AI 可学习的特征空间，并训练模型预测分子对人类嗅觉感知的影响。这一方向对香水、食品、医疗诊断等多个行业具有深远意义，也为超越视觉与语言的多模态 AI 开辟了全新维度。
+      </div>
+      <a class="item-link" href="https://twimlai.com/podcast/twimlai/building-voice-ai-agents-that-dont-suck" target="_blank">收听播客 →</a>
+    </div>
+
+  </div>
+
+  <!-- ===================== 后端开发 & Python & Go ===================== -->
+  <div class="section">
+    <div class="section-title">🔧 后端开发 &amp; Python &amp; Go</div>
+
+    <!-- Netflix Tech Blog -->
+    <div class="item">
+      <div class="item-source">Netflix Tech Blog</div>
+      <div class="item-title">
+        Netflix 自建 LLM Serving 基础设施：架构选型、vLLM 集成与生产经验
+        <span class="date-tag">2026-07-18</span>
+      </div>
+      <div class="item-summary">
+        Netflix AI Platform 团队详细披露了其自建 LLM Serving 体系的设计决策：以现有 JVM 统一推理服务（Model Scoring Service）为基座，选用 vLLM 作为推理引擎并对接 NVIDIA Triton Inference Server，同时暴露 gRPC 和 OpenAI 兼容 HTTP API。文章着重讲述了生产环境中超出预期的问题，包括引擎选型、模型打包、API 设计、部署策略和输出约束执行等核心权衡，是 LLMOps 实践的高密度参考。
+      </div>
+      <a class="item-link" href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Dan Luu -->
+    <div class="item">
+      <div class="item-source">Dan Luu Blog</div>
+      <div class="item-title">
+        Agentic 测试流程、LLM Benchmark 可信度，以及在加拉帕戈斯岛的 AI Coding 实践笔记
+        <span class="date-tag">2026-07-03</span>
+      </div>
+      <div class="item-summary">
+        Dan Luu 记录了自 2025 年 11 月起将 LLM 深度用于日常编码的真实体验：AI 生成的 Fuzzer 能在数分钟内发现严重 Bug，但覆盖率极差，会遗漏人工编写 Fuzzer 理应覆盖的基础场景。文章深入分析了当前 LLM Benchmark 存在的系统性失真问题，指出 Benchmark 高分与实际 Agentic 能力之间仍存在显著鸿沟，对工程师选型和评估 AI Coding 工具具有极高参考价值。
+      </div>
+      <a class="item-link" href="https://danluu.com/ai-coding/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- Fireship -->
+    <div class="item">
+      <div class="item-source">Fireship <span class="badge badge-video">📹 视频</span></div>
+      <div class="item-title">
+        地球上最受信任的代码正在被 Rust 重写
+        <span class="date-tag">2026-06-19</span>
+      </div>
+      <div class="item-summary">
+        Fireship 以其标志性的快节奏风格深度解析了当前席卷软件行业的 Rust 重写浪潮——从 Linux 内核驱动、Windows 核心组件到 OpenSSL 替代库，越来越多的系统级基础软件开始引入 Rust 以提升内存安全性。视频梳理了 Mozilla、Microsoft、Google、Android 等主要推动方的进展，以及 Rust 在不破坏现有 C/C++ 生态的前提下逐步渗透的策略路径。
+      </div>
+      <a class="item-link" href="https://www.youtube.com/watch?v=Sntj4HmuykI" target="_blank">观看视频 →</a>
+    </div>
+
+    <!-- Real Python (July 2025 - note year) -->
+    <div class="item">
+      <div class="item-source">Real Python</div>
+      <div class="item-title">
+        Free-Threaded Python 解禁：Python 3.14 Beta 4 与 7 月 Python 生态速报
+        <span class="date-tag">2025-07-07</span>
+      </div>
+      <div class="item-summary">
+        Real Python 月度新闻汇总了 Python 3.14 进入 Beta 4（发布候选前最后一个 Beta）的关键节点，并重点介绍了 Meta 推出的 Pyrefly——一款基于 Rust 的 Pyre 继任者，专为大型 Monorepo 设计的高速增量类型检查工具。此外，Ruff 0.12 发布，带来更好的多版本 Python 支持和 f-string 格式化优化，标志着 Python 工具链整体向 Rust 生态迁移的趋势持续加速。
+      </div>
+      <a class="item-link" href="https://realpython.com/python-news-july-2025/" target="_blank">阅读原文 →</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>本邮件由 Daily News Bot 自动整理生成 &nbsp;|&nbsp; 2026-07-24</p>
+    <p>内容来源于公开渠道，摘要由 AI 辅助撰写，技术术语保留英文原文</p>
+  </div>
+</div>
+</body>
+</html>
