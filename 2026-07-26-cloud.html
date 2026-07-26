@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-26</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a2e;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+    .header {
+      border-bottom: 3px solid #1a73e8;
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 6px 0;
+    }
+    .header .date {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+    }
+    .intro {
+      background-color: #f8f9fa;
+      border-left: 4px solid #1a73e8;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 32px;
+      border-radius: 0 4px 4px 0;
+    }
+    .item {
+      margin-bottom: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e8eaed;
+    }
+    .item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .source-badge {
+      display: inline-block;
+      background-color: #e8f0fe;
+      color: #1a73e8;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+    .item-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 12px 0;
+    }
+    .item-summary {
+      font-size: 14px;
+      color: #333;
+      margin: 0 0 14px 0;
+    }
+    .item-link {
+      display: inline-block;
+      font-size: 13px;
+      color: #1a73e8;
+      text-decoration: none;
+      border: 1px solid #1a73e8;
+      padding: 5px 14px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .item-link:hover {
+      background-color: #1a73e8;
+      color: #fff;
+    }
+    .tag-video {
+      display: inline-block;
+      background-color: #fce8e6;
+      color: #c5221f;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid #e8eaed;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+    .keyword {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <h1>软件技术日报【软件工程 &amp; 云原生】</h1>
+      <p class="date">2026-07-26 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+    </div>
+
+    <div class="intro">
+      本期精选来自 Thoughtworks Technology Radar、SRE Weekly、ByteByteGo、TLDR DevOps 四个渠道，聚焦 Kubernetes 管理云服务、SRE 复杂性认知、生产级 AI Agent 架构与 Cloudflare 分布式共识服务等热点话题。
+    </div>
+
+    <!-- 1. Thoughtworks Technology Radar -->
+    <div class="item">
+      <span class="source-badge">Thoughtworks Technology Radar</span>
+      <h2 class="item-title">Kube-managed Cloud Services：用 Kubernetes API 统一管理云资源</h2>
+      <p class="item-summary">
+        Thoughtworks Technology Radar Vol. 34（2026 年 4 月）将 <span class="keyword">Kube-managed cloud services</span> 列为值得关注的架构实践——AWS（ACK）、Azure（Azure Service Operator）、GCP（Config Connector）均已通过 Custom Resource Definitions（CRD）将云服务纳入 Kubernetes 控制平面管理。这一趋势意味着团队可以用同一套 GitOps 工作流来声明和管理云基础设施与容器工作负载，大幅降低运维上下文切换的成本。Radar 同期还关注了 <span class="keyword">Kueue</span>（Kubernetes 原生批量调度）与 <span class="keyword">SkyPilot</span>（跨云 GPU 调度）两个项目，进一步体现 Kubernetes 向 AI 工作负载延伸的趋势。
+      </p>
+      <a class="item-link" href="https://www.thoughtworks.com/radar/techniques/kube-managed-cloud-services" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- 2. SRE Weekly -->
+    <div class="item">
+      <span class="source-badge">SRE Weekly</span>
+      <h2 class="item-title">Issue #524：用认知多样性应对系统复杂性</h2>
+      <p class="item-summary">
+        SRE Weekly 第 524 期（2026 年 7 月 5 日）重点推荐了一篇关于 <span class="keyword">认知多样性（cognitive diversity）</span> 的文章，指出团队在事故复盘（incident retrospective）前应先让每位参与者独立写下自己对事件经过的理解，再汇总讨论。这一做法可以暴露出不同角色对系统行为的隐性假设差异，从而抓住真正的根因。同期另一篇文章《Jet Engine on a Tractor》也值得关注，作者指出将 AI 直接用于加速现有 sociotechnical 系统时，整体效果受限于"最弱环节"——往往还是人与流程，而非模型本身。
+      </p>
+      <a class="item-link" href="https://sreweekly.com/sre-weekly-issue-524/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- 3. ByteByteGo -->
+    <div class="item">
+      <span class="source-badge">ByteByteGo</span>
+      <h2 class="item-title">生产级 AI Agent 落地最佳实践：8 个上下文成熟度层次</h2>
+      <p class="item-summary">
+        ByteByteGo 于 2026 年 7 月 22 日发布的文章 <em>Best Practices for Building AI Agents That Work in Production</em> 深入探讨了演示阶段 AI Agent 与真实生产 Agent 之间的巨大落差。文章提出"8 层上下文成熟度"框架，强调生产级系统中绝大多数行为仍依赖确定性代码，语言模型仅在特定决策节点被调用，而非全程驱动。这对于计划将 <span class="keyword">AI Agent</span> 引入微服务架构或 DevOps 流水线的团队具有重要参考价值——避免过度设计、保持可观测性和可回滚性才是关键。
+      </p>
+      <a class="item-link" href="https://blog.bytebytego.com/p/best-practices-for-building-ai-agents" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- 4. TLDR DevOps -->
+    <div class="item">
+      <span class="source-badge">TLDR DevOps</span>
+      <h2 class="item-title">Cloudflare Meerkat：用 QuePaxa 算法替代 Raft 的全球共识服务</h2>
+      <p class="item-summary">
+        TLDR DevOps 2026-07-10 期介绍了 Cloudflare 开源的实验性分布式共识服务 <span class="keyword">Meerkat</span>，其核心创新在于采用 <span class="keyword">QuePaxa</span> 算法——所有副本可同时执行写操作，无需依赖单一 Leader，彻底规避 Raft 在跨地区部署时的可用性痛点。Cloudflare 计划在其 330+ 全球数据中心率先实现 QuePaxa 的工业级落地，用于管理数据库 Leader 选举和资源调度等控制平面状态。同期还报道了 <span class="keyword">etcd v3.7.0</span> 正式支持 RangeStream，允许大型查询结果分块流式返回，显著降低服务端内存压力和客户端延迟，对 Kubernetes 控制平面稳定性有直接提升。
+      </p>
+      <a class="item-link" href="https://tldr.tech/devops/2026-07-10" target="_blank">阅读原文 →</a>
+    </div>
+
+    <div class="footer">
+      本邮件由 Daily News Bot 自动生成 &nbsp;|&nbsp; 内容来源：公开技术博客 &amp; 新闻渠道<br>
+      技术术语保留英文原文，中文摘要仅供参考
+    </div>
+
+  </div>
+</body>
+</html>
