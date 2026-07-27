@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-27</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif;color:#1a1a1a;font-size:15px;line-height:1.7;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+  <tr>
+    <td align="center" style="padding:30px 20px;">
+
+      <!-- 主容器 -->
+      <table width="640" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;">
+
+        <!-- 邮件头部 -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#1a2a4a 0%,#2c4a7c 100%);padding:36px 40px 28px 40px;">
+            <p style="margin:0 0 6px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8ab4e8;">Daily Tech Digest</p>
+            <h1 style="margin:0 0 8px 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+            <p style="margin:0;font-size:13px;color:#a8c4e8;">后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-07-27</p>
+          </td>
+        </tr>
+
+        <!-- 摘要说明 -->
+        <tr>
+          <td style="padding:20px 40px 10px 40px;border-bottom:1px solid #eaeaea;">
+            <p style="margin:0;font-size:13px;color:#666666;">整理过去 7 天来自各技术渠道的精选内容，聚焦性能优化、新版本特性、工程最佳实践与系统设计。</p>
+          </td>
+        </tr>
+
+        <!-- 正文内容 -->
+        <tr>
+          <td style="padding:24px 40px;">
+
+            <!-- ─── 1. Martin Fowler Blog ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
+              <tr>
+                <td style="padding-bottom:10px;border-bottom:2px solid #2c4a7c;">
+                  <span style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#2c4a7c;background-color:#edf2fb;padding:3px 8px;border-radius:3px;">Martin Fowler Blog</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:14px;">
+                  <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;">
+                    <a href="https://martinfowler.com/fragments/2026-07-21.html" style="color:#1a1a1a;text-decoration:none;">Fragments: July 21 — 第二届软件开发未来峰会总结</a>
+                  </h2>
+                  <p style="margin:0 0 10px 0;font-size:13px;color:#555555;">
+                    Martin Fowler 整理了第二届 Future of Software Development Retreat 的五项核心发现：代码生成已不再是瓶颈，<strong>验证（Verification）</strong>才是；<strong>「Harness Engineering」</strong>正作为一门独立可习得的工程学科出现；组织正面临真实的学徒制危机；高管与工程师的期望鸿沟比技术局限更危险；遗留系统现代化是当前最清晰可辩护的价值池。
+                  </p>
+                  <a href="https://martinfowler.com/fragments/2026-07-21.html" style="display:inline-block;font-size:12px;color:#2c6eb5;text-decoration:none;border:1px solid #2c6eb5;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+                  <span style="font-size:11px;color:#999999;margin-left:10px;">📅 2026-07-21</span>
+                </td>
+              </tr>
+            </table>
+
+            <!-- ─── 2. Netflix Tech Blog ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
+              <tr>
+                <td style="padding-bottom:10px;border-bottom:2px solid #e50914;">
+                  <span style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#e50914;background-color:#fef0f0;padding:3px 8px;border-radius:3px;">Netflix Tech Blog</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:14px;">
+                  <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;">
+                    <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="color:#1a1a1a;text-decoration:none;">In-House LLM Serving at Netflix — 自建 LLM 推理平台全解析</a>
+                  </h2>
+                  <p style="margin:0 0 10px 0;font-size:13px;color:#555555;">
+                    Netflix 详述了将 LLM 推理纳入现有生产体系的全栈方案：以 <strong>vLLM</strong> 为推理引擎、集成 <strong>NVIDIA Triton Inference Server</strong>，并通过统一的 JVM 服务层暴露 gRPC 与 OpenAI 兼容 HTTP API。文章重点讲解了在引擎选型、模型打包、API 设计、部署策略与输出约束执行等关键决策点上的取舍——不另建 ML 孤岛，而是将 LLM serving 与现有 Model Scoring Service（MSS）统一。
+                  </p>
+                  <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="display:inline-block;font-size:12px;color:#2c6eb5;text-decoration:none;border:1px solid #2c6eb5;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+                  <span style="font-size:11px;color:#999999;margin-left:10px;">📅 2026-07-17</span>
+                </td>
+              </tr>
+            </table>
+
+            <!-- ─── 3. Real Python ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
+              <tr>
+                <td style="padding-bottom:10px;border-bottom:2px solid #306998;">
+                  <span style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#306998;background-color:#eef4fb;padding:3px 8px;border-radius:3px;">Real Python</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:14px;">
+                  <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;">
+                    <a href="https://realpython.com/python-news-july-2026/" style="color:#1a1a1a;text-decoration:none;">Python's JIT Faces Some Challenges — Python JIT 编译器迎来关键抉择</a>
+                  </h2>
+                  <p style="margin:0 0 10px 0;font-size:13px;color:#555555;">
+                    Python Steering Council 要求 JIT 编译器必须在六个月内完成正式 PEP 立项，否则将从 CPython main 分支移除。7 月 2 日，开发团队提交了 <strong>PEP 836「JIT Go Brrr」</strong>，承诺在 Python 3.16 中实现比标准解释器 <strong>20% 的性能提升</strong>，同时保持完整工具链兼容性。这意味着 Python JIT 的命运将在 2026 年底见分晓，开发者需要密切关注后续进展。
+                  </p>
+                  <a href="https://realpython.com/python-news-july-2026/" style="display:inline-block;font-size:12px;color:#2c6eb5;text-decoration:none;border:1px solid #2c6eb5;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+                  <span style="font-size:11px;color:#999999;margin-left:10px;">📅 2026-07 月刊</span>
+                </td>
+              </tr>
+            </table>
+
+            <!-- ─── 4. Golang Weekly ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
+              <tr>
+                <td style="padding-bottom:10px;border-bottom:2px solid #00acd7;">
+                  <span style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#00838a;background-color:#e8f8f9;padding:3px 8px;border-radius:3px;">Golang Weekly</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:14px;">
+                  <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;">
+                    <a href="https://golangweekly.com/latest" style="color:#1a1a1a;text-decoration:none;">Issue #609: How Go Makes TypeScript's Compiler 10x Faster — Go 助力 TypeScript 编译器提速 10 倍</a>
+                  </h2>
+                  <p style="margin:0 0 10px 0;font-size:13px;color:#555555;">
+                    本期焦点：<strong>TypeScript 7.0</strong> 将编译器从 TypeScript 重写为 <strong>Go</strong>，带来 10 倍性能提升——一半来自原生代码执行速度，另一半来自 Go 的共享内存并发能力，使解析、类型检查和代码生成可以并行进行。TypeScript 7.0 RC 已于 2026 年 7 月初落地，这是近年来跨语言性能工程最值得关注的实践案例之一。
+                  </p>
+                  <a href="https://golangweekly.com/latest" style="display:inline-block;font-size:12px;color:#2c6eb5;text-decoration:none;border:1px solid #2c6eb5;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+                  <span style="font-size:11px;color:#999999;margin-left:10px;">📅 2026-07 最新期</span>
+                </td>
+              </tr>
+            </table>
+
+            <!-- ─── 5. Arjan Codes (YouTube) ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
+              <tr>
+                <td style="padding-bottom:10px;border-bottom:2px solid #ff5733;">
+                  <span style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#cc3300;background-color:#fff3f0;padding:3px 8px;border-radius:3px;">Arjan Codes · YouTube</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:14px;">
+                  <p style="margin:0 0 4px 0;font-size:12px;color:#888888;">📹 视频</p>
+                  <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;">
+                    <a href="https://www.youtube.com/watch?v=0sbLM_rBgww" style="color:#1a1a1a;text-decoration:none;">AI Writes Code Faster Than You. Now What? — AI 写代码比你快，那开发者该做什么？</a>
+                  </h2>
+                  <p style="margin:0 0 10px 0;font-size:13px;color:#555555;">
+                    Arjan 在本视频中探讨了 AI 代码生成工具已经比人类更快的现实背景下，<strong>软件工程师的核心竞争力应如何转型</strong>。他的观点是：代码生成已商品化，真正的差异化能力在于系统设计、架构决策与对代码质量的深度把控——这正是他 Software Design Mastery 课程的核心主题。视频对正在思考 AI 时代职业路径的工程师很有参考价值。
+                  </p>
+                  <a href="https://www.youtube.com/watch?v=0sbLM_rBgww" style="display:inline-block;font-size:12px;color:#2c6eb5;text-decoration:none;border:1px solid #2c6eb5;padding:4px 12px;border-radius:4px;">观看视频 →</a>
+                  <span style="font-size:11px;color:#999999;margin-left:10px;">📅 2026 年 7 月初</span>
+                </td>
+              </tr>
+            </table>
+
+            <!-- ─── 6. Dan Luu Blog ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
+              <tr>
+                <td style="padding-bottom:10px;border-bottom:2px solid #4a4a4a;">
+                  <span style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#333333;background-color:#f0f0f0;padding:3px 8px;border-radius:3px;">Dan Luu Blog</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:14px;">
+                  <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a1a;">
+                    <a href="https://danluu.com/" style="color:#1a1a1a;text-decoration:none;">Agentic Test Processes, LLM Benchmarks, and Other Notes on Agentic Coding — Agent 测试流程与 LLM 基准的深度笔记</a>
+                  </h2>
+                  <p style="margin:0 0 10px 0;font-size:13px;color:#555555;">
+                    Dan Luu 在加拉帕戈斯岛写下的 agentic coding 实践笔记，深入分析了 <strong>Agent 驱动测试流程</strong>的局限性与 <strong>LLM benchmark</strong> 的可信度问题。文章延续了他一贯的量化分析风格，用测量数据揭示 AI 辅助开发流程中常被忽视的盲点，对构建或使用 agentic 编码工具的工程师极具参考价值。
+                  </p>
+                  <a href="https://danluu.com/" style="display:inline-block;font-size:12px;color:#2c6eb5;text-decoration:none;border:1px solid #2c6eb5;padding:4px 12px;border-radius:4px;">阅读原文 →</a>
+                  <span style="font-size:11px;color:#999999;margin-left:10px;">📅 2026-07-26</span>
+                </td>
+              </tr>
+            </table>
+
+            <!-- ─── 本期跳过说明 ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px;">
+              <tr>
+                <td style="background-color:#f9f9f9;border-left:3px solid #cccccc;padding:12px 16px;border-radius:0 4px 4px 0;">
+                  <p style="margin:0;font-size:12px;color:#888888;line-height:1.6;">
+                    <strong style="color:#555555;">本期跳过渠道（7 天内无新内容可确认）：</strong><br>
+                    High Scalability · Python Weekly · The Go Blog · Anthony GG · Hussein Nasser · Fireship · Brendan Gregg · Go by Example
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- 页脚 -->
+        <tr>
+          <td style="background-color:#f8f9fa;border-top:1px solid #eaeaea;padding:20px 40px;text-align:center;">
+            <p style="margin:0;font-size:11px;color:#aaaaaa;line-height:1.6;">
+              软件技术日报 · 后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 每日自动整理<br>
+              如有疑问请回复此邮件 &nbsp;·&nbsp; 2026-07-27
+            </p>
+          </td>
+        </tr>
+
+      </table>
+      <!-- /主容器 -->
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
