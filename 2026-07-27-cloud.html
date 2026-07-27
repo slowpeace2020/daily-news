@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-27</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a2e;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+    .header {
+      border-bottom: 3px solid #1a73e8;
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 6px 0;
+    }
+    .header .date {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+    }
+    .intro {
+      background-color: #f8f9fa;
+      border-left: 4px solid #1a73e8;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 32px;
+      border-radius: 0 4px 4px 0;
+    }
+    .item {
+      margin-bottom: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e8eaed;
+    }
+    .item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .source-badge {
+      display: inline-block;
+      background-color: #e8f0fe;
+      color: #1a73e8;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+    .item-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 12px 0;
+    }
+    .item-summary {
+      font-size: 14px;
+      color: #333;
+      margin: 0 0 14px 0;
+    }
+    .item-link {
+      display: inline-block;
+      font-size: 13px;
+      color: #1a73e8;
+      text-decoration: none;
+      border: 1px solid #1a73e8;
+      padding: 5px 14px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .item-link:hover {
+      background-color: #1a73e8;
+      color: #fff;
+    }
+    .tag-video {
+      display: inline-block;
+      background-color: #fce8e6;
+      color: #c5221f;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid #e8eaed;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+    .keyword {
+      font-style: italic;
+      color: #555;
+    }
+    .skip-note {
+      font-size: 12px;
+      color: #999;
+      margin-top: 20px;
+      padding: 10px 14px;
+      background-color: #fafafa;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <h1>软件技术日报【软件工程 &amp; 云原生】</h1>
+      <p class="date">2026-07-27 &nbsp;|&nbsp; Kubernetes · 云原生架构 · SRE 实践</p>
+    </div>
+
+    <div class="intro">
+      本期精选来自 SRE Weekly、ByteByteGo、TLDR Tech 三个渠道，聚焦 AI 生成代码的 On-Call 成本、分布式系统时序问题与 Nvidia 新一代 AI 计算平台等热点话题。Thoughtworks Technology Radar（上期 4 月发布，下期待定）及 TechWorld with Nana 本周暂无新内容，已跳过。
+    </div>
+
+    <!-- 1. SRE Weekly -->
+    <div class="item">
+      <span class="source-badge">SRE Weekly</span>
+      <h2 class="item-title">Issue #527：AI 生成代码的 On-Call 成本——凌晨三点谁来调试它？</h2>
+      <p class="item-summary">
+        SRE Weekly 第 527 期（2026 年 7 月 26 日）重点讨论了 <span class="keyword">AI 生成代码（AI-generated code）</span> 给 On-Call 工程师带来的新型挑战：当这些代码在深夜生产环境崩溃时，On-Call 人员既不是原始需求方，又对代码逻辑知之甚少，调试效率大打折扣。文章指出这一问题本质上是代码所有权与可观测性的结合——团队需要强制为 AI 生成的代码建立充分的测试覆盖和 runbook，而不是假设 LLM 的输出像人工编写的代码一样"自我解释"。同期另一篇 <em>Minus Two Minutes</em> 提出了"负检测时间（negative time to detection）"概念——在故障实际发生前通过预测性监控提前感知即将来临的事故，并呼吁告警系统和事故流程支持记录和奖励这类预测行为。
+      </p>
+      <a class="item-link" href="https://sreweekly.com/sre-weekly-issue-527/" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- 2. ByteByteGo -->
+    <div class="item">
+      <span class="source-badge">ByteByteGo</span>
+      <h2 class="item-title">分布式系统中的时钟、因果关系与事件排序入门指南</h2>
+      <p class="item-summary">
+        ByteByteGo 于 2026 年 7 月 23 日发布文章 <em>A Beginner's Guide to Clocks, Causality, and Ordering in Distributed Systems</em>，深入解析了为什么在分布式环境中"读取时间"会变成一个复杂的工程问题。文章从物理时钟漂移出发，介绍了 <span class="keyword">逻辑时钟（Logical Clock）</span>、<span class="keyword">向量时钟（Vector Clock）</span> 和 <span class="keyword">混合逻辑时钟（Hybrid Logical Clock）</span> 等核心概念，并解释它们如何帮助系统在没有全局统一时间的情况下保证事件因果顺序。对于构建多副本 Kubernetes 有状态服务、分布式数据库或事件驱动架构的工程师来说，理解这些基础对保证数据一致性至关重要。
+      </p>
+      <a class="item-link" href="https://blog.bytebytego.com/p/a-beginners-guide-to-clocks-causality" target="_blank">阅读原文 →</a>
+    </div>
+
+    <!-- 3. TLDR Tech -->
+    <div class="item">
+      <span class="source-badge">TLDR Tech</span>
+      <h2 class="item-title">Nvidia Vera Rubin 计算平台：从 GPU 到全栈 AI 数据中心系统</h2>
+      <p class="item-summary">
+        TLDR Tech 2026-07-22 期报道了 Nvidia 最新发布的 <span class="keyword">Vera Rubin</span> 计算平台性能细节，标志着 Nvidia 的战略重心正从出售单块 GPU 向提供完整 AI 数据中心"全栈"系统转型。Vera Rubin 将 CPU（Vera）与 GPU（Rubin）深度集成，旨在以"AI 工厂（AI factory）"模式交付—— 强调工业化规模、可重复性和持续高吞吐量的智能产出。对于云原生基础设施团队而言，这预示着 Kubernetes 在 GPU 调度（如 <span class="keyword">NVIDIA GPU Operator</span>）和 AI 工作负载编排层面将面临新的能力要求和硬件适配挑战。同期还报道了 Jack Dorsey 开发的 Slack 替代品，以及 AI 辅助软件工厂（software factory）规模化落地的进展。
+      </p>
+      <a class="item-link" href="https://tldr.tech/tech/2026-07-22" target="_blank">阅读原文 →</a>
+    </div>
+
+    <div class="footer">
+      本邮件由 Daily News Bot 自动生成 &nbsp;|&nbsp; 内容来源：公开技术博客 &amp; 新闻渠道<br>
+      技术术语保留英文原文，中文摘要仅供参考
+    </div>
+
+  </div>
+</body>
+</html>
