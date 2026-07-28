@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【AI 技术前沿】- 2026-07-28</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;">
+<tr><td align="center" style="padding:24px 16px;">
+
+<table width="620" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);max-width:620px;">
+
+<!-- Header -->
+<tr>
+<td style="background-color:#1a1a2e;padding:32px 40px 28px;">
+<h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:-0.3px;">软件技术日报</h1>
+<p style="margin:8px 0 0;color:#94a3b8;font-size:13px;letter-spacing:0.3px;">AI 技术前沿 &nbsp;·&nbsp; 2026-07-28</p>
+</td>
+</tr>
+
+<!-- Intro -->
+<tr>
+<td style="padding:24px 40px 4px;">
+<p style="margin:0;color:#64748b;font-size:13.5px;line-height:1.7;border-left:3px solid #3182ce;padding-left:12px;">
+本期精选 <strong>7 条</strong> 过去 7 天 AI 领域重要动态，涵盖旗舰模型发布、企业 Agent 产品、AI 安全事件、工程实践与科研前沿。
+</p>
+</td>
+</tr>
+
+<!-- ── Item 1: Anthropic ── -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 22px;">
+<p style="margin:0 0 5px;font-size:10.5px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;">Anthropic Blog &nbsp;·&nbsp; 2026-07-24</p>
+<h2 style="margin:0 0 12px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.45;">
+Claude Opus 5 正式发布：接近 Fable 5 水准，价格降低一半
+</h2>
+<p style="margin:0 0 14px;font-size:14px;color:#374151;line-height:1.75;">
+Anthropic 发布 Claude Opus 5，定价 $5/M 输入 tokens 与 $25/M 输出 tokens，与前代 Opus 4.8 持平，但性能已逼近旗舰模型 Fable 5（Frontier-Bench SOTA 43.3%、ARC-AGI-3 30.2%）。新模型引入<strong>努力拨盘</strong>功能，用户可在 low / medium / high 之间动态调节，实现成本与能力的灵活平衡。Opus 5 现为 Claude Max 标准模型、Claude Pro 顶级选项，并已通过 API 提供。
+</p>
+<a href="https://www.anthropic.com/news" style="display:inline-block;color:#3182ce;font-size:13px;text-decoration:none;font-weight:500;">→ 查看原文</a>
+</td>
+</tr>
+
+<!-- ── Item 2: OpenAI ── -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 22px;">
+<p style="margin:0 0 5px;font-size:10.5px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;">OpenAI Blog &nbsp;·&nbsp; 2026-07-22</p>
+<h2 style="margin:0 0 12px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.45;">
+OpenAI Presence 发布：面向企业的可信 AI Agent 部署平台
+</h2>
+<p style="margin:0 0 14px;font-size:14px;color:#374151;line-height:1.75;">
+OpenAI 推出企业级产品 <strong>Presence</strong>，支持团队在 voice 和 chat 两大渠道部署可信 AI Agent。平台内置策略配置、护栏（guardrails）、模拟评估、行为审批与 Codex 驱动的上线后持续优化能力，专为客户服务与内部工作流自动化场景设计。此前（7 月 9 日）OpenAI 还将 GPT-5.6 家族（Luna / Terra / Sol 三档）全面推向 ChatGPT，旗舰 Sol 在 AAACI 编程 Agent 指数上得分 80，居业界首位。
+</p>
+<a href="https://openai.com/news/" style="display:inline-block;color:#3182ce;font-size:13px;text-decoration:none;font-weight:500;">→ 查看原文</a>
+</td>
+</tr>
+
+<!-- ── Item 3: Google DeepMind ── -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 22px;">
+<p style="margin:0 0 5px;font-size:10.5px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;">Google DeepMind Blog &nbsp;·&nbsp; 2026-07-21</p>
+<h2 style="margin:0 0 12px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.45;">
+Gemini 3.5 Flash Cyber：专为漏洞挖掘与修复设计的 AI 安全模型
+</h2>
+<p style="margin:0 0 14px;font-size:14px;color:#374151;line-height:1.75;">
+Google DeepMind 发布专注于软件安全的 <strong>Gemini 3.5 Flash Cyber</strong>，在 V8 JavaScript 引擎测试中发现 55 个独立确认漏洞，远超同期主线 3.5 Flash（47 个）与 Claude Opus 4.6（36 个）；并在 2 小时内定位了生产服务中的内存损坏漏洞及远程代码执行风险。鉴于双重用途特性，该模型仅通过 DeepMind 的 AI 编码 Agent <strong>CodeMender</strong> 向政府和受信合作伙伴开放有限访问，暂无公开 API 及定价。
+</p>
+<a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" style="display:inline-block;color:#3182ce;font-size:13px;text-decoration:none;font-weight:500;">→ 查看原文</a>
+</td>
+</tr>
+
+<!-- ── Item 4: Hugging Face ── -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 22px;">
+<p style="margin:0 0 5px;font-size:10.5px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;">Hugging Face Blog &nbsp;·&nbsp; 2026-07-16 / 07-21</p>
+<h2 style="margin:0 0 12px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.45;">
+安全事件披露：自主 AI Agent 系统端到端主导的首例攻击
+</h2>
+<p style="margin:0 0 14px;font-size:14px;color:#374151;line-height:1.75;">
+Hugging Face 披露一起重大安全事件，这是目前已知<strong>首例由自主 AI Agent 系统从头到尾策划并执行</strong>的网络安全攻击，揭示 Agent 被武器化的真实场景，为 AI 安全防御研究敲响警钟。同期（7 月 21 日）发布 <strong>Grabette</strong>，一套面向机器人操控数据采集的开源系统，与此前 LeRobot v0.6.0 共同构建开放机器人学习生态。
+</p>
+<a href="https://huggingface.co/blog/security-incident-july-2026" style="display:inline-block;color:#3182ce;font-size:13px;text-decoration:none;font-weight:500;">→ 查看原文</a>
+</td>
+</tr>
+
+<!-- ── Item 5: The Batch ── -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 22px;">
+<p style="margin:0 0 5px;font-size:10.5px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;">The Batch · DeepLearning.AI &nbsp;·&nbsp; 2026-07-24</p>
+<h2 style="margin:0 0 12px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.45;">
+Andrew Ng：AI 编码自动化将释放工程师投入高层次架构决策的时间
+</h2>
+<p style="margin:0 0 14px;font-size:14px;color:#374151;line-height:1.75;">
+Andrew Ng 在最新信件中指出：随着 AI 越来越多地接管编码工作，开发者得以将精力转向原本属于高级工程师的任务——如技术架构选型与系统设计决策。上期（7 月 17 日）他还阐述了 <strong>agentic coding loop</strong> 的核心理念：让 Agent 持续运行直至满足产品规格为止，是 2026 年 AI 工程实践的重要范式转变，适合作为工程团队落地 AI 辅助开发的参考框架。
+</p>
+<a href="https://www.deeplearning.ai/the-batch" style="display:inline-block;color:#3182ce;font-size:13px;text-decoration:none;font-weight:500;">→ 查看原文</a>
+</td>
+</tr>
+
+<!-- ── Item 6: AI Explained ── -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 22px;">
+<p style="margin:0 0 5px;font-size:10.5px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;">AI Explained · YouTube &nbsp;·&nbsp; 2026-07-22</p>
+<h2 style="margin:0 0 12px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.45;">
+📹 视频 &nbsp;·&nbsp; S5E20：GPT-5.6 vs Claude Fable，2026 年 AI 模型格局全解析（14 分钟）
+</h2>
+<p style="margin:0 0 14px;font-size:14px;color:#374151;line-height:1.75;">
+AI Explained 频道第五季第 20 期（约 14 分 35 秒），集中梳理当周 AI 模型竞争态势：分析 GPT-5.6 Sol 在性价比上是否已超越 Claude Fable 5，同步解读 <strong>Grok 4.5</strong> 与 <strong>Meta Muse Spark 1.1</strong> 的新发布对模型选型的影响。适合快速把握当前顶级 AI 模型全局格局与工程选型参考。
+</p>
+<a href="https://www.youtube.com/@aiexplained-official" style="display:inline-block;color:#3182ce;font-size:13px;text-decoration:none;font-weight:500;">→ 频道链接</a>
+</td>
+</tr>
+
+<!-- ── Item 7: Latent Space ── -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 22px;">
+<p style="margin:0 0 5px;font-size:10.5px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;">Latent Space 播客 &nbsp;·&nbsp; 2026-07-21</p>
+<h2 style="margin:0 0 12px;font-size:17px;font-weight:700;color:#1a202c;line-height:1.45;">
+🎧 播客 &nbsp;·&nbsp; Causal Models Need Causal Data：Xaira 的 X-Cell 药物发现基础模型
+</h2>
+<p style="margin:0 0 14px;font-size:14px;color:#374151;line-height:1.75;">
+本期邀请 Xaira Therapeutics 的 Bo Wang（首席发现官）与 Ci Chu（首席 AI 科学家）主讲，围绕 <strong>X-Cell</strong> 基础模型展开：因果模型（causal model）需要因果数据，传统生物 AI 模型在训练数据分布上的局限正在被重新审视。本集深入 AI for Science 前沿，展示如何将 AI 工程实践延伸至生物医疗领域的药物发现流程，对 AI 与科研交叉方向的工程师具有参考价值。
+</p>
+<a href="https://www.latent.space/podcast" style="display:inline-block;color:#3182ce;font-size:13px;text-decoration:none;font-weight:500;">→ 播客链接</a>
+</td>
+</tr>
+
+<!-- Skipped Channels Notice -->
+<tr>
+<td style="padding:28px 40px 0;">
+<hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 16px;">
+<p style="margin:0;font-size:12px;color:#94a3b8;line-height:1.7;">
+<strong style="color:#64748b;">本期跳过渠道（过去 7 天无 AI 相关新内容）：</strong><br>
+Andrej Karpathy YouTube、Yannic Kilcher YouTube、Two Minute Papers YouTube、Lex Fridman Podcast（最新期为历史讨论，非 AI 主题）、TWIML AI Podcast（最新期为 7 月 8 日，超出 7 天窗口）
+</p>
+</td>
+</tr>
+
+<!-- Footer -->
+<tr>
+<td style="padding:28px 40px 32px;background-color:#f8fafc;border-top:1px solid #e2e8f0;margin-top:28px;">
+<p style="margin:0;font-size:11.5px;color:#94a3b8;line-height:1.8;">
+本邮件由 Daily News Bot 自动生成 &nbsp;·&nbsp; 2026-07-28<br>
+内容来源：Anthropic · OpenAI · Google DeepMind · Hugging Face · DeepLearning.AI · AI Explained · Latent Space
+</p>
+</td>
+</tr>
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>
