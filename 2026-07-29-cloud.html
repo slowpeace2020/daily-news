@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-29</title>
+</head>
+<body style="font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 680px; margin: 0 auto; padding: 20px; background: #ffffff; color: #1a1a1a; line-height: 1.6;">
+
+  <!-- Header -->
+  <div style="text-align: center; padding: 28px 0 20px; border-bottom: 2px solid #1a1a1a;">
+    <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 6px; color: #1a1a1a; letter-spacing: 1px;">软件技术日报</h1>
+    <p style="font-size: 13px; font-weight: 400; margin: 0; color: #555;">【软件工程 &amp; 云原生】&nbsp;·&nbsp; 2026-07-29</p>
+  </div>
+
+  <!-- Item 1: Thoughtworks Technology Radar -->
+  <div style="padding: 28px 0 20px;">
+    <span style="display: inline-block; font-size: 10px; font-weight: 700; background: #1a1a1a; color: #ffffff; padding: 3px 9px; border-radius: 3px; letter-spacing: 1px; text-transform: uppercase;">Thoughtworks Technology Radar</span>
+    <h2 style="font-size: 16px; font-weight: 700; margin: 12px 0 10px; color: #1a1a1a;">
+      <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="color: #0055cc; text-decoration: none;">Vol.34：AI 加速软件复杂性，Radar 呼吁回归工程基础以应对认知债务</a>
+    </h2>
+    <p style="font-size: 14px; line-height: 1.8; margin: 0 0 12px; color: #333333;">
+      Thoughtworks 于 2026 年 4 月发布第 34 期 Technology Radar，核心主题是 AI 辅助开发正在积累"认知债务（cognitive debt）"——AI 生成的代码量持续增长，但人类与系统之间的理解鸿沟随之加深。本期特别推介两项云原生技术：<strong>CloudNativePG</strong>（Kubernetes Operator，简化 PostgreSQL 高可用集群管理，内置自愈与自动 failover）和 <strong>Apache APISIX</strong>（支持 Kubernetes Gateway API 的云原生高性能网关，可替代传统 Nginx Ingress Controller）。Radar 还指出，行业正从无尽的实验期转向追求可重复性与稳定性，consistency 与 reliability 已成为 2026 年最关键的工程挑战。
+    </p>
+    <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="font-size: 13px; color: #0055cc; text-decoration: none; font-weight: 600;">阅读原文 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 0;">
+
+  <!-- Item 2: SRE Weekly -->
+  <div style="padding: 28px 0 20px;">
+    <span style="display: inline-block; font-size: 10px; font-weight: 700; background: #1a1a1a; color: #ffffff; padding: 3px 9px; border-radius: 3px; letter-spacing: 1px; text-transform: uppercase;">SRE Weekly</span>
+    <h2 style="font-size: 16px; font-weight: 700; margin: 12px 0 10px; color: #1a1a1a;">
+      <a href="https://sreweekly.com/sre-weekly-issue-524/" style="color: #0055cc; text-decoration: none;">Issue #524：指责文化扼杀事后学习，AI 让人类成为系统"薄弱环节"</a>
+    </h2>
+    <p style="font-size: 14px; line-height: 1.8; margin: 0 0 12px; color: #333333;">
+      本期（2026-07-05）深入探讨 SRE 团队在事故复盘中面临的组织障碍：来自管理者、同事乃至自身的自责（self-blame）会关闭学习通道，使团队错失系统性改进的机会。在 AI 与 SRE 交叉话题上，文章指出当 AI 加速整体交付节奏时，人类决策反而成为社会技术系统（sociotechnical system）的"薄弱环节（weak link）"，需重新审视人机协作边界。此外，本期还引入认知多样性（cognitive diversity）视角，探讨其在复杂系统管理和事故回顾实践中的应用价值。
+    </p>
+    <a href="https://sreweekly.com/sre-weekly-issue-524/" style="font-size: 13px; color: #0055cc; text-decoration: none; font-weight: 600;">阅读原文 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 0;">
+
+  <!-- Item 3: ByteByteGo -->
+  <div style="padding: 28px 0 20px;">
+    <span style="display: inline-block; font-size: 10px; font-weight: 700; background: #1a1a1a; color: #ffffff; padding: 3px 9px; border-radius: 3px; letter-spacing: 1px; text-transform: uppercase;">ByteByteGo</span>
+    <h2 style="font-size: 16px; font-weight: 700; margin: 12px 0 10px; color: #1a1a1a;">
+      <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="color: #0055cc; text-decoration: none;">必知部署策略：从大爆炸发布到 Progressive Delivery 全面解析</a>
+    </h2>
+    <p style="font-size: 14px; line-height: 1.8; margin: 0 0 12px; color: #333333;">
+      本文系统梳理现代生产环境主流部署策略，涵盖大爆炸（Big-Bang）、蓝绿（Blue-Green）、金丝雀（Canary）发布、Feature Flags 等，并重点介绍渐进式交付（Progressive Delivery）的最佳实践：将多策略编排成统一自动化 promotion pipeline，以 SLO 为门控将流量从 1% 逐步扩展到 100% GA。文章对比各策略的实施成本与风险敞口，对使用 Kubernetes 管理多环境发布的团队具有直接参考价值，尤其适用于需要在发布速度与系统稳定性之间取得平衡的场景。
+    </p>
+    <a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" style="font-size: 13px; color: #0055cc; text-decoration: none; font-weight: 600;">阅读原文 →</a>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 0;">
+
+  <!-- Item 4: TLDR Tech -->
+  <div style="padding: 28px 0 20px;">
+    <span style="display: inline-block; font-size: 10px; font-weight: 700; background: #1a1a1a; color: #ffffff; padding: 3px 9px; border-radius: 3px; letter-spacing: 1px; text-transform: uppercase;">TLDR Tech</span>
+    <h2 style="font-size: 16px; font-weight: 700; margin: 12px 0 10px; color: #1a1a1a;">
+      <a href="https://tldr.tech/tech/2026-07-29" style="color: #0055cc; text-decoration: none;">2026-07-29：FCC 封锁人形机器人进口，AI Overviews 占比一年内从 15% 飙升至 43%</a>
+    </h2>
+    <p style="font-size: 14px; line-height: 1.8; margin: 0 0 12px; color: #333333;">
+      今日 TLDR Tech 头条：FCC 以国家安全为由宣布封锁外国制造的人形机器人与电网逆变器进口。技术趋势方面，Google AI Overviews 在搜索结果中的出现比例一年内从 15% 跳升至 43%，AI Mode 月访问量已突破 2.79 亿次，显示 AI 搜索正深刻重塑用户行为。开发工具方面，开源地理信息平台 <strong>GeoLibre</strong> 正式发布，支持 Web、桌面、移动端及 Jupyter notebook 多端运行，为地理空间数据可视化与分析提供了免费替代方案，对需要 GIS 能力的云原生数据平台具有参考意义。
+    </p>
+    <a href="https://tldr.tech/tech/2026-07-29" style="font-size: 13px; color: #0055cc; text-decoration: none; font-weight: 600;">阅读原文 →</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="padding: 20px 0; border-top: 2px solid #1a1a1a; text-align: center; font-size: 12px; color: #888888; margin-top: 8px;">
+    <p style="margin: 0 0 4px;">软件技术日报 · 自动生成 · 2026-07-29</p>
+    <p style="margin: 0; font-size: 11px; color: #aaaaaa;">TechWorld with Nana：本次检索未能确认过去 7 天内有新发布视频，已跳过。</p>
+  </div>
+
+</body>
+</html>
