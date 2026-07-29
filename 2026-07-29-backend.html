@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-07-29</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+  <div style="max-width:680px;margin:0 auto;padding:32px 24px;">
+
+    <!-- Header -->
+    <div style="border-bottom:3px solid #1a73e8;padding-bottom:20px;margin-bottom:28px;">
+      <h1 style="margin:0 0 6px 0;font-size:22px;font-weight:700;color:#1a1a1a;letter-spacing:-0.3px;">
+        软件技术日报
+      </h1>
+      <p style="margin:0;font-size:14px;color:#555;font-weight:500;">
+        后端开发 &amp; Python &amp; Go &nbsp;·&nbsp; 2026-07-29
+      </p>
+    </div>
+
+    <!-- Netflix Tech Blog -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Netflix Tech Blog
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="color:#1a1a1a;text-decoration:none;">
+          In-House LLM Serving at Netflix
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Netflix 放弃依赖第三方 LLM API，转而自建全栈大模型推理基础设施。他们以 NVIDIA Triton Inference Server 作为后端计算引擎，选用 vLLM 作为推理框架，同时对外暴露 gRPC 和 OpenAI 兼容的 HTTP API，将 LLM 推理服务直接纳入现有生产环境而非独立 ML 孤岛。文章深度讨论了引擎选型、模型打包、API 设计、部署策略与输出约束执行等关键工程决策。
+      </p>
+      <p style="margin:0;">
+        <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          阅读原文 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-07-18</span>
+      </p>
+    </div>
+
+    <!-- Martin Fowler -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Martin Fowler Blog
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://martinfowler.com/fragments/2026-07-21.html" style="color:#1a1a1a;text-decoration:none;">
+          Fragments: July 21 — Future of Software Development Retreat 洞察
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Thoughtworks 第二届软件开发未来峰会汇总了五大核心发现：（1）代码生成已不再是瓶颈，<strong>验证（verification）</strong> 才是；（2）"Harness Engineering" 正在成为独立工程学科，重点是 context 管理而非单纯提高 LLM 上下文窗口；（3）组织面临学徒制危机——初级工程师失去了向高级工程师学习的通道；（4）高管与工程师之间存在期望鸿沟，董事会过度关注生产力而忽视安全风险；（5）遗留系统现代化是当前最清晰的近期价值所在。
+      </p>
+      <p style="margin:0;">
+        <a href="https://martinfowler.com/fragments/2026-07-21.html" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          阅读原文 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-07-21</span>
+      </p>
+    </div>
+
+    <!-- Real Python -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Real Python
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://realpython.com/python-news-july-2026/" style="color:#1a1a1a;text-decoration:none;">
+          Python's JIT Faces Some Challenges and Other News for July 2026
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        本月 Python 社区最重大事件不是新特性发布，而是一个<strong>截止期限</strong>：Steering Council 正式对 CPython JIT 编译器发出六个月倒计时通知。JIT 自 Python 3.13 起作为实验性、默认关闭的功能引入，目前面临性能提升未达预期、维护成本偏高等挑战。此外 Python 3.15 发布两个 beta 版，PSF 也在本月正视组织财务问题，EuroPython 2026 在波兰克拉科夫举行。
+      </p>
+      <p style="margin:0;">
+        <a href="https://realpython.com/python-news-july-2026/" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          阅读原文 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-07</span>
+      </p>
+    </div>
+
+    <!-- Python Weekly -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Python Weekly
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://www.pythonweekly.com/" style="color:#1a1a1a;text-decoration:none;">
+          Python Weekly — 2026年7月23日最新一期
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Python Weekly 是每周精选 Python 相关新闻、文章、工具与库的免费邮件订阅。七月各期涵盖 Python 3.15 JIT 进展、PSF 战略规划草案、uv 工具在生产环境中的实战经验（Real Python Podcast 第 303 集），以及 Django 任务框架与 GitHub Copilot CLI 入门等实用教程。推荐订阅，每周持续跟进 Python 生态动态。
+      </p>
+      <p style="margin:0;">
+        <a href="https://www.pythonweekly.com/" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          访问订阅页面 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-07-23（最新一期）</span>
+      </p>
+    </div>
+
+    <!-- The Go Blog -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        The Go Blog
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://go.dev/blog/go1.26" style="color:#1a1a1a;text-decoration:none;">
+          Go 1.26 正式发布 — Green Tea GC 默认启用 &amp; go fix 全面重写
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Go 1.26 于 2026 年 2 月 10 日发布，带来两项重要改进：（1）<strong>Green Tea 垃圾收集器</strong>默认启用，实验阶段结束，cgo 调用基础开销降低约 30%，编译器在更多场景下可将 slice 后备存储分配在栈上；（2）<strong>go fix</strong> 命令基于 Go 分析框架完全重写，内置数十个"现代化器"，可自动将代码迁移到更新 API，并支持开发者为自己的 API 定义迁移规则。此外新增 <code>crypto/hpke</code> 包，实现 RFC 9180 定义的混合公钥加密（含后量子混合 KEM）。
+      </p>
+      <p style="margin:0;">
+        <a href="https://go.dev/blog/go1.26" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          阅读发布公告 →
+        </a>
+        &nbsp;
+        <a href="https://go.dev/blog/gofix" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          go fix 详解 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-02-10</span>
+      </p>
+    </div>
+
+    <!-- Golang Weekly -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Golang Weekly
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://golangweekly.com/issues" style="color:#1a1a1a;text-decoration:none;">
+          Issue #603 — Generic methods are a-go for Go 1.27
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Golang Weekly 第 603 期（2026-05-29）聚焦重磅消息：Go 1.27 将正式支持 <strong>generic methods（泛型方法）</strong>，这是 Go 泛型体系长期以来缺失的关键能力。此前一期 #601 深度解读了 Cilium 为何在 2026 年仍然选择将所有 Go 模块 vendor 到本地，涉及依赖安全、构建可重现性等工程实践考量。推荐订阅以跟踪 Go 生态每周动态。
+      </p>
+      <p style="margin:0;">
+        <a href="https://golangweekly.com/issues" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          查看期刊存档 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-05-29（最近期）</span>
+      </p>
+    </div>
+
+    <!-- Arjan Codes -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Arjan Codes &nbsp;<span style="background:#fff3e0;color:#e65100;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700;">📹 视频</span>
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://www.youtube.com/watch?v=43sDzyanzR0" style="color:#1a1a1a;text-decoration:none;">
+          Too Many Parameters? Use This Pattern
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Arjan Codes 近期视频探讨 Python 函数参数过多时的代码设计问题，介绍如何用特定设计模式（Parameter Object 等）重构长参数列表，提升代码可读性与可维护性。视频结合实际代码演示，讲解何时引入数据类（dataclass）或命名元组来封装参数组，是 Pythonic 代码设计的实用指南。
+      </p>
+      <p style="margin:0;">
+        <a href="https://www.youtube.com/watch?v=43sDzyanzR0" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          观看视频 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-06-26</span>
+      </p>
+    </div>
+
+    <!-- Brendan Gregg -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Brendan Gregg Blog
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://www.brendangregg.com/blog/" style="color:#1a1a1a;text-decoration:none;">
+          Why I Joined OpenAI
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Linux 性能工程领域的传奇人物 Brendan Gregg 在离开 Intel 后，于 2026 年初发博文阐述加入 OpenAI 的原因。他长期专注于 CPU 性能剖析、eBPF、火焰图等底层性能工具，此次转型至 AI 公司意味着将系统性能工程经验应用于大规模 LLM 推理与训练基础设施优化领域，值得关注其后续在 AI 系统性能方向的产出。
+      </p>
+      <p style="margin:0;">
+        <a href="https://www.brendangregg.com/blog/" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          阅读原文 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-02-07</span>
+      </p>
+    </div>
+
+    <!-- Hussein Nasser -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Hussein Nasser &nbsp;<span style="background:#fff3e0;color:#e65100;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700;">📹 视频</span>
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://www.youtube.com/@hnasr" style="color:#1a1a1a;text-decoration:none;">
+          The Backend Engineering Show — 后端中间件超时处理专题
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Hussein Nasser 的 Backend Engineering Show 持续更新，近期内容聚焦前后端之间的 timeout 机制设计，包括 connection timeout、read timeout 的本质区别，以及在分布式系统中如何设置合理的超时链路避免级联故障。该频道以实例驱动的教学风格著称，适合深入理解网络协议与后端通信原理。
+      </p>
+      <p style="margin:0;">
+        <a href="https://www.youtube.com/@hnasr" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          访问频道 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">持续更新中</span>
+      </p>
+    </div>
+
+    <!-- Fireship -->
+    <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-size:11px;font-weight:600;color:#1a73e8;text-transform:uppercase;letter-spacing:0.8px;">
+        Fireship &nbsp;<span style="background:#fff3e0;color:#e65100;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700;">📹 视频</span>
+      </p>
+      <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.4;">
+        <a href="https://www.youtube.com/watch?v=EKOU3JWDNLI" style="color:#1a1a1a;text-decoration:none;">
+          The Unhinged World of Tech in 2026...
+        </a>
+      </h2>
+      <p style="margin:0 0 10px 0;font-size:14px;line-height:1.7;color:#333;">
+        Fireship 年初的技术趋势预测视频回顾了 2026 年对开发者影响最深的技术浪潮，涵盖家用机器人、量子计算以及 AI 编码工具的狂飙发展。以快节奏、高密度的剪辑风格著称，4.2M 订阅者、超 7 亿次播放，是了解技术生态全貌的高效入口。频道每周持续上传新视频，建议直接访问频道查看最新内容。
+      </p>
+      <p style="margin:0;">
+        <a href="https://www.youtube.com/watch?v=EKOU3JWDNLI" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          观看视频 →
+        </a>
+        &nbsp;
+        <a href="https://www.youtube.com/@Fireship/videos" style="color:#1a73e8;font-size:13px;text-decoration:none;font-weight:500;">
+          查看全部视频 →
+        </a>
+        <span style="color:#888;font-size:12px;margin-left:12px;">2026-01-14</span>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div style="margin-top:32px;padding-top:20px;border-top:1px solid #e8e8e8;text-align:center;">
+      <p style="margin:0;font-size:12px;color:#999;line-height:1.6;">
+        软件技术日报 · 后端开发 &amp; Python &amp; Go<br>
+        自动生成于 2026-07-29 · 如需退订请忽略此邮件
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
