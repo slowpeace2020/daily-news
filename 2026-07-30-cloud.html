@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-30</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background-color: #ffffff; color: #333333; max-width: 680px; margin: 0 auto; padding: 20px;">
+
+  <!-- Header -->
+  <div style="background-color: #1a1a2e; color: #ffffff; padding: 28px 24px; border-radius: 8px 8px 0 0; text-align: center;">
+    <h1 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 0.5px;">软件技术日报</h1>
+    <p style="margin: 10px 0 0 0; font-size: 14px; color: #a0aec0;">【软件工程 &amp; 云原生】&nbsp;·&nbsp; 2026-07-30</p>
+  </div>
+
+  <!-- Subtitle bar -->
+  <div style="background-color: #eef3fb; padding: 10px 24px; border-left: 4px solid #4a90e2;">
+    <p style="margin: 0; font-size: 13px; color: #555; font-style: italic;">今日涵盖 3 个渠道 · SRE Weekly &nbsp;|&nbsp; ByteByteGo &nbsp;|&nbsp; TLDR Tech</p>
+  </div>
+
+  <!-- ── SRE Weekly ── -->
+  <div style="padding: 26px 24px; border-bottom: 1px solid #e8e8e8;">
+    <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px;">SRE Weekly &nbsp;·&nbsp; Issue #524 &nbsp;·&nbsp; 2026-07-26</div>
+    <h2 style="margin: 0 0 12px 0; font-size: 17px; color: #1a1a2e; line-height: 1.4;">AI 生成代码的 On-call 成本 &amp; Runbooks + RAG 实践</h2>
+    <p style="margin: 0 0 14px 0; font-size: 14px; line-height: 1.75; color: #444;">
+      本期 SRE Weekly（Issue #524）聚焦 AI 与可靠性工程的深度交汇。
+      <strong>「The on-call cost of AI-generated code」</strong> 探讨了当 AI 编写的代码在生产环境发生故障时，on-call 工程师难以快速理解和调试这些代码所带来的隐性成本。
+      <strong>「Runbooks + RAG: How I Gave My AI SRE Agent the Context It Was Missing」</strong> 则详细描述了如何通过检索增强生成（RAG）为 AI SRE Agent 注入 Runbook 上下文，提升故障自动响应的准确性，并坦诚分析了当前方案的薄弱点。
+      此外，<strong>「Minus Two Minutes」</strong> 探索了"负向故障检测时间"的概念——在实际影响用户之前就预测并感知到系统异常。
+    </p>
+    <a href="https://sreweekly.com/sre-weekly-issue-524/" style="display: inline-block; color: #4a90e2; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读完整 Issue #524</a>
+  </div>
+
+  <!-- ── ByteByteGo ── -->
+  <div style="padding: 26px 24px; border-bottom: 1px solid #e8e8e8;">
+    <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px;">ByteByteGo &nbsp;·&nbsp; 2026-07-22</div>
+    <h2 style="margin: 0 0 12px 0; font-size: 17px; color: #1a1a2e; line-height: 1.4;">Best Practices for Building AI Agents That Work in Production</h2>
+    <p style="margin: 0 0 14px 0; font-size: 14px; line-height: 1.75; color: #444;">
+      ByteByteGo 最新深度文章，直击 AI Agent 演示效果与生产稳定性之间的落差问题。
+      文章揭示一个核心洞见：真实生产系统对 LLM 的依赖远低于演示层面的表现——绝大多数业务逻辑运行于确定性的传统代码路径，LLM 只在少数关键决策点被调用。
+      文章重点介绍了 context maturity level（上下文成熟度分级）、MCP / Skills 集成方案，以及头部工程团队如何构建 context engine 来提升 Agent 的决策质量与可维护性。
+    </p>
+    <a href="https://blog.bytebytego.com/p/best-practices-for-building-ai-agents" style="display: inline-block; color: #4a90e2; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读原文</a>
+  </div>
+
+  <!-- ── TLDR Tech ── -->
+  <div style="padding: 26px 24px; border-bottom: 1px solid #e8e8e8;">
+    <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px;">TLDR Tech &nbsp;·&nbsp; 2026-07-28</div>
+    <h2 style="margin: 0 0 12px 0; font-size: 17px; color: #1a1a2e; line-height: 1.4;">OpenAI $500B 数据中心 + Nvidia 入股 SSI，AI 云基础设施投资加速</h2>
+    <p style="margin: 0 0 14px 0; font-size: 14px; line-height: 1.75; color: #444;">
+      本期 TLDR Tech 头条聚焦 AI 云基础设施的超级扩张周期：Nvidia 与 OpenAI 正在推进在俄亥俄州南部建设一座容量达 <strong>10 吉瓦（GW）</strong>、总投资约 <strong>$500B</strong> 的数据中心项目，若落地将成为全球最大规模算力集群。
+      与此同时，Nvidia 宣布战略入股前 OpenAI 首席科学家 Ilya Sutskever 创立的 <strong>Safe Superintelligence（SSI）</strong>，并以大量旗舰 GPU 资源作为长期合作背书。
+      Amazon 的低轨卫星宽带项目 <strong>Kuiper</strong> 也正式入场，对标 SpaceX Starlink，云厂商与算力基础设施的边界正在快速融合。
+    </p>
+    <a href="https://tldr.tech/tech/2026-07-28" style="display: inline-block; color: #4a90e2; text-decoration: none; font-size: 13px; font-weight: 600;">→ 阅读完整简报</a>
+  </div>
+
+  <!-- Footer -->
+  <div style="padding: 20px 24px; background-color: #f8f9fa; border-radius: 0 0 8px 8px; text-align: center;">
+    <p style="margin: 0; font-size: 12px; color: #999;">本日报由 Daily News Bot 自动生成 &nbsp;·&nbsp; 2026-07-30</p>
+    <p style="margin: 8px 0 0 0; font-size: 12px; color: #bbb;">
+      已覆盖渠道：SRE Weekly · ByteByteGo · TLDR Tech<br>
+      （Thoughtworks Technology Radar 最新版为 2026-04，TechWorld with Nana 本周无确认更新，均已跳过）
+    </p>
+  </div>
+
+</body>
+</html>
