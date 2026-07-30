@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 & Python & Go】- 2026-07-30</title>
+</head>
+<body style="margin:0;padding:0;background:#ffffff;font-family:'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;font-size:15px;line-height:1.7;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;">
+  <tr>
+    <td align="center" style="padding:0;">
+      <table width="680" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;width:100%;">
+
+        <!-- Header -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#1a2a3a 0%,#2c4a6e 100%);padding:36px 40px 28px;border-radius:4px 4px 0 0;">
+            <div style="font-size:11px;font-weight:600;letter-spacing:2px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">Daily Digest</div>
+            <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报</h1>
+            <div style="font-size:14px;color:#a8c8e8;margin-top:6px;">后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 2026-07-30</div>
+          </td>
+        </tr>
+
+        <!-- Intro -->
+        <tr>
+          <td style="background:#f8fafc;padding:16px 40px;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <p style="margin:0;font-size:13px;color:#64748b;">
+              本期收录 7 条精选内容，涵盖 Python JIT 编译器动态、Go 并发陷阱、Netflix 自建 LLM 推理平台、AI 驱动的 Harness Engineering 等热门议题。
+            </p>
+          </td>
+        </tr>
+
+        <!-- ===== Item 1: Martin Fowler ===== -->
+        <tr>
+          <td style="padding:28px 40px 0;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <div style="border-top:2px solid #2c4a6e;padding-top:20px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">Martin Fowler Blog</div>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2a3a;line-height:1.4;">
+                Fragments: July 21 — Harness Engineering &amp; Future of Software Development Retreat
+              </h2>
+              <p style="margin:0 0 12px;color:#374151;font-size:14px;line-height:1.8;">
+                Martin Fowler 整理了 Thoughtworks 第二届「软件开发未来研讨会」（欧洲站）的五大核心发现：代码生成已不再是瓶颈，<strong>验证（Verification）</strong>才是真正的难题；<em>Harness Engineering</em> 正作为一门独立工程学科浮现——它专注于管理 AI coding agent 的上下文、测试策略和工具链。研讨会同时警示了「学徒危机」（apprenticeship crisis）和高管与工程师之间的预期鸿沟，并指出遗留系统现代化是当前最清晰的价值洼地。
+              </p>
+              <a href="https://martinfowler.com/fragments/2026-07-21.html" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- ===== Item 2: Netflix Tech Blog ===== -->
+        <tr>
+          <td style="padding:28px 40px 0;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <div style="border-top:1px solid #e2e8f0;padding-top:20px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">Netflix Tech Blog &nbsp;·&nbsp; 2026-07-17</div>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2a3a;line-height:1.4;">
+                In-House LLM Serving at Netflix
+              </h2>
+              <p style="margin:0 0 12px;color:#374151;font-size:14px;line-height:1.8;">
+                Netflix 没有选择调用第三方 LLM API，而是将<strong>完整推理栈（engine 选型、模型打包、API 设计、部署策略、输出约束强制执行）</strong>内嵌进已有的生产环境，而非另建独立的 ML silo。文章重点分享了关键架构决策背后的「为什么」，以及生产实战中那些设计阶段没有预料到的挑战——对希望自建 LLM 服务的团队具有很高参考价值。
+              </p>
+              <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- ===== Item 3: Real Python ===== -->
+        <tr>
+          <td style="padding:28px 40px 0;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <div style="border-top:1px solid #e2e8f0;padding-top:20px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">Real Python &nbsp;·&nbsp; 2026-07</div>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2a3a;line-height:1.4;">
+                Python's JIT Faces Some Challenges — July 2026 News
+              </h2>
+              <p style="margin:0 0 12px;color:#374151;font-size:14px;line-height:1.8;">
+                Python Steering Council 给 CPython 实验性 <strong>JIT 编译器</strong>发出了「六个月最后期限」：若不提交正式 standards-track PEP，JIT 代码将从主分支移除。对此，Savannah Ostrowski、Brandt Bucher（JIT 原始作者）等人迅速提交了 <em>PEP 836「JIT Go Brrr」</em>，目标 Python 3.16，承诺相较标准解释器实现 20% 性能提升，并保证与 profiler、debugger、coverage 等工具链完全兼容。文章同时覆盖 EuroPython 2026 及 Python 3.15 最终 beta 版本的进展。
+              </p>
+              <a href="https://realpython.com/python-news-july-2026/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- ===== Item 4: Dan Luu ===== -->
+        <tr>
+          <td style="padding:28px 40px 0;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <div style="border-top:1px solid #e2e8f0;padding-top:20px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">Dan Luu Blog &nbsp;·&nbsp; 2026-07-26</div>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2a3a;line-height:1.4;">
+                Exercises in Benchmarking &amp; Evals, Part 7: DeepSWE, Senior SWE-Bench &amp; Napkin Math
+              </h2>
+              <p style="margin:0 0 12px;color:#374151;font-size:14px;line-height:1.8;">
+                Dan Luu 深入分析了为何<strong>现有 LLM coding benchmark 无法真实反映 agentic 工作流下的性能</strong>。Agentic 设置让 LLM 进入「写代码 → 运行测试 → 根据失败迭代」的循环，某些模型在单次 pass 时达到 80% 通过率，一旦进入多轮修复循环却跌至 50% 以下。文章同时批评了 pass@k 指标忽略 token 消耗和执行时间成本的缺陷，对评估框架设计者和基础设施工程师均有启发。
+              </p>
+              <a href="https://danluu.com/" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- ===== Item 5: Golang Weekly ===== -->
+        <tr>
+          <td style="padding:28px 40px 0;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <div style="border-top:1px solid #e2e8f0;padding-top:20px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">Golang Weekly &nbsp;·&nbsp; Issue #611</div>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2a3a;line-height:1.4;">
+                Go Can't Kill a Stuck Goroutine — and Why That Matters
+              </h2>
+              <p style="margin:0 0 12px;color:#374151;font-size:14px;line-height:1.8;">
+                本期头条聚焦 Go 运行时一个长期存在的设计约束：<strong>goroutine 一旦陷入无限等待，无法被程序从外部强制终止</strong>。文章梳理了社区围绕「可中断 goroutine」提案的历史讨论，并介绍了 River v0.40 新增的 stuck-job handler 等实际规避方案。对构建高可靠后台任务队列和长连接服务的工程师有直接参考意义；同期还涵盖 Go 1.27 Release Candidate 进展与多个缓存库设计对比。
+              </p>
+              <a href="https://golangweekly.com/issues/611" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- ===== Item 6: Python Weekly ===== -->
+        <tr>
+          <td style="padding:28px 40px 0;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <div style="border-top:1px solid #e2e8f0;padding-top:20px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">Python Weekly &nbsp;·&nbsp; Issue 751 (2026-06-25)</div>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2a3a;line-height:1.4;">
+                Python Weekly Issue 751 — 精选文章与开源项目
+              </h2>
+              <p style="margin:0 0 12px;color:#374151;font-size:14px;line-height:1.8;">
+                本期 Python Weekly 精选内容涵盖：Python <strong>class 设计最佳实践</strong>、macOS 上基于 FSEvents 的文件系统监控实现、以及 django-q2 任务队列库的深度介绍。此外还收录了 Python 生态最新工具动态，适合希望持续跟进 Python 实用库与工程模式的开发者作为每周阅读清单。
+              </p>
+              <a href="https://www.pythonweekly.com/p/python-weekly-issue-751-june-25-2026" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">阅读原文 →</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- ===== Item 7: Arjan Codes ===== -->
+        <tr>
+          <td style="padding:28px 40px 0;border-left:1px solid #e2e8f0;border-right:1px solid #e2e8f0;">
+            <div style="border-top:1px solid #e2e8f0;padding-top:20px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#7eb8e8;text-transform:uppercase;margin-bottom:8px;">📹 视频 &nbsp;·&nbsp; Arjan Codes &nbsp;·&nbsp; 2026-06-26</div>
+              <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2a3a;line-height:1.4;">
+                Too Many Parameters? Use This Pattern
+              </h2>
+              <p style="margin:0 0 12px;color:#374151;font-size:14px;line-height:1.8;">
+                当函数参数数量失控时，Arjan 介绍了如何用<strong>结构化参数对象（Parameter Object / Config Object）模式</strong>重构代码。视频通过 Python 实例演示，将多个散乱参数封装为具名 dataclass，提升接口可读性与可维护性，同时减少调用方的认知负担。这是软件设计领域经典的「重构手法」，Arjan 的讲解风格清晰易仿。
+              </p>
+              <a href="https://www.youtube.com/watch?v=43sDzyanzR0" style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border-bottom:1px solid #bfdbfe;padding-bottom:1px;">观看视频 →</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background:#f8fafc;padding:24px 40px 28px;border:1px solid #e2e8f0;border-radius:0 0 4px 4px;">
+            <div style="border-top:1px solid #e2e8f0;padding-top:20px;">
+              <p style="margin:0;font-size:12px;color:#94a3b8;line-height:1.8;">
+                本邮件由自动化 Daily News Bot 生成 &nbsp;·&nbsp; 覆盖渠道：Martin Fowler Blog · Netflix Tech Blog · Real Python · Dan Luu · Golang Weekly · Python Weekly · Arjan Codes<br>
+                跳过渠道（过去 7 天无新内容）：High Scalability · Anthony GG · Hussein Nasser · Brendan Gregg · The Go Blog · Go by Example · Fireship<br>
+                生成时间：2026-07-30
+              </p>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
