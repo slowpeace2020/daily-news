@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【AI 技术前沿】- 2026-07-31</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif;color:#1a1a1a;line-height:1.7;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;padding:24px 0;">
+  <tr>
+    <td align="center">
+      <table width="680" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:36px 40px;">
+            <p style="margin:0;font-size:12px;color:#8ab4f8;letter-spacing:2px;text-transform:uppercase;font-weight:600;">Daily Tech Digest</p>
+            <h1 style="margin:8px 0 4px;font-size:26px;color:#ffffff;font-weight:700;letter-spacing:-0.3px;">AI 技术前沿</h1>
+            <p style="margin:0;font-size:13px;color:#a0b4cc;">2026 年 07 月 31 日（星期五）&nbsp;|&nbsp;精选 7 条内容</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:32px 40px 0;">
+
+            <!-- Intro -->
+            <p style="margin:0 0 28px;font-size:14px;color:#555;border-left:3px solid #4285f4;padding-left:12px;">
+              本期聚焦：Anthropic 开源模型立场声明、OpenAI GPT-5.6 效率革命、Google DeepMind 网络安全专属 Gemini、HuggingFace 机器人策略新版本、The Batch 开源模型争议、Latent Space 深度对话 ChatGPT Work 团队，以及 TWIML AI 前沿研究探讨。
+            </p>
+
+            <!-- ─── 1. Anthropic ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8f9ff;border-radius:8px;border-left:4px solid #4285f4;overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px 24px;">
+                        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#4285f4;letter-spacing:1.5px;text-transform:uppercase;">Anthropic Blog</p>
+                        <h2 style="margin:0 0 12px;font-size:17px;color:#1a1a1a;font-weight:700;line-height:1.4;">
+                          <a href="https://www.anthropic.com/news/position-open-weights-models" style="color:#1a1a1a;text-decoration:none;">Our Position on Open-Weights Models</a>
+                        </h2>
+                        <p style="margin:0 0 14px;font-size:14px;color:#333;">
+                          Anthropic CEO Dario Amodei 于 7 月 28 日发布官方立场声明，明确表示公司从未主张禁止 open-weights 模型，并将其定性为公共资产。声明的核心关切在于：当模型能力达到"危险阈值"时，必须强制要求安全测试；同时对将高端 GPU 出口给威权政权的行为表示担忧。此次声明是对 Nvidia 主导的行业公开信的直接回应，凸显了 AI 安全与开放访问之间持续升温的政策博弈。
+                        </p>
+                        <a href="https://www.anthropic.com/news/position-open-weights-models" style="display:inline-block;font-size:12px;color:#4285f4;text-decoration:none;border:1px solid #4285f4;border-radius:4px;padding:4px 12px;font-weight:600;">阅读原文 →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:0 0 24px;">
+
+            <!-- ─── 2. OpenAI ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8fff8;border-radius:8px;border-left:4px solid #34a853;overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px 24px;">
+                        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#34a853;letter-spacing:1.5px;text-transform:uppercase;">OpenAI Blog</p>
+                        <h2 style="margin:0 0 12px;font-size:17px;color:#1a1a1a;font-weight:700;line-height:1.4;">
+                          <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" style="color:#1a1a1a;text-decoration:none;">How GPT-5.6 Fuses Frontier Intelligence with Frontier Efficiency</a>
+                        </h2>
+                        <p style="margin:0 0 14px;font-size:14px;color:#333;">
+                          OpenAI 于 7 月 29 日发布技术深度解析，揭示 GPT-5.6 家族（Sol / Terra / Luna）在智能与效率上同步突破的实现路径。GPT-5.6 Sol 在推理成本降低 20%、token 生成效率提升 15% 的前提下，仍在编程、知识问答、网络安全等基准上超越前代及竞品。三层级产品矩阵的发布，标志着 frontier model 正式进入"性价比竞争"新阶段。
+                        </p>
+                        <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/" style="display:inline-block;font-size:12px;color:#34a853;text-decoration:none;border:1px solid #34a853;border-radius:4px;padding:4px 12px;font-weight:600;">阅读原文 →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:0 0 24px;">
+
+            <!-- ─── 3. Google DeepMind ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="background:#fff8f8;border-radius:8px;border-left:4px solid #ea4335;overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px 24px;">
+                        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#ea4335;letter-spacing:1.5px;text-transform:uppercase;">Google DeepMind Blog</p>
+                        <h2 style="margin:0 0 12px;font-size:17px;color:#1a1a1a;font-weight:700;line-height:1.4;">
+                          <a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" style="color:#1a1a1a;text-decoration:none;">Introducing Gemini 3.5 Flash Cyber</a>
+                        </h2>
+                        <p style="margin:0 0 14px;font-size:14px;color:#333;">
+                          Google DeepMind 于 7 月 21 日推出 Gemini 3.5 Flash Cyber，这是专为网络安全场景深度调优的 Gemini 变体模型。该模型在漏洞分析、威胁情报处理和安全代码审计方面表现突出，延续了 Gemini Flash 系列低延迟、高吞吐的优势，同时强化了对网络安全知识库的理解深度，为企业安全团队和 SecOps 工作流提供专属 AI 能力。
+                        </p>
+                        <a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" style="display:inline-block;font-size:12px;color:#ea4335;text-decoration:none;border:1px solid #ea4335;border-radius:4px;padding:4px 12px;font-weight:600;">阅读原文 →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:0 0 24px;">
+
+            <!-- ─── 4. Hugging Face ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="background:#fffbf0;border-radius:8px;border-left:4px solid #fbbc04;overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px 24px;">
+                        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#f9ab00;letter-spacing:1.5px;text-transform:uppercase;">Hugging Face Blog</p>
+                        <h2 style="margin:0 0 12px;font-size:17px;color:#1a1a1a;font-weight:700;line-height:1.4;">
+                          <a href="https://huggingface.co/blog/lerobot-release-v060" style="color:#1a1a1a;text-decoration:none;">LeRobot v0.6.0: Imagine, Evaluate, Improve</a>
+                        </h2>
+                        <p style="margin:0 0 14px;font-size:14px;color:#333;">
+                          LeRobot v0.6.0 于 7 月 7 日发布，引入"先想象再行动"机制——机器人策略在执行前先通过 world model 对未来帧进行预测，从而显著提升动作规划的鲁棒性。新版本还集成了 reward model 自动评估框架与新的 simulation benchmark，形成完整的"生成→评估→改进"闭环学习体系，是具身智能（embodied AI）领域的重要工程进展。
+                        </p>
+                        <a href="https://huggingface.co/blog/lerobot-release-v060" style="display:inline-block;font-size:12px;color:#f9ab00;text-decoration:none;border:1px solid #f9ab00;border-radius:4px;padding:4px 12px;font-weight:600;">阅读原文 →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:0 0 24px;">
+
+            <!-- ─── 5. The Batch ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8f0ff;border-radius:8px;border-left:4px solid #9c27b0;overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px 24px;">
+                        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#9c27b0;letter-spacing:1.5px;text-transform:uppercase;">The Batch · DeepLearning.AI</p>
+                        <h2 style="margin:0 0 12px;font-size:17px;color:#1a1a1a;font-weight:700;line-height:1.4;">
+                          <a href="https://www.deeplearning.ai/the-batch/" style="color:#1a1a1a;text-decoration:none;">开源模型与网络安全：前沿实验室的双重标准争议（7 月 24 日刊）</a>
+                        </h2>
+                        <p style="margin:0 0 14px;font-size:14px;color:#333;">
+                          本期 The Batch 深度分析了一场正在发酵的政策辩论：部分前沿实验室一边强调开源模型对网络攻击的危险性，一边将自家闭源模型包装为"更安全的选择"。文章指出这种叙事中潜在的利益冲突，并梳理了目前学界与产业界对"开放模型是否本质上更具风险"这一问题的不同立场，为开发者提供了理解 AI 政策走向的重要背景。
+                        </p>
+                        <a href="https://www.deeplearning.ai/the-batch/" style="display:inline-block;font-size:12px;color:#9c27b0;text-decoration:none;border:1px solid #9c27b0;border-radius:4px;padding:4px 12px;font-weight:600;">阅读原文 →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:0 0 24px;">
+
+            <!-- ─── 6. Latent Space Podcast ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f0f8ff;border-radius:8px;border-left:4px solid #1565c0;overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px 24px;">
+                        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#1565c0;letter-spacing:1.5px;text-transform:uppercase;">🎧 播客 · Latent Space</p>
+                        <h2 style="margin:0 0 12px;font-size:17px;color:#1a1a1a;font-weight:700;line-height:1.4;">
+                          <a href="https://www.latent.space/p/chatgpt-work" style="color:#1a1a1a;text-decoration:none;">Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI</a>
+                        </h2>
+                        <p style="margin:0 0 14px;font-size:14px;color:#333;">
+                          7 月 28 日最新一期，OpenAI 核心产品工程负责人 Akshay Nathan 深度复盘了 ChatGPT Work 的构建历程：从面向开发者的 Codex 到服务千万用户的通用工作助手，背后是 Sites、OpenClaw、Memory、Subagents、Finance 等多个子系统的协同演进。本集核心洞察是：当构建成本趋近于零，AI 产品的真正瓶颈将是"品位（taste）"与"想法（ideas）"，而非技术能力本身。
+                        </p>
+                        <a href="https://www.latent.space/p/chatgpt-work" style="display:inline-block;font-size:12px;color:#1565c0;text-decoration:none;border:1px solid #1565c0;border-radius:4px;padding:4px 12px;font-weight:600;">收听播客 →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:0 0 24px;">
+
+            <!-- ─── 7. TWIML AI Podcast ─── -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:32px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f0fff8;border-radius:8px;border-left:4px solid #00897b;overflow:hidden;">
+                    <tr>
+                      <td style="padding:20px 24px;">
+                        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#00897b;letter-spacing:1.5px;text-transform:uppercase;">🎧 播客 · TWIML AI Podcast</p>
+                        <h2 style="margin:0 0 12px;font-size:17px;color:#1a1a1a;font-weight:700;line-height:1.4;">
+                          <a href="https://twimlai.com/podcast/twimlai/" style="color:#1a1a1a;text-decoration:none;">Ep. 771 · How AI Learns to Smell</a>
+                        </h2>
+                        <p style="margin:0 0 14px;font-size:14px;color:#333;">
+                          7 月 8 日最新一期深入探讨了嗅觉 AI 的 foundation model 构建方法：如何跨神经网络架构和不同感知领域实现知识迁移，以及这一方法为何能大幅降低专用模型的开发成本。嘉宾还展望了未来的 AI 系统有望直接在"模型集合"而非不断扩大的数据集上进行训练——这与多模态 foundation model 的发展路径高度契合，是一个值得关注的前沿研究方向。
+                        </p>
+                        <a href="https://twimlai.com/podcast/twimlai/" style="display:inline-block;font-size:12px;color:#00897b;text-decoration:none;border:1px solid #00897b;border-radius:4px;padding:4px 12px;font-weight:600;">收听播客 →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background:#f5f5f5;padding:20px 40px;border-top:1px solid #e0e0e0;">
+            <p style="margin:0;font-size:12px;color:#888;text-align:center;">
+              软件技术日报 · AI 技术前沿 · 自动生成于 2026-07-31<br>
+              内容来源：Anthropic / OpenAI / Google DeepMind / Hugging Face / DeepLearning.AI / Latent Space / TWIML AI<br>
+              <span style="color:#bbb;">如需退订，请回复此邮件</span>
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
