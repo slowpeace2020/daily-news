@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-07-31</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:Arial,Helvetica,sans-serif;color:#333333;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center" style="padding:20px 10px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:660px;">
+
+        <!-- Header -->
+        <tr>
+          <td style="padding:0 0 8px 0;">
+            <h1 style="margin:0;font-size:22px;font-weight:bold;color:#1a1a2e;border-bottom:3px solid #2c7be5;padding-bottom:12px;">
+              软件技术日报 · 软件工程 &amp; 云原生
+            </h1>
+            <p style="margin:6px 0 0 0;font-size:12px;color:#888888;">
+              2026-07-31 &nbsp;|&nbsp; Kubernetes &nbsp;·&nbsp; 云原生架构 &nbsp;·&nbsp; SRE 实践
+            </p>
+          </td>
+        </tr>
+
+        <!-- Spacer -->
+        <tr><td style="height:20px;"></td></tr>
+
+        <!-- ===== Item 1: Thoughtworks ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              🔭 Thoughtworks Technology Radar
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              As AI Accelerates Software Complexity, Return to Engineering Fundamentals to Combat Cognitive Debt
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              Thoughtworks 第34卷 Technology Radar（2026年4月）聚焦"认知债务"（cognitive debt）这一新兴问题：AI 辅助开发在持续生成大量代码的同时，正在拉大人类与软件系统之间的理解鸿沟。报告强调 Kubernetes 平台工程与可观测性实践的重要性，建议工程团队在拥抱 AI 工具的同时回归基础工程纪律。此外，报告还指出命令行工具与经典实践的复兴，是对近年过度追求新颖性的一种行业修正。
+            </p>
+            <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 阅读原文 →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td style="height:4px;"></td></tr>
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:20px 0;"></td></tr>
+
+        <!-- ===== Item 2: SRE Weekly ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              🛡️ SRE Weekly（2026-07-26 期）
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              AI 生成代码的 On-Call 代价、负向检测时间，以及 Honeycomb 的 Kafka 优化实践
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              本期 SRE Weekly 深入探讨 AI 生成代码对 on-call 工程师带来的额外认知负担：当生产事故由 AI 编写的代码引发时，工程师往往难以快速理解代码逻辑，从而拖慢事故响应速度。同期介绍了"负向检测时间"（Negative Time To Detection）这一先进 SRE 实践——即通过主动监控在用户察觉问题之前就发现并处理故障。此外，还有 Honeycomb 团队在大规模可观测性场景下优化 Kafka 运营的工程实战。
+            </p>
+            <a href="https://sreweekly.com/"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 阅读原文 →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:20px 0;"></td></tr>
+
+        <!-- ===== Item 3: ByteByteGo ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              ⚡ ByteByteGo（2026-07-22）
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              Best Practices for Building AI Agents That Work in Production
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              ByteByteGo 系统梳理了将 AI Agents 成功落地到生产环境的关键最佳实践，参考了 Twelve-Factor Agents、Anthropic 及 Intercom 等团队的工程经验。文章提炼出三大核心原则：context 管理决定模型每次调用所能"看到"的信息边界；control flow（控制流）应由确定性代码主导而非模型自身；state（状态）应持久化于软件层，保持模型自身无状态（stateless）以确保可伸缩性与可重放性。
+            </p>
+            <a href="https://blog.bytebytego.com/p/best-practices-for-building-ai-agents"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 阅读原文 →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:20px 0;"></td></tr>
+
+        <!-- ===== Item 4: TLDR Tech ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              📰 TLDR Tech（2026-07-28）
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              OpenAI 宣布 $5000 亿数据中心计划；Amazon 推出 Starlink 竞品；Nvidia 入股 SSI
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              TLDR Tech 7月28日报道三大云基础设施动态：OpenAI 披露斥资 5000 亿美元扩建数据中心的宏大计划，标志着大规模 AI 算力基础设施建设进入新阶段；Amazon 发布低轨卫星宽带服务与 Starlink 正面竞争，云连接边界进一步延伸；Nvidia 宣布战略投资 Safe Superintelligence（SSI）——由 OpenAI 前首席科学家 Ilya Sutskever 创立，双方将就安全 AI 基础设施展开长期合作。
+            </p>
+            <a href="https://tldr.tech/tech/2026-07-28"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 阅读原文 →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:24px 0 16px 0;"></td></tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0;font-size:11px;color:#aaaaaa;text-align:center;line-height:1.6;">
+              每日技术速报 &nbsp;·&nbsp; 软件工程 &amp; 云原生专版 &nbsp;·&nbsp; 2026-07-31<br>
+              渠道：Thoughtworks Radar · SRE Weekly · ByteByteGo · TLDR Tech
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
