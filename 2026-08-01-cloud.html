@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-08-01</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:Arial,Helvetica,sans-serif;color:#333333;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center" style="padding:20px 10px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:660px;">
+
+        <!-- Header -->
+        <tr>
+          <td style="padding:0 0 8px 0;">
+            <h1 style="margin:0;font-size:22px;font-weight:bold;color:#1a1a2e;border-bottom:3px solid #2c7be5;padding-bottom:12px;">
+              软件技术日报 · 软件工程 &amp; 云原生
+            </h1>
+            <p style="margin:6px 0 0 0;font-size:12px;color:#888888;">
+              2026-08-01 &nbsp;|&nbsp; Kubernetes &nbsp;·&nbsp; 云原生架构 &nbsp;·&nbsp; SRE 实践
+            </p>
+          </td>
+        </tr>
+
+        <!-- Spacer -->
+        <tr><td style="height:20px;"></td></tr>
+
+        <!-- ===== Item 1: Thoughtworks ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              🔭 Thoughtworks Technology Radar
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              The Zero-Cost Fallacy: Open Source Software in the Agentic Era
+            </h2>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              Thoughtworks 博客最新文章深度剖析了 AI 智能体时代开源软件面临的结构性危机。文章核心论点是：开源的"分发零成本"长期遮蔽了高昂的维护成本，形成了一种根本性的资产定价错觉。随着 AI 代码生成工具批量产出代码，开源维护者的工作量急剧攀升，却缺乏相应的资助机制。文章尤其指出，在 AI agent 工具加速软件生成的今天，开源社区的可持续性问题正从潜在风险演变为迫切现实，值得工程团队与企业重新审视对开源依赖的治理策略。
+            </p>
+            <a href="https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 阅读原文 →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td style="height:4px;"></td></tr>
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:20px 0;"></td></tr>
+
+        <!-- ===== Item 2: SRE Weekly ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              📡 SRE Weekly
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              Issue #525 — 负 Time-to-Detection、AI 生成代码的值班代价与数据库事故根因
+            </h2>
+            <p style="margin:0 0 4px 0;font-size:12px;color:#888888;">2026-07-26</p>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              本期 SRE Weekly 聚焦三大实践主题：其一，"负 Time-to-Detection（负 TTD）"理念——借助异常预测，在用户感知到影响<em>之前</em>就发起响应，将 SRE 工作由救火转向主动防御。其二，探讨 AI 生成代码大量上线后的值班挑战：当 AI 编写的代码在生产环境出错时，工程师因缺乏上下文而难以快速定位与调试。此外还收录了"绝大多数数据库事故始于一条代价高昂的查询"的实战经验，以及 Honeycomb 团队重构 Kafka 运维体系的案例分享。
+            </p>
+            <a href="https://sreweekly.com/"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 查看最新一期 →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td style="height:4px;"></td></tr>
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:20px 0;"></td></tr>
+
+        <!-- ===== Item 3: ByteByteGo ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              ⚙️ ByteByteGo
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              A Detailed Guide to Idempotency, Delivery Semantics, and Deduplication
+            </h2>
+            <p style="margin:0 0 4px 0;font-size:12px;color:#888888;">2026-07-30</p>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              ByteByteGo 最新深度文章系统梳理了分布式系统中三种消息投递语义（at-most-once / at-least-once / exactly-once）及各自的适用场景，详解了幂等键（idempotency key）的设计原理与常见失效边界。文章以"客户付款请求超时后如何处理"为贯穿案例，说明任何 deduplication 方案都存在时间窗口限制，并揭示生产系统中 exactly-once 保证的真实含义。对构建云原生微服务间可靠通信、防止重复计费或重复操作的工程团队极具参考价值。
+            </p>
+            <a href="https://blog.bytebytego.com/p/a-detailed-guide-to-idempotency-delivery"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 阅读原文 →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td style="height:4px;"></td></tr>
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:20px 0;"></td></tr>
+
+        <!-- ===== Item 4: TLDR Tech / TLDR DevOps ===== -->
+        <tr>
+          <td style="padding:0;">
+            <p style="margin:0 0 6px 0;font-size:11px;font-weight:bold;color:#2c7be5;text-transform:uppercase;letter-spacing:0.5px;">
+              📰 TLDR Tech · TLDR DevOps
+            </p>
+            <h2 style="margin:0 0 10px 0;font-size:16px;font-weight:bold;color:#1a1a2e;line-height:1.4;">
+              本周 DevOps 动态：Kubernetes v1.37 开发推进 &amp; 容器运行时安全盲区警示
+            </h2>
+            <p style="margin:0 0 4px 0;font-size:12px;color:#888888;">2026-07-28 / 2026-07-30 本周期 TLDR DevOps</p>
+            <p style="margin:0 0 12px 0;font-size:14px;line-height:1.75;color:#444444;">
+              本周 TLDR DevOps 要点：Kubernetes v1.37 正处于积极开发阶段，官方已公布针对部分 API 的 deprecation 与移除计划，建议工程团队提前梳理集群配置受影响范围。此外，深度文章《Container Runtime Security in Kubernetes: What Teams Overlook》指出，许多团队仅关注 Kubernetes 层面的安全策略（如 RBAC、Network Policy），却忽略了容器运行时（containerd / runc）层面的逃逸防护与沙箱隔离机制——这是当前云原生安全实践中最常见的盲区之一，在生产环境中有真实的利用风险。
+            </p>
+            <a href="https://tldr.tech/devops"
+               style="color:#2c7be5;font-size:13px;text-decoration:none;font-weight:bold;">
+              📖 查看 TLDR DevOps →
+            </a>
+          </td>
+        </tr>
+
+        <tr><td style="height:4px;"></td></tr>
+        <tr><td><hr style="border:none;border-top:1px solid #e8e8e8;margin:20px 0;"></td></tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding:8px 0 20px 0;text-align:center;">
+            <p style="margin:0;font-size:11px;color:#aaaaaa;line-height:1.6;">
+              软件技术日报 · 每日自动汇编 &nbsp;·&nbsp; 2026-08-01<br>
+              涵盖渠道：Thoughtworks · SRE Weekly · ByteByteGo · TLDR Tech<br>
+              重点方向：Kubernetes &nbsp;·&nbsp; 云原生架构 &nbsp;·&nbsp; SRE 实践
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
