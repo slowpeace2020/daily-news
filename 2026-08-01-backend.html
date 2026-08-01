@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【后端开发 & Python & Go】- 2026-08-01</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+    .header {
+      border-bottom: 3px solid #1a56db;
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 22px;
+      color: #1a1a1a;
+      margin: 0 0 6px 0;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .header .subtitle {
+      font-size: 13px;
+      color: #6b7280;
+      margin: 0;
+    }
+    .section {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .source-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #ffffff;
+      background-color: #1a56db;
+      padding: 3px 9px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    .source-label.video {
+      background-color: #dc2626;
+    }
+    .article-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #111827;
+      margin: 0 0 10px 0;
+    }
+    .summary {
+      font-size: 14px;
+      color: #374151;
+      margin: 0 0 12px 0;
+    }
+    .read-more {
+      display: inline-block;
+      font-size: 13px;
+      color: #1a56db;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid #1a56db;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+    .read-more:hover {
+      background-color: #1a56db;
+      color: #ffffff;
+    }
+    .video-badge {
+      font-size: 13px;
+      color: #dc2626;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    .date-tag {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>软件技术日报【后端开发 & Python & Go】</h1>
+    <p class="subtitle">2026-08-01 &nbsp;|&nbsp; 精选自 Martin Fowler · Netflix Tech Blog · Real Python · Python Weekly · Golang Weekly · ArjanCodes · Dan Luu</p>
+  </div>
+
+  <!-- 1. Martin Fowler Blog -->
+  <div class="section">
+    <span class="source-label">Martin Fowler Blog</span>
+    <p class="date-tag">📅 2026-07-21</p>
+    <p class="article-title">Fragments: July 21 — Vibe Coding 与 Shadow IT 的代价</p>
+    <p class="summary">
+      Martin Fowler 分享了一则值得深思的案例：某公司大规模推行 vibe-coding（AI 辅助随意开发），随之涌现出难以管控的 shadow IT（未经审批的自建系统），最终不得不踩刹车。
+      Fowler 指出，类似 AI 这样的重大技术进步，几乎总会伴随经济泡沫——我们能清楚地看到泡沫的存在，却很难预判它何时破裂、破裂后又留下什么。
+      这篇 Fragment 提醒工程师：技术采纳的速度需要与治理能力的成熟同步，否则规模化的 AI 编码可能带来比预期更高的技术债。
+    </p>
+    <a class="read-more" href="https://martinfowler.com/fragments/2026-07-21.html" target="_blank">阅读原文 →</a>
+  </div>
+
+  <!-- 2. Netflix Tech Blog -->
+  <div class="section">
+    <span class="source-label">Netflix Tech Blog</span>
+    <p class="date-tag">📅 2026-07（本月发布）</p>
+    <p class="article-title">In-House LLM Serving at Netflix</p>
+    <p class="summary">
+      Netflix 选择完全自主部署 LLM 推理栈，将从模型部署到推理的全流程纳入现有生产基础设施，而非建立独立的 ML 孤岛。
+      这一决策使 Netflix 能够将 LLM 能力深度整合到推荐、个性化和搜索等核心业务场景，同时降低对外部 API 的依赖，并获得更精细的延迟与成本控制能力。
+      文章由 AI Platform 的 Model Runtime 团队撰写，详细介绍了自研推理服务的架构设计、调度策略与工程实践经验。
+    </p>
+    <a class="read-more" href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" target="_blank">阅读原文 →</a>
+  </div>
+
+  <!-- 3. Real Python -->
+  <div class="section">
+    <span class="source-label">Real Python</span>
+    <p class="date-tag">📅 2026-07（本月发布）</p>
+    <p class="article-title">Python's JIT Faces Some Challenges — Python News for July 2026</p>
+    <p class="summary">
+      Python Steering Council 要求实验性 JIT 编译器必须通过正式的标准化 PEP 流程，并设置六个月期限，否则将从主分支移除——这对 JIT 的未来走向是一个重要信号。
+      本月还发布了 Python 3.14.6 和 3.13.14 安全更新，Python 3.15 Beta 版正式亮相；Django 和 Starlette 修复了安全漏洞；scikit-learn 与 Polars 也发布了新版本。
+      此外，EuroPython 2026 在波兰克拉科夫成功举办，为社区带来了大量工程分享与实践案例。
+    </p>
+    <a class="read-more" href="https://realpython.com/python-news-july-2026/" target="_blank">阅读原文 →</a>
+  </div>
+
+  <!-- 4. Python Weekly -->
+  <div class="section">
+    <span class="source-label">Python Weekly</span>
+    <p class="date-tag">📅 2026-07-23（Issue ~755）</p>
+    <p class="article-title">Python Weekly 七月最新期 — Python 生态近期动态汇总</p>
+    <p class="summary">
+      本期 Python Weekly 汇聚了 Python 社区近一周内的精选内容，涵盖 Python 3.15 特性进展、JIT 编译器争议、主流框架新版本发布，以及开源工具与库的推荐。
+      Python Weekly 每周手工筛选最值得关注的文章、教程和项目，是紧跟 Python 生态动态的高效渠道之一。
+      可通过归档页面查看历史各期详细内容。
+    </p>
+    <a class="read-more" href="https://www.pythonweekly.com/archive/" target="_blank">查看归档 →</a>
+  </div>
+
+  <!-- 5. Golang Weekly -->
+  <div class="section">
+    <span class="source-label">Golang Weekly</span>
+    <p class="date-tag">📅 2026-07-31（Issue #612）</p>
+    <p class="article-title">Issue #612: A plan to bring generic collections to Go 1.28</p>
+    <p class="summary">
+      本期焦点是 Go 团队正式公布将泛型集合数据结构（如 Set、OrderedMap 等）引入 Go 1.28 标准库的计划，由 2025 年底成立的 Go Collections 工作组主导，遵循 Go 一贯的「实用主义与简洁」原则推进多个具体 proposal。
+      此外，本期还涵盖：实时观察 Go GC 垃圾回收器运行机制的调试技巧、如何实现「受监督的 fire-and-forget 任务」（确保 goroutine 在退出时得到妥善清理），以及设计既优雅又不牺牲性能的 API 的工程方法。
+      这是目前最新一期（July 31, 2026），内容极具实战参考价值。
+    </p>
+    <a class="read-more" href="https://golangweekly.com/latest" target="_blank">阅读原文 →</a>
+  </div>
+
+  <!-- 6. The Go Blog -->
+  <div class="section">
+    <span class="source-label">The Go Blog</span>
+    <p class="date-tag">📅 2026-02（近期重要发布）</p>
+    <p class="article-title">Go 1.26 正式发布 — Green Tea GC 成为默认 & 重大性能提升</p>
+    <p class="summary">
+      Go 1.26 于 2026 年 2 月发布，带来多项重量级改进：此前处于实验阶段的 Green Tea 垃圾回收器正式成为默认 GC，cgo 基础调用开销降低约 30%，编译器在更多场景下可将 slice 的 backing store 分配到栈上从而避免堆分配。
+      语言层面，内置函数 new 允许在操作数中指定初始值，泛型类型现在可以在自身的类型参数列表中进行自引用，简化了复杂数据结构的实现。
+      此外，go fix 工具完全重写，基于 Go analysis 框架并内置了数十个「现代化」迁移规则，是升级老旧 Go 代码库的利器。
+    </p>
+    <a class="read-more" href="https://go.dev/blog/go1.26" target="_blank">阅读原文 →</a>
+  </div>
+
+  <!-- 7. ArjanCodes (YouTube) -->
+  <div class="section">
+    <span class="source-label video">ArjanCodes</span>
+    <p class="date-tag">📅 2026-06-26 &nbsp;<span class="video-badge">📹 视频</span></p>
+    <p class="article-title">Too Many Parameters? Use This Pattern</p>
+    <p class="summary">
+      ArjanCodes 在这期视频中针对「函数参数过多」这一常见代码坏味道，介绍了将参数封装为配置对象或 Python dataclass 的「Parameter Object」设计模式。
+      通过具体代码示例，演示了如何将散乱的多个参数整合为一个有意义的数据类，从而提升函数签名的可读性、降低调用者的认知负担，并让单元测试更易于编写。
+      这是 Python 工程实践中立竿见影的重构手法，适合任何遭遇「参数爆炸」问题的代码库。
+    </p>
+    <a class="read-more" href="https://www.youtube.com/watch?v=43sDzyanzR0" target="_blank">观看视频 →</a>
+  </div>
+
+  <!-- 8. Dan Luu Blog -->
+  <div class="section">
+    <span class="source-label">Dan Luu Blog</span>
+    <p class="date-tag">📅 2026-07（近期发布）</p>
+    <p class="article-title">Agentic test processes, LLM benchmarks, and other notes on agentic coding</p>
+    <p class="summary">
+      Dan Luu 深入分析了 LLM agent 在测试流程中的实际表现：部分模型在「单次生成」场景下代码通过率高达 80%，但在无人工提示的情况下自主修复失败测试时，通过率骤降至 50% 以下，揭示了 benchmark 成绩与真实 agentic 能力之间的显著落差。
+      研究还指出，当前 agentic coding 最大的瓶颈并非代码生成本身，而是「可靠的测试用例生成」——这直接影响了 agent 能否自主完成完整的开发-测试闭环。
+      文章从 Galapagos Island 会议中的实地观察出发，对多个前沿 LLM benchmark（包括 DeepSWE、Senior SWE-Bench 等）进行了批判性审视。
+    </p>
+    <a class="read-more" href="https://danluu.com/ai-coding/" target="_blank">阅读原文 →</a>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>本日报由 Daily News Bot 自动整理 · 仅供学习参考</p>
+    <p>内容来源：martinfowler.com · netflixtechblog.com · realpython.com · pythonweekly.com · golangweekly.com · go.dev/blog · ArjanCodes · danluu.com</p>
+    <p>生成时间：2026-08-01</p>
+  </div>
+
+</div>
+</body>
+</html>
