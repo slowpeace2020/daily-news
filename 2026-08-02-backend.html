@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 &amp; Python &amp; Go】- 2026-08-02</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
+  <div style="max-width:680px;margin:0 auto;padding:20px;">
+
+    <!-- Header -->
+    <div style="background-color:#1a1a2e;padding:28px 32px;border-radius:8px 8px 0 0;">
+      <h1 style="color:#e8e8e8;font-size:22px;font-weight:700;margin:0 0 6px 0;">软件技术日报</h1>
+      <p style="color:#a0a0b0;font-size:13px;margin:0;">后端开发 &amp; Python &amp; Go &nbsp;|&nbsp; 2026-08-02（过去 7 天精选）</p>
+    </div>
+
+    <!-- Body -->
+    <div style="border:1px solid #e0e0e0;border-top:none;padding:0 28px;border-radius:0 0 8px 8px;">
+
+      <!-- 1. Martin Fowler -->
+      <div style="padding:26px 0;border-bottom:1px solid #f0f0f0;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#6b7280;margin:0 0 8px 0;">Martin Fowler Blog &nbsp;·&nbsp; 2026-07-21</p>
+        <h2 style="font-size:17px;font-weight:600;color:#111827;margin:0 0 10px 0;">
+          Future of Software Development Retreat：验证（Verification）才是新瓶颈
+        </h2>
+        <p style="font-size:14px;line-height:1.75;color:#374151;margin:0 0 14px 0;">
+          Martin Fowler 整理了第二届「软件开发未来」闭门研讨会（Future of Software Development Retreat）的五大核心发现：① <strong>代码生成已不是瓶颈，Verification 才是</strong>；② 「Harness Engineering」（AI 辅助开发的工具链工程）正成为独立工程学科；③ 行业正面临严峻的学徒制危机；④ 高管与工程师之间的期望鸿沟比任何技术限制都更危险；⑤ 遗留系统现代化是目前最具可辩性的近期价值点。
+        </p>
+        <a href="https://martinfowler.com/fragments/2026-07-21.html" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+      </div>
+
+      <!-- 2. Netflix Tech Blog -->
+      <div style="padding:26px 0;border-bottom:1px solid #f0f0f0;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#6b7280;margin:0 0 8px 0;">Netflix Tech Blog &nbsp;·&nbsp; 2026-07-17</p>
+        <h2 style="font-size:17px;font-weight:600;color:#111827;margin:0 0 10px 0;">
+          In-House LLM Serving at Netflix：基于 vLLM + Triton 的自研推理平台
+        </h2>
+        <p style="font-size:14px;line-height:1.75;color:#374151;margin:0 0 14px 0;">
+          Netflix 详细分享了其自研 LLM 推理服务架构：以 <strong>vLLM</strong> 作为推理引擎、NVIDIA Triton 负责模型管理与调度，通过统一的 gRPC 和 OpenAI 兼容 API 将自托管模型接入现有生产基础设施（而非构建独立 ML 孤岛）。小模型在 CPU 上原地运行，大模型路由至 GPU 路径。文章深入讨论了引擎选型、模型打包、API 设计、零停机部署，以及将 constrained decoding（输出约束执行）瓶颈从 CPU 侧迁移至 GPU 侧的生产实践。
+        </p>
+        <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+      </div>
+
+      <!-- 3. Real Python -->
+      <div style="padding:26px 0;border-bottom:1px solid #f0f0f0;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#6b7280;margin:0 0 8px 0;">Real Python &nbsp;·&nbsp; 2026-07-29</p>
+        <h2 style="font-size:17px;font-weight:600;color:#111827;margin:0 0 10px 0;">
+          CrewAI in Python: Coordinating Teams of AI Agents
+        </h2>
+        <p style="font-size:14px;line-height:1.75;color:#374151;margin:0 0 14px 0;">
+          Real Python 发布 <strong>CrewAI</strong> 框架实践教程，介绍如何用 Python 构建多智能体（Multi-Agent）AI 系统：将研究、验证、写作等任务分配给专业化 Agent 团队，以替代单一大型 Prompt。教程覆盖 Agent 定义、Task 编排、Tool 集成、任务依赖控制和层级式 Orchestration，并结合实际的自动化内容流水线案例，适合希望落地 AI Workflow 的 Python 开发者。
+        </p>
+        <a href="https://realpython.com/crewai-python/" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+      </div>
+
+      <!-- 4. Python Weekly -->
+      <div style="padding:26px 0;border-bottom:1px solid #f0f0f0;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#6b7280;margin:0 0 8px 0;">Python Weekly &nbsp;·&nbsp; 约 2026-07-23</p>
+        <h2 style="font-size:17px;font-weight:600;color:#111827;margin:0 0 10px 0;">
+          Python Weekly 七月最新一期：python.org 安全漏洞修复 &amp; PSF 董事会选举
+        </h2>
+        <p style="font-size:14px;line-height:1.75;color:#374151;margin:0 0 14px 0;">
+          本期重点关注两则要闻：① python.org 发布管理 API 中存在<strong>身份验证绕过漏洞</strong>（已迅速修复），攻击者原本可篡改下载元数据，将用户重定向至恶意文件；② Python 软件基金会（PSF）公布 2026 年董事会选举时间表，四个席位将于 9 月 1–15 日开放投票。此外还有 ML Kernel 开发、Scrapy 扩展及多个实战教程。
+        </p>
+        <a href="https://www.pythonweekly.com/" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">→ 访问 Python Weekly</a>
+      </div>
+
+      <!-- 5. Golang Weekly -->
+      <div style="padding:26px 0;border-bottom:1px solid #f0f0f0;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#6b7280;margin:0 0 8px 0;">Golang Weekly — Issue #612 &nbsp;·&nbsp; 2026-07-31</p>
+        <h2 style="font-size:17px;font-weight:600;color:#111827;margin:0 0 10px 0;">
+          A plan to bring generic collections to Go 1.28：泛型集合类型即将入库
+        </h2>
+        <p style="font-size:14px;line-height:1.75;color:#374151;margin:0 0 14px 0;">
+          Go 标准库将在 <strong>Go 1.28</strong> 中引入期待已久的泛型集合类型（Generic Collections）。Go Collections 工作组于 2025 年末成立，计划通过伞式提案（umbrella proposal #80590）将有序映射（ordered map）、集合（set）等常见数据结构纳入标准库。自 Go 1.18 引入泛型、Go 1.23 引入 Iterator 以来，这一举措将显著提升 Go 代码的复用性与表达力，标志着标准库向现代化迈出关键一步。
+        </p>
+        <a href="https://golangweekly.com/issues/612" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">→ 阅读本期</a>
+      </div>
+
+      <!-- 6. The Go Blog -->
+      <div style="padding:26px 0;border-bottom:1px solid #f0f0f0;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#6b7280;margin:0 0 8px 0;">The Go Blog &nbsp;·&nbsp; 2026-05-21</p>
+        <h2 style="font-size:17px;font-weight:600;color:#111827;margin:0 0 10px 0;">
+          Introducing the pkg.go.dev API：Go 包信息现提供编程式访问接口
+        </h2>
+        <p style="font-size:14px;line-height:1.75;color:#374151;margin:0 0 14px 0;">
+          Go 官方博客介绍了 <strong>pkg.go.dev</strong> 的全新 programmatic API，开发者现可通过 API 直接获取 Go 包和模块的元数据，无需抓取 HTML 页面。该 API 支持查询包文档、导入关系、版本历史等信息，为构建 Go 生态工具链提供了标准化数据入口，由 Ethan Lee、Hana Kim 和 Jonathan Amsterdam 共同设计实现。
+        </p>
+        <a href="https://opensource.googleblog.com/2026/06/a-new-pkggodev-api-for-go.html" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">→ 阅读原文</a>
+      </div>
+
+      <!-- 7. Golang Weekly Issue 611 bonus -->
+      <div style="padding:26px 0;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#6b7280;margin:0 0 8px 0;">Golang Weekly — Issue #611 &nbsp;·&nbsp; 2026-07-24</p>
+        <h2 style="font-size:17px;font-weight:600;color:#111827;margin:0 0 10px 0;">
+          Go can't kill a stuck goroutine：Goroutine 泄漏问题的深度剖析
+        </h2>
+        <p style="font-size:14px;line-height:1.75;color:#374151;margin:0 0 14px 0;">
+          本期 Golang Weekly 深入探讨了 Go Runtime 一个长期存在的局限：<strong>Go 运行时无法强制终止一个卡住的 goroutine</strong>。文章分析了这一设计决策背后的原因、对实际生产中 goroutine 泄漏（leak）的影响，以及当前可用的缓解手段（如 context 超时、channel 关闭等），帮助开发者理解 Go 并发模型的边界条件。
+        </p>
+        <a href="https://golangweekly.com/issues/611" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:500;">→ 阅读本期</a>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="padding:18px 0 4px 0;text-align:center;">
+      <p style="font-size:12px;color:#9ca3af;margin:0;">
+        软件技术日报 &nbsp;·&nbsp; 每日自动整理 &nbsp;·&nbsp; 2026-08-02<br>
+        发送至：<a href="mailto:xiangmiaozi@gmail.com" style="color:#9ca3af;text-decoration:none;">xiangmiaozi@gmail.com</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
