@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-08-02</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:Arial,Helvetica,'PingFang SC','Microsoft YaHei',sans-serif;color:#333333;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+  <tr>
+    <td align="center" style="padding:30px 16px;">
+      <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+
+        <!-- ===== HEADER ===== -->
+        <tr>
+          <td style="background-color:#1a2d4a;padding:26px 30px;border-radius:8px 8px 0 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:0.5px;">
+                    软件技术日报
+                  </h1>
+                  <p style="margin:6px 0 0;color:#7eb8e0;font-size:13px;">
+                    【软件工程 &amp; 云原生】&nbsp;&nbsp;·&nbsp;&nbsp;2026-08-02
+                  </p>
+                </td>
+                <td align="right" valign="middle">
+                  <span style="background-color:#2e5c8a;color:#a8d4f0;font-size:11px;font-weight:600;padding:5px 10px;border-radius:4px;letter-spacing:0.5px;">WEEKLY DIGEST</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ===== INTRO ===== -->
+        <tr>
+          <td style="background-color:#f4f7fb;padding:14px 30px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <p style="margin:0;font-size:13px;color:#5a6a7e;line-height:1.6;">
+              本期精选内容来自 <strong>Thoughtworks Technology Radar</strong>、<strong>SRE Weekly</strong>、<strong>ByteByteGo</strong>、<strong>TLDR Tech</strong>，聚焦 Kubernetes、云原生架构与 SRE 实践前沿。<br>
+              <em>注：TechWorld with Nana 本周期内未检索到明确的新发布视频，已跳过。</em>
+            </p>
+          </td>
+        </tr>
+
+        <!-- ===== ITEM 1: Thoughtworks ===== -->
+        <tr>
+          <td style="padding:26px 30px 22px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;background-color:#e8f0fe;color:#2a5aad;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-bottom:10px;">Thoughtworks Technology Radar</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2d4a;line-height:1.45;">
+                    AI 时代的认知债务：Technology Radar Vol.34 呼吁回归工程基本功
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#444444;">
+                    Thoughtworks 于 2026 年 4 月发布的第 34 版 Technology Radar 指出，AI 辅助开发使代码产出量激增，工程师与软件系统之间的认知鸿沟正在加速扩大，形成"<strong>认知债务（Cognitive Debt）</strong>"。报告将 <strong>Context Engineering</strong>（上下文工程）从优化策略提升为 AI 系统的核心架构关注点，主张把 Context Window 本身作为首要设计对象来对待。此外，Radar 呼吁以零信任架构（Zero Trust）、DORA 指标、可测试性等久经考验的工程基础实践，来应对 AI 时代持续攀升的系统复杂性。
+                  </p>
+                  <a href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" style="display:inline-block;color:#0066cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文</a>
+                  &nbsp;&nbsp;
+                  <a href="https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf" style="display:inline-block;color:#0066cc;font-size:13px;text-decoration:none;font-weight:600;">→ 下载 PDF（Vol.34）</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- DIVIDER -->
+        <tr>
+          <td style="padding:0 30px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <hr style="border:none;border-top:1px solid #eaeef4;margin:0;">
+          </td>
+        </tr>
+
+        <!-- ===== ITEM 2: SRE Weekly ===== -->
+        <tr>
+          <td style="padding:26px 30px 22px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;background-color:#fff3e0;color:#b35c00;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-bottom:10px;">SRE Weekly · Issue #524</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2d4a;line-height:1.45;">
+                    LLM 助力一次性事故代码，以及高可用系统的可靠性悖论
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#444444;">
+                    本期聚焦 LLM 在 SRE 实践中的新应用场景：在处理 Incident 时快速生成"用完即弃（Single-use）"的临时代码，帮助工程师快速验证假设，无需顾虑长期可维护性。期刊还探讨了 <strong>Formal Verification</strong>（形式验证）与 LLM 结合的可行性——LLM 能协助编写验证证明，使这一传统上门槛极高的技术变得更实用。此外还收录了一个发人深省的观点：过于复杂的 HA 系统因运维难度极高，实际可靠性有时反而不如精心维护的单主机方案。
+                  </p>
+                  <a href="https://sreweekly.com/sre-weekly-issue-524/" style="display:inline-block;color:#0066cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- DIVIDER -->
+        <tr>
+          <td style="padding:0 30px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <hr style="border:none;border-top:1px solid #eaeef4;margin:0;">
+          </td>
+        </tr>
+
+        <!-- ===== ITEM 3: ByteByteGo ===== -->
+        <tr>
+          <td style="padding:26px 30px 22px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;background-color:#e8f5e9;color:#2e7d32;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-bottom:10px;">ByteByteGo · Jul 22, 2026</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2d4a;line-height:1.45;">
+                    生产环境中真正有效的 AI Agent：最佳实践指南
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#444444;">
+                    ByteByteGo 深入分析了 AI Agent 在 Demo 表现出色、却在真实生产流量下频繁失效的可靠性鸿沟。核心论断：若每个步骤的成功率仅为 95%，连续执行 20 步后，整体成功率将骤降至约 <strong>36%</strong>——这是多步骤 Agent 链路的固有风险。文章指出，生产级可靠性的根基在于模块化设计、严格的状态管理（State Management）和确定性护栏（Deterministic Guardrails），而非一味优化 Prompt；对在 Kubernetes 上部署 Agentic 系统的工程师极具参考价值。
+                  </p>
+                  <a href="https://blog.bytebytego.com/p/best-practices-for-building-ai-agents" style="display:inline-block;color:#0066cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- DIVIDER -->
+        <tr>
+          <td style="padding:0 30px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <hr style="border:none;border-top:1px solid #eaeef4;margin:0;">
+          </td>
+        </tr>
+
+        <!-- ===== ITEM 4: TLDR Tech ===== -->
+        <tr>
+          <td style="padding:26px 30px 22px;border-left:1px solid #dde4ed;border-right:1px solid #dde4ed;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <span style="display:inline-block;background-color:#fce4ec;color:#ad1457;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-bottom:10px;">TLDR Tech · Jul 28, 2026</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a2d4a;line-height:1.45;">
+                    OpenAI $5000 亿数据中心、Amazon 卫星宽带竞局、Nvidia 押注 SSI
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 14px;font-size:14px;line-height:1.75;color:#444444;">
+                    TLDR Tech 7月28日刊聚焦三大云 &amp; AI 基础设施动态：<strong>OpenAI</strong> 宣布耗资 5000 亿美元（$500B）的超大规模数据中心扩张计划，预示 AI 算力需求将持续推高全球云基础设施投资规模；<strong>Amazon</strong> 入局低轨道卫星宽带，与 Starlink 展开直接竞争，为边缘计算和混合云部署开辟新的低延迟连接层；<strong>Nvidia</strong> 战略投资安全超级智能公司 SSI（Safe Superintelligence），进一步构建其在 AI 基础设施全栈中的生态地位。这三个动向共同折射出 2026 年云计算与 AI 算力深度融合的产业走向。
+                  </p>
+                  <a href="https://tldr.tech/tech/2026-07-28" style="display:inline-block;color:#0066cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ===== FOOTER ===== -->
+        <tr>
+          <td style="background-color:#f4f7fb;padding:18px 30px;border:1px solid #dde4ed;border-top:none;border-radius:0 0 8px 8px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="font-size:12px;color:#8a9ab0;text-align:center;line-height:1.6;">
+                  软件技术日报 · 自动整理 · 2026-08-02<br>
+                  <span style="color:#b0bec5;">内容来源：Thoughtworks Radar · SRE Weekly · ByteByteGo · TLDR Tech</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
