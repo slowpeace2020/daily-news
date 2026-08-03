@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【软件工程 &amp; 云原生】- 2026-08-03</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td align="center">
+      <table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color:#1a1a2e;padding:32px 40px 24px 40px;">
+            <p style="margin:0;color:#8892b0;font-size:12px;letter-spacing:2px;text-transform:uppercase;">Daily Tech Digest</p>
+            <h1 style="margin:8px 0 0 0;color:#ccd6f6;font-size:22px;font-weight:700;line-height:1.4;">
+              软件技术日报<br>
+              <span style="color:#64ffda;">【软件工程 &amp; 云原生】</span>
+            </h1>
+            <p style="margin:12px 0 0 0;color:#8892b0;font-size:13px;">2026年08月03日 &nbsp;·&nbsp; 精选渠道最新动态</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:32px 40px;">
+
+            <!-- ===== Item 1: Thoughtworks Technology Radar ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#e8f4ff;color:#0055aa;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">Thoughtworks Technology Radar</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                    <a href="https://www.thoughtworks.com/radar" style="color:#0055cc;text-decoration:none;">Technology Radar Vol. 34：云原生工具与平台精选（2026年4月）</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:14px;">
+                  <p style="margin:0;color:#333333;font-size:14px;line-height:1.85;">
+                    最新一期 Thoughtworks Technology Radar（Vol. 34，2026 年 4 月）重点推荐了多款 Kubernetes 与云原生工具。
+                    <strong>groundcover</strong> 是基于 eBPF 的云原生可观测性平台，无需代码插桩即可统一采集 Logs、Traces、Metrics 和 Kubernetes 事件，被列为值得 Trial 的平台。
+                    <strong>CloudNativePG</strong> 作为 Kubernetes Operator，将整个 PostgreSQL 集群抽象为声明式资源，内置 High Availability 与流式复制，大幅简化在 Kubernetes 上运行有状态数据库的复杂度。
+                    此外，<strong>Apache APISIX</strong> 支持 Kubernetes Gateway API，被推荐作为替代老旧 Nginx Ingress Controller 的高性能云原生 API Gateway 方案。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:28px;">
+                  <a href="https://www.thoughtworks.com/radar" style="color:#0055cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读 Radar 主页</a>
+                  &nbsp;&nbsp;
+                  <a href="https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf" style="color:#0055cc;font-size:13px;text-decoration:none;font-weight:600;">→ 下载完整 PDF</a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Divider -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="border-top:1px solid #e0e0e0;padding-bottom:28px;"></td></tr>
+            </table>
+
+            <!-- ===== Item 2: SRE Weekly ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#fff3e0;color:#bf5000;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">SRE Weekly</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                    <a href="https://sreweekly.com/sre-weekly-issue-524/" style="color:#0055cc;text-decoration:none;">Issue #524：LLM 辅助 SRE 实践——形式化验证与 HA 系统复杂性反思</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:14px;">
+                  <p style="margin:0;color:#333333;font-size:14px;line-height:1.85;">
+                    SRE Weekly 第 524 期探讨了 LLM 在 SRE 工作流中的实际价值：Incident 期间可利用 LLM 快速生成一次性诊断脚本，以及借助 LLM 辅助撰写 Formal Verification 证明，使形式化验证首次在普通工程团队中具备可操作性。
+                    本期还深入分析了高可用（HA）系统的操作复杂性——过于复杂的 HA 架构有时反而不如单机方案更可靠，这一反直觉的论断对分布式系统设计提出了新的思考角度。
+                    另有文章指出，若 on-call 工程师不审查 AI 生成的代码，"AI 写代码、人扛故障"的问责断层将难以避免。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:28px;">
+                  <a href="https://sreweekly.com/sre-weekly-issue-524/" style="color:#0055cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Divider -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="border-top:1px solid #e0e0e0;padding-bottom:28px;"></td></tr>
+            </table>
+
+            <!-- ===== Item 3: ByteByteGo ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#e8f5e9;color:#1b5e20;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">ByteByteGo</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                    <a href="https://blog.bytebytego.com/p/how-reddit-migrated-petabyte-scale" style="color:#0055cc;text-decoration:none;">How Reddit Migrated Petabyte-Scale Kafka from EC2 to Kubernetes</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:14px;">
+                  <p style="margin:0;color:#333333;font-size:14px;line-height:1.85;">
+                    ByteByteGo 深度解析了 Reddit 将 PB 级 Kafka 集群从 EC2 迁移至 Kubernetes 的完整工程实践，涵盖数据一致性保障、零停机切换策略，以及在 Kubernetes 上稳定运行有状态大规模 Kafka 工作负载的关键配置。
+                    迁移过程中面临的核心技术挑战包括：持久化存储（Persistent Volume）配置、网络拓扑感知（Rack Awareness）映射至 Kubernetes 节点标签，以及滚动升级期间的 Consumer Group 平衡策略。
+                    本文对于计划将消息队列或其他有状态中间件迁入云原生架构的团队，具有极强的参考和借鉴价值。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:28px;">
+                  <a href="https://blog.bytebytego.com/p/how-reddit-migrated-petabyte-scale" style="color:#0055cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Divider -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr><td style="border-top:1px solid #e0e0e0;padding-bottom:28px;"></td></tr>
+            </table>
+
+            <!-- ===== Item 4: TLDR DevOps ===== -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:8px;">
+                  <span style="display:inline-block;background-color:#f3e5f5;color:#4a0072;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:3px;text-transform:uppercase;">TLDR DevOps</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">
+                  <h2 style="margin:0;font-size:17px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                    <a href="https://tldr.tech/devops/2026-06-24" style="color:#0055cc;text-decoration:none;">ECS Auto Scaling · Lambda MicroVMs · Practical GitOps（2026-06-24）</a>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:14px;">
+                  <p style="margin:0;color:#333333;font-size:14px;line-height:1.85;">
+                    本期 TLDR DevOps 聚焦三大主题：<strong>AWS Lambda MicroVMs</strong> 是一种新型无服务器计算服务，通过 VM 级别隔离实现近乎即时的冷启动，专为安全运行不受信任的用户代码或 AI 生成代码而设计，是 Serverless 安全隔离领域的重要进展。
+                    <strong>ECS Auto Scaling</strong> 新功能带来更精细化的容器服务扩缩容策略，进一步提升云原生应用的弹性能力。
+                    <strong>Practical GitOps</strong> 专题则系统梳理了在生产环境落地 GitOps 工作流的方法论，涵盖工具链选型、分支策略与 Reconciliation 循环的最佳实践。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:28px;">
+                  <a href="https://tldr.tech/devops/2026-06-24" style="color:#0055cc;font-size:13px;text-decoration:none;font-weight:600;">→ 阅读原文</a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#f5f5f5;padding:20px 40px;border-top:2px solid #e0e0e0;">
+            <p style="margin:0;color:#888888;font-size:12px;line-height:1.8;">
+              本邮件由 Daily News Bot 自动生成 &nbsp;·&nbsp; 内容来源于各渠道公开信息<br>
+              渠道覆盖：Thoughtworks Technology Radar &nbsp;·&nbsp; SRE Weekly &nbsp;·&nbsp; ByteByteGo &nbsp;·&nbsp; TLDR DevOps<br>
+              <em>注：TechWorld with Nana 本期未检索到近期明确视频信息，已跳过。</em>
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
