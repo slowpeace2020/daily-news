@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件技术日报【AI 技术前沿】- 2026-08-03</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Arial,'PingFang SC','Microsoft YaHei',sans-serif;color:#222222;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <!-- 主容器 -->
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+          <!-- 头部 -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:28px 36px;">
+              <p style="margin:0;font-size:11px;color:#8888aa;letter-spacing:2px;text-transform:uppercase;">Daily Digest · AI 技术前沿</p>
+              <h1 style="margin:8px 0 0 0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">软件技术日报【AI 技术前沿】</h1>
+              <p style="margin:6px 0 0 0;font-size:13px;color:#aaaacc;">2026年8月3日（星期一）&nbsp;·&nbsp;每日精选 8 条</p>
+            </td>
+          </tr>
+
+          <!-- 正文 -->
+          <tr>
+            <td style="padding:28px 36px 8px 36px;">
+
+              <!-- 前言 -->
+              <p style="margin:0 0 24px 0;font-size:14px;color:#555555;line-height:1.7;">
+                本期整合过去 7 天（2026-07-27 ～ 2026-08-03）来自 Anthropic、OpenAI、Google DeepMind、Hugging Face、DeepLearning.AI The Batch、AI Explained、Latent Space、TWIML AI Podcast 的最新动态，聚焦大模型进展、机器人 AI、工程实践与前沿研究。
+              </p>
+
+              <!-- ──────────────────── 1. Anthropic ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td style="border-left:4px solid #c0392b;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#c0392b;letter-spacing:1.5px;text-transform:uppercase;">ANTHROPIC BLOG</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Our position on open-weights models
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      Anthropic 正式公开了其在开放权重模型（open-weights）问题上的立场，阐明为何公司在当前阶段仍优先选择部署闭源模型，并说明开放权重的潜在安全风险评估框架。文章讨论了 open-weights 的好处与监管失控风险，是近期 AI 安全政策方向的重要信号。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.anthropic.com/news/position-open-weights-models" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 阅读原文 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-07-27</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px 0;">
+
+              <!-- ──────────────────── 2. OpenAI ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td style="border-left:4px solid #10a37f;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#10a37f;letter-spacing:1.5px;text-transform:uppercase;">OPENAI BLOG</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      How enabling two settings tripled our scores on the ARC-AGI-3 benchmark
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      OpenAI 发现，开启「retained reasoning（保留推理链）」和「compaction（上下文压缩）」两项 API 设置后，GPT-5.6 Sol 在 ARC-AGI-3 公开集的得分从 13.3% 跃升至 38.3%。传统评测框架每步都丢弃推理上下文，导致模型被迫反复从头思考；compaction 以压缩代替截断，彻底解决了上下文丢失问题。此研究揭示评测框架设计对 benchmark 分数的巨大影响，意义深远。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 阅读原文 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-07-29</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px 0;">
+
+              <!-- ──────────────────── 3. Google DeepMind ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td style="border-left:4px solid #4285f4;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#4285f4;letter-spacing:1.5px;text-transform:uppercase;">GOOGLE DEEPMIND BLOG</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Gemini Robotics 2 brings whole body intelligence to robots
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      Google DeepMind 发布 Gemini Robotics 2，首次将 AI 控制能力扩展至人形机器人的全身动作（行走、弯腰、抓取）。在 Apptronik Apollo 2 机器人上的演示中，机器人接收自然语言指令后，能够独立完成行走、定位、拿取和精准放置物品等多步任务。整套系统由三个模型组成：VLA（视觉-语言-动作）主模型、用于多步规划的 ER 2 推理模型，以及可在机器人本地运行的 On-Device 2。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 阅读原文 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-07-31</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px 0;">
+
+              <!-- ──────────────────── 4. Hugging Face ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td style="border-left:4px solid #ff9500;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#ff9500;letter-spacing:1.5px;text-transform:uppercase;">HUGGING FACE BLOG</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      DeepSeek V4 Flash Is Now Official: What Changed in the 0731 Build
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      DeepSeek 正式在 Hugging Face 发布 DeepSeek-V4-Flash-0731 权重，采用 MIT 开源协议。模型总参数量 284B，激活参数 13B，支持 1M token 超长上下文窗口，并新增双模式（Thinking / Non-Thinking）推理。相比预览版，通过重新进行 post-training，在所有 agentic benchmark 上均超越 V4-Pro 预览版，特别是编程和智能体任务表现大幅提升。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://huggingface.co/blog/ResterChed/deepseek-v4-flash-official-release" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 阅读原文 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-07-31</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px 0;">
+
+              <!-- ──────────────────── 5. The Batch ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td style="border-left:4px solid #e74c3c;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#e74c3c;letter-spacing:1.5px;text-transform:uppercase;">THE BATCH · DEEPLEARNING.AI</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Scaling without Slop — 本周 AI 技术动态精选
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      本周 The Batch 重点关注：Anthropic Claude Fable 5 与 Mythos 5 在因美国出口管制指令暂停后重新恢复服务；同期，Andrew Ng 在 Letter 专栏探讨 AI 工程团队的运作模式已从传统软件开发范式彻底转变——coding agent 正将不同类型的软件工作加速到截然不同的程度，AI 原生工程团队的协作方式与过去大相径庭。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.deeplearning.ai/the-batch" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 阅读原文 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-07-30（周刊）</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px 0;">
+
+              <!-- ──────────────────── 6. AI Explained YouTube ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td style="border-left:4px solid #9b59b6;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#9b59b6;letter-spacing:1.5px;text-transform:uppercase;">AI EXPLAINED · YOUTUBE &nbsp;📹 视频</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Everyone Is Starting to Panic About AI...
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      📹 视频 — AI Explained 频道梳理了 7 月 AI 领域最值得关注的事件：多款前沿模型的快速迭代，以及 rogue agent（失控智能体）安全事件对业界产生的冲击。视频分析了为何越来越多的技术人员对 AI 能力的快速提升感到担忧，并从工程角度探讨了如何构建更安全的 agent 系统。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.youtube.com/watch?v=fge0puFJ7VM" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 观看视频 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-08-01</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px 0;">
+
+              <!-- ──────────────────── 7. Latent Space ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
+                <tr>
+                  <td style="border-left:4px solid #2980b9;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#2980b9;letter-spacing:1.5px;text-transform:uppercase;">LATENT SPACE PODCAST &nbsp;🎧 播客</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      🔬 The Lab of the Future Should Feel Like a Data Center — Andy Beam &amp; Rafa Gómez-Bombarelli, Lila Sciences
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      🎧 播客 — Lila Sciences 的 CTO Andy Beam 与 CSO Rafa Gómez-Bombarelli 分享了「AI 驱动的科学工厂」愿景：将生物学、化学、药物发现和材料科学统一在一个 AI 平台上。节目中最令人震惊的成果是：一支 2-3 人团队使用 Lila 平台在 6 个月内完成了完整的 in vivo CAR-T 疗法设计（含 binder design、mRNA 工程和脂质纳米颗粒配方），复现了竞争对手花费 5 年时间和超过 1 亿美元才取得的成果。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.latent.space/p/the-lab-of-the-future-should-feel" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 收听播客 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-07 末</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #eeeeee;margin:0 0 24px 0;">
+
+              <!-- ──────────────────── 8. TWIML ──────────────────── -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
+                <tr>
+                  <td style="border-left:4px solid #27ae60;padding-left:14px;">
+                    <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;color:#27ae60;letter-spacing:1.5px;text-transform:uppercase;">TWIML AI PODCAST &nbsp;🎧 播客</p>
+                    <h2 style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#1a1a2e;line-height:1.4;">
+                      Ep. 772 — Why Models Are AI's Next Training Dataset — Damian Borth
+                    </h2>
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#444444;line-height:1.75;">
+                      🎧 播客 — 圣加仑大学 AI 教授 Damian Borth 提出「weight space learning」概念：将已训练的神经网络本身作为新的训练数据来源，让模型从数百万 GPU 小时优化所蒸馏出的知识中学习，而不是每次都从原始数据重新训练。这一思路在高质量训练数据日益稀缺、pre-training 成本持续攀升的背景下，提供了一条可能大幅降低训练成本的新路径。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://twimlai.com/go/772" style="color:#1a6fba;font-size:13px;text-decoration:none;">▶ 收听播客 →</a>
+                      <span style="color:#bbbbbb;margin:0 8px;">|</span>
+                      <span style="font-size:12px;color:#888888;">2026-07-27</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- 跳过说明 -->
+          <tr>
+            <td style="padding:0 36px 24px 36px;">
+              <table width="100%" cellpadding="12" cellspacing="0" border="0" style="background-color:#f9f9f9;border-radius:6px;">
+                <tr>
+                  <td style="font-size:12px;color:#888888;line-height:1.7;">
+                    <strong style="color:#555555;">本期跳过的渠道：</strong><br>
+                    Andrej Karpathy（最新视频为 7 月 2 日，超出 7 天窗口）&nbsp;·&nbsp;
+                    Yannic Kilcher（近 7 天未检索到新内容）&nbsp;·&nbsp;
+                    Two Minute Papers（近期有上传但未获取到具体标题）&nbsp;·&nbsp;
+                    Lex Fridman Podcast（检索到的最新一期为 2026 年 2 月，超出窗口期）
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 底部 -->
+          <tr>
+            <td style="background-color:#1a1a2e;padding:20px 36px;border-radius:0 0 8px 8px;">
+              <p style="margin:0;font-size:12px;color:#7777aa;text-align:center;line-height:1.6;">
+                由 Daily News Bot 自动生成 · 2026-08-03<br>
+                内容来源于各公开博客、YouTube 频道及播客，技术术语保留英文原文
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /主容器 -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
