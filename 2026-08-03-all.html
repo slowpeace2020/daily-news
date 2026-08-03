@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报 - 2026-08-03</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #24292e;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+  .header {
+    border-bottom: 2px solid #0366d6;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 22px;
+    color: #1a1a2e;
+    margin: 0 0 4px 0;
+  }
+  .header p {
+    font-size: 13px;
+    color: #586069;
+    margin: 0;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+    background-color: #f1f8ff;
+    border-left: 4px solid #0366d6;
+    padding: 8px 12px;
+    margin: 28px 0 16px 0;
+  }
+  .item {
+    padding: 14px 0;
+    border-bottom: 1px solid #e1e4e8;
+  }
+  .item:last-child {
+    border-bottom: none;
+  }
+  .source-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #586069;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    padding: 2px 6px;
+    margin-bottom: 6px;
+  }
+  .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0366d6;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .item-title:hover {
+    text-decoration: underline;
+  }
+  .item-summary {
+    font-size: 14px;
+    color: #444d56;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .badge {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  .footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    font-size: 12px;
+    color: #959da5;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📋 软件技术日报</h1>
+    <p>2026年08月03日 &nbsp;|&nbsp; 涵盖软件工程、AI 前沿、后端开发 & Python & Go</p>
+  </div>
+
+  <!-- ===== Section 1 ===== -->
+  <div class="section-title">🏗️ 软件工程 &amp; 云原生</div>
+
+  <div class="item">
+    <span class="source-tag">Thoughtworks Technology Radar</span>
+    <a class="item-title" href="https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34" target="_blank">
+      Technology Radar Vol.34：用工程基本功应对 AI 认知债务
+    </a>
+    <p class="item-summary">
+      Thoughtworks 四月发布的第34卷 Technology Radar 指出，AI 辅助开发虽大幅提升生产力，却带来了"认知债务"（cognitive debt）——人类与代码系统之间的理解鸿沟不断扩大。报告呼吁回归扎实的工程基础实践（测试、可观测性、文档）以对抗 AI 生成代码带来的复杂度。此外，报告也警告开发者工具市场因进入门槛降低而大量涌现"单人维护"的短命项目，技术可持续性评估愈发困难。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">SRE Weekly</span>
+    <a class="item-title" href="https://sreweekly.com/sre-weekly-issue-524/" target="_blank">
+      SRE Weekly Issue #524：AI 的生产力陷阱与认知多样性
+    </a>
+    <p class="item-summary">
+      最新一期（7月5日）聚焦三个 SRE 核心议题：第一，"Jet Engine on a Tractor" 一文指出当 AI 加速系统执行速度时，瓶颈转移到了人类本身，社会技术系统的薄弱环节暴露无遗。第二，探讨"自我归咎"在无责文化（blameless postmortem）中的危害——责备可以来自内部心理，同样会阻碍学习。第三，讨论如何利用认知多样性（cognitive diversity）应对系统复杂性和事故复盘。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">ByteByteGo</span>
+    <a class="item-title" href="https://blog.bytebytego.com/p/ep219-12-open-source-llms" target="_blank">
+      EP219：2026 年值得关注的 12 个开源大语言模型
+    </a>
+    <p class="item-summary">
+      ByteByteGo 最新一期梳理了 2026 年最值得关注的 12 个开源 LLM，每个模型以"一个核心优势"进行对比介绍。文章提到 open-source 领域发展迅猛，Kimi K2.5、GLM-5 等模型在 agentic 性能测试上表现突出，而 OpenAI 推出 GPT5.5-Codex、Anthropic 发布 Opus 4.7 等商业模型也在持续推高基准线，对开源社区形成有力竞争压力。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">TLDR Tech</span>
+    <a class="item-title" href="https://tldr.tech/tech/2026-07-28" target="_blank">
+      TLDR Tech（7月28日）：OpenAI $5000亿数据中心、Amazon 卫星互联网、Nvidia 注资 SSI
+    </a>
+    <p class="item-summary">
+      本期 TLDR 三大技术头条：OpenAI 宣布投资 $5000 亿用于新一代数据中心建设以支撑 AI 算力需求；Amazon 正研发与 Starlink 竞争的低轨卫星宽带方案；Nvidia 向前 OpenAI 首席科学家 Ilya Sutskever 创立的 Safe Superintelligence（SSI）进行了重大战略投资，双方建立长期合作关系。AI 基础设施军备竞赛持续升温。
+    </p>
+  </div>
+
+  <!-- ===== Section 2 ===== -->
+  <div class="section-title">🤖 AI 技术前沿</div>
+
+  <div class="item">
+    <span class="source-tag">Anthropic Blog</span>
+    <a class="item-title" href="https://www.anthropic.com/news/google-broadcom-partnership-compute" target="_blank">
+      Anthropic 与 Google、Broadcom 扩大合作，锁定下一代多千兆瓦算力
+    </a>
+    <p class="item-summary">
+      Anthropic 深化与 Google Cloud 及 Broadcom 的合作，以获取多千兆瓦（gigawatt 级）下一代计算能力，用于训练和运行 Claude 系列模型。与此同时，公司还承诺在未来十年向 AWS 投入逾 $1000 亿，争取高达 5GW 新增容量。Anthropic 年化收入已突破 $300 亿，付费企业客户中年消费超百万美元的超过 1000 家，AI 基础设施的扩张反映出对未来算力需求的高度预期。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">OpenAI Blog</span>
+    <a class="item-title" href="https://openai.com/index/ten-advances-in-mathematics/" target="_blank">
+      OpenAI：AI 在数学与理论计算机科学领域的十项突破
+    </a>
+    <p class="item-summary">
+      OpenAI 于8月1日发布了 AI 在数学领域取得的十项研究成果，涉及已搁置十年以上、此前毫无进展的经典难题。这些成果展示了大模型在形式化推理和数学证明生成方面的前沿能力，标志着 AI 系统从"辅助数学家"走向"独立解决开放问题"的关键一步，对数学、理论 CS 乃至科学研究范式具有深远影响。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Google DeepMind</span>
+    <a class="item-title" href="https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/" target="_blank">
+      DeepMind 宣布 $1000 万多智能体 AI 安全研究资金，截止日期 8 月 8 日
+    </a>
+    <p class="item-summary">
+      Google DeepMind 联合合作伙伴发起总计 $1000 万的技术研究资助计划，面向全球研究人员开放申请（截止 8 月 8 日）。研究方向聚焦于大规模多智能体 AI 系统的群体行为，包括：多 agent 协调中的涌现风险、安全边界失效机制、以及如何在 agent 集群中验证对齐目标。这是 DeepMind 迄今最大规模的外部 AI 安全专项资助。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Hugging Face Blog</span>
+    <a class="item-title" href="https://huggingface.co/blog/lerobot-release-v060" target="_blank">
+      LeRobot v0.6.0：机器人学会在行动前"想象未来"
+    </a>
+    <p class="item-summary">
+      Hugging Face 开源机器人学习框架 LeRobot 发布 v0.6.0，核心更新包括：引入 world model 让机器人在执行动作前模拟预测场景（imagine before acting），集成奖励模型（reward model）自动评判任务成功与否，以及新增多个仿真基准（simulation benchmarks）用于可重复性评估。这一设计使机器人策略训练所需的人工标注数据大幅减少，向低标注成本的机器人学习迈出重要一步。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">The Batch · DeepLearning.AI</span>
+    <a class="item-title" href="https://www.deeplearning.ai/the-batch" target="_blank">
+      The Batch（7月31日）：Coding Agent 加速软件开发、AI 访问控制权博弈
+    </a>
+    <p class="item-summary">
+      本期 Andrew Ng 主编的 The Batch 关注两大主题：Coding agents 正以不均匀的速度加速不同类型的软件工作，改变开发者与 AI 协作的方式；同时，美国政府和 Anthropic 分别采取行动，限制他方使用前沿模型的权限，AI 访问控制权之争成为 2026 年下半年的新战场。此外，文中提及"AI Forward Deployed Engineer（FDE）"正成为硅谷炙手可热的新职业方向。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Andrej Karpathy · YouTube</span>
+    <a class="item-title" href="https://www.youtube.com/watch?v=TvSe267F188" target="_blank">
+      <span class="badge">📹 视频</span> Karpathy to Anthropic — and Everything Else on Fire
+    </a>
+    <p class="item-summary">
+      Andrej Karpathy 于5月正式加入 Anthropic 预训练团队，本视频（6月9日）梳理了他此次转型的背景与动机，以及当时 AI 圈同步发生的重大事件：xAI 向第三方 Agent 开放 Grok、OpenAI 将实时语音能力集成进 Codex。Karpathy 表示将专注于利用 Claude 加速 pre-training 研究，并计划日后继续教育内容创作。这是近年来 AI 领域最受关注的人才流动之一。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Two Minute Papers · YouTube</span>
+    <a class="item-title" href="https://www.youtube.com/@TwoMinutePapers/videos" target="_blank">
+      <span class="badge">📹 视频</span> What a time to be alive!（约7月29日）
+    </a>
+    <p class="item-summary">
+      Two Minute Papers 最新一期以"活在这个时代真是太幸运了！"为题，汇集近期 AI 领域令人振奋的研究进展，涵盖多模态、推理能力和生成质量的新突破。频道一贯以精炼的两分钟视频格式解读顶会论文，帮助工程师快速追踪前沿研究。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Latent Space Podcast</span>
+    <a class="item-title" href="https://www.latent.space/p/poolside" target="_blank">
+      <span class="badge">🎙 播客</span> Inside the Model Factory — Eiso Kant, Poolside AI（7月23日）
+    </a>
+    <p class="item-summary">
+      Latent Space 邀请 Poolside AI 联合 CEO Eiso Kant，讲述如何以精英小团队构建"模型工厂"（model factory），成功训练出 118B MoE 架构的 Laguna S 模型，在开放权重模型中达到顶级水平。讨论深入涵盖 MoE 训练基础设施、数据工程管道、以及以代码生成为核心目标的训练策略，是了解顶级 AI 实验室内部工程实践的珍贵案例。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">TWIML AI Podcast</span>
+    <a class="item-title" href="https://twimlai.com/podcast/twimlai" target="_blank">
+      <span class="badge">🎙 播客</span> Episode 771：构建神经网络的基础模型（7月8日）
+    </a>
+    <p class="item-summary">
+      TWIML 第771集探讨了一个前沿研究方向：将神经网络本身作为"数据"来训练基础模型（foundation model of neural networks），实现知识跨架构、跨领域的迁移。这一思路有望大幅降低专用模型的开发成本，并提出了未来 AI 系统可能基于"已有模型集合"而非不断扩大数据集来进行训练的大胆假设。
+    </p>
+  </div>
+
+  <!-- ===== Section 3 ===== -->
+  <div class="section-title">🐍 后端开发 &amp; Python &amp; Go</div>
+
+  <div class="item">
+    <span class="source-tag">Martin Fowler Blog</span>
+    <a class="item-title" href="https://martinfowler.com/fragments/2026-07-21.html" target="_blank">
+      Fragments（7月21日）：代码生成不再是瓶颈——验证才是
+    </a>
+    <p class="item-summary">
+      Fowler 整理了 Thoughtworks 第二届"软件开发未来"闭门研讨会的核心发现，其中最重要的一条是：AI 辅助下代码生成速度已不再是软件交付的瓶颈，验证（verification）——即确认代码是否正确、安全、符合预期——正在成为新的制约因素。"Harness engineering"（测试框架与验证工程）正在作为独立工程学科崛起，同时与会者也指出企业面临严峻的"学徒制危机"：初级工程师缺乏足够的 mentor 资源在 AI 辅助环境中成长。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Netflix Tech Blog</span>
+    <a class="item-title" href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3" target="_blank">
+      GenRec：Netflix 打造 LLM 原生推荐系统，效果超越成熟生产系统
+    </a>
+    <p class="item-summary">
+      Netflix 工程团队发布 GenRec，一套基于内部基础 LLM 进行 post-training 的推荐排序系统。在覆盖约 10% Netflix 流量、持续约 4 周的大规模 A/B 测试中，GenRec 在短期和长期指标上均优于现有成熟生产系统，同时所需的标注数据和输入信号量远少于传统方案。这表明 LLM 作为推荐系统的排序器具备实用价值，也为其他平台探索 LLM-native 推荐架构提供了重要参考。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Real Python</span>
+    <a class="item-title" href="https://realpython.com/python-news-july-2026/" target="_blank">
+      Python 7月动态：JIT 编译器面临挑战，Steering Council 要求提交正式 PEP
+    </a>
+    <p class="item-summary">
+      Python 3.15 预计内置的实验性 JIT 编译器遭遇政策障碍：Steering Council 要求 JIT 在六个月内提交正式标准 PEP，否则将从 main 分支移除。当前 JIT 在 x86-64 Linux 上的性能提升约 8–9%、在 AArch64 macOS 上约 12–13%，JIT 负责人 Ken Jin 的长期目标是接近 PyPy 性能的一半。此外，7月月报也回顾了 Python 3.15 特性冻结（feature freeze）后的社区进展。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Python Weekly</span>
+    <a class="item-title" href="https://www.pythonweekly.com/" target="_blank">
+      Python Weekly（7月23日）：Python 社区最新精选
+    </a>
+    <p class="item-summary">
+      本期 Python Weekly 由 Rahul Chaudhary 整理，汇聚了 Python 生态最新文章、开源项目和社区资讯。近期社区关注重点包括：EuroPython 2026（7月13–19日，克拉科夫）现场志愿者招募，以及 DjangoCon US 2026（8月24–28日，芝加哥）门票开售。Python 开发者社区持续活跃，生态内 AI/ML 工具类库的贡献与更新也在加速。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">The Go Blog</span>
+    <a class="item-title" href="https://go.dev/doc/go1.27" target="_blank">
+      Go 1.27 即将发布：泛型方法、模块整洁化、放弃旧 macOS 支持
+    </a>
+    <p class="item-summary">
+      Go 1.27 预计于2026年8月正式发布，带来多项重大改进：语言层面首次支持泛型方法（generic methods），允许在特定类型命名空间内声明带类型参数的方法；go mod tidy 现可自动合并重复 require 块，保持 go.mod 标准结构；新增 @file 响应文件解析支持。平台方面，不再支持 macOS 13 Ventura 以下版本。此外，Gopls v0.23.0（7月）同步发布，改善了代码补全和静态分析能力。
+    </p>
+  </div>
+
+  <div class="item">
+    <span class="source-tag">Golang Weekly</span>
+    <a class="item-title" href="https://golangweekly.com/issues/599" target="_blank">
+      Golang Weekly Issue #599：三个新 Go Proposal 值得关注
+    </a>
+    <p class="item-summary">
+      最新一期 Golang Weekly 重点介绍了三个近期提交的 Go 语言 proposal，涵盖语言设计层面的讨论和标准库改进方向。此外，本期也收录了 Go 逃逸分析（escape analysis）深度解析（来自 JetBrains）、栈与堆内存分配优化实践，以及 Go 在 AI 工程领域的新兴应用场景。是 Go 开发者了解语言演进方向的高质量周刊。
+    </p>
+  </div>
+
+  <div class="footer">
+    <p>软件技术日报 &nbsp;·&nbsp; 2026-08-03 &nbsp;·&nbsp; 自动生成，内容摘要仅供参考</p>
+  </div>
+
+</div>
+</body>
+</html>
