@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件技术日报【后端开发 & Python & Go】- 2026-08-04</title>
+</head>
+<body style="margin:0;padding:0;background-color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;">
+<div style="max-width:680px;margin:0 auto;padding:24px 16px;">
+
+  <!-- 标题栏 -->
+  <div style="background-color:#1a1a2e;border-radius:8px;padding:24px 28px;margin-bottom:24px;">
+    <h1 style="color:#e8e8f0;font-size:20px;font-weight:700;margin:0 0 6px 0;letter-spacing:0.5px;">
+      软件技术日报
+    </h1>
+    <p style="color:#8888aa;font-size:13px;margin:0;">
+      【后端开发 &amp; Python &amp; Go】&nbsp;&middot;&nbsp;2026-08-04&nbsp;&middot;&nbsp;过去 7 天精选
+    </p>
+  </div>
+
+  <!-- Martin Fowler Blog -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Martin Fowler Blog
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      Harness Engineering：Future of Software Development Retreat 总结
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Martin Fowler 在 7 月 21 日的 Fragments 中整理了 Thoughtworks 主办的「软件开发未来」研讨会核心洞见：
+      <strong>代码生成不再是瓶颈，验证（verification）才是</strong>；"Harness Engineering"正在成为独立的工程学科；
+      组织正面临真实的学徒危机，AI 时代的上下文管理（context management）是工程师需要重点关注的新技能。
+    </p>
+    <a href="https://martinfowler.com/fragments/2026-07-21.html"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- Netflix Tech Blog -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Netflix Tech Blog
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      In-House LLM Serving at Netflix — 基于 vLLM + NVIDIA Triton 的自建推理平台
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Netflix AI Platform 团队于 7 月 18 日详解自建 LLM 推理平台的完整架构：以 vLLM 和 NVIDIA Triton 为核心引擎，
+      通过统一的 gRPC 与 OpenAI 兼容 API 接入现有生产基础设施，取代独立 ML 孤岛。
+      文章重点分享了<strong>模型打包、版本兼容、零停机部署、可观测性、约束解码（constrained decoding）</strong>等生产落地经验，
+      为企业自托管大模型提供了详细参考。
+    </p>
+    <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- Netflix Tech Blog - GenRec -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Netflix Tech Blog
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      GenRec：Netflix 的 LLM-Native 推荐系统实践
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Netflix 发布 GenRec，一个基于 LLM 的推荐排名系统：以内部基础 LLM 为骨干，
+      在 Netflix 专属数据上进行 post-training，将用户历史、item 元数据和上下文通过 context engineering
+      转化为自然语言 prompt 输入给 GenRec，再通过 catalog-aware scoring head 对内容评分。
+      <strong>实验表明 GenRec 可以在使用更少标注数据和输入信号的情况下，匹配甚至超越成熟生产系统</strong>。
+    </p>
+    <a href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- Real Python -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Real Python
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      Python's JIT Faces Some Challenges — CPython Steering Council 的六个月倒计时
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Python Steering Council 裁定：CPython 的实验性 JIT 编译器（自 3.13 版本引入）未经正式标准 PEP 流程审批，
+      要求在六个月内提交合规 PEP，否则将从主分支移除。
+      7 月 2 日，PEP 836「JIT Go Brrr」由 Savannah Ostrowski 等人提出，
+      <strong>规划了从 Python 3.16 到 3.17 约两年半的 JIT 路线图</strong>，
+      目标是相较 free-threaded interpreter 实现至少 20% 性能提升，并确保 debugger/profiler 不降级。
+    </p>
+    <a href="https://realpython.com/python-news-july-2026/"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- Golang Weekly -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Golang Weekly
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      Issue #612：Go 1.28 将引入标准库 Generic Collections
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Golang Weekly 7 月 31 日刊（Issue #612）头条：Go 官方 Collections 工作组（由 Jonathan Amsterdam、Alan Donovan 等核心成员组成）
+      发布了为 Go 1.28 引入泛型集合类型的完整提案，涵盖 Set、有序 Map/Set 等标准库数据结构。
+      自 Go 1.18 引入 generics、1.23 引入 iterators 以来，这是 Go 标准库在泛型方向最重要的一步，
+      <strong>将彻底填补 Go 标准库长期缺少 set 和有序集合类型的空白</strong>。
+    </p>
+    <a href="https://golangweekly.com/issues/612"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- The Go Blog -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      The Go Blog
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      //go:fix inline 与源代码级内联器 — Go 1.26 代码现代化工具详解
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Go 官方博客发布了关于 <code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">go fix</code>
+      命令全新重写的深度文章：基于 Go analysis 框架，内置数十个「modernizer」分析器，
+      可自动将旧代码迁移至新特性；核心亮点是<strong>源代码级函数内联器（source-level inliner）</strong>，
+      通过 <code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">//go:fix inline</code>
+      注解，让开发者可以自动化 API 迁移，无需手动逐一替换调用处。
+    </p>
+    <a href="https://go.dev/blog/inliner"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- High Scalability -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      High Scalability
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      How ChatGPT Optimizes its Agent Loop：Harness、API 与推理层的协同优化
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      High Scalability 7 月 29 日刊文，分析 ChatGPT Agent Loop 的性能优化策略：
+      从 harness 层的上下文调度，到 API 层的批处理与缓存，再到推理层的 KV cache 利用，
+      <strong>揭示了大规模 AI 推理系统如何在低延迟与高并发之间取得平衡</strong>，
+      对构建高性能 AI 服务端系统具有重要参考价值。
+    </p>
+    <a href="https://highscalability.com/"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      访问博客 →
+    </a>
+  </div>
+
+  <!-- Fireship YouTube -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Fireship · YouTube &nbsp;📹 视频
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      The unhinged world of tech in 2026... — 2026 开发者趋势速览
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      📹 视频&nbsp;&nbsp;Fireship 以标志性的极速剪辑风格，梳理了 2026 年影响开发者的十大技术趋势：
+      <strong>AI Bubble、量子计算、可穿戴 AI、AR/VR、芯片格局、核能算力</strong>等主题一一过场，
+      同时对开发者就业市场的现状保持辛辣点评；内容密度极高，适合快速了解当前技术全貌。
+    </p>
+    <a href="https://www.youtube.com/watch?v=EKOU3JWDNLI"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      观看视频 →
+    </a>
+  </div>
+
+  <!-- Brendan Gregg Blog -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Brendan Gregg Blog
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      Why I Joined OpenAI — 性能工程走向 AI 数据中心
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Linux/系统性能领域权威 Brendan Gregg 宣布加入 OpenAI，
+      专注于 <strong>AI 数据中心的性能工程</strong>——这是他职业生涯中面临的最大规模性能挑战。
+      他指出 AI 基础设施成本已成为行业核心矛盾，需要全新的工程方法论来发现并实现超大幅度的性能优化；
+      对于关注系统性能方向的工程师，本文提供了关于未来性能工程发展方向的重要视角。
+    </p>
+    <a href="https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- ArjanCodes YouTube -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Arjan Codes · YouTube &nbsp;📹 视频
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      Design Patterns Don't Automatically Make Code Better — 设计模式的误用反思
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      📹 视频&nbsp;&nbsp;ArjanCodes 最新视频（6 月 19 日）探讨了一个常见误区：
+      <strong>设计模式（Design Patterns）并不会自动让代码变得更好</strong>。
+      Arjan 结合 Python 实例，分析了过度使用或误用设计模式反而增加复杂度的场景，
+      强调软件设计的核心是解决实际问题，而非套用模式——是对「设计模式是否必要」这一话题的深刻思考。
+    </p>
+    <a href="https://www.youtube.com/@ArjanCodes/videos"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      访问频道 →
+    </a>
+  </div>
+
+  <!-- Golang Weekly Issue 611 bonus -->
+  <div style="border-bottom:1px solid #ebebeb;padding-bottom:20px;margin-bottom:20px;">
+    <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+      Golang Weekly
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;line-height:1.4;">
+      Issue #611：Go 无法强制终止卡死的 Goroutine
+    </h2>
+    <p style="font-size:14px;color:#444;line-height:1.7;margin:0 0 10px 0;">
+      Golang Weekly 7 月 24 日刊（Issue #611）深入探讨了一个 Go 运行时的根本限制：
+      <strong>Go 运行时无法强制 kill 一个陷入死循环或无法被抢占的 goroutine</strong>。
+      文章分析了这一设计背后的原因（协作式调度与安全点机制），以及在实践中如何通过 context 取消、超时等模式绕过此问题，
+      是理解 Go 并发模型局限性的重要参考。
+    </p>
+    <a href="https://golangweekly.com/issues/611"
+       style="display:inline-block;font-size:13px;color:#2563eb;text-decoration:none;border:1px solid #dbeafe;background:#eff6ff;padding:5px 12px;border-radius:4px;">
+      阅读原文 →
+    </a>
+  </div>
+
+  <!-- 页脚 -->
+  <div style="margin-top:8px;padding-top:20px;border-top:2px solid #ebebeb;text-align:center;">
+    <p style="font-size:12px;color:#aaa;margin:0 0 4px 0;">
+      软件技术日报 · 自动整理 · 2026-08-04
+    </p>
+    <p style="font-size:11px;color:#ccc;margin:0;">
+      内容来源于公开技术博客与 YouTube 频道，摘要为中文整理，技术术语保留英文原文。
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
